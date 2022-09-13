@@ -1,0 +1,9 @@
+certifi==2022.6.15
+charset-normalizer==2.1.1
+clickhouse-http-client==1.0.2
+idna==3.3
+podman==4.2.0
+pyxdg==0.28
+requests==2.28.1
+toml==0.10.2
+urllib3==1.26.12
