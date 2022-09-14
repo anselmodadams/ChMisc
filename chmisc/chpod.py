@@ -11,7 +11,7 @@ class ChPod(object):
 
     def __init__(self, image, port=8123):
         self.logger.debug('Instance creation')
-        self.image = image
+        self.image = f'docker.io/{image}'
         self.name = None
         self.port = port
         self.container = None
@@ -29,6 +29,14 @@ class ChPod(object):
         self.name = 'clickhouse_' + self.image.split(':')[1]
 
     def __start_container(self):
+        if not self.podman.images.exists(self.image):
+            self.logger.info(f'Image {self.image} not in local repository, fetching')
+            if not self.podman.images.pull(self.image):
+                self.logger.error(f'Failure to fetch image {self.image}, impossible to start container')
+                raise Exception(f'{self.image} cannot be fetched from remote repository, aborting.')
+            else:
+                self.logger.info(f'Image {self.image} fetched')
+
         if self.podman.containers.exists(self.name):
             self.logger.warning(f'Container {self.name} exists, stop/removing and recreating/starting')
             self.container = self.podman.containers.get(self.name)
