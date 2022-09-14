@@ -63,9 +63,9 @@ for image in tutils.images:
                     with open(out_file_name, 'w') as f:
                         f.writelines(data)
             logger.info(f'Finished work for {image}')
-            port += 1
         except Exception as e:
             logger.error(f'Failure to collect data for {image}, cleaning up')
             rmtree(c_path, ignore_errors=True)
+        port += 1
 
 logger.info('Good bye, cruel world! My work is done.')
