@@ -211,6 +211,10 @@ WHERE
 ORDER BY major_version ASC, minor_version ASC, release ASC, patch_level ASC;
 
 SELECT '# ClickHouse Features Report';
+WITH
+    (WITH (major_version, minor_version, release, patch_level) AS __ver_tuple SELECT argMax(ch_version,__ver_tuple) FROM v_system_settings) AS __latest_version,
+    (WITH (major_version, minor_version, release, patch_level) AS __ver_tuple SELECT argMin(ch_version,__ver_tuple) FROM v_system_settings) AS __earliest_version
+SELECT 'Generated at '||toString(now())||' ('||timezone()||'), covering ClickHouse versions from '||__earliest_version||' to '||__latest_version;
 -- Report on system.table_engines
 SELECT '### Table Engines Availability';
 WITH
