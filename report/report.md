@@ -1,4 +1,5 @@
 # ClickHouse Features Report
+Generated at 2022-09-19 11:22:22 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.8.5.29
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -1976,7 +1977,7 @@
 | `join_overflow_mode` | in v1.1.54019 |  | Yes |  |
 | `join_use_nulls` | in v1.1.54236 |  | Yes | Use NULLs for non-joined rows of outer JOINs. If false, use default value of corresponding columns data type. |
 | `joined_subquery_requires_alias` | in v19.14.3.3 |  | Yes | Force joined subqueries to have aliases for correct name qualification. |
-| `kafka_disable_num_consumers_limit` | in v22.8.5.29 |  | Yes | Disable limit on kafka_num_consumers that depends on the number of available CPU cores |
+| `kafka_disable_num_consumers_limit` | in v22.6.8.35 |  | Yes | Disable limit on kafka_num_consumers that depends on the number of available CPU cores |
 | `kafka_max_wait_ms` | in v19.14.3.3 |  | Yes | The wait time for reading from Kafka before retry. |
 | `legacy_column_name_of_tuple_literal` | in v21.7.2.7 |  | Yes | List all names of element of large tuple literals in their column names instead of hash. This settings exists only for compatibility reasons. It makes sense to set to \'true\', while doing rolling update of cluster from version lower than 21.7 to higher. |
 | `limit` | in v21.1.2.15 |  | Yes | Limit on read rows from the most \'end\' result for select query, default 0 means no limit length |
