@@ -1,0 +1,58 @@
+"ch_version","name","description"
+"22.9.2.7","format",""
+"22.9.2.7","dictionary",""
+"22.9.2.7","mysql",""
+"22.9.2.7","viewIfPermitted",""
+"22.9.2.7","odbc",""
+"22.9.2.7","hive",""
+"22.9.2.7","numbers",""
+"22.9.2.7","hdfs",""
+"22.9.2.7","cosn",""
+"22.9.2.7","meilisearch",""
+"22.9.2.7","jdbc",""
+"22.9.2.7","zeros_mt","
+Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+
+This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+
+In contrast to the `zeros_mt`, this table function is using single thread for data generation.
+
+Example:
+[example:1]
+This query will test the speed of `randomPrintableASCII` function using single thread.
+
+See also the `system.zeros` table.
+"
+"22.9.2.7","mongodb",""
+"22.9.2.7","generateRandom",""
+"22.9.2.7","remote",""
+"22.9.2.7","input",""
+"22.9.2.7","s3Cluster",""
+"22.9.2.7","values",""
+"22.9.2.7","s3",""
+"22.9.2.7","url",""
+"22.9.2.7","remoteSecure",""
+"22.9.2.7","sqlite",""
+"22.9.2.7","zeros","
+Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+
+This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+
+In contrast to the `zeros`, this table function is using multiple threads for data generation, according to the `max_threads` setting.
+
+Example:
+[example:1]
+This query will test the speed of `randomPrintableASCII` function using multiple threads.
+
+See also the `system.zeros` table.
+"
+"22.9.2.7","view",""
+"22.9.2.7","numbers_mt",""
+"22.9.2.7","executable",""
+"22.9.2.7","clusterAllReplicas",""
+"22.9.2.7","cluster",""
+"22.9.2.7","merge",""
+"22.9.2.7","postgresql",""
+"22.9.2.7","hdfsCluster",""
+"22.9.2.7","null",""
+"22.9.2.7","file",""
