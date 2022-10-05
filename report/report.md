@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.9.2.7
+Generated at 2022-09-30 20:56:57 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.9.3.18
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -59,7 +59,7 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 ### Table Functions Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
-| `MeiliSearch` | in v22.5.1.2079 | up to v22.8.5.29 |
+| `MeiliSearch` | in v22.5.1.2079 | up to v22.8.6.71 |
 | `catBoostPool` | in v18.4.0 | up to v19.13.7.57 |
 | `cluster` | in v18.4.0 | Yes |
 | `clusterAllReplicas` | in v20.1.2.4 | Yes |
@@ -131,7 +131,7 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 | `JSONEachRowWithProgress` | (unavailable) | since v19.14.3.3 | in v19.14.3.3 | Yes |
 | `JSONLines` | since v22.5.1.2079 | since v22.5.1.2079 | in v22.5.1.2079 | Yes |
 | `JSONObjectEachRow` | since v22.9.1.2603 | since v22.9.1.2603 | in v22.9.1.2603 | Yes |
-| `JSONStringEachRow` | (unavailable) | (unavailable) | in v21.1.2.15 | up to v22.8.5.29 |
+| `JSONStringEachRow` | (unavailable) | (unavailable) | in v21.1.2.15 | up to v22.8.6.71 |
 | `JSONStrings` | (unavailable) | since v20.10.2.20 | in v20.10.2.20 | Yes |
 | `JSONStringsEachRow` | since v20.10.2.20 | since v20.10.2.20 | in v20.10.2.20 | Yes |
 | `JSONStringsEachRowWithProgress` | (unavailable) | since v20.10.2.20 | in v20.10.2.20 | Yes |
@@ -454,8 +454,8 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 | `accurateCast` | No | No | (none) | in v21.1.2.15 | Yes |
 | `accurateCastOrDefault` | No | No | (none) | in v21.11.2.2 | Yes |
 | `accurateCastOrNull` | No | No | (none) | in v21.1.2.15 | Yes |
-| `accurate_Cast` | No | No | (none) | in v21.9.2.17 | up to v22.8.5.29 |
-| `accurate_CastOrNull` | No | No | (none) | in v21.9.2.17 | up to v22.8.5.29 |
+| `accurate_Cast` | No | No | (none) | in v21.9.2.17 | up to v22.8.6.71 |
+| `accurate_CastOrNull` | No | No | (none) | in v21.9.2.17 | up to v22.8.6.71 |
 | `acos` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `acosh` | No | No | (none) | in v20.12.2.1 | Yes |
 | `addDays` | No | No | (none) | in v1.1.54310 | Yes |
@@ -663,7 +663,7 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 | `dateTime64ToSnowflake` | No | No | (none) | in v21.10.2.15 | Yes |
 | `dateTimeToSnowflake` | No | No | (none) | in v21.10.2.15 | Yes |
 | `dateTrunc` | No | No | (none) | in v20.8.2.3 | Yes |
-| `date_trunc` | No | Yes | (none) | in v20.8.2.3 | up to v22.8.5.29 |
+| `date_trunc` | No | Yes | (none) | in v20.8.2.3 | up to v22.8.6.71 |
 | `debug` | Yes | No | \N | in v1.1.54019 | up to v1.1.54289 |
 | `decodeURLComponent` | No | No | (none) | in v1.1.54127 | Yes |
 | `decodeURLFormComponent` | No | No | (none) | in v22.1.2.2 | Yes |
@@ -1040,7 +1040,7 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 | `minSampleSizeConversion` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `minus` | No | No | (none) | in v1.1.54019 | Yes |
 | `mod` | No | Yes | modulo | in v20.7.2.30 | Yes |
-| `modelEvaluate` | No | No | (none) | in v1.1.54310 | up to v22.8.5.29 |
+| `modelEvaluate` | No | No | (none) | in v1.1.54310 | up to v22.8.6.71 |
 | `modulo` | No | No | (none) | in v1.1.54019 | Yes |
 | `moduloLegacy` | No | No | (none) | in v21.5.7.9 | Yes |
 | `moduloOrZero` | No | No | (none) | in v20.3.2.1 | Yes |
@@ -1848,7 +1848,7 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 | `external_table_strict_query` | in v21.11.2.2 |  | Yes | If it is set to true, transforming expression to local filter is forbidden for queries to external tables. |
 | `extremes` | in v1.1.54019 |  | Yes | Calculate minimums and maximums of the result columns. They can be output in JSON-formats. |
 | `fallback_to_stale_replicas_for_distributed_queries` | in v1.1.54236 |  | Yes |  |
-| `filesystem_cache_max_wait_sec` | in v22.4.1.2305 |  | up to v22.8.5.29 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
+| `filesystem_cache_max_wait_sec` | in v22.4.1.2305 |  | up to v22.8.6.71 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
 | `flatten_nested` | in v21.2.2.8 |  | Yes | If true, columns of type Nested will be flatten to separate array columns instead of one array of tuples |
 | `force_data_skipping_indices` | in v20.10.2.20 |  | Yes | Comma separated list of strings or literals with the name of the data skipping indices that should be used during query execution, otherwise an exception will be thrown. |
 | `force_grouping_standard_compatibility` | in v22.9.1.2603 |  | Yes | Make GROUPING function to return 1 when argument is not used as an aggregation key |
@@ -1970,7 +1970,7 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_tsv_enum_as_number` | in v20.11.2.1 |  | Yes | Treat inserted enum values in TSV formats as enum indices \\N |
 | `input_format_tsv_skip_first_lines` | in v22.6.1.1985 |  | Yes | Skip specified number of lines at the beginning of data in TSV format |
 | `input_format_tsv_use_best_effort_in_schema_inference` | in v22.4.1.2305 |  | Yes | Use some tweaks and heuristics to infer schema in TSV format |
-| `input_format_use_lowercase_column_name` | in v22.3.2.1 |  | up to v22.3.12.19 | Use lowercase column name while reading input formats |
+| `input_format_use_lowercase_column_name` | in v22.3.2.1 |  | up to v22.3.13.80 | Use lowercase column name while reading input formats |
 | `input_format_values_accurate_types_of_literals` | in v19.16.2.2 |  | Yes | For Values format: when parsing and interpreting expressions using template, check actual type of literal to avoid possible overflow and precision issues. |
 | `input_format_values_deduce_templates_of_expressions` | in v19.16.2.2 |  | Yes | For Values format: if field could not be parsed by streaming parser, run SQL parser, deduce template of the SQL expression, try to parse all rows using template and then interpret expression for all rows. |
 | `input_format_values_interpret_expressions` | in v1.1.54112 |  | Yes | For Values format: if field could not be parsed by streaming parser, run SQL parser and try to interpret it as SQL expression. |
@@ -1998,7 +1998,7 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 | `join_overflow_mode` | in v1.1.54019 |  | Yes |  |
 | `join_use_nulls` | in v1.1.54236 |  | Yes | Use NULLs for non-joined rows of outer JOINs. If false, use default value of corresponding columns data type. |
 | `joined_subquery_requires_alias` | in v19.14.3.3 |  | Yes | Force joined subqueries to have aliases for correct name qualification. |
-| `kafka_disable_num_consumers_limit` | in v22.6.8.35 |  | Yes | Disable limit on kafka_num_consumers that depends on the number of available CPU cores |
+| `kafka_disable_num_consumers_limit` | in v22.3.13.80 |  | Yes | Disable limit on kafka_num_consumers that depends on the number of available CPU cores |
 | `kafka_max_wait_ms` | in v19.14.3.3 |  | Yes | The wait time for reading from Kafka before retry. |
 | `legacy_column_name_of_tuple_literal` | in v21.7.2.7 |  | Yes | List all names of element of large tuple literals in their column names instead of hash. This settings exists only for compatibility reasons. It makes sense to set to \'true\', while doing rolling update of cluster from version lower than 21.7 to higher. |
 | `limit` | in v21.1.2.15 |  | Yes | Limit on read rows from the most \'end\' result for select query, default 0 means no limit length |
@@ -2285,8 +2285,8 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 | `remerge_sort_lowered_memory_bytes_ratio` | in v21.1.2.15 |  | Yes | If memory usage after remerge does not reduced by this ratio, remerge will be disabled. |
 | `remote_filesystem_read_method` | in v21.11.2.2 |  | Yes | Method of reading data from remote filesystem, one of: read, read_threadpool. |
 | `remote_filesystem_read_prefetch` | in v21.10.2.15 |  | Yes | Should use prefetching when reading data from remote filesystem. |
-| `remote_fs_cache_max_wait_sec` | in v22.3.2.1 |  | up to v22.3.12.19 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
-| `remote_fs_enable_cache` | in v22.3.2.1 |  | up to v22.3.12.19 | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
+| `remote_fs_cache_max_wait_sec` | in v22.3.2.1 |  | up to v22.3.13.80 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
+| `remote_fs_enable_cache` | in v22.3.2.1 |  | up to v22.3.13.80 | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
 | `remote_fs_read_backoff_max_tries` | in v21.11.2.2 |  | Yes | Max attempts to read with backoff |
 | `remote_fs_read_max_backoff_ms` | in v21.11.2.2 |  | Yes | Max wait time when trying to read data for remote disk |
 | `remote_read_min_bytes_for_seek` | in v21.12.2.17 |  | Yes | Min bytes required for remote read (url, s3) to do seek, instead for read with ignore. |
@@ -2378,7 +2378,7 @@ Generated at 2022-09-23 12:12:38 (America/Sao_Paulo), covering ClickHouse versio
 |:-|:-|:-|:-|
 | `allow_floating_point_partition_key` | in v21.2.2.8 | Yes | `0` from `21.2.2.8` to `latest` |
 | `allow_nullable_key` | in v20.7.2.30 | Yes | `0` from `20.7.2.30` to `latest` |
-| `allow_remote_fs_zero_copy_replication` | in v21.8.3.44 | Yes | `0` from `21.8.3.44` to `latest` / `1` from `21.9.2.17` to `22.7.5.13` |
+| `allow_remote_fs_zero_copy_replication` | in v21.8.3.44 | Yes | `0` from `21.8.3.44` to `latest` / `1` from `21.9.2.17` to `22.7.6.74` |
 | `allow_s3_zero_copy_replication` | in v21.4.3.21 | up to v21.7.11.3 | `0` from `21.4.3.21` to `21.7.11.3` |
 | `always_fetch_merged_part` | in v20.4.2.9 | Yes | `0` from `20.4.2.9` to `latest` |
 | `assign_part_uuids` | in v20.12.2.1 | Yes | `0` from `20.12.2.1` to `latest` |
