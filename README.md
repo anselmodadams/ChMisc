@@ -1,4 +1,4 @@
-# ClickHouse Data Collection Script 
+# ClickHouse Data Collection Scripts
 
 ## Requirements 
 * Podman with API enabled for users (or run as `root`)
