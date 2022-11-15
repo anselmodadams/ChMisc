@@ -1,4 +1,5 @@
 name,version
+altinity/clickhouse-server,22.3.12.21.altinitystable
 altinity/clickhouse-server,22.3.12.20.altinitystable
 altinity/clickhouse-server,22.3.10.24.altinitystable
 altinity/clickhouse-server,22.3.8.40.altinitystable
