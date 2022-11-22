@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.10.2.11
+Generated at 2022-11-22 11:09:38 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.11.1.1360
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -7,6 +7,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `Buffer` | in v18.4.0 | Yes |
 | `COSN` | in v20.7.2.30 | Yes |
 | `CollapsingMergeTree` | in v18.4.0 | Yes |
+| `DeltaLake` | in v22.11.1.1360 | Yes |
 | `Dictionary` | in v18.4.0 | Yes |
 | `Distributed` | in v18.4.0 | Yes |
 | `EmbeddedRocksDB` | in v20.12.2.1 | Yes |
@@ -19,6 +20,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `GraphiteMergeTree` | in v18.4.0 | Yes |
 | `HDFS` | in v18.16.0 | Yes |
 | `Hive` | in v22.1.2.2 | Yes |
+| `Hudi` | in v22.11.1.1360 | Yes |
 | `JDBC` | in v18.14.9 | Yes |
 | `Join` | in v18.4.0 | Yes |
 | `Kafka` | in v18.4.0 | Yes |
@@ -36,6 +38,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `NATS` | in v22.7.1.2484 | Yes |
 | `Null` | in v18.4.0 | Yes |
 | `ODBC` | in v18.4.0 | Yes |
+| `OSS` | in v22.11.1.1360 | Yes |
 | `PostgreSQL` | in v21.2.2.8 | Yes |
 | `RabbitMQ` | in v20.6.5.8 | Yes |
 | `ReplacingMergeTree` | in v18.4.0 | Yes |
@@ -59,11 +62,12 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 ### Table Functions Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
-| `MeiliSearch` | in v22.5.1.2079 | up to v22.8.8.3 |
+| `MeiliSearch` | in v22.5.1.2079 | up to v22.8.9.24 |
 | `catBoostPool` | in v18.4.0 | up to v19.13.7.57 |
 | `cluster` | in v18.4.0 | Yes |
 | `clusterAllReplicas` | in v20.1.2.4 | Yes |
 | `cosn` | in v20.7.2.30 | Yes |
+| `deltaLake` | in v22.11.1.1360 | Yes |
 | `dictionary` | in v21.4.3.21 | Yes |
 | `executable` | in v21.10.2.15 | Yes |
 | `file` | in v18.4.0 | Yes |
@@ -72,6 +76,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `hdfs` | in v18.16.0 | Yes |
 | `hdfsCluster` | in v22.1.2.2 | Yes |
 | `hive` | in v22.3.2.1 | Yes |
+| `hudi` | in v22.11.1.1360 | Yes |
 | `input` | in v19.15.2.2 | Yes |
 | `jdbc` | in v18.14.9 | Yes |
 | `meilisearch` | in v22.9.1.2603 | Yes |
@@ -82,6 +87,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `numbers` | in v18.4.0 | Yes |
 | `numbers_mt` | in v19.14.3.3 | Yes |
 | `odbc` | in v18.4.0 | Yes |
+| `oss` | in v22.11.1.1360 | Yes |
 | `postgresql` | in v21.2.2.8 | Yes |
 | `remote` | in v18.4.0 | Yes |
 | `remoteSecure` | in v19.1.5 | Yes |
@@ -132,7 +138,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `JSONEachRowWithProgress` | (unavailable) | since v19.14.3.3 | in v19.14.3.3 | Yes |
 | `JSONLines` | since v22.5.1.2079 | since v22.5.1.2079 | in v22.5.1.2079 | Yes |
 | `JSONObjectEachRow` | since v22.9.1.2603 | since v22.9.1.2603 | in v22.9.1.2603 | Yes |
-| `JSONStringEachRow` | (unavailable) | (unavailable) | in v21.1.2.15 | up to v22.8.8.3 |
+| `JSONStringEachRow` | (unavailable) | (unavailable) | in v21.1.2.15 | up to v22.8.9.24 |
 | `JSONStrings` | (unavailable) | since v20.10.2.20 | in v20.10.2.20 | Yes |
 | `JSONStringsEachRow` | since v20.10.2.20 | since v20.10.2.20 | in v20.10.2.20 | Yes |
 | `JSONStringsEachRowWithProgress` | (unavailable) | since v20.10.2.20 | in v20.10.2.20 | Yes |
@@ -434,9 +440,12 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `TUMBLE` | No | No | (none) | in v21.12.2.17 | up to v21.12.4.1 |
 | `TUMBLE_END` | No | No | (none) | in v21.12.2.17 | up to v21.12.4.1 |
 | `TUMBLE_START` | No | No | (none) | in v21.12.2.17 | up to v21.12.4.1 |
+| `TimeDiff` | No | Yes | (none) | in v22.11.1.1360 | Yes |
 | `URLHash` | No | No | (none) | in v1.1.54019 | Yes |
 | `URLHierarchy` | No | No | (none) | in v1.1.54019 | Yes |
 | `URLPathHierarchy` | No | No | (none) | in v1.1.54019 | Yes |
+| `UTCTimestamp` | No | Yes | (none) | in v22.11.1.1360 | Yes |
+| `UTC_timestamp` | No | Yes | UTCTimestamp | in v22.11.1.1360 | Yes |
 | `UUIDNumToString` | No | No | (none) | in v1.1.54127 | Yes |
 | `UUIDStringToNum` | No | No | (none) | in v1.1.54127 | Yes |
 | `VAR_POP` | Yes | Yes | varPop | in v1.1.54019 | Yes |
@@ -456,12 +465,13 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `accurateCast` | No | No | (none) | in v21.1.2.15 | Yes |
 | `accurateCastOrDefault` | No | No | (none) | in v21.11.2.2 | Yes |
 | `accurateCastOrNull` | No | No | (none) | in v21.1.2.15 | Yes |
-| `accurate_Cast` | No | No | (none) | in v21.9.2.17 | up to v22.8.8.3 |
-| `accurate_CastOrNull` | No | No | (none) | in v21.9.2.17 | up to v22.8.8.3 |
+| `accurate_Cast` | No | No | (none) | in v21.9.2.17 | up to v22.8.9.24 |
+| `accurate_CastOrNull` | No | No | (none) | in v21.9.2.17 | up to v22.8.9.24 |
 | `acos` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `acosh` | No | No | (none) | in v20.12.2.1 | Yes |
 | `addDays` | No | No | (none) | in v1.1.54310 | Yes |
 | `addHours` | No | No | (none) | in v1.1.54310 | Yes |
+| `addInterval` | No | No | (none) | in v22.11.1.1360 | Yes |
 | `addMicroseconds` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `addMilliseconds` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `addMinutes` | No | No | (none) | in v1.1.54310 | Yes |
@@ -469,6 +479,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `addNanoseconds` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `addQuarters` | No | No | (none) | in v19.1.5 | Yes |
 | `addSeconds` | No | No | (none) | in v1.1.54310 | Yes |
+| `addTupleOfIntervals` | No | No | (none) | in v22.11.1.1360 | Yes |
 | `addWeeks` | No | No | (none) | in v1.1.54310 | Yes |
 | `addYears` | No | No | (none) | in v1.1.54310 | Yes |
 | `addressToLine` | No | No | (none) | in v19.14.3.3 | Yes |
@@ -547,6 +558,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `arrayUniq` | No | No | (none) | in v1.1.54019 | Yes |
 | `arrayWithConstant` | No | No | (none) | in v19.3.3 | Yes |
 | `arrayZip` | No | No | (none) | in v20.1.2.4 | Yes |
+| `ascii` | No | Yes | (none) | in v22.11.1.1360 | Yes |
 | `asin` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `asinh` | No | No | (none) | in v20.12.2.1 | Yes |
 | `assumeNotNull` | No | No | (none) | in v1.1.54127 | Yes |
@@ -671,7 +683,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `dateTime64ToSnowflake` | No | No | (none) | in v21.10.2.15 | Yes |
 | `dateTimeToSnowflake` | No | No | (none) | in v21.10.2.15 | Yes |
 | `dateTrunc` | No | No | (none) | in v20.8.2.3 | Yes |
-| `date_trunc` | No | Yes | (none) | in v20.8.2.3 | up to v22.8.8.3 |
+| `date_trunc` | No | Yes | (none) | in v20.8.2.3 | up to v22.8.9.24 |
 | `debug` | Yes | No | \N | in v1.1.54019 | up to v1.1.54289 |
 | `decodeURLComponent` | No | No | (none) | in v1.1.54127 | Yes |
 | `decodeURLFormComponent` | No | No | (none) | in v22.1.2.2 | Yes |
@@ -728,6 +740,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `dictGetUUIDOrDefault` | No | No | (none) | in v1.1.54337 | Yes |
 | `dictHas` | No | No | (none) | in v1.1.54019 | Yes |
 | `dictIsIn` | No | No | (none) | in v1.1.54019 | Yes |
+| `displayName` | No | No | (none) | in v22.11.1.1360 | Yes |
 | `distanceL1` | No | Yes | L1Distance | in v21.11.2.2 | Yes |
 | `distanceL2` | No | Yes | L2Distance | in v21.11.2.2 | Yes |
 | `distanceL2Squared` | No | Yes | L2SquaredDistance | in v22.7.1.2484 | Yes |
@@ -787,6 +800,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `extractURLParameter` | No | No | (none) | in v1.1.54019 | Yes |
 | `extractURLParameterNames` | No | No | (none) | in v1.1.54019 | Yes |
 | `extractURLParameters` | No | No | (none) | in v1.1.54019 | Yes |
+| `factorial` | No | Yes | (none) | in v22.11.1.1360 | Yes |
 | `farmFingerprint64` | No | No | (none) | in v20.11.2.1 | Yes |
 | `farmHash64` | No | No | (none) | in v1.1.54019 | Yes |
 | `file` | No | No | (none) | in v21.3.2.5 | Yes |
@@ -810,6 +824,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `floor` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `format` | No | No | (none) | in v19.8.3.8 | Yes |
 | `formatDateTime` | No | No | (none) | in v18.14.9 | Yes |
+| `formatReadableDecimalSize` | No | No | (none) | in v22.11.1.1360 | Yes |
 | `formatReadableQuantity` | No | No | (none) | in v20.10.2.20 | Yes |
 | `formatReadableSize` | No | No | (none) | in v1.1.54019 | Yes |
 | `formatReadableTimeDelta` | No | No | (none) | in v20.11.2.1 | Yes |
@@ -1052,7 +1067,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `minSampleSizeConversion` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `minus` | No | No | (none) | in v1.1.54019 | Yes |
 | `mod` | No | Yes | modulo | in v20.7.2.30 | Yes |
-| `modelEvaluate` | No | No | (none) | in v1.1.54310 | up to v22.8.8.3 |
+| `modelEvaluate` | No | No | (none) | in v1.1.54310 | up to v22.8.9.24 |
 | `modulo` | No | No | (none) | in v1.1.54019 | Yes |
 | `moduloLegacy` | No | No | (none) | in v21.5.7.9 | Yes |
 | `moduloOrZero` | No | No | (none) | in v20.3.2.1 | Yes |
@@ -1178,6 +1193,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `pathFull` | No | No | (none) | in v1.1.54019 | Yes |
 | `pi` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `plus` | No | No | (none) | in v1.1.54019 | Yes |
+| `pmod` | No | Yes | positiveModulo | in v22.11.1.1360 | Yes |
 | `pointInEllipses` | No | No | (none) | in v1.1.54180 | Yes |
 | `pointInPolygon` | No | No | (none) | in v1.1.54289 | Yes |
 | `pointInPolygonCrossing` | No | No | \N | in v1.1.54304 | up to v1.1.54337 |
@@ -1206,6 +1222,8 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `positionCaseInsensitive` | No | No | (none) | in v1.1.54019 | Yes |
 | `positionCaseInsensitiveUTF8` | No | No | (none) | in v1.1.54019 | Yes |
 | `positionUTF8` | No | No | (none) | in v1.1.54019 | Yes |
+| `positiveModulo` | No | Yes | (none) | in v22.11.1.1360 | Yes |
+| `positive_modulo` | No | Yes | positiveModulo | in v22.11.1.1360 | Yes |
 | `pow` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `power` | No | Yes | pow | in v18.16.0 | Yes |
 | `proportionsZTest` | No | No | (none) | in v22.3.2.1 | Yes |
@@ -1248,6 +1266,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `rand64` | No | No | (none) | in v1.1.54019 | Yes |
 | `randBernoulli` | No | No | (none) | in v22.10.1.1877 | Yes |
 | `randBinomial` | No | No | (none) | in v22.10.1.1877 | Yes |
+| `randCanonical` | No | No | (none) | in v22.11.1.1360 | Yes |
 | `randChiSquared` | No | No | (none) | in v22.10.1.1877 | Yes |
 | `randConstant` | No | No | (none) | in v1.1.54019 | Yes |
 | `randExponential` | No | No | (none) | in v22.10.1.1877 | Yes |
@@ -1373,6 +1392,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `snowflakeToDateTime` | No | No | (none) | in v21.10.2.15 | Yes |
 | `snowflakeToDateTime64` | No | No | (none) | in v21.10.2.15 | Yes |
 | `sparkbar` | Yes | No | (none) | in v21.11.2.2 | Yes |
+| `splitByAlpha` | No | No | alphaTokens | in v22.11.1.1360 | Yes |
 | `splitByChar` | No | No | (none) | in v1.1.54019 | Yes |
 | `splitByNonAlpha` | No | No | (none) | in v21.9.2.17 | Yes |
 | `splitByRegexp` | No | No | (none) | in v21.6.3.14 | Yes |
@@ -1395,6 +1415,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `substringUTF8` | No | No | (none) | in v1.1.54019 | Yes |
 | `subtractDays` | No | No | (none) | in v1.1.54310 | Yes |
 | `subtractHours` | No | No | (none) | in v1.1.54310 | Yes |
+| `subtractInterval` | No | No | (none) | in v22.11.1.1360 | Yes |
 | `subtractMicroseconds` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `subtractMilliseconds` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `subtractMinutes` | No | No | (none) | in v1.1.54310 | Yes |
@@ -1402,6 +1423,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `subtractNanoseconds` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `subtractQuarters` | No | No | (none) | in v19.1.5 | Yes |
 | `subtractSeconds` | No | No | (none) | in v1.1.54310 | Yes |
+| `subtractTupleOfIntervals` | No | No | (none) | in v22.11.1.1360 | Yes |
 | `subtractWeeks` | No | No | (none) | in v1.1.54310 | Yes |
 | `subtractYears` | No | No | (none) | in v1.1.54310 | Yes |
 | `sum` | Yes | Yes | (none) | in v1.1.54019 | Yes |
@@ -1718,6 +1740,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_distributed_ddl` | in v1.1.54378 |  | Yes | If it is set to true, then a user is allowed to executed distributed DDL queries. |
 | `allow_drop_detached` | in v19.14.3.3 |  | Yes | Allow ALTER TABLE ... DROP DETACHED PART[ITION] ... queries |
 | `allow_experimental_alter_materialized_view_structure` | in v20.3.2.1 |  | Yes | Allow atomic alter on Materialized views. Work in progress. |
+| `allow_experimental_analyzer` | in v22.11.1.1360 |  | Yes | Allow experimental analyzer |
 | `allow_experimental_annoy_index` | in v22.9.1.2603 |  | Yes | Allows to use Annoy index. Disabled by default because this feature is experimental |
 | `allow_experimental_bigint_types` | in v20.8.2.3 | in v21.7.2.7 | Yes | Allow Int128, Int256, UInt256 and Decimal256 types |
 | `allow_experimental_codecs` | in v21.7.2.7 |  | Yes | If it is set to true, allow to specify experimental compression codecs (but we don\'t have those yet and this option does nothing). |
@@ -1879,7 +1902,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `external_table_strict_query` | in v21.11.2.2 |  | Yes | If it is set to true, transforming expression to local filter is forbidden for queries to external tables. |
 | `extremes` | in v1.1.54019 |  | Yes | Calculate minimums and maximums of the result columns. They can be output in JSON-formats. |
 | `fallback_to_stale_replicas_for_distributed_queries` | in v1.1.54236 |  | Yes |  |
-| `filesystem_cache_max_wait_sec` | in v22.4.1.2305 |  | up to v22.8.8.3 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
+| `filesystem_cache_max_wait_sec` | in v22.4.1.2305 |  | up to v22.8.9.24 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
 | `flatten_nested` | in v21.2.2.8 |  | Yes | If true, columns of type Nested will be flatten to separate array columns instead of one array of tuples |
 | `force_data_skipping_indices` | in v20.10.2.20 |  | Yes | Comma separated list of strings or literals with the name of the data skipping indices that should be used during query execution, otherwise an exception will be thrown. |
 | `force_grouping_standard_compatibility` | in v22.9.1.2603 |  | Yes | Make GROUPING function to return 1 when argument is not used as an aggregation key |
@@ -2015,6 +2038,11 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `insert_distributed_sync` | in v1.1.54276 |  | Yes | If setting is enabled, insert query into distributed waits until data will be sent to all nodes in cluster. |
 | `insert_distributed_timeout` | in v1.1.54276 |  | Yes | Timeout for insert query into distributed. Setting is used only with insert_distributed_sync enabled. |
 | `insert_in_memory_parts_timeout` | in v20.6.5.8 |  | up to v21.2.10.48 |  |
+| `insert_keeper_fault_injection_probability` | in v22.11.1.1360 |  | Yes | Approximate probability of failure for a keeper request during insert. Valid value is in interval [0.0f, 1.0f] |
+| `insert_keeper_fault_injection_seed` | in v22.11.1.1360 |  | Yes | 0 - random seed, otherwise the setting value |
+| `insert_keeper_max_retries` | in v22.11.1.1360 |  | Yes | Max retries for keeper operations during insert |
+| `insert_keeper_retry_initial_backoff_ms` | in v22.11.1.1360 |  | Yes | Initial backoff timeout for keeper operations during insert |
+| `insert_keeper_retry_max_backoff_ms` | in v22.11.1.1360 |  | Yes | Max backoff timeout for keeper operations during insert |
 | `insert_null_as_default` | in v21.6.3.14 |  | Yes | Insert DEFAULT values instead of NULL in INSERT SELECT (UNION ALL) |
 | `insert_quorum` | in v1.1.54019 |  | Yes | For INSERT queries in the replicated table, wait writing for the specified number of replicas and linearize the addition of the data. 0 - disabled. |
 | `insert_quorum_parallel` | in v20.10.2.20 |  | Yes | For quorum INSERT queries - enable to make parallel inserts without linearizability |
@@ -2297,6 +2325,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `query_plan_filter_push_down` | in v21.5.5.12 |  | Yes | Allow to push down filter by predicate query plan step |
 | `query_plan_max_optimizations_to_apply` | in v21.3.2.5 |  | Yes | Limit the total number of optimizations applied to query plan. If zero, ignored. If limit reached, throw exception |
 | `query_plan_optimize_primary_key` | in v22.8.1.2097 |  | Yes | Analyze primary key using query plan (instead of AST) |
+| `query_plan_read_in_order` | in v22.11.1.1360 |  | Yes | Use query plan for read-in-order optimisation |
 | `query_profiler_cpu_time_period_ns` | in v19.13.1.11 |  | Yes | "Highly experimental. Period for CPU clock timer of query profiler (in nanoseconds). Set 0 value to turn off CPU clock query profiler. Recommended value is at least 10000000 (100 times a second) for single queries or 1000000000 (once a second) for cluster-wide profiling." |
 | `query_profiler_real_time_period_ns` | in v19.13.1.11 |  | Yes | "Highly experimental. Period for real clock timer of query profiler (in nanoseconds). Set 0 value to turn off real clock query profiler. Recommended value is at least 10000000 (100 times a second) for single queries or 1000000000 (once a second) for cluster-wide profiling." |
 | `queue_max_wait_ms` | in v1.1.54019 |  | Yes | The wait time in the request queue, if the number of concurrent requests exceeds the maximum. |
@@ -2332,8 +2361,8 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `resharding_barrier_timeout` | in v1.1.54019 |  | up to v1.1.54327 | \N |
 | `restore_threads` | in v22.5.1.2079 |  | Yes | The maximum number of threads to execute RESTORE requests. |
 | `result_overflow_mode` | in v1.1.54019 |  | Yes |  |
-| `s3_allow_parallel_part_upload` | in v22.9.1.2603 |  | Yes | Use multiple threads for s3 multipart upload. It may lead to slightly higher memory usage |
-| `s3_check_objects_after_upload` | in v22.9.1.2603 |  | Yes | Check each uploaded object to s3 with head request to be sure that upload was successful |
+| `s3_allow_parallel_part_upload` | in v22.8.9.24 |  | Yes | Use multiple threads for s3 multipart upload. It may lead to slightly higher memory usage |
+| `s3_check_objects_after_upload` | in v22.8.9.24 |  | Yes | Check each uploaded object to s3 with head request to be sure that upload was successful |
 | `s3_create_new_file_on_insert` | in v22.2.2.1 |  | Yes | Enables or disables creating a new file on each insert in s3 engine tables |
 | `s3_max_connections` | in v21.2.2.8 |  | Yes | The maximum number of connections per server. |
 | `s3_max_redirects` | in v21.1.2.15 |  | Yes | Max number of S3 redirects hops allowed. |
@@ -2388,7 +2417,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `transform_null_in` | in v20.4.2.9 |  | Yes | If enabled, NULL values will be matched with \'IN\' operator as if they are considered equal. |
 | `union_default_mode` | in v21.1.2.15 |  | Yes | Set default Union Mode in SelectWithUnion query. Possible values: empty string, \'ALL\', \'DISTINCT\'. If empty, query without Union Mode will throw exception. |
 | `unknown_packet_in_send_data` | in v21.3.8.76 |  | Yes | Send unknown packet instead of data Nth data packet |
-| `use_analyzer` | in v22.10.1.1877 |  | Yes | Use analyzer |
+| `use_analyzer` | in v22.10.1.1877 |  | up to v22.10.2.11 | Use analyzer |
 | `use_antlr_parser` | in v21.1.2.15 |  | up to v21.7.11.3 | Parse incoming queries using ANTLR-generated experimental parser |
 | `use_client_time_zone` | in v1.1.54074 |  | Yes | Use client timezone for interpreting DateTime string values, instead of adopting server timezone. |
 | `use_compact_format_in_distributed_parts_names` | in v20.3.3.6 |  | Yes | Changes format of directories names for distributed table insert parts. |
@@ -2476,6 +2505,7 @@ Generated at 2022-11-22 10:51:53 (America/Sao_Paulo), covering ClickHouse versio
 | `merge_with_recompression_ttl_timeout` | in v20.10.2.20 | Yes | `14400` from `20.10.2.20` to `latest` |
 | `merge_with_ttl_timeout` | in v19.6.2.11 | Yes | `14400` from `20.10.2.20` to `latest` / `86400` from `19.6.2.11` to `20.9.7.11` |
 | `min_absolute_delay_to_close` | in v18.10.3 | Yes | `0` from `18.10.3.0` to `latest` |
+| `min_age_to_force_merge_on_partition_only` | in v22.11.1.1360 | Yes | `0` from `22.11.1.1360` to `latest` |
 | `min_age_to_force_merge_seconds` | in v22.10.1.1877 | Yes | `0` from `22.10.1.1877` to `latest` |
 | `min_bytes_for_compact_part` | in v20.6.5.8 | Yes | `0` from `20.6.5.8` to `latest` |
 | `min_bytes_for_wide_part` | in v20.3.2.1 | Yes | `0` from `20.3.2.1` to `20.9.7.11` / `10485760` from `20.10.2.20` to `latest` |
