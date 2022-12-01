@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2022-11-22 11:09:38 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.11.1.1360
+Generated at 2022-12-01 15:26:11 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.11.1.1360
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2417,7 +2417,7 @@ Generated at 2022-11-22 11:09:38 (America/Sao_Paulo), covering ClickHouse versio
 | `transform_null_in` | in v20.4.2.9 |  | Yes | If enabled, NULL values will be matched with \'IN\' operator as if they are considered equal. |
 | `union_default_mode` | in v21.1.2.15 |  | Yes | Set default Union Mode in SelectWithUnion query. Possible values: empty string, \'ALL\', \'DISTINCT\'. If empty, query without Union Mode will throw exception. |
 | `unknown_packet_in_send_data` | in v21.3.8.76 |  | Yes | Send unknown packet instead of data Nth data packet |
-| `use_analyzer` | in v22.10.1.1877 |  | up to v22.10.2.11 | Use analyzer |
+| `use_analyzer` | in v22.10.1.1877 |  | up to v22.10.3.27 | Use analyzer |
 | `use_antlr_parser` | in v21.1.2.15 |  | up to v21.7.11.3 | Parse incoming queries using ANTLR-generated experimental parser |
 | `use_client_time_zone` | in v1.1.54074 |  | Yes | Use client timezone for interpreting DateTime string values, instead of adopting server timezone. |
 | `use_compact_format_in_distributed_parts_names` | in v20.3.3.6 |  | Yes | Changes format of directories names for distributed table insert parts. |
@@ -2483,8 +2483,8 @@ Generated at 2022-11-22 11:09:38 (America/Sao_Paulo), covering ClickHouse versio
 | `max_files_to_modify_in_alter_columns` | in v18.10.3 | Yes | `75` from `18.10.3.0` to `latest` |
 | `max_files_to_remove_in_alter_columns` | in v18.10.3 | Yes | `50` from `18.10.3.0` to `latest` |
 | `max_number_of_merges_with_ttl_in_pool` | in v20.10.2.20 | Yes | `2` from `20.10.2.20` to `latest` |
-| `max_part_loading_threads` | in v19.14.3.3 | Yes | `\\auto(4)\\` from `20.7.2.30` to `22.9.4.32` / `\\auto(8)\\` from `22.10.1.1877` to `latest` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
-| `max_part_removal_threads` | in v19.14.3.3 | Yes | `\\auto(4)\\` from `20.7.2.30` to `22.9.4.32` / `\\auto(8)\\` from `22.10.1.1877` to `latest` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
+| `max_part_loading_threads` | in v19.14.3.3 | Yes | `\\auto(4)\\` from `20.7.2.30` to `22.9.5.25` / `\\auto(8)\\` from `22.10.1.1877` to `latest` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
+| `max_part_removal_threads` | in v19.14.3.3 | Yes | `\\auto(4)\\` from `20.7.2.30` to `22.9.5.25` / `\\auto(8)\\` from `22.10.1.1877` to `latest` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
 | `max_partitions_to_read` | in v21.1.2.15 | Yes | `-1` from `21.1.2.15` to `latest` |
 | `max_parts_in_total` | in v19.8.3.8 | Yes | `100000` from `19.8.3.8` to `latest` |
 | `max_parts_to_merge_at_once` | in v21.7.2.7 | Yes | `100` from `21.7.2.7` to `latest` |
@@ -2494,7 +2494,7 @@ Generated at 2022-11-22 11:09:38 (America/Sao_Paulo), covering ClickHouse versio
 | `max_replicated_merges_with_ttl_in_queue` | in v20.10.2.20 | Yes | `1` from `20.10.2.20` to `latest` |
 | `max_replicated_mutations_in_queue` | in v19.11.9.52 | Yes | `8` from `19.11.9.52` to `latest` |
 | `max_replicated_sends_network_bandwidth` | in v21.7.2.7 | Yes | `0` from `21.7.2.7` to `latest` |
-| `max_suspicious_broken_parts` | in v18.10.3 | Yes | `10` from `18.10.3.0` to `22.9.4.32` / `100` from `22.10.1.1877` to `latest` |
+| `max_suspicious_broken_parts` | in v18.10.3 | Yes | `10` from `18.10.3.0` to `22.9.5.25` / `100` from `22.10.1.1877` to `latest` |
 | `max_suspicious_broken_parts_bytes` | in v21.11.2.2 | Yes | `1073741824` from `21.11.2.2` to `latest` |
 | `merge_max_block_size` | in v19.17.2.4 | Yes | `8192` from `19.17.2.4` to `latest` |
 | `merge_selecting_sleep_ms` | in v21.9.2.17 | Yes | `5000` from `21.9.2.17` to `latest` |
