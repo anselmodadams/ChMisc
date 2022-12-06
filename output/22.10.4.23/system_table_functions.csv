@@ -1,0 +1,69 @@
+"ch_version","name","description"
+"22.10.4.23","viewExplain","
+Returns result of EXPLAIN query.
+
+The function should not be called directly but can be invoked via `SELECT * FROM (EXPLAIN <query>)`.
+
+You can use this query to process the result of EXPLAIN further using SQL (e.g., in tests).
+
+Example:
+[example:1]
+
+"
+"22.10.4.23","format",""
+"22.10.4.23","dictionary",""
+"22.10.4.23","mysql",""
+"22.10.4.23","viewIfPermitted",""
+"22.10.4.23","odbc",""
+"22.10.4.23","hive",""
+"22.10.4.23","numbers",""
+"22.10.4.23","hdfs",""
+"22.10.4.23","cosn",""
+"22.10.4.23","meilisearch",""
+"22.10.4.23","jdbc",""
+"22.10.4.23","zeros_mt","
+Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+
+This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+
+In contrast to the `zeros_mt`, this table function is using single thread for data generation.
+
+Example:
+[example:1]
+This query will test the speed of `randomPrintableASCII` function using single thread.
+
+See also the `system.zeros` table.
+"
+"22.10.4.23","mongodb",""
+"22.10.4.23","generateRandom",""
+"22.10.4.23","remote",""
+"22.10.4.23","input",""
+"22.10.4.23","s3Cluster",""
+"22.10.4.23","values",""
+"22.10.4.23","s3",""
+"22.10.4.23","url",""
+"22.10.4.23","remoteSecure",""
+"22.10.4.23","sqlite",""
+"22.10.4.23","zeros","
+Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+
+This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+
+In contrast to the `zeros`, this table function is using multiple threads for data generation, according to the `max_threads` setting.
+
+Example:
+[example:1]
+This query will test the speed of `randomPrintableASCII` function using multiple threads.
+
+See also the `system.zeros` table.
+"
+"22.10.4.23","view",""
+"22.10.4.23","numbers_mt",""
+"22.10.4.23","executable",""
+"22.10.4.23","clusterAllReplicas",""
+"22.10.4.23","cluster",""
+"22.10.4.23","merge",""
+"22.10.4.23","postgresql",""
+"22.10.4.23","hdfsCluster",""
+"22.10.4.23","null",""
+"22.10.4.23","file",""
