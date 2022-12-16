@@ -17,7 +17,7 @@ pip3 install -r requirements.txt
 
 ## How it works 
 
-Starts by loading `ch_repos_tags.csv` file (provided file has image tags for repositories up to 10/06/2022; run `refresh_tags.py`
+Starts by loading `ch_repos_tags.csv` file (provided file has image tags for repositories up to 12/16/2022; run `refresh_tags.py`
 to update), build a list of unique versions and, for each image, run a container in podman and run queries to collect data
 from system tables (if present), and stores at `./output/{tag}`. It will skip tags that are present on the output directory - 
 it is useful to data updated (collect on new releases only) and, when populating from scratch, it can be canceled and allows
