@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-01-10 13:12:53 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.12.3.5
+Generated at 2023-01-13 12:56:21 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 22.12.3.5
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2043,7 +2043,7 @@ Generated at 2023-01-10 13:12:53 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_tsv_enum_as_number` | in v20.11.2.1 |  | Yes | Treat inserted enum values in TSV formats as enum indices \\N |
 | `input_format_tsv_skip_first_lines` | in v22.6.1.1985 |  | Yes | Skip specified number of lines at the beginning of data in TSV format |
 | `input_format_tsv_use_best_effort_in_schema_inference` | in v22.4.1.2305 |  | Yes | Use some tweaks and heuristics to infer schema in TSV format |
-| `input_format_use_lowercase_column_name` | in v22.3.2.1 |  | up to v22.3.16.1190 | Use lowercase column name while reading input formats |
+| `input_format_use_lowercase_column_name` | in v22.3.2.1 |  | up to v22.3.17.13 | Use lowercase column name while reading input formats |
 | `input_format_values_accurate_types_of_literals` | in v19.16.2.2 |  | Yes | For Values format: when parsing and interpreting expressions using template, check actual type of literal to avoid possible overflow and precision issues. |
 | `input_format_values_deduce_templates_of_expressions` | in v19.16.2.2 |  | Yes | For Values format: if field could not be parsed by streaming parser, run SQL parser, deduce template of the SQL expression, try to parse all rows using template and then interpret expression for all rows. |
 | `input_format_values_interpret_expressions` | in v1.1.54112 |  | Yes | For Values format: if field could not be parsed by streaming parser, run SQL parser and try to interpret it as SQL expression. |
@@ -2280,7 +2280,7 @@ Generated at 2023-01-10 13:12:53 (America/Sao_Paulo), covering ClickHouse versio
 | `optimize_using_constraints` | in v21.12.2.17 |  | Yes | Use constraints for query optimization |
 | `os_thread_priority` | in v19.11.2.7 |  | Yes | "If non zero - set corresponding \'nice\' value for query processing threads. Can be used to adjust query priority for OS scheduler." |
 | `output_format_arrow_low_cardinality_as_dictionary` | in v21.7.2.7 |  | Yes | Enable output LowCardinality type as Dictionary Arrow type |
-| `output_format_arrow_string_as_string` | in v22.6.1.1985 |  | Yes | Use Arrow String type instead of Binary for String columns |
+| `output_format_arrow_string_as_string` | in v22.3.17.13 |  | Yes | Use Arrow String type instead of Binary for String columns |
 | `output_format_avro_codec` | in v20.3.2.1 |  | Yes | Compression codec used for output. Possible values: \'null\', \'deflate\', \'snappy\'. |
 | `output_format_avro_rows_in_file` | in v21.12.2.17 |  | Yes | Max rows in a file (if permitted by storage) |
 | `output_format_avro_string_column_pattern` | in v21.9.2.17 |  | Yes | For Avro format: regexp of String columns to select as AVRO string. |
@@ -2299,10 +2299,10 @@ Generated at 2023-01-10 13:12:53 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_json_quote_denormals` | in v1.1.54276 |  | Yes | Enables "+nan", "-nan", "+inf", "-inf" outputs in JSON output format. |
 | `output_format_json_validate_utf8` | in v22.9.1.2603 |  | Yes | Validate UTF-8 sequences in JSON output formats, doesn\'t impact formats JSON/JSONCompact/JSONColumnsWithMetadata, they always validate utf8 |
 | `output_format_msgpack_uuid_representation` | in v22.2.2.1 |  | Yes | The way how to output UUID in MsgPack format. |
-| `output_format_orc_string_as_string` | in v22.6.1.1985 |  | Yes | Use ORC String type instead of Binary for String columns |
+| `output_format_orc_string_as_string` | in v22.3.17.13 |  | Yes | Use ORC String type instead of Binary for String columns |
 | `output_format_parallel_formatting` | in v21.1.2.15 |  | Yes | Enable parallel formatting for some data formats. |
 | `output_format_parquet_row_group_size` | in v19.4.1.3 |  | Yes | Row group size in rows. |
-| `output_format_parquet_string_as_string` | in v22.6.1.1985 |  | Yes | Use Parquet String type instead of Binary for String columns. |
+| `output_format_parquet_string_as_string` | in v22.3.17.13 |  | Yes | Use Parquet String type instead of Binary for String columns. |
 | `output_format_pretty_color` | in v1.1.54388 |  | Yes | Use ANSI escape sequences to paint colors in Pretty formats |
 | `output_format_pretty_grid_charset` | in v20.6.5.8 |  | Yes | Charset for printing grid borders. Available charsets: ASCII, UTF-8 (default one). |
 | `output_format_pretty_max_column_pad_width` | in v18.12.13 |  | Yes | Maximum width to pad all values in a column in Pretty formats. |
@@ -2369,8 +2369,8 @@ Generated at 2023-01-10 13:12:53 (America/Sao_Paulo), covering ClickHouse versio
 | `remerge_sort_lowered_memory_bytes_ratio` | in v21.1.2.15 |  | Yes | If memory usage after remerge does not reduced by this ratio, remerge will be disabled. |
 | `remote_filesystem_read_method` | in v21.11.2.2 |  | Yes | Method of reading data from remote filesystem, one of: read, read_threadpool. |
 | `remote_filesystem_read_prefetch` | in v21.10.2.15 |  | Yes | Should use prefetching when reading data from remote filesystem. |
-| `remote_fs_cache_max_wait_sec` | in v22.3.2.1 |  | up to v22.3.16.1190 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
-| `remote_fs_enable_cache` | in v22.3.2.1 |  | up to v22.3.16.1190 | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
+| `remote_fs_cache_max_wait_sec` | in v22.3.2.1 |  | up to v22.3.17.13 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
+| `remote_fs_enable_cache` | in v22.3.2.1 |  | up to v22.3.17.13 | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
 | `remote_fs_read_backoff_max_tries` | in v21.11.2.2 |  | Yes | Max attempts to read with backoff |
 | `remote_fs_read_max_backoff_ms` | in v21.11.2.2 |  | Yes | Max wait time when trying to read data for remote disk |
 | `remote_read_min_bytes_for_seek` | in v21.12.2.17 |  | Yes | Min bytes required for remote read (url, s3) to do seek, instead for read with ignore. |
