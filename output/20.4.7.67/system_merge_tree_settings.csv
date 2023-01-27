@@ -1,3 +1,4 @@
+"ch_version","name","value","changed","description"
 "20.4.7.67","index_granularity","8192",0,"How many rows correspond to one primary key value.","SettingUInt64"
 "20.4.7.67","min_bytes_for_wide_part","0",0,"Minimal uncompressed size in bytes to create part in wide format instead of compact","SettingUInt64"
 "20.4.7.67","min_rows_for_wide_part","0",0,"Minimal number of rows to create part in wide format instead of compact","SettingUInt64"
