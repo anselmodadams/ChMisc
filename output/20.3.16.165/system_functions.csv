@@ -1,3 +1,4 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to"
 "20.3.16.165","sumburConsistentHash",0,0,""
 "20.3.16.165","yandexConsistentHash",0,0,""
 "20.3.16.165","demangle",0,0,""
