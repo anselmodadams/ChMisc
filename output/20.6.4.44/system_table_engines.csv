@@ -1,3 +1,4 @@
+"ch_version","name","supports_settings","supports_skipping_indices","supports_sort_order","supports_ttl","supports_replication","supports_deduplication"
 "20.6.4.44","RabbitMQ",1,0,0,0,0,0
 "20.6.4.44","Kafka",1,0,0,0,0,0
 "20.6.4.44","MySQL",0,0,0,0,0,0

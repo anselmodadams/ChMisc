@@ -1,3 +1,4 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to"
 "20.6.4.44","fromUnixTimestamp64Nano",0,0,""
 "20.6.4.44","toUnixTimestamp64Nano",0,0,""
 "20.6.4.44","toUnixTimestamp64Micro",0,0,""
