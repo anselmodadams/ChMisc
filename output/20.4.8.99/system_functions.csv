@@ -1,3 +1,4 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to"
 "20.4.8.99","sumburConsistentHash",0,0,""
 "20.4.8.99","yandexConsistentHash",0,0,""
 "20.4.8.99","demangle",0,0,""
