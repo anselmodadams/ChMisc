@@ -1,3 +1,4 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to"
 "20.5.4.40","fromUnixTimestamp64Nano",0,0,""
 "20.5.4.40","toUnixTimestamp64Nano",0,0,""
 "20.5.4.40","toUnixTimestamp64Micro",0,0,""
