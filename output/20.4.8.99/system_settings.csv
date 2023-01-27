@@ -1,4 +1,4 @@
-"ch_version","name","value","changed","description","min","max","readonly"
+"ch_version","name","value","changed","description","min","max","readonly","type"
 "20.4.8.99","min_compress_block_size","65536",0,"The actual size of the block to compress, if the uncompressed data less than max_compress_block_size is no less than this value and no less than the volume of data for one mark.",\N,\N,0,"SettingUInt64"
 "20.4.8.99","max_compress_block_size","1048576",0,"The maximum size of blocks of uncompressed data before compressing for writing to a table.",\N,\N,0,"SettingUInt64"
 "20.4.8.99","max_block_size","65536",0,"Maximum block size for reading",\N,\N,0,"SettingUInt64"
