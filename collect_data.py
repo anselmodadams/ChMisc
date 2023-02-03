@@ -19,15 +19,6 @@ tutils = TagUtils('./ch_repos_tags.csv')
 
 output_dir = path_join(dirname(__file__), 'output')
 
-query_system_functions="""
-    SELECT
-        version() AS ch_version,
-        *
-    FROM
-        system.functions
-    FORMAT CSVWithNames
-"""
-
 port = 8150
 
 table_names = (
