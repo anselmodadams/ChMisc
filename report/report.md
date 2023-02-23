@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-02-15 15:25:03 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.1.3.5
+Generated at 2023-02-21 13:42:29 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.1.3.5
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2068,7 +2068,7 @@ Generated at 2023-02-15 15:25:03 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_tsv_enum_as_number` | in v20.11.2.1 |  | Yes | Treat inserted enum values in TSV formats as enum indices \\N |
 | `input_format_tsv_skip_first_lines` | in v22.6.1.1985 |  | Yes | Skip specified number of lines at the beginning of data in TSV format |
 | `input_format_tsv_use_best_effort_in_schema_inference` | in v22.4.1.2305 |  | Yes | Use some tweaks and heuristics to infer schema in TSV format |
-| `input_format_use_lowercase_column_name` | in v22.3.2.1 |  | up to v22.3.17.13 | Use lowercase column name while reading input formats |
+| `input_format_use_lowercase_column_name` | in v22.3.2.1 |  | up to v22.3.18.37 | Use lowercase column name while reading input formats |
 | `input_format_values_accurate_types_of_literals` | in v19.16.2.2 |  | Yes | For Values format: when parsing and interpreting expressions using template, check actual type of literal to avoid possible overflow and precision issues. |
 | `input_format_values_deduce_templates_of_expressions` | in v19.16.2.2 |  | Yes | For Values format: if field could not be parsed by streaming parser, run SQL parser, deduce template of the SQL expression, try to parse all rows using template and then interpret expression for all rows. |
 | `input_format_values_interpret_expressions` | in v1.1.54112 |  | Yes | For Values format: if field could not be parsed by streaming parser, run SQL parser and try to interpret it as SQL expression. |
@@ -2167,7 +2167,7 @@ Generated at 2023-02-15 15:25:03 (America/Sao_Paulo), covering ClickHouse versio
 | `max_hyperscan_regexp_length` | in v21.9.2.17 |  | Yes | Max length of regexp than can be used in hyperscan multi-match functions. Zero means unlimited. |
 | `max_hyperscan_regexp_total_length` | in v21.9.2.17 |  | Yes | Max total length of all regexps than can be used in hyperscan multi-match functions (per every function). Zero means unlimited. |
 | `max_insert_block_size` | in v1.1.54019 |  | Yes | The maximum block size for insertion, if we control the creation of blocks for insertion. |
-| `max_insert_delayed_streams_for_parallel_write` | in v22.4.1.2305 |  | Yes | The maximum number of streams (columns) to delay final part flush. Default - auto (1000 in case of underlying storage supports parallel write, for example S3 and disabled otherwise) |
+| `max_insert_delayed_streams_for_parallel_write` | in v22.3.18.37 |  | Yes | The maximum number of streams (columns) to delay final part flush. Default - auto (1000 in case of underlying storage supports parallel write, for example S3 and disabled otherwise) |
 | `max_insert_threads` | in v20.3.2.1 |  | Yes | The maximum number of threads to execute the INSERT SELECT query. Values 0 or 1 means that INSERT SELECT is not run in parallel. Higher values will lead to higher memory usage. Parallel INSERT SELECT has effect only if the SELECT part is run on parallel, see \'max_threads\' setting. |
 | `max_joined_block_size_rows` | in v20.3.2.1 |  | Yes | Maximum block size for JOIN result (if join algorithm supports it). 0 means unlimited. |
 | `max_limit_for_ann_queries` | in v22.9.1.2603 |  | Yes | Maximum limit value for using ANN indexes is used to prevent memory overflow in search queries for indexes |
@@ -2401,8 +2401,8 @@ Generated at 2023-02-15 15:25:03 (America/Sao_Paulo), covering ClickHouse versio
 | `remerge_sort_lowered_memory_bytes_ratio` | in v21.1.2.15 |  | Yes | If memory usage after remerge does not reduced by this ratio, remerge will be disabled. |
 | `remote_filesystem_read_method` | in v21.11.2.2 |  | Yes | Method of reading data from remote filesystem, one of: read, read_threadpool. |
 | `remote_filesystem_read_prefetch` | in v21.10.2.15 |  | Yes | Should use prefetching when reading data from remote filesystem. |
-| `remote_fs_cache_max_wait_sec` | in v22.3.2.1 |  | up to v22.3.17.13 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
-| `remote_fs_enable_cache` | in v22.3.2.1 |  | up to v22.3.17.13 | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
+| `remote_fs_cache_max_wait_sec` | in v22.3.2.1 |  | up to v22.3.18.37 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
+| `remote_fs_enable_cache` | in v22.3.2.1 |  | up to v22.3.18.37 | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
 | `remote_fs_read_backoff_max_tries` | in v21.11.2.2 |  | Yes | Max attempts to read with backoff |
 | `remote_fs_read_max_backoff_ms` | in v21.11.2.2 |  | Yes | Max wait time when trying to read data for remote disk |
 | `remote_read_min_bytes_for_seek` | in v21.12.2.17 |  | Yes | Min bytes required for remote read (url, s3) to do seek, instead for read with ignore. |
@@ -2508,6 +2508,7 @@ Generated at 2023-02-15 15:25:03 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_nullable_key` | in v20.7.2.30 | Yes | `0` from `20.7.2.30` to `latest` |
 | `allow_remote_fs_zero_copy_replication` | in v21.8.3.44 | Yes | `0` from `21.8.3.44` to `latest` / `1` from `21.9.2.17` to `22.7.7.24` |
 | `allow_s3_zero_copy_replication` | in v21.4.3.21 | up to v21.7.11.3 | `0` from `21.4.3.21` to `21.7.11.3` |
+| `allow_vertical_merges_from_compact_to_wide_parts` | in v22.3.18.37 | up to v22.3.18.37 | `0` from `22.3.18.37` to `22.3.18.37` |
 | `always_fetch_merged_part` | in v20.4.2.9 | Yes | `0` from `20.4.2.9` to `latest` |
 | `assign_part_uuids` | in v20.12.2.1 | Yes | `0` from `20.12.2.1` to `latest` |
 | `async_block_ids_cache_min_update_interval_ms` | in v23.1.1.3077 | Yes | `100` from `23.1.1.3077` to `latest` |
@@ -2549,8 +2550,8 @@ Generated at 2023-02-15 15:25:03 (America/Sao_Paulo), covering ClickHouse versio
 | `max_files_to_modify_in_alter_columns` | in v18.10.3 | Yes | `75` from `18.10.3.0` to `latest` |
 | `max_files_to_remove_in_alter_columns` | in v18.10.3 | Yes | `50` from `18.10.3.0` to `latest` |
 | `max_number_of_merges_with_ttl_in_pool` | in v20.10.2.20 | Yes | `2` from `20.10.2.20` to `latest` |
-| `max_part_loading_threads` | in v19.14.3.3 | Yes | `\\auto(12)\\` from `22.10.7.13` to `latest` / `\\auto(4)\\` from `20.7.2.30` to `22.9.7.34` / `\\auto(6)\\` from `22.8.13.20` to `22.8.13.21` / `\\auto(8)\\` from `22.10.1.1877` to `22.12.3.5` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
-| `max_part_removal_threads` | in v19.14.3.3 | Yes | `\\auto(12)\\` from `22.10.7.13` to `latest` / `\\auto(4)\\` from `20.7.2.30` to `22.9.7.34` / `\\auto(6)\\` from `22.8.13.20` to `22.8.13.21` / `\\auto(8)\\` from `22.10.1.1877` to `22.12.3.5` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
+| `max_part_loading_threads` | in v19.14.3.3 | Yes | `\\auto(12)\\` from `22.10.7.13` to `latest` / `\\auto(4)\\` from `20.7.2.30` to `22.9.7.34` / `\\auto(6)\\` from `22.3.18.37` to `22.8.13.21` / `\\auto(8)\\` from `22.10.1.1877` to `22.12.3.5` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
+| `max_part_removal_threads` | in v19.14.3.3 | Yes | `\\auto(12)\\` from `22.10.7.13` to `latest` / `\\auto(4)\\` from `20.7.2.30` to `22.9.7.34` / `\\auto(6)\\` from `22.3.18.37` to `22.8.13.21` / `\\auto(8)\\` from `22.10.1.1877` to `22.12.3.5` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
 | `max_partitions_to_read` | in v21.1.2.15 | Yes | `-1` from `21.1.2.15` to `latest` |
 | `max_parts_in_total` | in v19.8.3.8 | Yes | `100000` from `19.8.3.8` to `latest` |
 | `max_parts_to_merge_at_once` | in v21.7.2.7 | Yes | `100` from `21.7.2.7` to `latest` |
