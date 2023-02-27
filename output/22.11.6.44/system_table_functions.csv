@@ -1,0 +1,72 @@
+"ch_version","name","description","allow_readonly"
+"22.11.6.44","viewExplain","
+Returns result of EXPLAIN query.
+
+The function should not be called directly but can be invoked via `SELECT * FROM (EXPLAIN <query>)`.
+
+You can use this query to process the result of EXPLAIN further using SQL (e.g., in tests).
+
+Example:
+[example:1]
+
+",0
+"22.11.6.44","format","",0
+"22.11.6.44","dictionary","",0
+"22.11.6.44","mysql","",0
+"22.11.6.44","viewIfPermitted","",1
+"22.11.6.44","odbc","",0
+"22.11.6.44","hive","",0
+"22.11.6.44","postgresql","",0
+"22.11.6.44","hdfsCluster","",0
+"22.11.6.44","oss","",0
+"22.11.6.44","deltaLake","The table function can be used to read the DeltaLake table stored on object store.",0
+"22.11.6.44","cosn","",0
+"22.11.6.44","meilisearch","",0
+"22.11.6.44","jdbc","",0
+"22.11.6.44","zeros_mt","
+Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+
+This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+
+In contrast to the `zeros_mt`, this table function is using single thread for data generation.
+
+Example:
+[example:1]
+This query will test the speed of `randomPrintableASCII` function using single thread.
+
+See also the `system.zeros` table.
+",0
+"22.11.6.44","mongodb","",0
+"22.11.6.44","generateRandom","",1
+"22.11.6.44","remote","",0
+"22.11.6.44","input","",0
+"22.11.6.44","s3Cluster","",0
+"22.11.6.44","values","",1
+"22.11.6.44","s3","",0
+"22.11.6.44","url","",0
+"22.11.6.44","hudi","The table function can be used to read the Hudi table stored on object store.",0
+"22.11.6.44","remoteSecure","",0
+"22.11.6.44","sqlite","",0
+"22.11.6.44","zeros","
+Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+
+This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+
+In contrast to the `zeros`, this table function is using multiple threads for data generation, according to the `max_threads` setting.
+
+Example:
+[example:1]
+This query will test the speed of `randomPrintableASCII` function using multiple threads.
+
+See also the `system.zeros` table.
+",0
+"22.11.6.44","view","",1
+"22.11.6.44","numbers_mt","",1
+"22.11.6.44","executable","",0
+"22.11.6.44","clusterAllReplicas","",1
+"22.11.6.44","cluster","",1
+"22.11.6.44","merge","",0
+"22.11.6.44","null","",1
+"22.11.6.44","file","",0
+"22.11.6.44","hdfs","",0
+"22.11.6.44","numbers","",1
