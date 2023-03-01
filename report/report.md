@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-02-27 12:19:33 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.2.1.2537
+Generated at 2023-03-01 12:49:50 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.2.2.20
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -1928,8 +1928,8 @@ Generated at 2023-02-27 12:19:33 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_conditional_computation` | in v1.1.54388 |  | up to v18.14.19 | Enable conditional computations |
 | `enable_debug_queries` | in v18.14.9 | in v21.7.2.7 | Yes | Enables debug queries such as AST. |
 | `enable_early_constant_folding` | in v19.16.15.69 |  | Yes | Setting from future versions. Backported fo rolling update. |
-| `enable_experimental_query_result_cache` | in v23.1.1.3077 |  | up to v23.1.3.5 | Store and retrieve results of SELECT queries in/from the query result cache |
-| `enable_experimental_query_result_cache_passive_usage` | in v23.1.1.3077 |  | up to v23.1.3.5 | Retrieve results of SELECT queries from the query result cache |
+| `enable_experimental_query_result_cache` | in v23.1.1.3077 |  | up to v23.1.4.58 | Store and retrieve results of SELECT queries in/from the query result cache |
+| `enable_experimental_query_result_cache_passive_usage` | in v23.1.1.3077 |  | up to v23.1.4.58 | Retrieve results of SELECT queries from the query result cache |
 | `enable_extended_results_for_datetime_functions` | in v22.9.1.2603 |  | Yes | Enable date functions like toLastDayOfMonth return Date32 results (instead of Date results) for Date32/DateTime64 arguments. |
 | `enable_filesystem_cache` | in v22.4.1.2305 |  | Yes | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
 | `enable_filesystem_cache_log` | in v22.5.1.2079 |  | Yes | Allows to record the filesystem caching log for each query |
@@ -2228,7 +2228,7 @@ Generated at 2023-02-27 12:19:33 (America/Sao_Paulo), covering ClickHouse versio
 | `max_partitions_per_insert_block` | in v19.5.2.6 |  | Yes | Limit maximum number of partitions in single INSERTed block. Zero means unlimited. Throw exception if the block contains too many partitions. This setting is a safety threshold, because using large number of partitions is a common misconception. |
 | `max_partitions_to_read` | in v21.1.2.15 |  | Yes | Limit the max number of partitions that can be accessed in one query. <= 0 means unlimited. |
 | `max_pipeline_depth` | in v1.1.54019 | in v22.9.1.2603 | Yes |  |
-| `max_query_cache_size` | in v22.6.1.1985 |  | up to v23.1.3.5 | Max remote filesystem cache size that can be used by a single query |
+| `max_query_cache_size` | in v22.6.1.1985 |  | up to v23.1.4.58 | Max remote filesystem cache size that can be used by a single query |
 | `max_query_size` | in v1.1.54019 |  | Yes | Which part of the query can be read into RAM for parsing (the remaining data for INSERT, if any, is read later) |
 | `max_read_buffer_size` | in v1.1.54019 |  | Yes | The maximum size of the buffer to read from the filesystem. |
 | `max_remote_read_network_bandwidth_for_server` | in v22.7.1.2484 |  | Yes | The maximum speed of data exchange over the network in bytes per second for read. Zero means unlimited. Only has meaning at server startup. |
@@ -2431,11 +2431,11 @@ Generated at 2023-02-27 12:19:33 (America/Sao_Paulo), covering ClickHouse versio
 | `query_plan_remove_redundant_sorting` | in v23.1.1.3077 |  | Yes | Remove redundant sorting in query plan. For example, sorting steps related to ORDER BY clauses in subqueries |
 | `query_profiler_cpu_time_period_ns` | in v19.13.1.11 |  | Yes | "Highly experimental. Period for CPU clock timer of query profiler (in nanoseconds). Set 0 value to turn off CPU clock query profiler. Recommended value is at least 10000000 (100 times a second) for single queries or 1000000000 (once a second) for cluster-wide profiling." |
 | `query_profiler_real_time_period_ns` | in v19.13.1.11 |  | Yes | "Highly experimental. Period for real clock timer of query profiler (in nanoseconds). Set 0 value to turn off real clock query profiler. Recommended value is at least 10000000 (100 times a second) for single queries or 1000000000 (once a second) for cluster-wide profiling." |
-| `query_result_cache_min_query_duration` | in v23.1.1.3077 |  | up to v23.1.3.5 | Minimum time in milliseconds for a query to run for its result to be stored in the query result cache. |
-| `query_result_cache_min_query_runs` | in v23.1.1.3077 |  | up to v23.1.3.5 | Minimum number a SELECT query must run before its result is stored in the query result cache |
-| `query_result_cache_share_between_users` | in v23.1.1.3077 |  | up to v23.1.3.5 | Allow other users to read entry in the query result cache |
-| `query_result_cache_store_results_of_queries_with_nondeterministic_functions` | in v23.1.1.3077 |  | up to v23.1.3.5 | Store results of queries with non-deterministic functions (e.g. rand(), now()) in the query result cache |
-| `query_result_cache_ttl` | in v23.1.1.3077 |  | up to v23.1.3.5 | After this time in seconds entries in the query result cache become stale |
+| `query_result_cache_min_query_duration` | in v23.1.1.3077 |  | up to v23.1.4.58 | Minimum time in milliseconds for a query to run for its result to be stored in the query result cache. |
+| `query_result_cache_min_query_runs` | in v23.1.1.3077 |  | up to v23.1.4.58 | Minimum number a SELECT query must run before its result is stored in the query result cache |
+| `query_result_cache_share_between_users` | in v23.1.1.3077 |  | up to v23.1.4.58 | Allow other users to read entry in the query result cache |
+| `query_result_cache_store_results_of_queries_with_nondeterministic_functions` | in v23.1.1.3077 |  | up to v23.1.4.58 | Store results of queries with non-deterministic functions (e.g. rand(), now()) in the query result cache |
+| `query_result_cache_ttl` | in v23.1.1.3077 |  | up to v23.1.4.58 | After this time in seconds entries in the query result cache become stale |
 | `queue_max_wait_ms` | in v1.1.54019 |  | Yes | The wait time in the request queue, if the number of concurrent requests exceeds the maximum. |
 | `rabbitmq_max_wait_ms` | in v20.6.3.28 |  | Yes | The wait time for reading from RabbitMQ before retry. |
 | `read_backoff_max_throughput` | in v1.1.54019 |  | Yes | Count events when the bandwidth is less than that many bytes per second. |
