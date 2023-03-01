@@ -1,0 +1,2313 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to","create_query","origin","description"
+"23.2.2.20","polygonsEqualsCartesian",0,0,"","","System",""
+"23.2.2.20","h3GetPentagonIndexes",0,0,"","","System",""
+"23.2.2.20","JSON_VALUE",0,0,"","","System",""
+"23.2.2.20","intHash64",0,0,"","","System",""
+"23.2.2.20","intHash32",0,0,"","","System",""
+"23.2.2.20","multiSearchFirstIndexUTF8",0,0,"","","System",""
+"23.2.2.20","getSetting",0,0,"","","System",""
+"23.2.2.20","isValidUTF8",0,0,"","","System",""
+"23.2.2.20","toIntervalHour",0,0,"","","System",""
+"23.2.2.20","toIntervalMinute",0,0,"","","System",""
+"23.2.2.20","toIntervalMillisecond",0,0,"","","System",""
+"23.2.2.20","parseDateTime64BestEffortUSOrZero",0,0,"","","System",""
+"23.2.2.20","parseDateTime64BestEffortOrZero",0,0,"","","System",""
+"23.2.2.20","parseDateTime64BestEffort",0,0,"","","System",""
+"23.2.2.20","parseDateTime32BestEffort",0,0,"","","System",""
+"23.2.2.20","parseDateTimeBestEffortOrNull",0,0,"","","System",""
+"23.2.2.20","parseDateTimeBestEffortOrZero",0,0,"","","System",""
+"23.2.2.20","toIPv6OrNull",0,0,"","","System",""
+"23.2.2.20","toIPv4OrNull",0,0,"","","System",""
+"23.2.2.20","toUUIDOrNull",0,0,"","","System",""
+"23.2.2.20","parseDateTimeBestEffort",0,0,"","","System",""
+"23.2.2.20","toDecimal128OrNull",0,0,"","","System",""
+"23.2.2.20","toDecimal64OrNull",0,0,"","","System",""
+"23.2.2.20","toDecimal32OrNull",0,0,"","","System",""
+"23.2.2.20","toDateTimeOrNull",0,0,"","","System",""
+"23.2.2.20","toDate32OrNull",0,0,"","","System",""
+"23.2.2.20","toDateOrNull",0,0,"","","System",""
+"23.2.2.20","toFloat64OrNull",0,0,"","","System",""
+"23.2.2.20","toInt256OrNull",0,0,"","","System",""
+"23.2.2.20","toInt128OrNull",0,0,"","","System",""
+"23.2.2.20","toInt64OrNull",0,0,"","","System",""
+"23.2.2.20","toUInt128OrNull",0,0,"","","System",""
+"23.2.2.20","toUInt64OrNull",0,0,"","","System",""
+"23.2.2.20","toUInt8OrNull",0,0,"","","System",""
+"23.2.2.20","toIPv6OrZero",0,0,"","","System",""
+"23.2.2.20","toIPv4OrZero",0,0,"","","System",""
+"23.2.2.20","toDecimal256OrZero",0,0,"","","System",""
+"23.2.2.20","toDecimal64OrZero",0,0,"","","System",""
+"23.2.2.20","toDecimal32OrZero",0,0,"","","System",""
+"23.2.2.20","toDate32OrZero",0,0,"","","System",""
+"23.2.2.20","toDateOrZero",0,0,"","","System",""
+"23.2.2.20","toFloat64OrZero",0,0,"","","System",""
+"23.2.2.20","toFloat32OrZero",0,0,"","","System",""
+"23.2.2.20","toInt128OrZero",0,0,"","","System",""
+"23.2.2.20","toInt64OrZero",0,0,"","","System",""
+"23.2.2.20","toInt16OrZero",0,0,"","","System",""
+"23.2.2.20","toUInt128OrZero",0,0,"","","System",""
+"23.2.2.20","toUInt32OrZero",0,0,"","","System",""
+"23.2.2.20","toString",0,0,"","","System",""
+"23.2.2.20","toDateTime",0,0,"","","System",""
+"23.2.2.20","toDecimal128",0,0,"","","System",""
+"23.2.2.20","toDecimal64",0,0,"","","System",""
+"23.2.2.20","toFloat64",0,0,"","","System",""
+"23.2.2.20","toFloat32",0,0,"","","System",""
+"23.2.2.20","toInt128",0,0,"","","System",""
+"23.2.2.20","toInt32",0,0,"","","System",""
+"23.2.2.20","toInt8",0,0,"","","System",""
+"23.2.2.20","toUInt256",0,0,"","","System",""
+"23.2.2.20","toUInt64",0,0,"","","System",""
+"23.2.2.20","toDecimal32",0,0,"","","System",""
+"23.2.2.20","toUInt32",0,0,"","","System",""
+"23.2.2.20","toUInt8",0,0,"","","System",""
+"23.2.2.20","blockSize",0,0,"","","System",""
+"23.2.2.20","toUInt16",0,0,"","","System",""
+"23.2.2.20","isNotNull",0,0,"","","System",""
+"23.2.2.20","UUIDStringToNum",0,0,"","","System",""
+"23.2.2.20","roundDown",0,0,"","","System",""
+"23.2.2.20","trunc",0,1,"","","System",""
+"23.2.2.20","ceil",0,1,"","","System",""
+"23.2.2.20","roundBankers",0,0,"","","System",""
+"23.2.2.20","round",0,1,"","","System",""
+"23.2.2.20","regionToName",0,0,"","","System",""
+"23.2.2.20","regionIn",0,0,"","","System",""
+"23.2.2.20","toUUID",0,0,"","","System",""
+"23.2.2.20","regionToCountry",0,0,"","","System",""
+"23.2.2.20","regionToArea",0,0,"","","System",""
+"23.2.2.20","regionToCity",0,0,"","","System",""
+"23.2.2.20","cutQueryString",0,0,"","","System",""
+"23.2.2.20","BLAKE3",0,0,"","","System","
+Calculates BLAKE3 hash string and returns the resulting set of bytes as FixedString.
+This cryptographic hash-function is integrated into ClickHouse with BLAKE3 Rust library.
+The function is rather fast and shows approximately two times faster performance compared to SHA-2, while generating hashes of the same length as SHA-256.
+It returns a BLAKE3 hash as a byte array with type FixedString(32).
+"
+"23.2.2.20","wyHash64",0,0,"","","System",""
+"23.2.2.20","xxHash32",0,0,"","","System",""
+"23.2.2.20","javaHashUTF16LE",0,0,"","","System",""
+"23.2.2.20","javaHash",0,0,"","","System",""
+"23.2.2.20","URLHash",0,0,"","","System",""
+"23.2.2.20","metroHash64",0,0,"","","System",""
+"23.2.2.20","farmHash64",0,0,"","","System",""
+"23.2.2.20","farmFingerprint64",0,0,"","","System",""
+"23.2.2.20","sipHash128ReferenceKeyed",0,0,"","","System","Same as [sipHash128Reference](#hash_functions-siphash128reference) but additionally takes an explicit key argument instead of using a fixed key."
+"23.2.2.20","sipHash128Reference",0,0,"","","System","Like [sipHash128](#hash_functions-siphash128) but implements the 128-bit algorithm from the original authors of SipHash."
+"23.2.2.20","sipHash128",0,0,"","","System",""
+"23.2.2.20","toDate32",0,0,"","","System",""
+"23.2.2.20","lowCardinalityIndices",0,0,"","","System",""
+"23.2.2.20","decrypt",0,0,"","","System",""
+"23.2.2.20","logTrace",0,0,"","","System",""
+"23.2.2.20","toInt16OrNull",0,0,"","","System",""
+"23.2.2.20","timeSlots",0,0,"","","System",""
+"23.2.2.20","stringToH3",0,0,"","","System",""
+"23.2.2.20","asinh",0,0,"","","System",""
+"23.2.2.20","cutWWW",0,0,"","","System",""
+"23.2.2.20","toInt8OrZero",0,0,"","","System",""
+"23.2.2.20","SHA1",0,0,"","","System",""
+"23.2.2.20","MD5",0,0,"","","System",""
+"23.2.2.20","halfMD5",0,0,"","","System",""
+"23.2.2.20","equals",0,0,"","","System",""
+"23.2.2.20","geohashesInBox",0,0,"","","System",""
+"23.2.2.20","JSONExtractKeys",0,0,"","","System",""
+"23.2.2.20","JSONExtractKeysAndValuesRaw",0,0,"","","System",""
+"23.2.2.20","toUInt16OrNull",0,0,"","","System",""
+"23.2.2.20","JSONExtractRaw",0,0,"","","System",""
+"23.2.2.20","JSONExtractString",0,0,"","","System",""
+"23.2.2.20","SHA512",0,0,"","","System",""
+"23.2.2.20","JSONExtractFloat",0,0,"","","System",""
+"23.2.2.20","JSONKey",0,0,"","","System",""
+"23.2.2.20","JSONLength",0,0,"","","System",""
+"23.2.2.20","isValidJSON",0,0,"","","System",""
+"23.2.2.20","cbrt",0,0,"","","System",""
+"23.2.2.20","s2ToGeo",0,0,"","","System",""
+"23.2.2.20","sleepEachRow",0,0,"","","System",""
+"23.2.2.20","windowID",0,0,"","","System",""
+"23.2.2.20","hopStart",0,0,"","","System",""
+"23.2.2.20","hop",0,0,"","","System",""
+"23.2.2.20","detectTonality",0,0,"","","System",""
+"23.2.2.20","toRelativeWeekNum",0,0,"","","System",""
+"23.2.2.20","makeDateTime64",0,0,"","","System",""
+"23.2.2.20","makeDateTime",0,0,"","","System",""
+"23.2.2.20","makeDate",0,0,"","","System",""
+"23.2.2.20","transactionLatestSnapshot",0,0,"","","System",""
+"23.2.2.20","transactionID",0,0,"","","System",""
+"23.2.2.20","extractGroups",0,0,"","","System",""
+"23.2.2.20","__bitWrapperFunc",0,0,"","","System",""
+"23.2.2.20","showCertificate",0,0,"","","System",""
+"23.2.2.20","nested",0,0,"","","System","
+Returns the array of tuples from multiple arrays.
+"
+"23.2.2.20","hashid",0,0,"","","System",""
+"23.2.2.20","h3EdgeLengthM",0,0,"","","System",""
+"23.2.2.20","UUIDNumToString",0,0,"","","System",""
+"23.2.2.20","IPv4StringToNumOrDefault",0,0,"","","System",""
+"23.2.2.20","IPv4NumToStringClassC",0,0,"","","System",""
+"23.2.2.20","IPv4NumToString",0,0,"","","System",""
+"23.2.2.20","isIPv6String",0,0,"","","System",""
+"23.2.2.20","JSON_QUERY",0,0,"","","System",""
+"23.2.2.20","isIPv4String",0,0,"","","System",""
+"23.2.2.20","IPv4CIDRToRange",0,0,"","","System",""
+"23.2.2.20","IPv6CIDRToRange",0,0,"","","System",""
+"23.2.2.20","MACStringToNum",0,0,"","","System",""
+"23.2.2.20","cutIPv6",0,0,"","","System",""
+"23.2.2.20","snowflakeToDateTime64",0,0,"","","System",""
+"23.2.2.20","radians",0,1,"","","System",""
+"23.2.2.20","ifNotFinite",0,0,"","","System",""
+"23.2.2.20","polygonAreaSpherical",0,0,"","","System",""
+"23.2.2.20","base58Encode",0,0,"","","System",""
+"23.2.2.20","currentUser",0,0,"","","System",""
+"23.2.2.20","toIntervalQuarter",0,0,"","","System",""
+"23.2.2.20","multiSearchAny",0,0,"","","System",""
+"23.2.2.20","bitmapContains",0,0,"","","System",""
+"23.2.2.20","bitmapHasAny",0,0,"","","System",""
+"23.2.2.20","bitmapXor",0,0,"","","System",""
+"23.2.2.20","bitmapOr",0,0,"","","System",""
+"23.2.2.20","xxh3",0,0,"","","System","Calculates value of XXH3 64-bit hash function. Refer to https://github.com/Cyan4973/xxHash for detailed documentation."
+"23.2.2.20","bitmapAnd",0,0,"","","System",""
+"23.2.2.20","bitmapAndnotCardinality",0,0,"","","System",""
+"23.2.2.20","IPv6StringToNumOrDefault",0,0,"","","System",""
+"23.2.2.20","bitmapAndnot",0,0,"","","System",""
+"23.2.2.20","bitmapXorCardinality",0,0,"","","System",""
+"23.2.2.20","bitmapOrCardinality",0,0,"","","System",""
+"23.2.2.20","bitmapAndCardinality",0,0,"","","System",""
+"23.2.2.20","bitmapMin",0,0,"","","System",""
+"23.2.2.20","bitmapCardinality",0,0,"","","System",""
+"23.2.2.20","bitmapSubsetLimit",0,0,"","","System",""
+"23.2.2.20","bitmapSubsetInRange",0,0,"","","System",""
+"23.2.2.20","bitmapToArray",0,0,"","","System",""
+"23.2.2.20","bitmapBuild",0,0,"","","System",""
+"23.2.2.20","addSeconds",0,0,"","","System",""
+"23.2.2.20","convertCharset",0,0,"","","System",""
+"23.2.2.20","extractTextFromHTML",0,0,"","","System",""
+"23.2.2.20","bitHammingDistance",0,0,"","","System",""
+"23.2.2.20","polygonsDistanceSpherical",0,0,"","","System",""
+"23.2.2.20","polygonsDistanceCartesian",0,0,"","","System",""
+"23.2.2.20","h3EdgeLengthKm",0,0,"","","System",""
+"23.2.2.20","fuzzBits",0,0,"","","System",""
+"23.2.2.20","toUUIDOrZero",0,0,"","","System",""
+"23.2.2.20","h3GetUnidirectionalEdge",0,0,"","","System",""
+"23.2.2.20","JSONHas",0,0,"","","System",""
+"23.2.2.20","getServerPort",0,0,"","","System",""
+"23.2.2.20","runningDifference",0,0,"","","System",""
+"23.2.2.20","addressToLineWithInlines",0,0,"","","System",""
+"23.2.2.20","monthName",0,1,"","","System",""
+"23.2.2.20","arrayReverseFill",0,0,"","","System",""
+"23.2.2.20","arrayFill",0,0,"","","System",""
+"23.2.2.20","addressToSymbol",0,0,"","","System",""
+"23.2.2.20","aes_decrypt_mysql",0,0,"","","System",""
+"23.2.2.20","pathFull",0,0,"","","System",""
+"23.2.2.20","dictGetDescendants",0,0,"","","System","
+Returns all descendants as if dictGetChildren function was applied level times recursively.
+Accepts 3 parameters: name of the dictionary, key value - expression returning a UInt64-type value, level — hierarchy level - If level = 0 returns all descendants to the end - UInt8
+Returned value: descendants for the key, type of Array(UInt64)
+"
+"23.2.2.20","enabledProfiles",0,0,"","","System",""
+"23.2.2.20","dictHas",0,0,"","","System","
+Checks whether a key is present in a dictionary.
+Accepts 2 parameters: name of the dictionary, key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration.
+Returned value: 0 if there is no key, 1 if there is a key, type of UInt8
+"
+"23.2.2.20","meiliMatch",0,0,"","","System",""
+"23.2.2.20","dictGetIPv4OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the IPv4 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","UTCTimestamp",0,1,"","","System","
+Returns the current date and time at the moment of query analysis. The function is a constant expression.
+Same as `now('UTC')`. Was added only for MySQL support. `now` is preferred.
+
+Example:
+[example:typical]
+"
+"23.2.2.20","dictGetFloat64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Float64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","s2RectAdd",0,0,"","","System",""
+"23.2.2.20","dictGetFloat32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Float32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","dictGetInt64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","today",0,0,"","","System",""
+"23.2.2.20","dictGetUInt32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","h3IsPentagon",0,0,"","","System",""
+"23.2.2.20","dictGetUInt16OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt16 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","arrayIntersect",0,0,"","","System",""
+"23.2.2.20","dictGetUInt8OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt8 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","dictGetString",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the String if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","dictGetIPv6",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the IPv6 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","multiSearchFirstPosition",0,0,"","","System",""
+"23.2.2.20","dictGetDate",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Date if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","dictGetInt16",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int16 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","dictGetUInt64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","dictGetUInt32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","replaceOne",0,0,"","","System",""
+"23.2.2.20","emptyArrayInt16",0,0,"","","System",""
+"23.2.2.20","dictGetOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","JSONExtractKeysAndValues",0,0,"","","System",""
+"23.2.2.20","replicate",0,0,"","","System",""
+"23.2.2.20","arrayCumSumNonNegative",0,0,"","","System",""
+"23.2.2.20","translateUTF8",0,0,"","","System",""
+"23.2.2.20","detectCharset",0,0,"","","System",""
+"23.2.2.20","reinterpretAsInt32",0,0,"","","System",""
+"23.2.2.20","dictGetFloat64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Float64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","arraySlice",0,0,"","","System",""
+"23.2.2.20","toStartOfQuarter",0,0,"","","System",""
+"23.2.2.20","h3ToGeoBoundary",0,0,"","","System",""
+"23.2.2.20","dictGetDateTime",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the DateTime if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","toDateTime64OrZero",0,0,"","","System",""
+"23.2.2.20","subtractSeconds",0,0,"","","System",""
+"23.2.2.20","tid",0,0,"","","System",""
+"23.2.2.20","timezoneOf",0,0,"","","System",""
+"23.2.2.20","bitCount",0,0,"","","System",""
+"23.2.2.20","atan2",0,1,"","","System",""
+"23.2.2.20","dictIsIn",0,0,"","","System","
+Checks the ancestor of a key through the whole hierarchical chain in the dictionary.
+Accepts 3 parameters: name of the dictionary, key to be checked - expression returning a UInt64-type value, alleged ancestor of the key - expression returning a UInt64-type.
+Returned value: 0 if key is not a child of the ancestor, 1 if key is a child of the ancestor or if key is the ancestor, type of UInt8
+"
+"23.2.2.20","base64Encode",0,0,"","","System",""
+"23.2.2.20","globalVariable",0,0,"","","System",""
+"23.2.2.20","divideDecimal",0,0,"","","System","
+Performs division on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These function work significantly slower than usual `divide`.
+In case you don't really need controlled precision and/or need fast computation, consider using [divide](#divide).
+:::
+
+**Syntax**
+
+```sql
+divideDecimal(a, b[, result_scale])
+```
+
+**Arguments**
+
+-   `a` — First value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `b` — Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `result_scale` — Scale of result: [Int/UInt](../../sql-reference/data-types/int-uint.md).
+
+**Returned value**
+
+-   The result of division with given scale.
+
+Type: [Decimal256](../../sql-reference/data-types/decimal.md).
+
+**Example**
+
+```text
+┌─divideDecimal(toDecimal256(-12, 0), toDecimal32(2.1, 1), 10)─┐
+│                                                -5.7142857142 │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**Difference from regular division:**
+```sql
+SELECT toDecimal64(-12, 1) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 1) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+```
+
+```text
+┌─divide(toDecimal64(-12, 1), toDecimal32(2.1, 1))─┐
+│                                             -5.7 │
+└──────────────────────────────────────────────────┘
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+```
+
+```sql
+SELECT toDecimal64(-12, 0) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 0) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+```
+
+```text
+DB::Exception: Decimal result's scale is less than argument's one: While processing toDecimal64(-12, 0) / toDecimal32(2.1, 1). (ARGUMENT_OUT_OF_BOUND)
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+```
+"
+"23.2.2.20","fullHostName",0,0,"","","System",""
+"23.2.2.20","arrayReduceInRanges",0,0,"","","System",""
+"23.2.2.20","ignore",0,0,"","","System",""
+"23.2.2.20","normalizeQuery",0,0,"","","System",""
+"23.2.2.20","subtractMinutes",0,0,"","","System",""
+"23.2.2.20","h3Line",0,0,"","","System",""
+"23.2.2.20","bitTest",0,0,"","","System",""
+"23.2.2.20","ngramSearchCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","bitmapMax",0,0,"","","System",""
+"23.2.2.20","h3GetOriginIndexFromUnidirectionalEdge",0,0,"","","System",""
+"23.2.2.20","ngramDistanceCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","ngramDistance",0,0,"","","System",""
+"23.2.2.20","acos",0,1,"","","System",""
+"23.2.2.20","accurateCastOrNull",0,0,"","","System",""
+"23.2.2.20","dictGetStringOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the String if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","empty",0,0,"","","System",""
+"23.2.2.20","ngramMinHashArg",0,0,"","","System",""
+"23.2.2.20","_CAST",0,1,"","","System",""
+"23.2.2.20","toDayOfYear",0,0,"","","System",""
+"23.2.2.20","bin",0,1,"","","System",""
+"23.2.2.20","bitSlice",0,0,"","","System",""
+"23.2.2.20","JSONExtract",0,0,"","","System",""
+"23.2.2.20","tumbleStart",0,0,"","","System",""
+"23.2.2.20","bitShiftRight",0,0,"","","System",""
+"23.2.2.20","tan",0,1,"","","System",""
+"23.2.2.20","substring",0,1,"","","System",""
+"23.2.2.20","tryBase58Decode",0,0,"","","System",""
+"23.2.2.20","normalizedQueryHash",0,0,"","","System",""
+"23.2.2.20","bitTestAll",0,0,"","","System",""
+"23.2.2.20","pi",0,1,"","","System",""
+"23.2.2.20","randCanonical",0,0,"","","System","
+The function generates pseudo random results with independent and identically distributed uniformly distributed values in [0, 1).
+Non-deterministic. Return type is Float64.
+        "
+"23.2.2.20","rand",0,1,"","","System",""
+"23.2.2.20","readWKTRing",0,0,"","","System",""
+"23.2.2.20","caseWithExpression",0,0,"","","System",""
+"23.2.2.20","MACNumToString",0,0,"","","System",""
+"23.2.2.20","revision",0,1,"","","System",""
+"23.2.2.20","__bitSwapLastTwo",0,0,"","","System",""
+"23.2.2.20","fromModifiedJulianDay",0,0,"","","System",""
+"23.2.2.20","format",0,0,"","","System",""
+"23.2.2.20","dictGetHierarchy",0,0,"","","System","
+Creates an array, containing all the parents of a key in the hierarchical dictionary.
+Accepts 2 parameters: name of the dictionary, key value - expression returning a UInt64-type value.
+Returned value: parents for the key, type of Array(UInt64)
+"
+"23.2.2.20","notEmpty",0,0,"","","System",""
+"23.2.2.20","CRC32",0,1,"","","System",""
+"23.2.2.20","multiSearchFirstPositionUTF8",0,0,"","","System",""
+"23.2.2.20","addMilliseconds",0,0,"","","System",""
+"23.2.2.20","byteSize",0,0,"","","System",""
+"23.2.2.20","intExp2",0,0,"","","System",""
+"23.2.2.20","assumeNotNull",0,0,"","","System",""
+"23.2.2.20","wordShingleMinHashArg",0,0,"","","System",""
+"23.2.2.20","ngramMinHashArgUTF8",0,0,"","","System",""
+"23.2.2.20","ngramMinHashArgCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","cutToFirstSignificantSubdomainRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomain` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"23.2.2.20","wordShingleMinHashUTF8",0,0,"","","System",""
+"23.2.2.20","arrayDifference",0,0,"","","System",""
+"23.2.2.20","wordShingleMinHash",0,0,"","","System",""
+"23.2.2.20","ngramMinHashCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","toMonth",0,0,"","","System",""
+"23.2.2.20","ngramMinHash",0,0,"","","System",""
+"23.2.2.20","formatRowNoNewline",0,0,"","","System",""
+"23.2.2.20","wordShingleSimHashCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","wordShingleSimHashUTF8",0,0,"","","System",""
+"23.2.2.20","arrayCumSum",0,0,"","","System",""
+"23.2.2.20","wordShingleSimHash",0,0,"","","System",""
+"23.2.2.20","finalizeAggregation",0,0,"","","System",""
+"23.2.2.20","ngramSimHashCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","ngramSimHashCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","ngramSimHash",0,0,"","","System",""
+"23.2.2.20","toTimezone",0,0,"","","System",""
+"23.2.2.20","currentDatabase",0,0,"","","System",""
+"23.2.2.20","positiveModulo",0,1,"","","System","
+Calculates the remainder when dividing `a` by `b`. Similar to function `modulo` except that `positiveModulo` always return non-negative number.
+Returns the difference between `a` and the nearest integer not greater than `a` divisible by `b`.
+In other words, the function returning the modulus (modulo) in the terms of Modular Arithmetic.
+        "
+"23.2.2.20","splitByRegexp",0,0,"","","System",""
+"23.2.2.20","rowNumberInBlock",0,0,"","","System",""
+"23.2.2.20","splitByString",0,0,"","","System",""
+"23.2.2.20","s2CapContains",0,0,"","","System",""
+"23.2.2.20","identity",0,0,"","","System",""
+"23.2.2.20","ascii",0,1,"","","System","
+Returns the ASCII code point of the first character of str.  The result type is Int32.
+
+If s is empty, the result is 0. If the first character is not an ASCII character or not part of the Latin-1 Supplement range of UTF-16, the result is undefined)
+        "
+"23.2.2.20","s2RectUnion",0,0,"","","System",""
+"23.2.2.20","ngramDistanceUTF8",0,0,"","","System",""
+"23.2.2.20","MD4",0,0,"","","System",""
+"23.2.2.20","moduloOrZero",0,0,"","","System",""
+"23.2.2.20","sipHash64Keyed",0,0,"","","System",""
+"23.2.2.20","extractAll",0,0,"","","System",""
+"23.2.2.20","age",0,1,"","","System",""
+"23.2.2.20","dictGetOrNull",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise NULL.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","regionToDistrict",0,0,"","","System",""
+"23.2.2.20","unbin",0,1,"","","System",""
+"23.2.2.20","reinterpret",0,0,"","","System",""
+"23.2.2.20","modulo",0,0,"","","System",""
+"23.2.2.20","lowCardinalityKeys",0,0,"","","System",""
+"23.2.2.20","nullInIgnoreSet",0,0,"","","System",""
+"23.2.2.20","geoToS2",0,0,"","","System",""
+"23.2.2.20","blockSerializedSize",0,0,"","","System",""
+"23.2.2.20","dateTrunc",0,0,"","","System",""
+"23.2.2.20","generateUUIDv4",0,0,"","","System",""
+"23.2.2.20","h3ExactEdgeLengthRads",0,0,"","","System",""
+"23.2.2.20","JSONExtractBool",0,0,"","","System",""
+"23.2.2.20","tupleHammingDistance",0,0,"","","System",""
+"23.2.2.20","ngramSearchUTF8",0,0,"","","System",""
+"23.2.2.20","getTypeSerializationStreams",0,0,"","","System",""
+"23.2.2.20","minSampleSizeConversion",0,0,"","","System",""
+"23.2.2.20","jumpConsistentHash",0,0,"","","System",""
+"23.2.2.20","parseTimeDelta",0,0,"","","System",""
+"23.2.2.20","tuplePlus",0,0,"","","System",""
+"23.2.2.20","defaultValueOfTypeName",0,0,"","","System",""
+"23.2.2.20","formatReadableSize",0,0,"","","System",""
+"23.2.2.20","toNullable",0,0,"","","System",""
+"23.2.2.20","concat",0,1,"","","System",""
+"23.2.2.20","demangle",0,0,"","","System",""
+"23.2.2.20","arrayStringConcat",0,0,"","","System",""
+"23.2.2.20","splitByNonAlpha",0,0,"","","System",""
+"23.2.2.20","hasSubstr",0,0,"","","System",""
+"23.2.2.20","toUInt64OrDefault",0,0,"","","System",""
+"23.2.2.20","__bitBoolMaskAnd",0,0,"","","System",""
+"23.2.2.20","h3GetIndexesFromUnidirectionalEdge",0,0,"","","System",""
+"23.2.2.20","sipHash64",0,0,"","","System",""
+"23.2.2.20","randNormal",0,0,"","","System","
+Returns a random number from the normal distribution.
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","catboostEvaluate",0,0,"","","System",""
+"23.2.2.20","divide",0,0,"","","System",""
+"23.2.2.20","encrypt",0,0,"","","System",""
+"23.2.2.20","intDivOrZero",0,0,"","","System",""
+"23.2.2.20","minus",0,0,"","","System",""
+"23.2.2.20","ngramMinHashUTF8",0,0,"","","System",""
+"23.2.2.20","sqrt",0,1,"","","System",""
+"23.2.2.20","ngramMinHashArgCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","endsWith",0,0,"","","System",""
+"23.2.2.20","toYear",0,0,"","","System",""
+"23.2.2.20","dictGetIPv6OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the IPv6 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","evalMLMethod",0,0,"","","System",""
+"23.2.2.20","emptyArrayInt32",0,0,"","","System",""
+"23.2.2.20","extract",0,0,"","","System",""
+"23.2.2.20","multiSearchFirstIndexCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","rowNumberInAllBlocks",0,0,"","","System",""
+"23.2.2.20","countDigits",0,0,"","","System",""
+"23.2.2.20","replaceRegexpOne",0,0,"","","System",""
+"23.2.2.20","factorial",0,1,"","","System","
+Computes the factorial of an integer value. It works with any native integer type including UInt(8|16|32|64) and Int(8|16|32|64). The return type is UInt64.
+
+The factorial of 0 is 1. Likewise, the factorial() function returns 1 for any negative value. The maximum positive value for the input argument is 20, a value of 21 or greater will cause exception throw.
+"
+"23.2.2.20","tryBase64Decode",0,0,"","","System",""
+"23.2.2.20","mapFilter",0,0,"","","System",""
+"23.2.2.20","toStartOfMinute",0,0,"","","System",""
+"23.2.2.20","LpNormalize",0,0,"","","System",""
+"23.2.2.20","tokens",0,0,"","","System",""
+"23.2.2.20","parseDateTime32BestEffortOrNull",0,0,"","","System",""
+"23.2.2.20","cutToFirstSignificantSubdomainWithWWW",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"", without stripping ""www""."
+"23.2.2.20","wordShingleSimHashCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","bitXor",0,0,"","","System",""
+"23.2.2.20","lcm",0,0,"","","System",""
+"23.2.2.20","detectLanguage",0,0,"","","System",""
+"23.2.2.20","formatRow",0,0,"","","System",""
+"23.2.2.20","countMatchesCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","toFloat32OrNull",0,0,"","","System",""
+"23.2.2.20","h3IndexesAreNeighbors",0,0,"","","System",""
+"23.2.2.20","tupleDivideByNumber",0,0,"","","System",""
+"23.2.2.20","caseWithoutExpression",0,0,"","","System",""
+"23.2.2.20","fromUnixTimestamp64Milli",0,0,"","","System",""
+"23.2.2.20","randLogNormal",0,0,"","","System","
+Returns a random number from the lognormal distribution (a distribution of a random variable whose logarithm is normally distributed).
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","generateULID",0,0,"","","System","
+Generates a Universally Unique Lexicographically Sortable Identifier (ULID).
+This function takes an optional argument, the value of which is discarded to generate different values in case the function is called multiple times.
+The function returns a value of type FixedString(26).
+"
+"23.2.2.20","bar",0,0,"","","System",""
+"23.2.2.20","fromModifiedJulianDayOrNull",0,0,"","","System",""
+"23.2.2.20","bitmaskToList",0,0,"","","System",""
+"23.2.2.20","shardCount",0,0,"","","System",""
+"23.2.2.20","shardNum",0,0,"","","System",""
+"23.2.2.20","geoDistance",0,0,"","","System",""
+"23.2.2.20","greatCircleDistance",0,0,"","","System",""
+"23.2.2.20","IPv6StringToNum",0,0,"","","System",""
+"23.2.2.20","dictGetInt64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","greatCircleAngle",0,0,"","","System",""
+"23.2.2.20","toUnixTimestamp",0,0,"","","System",""
+"23.2.2.20","h3GetRes0Indexes",0,0,"","","System",""
+"23.2.2.20","toIntervalMonth",0,0,"","","System",""
+"23.2.2.20","defaultProfiles",0,0,"","","System",""
+"23.2.2.20","arrayReverse",0,0,"","","System",""
+"23.2.2.20","now64",0,1,"","","System",""
+"23.2.2.20","reverseDNSQuery",0,0,"","","System","Performs a reverse DNS query to get the PTR records associated with the IP address.
+
+                **Syntax**
+
+                ``` sql
+                reverseDNSQuery(address)
+                ```
+
+                This function performs reverse DNS resolutions on both IPv4 and IPv6.
+
+                **Arguments**
+
+                -   `address` — An IPv4 or IPv6 address. [String](../../sql-reference/data-types/string.md).
+
+                **Returned value**
+
+                -   Associated domains (PTR records).
+
+                Type: Type: [Array(String)](../../sql-reference/data-types/array.md).
+
+                **Example**
+
+                Query:
+
+                ``` sql
+                SELECT reverseDNSQuery('192.168.0.2');
+                ```
+
+                Result:
+
+                ``` text
+                ┌─reverseDNSQuery('192.168.0.2')────────────┐
+                │ ['test2.example.com','test3.example.com'] │
+                └───────────────────────────────────────────┘
+                ```
+                "
+"23.2.2.20","extractAllGroupsHorizontal",0,0,"","","System",""
+"23.2.2.20","h3ExactEdgeLengthKm",0,0,"","","System",""
+"23.2.2.20","arrayFilter",0,0,"","","System",""
+"23.2.2.20","defaultRoles",0,0,"","","System",""
+"23.2.2.20","toQuarter",0,0,"","","System",""
+"23.2.2.20","countMatches",0,0,"","","System",""
+"23.2.2.20","enabledRoles",0,0,"","","System",""
+"23.2.2.20","currentRoles",0,0,"","","System",""
+"23.2.2.20","dateTimeToSnowflake",0,0,"","","System",""
+"23.2.2.20","cutToFirstSignificantSubdomain",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"" (see documentation of the `firstSignificantSubdomain`)."
+"23.2.2.20","arrayEnumerateUniqRanked",0,0,"","","System",""
+"23.2.2.20","CRC64",0,1,"","","System",""
+"23.2.2.20","emptyArrayDate",0,0,"","","System",""
+"23.2.2.20","CRC32IEEE",0,1,"","","System",""
+"23.2.2.20","erf",0,0,"","","System",""
+"23.2.2.20","trimBoth",0,0,"","","System",""
+"23.2.2.20","reinterpretAsUInt8",0,0,"","","System",""
+"23.2.2.20","atanh",0,0,"","","System",""
+"23.2.2.20","encodeURLComponent",0,0,"","","System",""
+"23.2.2.20","wordShingleMinHashArgCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","h3GetResolution",0,0,"","","System",""
+"23.2.2.20","ngramSearch",0,0,"","","System",""
+"23.2.2.20","lessOrEquals",0,0,"","","System",""
+"23.2.2.20","subtractQuarters",0,0,"","","System",""
+"23.2.2.20","fromUnixTimestamp64Nano",0,0,"","","System",""
+"23.2.2.20","URLPathHierarchy",0,0,"","","System",""
+"23.2.2.20","h3HexRing",0,0,"","","System",""
+"23.2.2.20","h3GetUnidirectionalEdgesFromHexagon",0,0,"","","System",""
+"23.2.2.20","simpleJSONExtractUInt",0,0,"","","System",""
+"23.2.2.20","toDecimal64OrDefault",0,0,"","","System",""
+"23.2.2.20","ngrams",0,0,"","","System",""
+"23.2.2.20","domain",0,0,"","","System","
+Extracts the hostname from a URL.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        "
+"23.2.2.20","arrayPushBack",0,0,"","","System",""
+"23.2.2.20","hopEnd",0,0,"","","System",""
+"23.2.2.20","arrayAvg",0,0,"","","System",""
+"23.2.2.20","degrees",0,1,"","","System",""
+"23.2.2.20","concatWithSeparator",0,0,"","","System","
+Returns the concatenation strings separated by string separator. Syntax: concatWithSeparator(sep, expr1, expr2, expr3...)
+        "
+"23.2.2.20","multiSearchAnyUTF8",0,0,"","","System",""
+"23.2.2.20","mapApply",0,0,"","","System",""
+"23.2.2.20","atan",0,1,"","","System",""
+"23.2.2.20","formatDateTimeInJodaSyntax",0,0,"","","System",""
+"23.2.2.20","IPv4StringToNum",0,0,"","","System",""
+"23.2.2.20","positionUTF8",0,0,"","","System",""
+"23.2.2.20","hasToken",0,0,"","","System","Performs lookup of needle in haystack using tokenbf_v1 index."
+"23.2.2.20","hypot",0,1,"","","System",""
+"23.2.2.20","protocol",0,0,"","","System",""
+"23.2.2.20","if",0,1,"","","System",""
+"23.2.2.20","toIntervalSecond",0,0,"","","System",""
+"23.2.2.20","kostikConsistentHash",0,0,"","","System",""
+"23.2.2.20","regionToContinent",0,0,"","","System",""
+"23.2.2.20","makeDate32",0,0,"","","System",""
+"23.2.2.20","ilike",0,0,"","","System",""
+"23.2.2.20","toUInt64OrZero",0,0,"","","System",""
+"23.2.2.20","dictGetUInt16",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt16 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","globalNotNullInIgnoreSet",0,0,"","","System",""
+"23.2.2.20","h3GetUnidirectionalEdgeBoundary",0,0,"","","System",""
+"23.2.2.20","globalNullInIgnoreSet",0,0,"","","System",""
+"23.2.2.20","hasAll",0,0,"","","System",""
+"23.2.2.20","toTime",0,0,"","","System",""
+"23.2.2.20","globalNotInIgnoreSet",0,0,"","","System",""
+"23.2.2.20","splitByChar",0,0,"","","System",""
+"23.2.2.20","toRelativeDayNum",0,0,"","","System",""
+"23.2.2.20","notInIgnoreSet",0,0,"","","System",""
+"23.2.2.20","globalInIgnoreSet",0,0,"","","System",""
+"23.2.2.20","dictGetUUID",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UUID if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","inIgnoreSet",0,0,"","","System",""
+"23.2.2.20","arrayConcat",0,0,"","","System",""
+"23.2.2.20","globalNotNullIn",0,0,"","","System",""
+"23.2.2.20","notNullIn",0,0,"","","System",""
+"23.2.2.20","globalNullIn",0,0,"","","System",""
+"23.2.2.20","dateTime64ToSnowflake",0,0,"","","System",""
+"23.2.2.20","dictGetInt8OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int8 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","addressToLine",0,0,"","","System",""
+"23.2.2.20","globalNotIn",0,0,"","","System",""
+"23.2.2.20","ifNull",0,1,"","","System",""
+"23.2.2.20","normalizeQueryKeepNames",0,0,"","","System",""
+"23.2.2.20","xxHash64",0,0,"","","System",""
+"23.2.2.20","in",0,0,"","","System",""
+"23.2.2.20","firstSignificantSubdomain",0,0,"","","System","
+Returns the ""first significant subdomain"".
+
+The first significant subdomain is a second-level domain if it is 'com', 'net', 'org', or 'co'.
+Otherwise, it is a third-level domain.
+
+For example, firstSignificantSubdomain('https://news.clickhouse.com/') = 'clickhouse', firstSignificantSubdomain ('https://news.clickhouse.com.tr/') = 'clickhouse'.
+
+The list of ""insignificant"" second-level domains and other implementation details may change in the future.
+        "
+"23.2.2.20","h3HexAreaKm2",0,0,"","","System",""
+"23.2.2.20","rand64",0,0,"","","System",""
+"23.2.2.20","connectionId",0,1,"","","System",""
+"23.2.2.20","ngramDistanceCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","startsWith",0,0,"","","System",""
+"23.2.2.20","initialQueryID",0,0,"","","System",""
+"23.2.2.20","murmurHash2_64",0,0,"","","System",""
+"23.2.2.20","h3GetBaseCell",0,0,"","","System",""
+"23.2.2.20","bitmapHasAll",0,0,"","","System",""
+"23.2.2.20","base58Decode",0,0,"","","System",""
+"23.2.2.20","regionToTopContinent",0,0,"","","System",""
+"23.2.2.20","cityHash64",0,0,"","","System",""
+"23.2.2.20","intDiv",0,0,"","","System",""
+"23.2.2.20","intExp10",0,0,"","","System",""
+"23.2.2.20","errorCodeToName",0,0,"","","System",""
+"23.2.2.20","fromUnixTimestampInJodaSyntax",0,0,"","","System",""
+"23.2.2.20","log",0,1,"","","System",""
+"23.2.2.20","randomFixedString",0,0,"","","System",""
+"23.2.2.20","toWeek",0,0,"","","System",""
+"23.2.2.20","toStartOfHour",0,0,"","","System",""
+"23.2.2.20","isDecimalOverflow",0,0,"","","System",""
+"23.2.2.20","encodeURLFormComponent",0,0,"","","System",""
+"23.2.2.20","getSizeOfEnumType",0,0,"","","System",""
+"23.2.2.20","detectLanguageMixed",0,0,"","","System",""
+"23.2.2.20","tumble",0,0,"","","System",""
+"23.2.2.20","toStartOfInterval",0,0,"","","System",""
+"23.2.2.20","hasTokenCaseInsensitiveOrNull",0,1,"","","System","Performs case insensitive lookup of needle in haystack using tokenbf_v1 index. Returns null if needle is ill-formed."
+"23.2.2.20","multiFuzzyMatchAnyIndex",0,0,"","","System",""
+"23.2.2.20","isZeroOrNull",0,0,"","","System",""
+"23.2.2.20","lower",0,1,"","","System",""
+"23.2.2.20","countEqual",0,0,"","","System",""
+"23.2.2.20","JSONArrayLength",0,0,"","","System","Returns the number of elements in the outermost JSON array. The function returns NULL if input JSON string is invalid."
+"23.2.2.20","asin",0,1,"","","System","
+Calculates the arcsine of the argument.
+
+Takes arbitrary numeric type, which includes floating point and integer numbers, as well as big integers and decimals and returns Float64.
+
+For arguments in range [-1, 1] it returns the value in range of [-pi() / 2, pi() / 2].
+
+It represents an inverse function to function 'sin' on this range:
+[example:inverse]
+
+It always returns Float64, even if the argument has Float32 type:
+[example:float32]
+
+For arguments outside of this range, it returns nan:
+[example:nan]
+
+Every self-respectful data scientist knows how to apply arcsine to improve ads click-through rate with ClickHouse.
+For more details, see [https://en.wikipedia.org/wiki/Inverse_trigonometric_functions].
+"
+"23.2.2.20","left",0,1,"","","System",""
+"23.2.2.20","runningDifferenceStartingWithFirstValue",0,0,"","","System",""
+"23.2.2.20","h3CellAreaM2",0,0,"","","System",""
+"23.2.2.20","h3PointDistM",0,0,"","","System",""
+"23.2.2.20","tumbleEnd",0,0,"","","System",""
+"23.2.2.20","isInfinite",0,0,"","","System",""
+"23.2.2.20","lemmatize",0,0,"","","System",""
+"23.2.2.20","reverseUTF8",0,0,"","","System",""
+"23.2.2.20","murmurHash3_64",0,0,"","","System",""
+"23.2.2.20","rightPad",0,0,"","","System",""
+"23.2.2.20","bitNot",0,0,"","","System",""
+"23.2.2.20","lengthUTF8",0,0,"","","System",""
+"23.2.2.20","toStartOfFiveMinutes",0,0,"","","System",""
+"23.2.2.20","reinterpretAsUInt128",0,0,"","","System",""
+"23.2.2.20","lgamma",0,0,"","","System",""
+"23.2.2.20","toInt16",0,0,"","","System",""
+"23.2.2.20","reverse",0,1,"","","System",""
+"23.2.2.20","filesystemUnreserved",0,0,"","","System",""
+"23.2.2.20","filesystemCapacity",0,0,"","","System",""
+"23.2.2.20","reinterpretAsDate",0,0,"","","System",""
+"23.2.2.20","filesystemAvailable",0,0,"","","System",""
+"23.2.2.20","like",0,0,"","","System",""
+"23.2.2.20","SHA224",0,0,"","","System",""
+"23.2.2.20","h3kRing",0,0,"","","System",""
+"23.2.2.20","log2",0,1,"","","System",""
+"23.2.2.20","exp10",0,0,"","","System",""
+"23.2.2.20","toIPv6OrDefault",0,0,"","","System",""
+"23.2.2.20","toIPv4OrDefault",0,0,"","","System",""
+"23.2.2.20","L2SquaredDistance",0,0,"","","System",""
+"23.2.2.20","emptyArrayInt64",0,0,"","","System",""
+"23.2.2.20","toDecimal256OrDefault",0,0,"","","System",""
+"23.2.2.20","partitionId",0,0,"","","System",""
+"23.2.2.20","roundToExp2",0,0,"","","System",""
+"23.2.2.20","mapSubtract",0,0,"","","System",""
+"23.2.2.20","toDecimal32OrDefault",0,0,"","","System",""
+"23.2.2.20","cutToFirstSignificantSubdomainWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainWithWWW` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"23.2.2.20","toDateTimeOrDefault",0,0,"","","System",""
+"23.2.2.20","addMinutes",0,0,"","","System",""
+"23.2.2.20","toDate32OrDefault",0,0,"","","System",""
+"23.2.2.20","addTupleOfIntervals",0,0,"","","System","
+Consecutively adds a tuple of intervals to a Date or a DateTime.
+[example:tuple]
+"
+"23.2.2.20","toInt128OrDefault",0,0,"","","System",""
+"23.2.2.20","dictGetIPv4",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the IPv4 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","nullIn",0,0,"","","System",""
+"23.2.2.20","toDecimal128OrZero",0,0,"","","System",""
+"23.2.2.20","extractURLParameters",0,0,"","","System",""
+"23.2.2.20","toInt16OrDefault",0,0,"","","System",""
+"23.2.2.20","normalizeUTF8NFD",0,0,"","","System",""
+"23.2.2.20","leftPadUTF8",0,0,"","","System",""
+"23.2.2.20","toUInt8OrDefault",0,0,"","","System",""
+"23.2.2.20","s2RectIntersection",0,0,"","","System",""
+"23.2.2.20","CAST",0,1,"","","System",""
+"23.2.2.20","mapContainsKeyLike",0,0,"","","System",""
+"23.2.2.20","regexpQuoteMeta",0,0,"","","System",""
+"23.2.2.20","notNullInIgnoreSet",0,0,"","","System",""
+"23.2.2.20","toIPv4",0,0,"","","System",""
+"23.2.2.20","mapValues",0,0,"","","System",""
+"23.2.2.20","toTypeName",0,0,"","","System",""
+"23.2.2.20","polygonsUnionCartesian",0,0,"","","System",""
+"23.2.2.20","char",0,1,"","","System",""
+"23.2.2.20","mapContains",0,0,"","","System",""
+"23.2.2.20","toDateTime64OrNull",0,0,"","","System",""
+"23.2.2.20","regionHierarchy",0,0,"","","System",""
+"23.2.2.20","polygonsWithinCartesian",0,0,"","","System",""
+"23.2.2.20","materialize",0,0,"","","System",""
+"23.2.2.20","upperUTF8",0,0,"","","System",""
+"23.2.2.20","multiSearchAnyCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","minSampleSizeContinous",0,0,"","","System",""
+"23.2.2.20","toYYYYMM",0,0,"","","System",""
+"23.2.2.20","domainWithoutWWWRFC",0,0,"","","System","Similar to `domainWithoutWWW` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"23.2.2.20","arrayEnumerateDenseRanked",0,0,"","","System",""
+"23.2.2.20","reinterpretAsUUID",0,0,"","","System",""
+"23.2.2.20","simpleJSONExtractFloat",0,0,"","","System",""
+"23.2.2.20","h3HexAreaM2",0,0,"","","System",""
+"23.2.2.20","toYYYYMMDDhhmmss",0,0,"","","System",""
+"23.2.2.20","h3NumHexagons",0,0,"","","System",""
+"23.2.2.20","parseDateTime64BestEffortUSOrNull",0,0,"","","System",""
+"23.2.2.20","moduloLegacy",0,0,"","","System",""
+"23.2.2.20","dictGetInt32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","mortonEncode",0,0,"","","System","
+Calculates Morton encoding (ZCurve) for a list of unsigned integers
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts up to 8 unsigned integers as arguments and produces a UInt64 code.
+[example:simple]
+
+Expanded: accepts a range mask (tuple) as a first argument and up to 8 unsigned integers as other arguments.
+Each number in mask configures the amount of range expansion
+1 - no expansion
+2 - 2x expansion
+3 - 3x expansion
+....
+Up to 8x expansion.
+[example:range_expanded]
+Note: tuple size must be equal to the number of the other arguments
+
+Range expansion can be beneficial when you need a similar distribution for arguments with wildly different ranges (or cardinality)
+For example: 'IP Address' (0...FFFFFFFF) and 'Country code' (0...FF)
+
+Morton encoding for one argument is always the argument itself.
+[example:identity]
+Produces: `1`
+
+You can expand one argument too:
+[example:identity_expanded]
+Produces: `32768`
+
+The function also accepts columns as arguments:
+[example:from_table]
+
+But the range tuple must still be a constant:
+[example:from_table_range]
+
+Please note that you can fit only so much bits of information into Morton code as UInt64 has.
+Two arguments will have a range of maximum 2^32 (64/2) each
+Three arguments: range of max 2^21 (64/3) each
+And so on, all overflow will be clamped to zero
+"
+"23.2.2.20","mapExtractKeyLike",0,0,"","","System",""
+"23.2.2.20","IPv6StringToNumOrNull",0,0,"","","System",""
+"23.2.2.20","arrayResize",0,0,"","","System",""
+"23.2.2.20","randBernoulli",0,0,"","","System","
+Returns a random number from the Bernoulli distribution.
+Accepts one parameter - probability of success.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","addWeeks",0,0,"","","System",""
+"23.2.2.20","rightPadUTF8",0,0,"","","System",""
+"23.2.2.20","uniqThetaIntersect",0,0,"","","System","
+Two uniqThetaSketch objects to do intersect calculation(set operation ∩), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","position",0,1,"","","System",""
+"23.2.2.20","cosh",0,0,"","","System",""
+"23.2.2.20","__bitBoolMaskOr",0,0,"","","System",""
+"23.2.2.20","geohashEncode",0,0,"","","System",""
+"23.2.2.20","formatReadableTimeDelta",0,0,"","","System",""
+"23.2.2.20","randExponential",0,0,"","","System","
+Returns a random number from the exponential distribution.
+Accepts one parameter - lambda value.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","randomString",0,0,"","","System",""
+"23.2.2.20","normalizeUTF8NFKD",0,0,"","","System",""
+"23.2.2.20","sigmoid",0,0,"","","System",""
+"23.2.2.20","normalizeUTF8NFC",0,0,"","","System",""
+"23.2.2.20","multiSearchAllPositions",0,0,"","","System",""
+"23.2.2.20","subBitmap",0,0,"","","System",""
+"23.2.2.20","base64Decode",0,0,"","","System",""
+"23.2.2.20","defaultValueOfArgumentType",0,0,"","","System",""
+"23.2.2.20","mortonDecode",0,0,"","","System","
+Decodes a Morton encoding (ZCurve) into the corresponding unsigned integer tuple
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts a resulting tuple size as a first argument and the code as a second argument.
+[example:simple]
+Will decode into: `(1,2,3,4)`
+The resulting tuple size cannot be more than 8
+
+Expanded: accepts a range mask (tuple) as a first argument and the code as a second argument.
+Each number in mask configures the amount of range shrink
+1 - no shrink
+2 - 2x shrink
+3 - 3x shrink
+....
+Up to 8x shrink.
+[example:range_shrank]
+Note: see mortonEncode() docs on why range change might be beneficial.
+Still limited to 8 numbers at most.
+
+Morton code for one argument is always the argument itself (as a tuple).
+[example:identity]
+Produces: `(1)`
+
+You can shrink one argument too:
+[example:identity_shrank]
+Produces: `(128)`
+
+The function accepts a column of codes as a second argument:
+[example:from_table]
+
+The range tuple must be a constant:
+[example:from_table_range]
+"
+"23.2.2.20","roundDuration",0,0,"","","System",""
+"23.2.2.20","multiSearchFirstIndexCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","positionCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","parseDateTime32BestEffortOrZero",0,0,"","","System",""
+"23.2.2.20","blockNumber",0,0,"","","System",""
+"23.2.2.20","rightUTF8",0,0,"","","System",""
+"23.2.2.20","cutURLParameter",0,0,"","","System",""
+"23.2.2.20","max2",0,1,"","","System",""
+"23.2.2.20","multiSearchFirstPositionCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","indexOf",0,0,"","","System",""
+"23.2.2.20","uptime",0,0,"","","System",""
+"23.2.2.20","toModifiedJulianDayOrNull",0,0,"","","System",""
+"23.2.2.20","multiplyDecimal",0,0,"","","System","
+Performs multiplication on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These functions work significantly slower than usual `multiply`.
+In case you don't really need controlled precision and/or need fast computation, consider using [multiply](#multiply)
+:::
+
+**Syntax**
+
+```sql
+multiplyDecimal(a, b[, result_scale])
+```
+
+**Arguments**
+
+-   `a` — First value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `b` — Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `result_scale` — Scale of result: [Int/UInt](../../sql-reference/data-types/int-uint.md).
+
+**Returned value**
+
+-   The result of multiplication with given scale.
+
+Type: [Decimal256](../../sql-reference/data-types/decimal.md).
+
+**Example**
+
+```text
+┌─multiplyDecimal(toDecimal256(-12, 0), toDecimal32(-2.1, 1), 1)─┐
+│                                                           25.2 │
+└────────────────────────────────────────────────────────────────┘
+```
+
+**Difference from regular multiplication:**
+```sql
+SELECT toDecimal64(-12.647, 3) * toDecimal32(2.1239, 4);
+SELECT toDecimal64(-12.647, 3) as a, toDecimal32(2.1239, 4) as b, multiplyDecimal(a, b);
+```
+
+```text
+┌─multiply(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                               -26.8609633 │
+└───────────────────────────────────────────────────────────┘
+┌─multiplyDecimal(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                                         -26.8609 │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+```sql
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    multiplyDecimal(a, b);
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    a * b;
+```
+
+```text
+┌─────────────a─┬─────────────b─┬─multiplyDecimal(toDecimal64(-12.647987876, 9), toDecimal64(123.967645643, 9))─┐
+│ -12.647987876 │ 123.967645643 │                                                               -1567.941279108 │
+└───────────────┴───────────────┴───────────────────────────────────────────────────────────────────────────────┘
+Received exception from server (version 22.11.1):
+Code: 407. DB::Exception: Received from localhost:9000. DB::Exception: Decimal math overflow: While processing toDecimal64(-12.647987876, 9) AS a, toDecimal64(123.967645643, 9) AS b, a * b. (DECIMAL_OVERFLOW)
+```
+"
+"23.2.2.20","alphaTokens",0,0,"","","System",""
+"23.2.2.20","arrayFirstIndex",0,0,"","","System",""
+"23.2.2.20","arrayPartialShuffle",0,1,"","","System","
+Returns an array of the same size as the original array where elements in range [1..limit] are a random
+subset of the original array. Remaining (limit..n] shall contain the elements not in [1..limit] range in undefined order.
+Value of limit shall be in range [1..n]. Values outside of that range are equivalent to performing full arrayShuffle:
+[example:no_limit1]
+[example:no_limit2]
+
+Note: this function will not materialize constants:
+[example:materialize]
+
+If no seed is provided a random one will be used:
+[example:random_seed]
+
+It is possible to override the seed to produce stable results:
+[example:explicit_seed]
+"
+"23.2.2.20","negate",0,0,"","","System",""
+"23.2.2.20","sipHash128Keyed",0,0,"","","System",""
+"23.2.2.20","addMicroseconds",0,0,"","","System",""
+"23.2.2.20","formatDateTime",0,0,"","","System",""
+"23.2.2.20","toInt8OrDefault",0,0,"","","System",""
+"23.2.2.20","joinGet",0,0,"","","System",""
+"23.2.2.20","geoToH3",0,0,"","","System",""
+"23.2.2.20","firstSignificantSubdomainCustom",0,0,"","","System",""
+"23.2.2.20","toUnixTimestamp64Milli",0,0,"","","System",""
+"23.2.2.20","simpleJSONExtractBool",0,0,"","","System",""
+"23.2.2.20","normalizeUTF8NFKC",0,0,"","","System",""
+"23.2.2.20","parseDateTimeBestEffortUSOrNull",0,0,"","","System",""
+"23.2.2.20","detectProgrammingLanguage",0,0,"","","System",""
+"23.2.2.20","neighbor",0,0,"","","System",""
+"23.2.2.20","arrayDistinct",0,0,"","","System",""
+"23.2.2.20","dictGetUInt8",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt8 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","emptyArrayUInt8",0,0,"","","System",""
+"23.2.2.20","toFloat32OrDefault",0,0,"","","System",""
+"23.2.2.20","extractURLParameter",0,0,"","","System",""
+"23.2.2.20","zookeeperSessionUptime",0,0,"","","System",""
+"23.2.2.20","toMonday",0,0,"","","System",""
+"23.2.2.20","dictGetInt32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","toUInt256OrZero",0,0,"","","System",""
+"23.2.2.20","toStringCutToZero",0,0,"","","System",""
+"23.2.2.20","toUInt8OrZero",0,0,"","","System",""
+"23.2.2.20","not",0,1,"","","System",""
+"23.2.2.20","reinterpretAsInt8",0,0,"","","System",""
+"23.2.2.20","normalizedQueryHashKeepNames",0,0,"","","System",""
+"23.2.2.20","tryDecrypt",0,0,"","","System","Similar to `decrypt`, but returns NULL if decryption fails because of using the wrong key."
+"23.2.2.20","log10",0,1,"","","System",""
+"23.2.2.20","globalIn",0,0,"","","System",""
+"23.2.2.20","JSONExtractArrayRaw",0,0,"","","System",""
+"23.2.2.20","version",0,1,"","","System",""
+"23.2.2.20","joinGetOrNull",0,0,"","","System",""
+"23.2.2.20","notILike",0,0,"","","System",""
+"23.2.2.20","geohashDecode",0,0,"","","System",""
+"23.2.2.20","toModifiedJulianDay",0,0,"","","System",""
+"23.2.2.20","notLike",0,0,"","","System",""
+"23.2.2.20","fragment",0,0,"","","System",""
+"23.2.2.20","match",0,0,"","","System",""
+"23.2.2.20","dictGetDateTimeOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the DateTime if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","greater",0,0,"","","System",""
+"23.2.2.20","toRelativeMonthNum",0,0,"","","System",""
+"23.2.2.20","emptyArrayString",0,0,"","","System",""
+"23.2.2.20","bitOr",0,0,"","","System",""
+"23.2.2.20","sleep",0,0,"","","System",""
+"23.2.2.20","arrayElement",0,0,"","","System",""
+"23.2.2.20","tgamma",0,0,"","","System",""
+"23.2.2.20","emptyArrayToSingle",0,0,"","","System",""
+"23.2.2.20","reinterpretAsInt128",0,0,"","","System",""
+"23.2.2.20","h3ToChildren",0,0,"","","System",""
+"23.2.2.20","subtractNanoseconds",0,0,"","","System",""
+"23.2.2.20","queryStringAndFragment",0,0,"","","System",""
+"23.2.2.20","toUInt32OrDefault",0,0,"","","System",""
+"23.2.2.20","emptyArrayFloat32",0,0,"","","System",""
+"23.2.2.20","MACStringToOUI",0,0,"","","System",""
+"23.2.2.20","file",0,0,"","","System",""
+"23.2.2.20","roundAge",0,0,"","","System",""
+"23.2.2.20","simpleJSONExtractString",0,0,"","","System",""
+"23.2.2.20","toUInt128",0,0,"","","System",""
+"23.2.2.20","emptyArrayUInt64",0,0,"","","System",""
+"23.2.2.20","h3EdgeAngle",0,0,"","","System",""
+"23.2.2.20","polygonPerimeterCartesian",0,0,"","","System",""
+"23.2.2.20","exp2",0,0,"","","System",""
+"23.2.2.20","concatAssumeInjective",0,0,"","","System",""
+"23.2.2.20","h3IsValid",0,0,"","","System",""
+"23.2.2.20","emptyArrayUInt32",0,0,"","","System",""
+"23.2.2.20","dotProduct",0,0,"","","System",""
+"23.2.2.20","emptyArrayUInt16",0,0,"","","System",""
+"23.2.2.20","toDateTimeOrZero",0,0,"","","System",""
+"23.2.2.20","nullIf",0,1,"","","System",""
+"23.2.2.20","dictGetChildren",0,0,"","","System","
+Returns first-level children as an array of indexes. It is the inverse transformation for dictGetHierarchy.
+Accepts 2 parameters: name of the dictionary, key value - expression returning a UInt64-type value.
+Returned value: first-level descendants for the key, type of Array(UInt64)
+"
+"23.2.2.20","toInt256OrDefault",0,0,"","","System",""
+"23.2.2.20","plus",0,0,"","","System",""
+"23.2.2.20","multiSearchAllPositionsCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","randConstant",0,0,"","","System",""
+"23.2.2.20","DATE",0,1,"","","System",""
+"23.2.2.20","h3CellAreaRads2",0,0,"","","System",""
+"23.2.2.20","pointInEllipses",0,0,"","","System",""
+"23.2.2.20","splitByWhitespace",0,0,"","","System",""
+"23.2.2.20","toInt256OrZero",0,0,"","","System",""
+"23.2.2.20","pointInPolygon",0,0,"","","System",""
+"23.2.2.20","polygonsIntersectionCartesian",0,0,"","","System",""
+"23.2.2.20","polygonPerimeterSpherical",0,0,"","","System",""
+"23.2.2.20","e",0,0,"","","System",""
+"23.2.2.20","buildId",0,0,"","","System",""
+"23.2.2.20","FQDN",0,1,"","","System",""
+"23.2.2.20","mapUpdate",0,0,"","","System",""
+"23.2.2.20","currentProfiles",0,0,"","","System",""
+"23.2.2.20","isNull",0,1,"","","System",""
+"23.2.2.20","isNaN",0,0,"","","System",""
+"23.2.2.20","multiSearchAllPositionsCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","subtractDays",0,0,"","","System",""
+"23.2.2.20","visibleWidth",0,0,"","","System",""
+"23.2.2.20","toStartOfWeek",0,0,"","","System",""
+"23.2.2.20","multiFuzzyMatchAny",0,0,"","","System",""
+"23.2.2.20","flattenTuple",0,0,"","","System",""
+"23.2.2.20","polygonsWithinSpherical",0,0,"","","System",""
+"23.2.2.20","timezoneOffset",0,0,"","","System",""
+"23.2.2.20","transform",0,0,"","","System",""
+"23.2.2.20","encodeXMLComponent",0,0,"","","System",""
+"23.2.2.20","h3Distance",0,0,"","","System",""
+"23.2.2.20","L2Normalize",0,0,"","","System",""
+"23.2.2.20","pow",0,1,"","","System",""
+"23.2.2.20","positionCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","acosh",0,0,"","","System",""
+"23.2.2.20","toRelativeMinuteNum",0,0,"","","System",""
+"23.2.2.20","IPv6NumToString",0,0,"","","System",""
+"23.2.2.20","throwIf",0,0,"","","System",""
+"23.2.2.20","queryString",0,0,"","","System",""
+"23.2.2.20","randUniform",0,0,"","","System","
+Returns a random number from the uniform distribution in the specified range.
+Accepts two parameters - minimum bound and maximum bound.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","initializeAggregation",0,0,"","","System",""
+"23.2.2.20","toDateTime64",0,0,"","","System",""
+"23.2.2.20","yesterday",0,0,"","","System",""
+"23.2.2.20","toBool",0,0,"","","System",""
+"23.2.2.20","randPoisson",0,0,"","","System","
+Returns a random number from the poisson distribution.
+Accepts one parameter - the mean number of occurrences.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","nowInBlock",0,0,"","","System",""
+"23.2.2.20","randNegativeBinomial",0,0,"","","System","
+Returns a random number from the negative binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","toUnixTimestamp64Micro",0,0,"","","System",""
+"23.2.2.20","randBinomial",0,0,"","","System","
+Returns a random number from the binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","toInt32OrZero",0,0,"","","System",""
+"23.2.2.20","randStudentT",0,0,"","","System","
+Returns a random number from the t-distribution.
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","aes_encrypt_mysql",0,0,"","","System",""
+"23.2.2.20","hasTokenOrNull",0,0,"","","System","Performs lookup of needle in haystack using tokenbf_v1 index. Returns null if needle is ill-formed."
+"23.2.2.20","tuple",0,0,"","","System",""
+"23.2.2.20","ngramMinHashCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","toInt64OrDefault",0,0,"","","System",""
+"23.2.2.20","toISOYear",0,0,"","","System",""
+"23.2.2.20","randFisherF",0,0,"","","System","
+Returns a random number from the f-distribution.
+The F-distribution is the distribution of X = (S1 / d1) / (S2 / d2) where d1 and d2 are degrees of freedom.
+Accepts two parameters - degrees of freedom.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","reinterpretAsFixedString",0,0,"","","System",""
+"23.2.2.20","toLastDayOfMonth",0,0,"","","System",""
+"23.2.2.20","randomPrintableASCII",0,0,"","","System",""
+"23.2.2.20","snowflakeToDateTime",0,0,"","","System",""
+"23.2.2.20","notEquals",0,0,"","","System",""
+"23.2.2.20","reinterpretAsDateTime",0,0,"","","System",""
+"23.2.2.20","caseWithExpr",0,0,"","","System",""
+"23.2.2.20","s2CellsIntersect",0,0,"","","System",""
+"23.2.2.20","multiSearchAnyCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","s2GetNeighbors",0,0,"","","System",""
+"23.2.2.20","countSubstrings",0,1,"","","System",""
+"23.2.2.20","reinterpretAsFloat64",0,0,"","","System",""
+"23.2.2.20","arrayAll",0,0,"","","System",""
+"23.2.2.20","toIntervalDay",0,0,"","","System",""
+"23.2.2.20","reinterpretAsFloat32",0,0,"","","System",""
+"23.2.2.20","topLevelDomain",0,0,"","","System","
+Extracts the the top-level domain from a URL.
+
+Returns an empty string if the argument cannot be parsed as a URL or does not contain a top-level domain.
+        "
+"23.2.2.20","greatest",0,1,"","","System",""
+"23.2.2.20","toStartOfMillisecond",0,0,"","","System",""
+"23.2.2.20","reinterpretAsInt64",0,0,"","","System",""
+"23.2.2.20","arrayLast",0,0,"","","System",""
+"23.2.2.20","toFloat64OrDefault",0,0,"","","System",""
+"23.2.2.20","reinterpretAsInt16",0,0,"","","System",""
+"23.2.2.20","and",0,0,"","","System",""
+"23.2.2.20","detectLanguageUnknown",0,0,"","","System",""
+"23.2.2.20","reinterpretAsUInt256",0,0,"","","System",""
+"23.2.2.20","reinterpretAsUInt64",0,0,"","","System",""
+"23.2.2.20","subtractYears",0,0,"","","System",""
+"23.2.2.20","readWKTMultiPolygon",0,0,"","","System",""
+"23.2.2.20","reinterpretAsUInt16",0,0,"","","System",""
+"23.2.2.20","fromUnixTimestamp",0,0,"","","System",""
+"23.2.2.20","hasThreadFuzzer",0,0,"","","System",""
+"23.2.2.20","arrayAUC",0,0,"","","System",""
+"23.2.2.20","multiMatchAllIndices",0,0,"","","System",""
+"23.2.2.20","replaceRegexpAll",0,0,"","","System",""
+"23.2.2.20","timeSlot",0,0,"","","System",""
+"23.2.2.20","gcd",0,0,"","","System",""
+"23.2.2.20","toDayOfMonth",0,0,"","","System",""
+"23.2.2.20","JSON_EXISTS",0,0,"","","System",""
+"23.2.2.20","isIPAddressInRange",0,0,"","","System",""
+"23.2.2.20","toSecond",0,0,"","","System",""
+"23.2.2.20","hiveHash",0,0,"","","System",""
+"23.2.2.20","randomStringUTF8",0,0,"","","System",""
+"23.2.2.20","arrayLastOrNull",0,0,"","","System",""
+"23.2.2.20","toStartOfMonth",0,0,"","","System",""
+"23.2.2.20","toStartOfDay",0,0,"","","System",""
+"23.2.2.20","caseWithoutExpr",0,0,"","","System",""
+"23.2.2.20","floor",0,1,"","","System",""
+"23.2.2.20","bitTestAny",0,0,"","","System",""
+"23.2.2.20","least",0,1,"","","System",""
+"23.2.2.20","map",0,0,"","","System",""
+"23.2.2.20","wordShingleMinHashCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","s2CapUnion",0,0,"","","System",""
+"23.2.2.20","toDateOrDefault",0,0,"","","System",""
+"23.2.2.20","runningConcurrency",0,0,"","","System",""
+"23.2.2.20","serverUUID",0,0,"","","System",""
+"23.2.2.20","toUInt256OrDefault",0,0,"","","System",""
+"23.2.2.20","polygonConvexHullCartesian",0,0,"","","System",""
+"23.2.2.20","murmurHash3_32",0,0,"","","System",""
+"23.2.2.20","countSubstringsCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","h3ExactEdgeLengthM",0,0,"","","System",""
+"23.2.2.20","arrayFlatten",0,0,"","","System",""
+"23.2.2.20","dateName",0,1,"","","System",""
+"23.2.2.20","substringUTF8",0,0,"","","System",""
+"23.2.2.20","h3UnidirectionalEdgeIsValid",0,0,"","","System",""
+"23.2.2.20","toDate",0,0,"","","System",""
+"23.2.2.20","s2RectContains",0,0,"","","System",""
+"23.2.2.20","polygonsSymDifferenceSpherical",0,0,"","","System",""
+"23.2.2.20","tanh",0,1,"","","System",""
+"23.2.2.20","dateDiff",0,1,"","","System",""
+"23.2.2.20","bitRotateRight",0,0,"","","System",""
+"23.2.2.20","arrayReverseSort",0,0,"","","System",""
+"23.2.2.20","hostName",0,0,"","","System",""
+"23.2.2.20","h3ToParent",0,0,"","","System",""
+"23.2.2.20","arrayPartialReverseSort",0,0,"","","System","
+Returns an array of the same size as the original array where elements in range `[1..limit]`
+are sorted in descending order. Remaining elements `(limit..N]` shall contain elements in unspecified order.
+[example:simple_int]
+[example:simple_string]
+
+To retain only the sorted elements use `arrayResize`:
+[example:retain_sorted]
+
+If the `func` function is specified, sorting order is determined by the result of the `func`
+function applied to the elements of the array.
+[example:lambda_simple]
+
+If `func` accepts multiple arguments, the `arrayPartialSort` function is passed several arrays
+that the arguments of `func` will correspond to.
+[example:lambda_complex]
+
+For more details see documentation of `arraySort`.
+"
+"23.2.2.20","decodeURLComponent",0,0,"","","System",""
+"23.2.2.20","bitAnd",0,0,"","","System",""
+"23.2.2.20","wordShingleMinHashCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","dictGetDateOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Date if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","dictGetUInt64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","firstSignificantSubdomainRFC",0,0,"","","System","Returns the ""first significant subdomain"" according to RFC 1034."
+"23.2.2.20","queryID",0,0,"","","System",""
+"23.2.2.20","path",0,0,"","","System",""
+"23.2.2.20","wordShingleMinHashArgCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","subtractWeeks",0,0,"","","System",""
+"23.2.2.20","arrayFirst",0,0,"","","System",""
+"23.2.2.20","accurateCastOrDefault",0,0,"","","System",""
+"23.2.2.20","stem",0,0,"","","System",""
+"23.2.2.20","arrayReverseSplit",0,0,"","","System",""
+"23.2.2.20","transactionOldestSnapshot",0,0,"","","System",""
+"23.2.2.20","dumpColumnStructure",0,0,"","","System",""
+"23.2.2.20","multiSearchFirstIndex",0,0,"","","System",""
+"23.2.2.20","tcpPort",0,0,"","","System",""
+"23.2.2.20","subtractHours",0,0,"","","System",""
+"23.2.2.20","parseDateTimeBestEffortUS",0,0,"","","System",""
+"23.2.2.20","mapPopulateSeries",0,0,"","","System",""
+"23.2.2.20","parseDateTime64BestEffortUS",0,0,"","","System",""
+"23.2.2.20","synonyms",0,1,"","","System",""
+"23.2.2.20","isFinite",0,0,"","","System",""
+"23.2.2.20","toDayOfWeek",0,0,"","","System",""
+"23.2.2.20","reinterpretAsString",0,0,"","","System",""
+"23.2.2.20","trimLeft",0,0,"","","System",""
+"23.2.2.20","subtractInterval",0,0,"","","System","
+Adds an negated interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+"
+"23.2.2.20","toValidUTF8",0,0,"","","System",""
+"23.2.2.20","abs",0,1,"","","System",""
+"23.2.2.20","arrayWithConstant",0,0,"","","System",""
+"23.2.2.20","toStartOfNanosecond",0,0,"","","System",""
+"23.2.2.20","toIntervalNanosecond",0,0,"","","System",""
+"23.2.2.20","SHA256",0,0,"","","System",""
+"23.2.2.20","LpDistance",0,0,"","","System",""
+"23.2.2.20","arrayMax",0,0,"","","System",""
+"23.2.2.20","toUUIDOrDefault",0,0,"","","System",""
+"23.2.2.20","LinfNormalize",0,0,"","","System",""
+"23.2.2.20","extractURLParameterNames",0,0,"","","System",""
+"23.2.2.20","dictGetInt8",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int8 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","h3PointDistKm",0,0,"","","System",""
+"23.2.2.20","multiSearchAllPositionsUTF8",0,0,"","","System",""
+"23.2.2.20","toYearWeek",0,0,"","","System",""
+"23.2.2.20","toFixedString",0,0,"","","System",""
+"23.2.2.20","hasTokenCaseInsensitive",0,1,"","","System","Performs case insensitive lookup of needle in haystack using tokenbf_v1 index."
+"23.2.2.20","toStartOfYear",0,0,"","","System",""
+"23.2.2.20","toDecimal256",0,0,"","","System",""
+"23.2.2.20","multiSearchFirstPositionCaseInsensitiveUTF8",0,0,"","","System",""
+"23.2.2.20","cutFragment",0,0,"","","System",""
+"23.2.2.20","arrayCompact",0,0,"","","System",""
+"23.2.2.20","toIntervalWeek",0,0,"","","System",""
+"23.2.2.20","toRelativeSecondNum",0,0,"","","System",""
+"23.2.2.20","replaceAll",0,0,"","","System",""
+"23.2.2.20","bitShiftLeft",0,0,"","","System",""
+"23.2.2.20","netloc",0,0,"","","System",""
+"23.2.2.20","arrayEnumerate",0,0,"","","System",""
+"23.2.2.20","exp",0,1,"","","System",""
+"23.2.2.20","tupleNegate",0,0,"","","System",""
+"23.2.2.20","toRelativeQuarterNum",0,0,"","","System",""
+"23.2.2.20","toRelativeYearNum",0,0,"","","System",""
+"23.2.2.20","h3IsResClassIII",0,0,"","","System",""
+"23.2.2.20","cutQueryStringAndFragment",0,0,"","","System",""
+"23.2.2.20","translate",0,0,"","","System",""
+"23.2.2.20","trimRight",0,0,"","","System",""
+"23.2.2.20","repeat",0,1,"","","System",""
+"23.2.2.20","unhex",0,1,"","","System",""
+"23.2.2.20","IPv4ToIPv6",0,0,"","","System",""
+"23.2.2.20","toStartOfMicrosecond",0,0,"","","System",""
+"23.2.2.20","toInt8OrNull",0,0,"","","System",""
+"23.2.2.20","regionToPopulation",0,0,"","","System",""
+"23.2.2.20","toStartOfISOYear",0,0,"","","System",""
+"23.2.2.20","murmurHash2_32",0,0,"","","System",""
+"23.2.2.20","toStartOfTenMinutes",0,0,"","","System",""
+"23.2.2.20","arrayEnumerateUniq",0,0,"","","System",""
+"23.2.2.20","bitmaskToArray",0,0,"","","System",""
+"23.2.2.20","min2",0,1,"","","System",""
+"23.2.2.20","length",0,1,"","","System","
+Calculates the length of the string or array.
+
+For String or FixedString argument: calculates the number of bytes in string.
+[example:string1]
+
+For Array argument: calculates the number of elements in the array.
+[example:arr1]
+
+If applied for FixedString argument, the function is a constant expression:
+[example:constexpr]
+
+Please note that the number of bytes in a string is not the same as the number of Unicode ""code points""
+and it is not the same as the number of Unicode ""grapheme clusters"" (what we usually call ""characters"")
+and it is not the same as the visible string width.
+[example:unicode]
+
+It is ok to have ASCII NUL bytes in strings, and they will be counted as well.
+[example:nul]
+"
+"23.2.2.20","toHour",0,0,"","","System",""
+"23.2.2.20","toStartOfFifteenMinutes",0,0,"","","System",""
+"23.2.2.20","toYYYYMMDD",0,0,"","","System",""
+"23.2.2.20","toUInt256OrNull",0,0,"","","System",""
+"23.2.2.20","arrayFirstOrNull",0,0,"","","System",""
+"23.2.2.20","isNullable",0,0,"","","System",""
+"23.2.2.20","regexpExtract",0,0,"","","System","Extracts the first string in haystack that matches the regexp pattern and corresponds to the regex group index."
+"23.2.2.20","extractAllGroupsVertical",0,0,"","","System",""
+"23.2.2.20","cutToFirstSignificantSubdomainCustomRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustom` but follows stricter rules according to RFC 3986."
+"23.2.2.20","multiMatchAnyIndex",0,0,"","","System",""
+"23.2.2.20","bitPositionsToArray",0,0,"","","System",""
+"23.2.2.20","xor",0,0,"","","System",""
+"23.2.2.20","toInt256",0,0,"","","System",""
+"23.2.2.20","sign",0,1,"","","System",""
+"23.2.2.20","mapKeys",0,0,"","","System",""
+"23.2.2.20","tupleElement",0,0,"","","System",""
+"23.2.2.20","addYears",0,0,"","","System",""
+"23.2.2.20","validateNestedArraySizes",0,0,"","","System",""
+"23.2.2.20","right",0,1,"","","System",""
+"23.2.2.20","cosineDistance",0,0,"","","System",""
+"23.2.2.20","addHours",0,0,"","","System",""
+"23.2.2.20","getOSKernelVersion",0,0,"","","System",""
+"23.2.2.20","reinterpretAsUInt32",0,0,"","","System",""
+"23.2.2.20","greaterOrEquals",0,0,"","","System",""
+"23.2.2.20","upper",0,1,"","","System",""
+"23.2.2.20","bitmapTransform",0,0,"","","System",""
+"23.2.2.20","arrayShuffle",0,1,"","","System","
+Returns an array of the same size as the original array containing the elements in shuffled order.
+Elements are being reordered in such a way that each possible permutation of those elements has equal probability of appearance.
+
+Note: this function will not materialize constants:
+[example:materialize]
+
+If no seed is provided a random one will be used:
+[example:random_seed]
+
+It is possible to override the seed to produce stable results:
+[example:explicit_seed]
+"
+"23.2.2.20","toISOWeek",0,0,"","","System",""
+"23.2.2.20","reinterpretAsInt256",0,0,"","","System",""
+"23.2.2.20","hasAny",0,0,"","","System",""
+"23.2.2.20","toIntervalMicrosecond",0,0,"","","System",""
+"23.2.2.20","L1Normalize",0,0,"","","System",""
+"23.2.2.20","multiply",0,0,"","","System",""
+"23.2.2.20","toIPv6",0,0,"","","System",""
+"23.2.2.20","toDateTime32",0,0,"","","System",""
+"23.2.2.20","arraySplit",0,0,"","","System",""
+"23.2.2.20","decodeURLFormComponent",0,0,"","","System",""
+"23.2.2.20","L2Distance",0,0,"","","System",""
+"23.2.2.20","dictGetUUIDOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UUID if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","proportionsZTest",0,0,"","","System",""
+"23.2.2.20","arrayZip",0,0,"","","System",""
+"23.2.2.20","displayName",0,0,"","","System","
+Returns the value of `display_name` from config or server FQDN if not set.
+
+[example:displayName]
+"
+"23.2.2.20","L1Distance",0,0,"","","System",""
+"23.2.2.20","emptyArrayFloat64",0,0,"","","System",""
+"23.2.2.20","LinfNorm",0,0,"","","System",""
+"23.2.2.20","less",0,0,"","","System",""
+"23.2.2.20","emptyArrayInt8",0,0,"","","System",""
+"23.2.2.20","L2SquaredNorm",0,0,"","","System",""
+"23.2.2.20","formatReadableDecimalSize",0,0,"","","System","
+Accepts the size (number of bytes). Returns a rounded size with a suffix (KB, MB, etc.) as a string.
+"
+"23.2.2.20","lowerUTF8",0,0,"","","System",""
+"23.2.2.20","parseDateTime64BestEffortOrNull",0,0,"","","System",""
+"23.2.2.20","domainRFC",0,0,"","","System","Similar to `domain` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"23.2.2.20","coalesce",0,1,"","","System",""
+"23.2.2.20","basename",0,0,"","","System",""
+"23.2.2.20","JSONType",0,0,"","","System",""
+"23.2.2.20","addNanoseconds",0,0,"","","System",""
+"23.2.2.20","isConstant",0,0,"","","System",""
+"23.2.2.20","polygonAreaCartesian",0,0,"","","System",""
+"23.2.2.20","arrayUniq",0,0,"","","System",""
+"23.2.2.20","toIntervalYear",0,0,"","","System",""
+"23.2.2.20","addInterval",0,0,"","","System","
+Adds an interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+"
+"23.2.2.20","bitRotateLeft",0,0,"","","System",""
+"23.2.2.20","toUInt16OrZero",0,0,"","","System",""
+"23.2.2.20","emptyArrayDateTime",0,0,"","","System",""
+"23.2.2.20","dictGetFloat32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Float32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","h3PointDistRads",0,0,"","","System",""
+"23.2.2.20","polygonsUnionSpherical",0,0,"","","System",""
+"23.2.2.20","arraySum",0,0,"","","System",""
+"23.2.2.20","polygonsIntersectionSpherical",0,0,"","","System",""
+"23.2.2.20","arrayProduct",0,0,"","","System",""
+"23.2.2.20","tupleMultiply",0,0,"","","System",""
+"23.2.2.20","cutToFirstSignificantSubdomainCustom",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain. Accepts custom TLD list name.
+
+Can be useful if you need fresh TLD list or you have custom.
+        "
+"23.2.2.20","dictGetInt16OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int16 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","simpleJSONExtractInt",0,0,"","","System",""
+"23.2.2.20","addMonths",0,0,"","","System",""
+"23.2.2.20","leftUTF8",0,0,"","","System",""
+"23.2.2.20","topLevelDomainRFC",0,0,"","","System","Similar to topLevelDomain, but conforms to RFC 3986."
+"23.2.2.20","has",0,0,"","","System",""
+"23.2.2.20","appendTrailingCharIfAbsent",0,0,"","","System",""
+"23.2.2.20","simpleJSONExtractRaw",0,0,"","","System",""
+"23.2.2.20","arrayJoin",0,0,"","","System",""
+"23.2.2.20","simpleJSONHas",0,0,"","","System",""
+"23.2.2.20","concatWithSeparatorAssumeInjective",0,0,"","","System","
+Same as concatWithSeparator, the difference is that you need to ensure that concatWithSeparator(sep, expr1, expr2, expr3...) → result is injective, it will be used for optimization of GROUP BY.
+
+The function is named “injective” if it always returns different result for different values of arguments. In other words: different arguments never yield identical result.
+        "
+"23.2.2.20","toDateTime64OrDefault",0,0,"","","System",""
+"23.2.2.20","leftPad",0,0,"","","System",""
+"23.2.2.20","fromUnixTimestamp64Micro",0,0,"","","System",""
+"23.2.2.20","range",0,0,"","","System",""
+"23.2.2.20","arrayPartialSort",0,0,"","","System","
+Returns an array of the same size as the original array where elements in range `[1..limit]`
+are sorted in ascending order. Remaining elements `(limit..N]` shall contain elements in unspecified order.
+[example:simple_int]
+[example:simple_string]
+
+To retain only the sorted elements use `arrayResize`:
+[example:retain_sorted]
+
+If the `func` function is specified, sorting order is determined by the result of the `func`
+function applied to the elements of the array.
+[example:lambda_simple]
+
+If `func` accepts multiple arguments, the `arrayPartialSort` function is passed several arrays
+that the arguments of `func` will correspond to.
+[example:lambda_complex]
+
+For more details see documentation of `arraySort`.
+"
+"23.2.2.20","cutToFirstSignificantSubdomainCustomWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustomWithWWW` but follows stricter rules according to RFC 3986."
+"23.2.2.20","addQuarters",0,0,"","","System",""
+"23.2.2.20","readWKTPolygon",0,0,"","","System",""
+"23.2.2.20","toUInt32OrNull",0,0,"","","System",""
+"23.2.2.20","accurateCast",0,0,"","","System",""
+"23.2.2.20","toInt64",0,0,"","","System",""
+"23.2.2.20","wkt",0,0,"","","System",""
+"23.2.2.20","domainWithoutWWW",0,0,"","","System","
+Extracts the hostname from a URL, removing the leading ""www."" if present.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        "
+"23.2.2.20","arrayPushFront",0,0,"","","System",""
+"23.2.2.20","erfc",0,0,"","","System",""
+"23.2.2.20","cutToFirstSignificantSubdomainCustomWithWWW",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain without stripping `www`.
+Accepts custom TLD list name from config.
+
+Can be useful if you need fresh TLD list or you have custom.
+        "
+"23.2.2.20","arraySort",0,0,"","","System",""
+"23.2.2.20","firstSignificantSubdomainCustomRFC",0,0,"","","System",""
+"23.2.2.20","tupleMinus",0,0,"","","System",""
+"23.2.2.20","uniqThetaUnion",0,0,"","","System","
+Two uniqThetaSketch objects to do union calculation(set operation ∪), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","gccMurmurHash",0,0,"","","System",""
+"23.2.2.20","polygonsSymDifferenceCartesian",0,0,"","","System",""
+"23.2.2.20","LinfDistance",0,0,"","","System",""
+"23.2.2.20","readWKTPoint",0,0,"","","System",""
+"23.2.2.20","randChiSquared",0,0,"","","System","
+Returns a random number from the chi-squared distribution (a distribution of a sum of the squares of k independent standard normal random variables).
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","IPv4StringToNumOrNull",0,0,"","","System",""
+"23.2.2.20","formatReadableQuantity",0,0,"","","System",""
+"23.2.2.20","arrayPopBack",0,0,"","","System",""
+"23.2.2.20","arrayLastIndex",0,0,"","","System",""
+"23.2.2.20","toUnixTimestamp64Nano",0,0,"","","System",""
+"23.2.2.20","mapAdd",0,0,"","","System",""
+"23.2.2.20","toInt32OrDefault",0,0,"","","System",""
+"23.2.2.20","subtractMicroseconds",0,0,"","","System",""
+"23.2.2.20","decodeXMLComponent",0,0,"","","System",""
+"23.2.2.20","svg",0,0,"","","System",""
+"23.2.2.20","sinh",0,0,"","","System",""
+"23.2.2.20","tupleDivide",0,0,"","","System",""
+"23.2.2.20","JSONExtractInt",0,0,"","","System",""
+"23.2.2.20","subtractMonths",0,0,"","","System",""
+"23.2.2.20","subtractMilliseconds",0,0,"","","System",""
+"23.2.2.20","arrayPopFront",0,0,"","","System",""
+"23.2.2.20","toColumnTypeName",0,0,"","","System",""
+"23.2.2.20","arrayMin",0,0,"","","System",""
+"23.2.2.20","ngramSimHashUTF8",0,0,"","","System",""
+"23.2.2.20","subtractTupleOfIntervals",0,0,"","","System","
+Consecutively subtracts a tuple of intervals from a Date or a DateTime.
+[example:tuple]
+"
+"23.2.2.20","toUInt16OrDefault",0,0,"","","System",""
+"23.2.2.20","sin",0,1,"","","System",""
+"23.2.2.20","multiFuzzyMatchAllIndices",0,0,"","","System",""
+"23.2.2.20","toStartOfSecond",0,0,"","","System",""
+"23.2.2.20","dictGet",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.2.2.20","cos",0,1,"","","System",""
+"23.2.2.20","toDecimal128OrDefault",0,0,"","","System",""
+"23.2.2.20","hasColumnInTable",0,0,"","","System",""
+"23.2.2.20","toRelativeHourNum",0,0,"","","System",""
+"23.2.2.20","arrayCount",0,0,"","","System",""
+"23.2.2.20","hex",0,1,"","","System",""
+"23.2.2.20","h3ToGeo",0,0,"","","System",""
+"23.2.2.20","toDecimal256OrNull",0,0,"","","System",""
+"23.2.2.20","multiMatchAny",0,0,"","","System",""
+"23.2.2.20","arrayEnumerateDense",0,0,"","","System",""
+"23.2.2.20","getMacro",0,0,"","","System",""
+"23.2.2.20","multiIf",0,0,"","","System",""
+"23.2.2.20","runningAccumulate",0,0,"","","System",""
+"23.2.2.20","SHA384",0,0,"","","System",""
+"23.2.2.20","murmurHash3_128",0,0,"","","System",""
+"23.2.2.20","ngramSearchCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","h3ToCenterChild",0,0,"","","System",""
+"23.2.2.20","notIn",0,0,"","","System",""
+"23.2.2.20","URLHierarchy",0,0,"","","System",""
+"23.2.2.20","L2Norm",0,0,"","","System",""
+"23.2.2.20","h3GetDestinationIndexFromUnidirectionalEdge",0,0,"","","System",""
+"23.2.2.20","parseDateTimeBestEffortUSOrZero",0,0,"","","System",""
+"23.2.2.20","toInt32OrNull",0,0,"","","System",""
+"23.2.2.20","array",0,0,"","","System",""
+"23.2.2.20","toLowCardinality",0,0,"","","System",""
+"23.2.2.20","h3ToString",0,0,"","","System",""
+"23.2.2.20","LpNorm",0,0,"","","System",""
+"23.2.2.20","port",0,0,"","","System","Returns the port or `default_port` if there is no port in the URL (or in case of validation error)."
+"23.2.2.20","wordShingleMinHashArgUTF8",0,0,"","","System",""
+"23.2.2.20","now",0,1,"","","System",""
+"23.2.2.20","TimeDiff",0,1,"","","System","
+Returns the difference between two dates or dates with time values. The difference is calculated in seconds units (see toRelativeSecondNum).
+It is same as `dateDiff` and was added only for MySQL support. `dateDiff` is preferred.
+
+Example:
+[example:typical]
+"
+"23.2.2.20","countSubstringsCaseInsensitive",0,0,"","","System",""
+"23.2.2.20","toJSONString",0,0,"","","System",""
+"23.2.2.20","uniqThetaNot",0,0,"","","System","
+Two uniqThetaSketch objects to do a_not_b calculation(set operation ×), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"23.2.2.20","or",0,0,"","","System",""
+"23.2.2.20","arrayExists",0,0,"","","System",""
+"23.2.2.20","timezone",0,0,"","","System",""
+"23.2.2.20","arrayMap",0,0,"","","System",""
+"23.2.2.20","__getScalar",0,0,"","","System",""
+"23.2.2.20","h3GetFaces",0,0,"","","System",""
+"23.2.2.20","indexHint",0,0,"","","System",""
+"23.2.2.20","toMinute",0,0,"","","System",""
+"23.2.2.20","tupleToNameValuePairs",0,0,"","","System",""
+"23.2.2.20","tupleMultiplyByNumber",0,0,"","","System",""
+"23.2.2.20","JSONExtractUInt",0,0,"","","System",""
+"23.2.2.20","arrayReduce",0,0,"","","System",""
+"23.2.2.20","addDays",0,0,"","","System",""
+"23.2.2.20","portRFC",0,0,"","","System","Similar to `port`, but conforms to RFC 3986."
+"23.2.2.20","L1Norm",0,0,"","","System",""
+"23.2.2.20","log1p",0,0,"","","System",""
+"23.2.2.20","truncate",0,1,"trunc","","System",""
+"23.2.2.20","mid",0,1,"substring","","System",""
+"23.2.2.20","TO_BASE64",0,1,"base64Encode","","System",""
+"23.2.2.20","substr",0,1,"substring","","System",""
+"23.2.2.20","toStartOfFiveMinute",0,0,"toStartOfFiveMinutes","","System",""
+"23.2.2.20","toTimeZone",0,0,"toTimezone","","System",""
+"23.2.2.20","DATABASE",0,1,"currentDatabase","","System",""
+"23.2.2.20","MONTH",0,1,"toMonth","","System",""
+"23.2.2.20","pmod",0,1,"positiveModulo","","System",""
+"23.2.2.20","positive_modulo",0,1,"positiveModulo","","System",""
+"23.2.2.20","DATE_TRUNC",0,1,"dateTrunc","","System",""
+"23.2.2.20","YEAR",0,1,"toYear","","System",""
+"23.2.2.20","INET6_NTOA",0,1,"IPv6NumToString","","System",""
+"23.2.2.20","visitParamExtractUInt",0,0,"simpleJSONExtractUInt","","System",""
+"23.2.2.20","concat_ws",0,1,"concatWithSeparator","","System",""
+"23.2.2.20","FROM_UNIXTIME",0,0,"fromUnixTimestamp","","System",""
+"23.2.2.20","DATE_FORMAT",0,0,"formatDateTime","","System",""
+"23.2.2.20","yandexConsistentHash",0,0,"kostikConsistentHash","","System",""
+"23.2.2.20","initial_query_id",0,1,"initialQueryID","","System",""
+"23.2.2.20","CHAR_LENGTH",0,1,"lengthUTF8","","System",""
+"23.2.2.20","rand32",0,0,"rand","","System",""
+"23.2.2.20","rpad",0,1,"rightPad","","System",""
+"23.2.2.20","FROM_BASE64",0,1,"base64Decode","","System",""
+"23.2.2.20","SECOND",0,1,"toSecond","","System",""
+"23.2.2.20","power",0,1,"pow","","System",""
+"23.2.2.20","yearweek",0,1,"toYearWeek","","System",""
+"23.2.2.20","visitParamExtractInt",0,0,"simpleJSONExtractInt","","System",""
+"23.2.2.20","REGEXP_REPLACE",0,1,"replaceRegexpAll","","System",""
+"23.2.2.20","timeZoneOf",0,0,"timezoneOf","","System",""
+"23.2.2.20","normalizeLp",0,1,"LpNormalize","","System",""
+"23.2.2.20","week",0,1,"toWeek","","System",""
+"23.2.2.20","DAYOFYEAR",0,1,"toDayOfYear","","System",""
+"23.2.2.20","ceiling",0,1,"ceil","","System",""
+"23.2.2.20","HOUR",0,1,"toHour","","System",""
+"23.2.2.20","vectorDifference",0,1,"tupleMinus","","System",""
+"23.2.2.20","extractAllGroups",0,0,"extractAllGroupsVertical","","System",""
+"23.2.2.20","LAST_DAY",0,1,"toLastDayOfMonth","","System",""
+"23.2.2.20","visitParamExtractRaw",0,0,"simpleJSONExtractRaw","","System",""
+"23.2.2.20","flatten",0,1,"arrayFlatten","","System",""
+"23.2.2.20","replace",0,1,"replaceAll","","System",""
+"23.2.2.20","QUARTER",0,1,"toQuarter","","System",""
+"23.2.2.20","DAYOFWEEK",0,1,"toDayOfWeek","","System",""
+"23.2.2.20","normalizeLinf",0,1,"LinfNormalize","","System",""
+"23.2.2.20","timeZone",0,0,"timezone","","System",""
+"23.2.2.20","MINUTE",0,1,"toMinute","","System",""
+"23.2.2.20","lpad",0,1,"leftPad","","System",""
+"23.2.2.20","normalizeL1",0,1,"L1Normalize","","System",""
+"23.2.2.20","CHARACTER_LENGTH",0,1,"lengthUTF8","","System",""
+"23.2.2.20","visitParamExtractFloat",0,0,"simpleJSONExtractFloat","","System",""
+"23.2.2.20","distanceLinf",0,1,"LinfDistance","","System",""
+"23.2.2.20","REGEXP_EXTRACT",0,1,"regexpExtract","","System",""
+"23.2.2.20","locate",0,1,"position","","System",""
+"23.2.2.20","DAYOFMONTH",0,1,"toDayOfMonth","","System",""
+"23.2.2.20","splitByAlpha",0,0,"alphaTokens","","System",""
+"23.2.2.20","ln",0,1,"log","","System",""
+"23.2.2.20","distanceLp",0,1,"LpDistance","","System",""
+"23.2.2.20","INET6_ATON",0,1,"IPv6StringToNum","","System",""
+"23.2.2.20","visitParamExtractString",0,0,"simpleJSONExtractString","","System",""
+"23.2.2.20","DAY",0,1,"toDayOfMonth","","System",""
+"23.2.2.20","normLp",0,1,"LpNorm","","System",""
+"23.2.2.20","INET_ATON",0,1,"IPv4StringToNum","","System",""
+"23.2.2.20","distanceL1",0,1,"L1Distance","","System",""
+"23.2.2.20","ucase",0,1,"upper","","System",""
+"23.2.2.20","JSON_ARRAY_LENGTH",0,1,"JSONArrayLength","","System",""
+"23.2.2.20","normLinf",0,1,"LinfNorm","","System",""
+"23.2.2.20","distanceL2Squared",0,1,"L2SquaredDistance","","System",""
+"23.2.2.20","query_id",0,1,"queryID","","System",""
+"23.2.2.20","normL2Squared",0,1,"L2SquaredNorm","","System",""
+"23.2.2.20","scalarProduct",0,1,"dotProduct","","System",""
+"23.2.2.20","connection_id",0,1,"connectionid","","System",""
+"23.2.2.20","mod",0,1,"modulo","","System",""
+"23.2.2.20","visitParamHas",0,0,"simpleJSONHas","","System",""
+"23.2.2.20","distanceL2",0,1,"L2Distance","","System",""
+"23.2.2.20","vectorSum",0,1,"tuplePlus","","System",""
+"23.2.2.20","normL2",0,1,"L2Norm","","System",""
+"23.2.2.20","SVG",0,0,"svg","","System",""
+"23.2.2.20","INET_NTOA",0,1,"IPv4NumToString","","System",""
+"23.2.2.20","timeZoneOffset",0,0,"timezoneOffset","","System",""
+"23.2.2.20","hostname",0,0,"hostName","","System",""
+"23.2.2.20","normL1",0,1,"L1Norm","","System",""
+"23.2.2.20","UTC_timestamp",0,1,"UTCTimestamp","","System",""
+"23.2.2.20","user",0,1,"currentUser","","System",""
+"23.2.2.20","lcase",0,1,"lower","","System",""
+"23.2.2.20","REGEXP_MATCHES",0,1,"match","","System",""
+"23.2.2.20","visitParamExtractBool",0,0,"simpleJSONExtractBool","","System",""
+"23.2.2.20","normalizeL2",0,1,"L2Normalize","","System",""
+"23.2.2.20","exponentialTimeDecayedCount",1,0,"","","System",""
+"23.2.2.20","exponentialTimeDecayedMax",1,0,"","","System",""
+"23.2.2.20","lagInFrame",1,0,"","","System",""
+"23.2.2.20","dense_rank",1,1,"","","System",""
+"23.2.2.20","rank",1,1,"","","System",""
+"23.2.2.20","exponentialMovingAverage",1,0,"","","System",""
+"23.2.2.20","sparkbar",1,0,"","","System",""
+"23.2.2.20","singleValueOrNull",1,0,"","","System",""
+"23.2.2.20","meanZTest",1,0,"","","System",""
+"23.2.2.20","analysisOfVariance",1,1,"","","System",""
+"23.2.2.20","studentTTest",1,0,"","","System",""
+"23.2.2.20","rankCorr",1,0,"","","System",""
+"23.2.2.20","aggThrow",1,0,"","","System",""
+"23.2.2.20","categoricalInformationValue",1,0,"","","System",""
+"23.2.2.20","groupArrayMovingAvg",1,0,"","","System",""
+"23.2.2.20","groupArrayMovingSum",1,0,"","","System",""
+"23.2.2.20","simpleLinearRegression",1,0,"","","System",""
+"23.2.2.20","entropy",1,0,"","","System",""
+"23.2.2.20","histogram",1,0,"","","System",""
+"23.2.2.20","mannWhitneyUTest",1,0,"","","System",""
+"23.2.2.20","maxIntersections",1,0,"","","System",""
+"23.2.2.20","groupBitmapXor",1,0,"","","System",""
+"23.2.2.20","groupBitmapAnd",1,0,"","","System",""
+"23.2.2.20","cramersVBiasCorrected",1,0,"","","System",""
+"23.2.2.20","contingency",1,0,"","","System",""
+"23.2.2.20","skewPop",1,0,"","","System",""
+"23.2.2.20","groupBitXor",1,0,"","","System",""
+"23.2.2.20","groupBitOr",1,0,"","","System",""
+"23.2.2.20","exponentialTimeDecayedSum",1,0,"","","System",""
+"23.2.2.20","topKWeighted",1,0,"","","System",""
+"23.2.2.20","stochasticLinearRegression",1,0,"","","System",""
+"23.2.2.20","corr",1,1,"","","System",""
+"23.2.2.20","uniqCombined64",1,0,"","","System",""
+"23.2.2.20","intervalLengthSum",1,0,"","","System",""
+"23.2.2.20","nothing",1,0,"","","System",""
+"23.2.2.20","uniqCombined",1,0,"","","System",""
+"23.2.2.20","sumMapFiltered",1,0,"","","System",""
+"23.2.2.20","minMappedArrays",1,0,"","","System",""
+"23.2.2.20","sumMappedArrays",1,0,"","","System",""
+"23.2.2.20","quantiles",1,0,"","","System",""
+"23.2.2.20","sum",1,1,"","","System",""
+"23.2.2.20","sumKahan",1,0,"","","System",""
+"23.2.2.20","corrMatrix",1,0,"","","System",""
+"23.2.2.20","quantileExactWeighted",1,0,"","","System",""
+"23.2.2.20","sumMapFilteredWithOverflow",1,0,"","","System",""
+"23.2.2.20","corrStable",1,0,"","","System",""
+"23.2.2.20","covarPopMatrix",1,0,"","","System",""
+"23.2.2.20","groupBitmapOr",1,0,"","","System",""
+"23.2.2.20","covarSampMatrix",1,0,"","","System",""
+"23.2.2.20","covarPop",1,0,"","","System",""
+"23.2.2.20","row_number",1,1,"","","System",""
+"23.2.2.20","kurtPop",1,0,"","","System",""
+"23.2.2.20","kurtSamp",1,0,"","","System",""
+"23.2.2.20","cramersV",1,0,"","","System",""
+"23.2.2.20","skewSamp",1,0,"","","System",""
+"23.2.2.20","nonNegativeDerivative",1,0,"","","System",""
+"23.2.2.20","uniqExact",1,0,"","","System",""
+"23.2.2.20","sumMapWithOverflow",1,0,"","","System",""
+"23.2.2.20","stddevSamp",1,0,"","","System",""
+"23.2.2.20","varPop",1,0,"","","System",""
+"23.2.2.20","quantileTimingWeighted",1,0,"","","System",""
+"23.2.2.20","covarPopStable",1,0,"","","System",""
+"23.2.2.20","stddevSampStable",1,0,"","","System",""
+"23.2.2.20","varSamp",1,0,"","","System",""
+"23.2.2.20","topK",1,0,"","","System",""
+"23.2.2.20","last_value",1,1,"","","System",""
+"23.2.2.20","any",1,0,"","","System",""
+"23.2.2.20","anyLast",1,0,"","","System",""
+"23.2.2.20","deltaSumTimestamp",1,0,"","","System",""
+"23.2.2.20","varSampStable",1,0,"","","System",""
+"23.2.2.20","nth_value",1,1,"","","System",""
+"23.2.2.20","argMax",1,0,"","","System",""
+"23.2.2.20","quantilesExact",1,0,"","","System",""
+"23.2.2.20","uniqHLL12",1,0,"","","System",""
+"23.2.2.20","quantileBFloat16",1,0,"","","System",""
+"23.2.2.20","uniq",1,0,"","","System",""
+"23.2.2.20","min",1,1,"","","System",""
+"23.2.2.20","sequenceNextNode",1,0,"","","System",""
+"23.2.2.20","quantilesTimingWeighted",1,0,"","","System",""
+"23.2.2.20","ntile",1,1,"","","System",""
+"23.2.2.20","boundingRatio",1,0,"","","System",""
+"23.2.2.20","deltaSum",1,0,"","","System",""
+"23.2.2.20","uniqUpTo",1,0,"","","System",""
+"23.2.2.20","windowFunnel",1,0,"","","System",""
+"23.2.2.20","retention",1,0,"","","System",""
+"23.2.2.20","sequenceMatch",1,0,"","","System",""
+"23.2.2.20","uniqTheta",1,0,"","","System",""
+"23.2.2.20","quantilesExactWeighted",1,0,"","","System",""
+"23.2.2.20","max",1,1,"","","System",""
+"23.2.2.20","quantilesBFloat16Weighted",1,0,"","","System",""
+"23.2.2.20","quantileBFloat16Weighted",1,0,"","","System",""
+"23.2.2.20","quantilesTDigestWeighted",1,0,"","","System",""
+"23.2.2.20","groupBitAnd",1,0,"","","System",""
+"23.2.2.20","quantileTDigest",1,0,"","","System",""
+"23.2.2.20","quantileTDigestWeighted",1,0,"","","System",""
+"23.2.2.20","quantileDeterministic",1,0,"","","System",""
+"23.2.2.20","quantilesTDigest",1,0,"","","System",""
+"23.2.2.20","stochasticLogisticRegression",1,0,"","","System",""
+"23.2.2.20","argMin",1,0,"","","System",""
+"23.2.2.20","avg",1,1,"","","System",""
+"23.2.2.20","covarSampStable",1,0,"","","System",""
+"23.2.2.20","quantilesTiming",1,0,"","","System",""
+"23.2.2.20","welchTTest",1,0,"","","System",""
+"23.2.2.20","covarSamp",1,0,"","","System",""
+"23.2.2.20","varPopStable",1,0,"","","System",""
+"23.2.2.20","quantileTiming",1,0,"","","System",""
+"23.2.2.20","leadInFrame",1,0,"","","System",""
+"23.2.2.20","quantilesExactExclusive",1,0,"","","System",""
+"23.2.2.20","maxIntersectionsPosition",1,0,"","","System",""
+"23.2.2.20","quantilesBFloat16",1,0,"","","System",""
+"23.2.2.20","quantilesExactInclusive",1,0,"","","System",""
+"23.2.2.20","quantileExactInclusive",1,0,"","","System",""
+"23.2.2.20","quantileInterpolatedWeighted",1,0,"","","System",""
+"23.2.2.20","quantileExactHigh",1,0,"","","System",""
+"23.2.2.20","groupBitmap",1,0,"","","System",""
+"23.2.2.20","quantilesInterpolatedWeighted",1,0,"","","System",""
+"23.2.2.20","quantile",1,0,"","","System",""
+"23.2.2.20","groupArraySample",1,0,"","","System",""
+"23.2.2.20","quantilesExactLow",1,0,"","","System",""
+"23.2.2.20","groupUniqArray",1,0,"","","System",""
+"23.2.2.20","sumWithOverflow",1,0,"","","System",""
+"23.2.2.20","sequenceCount",1,0,"","","System",""
+"23.2.2.20","quantilesDeterministic",1,0,"","","System",""
+"23.2.2.20","quantilesExactHigh",1,0,"","","System",""
+"23.2.2.20","sumCount",1,0,"","","System",""
+"23.2.2.20","groupArrayInsertAt",1,0,"","","System",""
+"23.2.2.20","quantileExact",1,0,"","","System",""
+"23.2.2.20","anyHeavy",1,0,"","","System",""
+"23.2.2.20","theilsU",1,0,"","","System",""
+"23.2.2.20","maxMappedArrays",1,0,"","","System",""
+"23.2.2.20","stddevPop",1,0,"","","System",""
+"23.2.2.20","groupArrayLast",1,0,"","","System",""
+"23.2.2.20","groupArray",1,0,"","","System",""
+"23.2.2.20","first_value",1,1,"","","System",""
+"23.2.2.20","exponentialTimeDecayedAvg",1,0,"","","System",""
+"23.2.2.20","quantileExactExclusive",1,0,"","","System",""
+"23.2.2.20","count",1,1,"","","System",""
+"23.2.2.20","stddevPopStable",1,0,"","","System",""
+"23.2.2.20","quantileExactLow",1,0,"","","System",""
+"23.2.2.20","avgWeighted",1,0,"","","System",""
+"23.2.2.20","anova",1,1,"analysisOfVariance","","System",""
+"23.2.2.20","BIT_AND",1,1,"groupBitAnd","","System",""
+"23.2.2.20","VAR_SAMP",1,1,"varSamp","","System",""
+"23.2.2.20","medianTimingWeighted",1,0,"quantileTimingWeighted","","System",""
+"23.2.2.20","COVAR_SAMP",1,1,"covarSamp","","System",""
+"23.2.2.20","VAR_POP",1,1,"varPop","","System",""
+"23.2.2.20","medianBFloat16",1,0,"quantileBFloat16","","System",""
+"23.2.2.20","medianTDigest",1,0,"quantileTDigest","","System",""
+"23.2.2.20","medianTiming",1,0,"quantileTiming","","System",""
+"23.2.2.20","medianExactHigh",1,0,"quantileExactHigh","","System",""
+"23.2.2.20","medianInterpolatedWeighted",1,0,"quantileInterpolatedWeighted","","System",""
+"23.2.2.20","BIT_XOR",1,1,"groupBitXor","","System",""
+"23.2.2.20","median",1,0,"quantile","","System",""
+"23.2.2.20","COVAR_POP",1,1,"covarPop","","System",""
+"23.2.2.20","medianBFloat16Weighted",1,0,"quantileBFloat16Weighted","","System",""
+"23.2.2.20","medianExactWeighted",1,0,"quantileExactWeighted","","System",""
+"23.2.2.20","medianTDigestWeighted",1,0,"quantileTDigestWeighted","","System",""
+"23.2.2.20","medianExact",1,0,"quantileExact","","System",""
+"23.2.2.20","STDDEV_POP",1,1,"stddevPop","","System",""
+"23.2.2.20","STDDEV_SAMP",1,1,"stddevSamp","","System",""
+"23.2.2.20","medianExactLow",1,0,"quantileExactLow","","System",""
+"23.2.2.20","BIT_OR",1,1,"groupBitOr","","System",""
+"23.2.2.20","medianDeterministic",1,0,"quantileDeterministic","","System",""
