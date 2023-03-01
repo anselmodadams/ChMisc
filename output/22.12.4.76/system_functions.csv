@@ -1,0 +1,1788 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to","create_query","origin","description"
+"22.12.4.76","polygonsEqualsCartesian",0,0,"","","System",""
+"22.12.4.76","h3GetPentagonIndexes",0,0,"","","System",""
+"22.12.4.76","JSON_VALUE",0,0,"","","System",""
+"22.12.4.76","UUIDStringToNum",0,0,"","","System",""
+"22.12.4.76","roundDown",0,0,"","","System",""
+"22.12.4.76","trunc",0,1,"","","System",""
+"22.12.4.76","ceil",0,1,"","","System",""
+"22.12.4.76","roundBankers",0,0,"","","System",""
+"22.12.4.76","round",0,1,"","","System",""
+"22.12.4.76","toIntervalHour",0,0,"","","System",""
+"22.12.4.76","toIntervalMinute",0,0,"","","System",""
+"22.12.4.76","toIntervalMillisecond",0,0,"","","System",""
+"22.12.4.76","parseDateTime64BestEffortUSOrZero",0,0,"","","System",""
+"22.12.4.76","parseDateTime64BestEffortOrZero",0,0,"","","System",""
+"22.12.4.76","parseDateTime64BestEffort",0,0,"","","System",""
+"22.12.4.76","parseDateTime32BestEffort",0,0,"","","System",""
+"22.12.4.76","parseDateTimeBestEffortOrNull",0,0,"","","System",""
+"22.12.4.76","parseDateTimeBestEffortOrZero",0,0,"","","System",""
+"22.12.4.76","toUUIDOrNull",0,0,"","","System",""
+"22.12.4.76","parseDateTimeBestEffort",0,0,"","","System",""
+"22.12.4.76","toDecimal128OrNull",0,0,"","","System",""
+"22.12.4.76","toDecimal64OrNull",0,0,"","","System",""
+"22.12.4.76","toDecimal32OrNull",0,0,"","","System",""
+"22.12.4.76","toDateTimeOrNull",0,0,"","","System",""
+"22.12.4.76","toDate32OrNull",0,0,"","","System",""
+"22.12.4.76","toDateOrNull",0,0,"","","System",""
+"22.12.4.76","toFloat64OrNull",0,0,"","","System",""
+"22.12.4.76","toInt256OrNull",0,0,"","","System",""
+"22.12.4.76","toInt128OrNull",0,0,"","","System",""
+"22.12.4.76","toInt64OrNull",0,0,"","","System",""
+"22.12.4.76","toUInt128OrNull",0,0,"","","System",""
+"22.12.4.76","toUInt64OrNull",0,0,"","","System",""
+"22.12.4.76","toUInt8OrNull",0,0,"","","System",""
+"22.12.4.76","toDecimal256OrZero",0,0,"","","System",""
+"22.12.4.76","toDecimal64OrZero",0,0,"","","System",""
+"22.12.4.76","toDecimal32OrZero",0,0,"","","System",""
+"22.12.4.76","toDate32OrZero",0,0,"","","System",""
+"22.12.4.76","toDateOrZero",0,0,"","","System",""
+"22.12.4.76","toFloat64OrZero",0,0,"","","System",""
+"22.12.4.76","toFloat32OrZero",0,0,"","","System",""
+"22.12.4.76","toInt128OrZero",0,0,"","","System",""
+"22.12.4.76","toInt64OrZero",0,0,"","","System",""
+"22.12.4.76","toInt16OrZero",0,0,"","","System",""
+"22.12.4.76","toUInt128OrZero",0,0,"","","System",""
+"22.12.4.76","toUInt32OrZero",0,0,"","","System",""
+"22.12.4.76","toString",0,0,"","","System",""
+"22.12.4.76","toDateTime",0,0,"","","System",""
+"22.12.4.76","toDecimal128",0,0,"","","System",""
+"22.12.4.76","toDecimal64",0,0,"","","System",""
+"22.12.4.76","toFloat64",0,0,"","","System",""
+"22.12.4.76","toFloat32",0,0,"","","System",""
+"22.12.4.76","toInt128",0,0,"","","System",""
+"22.12.4.76","toInt32",0,0,"","","System",""
+"22.12.4.76","toInt8",0,0,"","","System",""
+"22.12.4.76","toUInt256",0,0,"","","System",""
+"22.12.4.76","toUInt64",0,0,"","","System",""
+"22.12.4.76","toDecimal32",0,0,"","","System",""
+"22.12.4.76","toUInt32",0,0,"","","System",""
+"22.12.4.76","toUInt8",0,0,"","","System",""
+"22.12.4.76","blockSize",0,0,"","","System",""
+"22.12.4.76","toUInt16",0,0,"","","System",""
+"22.12.4.76","isNotNull",0,0,"","","System",""
+"22.12.4.76","BLAKE3",0,0,"","","System","
+Calculates BLAKE3 hash string and returns the resulting set of bytes as FixedString.
+This cryptographic hash-function is integrated into ClickHouse with BLAKE3 Rust library.
+The function is rather fast and shows approximately two times faster performance compared to SHA-2, while generating hashes of the same length as SHA-256.
+It returns a BLAKE3 hash as a byte array with type FixedString(32).
+"
+"22.12.4.76","wyHash64",0,0,"","","System",""
+"22.12.4.76","xxHash32",0,0,"","","System",""
+"22.12.4.76","gccMurmurHash",0,0,"","","System",""
+"22.12.4.76","murmurHash2_32",0,0,"","","System",""
+"22.12.4.76","javaHashUTF16LE",0,0,"","","System",""
+"22.12.4.76","javaHash",0,0,"","","System",""
+"22.12.4.76","URLHash",0,0,"","","System",""
+"22.12.4.76","intHash64",0,0,"","","System",""
+"22.12.4.76","intHash32",0,0,"","","System",""
+"22.12.4.76","metroHash64",0,0,"","","System",""
+"22.12.4.76","farmHash64",0,0,"","","System",""
+"22.12.4.76","farmFingerprint64",0,0,"","","System",""
+"22.12.4.76","sipHash128",0,0,"","","System",""
+"22.12.4.76","murmurHash3_128",0,0,"","","System",""
+"22.12.4.76","SHA384",0,0,"","","System",""
+"22.12.4.76","toInt8OrZero",0,0,"","","System",""
+"22.12.4.76","SHA1",0,0,"","","System",""
+"22.12.4.76","MD5",0,0,"","","System",""
+"22.12.4.76","halfMD5",0,0,"","","System",""
+"22.12.4.76","toDate32",0,0,"","","System",""
+"22.12.4.76","lowCardinalityIndices",0,0,"","","System",""
+"22.12.4.76","decrypt",0,0,"","","System",""
+"22.12.4.76","logTrace",0,0,"","","System",""
+"22.12.4.76","toInt16OrNull",0,0,"","","System",""
+"22.12.4.76","timeSlots",0,0,"","","System",""
+"22.12.4.76","stringToH3",0,0,"","","System",""
+"22.12.4.76","asinh",0,0,"","","System",""
+"22.12.4.76","cutWWW",0,0,"","","System",""
+"22.12.4.76","cbrt",0,0,"","","System",""
+"22.12.4.76","s2ToGeo",0,0,"","","System",""
+"22.12.4.76","sleepEachRow",0,0,"","","System",""
+"22.12.4.76","regionToName",0,0,"","","System",""
+"22.12.4.76","regionIn",0,0,"","","System",""
+"22.12.4.76","toUUID",0,0,"","","System",""
+"22.12.4.76","regionToCountry",0,0,"","","System",""
+"22.12.4.76","regionToArea",0,0,"","","System",""
+"22.12.4.76","regionToCity",0,0,"","","System",""
+"22.12.4.76","cutQueryString",0,0,"","","System",""
+"22.12.4.76","detectTonality",0,0,"","","System",""
+"22.12.4.76","toRelativeWeekNum",0,0,"","","System",""
+"22.12.4.76","makeDateTime64",0,0,"","","System",""
+"22.12.4.76","makeDateTime",0,0,"","","System",""
+"22.12.4.76","makeDate",0,0,"","","System",""
+"22.12.4.76","transactionLatestSnapshot",0,0,"","","System",""
+"22.12.4.76","transactionID",0,0,"","","System",""
+"22.12.4.76","extractGroups",0,0,"","","System",""
+"22.12.4.76","__bitWrapperFunc",0,0,"","","System",""
+"22.12.4.76","showCertificate",0,0,"","","System",""
+"22.12.4.76","hashid",0,0,"","","System",""
+"22.12.4.76","h3EdgeLengthM",0,0,"","","System",""
+"22.12.4.76","toIPv6OrNull",0,0,"","","System",""
+"22.12.4.76","toIPv6OrDefault",0,0,"","","System",""
+"22.12.4.76","toIPv4OrNull",0,0,"","","System",""
+"22.12.4.76","toIPv4OrDefault",0,0,"","","System",""
+"22.12.4.76","UUIDNumToString",0,0,"","","System",""
+"22.12.4.76","IPv4StringToNumOrDefault",0,0,"","","System",""
+"22.12.4.76","IPv4NumToStringClassC",0,0,"","","System",""
+"22.12.4.76","IPv4NumToString",0,0,"","","System",""
+"22.12.4.76","isIPv6String",0,0,"","","System",""
+"22.12.4.76","JSON_QUERY",0,0,"","","System",""
+"22.12.4.76","isIPv4String",0,0,"","","System",""
+"22.12.4.76","IPv4CIDRToRange",0,0,"","","System",""
+"22.12.4.76","IPv6CIDRToRange",0,0,"","","System",""
+"22.12.4.76","MACStringToNum",0,0,"","","System",""
+"22.12.4.76","cutIPv6",0,0,"","","System",""
+"22.12.4.76","snowflakeToDateTime64",0,0,"","","System",""
+"22.12.4.76","radians",0,1,"","","System",""
+"22.12.4.76","MACNumToString",0,0,"","","System",""
+"22.12.4.76","revision",0,1,"","","System",""
+"22.12.4.76","fromModifiedJulianDayOrNull",0,0,"","","System",""
+"22.12.4.76","fromModifiedJulianDay",0,0,"","","System",""
+"22.12.4.76","bar",0,0,"","","System",""
+"22.12.4.76","currentUser",0,0,"","","System",""
+"22.12.4.76","toIntervalQuarter",0,0,"","","System",""
+"22.12.4.76","multiSearchAny",0,0,"","","System",""
+"22.12.4.76","bitmapContains",0,0,"","","System",""
+"22.12.4.76","bitmapHasAny",0,0,"","","System",""
+"22.12.4.76","bitmapXor",0,0,"","","System",""
+"22.12.4.76","bitmapOr",0,0,"","","System",""
+"22.12.4.76","xxh3",0,0,"","","System","Calculates value of XXH3 64-bit hash function. Refer to https://github.com/Cyan4973/xxHash for detailed documentation."
+"22.12.4.76","bitmapAnd",0,0,"","","System",""
+"22.12.4.76","bitmapAndnotCardinality",0,0,"","","System",""
+"22.12.4.76","IPv6StringToNumOrDefault",0,0,"","","System",""
+"22.12.4.76","bitmapAndnot",0,0,"","","System",""
+"22.12.4.76","bitmapXorCardinality",0,0,"","","System",""
+"22.12.4.76","bitmapOrCardinality",0,0,"","","System",""
+"22.12.4.76","bitmapAndCardinality",0,0,"","","System",""
+"22.12.4.76","bitmapMin",0,0,"","","System",""
+"22.12.4.76","bitmapCardinality",0,0,"","","System",""
+"22.12.4.76","bitmapTransform",0,0,"","","System",""
+"22.12.4.76","bitmapSubsetLimit",0,0,"","","System",""
+"22.12.4.76","bitmapSubsetInRange",0,0,"","","System",""
+"22.12.4.76","bitmapToArray",0,0,"","","System",""
+"22.12.4.76","bitmapBuild",0,0,"","","System",""
+"22.12.4.76","extractTextFromHTML",0,0,"","","System",""
+"22.12.4.76","bitHammingDistance",0,0,"","","System",""
+"22.12.4.76","polygonsDistanceSpherical",0,0,"","","System",""
+"22.12.4.76","polygonsDistanceCartesian",0,0,"","","System",""
+"22.12.4.76","h3EdgeLengthKm",0,0,"","","System",""
+"22.12.4.76","fuzzBits",0,0,"","","System",""
+"22.12.4.76","toUUIDOrZero",0,0,"","","System",""
+"22.12.4.76","h3GetUnidirectionalEdge",0,0,"","","System",""
+"22.12.4.76","addressToLineWithInlines",0,0,"","","System",""
+"22.12.4.76","monthName",0,1,"","","System",""
+"22.12.4.76","arrayReverseFill",0,0,"","","System",""
+"22.12.4.76","arrayFill",0,0,"","","System",""
+"22.12.4.76","addressToSymbol",0,0,"","","System",""
+"22.12.4.76","aes_decrypt_mysql",0,0,"","","System",""
+"22.12.4.76","pathFull",0,0,"","","System",""
+"22.12.4.76","aes_encrypt_mysql",0,0,"","","System",""
+"22.12.4.76","dictGetOrNull",0,0,"","","System",""
+"22.12.4.76","toStartOfSecond",0,0,"","","System",""
+"22.12.4.76","dictGet",0,0,"","","System",""
+"22.12.4.76","dictGetStringOrDefault",0,0,"","","System",""
+"22.12.4.76","dictGetUUIDOrDefault",0,0,"","","System",""
+"22.12.4.76","dictGetDateTimeOrDefault",0,0,"","","System",""
+"22.12.4.76","UTCTimestamp",0,1,"","","System","
+Returns the current date and time at the moment of query analysis. The function is a constant expression.
+Same as `now('UTC')`. Was added only for MySQL support. `now` is preferred.
+
+Example:
+[example:typical]
+"
+"22.12.4.76","dictGetFloat64OrDefault",0,0,"","","System",""
+"22.12.4.76","s2RectAdd",0,0,"","","System",""
+"22.12.4.76","dictGetFloat32OrDefault",0,0,"","","System",""
+"22.12.4.76","dictGetInt64OrDefault",0,0,"","","System",""
+"22.12.4.76","today",0,0,"","","System",""
+"22.12.4.76","dictGetUInt32OrDefault",0,0,"","","System",""
+"22.12.4.76","h3IsPentagon",0,0,"","","System",""
+"22.12.4.76","dictGetUInt16OrDefault",0,0,"","","System",""
+"22.12.4.76","arrayIntersect",0,0,"","","System",""
+"22.12.4.76","dictGetUInt8OrDefault",0,0,"","","System",""
+"22.12.4.76","dictGetDescendants",0,0,"","","System",""
+"22.12.4.76","multiSearchFirstPosition",0,0,"","","System",""
+"22.12.4.76","dictGetDate",0,0,"","","System",""
+"22.12.4.76","dictGetInt16",0,0,"","","System",""
+"22.12.4.76","dictGetUInt64",0,0,"","","System",""
+"22.12.4.76","dictGetUInt32",0,0,"","","System",""
+"22.12.4.76","enabledProfiles",0,0,"","","System",""
+"22.12.4.76","dictHas",0,0,"","","System",""
+"22.12.4.76","JSONExtractKeysAndValues",0,0,"","","System",""
+"22.12.4.76","replicate",0,0,"","","System",""
+"22.12.4.76","arrayCumSumNonNegative",0,0,"","","System",""
+"22.12.4.76","translateUTF8",0,0,"","","System",""
+"22.12.4.76","detectCharset",0,0,"","","System",""
+"22.12.4.76","reinterpretAsInt32",0,0,"","","System",""
+"22.12.4.76","dictGetFloat64",0,0,"","","System",""
+"22.12.4.76","arraySlice",0,0,"","","System",""
+"22.12.4.76","toStartOfQuarter",0,0,"","","System",""
+"22.12.4.76","h3ToGeoBoundary",0,0,"","","System",""
+"22.12.4.76","dictGetDateTime",0,0,"","","System",""
+"22.12.4.76","toDateTime64OrZero",0,0,"","","System",""
+"22.12.4.76","subtractSeconds",0,0,"","","System",""
+"22.12.4.76","tid",0,0,"","","System",""
+"22.12.4.76","timezoneOf",0,0,"","","System",""
+"22.12.4.76","bitCount",0,0,"","","System",""
+"22.12.4.76","atan2",0,1,"","","System",""
+"22.12.4.76","ifNotFinite",0,0,"","","System",""
+"22.12.4.76","format",0,0,"","","System",""
+"22.12.4.76","dictGetHierarchy",0,0,"","","System",""
+"22.12.4.76","notEmpty",0,0,"","","System",""
+"22.12.4.76","dictIsIn",0,0,"","","System",""
+"22.12.4.76","base64Encode",0,0,"","","System",""
+"22.12.4.76","globalVariable",0,0,"","","System",""
+"22.12.4.76","divideDecimal",0,0,"","","System","
+Performs division on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These function work significantly slower than usual `divide`.
+In case you don't really need controlled precision and/or need fast computation, consider using [divide](#divide).
+:::
+
+**Syntax**
+
+```sql
+divideDecimal(a, b[, result_scale])
+```
+
+**Arguments**
+
+-   `a` — First value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `b` — Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `result_scale` — Scale of result: [Int/UInt](../../sql-reference/data-types/int-uint.md).
+
+**Returned value**
+
+-   The result of division with given scale.
+
+Type: [Decimal256](../../sql-reference/data-types/decimal.md).
+
+**Example**
+
+```text
+┌─divideDecimal(toDecimal256(-12, 0), toDecimal32(2.1, 1), 10)─┐
+│                                                -5.7142857142 │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**Difference from regular division:**
+```sql
+SELECT toDecimal64(-12, 1) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 1) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+```
+
+```text
+┌─divide(toDecimal64(-12, 1), toDecimal32(2.1, 1))─┐
+│                                             -5.7 │
+└──────────────────────────────────────────────────┘
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+```
+
+```sql
+SELECT toDecimal64(-12, 0) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 0) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+```
+
+```text
+DB::Exception: Decimal result's scale is less than argument's one: While processing toDecimal64(-12, 0) / toDecimal32(2.1, 1). (ARGUMENT_OUT_OF_BOUND)
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+```
+"
+"22.12.4.76","arrayReduceInRanges",0,0,"","","System",""
+"22.12.4.76","wordShingleMinHash",0,0,"","","System",""
+"22.12.4.76","arrayDifference",0,0,"","","System",""
+"22.12.4.76","toUInt256OrNull",0,0,"","","System",""
+"22.12.4.76","arrayFirstOrNull",0,0,"","","System",""
+"22.12.4.76","ignore",0,0,"","","System",""
+"22.12.4.76","subtractMinutes",0,0,"","","System",""
+"22.12.4.76","h3Line",0,0,"","","System",""
+"22.12.4.76","bitTest",0,0,"","","System",""
+"22.12.4.76","ngramSearchCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","bitmapMax",0,0,"","","System",""
+"22.12.4.76","h3GetOriginIndexFromUnidirectionalEdge",0,0,"","","System",""
+"22.12.4.76","ngramDistanceCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","ngramDistance",0,0,"","","System",""
+"22.12.4.76","acos",0,1,"","","System",""
+"22.12.4.76","accurateCastOrNull",0,0,"","","System",""
+"22.12.4.76","empty",0,0,"","","System",""
+"22.12.4.76","ngramMinHashArg",0,0,"","","System",""
+"22.12.4.76","_CAST",0,1,"","","System",""
+"22.12.4.76","toDayOfYear",0,0,"","","System",""
+"22.12.4.76","bin",0,1,"","","System",""
+"22.12.4.76","bitSlice",0,0,"","","System",""
+"22.12.4.76","tumbleStart",0,0,"","","System",""
+"22.12.4.76","JSONExtract",0,0,"","","System",""
+"22.12.4.76","bitShiftRight",0,0,"","","System",""
+"22.12.4.76","arrayFirst",0,0,"","","System",""
+"22.12.4.76","h3UnidirectionalEdgeIsValid",0,0,"","","System",""
+"22.12.4.76","substringUTF8",0,0,"","","System",""
+"22.12.4.76","tan",0,1,"","","System",""
+"22.12.4.76","substring",0,1,"","","System",""
+"22.12.4.76","tryBase58Decode",0,0,"","","System",""
+"22.12.4.76","addSeconds",0,0,"","","System",""
+"22.12.4.76","JSONExtractKeys",0,0,"","","System",""
+"22.12.4.76","version",0,1,"","","System",""
+"22.12.4.76","joinGetOrNull",0,0,"","","System",""
+"22.12.4.76","JSONExtractArrayRaw",0,0,"","","System",""
+"22.12.4.76","toUInt16OrNull",0,0,"","","System",""
+"22.12.4.76","JSONExtractRaw",0,0,"","","System",""
+"22.12.4.76","JSONExtractString",0,0,"","","System",""
+"22.12.4.76","SHA512",0,0,"","","System",""
+"22.12.4.76","JSONExtractFloat",0,0,"","","System",""
+"22.12.4.76","dictGetString",0,0,"","","System",""
+"22.12.4.76","arrayReduce",0,0,"","","System",""
+"22.12.4.76","JSONExtractUInt",0,0,"","","System",""
+"22.12.4.76","JSONKey",0,0,"","","System",""
+"22.12.4.76","fullHostName",0,0,"","","System",""
+"22.12.4.76","JSONLength",0,0,"","","System",""
+"22.12.4.76","normalizedQueryHash",0,0,"","","System",""
+"22.12.4.76","bitTestAll",0,0,"","","System",""
+"22.12.4.76","pi",0,1,"","","System",""
+"22.12.4.76","randCanonical",0,0,"","","System","
+The function generates pseudo random results with independent and identically distributed uniformly distributed values in [0, 1).
+Non-deterministic. Return type is Float64.
+        "
+"22.12.4.76","ngramMinHash",0,0,"","","System",""
+"22.12.4.76","toMonth",0,0,"","","System",""
+"22.12.4.76","readWKTMultiPolygon",0,0,"","","System",""
+"22.12.4.76","subtractYears",0,0,"","","System",""
+"22.12.4.76","rand",0,1,"","","System",""
+"22.12.4.76","readWKTRing",0,0,"","","System",""
+"22.12.4.76","caseWithExpression",0,0,"","","System",""
+"22.12.4.76","CRC32",0,1,"","","System",""
+"22.12.4.76","multiSearchFirstPositionUTF8",0,0,"","","System",""
+"22.12.4.76","addMilliseconds",0,0,"","","System",""
+"22.12.4.76","byteSize",0,0,"","","System",""
+"22.12.4.76","intExp2",0,0,"","","System",""
+"22.12.4.76","assumeNotNull",0,0,"","","System",""
+"22.12.4.76","wordShingleMinHashArg",0,0,"","","System",""
+"22.12.4.76","ngramMinHashArgUTF8",0,0,"","","System",""
+"22.12.4.76","ngramMinHashArgCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","cutToFirstSignificantSubdomainRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomain` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"22.12.4.76","wordShingleMinHashUTF8",0,0,"","","System",""
+"22.12.4.76","ngramMinHashCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","formatRowNoNewline",0,0,"","","System",""
+"22.12.4.76","wordShingleSimHashCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","wordShingleSimHashUTF8",0,0,"","","System",""
+"22.12.4.76","arrayCumSum",0,0,"","","System",""
+"22.12.4.76","wordShingleSimHash",0,0,"","","System",""
+"22.12.4.76","finalizeAggregation",0,0,"","","System",""
+"22.12.4.76","ngramSimHashCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","ngramSimHashCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","ngramSimHash",0,0,"","","System",""
+"22.12.4.76","toTimezone",0,0,"","","System",""
+"22.12.4.76","mapContains",0,0,"","","System",""
+"22.12.4.76","char",0,1,"","","System",""
+"22.12.4.76","currentDatabase",0,0,"","","System",""
+"22.12.4.76","URLPathHierarchy",0,0,"","","System",""
+"22.12.4.76","h3GetUnidirectionalEdgesFromHexagon",0,0,"","","System",""
+"22.12.4.76","h3HexRing",0,0,"","","System",""
+"22.12.4.76","positiveModulo",0,1,"","","System","
+Calculates the remainder when dividing `a` by `b`. Similar to function `modulo` except that `positiveModulo` always return non-negative number.
+Returns the difference between `a` and the nearest integer not greater than `a` divisible by `b`.
+In other words, the function returning the modulus (modulo) in the terms of Modular Arithmetic.
+        "
+"22.12.4.76","splitByRegexp",0,0,"","","System",""
+"22.12.4.76","rowNumberInBlock",0,0,"","","System",""
+"22.12.4.76","splitByString",0,0,"","","System",""
+"22.12.4.76","s2CapContains",0,0,"","","System",""
+"22.12.4.76","identity",0,0,"","","System",""
+"22.12.4.76","ascii",0,1,"","","System","
+Returns the ASCII code point of the first character of str.  The result type is Int32.
+
+If s is empty, the result is 0. If the first character is not an ASCII character or not part of the Latin-1 Supplement range of UTF-16, the result is undefined)
+        "
+"22.12.4.76","s2RectUnion",0,0,"","","System",""
+"22.12.4.76","ngramDistanceUTF8",0,0,"","","System",""
+"22.12.4.76","MD4",0,0,"","","System",""
+"22.12.4.76","moduloOrZero",0,0,"","","System",""
+"22.12.4.76","extractAll",0,0,"","","System",""
+"22.12.4.76","nullInIgnoreSet",0,0,"","","System",""
+"22.12.4.76","geoToS2",0,0,"","","System",""
+"22.12.4.76","blockSerializedSize",0,0,"","","System",""
+"22.12.4.76","dateTrunc",0,0,"","","System",""
+"22.12.4.76","generateUUIDv4",0,0,"","","System",""
+"22.12.4.76","JSONExtractBool",0,0,"","","System",""
+"22.12.4.76","tupleHammingDistance",0,0,"","","System",""
+"22.12.4.76","h3ExactEdgeLengthRads",0,0,"","","System",""
+"22.12.4.76","ngramSearchUTF8",0,0,"","","System",""
+"22.12.4.76","getTypeSerializationStreams",0,0,"","","System",""
+"22.12.4.76","minSampleSizeConversion",0,0,"","","System",""
+"22.12.4.76","jumpConsistentHash",0,0,"","","System",""
+"22.12.4.76","parseTimeDelta",0,0,"","","System",""
+"22.12.4.76","tuplePlus",0,0,"","","System",""
+"22.12.4.76","defaultValueOfTypeName",0,0,"","","System",""
+"22.12.4.76","formatReadableSize",0,0,"","","System",""
+"22.12.4.76","toNullable",0,0,"","","System",""
+"22.12.4.76","concat",0,1,"","","System",""
+"22.12.4.76","demangle",0,0,"","","System",""
+"22.12.4.76","arrayStringConcat",0,0,"","","System",""
+"22.12.4.76","splitByNonAlpha",0,0,"","","System",""
+"22.12.4.76","hasSubstr",0,0,"","","System",""
+"22.12.4.76","toUInt64OrDefault",0,0,"","","System",""
+"22.12.4.76","__bitBoolMaskAnd",0,0,"","","System",""
+"22.12.4.76","h3GetIndexesFromUnidirectionalEdge",0,0,"","","System",""
+"22.12.4.76","sipHash64",0,0,"","","System",""
+"22.12.4.76","randNormal",0,0,"","","System","
+Returns a random number from the normal distribution.
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","catboostEvaluate",0,0,"","","System",""
+"22.12.4.76","divide",0,0,"","","System",""
+"22.12.4.76","intDivOrZero",0,0,"","","System",""
+"22.12.4.76","minus",0,0,"","","System",""
+"22.12.4.76","ngramMinHashUTF8",0,0,"","","System",""
+"22.12.4.76","sqrt",0,1,"","","System",""
+"22.12.4.76","ngramMinHashArgCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","endsWith",0,0,"","","System",""
+"22.12.4.76","evalMLMethod",0,0,"","","System",""
+"22.12.4.76","emptyArrayInt32",0,0,"","","System",""
+"22.12.4.76","extract",0,0,"","","System",""
+"22.12.4.76","multiSearchFirstIndexCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","rowNumberInAllBlocks",0,0,"","","System",""
+"22.12.4.76","addNanoseconds",0,0,"","","System",""
+"22.12.4.76","JSONType",0,0,"","","System",""
+"22.12.4.76","countDigits",0,0,"","","System",""
+"22.12.4.76","exp10",0,0,"","","System",""
+"22.12.4.76","__bitSwapLastTwo",0,0,"","","System",""
+"22.12.4.76","multiSearchFirstIndexUTF8",0,0,"","","System",""
+"22.12.4.76","lowCardinalityKeys",0,0,"","","System",""
+"22.12.4.76","replaceRegexpOne",0,0,"","","System",""
+"22.12.4.76","factorial",0,1,"","","System","
+Computes the factorial of an integer value. It works with any native integer type including UInt(8|16|32|64) and Int(8|16|32|64). The return type is UInt64.
+
+The factorial of 0 is 1. Likewise, the factorial() function returns 1 for any negative value. The maximum positive value for the input argument is 20, a value of 21 or greater will cause exception throw.
+"
+"22.12.4.76","tryBase64Decode",0,0,"","","System",""
+"22.12.4.76","mapFilter",0,0,"","","System",""
+"22.12.4.76","toStartOfMinute",0,0,"","","System",""
+"22.12.4.76","LpNormalize",0,0,"","","System",""
+"22.12.4.76","tokens",0,0,"","","System",""
+"22.12.4.76","parseDateTime32BestEffortOrNull",0,0,"","","System",""
+"22.12.4.76","cutToFirstSignificantSubdomainWithWWW",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"", without stripping ""www""."
+"22.12.4.76","wordShingleSimHashCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","bitXor",0,0,"","","System",""
+"22.12.4.76","lcm",0,0,"","","System",""
+"22.12.4.76","detectLanguage",0,0,"","","System",""
+"22.12.4.76","formatRow",0,0,"","","System",""
+"22.12.4.76","countMatchesCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","atan",0,1,"","","System",""
+"22.12.4.76","range",0,0,"","","System",""
+"22.12.4.76","fromUnixTimestamp64Micro",0,0,"","","System",""
+"22.12.4.76","normalizeQuery",0,0,"","","System",""
+"22.12.4.76","degrees",0,1,"","","System",""
+"22.12.4.76","arrayAvg",0,0,"","","System",""
+"22.12.4.76","concatWithSeparator",0,0,"","","System","
+Returns the concatenation strings separated by string separator. Syntax: concatWithSeparator(sep, expr1, expr2, expr3...)
+        "
+"22.12.4.76","hopEnd",0,0,"","","System",""
+"22.12.4.76","hopStart",0,0,"","","System",""
+"22.12.4.76","encrypt",0,0,"","","System",""
+"22.12.4.76","hop",0,0,"","","System",""
+"22.12.4.76","toStartOfInterval",0,0,"","","System",""
+"22.12.4.76","tumble",0,0,"","","System",""
+"22.12.4.76","fromUnixTimestamp64Milli",0,0,"","","System",""
+"22.12.4.76","bitmaskToList",0,0,"","","System",""
+"22.12.4.76","shardCount",0,0,"","","System",""
+"22.12.4.76","shardNum",0,0,"","","System",""
+"22.12.4.76","geoDistance",0,0,"","","System",""
+"22.12.4.76","greatCircleDistance",0,0,"","","System",""
+"22.12.4.76","IPv6StringToNum",0,0,"","","System",""
+"22.12.4.76","dictGetInt64",0,0,"","","System",""
+"22.12.4.76","greatCircleAngle",0,0,"","","System",""
+"22.12.4.76","toUnixTimestamp",0,0,"","","System",""
+"22.12.4.76","h3GetRes0Indexes",0,0,"","","System",""
+"22.12.4.76","toIntervalMonth",0,0,"","","System",""
+"22.12.4.76","defaultProfiles",0,0,"","","System",""
+"22.12.4.76","arrayReverse",0,0,"","","System",""
+"22.12.4.76","now64",0,1,"","","System",""
+"22.12.4.76","reverseDNSQuery",0,0,"","","System","Performs a reverse DNS query to get the PTR records associated with the IP address.
+
+                **Syntax**
+
+                ``` sql
+                reverseDNSQuery(address)
+                ```
+
+                This function performs reverse DNS resolutions on both IPv4 and IPv6.
+
+                **Arguments**
+
+                -   `address` — An IPv4 or IPv6 address. [String](../../sql-reference/data-types/string.md).
+
+                **Returned value**
+
+                -   Associated domains (PTR records).
+
+                Type: Type: [Array(String)](../../sql-reference/data-types/array.md).
+
+                **Example**
+
+                Query:
+
+                ``` sql
+                SELECT reverseDNSQuery('192.168.0.2');
+                ```
+
+                Result:
+
+                ``` text
+                ┌─reverseDNSQuery('192.168.0.2')────────────┐
+                │ ['test2.example.com','test3.example.com'] │
+                └───────────────────────────────────────────┘
+                ```
+                "
+"22.12.4.76","extractAllGroupsHorizontal",0,0,"","","System",""
+"22.12.4.76","h3ExactEdgeLengthKm",0,0,"","","System",""
+"22.12.4.76","arrayFilter",0,0,"","","System",""
+"22.12.4.76","defaultRoles",0,0,"","","System",""
+"22.12.4.76","toQuarter",0,0,"","","System",""
+"22.12.4.76","countMatches",0,0,"","","System",""
+"22.12.4.76","enabledRoles",0,0,"","","System",""
+"22.12.4.76","currentRoles",0,0,"","","System",""
+"22.12.4.76","dateTimeToSnowflake",0,0,"","","System",""
+"22.12.4.76","cutToFirstSignificantSubdomain",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"" (see documentation of the `firstSignificantSubdomain`)."
+"22.12.4.76","arrayEnumerateUniqRanked",0,0,"","","System",""
+"22.12.4.76","CRC64",0,1,"","","System",""
+"22.12.4.76","emptyArrayDate",0,0,"","","System",""
+"22.12.4.76","CRC32IEEE",0,1,"","","System",""
+"22.12.4.76","erf",0,0,"","","System",""
+"22.12.4.76","trimBoth",0,0,"","","System",""
+"22.12.4.76","reinterpretAsUInt8",0,0,"","","System",""
+"22.12.4.76","atanh",0,0,"","","System",""
+"22.12.4.76","encodeURLComponent",0,0,"","","System",""
+"22.12.4.76","wordShingleMinHashArgCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","h3GetResolution",0,0,"","","System",""
+"22.12.4.76","ngramSearch",0,0,"","","System",""
+"22.12.4.76","lessOrEquals",0,0,"","","System",""
+"22.12.4.76","subtractQuarters",0,0,"","","System",""
+"22.12.4.76","fromUnixTimestamp64Nano",0,0,"","","System",""
+"22.12.4.76","simpleJSONExtractUInt",0,0,"","","System",""
+"22.12.4.76","toDecimal64OrDefault",0,0,"","","System",""
+"22.12.4.76","ngrams",0,0,"","","System",""
+"22.12.4.76","domain",0,0,"","","System","
+Extracts the hostname from a URL.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        "
+"22.12.4.76","toFloat32OrNull",0,0,"","","System",""
+"22.12.4.76","h3IndexesAreNeighbors",0,0,"","","System",""
+"22.12.4.76","tupleDivideByNumber",0,0,"","","System",""
+"22.12.4.76","caseWithoutExpression",0,0,"","","System",""
+"22.12.4.76","getOSKernelVersion",0,0,"","","System",""
+"22.12.4.76","addHours",0,0,"","","System",""
+"22.12.4.76","arrayPushBack",0,0,"","","System",""
+"22.12.4.76","multiSearchAnyUTF8",0,0,"","","System",""
+"22.12.4.76","mapApply",0,0,"","","System",""
+"22.12.4.76","IPv4StringToNum",0,0,"","","System",""
+"22.12.4.76","positionUTF8",0,0,"","","System",""
+"22.12.4.76","hasToken",0,0,"","","System",""
+"22.12.4.76","hypot",0,1,"","","System",""
+"22.12.4.76","protocol",0,0,"","","System",""
+"22.12.4.76","if",0,1,"","","System",""
+"22.12.4.76","toIntervalSecond",0,0,"","","System",""
+"22.12.4.76","kostikConsistentHash",0,0,"","","System",""
+"22.12.4.76","regionToContinent",0,0,"","","System",""
+"22.12.4.76","makeDate32",0,0,"","","System",""
+"22.12.4.76","ilike",0,0,"","","System",""
+"22.12.4.76","toUInt64OrZero",0,0,"","","System",""
+"22.12.4.76","dictGetUInt16",0,0,"","","System",""
+"22.12.4.76","globalNotNullInIgnoreSet",0,0,"","","System",""
+"22.12.4.76","h3GetUnidirectionalEdgeBoundary",0,0,"","","System",""
+"22.12.4.76","globalNullInIgnoreSet",0,0,"","","System",""
+"22.12.4.76","hasAll",0,0,"","","System",""
+"22.12.4.76","toTime",0,0,"","","System",""
+"22.12.4.76","globalNotInIgnoreSet",0,0,"","","System",""
+"22.12.4.76","splitByChar",0,0,"","","System",""
+"22.12.4.76","toRelativeDayNum",0,0,"","","System",""
+"22.12.4.76","notInIgnoreSet",0,0,"","","System",""
+"22.12.4.76","globalInIgnoreSet",0,0,"","","System",""
+"22.12.4.76","dictGetUUID",0,0,"","","System",""
+"22.12.4.76","inIgnoreSet",0,0,"","","System",""
+"22.12.4.76","arrayConcat",0,0,"","","System",""
+"22.12.4.76","globalNotNullIn",0,0,"","","System",""
+"22.12.4.76","notNullIn",0,0,"","","System",""
+"22.12.4.76","globalNullIn",0,0,"","","System",""
+"22.12.4.76","dateTime64ToSnowflake",0,0,"","","System",""
+"22.12.4.76","dictGetInt8OrDefault",0,0,"","","System",""
+"22.12.4.76","addressToLine",0,0,"","","System",""
+"22.12.4.76","globalNotIn",0,0,"","","System",""
+"22.12.4.76","ifNull",0,1,"","","System",""
+"22.12.4.76","normalizeQueryKeepNames",0,0,"","","System",""
+"22.12.4.76","xxHash64",0,0,"","","System",""
+"22.12.4.76","in",0,0,"","","System",""
+"22.12.4.76","polygonAreaSpherical",0,0,"","","System",""
+"22.12.4.76","base58Encode",0,0,"","","System",""
+"22.12.4.76","firstSignificantSubdomain",0,0,"","","System","
+Returns the ""first significant subdomain"".
+
+The first significant subdomain is a second-level domain if it is 'com', 'net', 'org', or 'co'.
+Otherwise, it is a third-level domain.
+
+For example, firstSignificantSubdomain('https://news.clickhouse.com/') = 'clickhouse', firstSignificantSubdomain ('https://news.clickhouse.com.tr/') = 'clickhouse'.
+
+The list of ""insignificant"" second-level domains and other implementation details may change in the future.
+        "
+"22.12.4.76","h3HexAreaKm2",0,0,"","","System",""
+"22.12.4.76","rand64",0,0,"","","System",""
+"22.12.4.76","connectionId",0,1,"","","System",""
+"22.12.4.76","ngramDistanceCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","startsWith",0,0,"","","System",""
+"22.12.4.76","initialQueryID",0,0,"","","System",""
+"22.12.4.76","murmurHash2_64",0,0,"","","System",""
+"22.12.4.76","h3GetBaseCell",0,0,"","","System",""
+"22.12.4.76","bitmapHasAll",0,0,"","","System",""
+"22.12.4.76","base58Decode",0,0,"","","System",""
+"22.12.4.76","cityHash64",0,0,"","","System",""
+"22.12.4.76","regionToTopContinent",0,0,"","","System",""
+"22.12.4.76","intDiv",0,0,"","","System",""
+"22.12.4.76","intExp10",0,0,"","","System",""
+"22.12.4.76","log",0,1,"","","System",""
+"22.12.4.76","errorCodeToName",0,0,"","","System",""
+"22.12.4.76","randomFixedString",0,0,"","","System",""
+"22.12.4.76","toWeek",0,0,"","","System",""
+"22.12.4.76","toStartOfHour",0,0,"","","System",""
+"22.12.4.76","isDecimalOverflow",0,0,"","","System",""
+"22.12.4.76","encodeURLFormComponent",0,0,"","","System",""
+"22.12.4.76","getSizeOfEnumType",0,0,"","","System",""
+"22.12.4.76","detectLanguageMixed",0,0,"","","System",""
+"22.12.4.76","multiFuzzyMatchAnyIndex",0,0,"","","System",""
+"22.12.4.76","isNullable",0,0,"","","System",""
+"22.12.4.76","isZeroOrNull",0,0,"","","System",""
+"22.12.4.76","lower",0,1,"","","System",""
+"22.12.4.76","asin",0,1,"","","System","
+Calculates the arcsine of the argument.
+
+Takes arbitrary numeric type, which includes floating point and integer numbers, as well as big integers and decimals and returns Float64.
+
+For arguments in range [-1, 1] it returns the value in range of [-pi() / 2, pi() / 2].
+
+It represents an inverse function to function 'sin' on this range:
+[example:inverse]
+
+It always returns Float64, even if the argument has Float32 type:
+[example:float32]
+
+For arguments outside of this range, it returns nan:
+[example:nan]
+
+Every self-respectful data scientist knows how to apply arcsine to improve ads click-through rate with ClickHouse.
+For more details, see [https://en.wikipedia.org/wiki/Inverse_trigonometric_functions].
+"
+"22.12.4.76","left",0,1,"","","System",""
+"22.12.4.76","runningDifferenceStartingWithFirstValue",0,0,"","","System",""
+"22.12.4.76","h3CellAreaM2",0,0,"","","System",""
+"22.12.4.76","h3PointDistM",0,0,"","","System",""
+"22.12.4.76","tumbleEnd",0,0,"","","System",""
+"22.12.4.76","isInfinite",0,0,"","","System",""
+"22.12.4.76","lemmatize",0,0,"","","System",""
+"22.12.4.76","rightPad",0,0,"","","System",""
+"22.12.4.76","bitNot",0,0,"","","System",""
+"22.12.4.76","lengthUTF8",0,0,"","","System",""
+"22.12.4.76","toStartOfFiveMinutes",0,0,"","","System",""
+"22.12.4.76","reinterpretAsUInt128",0,0,"","","System",""
+"22.12.4.76","lgamma",0,0,"","","System",""
+"22.12.4.76","toInt16",0,0,"","","System",""
+"22.12.4.76","reverse",0,1,"","","System",""
+"22.12.4.76","filesystemUnreserved",0,0,"","","System",""
+"22.12.4.76","filesystemCapacity",0,0,"","","System",""
+"22.12.4.76","reinterpretAsDate",0,0,"","","System",""
+"22.12.4.76","filesystemAvailable",0,0,"","","System",""
+"22.12.4.76","like",0,0,"","","System",""
+"22.12.4.76","log2",0,1,"","","System",""
+"22.12.4.76","LinfNormalize",0,0,"","","System",""
+"22.12.4.76","extractURLParameterNames",0,0,"","","System",""
+"22.12.4.76","arrayMax",0,0,"","","System",""
+"22.12.4.76","toUUIDOrDefault",0,0,"","","System",""
+"22.12.4.76","polygonsIntersectionCartesian",0,0,"","","System",""
+"22.12.4.76","polygonPerimeterSpherical",0,0,"","","System",""
+"22.12.4.76","cutToFirstSignificantSubdomainWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainWithWWW` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"22.12.4.76","toDateTimeOrDefault",0,0,"","","System",""
+"22.12.4.76","addTupleOfIntervals",0,0,"","","System","
+Consecutively adds a tuple of intervals to a Date or a DateTime.
+[example:tuple]
+"
+"22.12.4.76","toInt128OrDefault",0,0,"","","System",""
+"22.12.4.76","nullIn",0,0,"","","System",""
+"22.12.4.76","toDecimal128OrZero",0,0,"","","System",""
+"22.12.4.76","extractURLParameters",0,0,"","","System",""
+"22.12.4.76","toInt16OrDefault",0,0,"","","System",""
+"22.12.4.76","normalizeUTF8NFD",0,0,"","","System",""
+"22.12.4.76","leftPadUTF8",0,0,"","","System",""
+"22.12.4.76","toUInt8OrDefault",0,0,"","","System",""
+"22.12.4.76","SHA224",0,0,"","","System",""
+"22.12.4.76","h3kRing",0,0,"","","System",""
+"22.12.4.76","s2RectIntersection",0,0,"","","System",""
+"22.12.4.76","CAST",0,1,"","","System",""
+"22.12.4.76","mapContainsKeyLike",0,0,"","","System",""
+"22.12.4.76","regexpQuoteMeta",0,0,"","","System",""
+"22.12.4.76","notNullInIgnoreSet",0,0,"","","System",""
+"22.12.4.76","toIPv4",0,0,"","","System",""
+"22.12.4.76","mapValues",0,0,"","","System",""
+"22.12.4.76","toTypeName",0,0,"","","System",""
+"22.12.4.76","polygonsUnionCartesian",0,0,"","","System",""
+"22.12.4.76","toDateTime64OrNull",0,0,"","","System",""
+"22.12.4.76","regionHierarchy",0,0,"","","System",""
+"22.12.4.76","polygonsWithinCartesian",0,0,"","","System",""
+"22.12.4.76","materialize",0,0,"","","System",""
+"22.12.4.76","upperUTF8",0,0,"","","System",""
+"22.12.4.76","multiSearchAnyCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","minSampleSizeContinous",0,0,"","","System",""
+"22.12.4.76","toYYYYMM",0,0,"","","System",""
+"22.12.4.76","domainWithoutWWWRFC",0,0,"","","System","Similar to `domainWithoutWWW` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"22.12.4.76","arrayEnumerateDenseRanked",0,0,"","","System",""
+"22.12.4.76","reinterpretAsUUID",0,0,"","","System",""
+"22.12.4.76","simpleJSONExtractFloat",0,0,"","","System",""
+"22.12.4.76","h3HexAreaM2",0,0,"","","System",""
+"22.12.4.76","toYYYYMMDDhhmmss",0,0,"","","System",""
+"22.12.4.76","h3NumHexagons",0,0,"","","System",""
+"22.12.4.76","parseDateTime64BestEffortUSOrNull",0,0,"","","System",""
+"22.12.4.76","moduloLegacy",0,0,"","","System",""
+"22.12.4.76","dictGetInt32",0,0,"","","System",""
+"22.12.4.76","mortonEncode",0,0,"","","System","
+Calculates Morton encoding (ZCurve) for a list of unsigned integers
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts up to 8 unsigned integers as arguments and produces a UInt64 code.
+[example:simple]
+
+Expanded: accepts a range mask (tuple) as a first argument and up to 8 unsigned integers as other arguments.
+Each number in mask configures the amount of range expansion
+1 - no expansion
+2 - 2x expansion
+3 - 3x expansion
+....
+Up to 8x expansion.
+[example:range_expanded]
+Note: tuple size must be equal to the number of the other arguments
+
+Range expansion can be beneficial when you need a similar distribution for arguments with wildly different ranges (or cardinality)
+For example: 'IP Address' (0...FFFFFFFF) and 'Country code' (0...FF)
+
+Morton encoding for one argument is always the argument itself.
+[example:identity]
+Produces: `1`
+
+You can expand one argument too:
+[example:identity_expanded]
+Produces: `32768`
+
+The function also accepts columns as arguments:
+[example:from_table]
+
+But the range tuple must still be a constant:
+[example:from_table_range]
+
+Please note that you can fit only so much bits of information into Morton code as UInt64 has.
+Two arguments will have a range of maximum 2^32 (64/2) each
+Three arguments: range of max 2^21 (64/3) each
+And so on, all overflow will be clamped to zero
+"
+"22.12.4.76","mapExtractKeyLike",0,0,"","","System",""
+"22.12.4.76","IPv6StringToNumOrNull",0,0,"","","System",""
+"22.12.4.76","arrayResize",0,0,"","","System",""
+"22.12.4.76","randBernoulli",0,0,"","","System","
+Returns a random number from the Bernoulli distribution.
+Accepts two parameters - probability of success.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","addWeeks",0,0,"","","System",""
+"22.12.4.76","rightPadUTF8",0,0,"","","System",""
+"22.12.4.76","uniqThetaIntersect",0,0,"","","System","
+Two uniqThetaSketch objects to do intersect calculation(set operation ∩), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","position",0,1,"","","System",""
+"22.12.4.76","cosh",0,0,"","","System",""
+"22.12.4.76","__bitBoolMaskOr",0,0,"","","System",""
+"22.12.4.76","geohashEncode",0,0,"","","System",""
+"22.12.4.76","formatReadableTimeDelta",0,0,"","","System",""
+"22.12.4.76","randExponential",0,0,"","","System","
+Returns a random number from the exponential distribution.
+Accepts one parameter.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","randomString",0,0,"","","System",""
+"22.12.4.76","normalizeUTF8NFKD",0,0,"","","System",""
+"22.12.4.76","sigmoid",0,0,"","","System",""
+"22.12.4.76","normalizeUTF8NFC",0,0,"","","System",""
+"22.12.4.76","multiSearchAllPositions",0,0,"","","System",""
+"22.12.4.76","proportionsZTest",0,0,"","","System",""
+"22.12.4.76","arrayZip",0,0,"","","System",""
+"22.12.4.76","displayName",0,0,"","","System","
+Returns the value of `display_name` from config or server FQDN if not set.
+
+[example:displayName]
+"
+"22.12.4.76","partitionId",0,0,"","","System",""
+"22.12.4.76","roundToExp2",0,0,"","","System",""
+"22.12.4.76","toDecimal32OrDefault",0,0,"","","System",""
+"22.12.4.76","mapSubtract",0,0,"","","System",""
+"22.12.4.76","subBitmap",0,0,"","","System",""
+"22.12.4.76","base64Decode",0,0,"","","System",""
+"22.12.4.76","defaultValueOfArgumentType",0,0,"","","System",""
+"22.12.4.76","mortonDecode",0,0,"","","System","
+Decodes a Morton encoding (ZCurve) into the corresponding unsigned integer tuple
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts a resulting tuple size as a first argument and the code as a second argument.
+[example:simple]
+Will decode into: `(1,2,3,4)`
+The resulting tuple size cannot be more than 8
+
+Expanded: accepts a range mask (tuple) as a first argument and the code as a second argument.
+Each number in mask configures the amount of range shrink
+1 - no shrink
+2 - 2x shrink
+3 - 3x shrink
+....
+Up to 8x shrink.
+[example:range_shrank]
+Note: see mortonEncode() docs on why range change might be beneficial.
+Still limited to 8 numbers at most.
+
+Morton code for one argument is always the argument itself (as a tuple).
+[example:identity]
+Produces: `(1)`
+
+You can shrink one argument too:
+[example:identity_shrank]
+Produces: `(128)`
+
+The function accepts a column of codes as a second argument:
+[example:from_table]
+
+The range tuple must be a constant:
+[example:from_table_range]
+"
+"22.12.4.76","roundDuration",0,0,"","","System",""
+"22.12.4.76","toDate32OrDefault",0,0,"","","System",""
+"22.12.4.76","addMinutes",0,0,"","","System",""
+"22.12.4.76","multiSearchFirstIndexCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","positionCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","parseDateTime32BestEffortOrZero",0,0,"","","System",""
+"22.12.4.76","blockNumber",0,0,"","","System",""
+"22.12.4.76","rightUTF8",0,0,"","","System",""
+"22.12.4.76","cutURLParameter",0,0,"","","System",""
+"22.12.4.76","max2",0,1,"","","System",""
+"22.12.4.76","multiSearchFirstPositionCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","indexOf",0,0,"","","System",""
+"22.12.4.76","uptime",0,0,"","","System",""
+"22.12.4.76","toModifiedJulianDayOrNull",0,0,"","","System",""
+"22.12.4.76","multiplyDecimal",0,0,"","","System","
+Performs multiplication on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These functions work significantly slower than usual `multiply`.
+In case you don't really need controlled precision and/or need fast computation, consider using [multiply](#multiply)
+:::
+
+**Syntax**
+
+```sql
+multiplyDecimal(a, b[, result_scale])
+```
+
+**Arguments**
+
+-   `a` — First value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `b` — Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `result_scale` — Scale of result: [Int/UInt](../../sql-reference/data-types/int-uint.md).
+
+**Returned value**
+
+-   The result of multiplication with given scale.
+
+Type: [Decimal256](../../sql-reference/data-types/decimal.md).
+
+**Example**
+
+```text
+┌─multiplyDecimal(toDecimal256(-12, 0), toDecimal32(-2.1, 1), 1)─┐
+│                                                           25.2 │
+└────────────────────────────────────────────────────────────────┘
+```
+
+**Difference from regular multiplication:**
+```sql
+SELECT toDecimal64(-12.647, 3) * toDecimal32(2.1239, 4);
+SELECT toDecimal64(-12.647, 3) as a, toDecimal32(2.1239, 4) as b, multiplyDecimal(a, b);
+```
+
+```text
+┌─multiply(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                               -26.8609633 │
+└───────────────────────────────────────────────────────────┘
+┌─multiplyDecimal(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                                         -26.8609 │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+```sql
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    multiplyDecimal(a, b);
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    a * b;
+```
+
+```text
+┌─────────────a─┬─────────────b─┬─multiplyDecimal(toDecimal64(-12.647987876, 9), toDecimal64(123.967645643, 9))─┐
+│ -12.647987876 │ 123.967645643 │                                                               -1567.941279108 │
+└───────────────┴───────────────┴───────────────────────────────────────────────────────────────────────────────┘
+Received exception from server (version 22.11.1):
+Code: 407. DB::Exception: Received from localhost:9000. DB::Exception: Decimal math overflow: While processing toDecimal64(-12.647987876, 9) AS a, toDecimal64(123.967645643, 9) AS b, a * b. (DECIMAL_OVERFLOW)
+```
+"
+"22.12.4.76","alphaTokens",0,0,"","","System",""
+"22.12.4.76","negate",0,0,"","","System",""
+"22.12.4.76","addMicroseconds",0,0,"","","System",""
+"22.12.4.76","formatDateTime",0,0,"","","System",""
+"22.12.4.76","toInt8OrDefault",0,0,"","","System",""
+"22.12.4.76","joinGet",0,0,"","","System",""
+"22.12.4.76","windowID",0,0,"","","System",""
+"22.12.4.76","hasColumnInTable",0,0,"","","System",""
+"22.12.4.76","toRelativeHourNum",0,0,"","","System",""
+"22.12.4.76","arrayCount",0,0,"","","System",""
+"22.12.4.76","toDecimal128OrDefault",0,0,"","","System",""
+"22.12.4.76","geoToH3",0,0,"","","System",""
+"22.12.4.76","firstSignificantSubdomainCustom",0,0,"","","System",""
+"22.12.4.76","toUnixTimestamp64Milli",0,0,"","","System",""
+"22.12.4.76","simpleJSONExtractBool",0,0,"","","System",""
+"22.12.4.76","normalizeUTF8NFKC",0,0,"","","System",""
+"22.12.4.76","parseDateTimeBestEffortUSOrNull",0,0,"","","System",""
+"22.12.4.76","detectProgrammingLanguage",0,0,"","","System",""
+"22.12.4.76","neighbor",0,0,"","","System",""
+"22.12.4.76","arrayDistinct",0,0,"","","System",""
+"22.12.4.76","dictGetUInt8",0,0,"","","System",""
+"22.12.4.76","emptyArrayUInt8",0,0,"","","System",""
+"22.12.4.76","toFloat32OrDefault",0,0,"","","System",""
+"22.12.4.76","extractURLParameter",0,0,"","","System",""
+"22.12.4.76","zookeeperSessionUptime",0,0,"","","System",""
+"22.12.4.76","toMonday",0,0,"","","System",""
+"22.12.4.76","dictGetInt32OrDefault",0,0,"","","System",""
+"22.12.4.76","toYear",0,0,"","","System",""
+"22.12.4.76","toUInt256OrZero",0,0,"","","System",""
+"22.12.4.76","toStringCutToZero",0,0,"","","System",""
+"22.12.4.76","toUInt8OrZero",0,0,"","","System",""
+"22.12.4.76","not",0,1,"","","System",""
+"22.12.4.76","reinterpretAsInt8",0,0,"","","System",""
+"22.12.4.76","normalizedQueryHashKeepNames",0,0,"","","System",""
+"22.12.4.76","tryDecrypt",0,0,"","","System","Similar to `decrypt`, but returns NULL if decryption fails because of using the wrong key."
+"22.12.4.76","log10",0,1,"","","System",""
+"22.12.4.76","globalIn",0,0,"","","System",""
+"22.12.4.76","notILike",0,0,"","","System",""
+"22.12.4.76","geohashDecode",0,0,"","","System",""
+"22.12.4.76","toModifiedJulianDay",0,0,"","","System",""
+"22.12.4.76","notLike",0,0,"","","System",""
+"22.12.4.76","fragment",0,0,"","","System",""
+"22.12.4.76","match",0,0,"","","System",""
+"22.12.4.76","greater",0,0,"","","System",""
+"22.12.4.76","toRelativeMonthNum",0,0,"","","System",""
+"22.12.4.76","emptyArrayString",0,0,"","","System",""
+"22.12.4.76","bitOr",0,0,"","","System",""
+"22.12.4.76","sleep",0,0,"","","System",""
+"22.12.4.76","arrayElement",0,0,"","","System",""
+"22.12.4.76","getServerPort",0,0,"","","System",""
+"22.12.4.76","runningDifference",0,0,"","","System",""
+"22.12.4.76","JSONHas",0,0,"","","System",""
+"22.12.4.76","tgamma",0,0,"","","System",""
+"22.12.4.76","emptyArrayToSingle",0,0,"","","System",""
+"22.12.4.76","reinterpretAsInt128",0,0,"","","System",""
+"22.12.4.76","h3ToChildren",0,0,"","","System",""
+"22.12.4.76","subtractNanoseconds",0,0,"","","System",""
+"22.12.4.76","queryStringAndFragment",0,0,"","","System",""
+"22.12.4.76","toUInt32OrDefault",0,0,"","","System",""
+"22.12.4.76","emptyArrayFloat32",0,0,"","","System",""
+"22.12.4.76","MACStringToOUI",0,0,"","","System",""
+"22.12.4.76","file",0,0,"","","System",""
+"22.12.4.76","roundAge",0,0,"","","System",""
+"22.12.4.76","toDecimal256OrDefault",0,0,"","","System",""
+"22.12.4.76","L2SquaredDistance",0,0,"","","System",""
+"22.12.4.76","emptyArrayInt64",0,0,"","","System",""
+"22.12.4.76","simpleJSONExtractString",0,0,"","","System",""
+"22.12.4.76","toUInt128",0,0,"","","System",""
+"22.12.4.76","emptyArrayUInt64",0,0,"","","System",""
+"22.12.4.76","h3EdgeAngle",0,0,"","","System",""
+"22.12.4.76","polygonPerimeterCartesian",0,0,"","","System",""
+"22.12.4.76","exp2",0,0,"","","System",""
+"22.12.4.76","concatAssumeInjective",0,0,"","","System",""
+"22.12.4.76","h3IsValid",0,0,"","","System",""
+"22.12.4.76","emptyArrayUInt32",0,0,"","","System",""
+"22.12.4.76","dotProduct",0,0,"","","System",""
+"22.12.4.76","emptyArrayUInt16",0,0,"","","System",""
+"22.12.4.76","toDateTimeOrZero",0,0,"","","System",""
+"22.12.4.76","nullIf",0,1,"","","System",""
+"22.12.4.76","decodeURLComponent",0,0,"","","System",""
+"22.12.4.76","bitAnd",0,0,"","","System",""
+"22.12.4.76","dictGetChildren",0,0,"","","System",""
+"22.12.4.76","toInt256OrDefault",0,0,"","","System",""
+"22.12.4.76","plus",0,0,"","","System",""
+"22.12.4.76","multiSearchAllPositionsCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","randConstant",0,0,"","","System",""
+"22.12.4.76","DATE",0,1,"","","System",""
+"22.12.4.76","h3CellAreaRads2",0,0,"","","System",""
+"22.12.4.76","pointInEllipses",0,0,"","","System",""
+"22.12.4.76","splitByWhitespace",0,0,"","","System",""
+"22.12.4.76","toInt256OrZero",0,0,"","","System",""
+"22.12.4.76","pointInPolygon",0,0,"","","System",""
+"22.12.4.76","e",0,0,"","","System",""
+"22.12.4.76","buildId",0,0,"","","System",""
+"22.12.4.76","FQDN",0,1,"","","System",""
+"22.12.4.76","mapUpdate",0,0,"","","System",""
+"22.12.4.76","currentProfiles",0,0,"","","System",""
+"22.12.4.76","isNull",0,1,"","","System",""
+"22.12.4.76","isNaN",0,0,"","","System",""
+"22.12.4.76","multiSearchAllPositionsCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","subtractDays",0,0,"","","System",""
+"22.12.4.76","visibleWidth",0,0,"","","System",""
+"22.12.4.76","toStartOfWeek",0,0,"","","System",""
+"22.12.4.76","multiFuzzyMatchAny",0,0,"","","System",""
+"22.12.4.76","flattenTuple",0,0,"","","System",""
+"22.12.4.76","polygonsWithinSpherical",0,0,"","","System",""
+"22.12.4.76","timezoneOffset",0,0,"","","System",""
+"22.12.4.76","transform",0,0,"","","System",""
+"22.12.4.76","encodeXMLComponent",0,0,"","","System",""
+"22.12.4.76","h3Distance",0,0,"","","System",""
+"22.12.4.76","L2Normalize",0,0,"","","System",""
+"22.12.4.76","pow",0,1,"","","System",""
+"22.12.4.76","positionCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","acosh",0,0,"","","System",""
+"22.12.4.76","toRelativeMinuteNum",0,0,"","","System",""
+"22.12.4.76","dictGetOrDefault",0,0,"","","System",""
+"22.12.4.76","replaceOne",0,0,"","","System",""
+"22.12.4.76","emptyArrayInt16",0,0,"","","System",""
+"22.12.4.76","IPv6NumToString",0,0,"","","System",""
+"22.12.4.76","throwIf",0,0,"","","System",""
+"22.12.4.76","queryString",0,0,"","","System",""
+"22.12.4.76","randUniform",0,0,"","","System","
+Returns a random number from the uniform distribution in the specified range.
+Accepts two parameters - minimum bound and maximum bound.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","initializeAggregation",0,0,"","","System",""
+"22.12.4.76","toDateTime64",0,0,"","","System",""
+"22.12.4.76","yesterday",0,0,"","","System",""
+"22.12.4.76","toBool",0,0,"","","System",""
+"22.12.4.76","randPoisson",0,0,"","","System","
+Returns a random number from the poisson distribution.
+Accepts two parameters - the mean number of occurrences.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","nowInBlock",0,0,"","","System",""
+"22.12.4.76","randNegativeBinomial",0,0,"","","System","
+Returns a random number from the negative binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","toUnixTimestamp64Micro",0,0,"","","System",""
+"22.12.4.76","randBinomial",0,0,"","","System","
+Returns a random number from the binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","toInt32OrZero",0,0,"","","System",""
+"22.12.4.76","randStudentT",0,0,"","","System","
+Returns a random number from the t-distribution.
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","tuple",0,0,"","","System",""
+"22.12.4.76","ngramMinHashCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","toInt64OrDefault",0,0,"","","System",""
+"22.12.4.76","toISOYear",0,0,"","","System",""
+"22.12.4.76","randFisherF",0,0,"","","System","
+Returns a random number from the f-distribution.
+The F-distribution is the distribution of X = (S1 / d1) / (S2 / d2) where d1 and d2 are degrees of freedom.
+Accepts two parameters - degrees of freedom.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","regionToDistrict",0,0,"","","System",""
+"22.12.4.76","modulo",0,0,"","","System",""
+"22.12.4.76","unbin",0,1,"","","System",""
+"22.12.4.76","reinterpret",0,0,"","","System",""
+"22.12.4.76","reinterpretAsFixedString",0,0,"","","System",""
+"22.12.4.76","toLastDayOfMonth",0,0,"","","System",""
+"22.12.4.76","randomPrintableASCII",0,0,"","","System",""
+"22.12.4.76","snowflakeToDateTime",0,0,"","","System",""
+"22.12.4.76","notEquals",0,0,"","","System",""
+"22.12.4.76","reinterpretAsDateTime",0,0,"","","System",""
+"22.12.4.76","caseWithExpr",0,0,"","","System",""
+"22.12.4.76","s2CellsIntersect",0,0,"","","System",""
+"22.12.4.76","multiSearchAnyCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","s2GetNeighbors",0,0,"","","System",""
+"22.12.4.76","countSubstrings",0,1,"","","System",""
+"22.12.4.76","reinterpretAsFloat64",0,0,"","","System",""
+"22.12.4.76","arrayAll",0,0,"","","System",""
+"22.12.4.76","toIntervalDay",0,0,"","","System",""
+"22.12.4.76","reinterpretAsFloat32",0,0,"","","System",""
+"22.12.4.76","topLevelDomain",0,0,"","","System","
+Extracts the the top-level domain from a URL.
+
+Returns an empty string if the argument cannot be parsed as a URL or does not contain a top-level domain.
+        "
+"22.12.4.76","greatest",0,1,"","","System",""
+"22.12.4.76","toStartOfMillisecond",0,0,"","","System",""
+"22.12.4.76","reinterpretAsInt64",0,0,"","","System",""
+"22.12.4.76","arrayLast",0,0,"","","System",""
+"22.12.4.76","getSetting",0,0,"","","System",""
+"22.12.4.76","toFloat64OrDefault",0,0,"","","System",""
+"22.12.4.76","reinterpretAsInt16",0,0,"","","System",""
+"22.12.4.76","and",0,0,"","","System",""
+"22.12.4.76","detectLanguageUnknown",0,0,"","","System",""
+"22.12.4.76","reinterpretAsUInt256",0,0,"","","System",""
+"22.12.4.76","reinterpretAsUInt64",0,0,"","","System",""
+"22.12.4.76","reinterpretAsUInt16",0,0,"","","System",""
+"22.12.4.76","fromUnixTimestamp",0,0,"","","System",""
+"22.12.4.76","hasThreadFuzzer",0,0,"","","System",""
+"22.12.4.76","arrayAUC",0,0,"","","System",""
+"22.12.4.76","multiMatchAllIndices",0,0,"","","System",""
+"22.12.4.76","replaceRegexpAll",0,0,"","","System",""
+"22.12.4.76","timeSlot",0,0,"","","System",""
+"22.12.4.76","randChiSquared",0,0,"","","System","
+Returns a random number from the chi-squared distribution (a distribution of a sum of the squares of k independent standard normal random variables).
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","gcd",0,0,"","","System",""
+"22.12.4.76","toDayOfMonth",0,0,"","","System",""
+"22.12.4.76","JSON_EXISTS",0,0,"","","System",""
+"22.12.4.76","isIPAddressInRange",0,0,"","","System",""
+"22.12.4.76","toSecond",0,0,"","","System",""
+"22.12.4.76","hiveHash",0,0,"","","System",""
+"22.12.4.76","randomStringUTF8",0,0,"","","System",""
+"22.12.4.76","arrayLastOrNull",0,0,"","","System",""
+"22.12.4.76","murmurHash3_64",0,0,"","","System",""
+"22.12.4.76","reverseUTF8",0,0,"","","System",""
+"22.12.4.76","toStartOfMonth",0,0,"","","System",""
+"22.12.4.76","toStartOfDay",0,0,"","","System",""
+"22.12.4.76","caseWithoutExpr",0,0,"","","System",""
+"22.12.4.76","floor",0,1,"","","System",""
+"22.12.4.76","bitTestAny",0,0,"","","System",""
+"22.12.4.76","addQuarters",0,0,"","","System",""
+"22.12.4.76","readWKTPolygon",0,0,"","","System",""
+"22.12.4.76","geohashesInBox",0,0,"","","System",""
+"22.12.4.76","equals",0,0,"","","System",""
+"22.12.4.76","cosineDistance",0,0,"","","System",""
+"22.12.4.76","right",0,1,"","","System",""
+"22.12.4.76","tupleMinus",0,0,"","","System",""
+"22.12.4.76","firstSignificantSubdomainCustomRFC",0,0,"","","System",""
+"22.12.4.76","dateName",0,1,"","","System",""
+"22.12.4.76","arrayFlatten",0,0,"","","System",""
+"22.12.4.76","toDate",0,0,"","","System",""
+"22.12.4.76","s2RectContains",0,0,"","","System",""
+"22.12.4.76","polygonsSymDifferenceSpherical",0,0,"","","System",""
+"22.12.4.76","tanh",0,1,"","","System",""
+"22.12.4.76","dateDiff",0,1,"","","System",""
+"22.12.4.76","bitRotateRight",0,0,"","","System",""
+"22.12.4.76","arrayReverseSort",0,0,"","","System",""
+"22.12.4.76","hostName",0,0,"","","System",""
+"22.12.4.76","toUInt256OrDefault",0,0,"","","System",""
+"22.12.4.76","serverUUID",0,0,"","","System",""
+"22.12.4.76","log1p",0,0,"","","System",""
+"22.12.4.76","accurateCastOrDefault",0,0,"","","System",""
+"22.12.4.76","stem",0,0,"","","System",""
+"22.12.4.76","arrayReverseSplit",0,0,"","","System",""
+"22.12.4.76","transactionOldestSnapshot",0,0,"","","System",""
+"22.12.4.76","dumpColumnStructure",0,0,"","","System",""
+"22.12.4.76","multiSearchFirstIndex",0,0,"","","System",""
+"22.12.4.76","tcpPort",0,0,"","","System",""
+"22.12.4.76","subtractHours",0,0,"","","System",""
+"22.12.4.76","parseDateTimeBestEffortUS",0,0,"","","System",""
+"22.12.4.76","mapPopulateSeries",0,0,"","","System",""
+"22.12.4.76","parseDateTime64BestEffortUS",0,0,"","","System",""
+"22.12.4.76","synonyms",0,1,"","","System",""
+"22.12.4.76","isFinite",0,0,"","","System",""
+"22.12.4.76","toDayOfWeek",0,0,"","","System",""
+"22.12.4.76","reinterpretAsString",0,0,"","","System",""
+"22.12.4.76","trimLeft",0,0,"","","System",""
+"22.12.4.76","subtractInterval",0,0,"","","System","
+Adds an negated interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+"
+"22.12.4.76","toValidUTF8",0,0,"","","System",""
+"22.12.4.76","abs",0,1,"","","System",""
+"22.12.4.76","arrayWithConstant",0,0,"","","System",""
+"22.12.4.76","toStartOfNanosecond",0,0,"","","System",""
+"22.12.4.76","toIntervalNanosecond",0,0,"","","System",""
+"22.12.4.76","SHA256",0,0,"","","System",""
+"22.12.4.76","LpDistance",0,0,"","","System",""
+"22.12.4.76","dictGetInt8",0,0,"","","System",""
+"22.12.4.76","isValidUTF8",0,0,"","","System",""
+"22.12.4.76","h3PointDistKm",0,0,"","","System",""
+"22.12.4.76","multiSearchAllPositionsUTF8",0,0,"","","System",""
+"22.12.4.76","toYearWeek",0,0,"","","System",""
+"22.12.4.76","toFixedString",0,0,"","","System",""
+"22.12.4.76","hasTokenCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","toStartOfYear",0,0,"","","System",""
+"22.12.4.76","toDecimal256",0,0,"","","System",""
+"22.12.4.76","multiSearchFirstPositionCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","cutFragment",0,0,"","","System",""
+"22.12.4.76","arrayCompact",0,0,"","","System",""
+"22.12.4.76","toIntervalWeek",0,0,"","","System",""
+"22.12.4.76","toRelativeSecondNum",0,0,"","","System",""
+"22.12.4.76","replaceAll",0,0,"","","System",""
+"22.12.4.76","bitShiftLeft",0,0,"","","System",""
+"22.12.4.76","netloc",0,0,"","","System",""
+"22.12.4.76","meiliMatch",0,0,"","","System",""
+"22.12.4.76","arrayEnumerate",0,0,"","","System",""
+"22.12.4.76","exp",0,1,"","","System",""
+"22.12.4.76","tupleNegate",0,0,"","","System",""
+"22.12.4.76","toRelativeQuarterNum",0,0,"","","System",""
+"22.12.4.76","toRelativeYearNum",0,0,"","","System",""
+"22.12.4.76","translate",0,0,"","","System",""
+"22.12.4.76","trimRight",0,0,"","","System",""
+"22.12.4.76","runningConcurrency",0,0,"","","System",""
+"22.12.4.76","toDateOrDefault",0,0,"","","System",""
+"22.12.4.76","repeat",0,1,"","","System",""
+"22.12.4.76","unhex",0,1,"","","System",""
+"22.12.4.76","IPv4ToIPv6",0,0,"","","System",""
+"22.12.4.76","toStartOfMicrosecond",0,0,"","","System",""
+"22.12.4.76","toInt8OrNull",0,0,"","","System",""
+"22.12.4.76","regionToPopulation",0,0,"","","System",""
+"22.12.4.76","toStartOfISOYear",0,0,"","","System",""
+"22.12.4.76","map",0,0,"","","System",""
+"22.12.4.76","wordShingleMinHashCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","s2CapUnion",0,0,"","","System",""
+"22.12.4.76","toStartOfTenMinutes",0,0,"","","System",""
+"22.12.4.76","arrayEnumerateUniq",0,0,"","","System",""
+"22.12.4.76","bitmaskToArray",0,0,"","","System",""
+"22.12.4.76","min2",0,1,"","","System",""
+"22.12.4.76","length",0,1,"","","System","
+Calculates the length of the string or array.
+
+For String or FixedString argument: calculates the number of bytes in string.
+[example:string1]
+
+For Array argument: calculates the number of elements in the array.
+[example:arr1]
+
+If applied for FixedString argument, the function is a constant expression:
+[example:constexpr]
+
+Please note that the number of bytes in a string is not the same as the number of Unicode ""code points""
+and it is not the same as the number of Unicode ""grapheme clusters"" (what we usually call ""characters"")
+and it is not the same as the visible string width.
+[example:unicode]
+
+It is ok to have ASCII NUL bytes in strings, and they will be counted as well.
+[example:nul]
+"
+"22.12.4.76","toHour",0,0,"","","System",""
+"22.12.4.76","toStartOfFifteenMinutes",0,0,"","","System",""
+"22.12.4.76","toYYYYMMDD",0,0,"","","System",""
+"22.12.4.76","h3IsResClassIII",0,0,"","","System",""
+"22.12.4.76","cutQueryStringAndFragment",0,0,"","","System",""
+"22.12.4.76","extractAllGroupsVertical",0,0,"","","System",""
+"22.12.4.76","isValidJSON",0,0,"","","System",""
+"22.12.4.76","cutToFirstSignificantSubdomainCustomRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustom` but follows stricter rules according to RFC 3986."
+"22.12.4.76","dictGetUInt64OrDefault",0,0,"","","System",""
+"22.12.4.76","firstSignificantSubdomainRFC",0,0,"","","System","Returns the ""first significant subdomain"" according to RFC 1034."
+"22.12.4.76","queryID",0,0,"","","System",""
+"22.12.4.76","path",0,0,"","","System",""
+"22.12.4.76","wordShingleMinHashArgCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","subtractWeeks",0,0,"","","System",""
+"22.12.4.76","bitPositionsToArray",0,0,"","","System",""
+"22.12.4.76","xor",0,0,"","","System",""
+"22.12.4.76","toInt256",0,0,"","","System",""
+"22.12.4.76","sign",0,1,"","","System",""
+"22.12.4.76","mapKeys",0,0,"","","System",""
+"22.12.4.76","tupleElement",0,0,"","","System",""
+"22.12.4.76","addYears",0,0,"","","System",""
+"22.12.4.76","validateNestedArraySizes",0,0,"","","System",""
+"22.12.4.76","reinterpretAsUInt32",0,0,"","","System",""
+"22.12.4.76","greaterOrEquals",0,0,"","","System",""
+"22.12.4.76","upper",0,1,"","","System",""
+"22.12.4.76","toISOWeek",0,0,"","","System",""
+"22.12.4.76","reinterpretAsInt256",0,0,"","","System",""
+"22.12.4.76","hasAny",0,0,"","","System",""
+"22.12.4.76","toIntervalMicrosecond",0,0,"","","System",""
+"22.12.4.76","L1Normalize",0,0,"","","System",""
+"22.12.4.76","multiply",0,0,"","","System",""
+"22.12.4.76","toDateTime32",0,0,"","","System",""
+"22.12.4.76","toIPv6",0,0,"","","System",""
+"22.12.4.76","arraySplit",0,0,"","","System",""
+"22.12.4.76","decodeURLFormComponent",0,0,"","","System",""
+"22.12.4.76","L2Distance",0,0,"","","System",""
+"22.12.4.76","L1Distance",0,0,"","","System",""
+"22.12.4.76","emptyArrayFloat64",0,0,"","","System",""
+"22.12.4.76","LinfNorm",0,0,"","","System",""
+"22.12.4.76","less",0,0,"","","System",""
+"22.12.4.76","emptyArrayInt8",0,0,"","","System",""
+"22.12.4.76","L2SquaredNorm",0,0,"","","System",""
+"22.12.4.76","bitRotateLeft",0,0,"","","System",""
+"22.12.4.76","toUInt16OrZero",0,0,"","","System",""
+"22.12.4.76","emptyArrayDateTime",0,0,"","","System",""
+"22.12.4.76","polygonAreaCartesian",0,0,"","","System",""
+"22.12.4.76","arrayUniq",0,0,"","","System",""
+"22.12.4.76","toIntervalYear",0,0,"","","System",""
+"22.12.4.76","addInterval",0,0,"","","System","
+Adds an interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+"
+"22.12.4.76","dictGetFloat32",0,0,"","","System",""
+"22.12.4.76","h3PointDistRads",0,0,"","","System",""
+"22.12.4.76","polygonsUnionSpherical",0,0,"","","System",""
+"22.12.4.76","arraySum",0,0,"","","System",""
+"22.12.4.76","dictGetDateOrDefault",0,0,"","","System",""
+"22.12.4.76","wordShingleMinHashCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","polygonsIntersectionSpherical",0,0,"","","System",""
+"22.12.4.76","arrayProduct",0,0,"","","System",""
+"22.12.4.76","tupleMultiply",0,0,"","","System",""
+"22.12.4.76","cutToFirstSignificantSubdomainCustom",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain. Accepts custom TLD list name.
+
+Can be useful if you need fresh TLD list or you have custom.
+        "
+"22.12.4.76","dictGetInt16OrDefault",0,0,"","","System",""
+"22.12.4.76","simpleJSONExtractInt",0,0,"","","System",""
+"22.12.4.76","subtractMonths",0,0,"","","System",""
+"22.12.4.76","JSONExtractInt",0,0,"","","System",""
+"22.12.4.76","indexHint",0,0,"","","System",""
+"22.12.4.76","toMinute",0,0,"","","System",""
+"22.12.4.76","countSubstringsCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","tupleToNameValuePairs",0,0,"","","System",""
+"22.12.4.76","addDays",0,0,"","","System",""
+"22.12.4.76","portRFC",0,0,"","","System","Similar to `port`, but conforms to RFC 3986."
+"22.12.4.76","tupleMultiplyByNumber",0,0,"","","System",""
+"22.12.4.76","addMonths",0,0,"","","System",""
+"22.12.4.76","leftUTF8",0,0,"","","System",""
+"22.12.4.76","topLevelDomainRFC",0,0,"","","System","Similar to topLevelDomain, but conforms to RFC 3986."
+"22.12.4.76","has",0,0,"","","System",""
+"22.12.4.76","appendTrailingCharIfAbsent",0,0,"","","System",""
+"22.12.4.76","simpleJSONExtractRaw",0,0,"","","System",""
+"22.12.4.76","arrayJoin",0,0,"","","System",""
+"22.12.4.76","simpleJSONHas",0,0,"","","System",""
+"22.12.4.76","countSubstringsCaseInsensitiveUTF8",0,0,"","","System",""
+"22.12.4.76","h3ExactEdgeLengthM",0,0,"","","System",""
+"22.12.4.76","cutToFirstSignificantSubdomainCustomWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustomWithWWW` but follows stricter rules according to RFC 3986."
+"22.12.4.76","toUInt32OrNull",0,0,"","","System",""
+"22.12.4.76","accurateCast",0,0,"","","System",""
+"22.12.4.76","toInt64",0,0,"","","System",""
+"22.12.4.76","wkt",0,0,"","","System",""
+"22.12.4.76","domainWithoutWWW",0,0,"","","System","
+Extracts the hostname from a URL, removing the leading ""www."" if present.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        "
+"22.12.4.76","arrayPushFront",0,0,"","","System",""
+"22.12.4.76","erfc",0,0,"","","System",""
+"22.12.4.76","cutToFirstSignificantSubdomainCustomWithWWW",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain without stripping `www`.
+Accepts custom TLD list name from config.
+
+Can be useful if you need fresh TLD list or you have custom.
+        "
+"22.12.4.76","arraySort",0,0,"","","System",""
+"22.12.4.76","h3ToParent",0,0,"","","System",""
+"22.12.4.76","uniqThetaUnion",0,0,"","","System","
+Two uniqThetaSketch objects to do union calculation(set operation ∪), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","polygonsSymDifferenceCartesian",0,0,"","","System",""
+"22.12.4.76","LinfDistance",0,0,"","","System",""
+"22.12.4.76","readWKTPoint",0,0,"","","System",""
+"22.12.4.76","IPv4StringToNumOrNull",0,0,"","","System",""
+"22.12.4.76","formatReadableQuantity",0,0,"","","System",""
+"22.12.4.76","arrayPopBack",0,0,"","","System",""
+"22.12.4.76","arrayLastIndex",0,0,"","","System",""
+"22.12.4.76","toUnixTimestamp64Nano",0,0,"","","System",""
+"22.12.4.76","JSONExtractKeysAndValuesRaw",0,0,"","","System",""
+"22.12.4.76","multiMatchAnyIndex",0,0,"","","System",""
+"22.12.4.76","formatReadableDecimalSize",0,0,"","","System","
+Accepts the size (number of bytes). Returns a rounded size with a suffix (KB, MB, etc.) as a string.
+"
+"22.12.4.76","lowerUTF8",0,0,"","","System",""
+"22.12.4.76","isConstant",0,0,"","","System",""
+"22.12.4.76","parseDateTime64BestEffortOrNull",0,0,"","","System",""
+"22.12.4.76","domainRFC",0,0,"","","System","Similar to `domain` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"22.12.4.76","coalesce",0,1,"","","System",""
+"22.12.4.76","basename",0,0,"","","System",""
+"22.12.4.76","L1Norm",0,0,"","","System",""
+"22.12.4.76","mapAdd",0,0,"","","System",""
+"22.12.4.76","toInt32OrDefault",0,0,"","","System",""
+"22.12.4.76","subtractMicroseconds",0,0,"","","System",""
+"22.12.4.76","decodeXMLComponent",0,0,"","","System",""
+"22.12.4.76","svg",0,0,"","","System",""
+"22.12.4.76","randLogNormal",0,0,"","","System","
+Returns a random number from the lognormal distribution (a distribution of a random variable whose logarithm is normally distributed).
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","getMacro",0,0,"","","System",""
+"22.12.4.76","multiIf",0,0,"","","System",""
+"22.12.4.76","runningAccumulate",0,0,"","","System",""
+"22.12.4.76","ngramSearchCaseInsensitive",0,0,"","","System",""
+"22.12.4.76","h3ToCenterChild",0,0,"","","System",""
+"22.12.4.76","notIn",0,0,"","","System",""
+"22.12.4.76","URLHierarchy",0,0,"","","System",""
+"22.12.4.76","ngramSimHashUTF8",0,0,"","","System",""
+"22.12.4.76","subtractTupleOfIntervals",0,0,"","","System","
+Consecutively subtracts a tuple of intervals from a Date or a DateTime.
+[example:tuple]
+"
+"22.12.4.76","toUInt16OrDefault",0,0,"","","System",""
+"22.12.4.76","sinh",0,0,"","","System",""
+"22.12.4.76","tupleDivide",0,0,"","","System",""
+"22.12.4.76","subtractMilliseconds",0,0,"","","System",""
+"22.12.4.76","arrayPopFront",0,0,"","","System",""
+"22.12.4.76","toColumnTypeName",0,0,"","","System",""
+"22.12.4.76","arrayMin",0,0,"","","System",""
+"22.12.4.76","sin",0,1,"","","System",""
+"22.12.4.76","convertCharset",0,0,"","","System",""
+"22.12.4.76","concatWithSeparatorAssumeInjective",0,0,"","","System","
+Same as concatWithSeparator, the difference is that you need to ensure that concatWithSeparator(sep, expr1, expr2, expr3...) → result is injective, it will be used for optimization of GROUP BY.
+
+The function is named “injective” if it always returns different result for different values of arguments. In other words: different arguments never yield identical result.
+        "
+"22.12.4.76","leftPad",0,0,"","","System",""
+"22.12.4.76","toDateTime64OrDefault",0,0,"","","System",""
+"22.12.4.76","multiFuzzyMatchAllIndices",0,0,"","","System",""
+"22.12.4.76","cos",0,1,"","","System",""
+"22.12.4.76","hex",0,1,"","","System",""
+"22.12.4.76","h3ToGeo",0,0,"","","System",""
+"22.12.4.76","toDecimal256OrNull",0,0,"","","System",""
+"22.12.4.76","multiMatchAny",0,0,"","","System",""
+"22.12.4.76","arrayEnumerateDense",0,0,"","","System",""
+"22.12.4.76","L2Norm",0,0,"","","System",""
+"22.12.4.76","murmurHash3_32",0,0,"","","System",""
+"22.12.4.76","polygonConvexHullCartesian",0,0,"","","System",""
+"22.12.4.76","h3GetDestinationIndexFromUnidirectionalEdge",0,0,"","","System",""
+"22.12.4.76","parseDateTimeBestEffortUSOrZero",0,0,"","","System",""
+"22.12.4.76","toInt32OrNull",0,0,"","","System",""
+"22.12.4.76","array",0,0,"","","System",""
+"22.12.4.76","least",0,1,"","","System",""
+"22.12.4.76","toLowCardinality",0,0,"","","System",""
+"22.12.4.76","h3ToString",0,0,"","","System",""
+"22.12.4.76","LpNorm",0,0,"","","System",""
+"22.12.4.76","port",0,0,"","","System","Returns the port or `default_port` if there is no port in the URL (or in case of validation error)."
+"22.12.4.76","wordShingleMinHashArgUTF8",0,0,"","","System",""
+"22.12.4.76","now",0,1,"","","System",""
+"22.12.4.76","TimeDiff",0,1,"","","System","
+Returns the difference between two dates or dates with time values. The difference is calculated in seconds units (see toRelativeSecondNum).
+It is same as `dateDiff` and was added only for MySQL support. `dateDiff` is preferred.
+
+Example:
+[example:typical]
+"
+"22.12.4.76","countEqual",0,0,"","","System",""
+"22.12.4.76","toJSONString",0,0,"","","System",""
+"22.12.4.76","uniqThetaNot",0,0,"","","System","
+Two uniqThetaSketch objects to do a_not_b calculation(set operation ×), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"22.12.4.76","or",0,0,"","","System",""
+"22.12.4.76","arrayExists",0,0,"","","System",""
+"22.12.4.76","timezone",0,0,"","","System",""
+"22.12.4.76","arrayMap",0,0,"","","System",""
+"22.12.4.76","arrayFirstIndex",0,0,"","","System",""
+"22.12.4.76","__getScalar",0,0,"","","System",""
+"22.12.4.76","h3GetFaces",0,0,"","","System",""
+"22.12.4.76","truncate",0,1,"trunc","","System",""
+"22.12.4.76","mid",0,1,"substring","","System",""
+"22.12.4.76","TO_BASE64",0,1,"base64Encode","","System",""
+"22.12.4.76","substr",0,1,"substring","","System",""
+"22.12.4.76","toStartOfFiveMinute",0,0,"toStartOfFiveMinutes","","System",""
+"22.12.4.76","toTimeZone",0,0,"toTimezone","","System",""
+"22.12.4.76","DATABASE",0,1,"currentDatabase","","System",""
+"22.12.4.76","MONTH",0,1,"toMonth","","System",""
+"22.12.4.76","pmod",0,1,"positiveModulo","","System",""
+"22.12.4.76","positive_modulo",0,1,"positiveModulo","","System",""
+"22.12.4.76","DATE_TRUNC",0,1,"dateTrunc","","System",""
+"22.12.4.76","YEAR",0,1,"toYear","","System",""
+"22.12.4.76","INET6_NTOA",0,1,"IPv6NumToString","","System",""
+"22.12.4.76","visitParamExtractUInt",0,0,"simpleJSONExtractUInt","","System",""
+"22.12.4.76","concat_ws",0,1,"concatWithSeparator","","System",""
+"22.12.4.76","FROM_UNIXTIME",0,0,"fromUnixTimestamp","","System",""
+"22.12.4.76","yandexConsistentHash",0,0,"kostikConsistentHash","","System",""
+"22.12.4.76","initial_query_id",0,1,"initialQueryID","","System",""
+"22.12.4.76","CHAR_LENGTH",0,1,"lengthUTF8","","System",""
+"22.12.4.76","rand32",0,0,"rand","","System",""
+"22.12.4.76","rpad",0,1,"rightPad","","System",""
+"22.12.4.76","FROM_BASE64",0,1,"base64Decode","","System",""
+"22.12.4.76","SECOND",0,1,"toSecond","","System",""
+"22.12.4.76","power",0,1,"pow","","System",""
+"22.12.4.76","yearweek",0,1,"toYearWeek","","System",""
+"22.12.4.76","visitParamExtractInt",0,0,"simpleJSONExtractInt","","System",""
+"22.12.4.76","REGEXP_REPLACE",0,1,"replaceRegexpAll","","System",""
+"22.12.4.76","timeZoneOf",0,0,"timezoneOf","","System",""
+"22.12.4.76","normalizeLp",0,1,"LpNormalize","","System",""
+"22.12.4.76","week",0,1,"toWeek","","System",""
+"22.12.4.76","DAYOFYEAR",0,1,"toDayOfYear","","System",""
+"22.12.4.76","ceiling",0,1,"ceil","","System",""
+"22.12.4.76","HOUR",0,1,"toHour","","System",""
+"22.12.4.76","normalizeL1",0,1,"L1Normalize","","System",""
+"22.12.4.76","lpad",0,1,"leftPad","","System",""
+"22.12.4.76","vectorDifference",0,1,"tupleMinus","","System",""
+"22.12.4.76","extractAllGroups",0,0,"extractAllGroupsVertical","","System",""
+"22.12.4.76","LAST_DAY",0,1,"toLastDayOfMonth","","System",""
+"22.12.4.76","visitParamExtractRaw",0,0,"simpleJSONExtractRaw","","System",""
+"22.12.4.76","flatten",0,1,"arrayFlatten","","System",""
+"22.12.4.76","replace",0,1,"replaceAll","","System",""
+"22.12.4.76","QUARTER",0,1,"toQuarter","","System",""
+"22.12.4.76","DAYOFWEEK",0,1,"toDayOfWeek","","System",""
+"22.12.4.76","normalizeLinf",0,1,"LinfNormalize","","System",""
+"22.12.4.76","timeZone",0,0,"timezone","","System",""
+"22.12.4.76","MINUTE",0,1,"toMinute","","System",""
+"22.12.4.76","CHARACTER_LENGTH",0,1,"lengthUTF8","","System",""
+"22.12.4.76","visitParamExtractFloat",0,0,"simpleJSONExtractFloat","","System",""
+"22.12.4.76","distanceLinf",0,1,"LinfDistance","","System",""
+"22.12.4.76","locate",0,1,"position","","System",""
+"22.12.4.76","DAYOFMONTH",0,1,"toDayOfMonth","","System",""
+"22.12.4.76","splitByAlpha",0,0,"alphaTokens","","System",""
+"22.12.4.76","ln",0,1,"log","","System",""
+"22.12.4.76","distanceLp",0,1,"LpDistance","","System",""
+"22.12.4.76","INET6_ATON",0,1,"IPv6StringToNum","","System",""
+"22.12.4.76","visitParamExtractString",0,0,"simpleJSONExtractString","","System",""
+"22.12.4.76","DAY",0,1,"toDayOfMonth","","System",""
+"22.12.4.76","normLp",0,1,"LpNorm","","System",""
+"22.12.4.76","INET_ATON",0,1,"IPv4StringToNum","","System",""
+"22.12.4.76","distanceL1",0,1,"L1Distance","","System",""
+"22.12.4.76","ucase",0,1,"upper","","System",""
+"22.12.4.76","normLinf",0,1,"LinfNorm","","System",""
+"22.12.4.76","distanceL2Squared",0,1,"L2SquaredDistance","","System",""
+"22.12.4.76","query_id",0,1,"queryID","","System",""
+"22.12.4.76","normL2Squared",0,1,"L2SquaredNorm","","System",""
+"22.12.4.76","scalarProduct",0,1,"dotProduct","","System",""
+"22.12.4.76","mod",0,1,"modulo","","System",""
+"22.12.4.76","connection_id",0,1,"connectionid","","System",""
+"22.12.4.76","visitParamHas",0,0,"simpleJSONHas","","System",""
+"22.12.4.76","distanceL2",0,1,"L2Distance","","System",""
+"22.12.4.76","vectorSum",0,1,"tuplePlus","","System",""
+"22.12.4.76","normL2",0,1,"L2Norm","","System",""
+"22.12.4.76","SVG",0,0,"svg","","System",""
+"22.12.4.76","INET_NTOA",0,1,"IPv4NumToString","","System",""
+"22.12.4.76","timeZoneOffset",0,0,"timezoneOffset","","System",""
+"22.12.4.76","hostname",0,0,"hostName","","System",""
+"22.12.4.76","normL1",0,1,"L1Norm","","System",""
+"22.12.4.76","UTC_timestamp",0,1,"UTCTimestamp","","System",""
+"22.12.4.76","user",0,1,"currentUser","","System",""
+"22.12.4.76","lcase",0,1,"lower","","System",""
+"22.12.4.76","REGEXP_MATCHES",0,1,"match","","System",""
+"22.12.4.76","visitParamExtractBool",0,0,"simpleJSONExtractBool","","System",""
+"22.12.4.76","normalizeL2",0,1,"L2Normalize","","System",""
+"22.12.4.76","exponentialTimeDecayedCount",1,0,"","","System",""
+"22.12.4.76","exponentialTimeDecayedMax",1,0,"","","System",""
+"22.12.4.76","lagInFrame",1,0,"","","System",""
+"22.12.4.76","dense_rank",1,1,"","","System",""
+"22.12.4.76","rank",1,1,"","","System",""
+"22.12.4.76","exponentialMovingAverage",1,0,"","","System",""
+"22.12.4.76","sparkbar",1,0,"","","System",""
+"22.12.4.76","singleValueOrNull",1,0,"","","System",""
+"22.12.4.76","meanZTest",1,0,"","","System",""
+"22.12.4.76","analysisOfVariance",1,1,"","","System",""
+"22.12.4.76","studentTTest",1,0,"","","System",""
+"22.12.4.76","rankCorr",1,0,"","","System",""
+"22.12.4.76","aggThrow",1,0,"","","System",""
+"22.12.4.76","categoricalInformationValue",1,0,"","","System",""
+"22.12.4.76","groupArrayMovingAvg",1,0,"","","System",""
+"22.12.4.76","groupArrayMovingSum",1,0,"","","System",""
+"22.12.4.76","simpleLinearRegression",1,0,"","","System",""
+"22.12.4.76","entropy",1,0,"","","System",""
+"22.12.4.76","histogram",1,0,"","","System",""
+"22.12.4.76","mannWhitneyUTest",1,0,"","","System",""
+"22.12.4.76","maxIntersections",1,0,"","","System",""
+"22.12.4.76","groupBitmapXor",1,0,"","","System",""
+"22.12.4.76","groupBitmap",1,0,"","","System",""
+"22.12.4.76","contingency",1,0,"","","System",""
+"22.12.4.76","maxMappedArrays",1,0,"","","System",""
+"22.12.4.76","theilsU",1,0,"","","System",""
+"22.12.4.76","skewPop",1,0,"","","System",""
+"22.12.4.76","groupBitXor",1,0,"","","System",""
+"22.12.4.76","groupBitOr",1,0,"","","System",""
+"22.12.4.76","groupBitmapAnd",1,0,"","","System",""
+"22.12.4.76","exponentialTimeDecayedSum",1,0,"","","System",""
+"22.12.4.76","topKWeighted",1,0,"","","System",""
+"22.12.4.76","stochasticLinearRegression",1,0,"","","System",""
+"22.12.4.76","corr",1,1,"","","System",""
+"22.12.4.76","uniqCombined64",1,0,"","","System",""
+"22.12.4.76","cramersVBiasCorrected",1,0,"","","System",""
+"22.12.4.76","intervalLengthSum",1,0,"","","System",""
+"22.12.4.76","nothing",1,0,"","","System",""
+"22.12.4.76","uniqCombined",1,0,"","","System",""
+"22.12.4.76","quantileExactWeighted",1,0,"","","System",""
+"22.12.4.76","sumMapFilteredWithOverflow",1,0,"","","System",""
+"22.12.4.76","sumMapFiltered",1,0,"","","System",""
+"22.12.4.76","minMappedArrays",1,0,"","","System",""
+"22.12.4.76","sumMappedArrays",1,0,"","","System",""
+"22.12.4.76","quantiles",1,0,"","","System",""
+"22.12.4.76","sum",1,1,"","","System",""
+"22.12.4.76","covarPop",1,0,"","","System",""
+"22.12.4.76","row_number",1,1,"","","System",""
+"22.12.4.76","kurtPop",1,0,"","","System",""
+"22.12.4.76","kurtSamp",1,0,"","","System",""
+"22.12.4.76","cramersV",1,0,"","","System",""
+"22.12.4.76","skewSamp",1,0,"","","System",""
+"22.12.4.76","nonNegativeDerivative",1,0,"","","System",""
+"22.12.4.76","uniqExact",1,0,"","","System",""
+"22.12.4.76","sumMapWithOverflow",1,0,"","","System",""
+"22.12.4.76","stddevSamp",1,0,"","","System",""
+"22.12.4.76","varPop",1,0,"","","System",""
+"22.12.4.76","corrStable",1,0,"","","System",""
+"22.12.4.76","quantileTimingWeighted",1,0,"","","System",""
+"22.12.4.76","covarPopStable",1,0,"","","System",""
+"22.12.4.76","stddevSampStable",1,0,"","","System",""
+"22.12.4.76","varSamp",1,0,"","","System",""
+"22.12.4.76","topK",1,0,"","","System",""
+"22.12.4.76","last_value",1,1,"","","System",""
+"22.12.4.76","quantilesExact",1,0,"","","System",""
+"22.12.4.76","uniqHLL12",1,0,"","","System",""
+"22.12.4.76","quantileBFloat16",1,0,"","","System",""
+"22.12.4.76","uniq",1,0,"","","System",""
+"22.12.4.76","min",1,1,"","","System",""
+"22.12.4.76","sequenceNextNode",1,0,"","","System",""
+"22.12.4.76","quantilesTimingWeighted",1,0,"","","System",""
+"22.12.4.76","boundingRatio",1,0,"","","System",""
+"22.12.4.76","any",1,0,"","","System",""
+"22.12.4.76","anyLast",1,0,"","","System",""
+"22.12.4.76","deltaSum",1,0,"","","System",""
+"22.12.4.76","retention",1,0,"","","System",""
+"22.12.4.76","sequenceMatch",1,0,"","","System",""
+"22.12.4.76","uniqUpTo",1,0,"","","System",""
+"22.12.4.76","windowFunnel",1,0,"","","System",""
+"22.12.4.76","deltaSumTimestamp",1,0,"","","System",""
+"22.12.4.76","varSampStable",1,0,"","","System",""
+"22.12.4.76","uniqTheta",1,0,"","","System",""
+"22.12.4.76","quantilesExactWeighted",1,0,"","","System",""
+"22.12.4.76","max",1,1,"","","System",""
+"22.12.4.76","quantilesBFloat16Weighted",1,0,"","","System",""
+"22.12.4.76","quantileBFloat16Weighted",1,0,"","","System",""
+"22.12.4.76","sumKahan",1,0,"","","System",""
+"22.12.4.76","quantilesTDigestWeighted",1,0,"","","System",""
+"22.12.4.76","groupBitAnd",1,0,"","","System",""
+"22.12.4.76","quantileTDigest",1,0,"","","System",""
+"22.12.4.76","quantileTDigestWeighted",1,0,"","","System",""
+"22.12.4.76","nth_value",1,1,"","","System",""
+"22.12.4.76","argMax",1,0,"","","System",""
+"22.12.4.76","quantileDeterministic",1,0,"","","System",""
+"22.12.4.76","quantilesTDigest",1,0,"","","System",""
+"22.12.4.76","stochasticLogisticRegression",1,0,"","","System",""
+"22.12.4.76","argMin",1,0,"","","System",""
+"22.12.4.76","avg",1,1,"","","System",""
+"22.12.4.76","covarSampStable",1,0,"","","System",""
+"22.12.4.76","quantilesTiming",1,0,"","","System",""
+"22.12.4.76","welchTTest",1,0,"","","System",""
+"22.12.4.76","covarSamp",1,0,"","","System",""
+"22.12.4.76","varPopStable",1,0,"","","System",""
+"22.12.4.76","quantileTiming",1,0,"","","System",""
+"22.12.4.76","leadInFrame",1,0,"","","System",""
+"22.12.4.76","quantilesExactExclusive",1,0,"","","System",""
+"22.12.4.76","quantileExactInclusive",1,0,"","","System",""
+"22.12.4.76","quantileExactHigh",1,0,"","","System",""
+"22.12.4.76","groupArraySample",1,0,"","","System",""
+"22.12.4.76","quantilesExactLow",1,0,"","","System",""
+"22.12.4.76","groupUniqArray",1,0,"","","System",""
+"22.12.4.76","quantileExact",1,0,"","","System",""
+"22.12.4.76","sumCount",1,0,"","","System",""
+"22.12.4.76","groupArrayInsertAt",1,0,"","","System",""
+"22.12.4.76","quantilesExactHigh",1,0,"","","System",""
+"22.12.4.76","sumWithOverflow",1,0,"","","System",""
+"22.12.4.76","sequenceCount",1,0,"","","System",""
+"22.12.4.76","quantilesDeterministic",1,0,"","","System",""
+"22.12.4.76","groupArray",1,0,"","","System",""
+"22.12.4.76","anyHeavy",1,0,"","","System",""
+"22.12.4.76","stddevPop",1,0,"","","System",""
+"22.12.4.76","first_value",1,1,"","","System",""
+"22.12.4.76","exponentialTimeDecayedAvg",1,0,"","","System",""
+"22.12.4.76","quantileExactExclusive",1,0,"","","System",""
+"22.12.4.76","groupBitmapOr",1,0,"","","System",""
+"22.12.4.76","quantile",1,0,"","","System",""
+"22.12.4.76","count",1,1,"","","System",""
+"22.12.4.76","maxIntersectionsPosition",1,0,"","","System",""
+"22.12.4.76","quantilesBFloat16",1,0,"","","System",""
+"22.12.4.76","quantilesExactInclusive",1,0,"","","System",""
+"22.12.4.76","stddevPopStable",1,0,"","","System",""
+"22.12.4.76","quantileExactLow",1,0,"","","System",""
+"22.12.4.76","avgWeighted",1,0,"","","System",""
+"22.12.4.76","anova",1,1,"analysisOfVariance","","System",""
+"22.12.4.76","BIT_AND",1,1,"groupBitAnd","","System",""
+"22.12.4.76","VAR_SAMP",1,1,"varSamp","","System",""
+"22.12.4.76","COVAR_SAMP",1,1,"covarSamp","","System",""
+"22.12.4.76","VAR_POP",1,1,"varPop","","System",""
+"22.12.4.76","medianTDigest",1,0,"quantileTDigest","","System",""
+"22.12.4.76","medianBFloat16",1,0,"quantileBFloat16","","System",""
+"22.12.4.76","medianTimingWeighted",1,0,"quantileTimingWeighted","","System",""
+"22.12.4.76","medianTiming",1,0,"quantileTiming","","System",""
+"22.12.4.76","medianExactHigh",1,0,"quantileExactHigh","","System",""
+"22.12.4.76","BIT_OR",1,1,"groupBitOr","","System",""
+"22.12.4.76","medianDeterministic",1,0,"quantileDeterministic","","System",""
+"22.12.4.76","STDDEV_POP",1,1,"stddevPop","","System",""
+"22.12.4.76","STDDEV_SAMP",1,1,"stddevSamp","","System",""
+"22.12.4.76","medianExactLow",1,0,"quantileExactLow","","System",""
+"22.12.4.76","BIT_XOR",1,1,"groupBitXor","","System",""
+"22.12.4.76","median",1,0,"quantile","","System",""
+"22.12.4.76","COVAR_POP",1,1,"covarPop","","System",""
+"22.12.4.76","medianBFloat16Weighted",1,0,"quantileBFloat16Weighted","","System",""
+"22.12.4.76","medianExactWeighted",1,0,"quantileExactWeighted","","System",""
+"22.12.4.76","medianTDigestWeighted",1,0,"quantileTDigestWeighted","","System",""
+"22.12.4.76","medianExact",1,0,"quantileExact","","System",""
