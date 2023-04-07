@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.3.1.2823
+Generated at 2023-04-07 11:58:49 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.3.1.2823
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -63,7 +63,7 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 ### Table Functions Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
-| `MeiliSearch` | in v22.5.1.2079 | up to v22.8.15.23 |
+| `MeiliSearch` | in v22.5.1.2079 | up to v22.8.16.32 |
 | `catBoostPool` | in v18.4.0 | up to v19.13.7.57 |
 | `cluster` | in v18.4.0 | Yes |
 | `clusterAllReplicas` | in v20.1.2.4 | Yes |
@@ -141,7 +141,7 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `JSONEachRowWithProgress` | (unavailable) | since v19.14.3.3 | in v19.14.3.3 | Yes |
 | `JSONLines` | since v22.5.1.2079 | since v22.5.1.2079 | in v22.5.1.2079 | Yes |
 | `JSONObjectEachRow` | since v22.9.1.2603 | since v22.9.1.2603 | in v22.9.1.2603 | Yes |
-| `JSONStringEachRow` | (unavailable) | (unavailable) | in v21.1.2.15 | up to v22.8.15.23 |
+| `JSONStringEachRow` | (unavailable) | (unavailable) | in v21.1.2.15 | up to v22.8.16.32 |
 | `JSONStrings` | (unavailable) | since v20.10.2.20 | in v20.10.2.20 | Yes |
 | `JSONStringsEachRow` | since v20.10.2.20 | since v20.10.2.20 | in v20.10.2.20 | Yes |
 | `JSONStringsEachRowWithProgress` | (unavailable) | since v20.10.2.20 | in v20.10.2.20 | Yes |
@@ -475,8 +475,8 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `accurateCast` | No | No | (none) | in v21.1.2.15 | Yes |
 | `accurateCastOrDefault` | No | No | (none) | in v21.11.2.2 | Yes |
 | `accurateCastOrNull` | No | No | (none) | in v21.1.2.15 | Yes |
-| `accurate_Cast` | No | No | (none) | in v21.9.2.17 | up to v22.8.15.23 |
-| `accurate_CastOrNull` | No | No | (none) | in v21.9.2.17 | up to v22.8.15.23 |
+| `accurate_Cast` | No | No | (none) | in v21.9.2.17 | up to v22.8.16.32 |
+| `accurate_CastOrNull` | No | No | (none) | in v21.9.2.17 | up to v22.8.16.32 |
 | `acos` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `acosh` | No | No | (none) | in v20.12.2.1 | Yes |
 | `addDays` | No | No | (none) | in v1.1.54310 | Yes |
@@ -704,7 +704,7 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `dateTime64ToSnowflake` | No | No | (none) | in v21.10.2.15 | Yes |
 | `dateTimeToSnowflake` | No | No | (none) | in v21.10.2.15 | Yes |
 | `dateTrunc` | No | No | (none) | in v20.8.2.3 | Yes |
-| `date_trunc` | No | Yes | (none) | in v20.8.2.3 | up to v22.8.15.23 |
+| `date_trunc` | No | Yes | (none) | in v20.8.2.3 | up to v22.8.16.32 |
 | `debug` | Yes | No | \N | in v1.1.54019 | up to v1.1.54289 |
 | `decodeURLComponent` | No | No | (none) | in v1.1.54127 | Yes |
 | `decodeURLFormComponent` | No | No | (none) | in v22.1.2.2 | Yes |
@@ -1104,7 +1104,7 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `minSampleSizeConversion` | No | No | (none) | in v22.4.1.2305 | Yes |
 | `minus` | No | No | (none) | in v1.1.54019 | Yes |
 | `mod` | No | Yes | modulo | in v20.7.2.30 | Yes |
-| `modelEvaluate` | No | No | (none) | in v1.1.54310 | up to v22.8.15.23 |
+| `modelEvaluate` | No | No | (none) | in v1.1.54310 | up to v22.8.16.32 |
 | `modulo` | No | No | (none) | in v1.1.54019 | Yes |
 | `moduloLegacy` | No | No | (none) | in v21.5.7.9 | Yes |
 | `moduloOrZero` | No | No | (none) | in v20.3.2.1 | Yes |
@@ -1951,8 +1951,8 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_conditional_computation` | in v1.1.54388 |  | up to v18.14.19 | Enable conditional computations |
 | `enable_debug_queries` | in v18.14.9 | in v21.7.2.7 | Yes | Enables debug queries such as AST. |
 | `enable_early_constant_folding` | in v19.16.15.69 |  | Yes | Setting from future versions. Backported fo rolling update. |
-| `enable_experimental_query_result_cache` | in v23.1.1.3077 |  | up to v23.1.5.24 | Store and retrieve results of SELECT queries in/from the query result cache |
-| `enable_experimental_query_result_cache_passive_usage` | in v23.1.1.3077 |  | up to v23.1.5.24 | Retrieve results of SELECT queries from the query result cache |
+| `enable_experimental_query_result_cache` | in v23.1.1.3077 |  | up to v23.1.6.42 | Store and retrieve results of SELECT queries in/from the query result cache |
+| `enable_experimental_query_result_cache_passive_usage` | in v23.1.1.3077 |  | up to v23.1.6.42 | Retrieve results of SELECT queries from the query result cache |
 | `enable_extended_results_for_datetime_functions` | in v22.9.1.2603 |  | Yes | Enable date functions like toLastDayOfMonth return Date32 results (instead of Date results) for Date32/DateTime64 arguments. |
 | `enable_filesystem_cache` | in v22.4.1.2305 |  | Yes | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
 | `enable_filesystem_cache_log` | in v22.5.1.2079 |  | Yes | Allows to record the filesystem caching log for each query |
@@ -1992,7 +1992,7 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `extremes` | in v1.1.54019 |  | Yes | Calculate minimums and maximums of the result columns. They can be output in JSON-formats. |
 | `fallback_to_stale_replicas_for_distributed_queries` | in v1.1.54236 |  | Yes |  |
 | `filesystem_cache_max_download_size` | in v23.2.1.2537 |  | Yes | Max remote filesystem cache size that can be downloaded by a single query |
-| `filesystem_cache_max_wait_sec` | in v22.4.1.2305 |  | up to v22.8.15.23 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
+| `filesystem_cache_max_wait_sec` | in v22.4.1.2305 |  | up to v22.8.16.32 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
 | `filesystem_prefetch_max_memory_usage` | in v23.2.1.2537 |  | Yes | Maximum memory usage for prefetches. Zero means unlimited |
 | `filesystem_prefetch_min_bytes_for_single_read_task` | in v23.2.1.2537 |  | Yes | Do not parallelize within one file read less than this amount of bytes. E.g. one reader will not receive a read task of size less than this amount. This setting is recommended to avoid spikes of time for aws getObject requests to aws |
 | `filesystem_prefetch_step_bytes` | in v23.2.1.2537 |  | Yes | Prefetch step in bytes. Zero means `auto` - approximately the best prefetch step will be auto deduced, but might not be 100% the best. The actual value might be different because of setting filesystem_prefetch_min_bytes_for_single_read_task |
@@ -2140,7 +2140,7 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_tsv_enum_as_number` | in v20.11.2.1 |  | Yes | Treat inserted enum values in TSV formats as enum indices \\N |
 | `input_format_tsv_skip_first_lines` | in v22.6.1.1985 |  | Yes | Skip specified number of lines at the beginning of data in TSV format |
 | `input_format_tsv_use_best_effort_in_schema_inference` | in v22.4.1.2305 |  | Yes | Use some tweaks and heuristics to infer schema in TSV format |
-| `input_format_use_lowercase_column_name` | in v22.3.2.1 |  | up to v22.3.19.6 | Use lowercase column name while reading input formats |
+| `input_format_use_lowercase_column_name` | in v22.3.2.1 |  | up to v22.3.20.29 | Use lowercase column name while reading input formats |
 | `input_format_values_accurate_types_of_literals` | in v19.16.2.2 |  | Yes | For Values format: when parsing and interpreting expressions using template, check actual type of literal to avoid possible overflow and precision issues. |
 | `input_format_values_deduce_templates_of_expressions` | in v19.16.2.2 |  | Yes | For Values format: if field could not be parsed by streaming parser, run SQL parser, deduce template of the SQL expression, try to parse all rows using template and then interpret expression for all rows. |
 | `input_format_values_interpret_expressions` | in v1.1.54112 |  | Yes | For Values format: if field could not be parsed by streaming parser, run SQL parser and try to interpret it as SQL expression. |
@@ -2258,7 +2258,7 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `max_partitions_per_insert_block` | in v19.5.2.6 |  | Yes | Limit maximum number of partitions in single INSERTed block. Zero means unlimited. Throw exception if the block contains too many partitions. This setting is a safety threshold, because using large number of partitions is a common misconception. |
 | `max_partitions_to_read` | in v21.1.2.15 |  | Yes | Limit the max number of partitions that can be accessed in one query. <= 0 means unlimited. |
 | `max_pipeline_depth` | in v1.1.54019 | in v22.9.1.2603 | Yes |  |
-| `max_query_cache_size` | in v22.6.1.1985 |  | up to v23.1.5.24 | Max remote filesystem cache size that can be used by a single query |
+| `max_query_cache_size` | in v22.6.1.1985 |  | up to v23.1.6.42 | Max remote filesystem cache size that can be used by a single query |
 | `max_query_size` | in v1.1.54019 |  | Yes | Which part of the query can be read into RAM for parsing (the remaining data for INSERT, if any, is read later) |
 | `max_read_buffer_size` | in v1.1.54019 |  | Yes | The maximum size of the buffer to read from the filesystem. |
 | `max_remote_read_network_bandwidth_for_server` | in v22.7.1.2484 |  | Yes | The maximum speed of data exchange over the network in bytes per second for read. Zero means unlimited. Only has meaning at server startup. |
@@ -2470,11 +2470,11 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `query_plan_remove_redundant_sorting` | in v23.1.1.3077 |  | Yes | Remove redundant sorting in query plan. For example, sorting steps related to ORDER BY clauses in subqueries |
 | `query_profiler_cpu_time_period_ns` | in v19.13.1.11 |  | Yes | "Highly experimental. Period for CPU clock timer of query profiler (in nanoseconds). Set 0 value to turn off CPU clock query profiler. Recommended value is at least 10000000 (100 times a second) for single queries or 1000000000 (once a second) for cluster-wide profiling." |
 | `query_profiler_real_time_period_ns` | in v19.13.1.11 |  | Yes | "Highly experimental. Period for real clock timer of query profiler (in nanoseconds). Set 0 value to turn off real clock query profiler. Recommended value is at least 10000000 (100 times a second) for single queries or 1000000000 (once a second) for cluster-wide profiling." |
-| `query_result_cache_min_query_duration` | in v23.1.1.3077 |  | up to v23.1.5.24 | Minimum time in milliseconds for a query to run for its result to be stored in the query result cache. |
-| `query_result_cache_min_query_runs` | in v23.1.1.3077 |  | up to v23.1.5.24 | Minimum number a SELECT query must run before its result is stored in the query result cache |
-| `query_result_cache_share_between_users` | in v23.1.1.3077 |  | up to v23.1.5.24 | Allow other users to read entry in the query result cache |
-| `query_result_cache_store_results_of_queries_with_nondeterministic_functions` | in v23.1.1.3077 |  | up to v23.1.5.24 | Store results of queries with non-deterministic functions (e.g. rand(), now()) in the query result cache |
-| `query_result_cache_ttl` | in v23.1.1.3077 |  | up to v23.1.5.24 | After this time in seconds entries in the query result cache become stale |
+| `query_result_cache_min_query_duration` | in v23.1.1.3077 |  | up to v23.1.6.42 | Minimum time in milliseconds for a query to run for its result to be stored in the query result cache. |
+| `query_result_cache_min_query_runs` | in v23.1.1.3077 |  | up to v23.1.6.42 | Minimum number a SELECT query must run before its result is stored in the query result cache |
+| `query_result_cache_share_between_users` | in v23.1.1.3077 |  | up to v23.1.6.42 | Allow other users to read entry in the query result cache |
+| `query_result_cache_store_results_of_queries_with_nondeterministic_functions` | in v23.1.1.3077 |  | up to v23.1.6.42 | Store results of queries with non-deterministic functions (e.g. rand(), now()) in the query result cache |
+| `query_result_cache_ttl` | in v23.1.1.3077 |  | up to v23.1.6.42 | After this time in seconds entries in the query result cache become stale |
 | `queue_max_wait_ms` | in v1.1.54019 |  | Yes | The wait time in the request queue, if the number of concurrent requests exceeds the maximum. |
 | `rabbitmq_max_wait_ms` | in v20.6.3.28 |  | Yes | The wait time for reading from RabbitMQ before retry. |
 | `read_backoff_max_throughput` | in v1.1.54019 |  | Yes | Count events when the bandwidth is less than that many bytes per second. |
@@ -2498,8 +2498,8 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `remerge_sort_lowered_memory_bytes_ratio` | in v21.1.2.15 |  | Yes | If memory usage after remerge does not reduced by this ratio, remerge will be disabled. |
 | `remote_filesystem_read_method` | in v21.11.2.2 |  | Yes | Method of reading data from remote filesystem, one of: read, read_threadpool. |
 | `remote_filesystem_read_prefetch` | in v21.10.2.15 |  | Yes | Should use prefetching when reading data from remote filesystem. |
-| `remote_fs_cache_max_wait_sec` | in v22.3.2.1 |  | up to v22.3.19.6 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
-| `remote_fs_enable_cache` | in v22.3.2.1 |  | up to v22.3.19.6 | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
+| `remote_fs_cache_max_wait_sec` | in v22.3.2.1 |  | up to v22.3.20.29 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
+| `remote_fs_enable_cache` | in v22.3.2.1 |  | up to v22.3.20.29 | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
 | `remote_fs_read_backoff_max_tries` | in v21.11.2.2 |  | Yes | Max attempts to read with backoff |
 | `remote_fs_read_max_backoff_ms` | in v21.11.2.2 |  | Yes | Max wait time when trying to read data for remote disk |
 | `remote_read_min_bytes_for_seek` | in v21.12.2.17 |  | Yes | Min bytes required for remote read (url, s3) to do seek, instead for read with ignore. |
@@ -2549,7 +2549,7 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `skip_download_if_exceeds_query_cache` | in v22.6.1.1985 |  | Yes | Skip download from remote filesystem if exceeds query cache size |
 | `skip_unavailable_shards` | in v1.1.54019 |  | Yes | Silently skip unavailable shards. |
 | `sleep_after_receiving_query_ms` | in v22.5.1.2079 |  | Yes | Time to sleep after receiving query in TCPHandler |
-| `sleep_in_receive_cancel_ms` | in v21.9.2.17 |  | up to v23.2.4.12 | Time to sleep in receiving cancel in TCPHandler |
+| `sleep_in_receive_cancel_ms` | in v21.9.2.17 |  | up to v23.2.5.46 | Time to sleep in receiving cancel in TCPHandler |
 | `sleep_in_send_data` | in v21.3.2.5 |  | up to v21.3.20.2.altinitystable | Time to sleep in sending data in TCPHandler |
 | `sleep_in_send_data_ms` | in v21.4.3.21 |  | Yes | Time to sleep in sending data in TCPHandler |
 | `sleep_in_send_tables_status` | in v21.3.2.5 |  | up to v21.3.20.2.altinitystable | Time to sleep in sending tables status response in TCPHandler |
@@ -2653,14 +2653,14 @@ Generated at 2023-03-31 11:22:26 (America/Sao_Paulo), covering ClickHouse versio
 | `max_files_to_remove_in_alter_columns` | in v18.10.3 | Yes | `50` from `18.10.3.0` to `latest` |
 | `max_number_of_merges_with_ttl_in_pool` | in v20.10.2.20 | Yes | `2` from `20.10.2.20` to `latest` |
 | `max_number_of_mutations_for_replica` | in v23.3.1.2823 | Yes | `0` from `23.3.1.2823` to `latest` |
-| `max_part_loading_threads` | in v19.14.3.3 | Yes | `\\auto(12)\\` from `22.10.7.13` to `latest` / `\\auto(4)\\` from `20.7.2.30` to `22.9.7.34` / `\\auto(6)\\` from `22.3.18.37` to `22.8.15.23` / `\\auto(8)\\` from `22.10.1.1877` to `22.12.3.5` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
-| `max_part_removal_threads` | in v19.14.3.3 | Yes | `\\auto(12)\\` from `22.10.7.13` to `latest` / `\\auto(4)\\` from `20.7.2.30` to `22.9.7.34` / `\\auto(6)\\` from `22.3.18.37` to `22.8.15.23` / `\\auto(8)\\` from `22.10.1.1877` to `22.12.3.5` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
+| `max_part_loading_threads` | in v19.14.3.3 | Yes | `\\auto(12)\\` from `22.10.7.13` to `latest` / `\\auto(4)\\` from `20.7.2.30` to `22.9.7.34` / `\\auto(6)\\` from `22.3.18.37` to `22.8.16.32` / `\\auto(8)\\` from `22.10.1.1877` to `22.12.3.5` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
+| `max_part_removal_threads` | in v19.14.3.3 | Yes | `\\auto(12)\\` from `22.10.7.13` to `latest` / `\\auto(4)\\` from `20.7.2.30` to `22.9.7.34` / `\\auto(6)\\` from `22.3.18.37` to `22.8.16.32` / `\\auto(8)\\` from `22.10.1.1877` to `22.12.3.5` / `auto(4)` from `19.14.3.3` to `20.6.11.1` |
 | `max_partitions_to_read` | in v21.1.2.15 | Yes | `-1` from `21.1.2.15` to `latest` |
 | `max_parts_in_total` | in v19.8.3.8 | Yes | `100000` from `19.8.3.8` to `latest` |
 | `max_parts_to_merge_at_once` | in v21.7.2.7 | Yes | `100` from `21.7.2.7` to `latest` |
 | `max_replicated_fetches_network_bandwidth` | in v21.7.2.7 | Yes | `0` from `21.7.2.7` to `latest` |
 | `max_replicated_logs_to_keep` | in v18.12.13 | Yes | `100` from `20.7.2.30` to `20.9.3.45` / `1000` from `20.8.5.45` to `latest` / `10000` from `18.12.13.0` to `20.6.11.1` |
-| `max_replicated_merges_in_queue` | in v18.10.3 | Yes | `1000` from `23.3.1.2823` to `latest` / `16` from `18.10.3.0` to `23.2.4.12` |
+| `max_replicated_merges_in_queue` | in v18.10.3 | Yes | `1000` from `23.3.1.2823` to `latest` / `16` from `18.10.3.0` to `23.2.5.46` |
 | `max_replicated_merges_with_ttl_in_queue` | in v20.10.2.20 | Yes | `1` from `20.10.2.20` to `latest` |
 | `max_replicated_mutations_in_queue` | in v19.11.9.52 | Yes | `8` from `19.11.9.52` to `latest` |
 | `max_replicated_sends_network_bandwidth` | in v21.7.2.7 | Yes | `0` from `21.7.2.7` to `latest` |
