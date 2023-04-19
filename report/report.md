@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-04-07 11:58:49 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.3.1.2823
+Generated at 2023-04-19 16:28:01 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.3.1.2823
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2126,7 +2126,7 @@ Generated at 2023-04-07 11:58:49 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_parquet_allow_missing_columns` | in v22.1.2.2 |  | Yes | Allow missing columns while reading Parquet input formats |
 | `input_format_parquet_case_insensitive_column_matching` | in v22.4.1.2305 |  | Yes | Ignore case when matching Parquet columns with CH columns. |
 | `input_format_parquet_import_nested` | in v21.9.2.17 |  | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
-| `input_format_parquet_max_block_size` | in v23.2.1.2537 |  | Yes | Max block size for parquet reader. |
+| `input_format_parquet_max_block_size` | in v22.8.15.25.altinitystable |  | Yes | Max block size for parquet reader. |
 | `input_format_parquet_skip_columns_with_unsupported_types_in_schema_inference` | in v22.4.1.2305 |  | Yes | Allow to skip columns with unsupported types while schema inference for format Parquet |
 | `input_format_protobuf_flatten_google_wrappers` | in v22.5.1.2079 |  | Yes | Enable Google wrappers for regular non-nested columns, e.g. google.protobuf.StringValue \'str\' for String column \'str\'. For Nullable columns empty wrappers are recognized as defaults, and missing as nulls |
 | `input_format_protobuf_skip_fields_with_unsupported_types_in_schema_inference` | in v22.8.1.2097 |  | Yes | Skip fields with unsupported types while schema inference for format Protobuf |
