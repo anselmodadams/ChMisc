@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-04-22 20:32:37 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.3.2.37
+Generated at 2023-04-26 16:30:28 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.3.2.37
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2549,7 +2549,7 @@ Generated at 2023-04-22 20:32:37 (America/Sao_Paulo), covering ClickHouse versio
 | `skip_download_if_exceeds_query_cache` | in v22.6.1.1985 |  | Yes | Skip download from remote filesystem if exceeds query cache size |
 | `skip_unavailable_shards` | in v1.1.54019 |  | Yes | Silently skip unavailable shards. |
 | `sleep_after_receiving_query_ms` | in v22.5.1.2079 |  | Yes | Time to sleep after receiving query in TCPHandler |
-| `sleep_in_receive_cancel_ms` | in v21.9.2.17 |  | up to v23.2.5.46 | Time to sleep in receiving cancel in TCPHandler |
+| `sleep_in_receive_cancel_ms` | in v21.9.2.17 |  | up to v23.2.6.34 | Time to sleep in receiving cancel in TCPHandler |
 | `sleep_in_send_data` | in v21.3.2.5 |  | up to v21.3.20.2.altinitystable | Time to sleep in sending data in TCPHandler |
 | `sleep_in_send_data_ms` | in v21.4.3.21 |  | Yes | Time to sleep in sending data in TCPHandler |
 | `sleep_in_send_tables_status` | in v21.3.2.5 |  | up to v21.3.20.2.altinitystable | Time to sleep in sending tables status response in TCPHandler |
@@ -2660,7 +2660,7 @@ Generated at 2023-04-22 20:32:37 (America/Sao_Paulo), covering ClickHouse versio
 | `max_parts_to_merge_at_once` | in v21.7.2.7 | Yes | `100` from `21.7.2.7` to `latest` |
 | `max_replicated_fetches_network_bandwidth` | in v21.7.2.7 | Yes | `0` from `21.7.2.7` to `latest` |
 | `max_replicated_logs_to_keep` | in v18.12.13 | Yes | `100` from `20.7.2.30` to `20.9.3.45` / `1000` from `20.8.5.45` to `latest` / `10000` from `18.12.13.0` to `20.6.11.1` |
-| `max_replicated_merges_in_queue` | in v18.10.3 | Yes | `1000` from `23.3.1.2823` to `latest` / `16` from `18.10.3.0` to `23.2.5.46` |
+| `max_replicated_merges_in_queue` | in v18.10.3 | Yes | `1000` from `23.3.1.2823` to `latest` / `16` from `18.10.3.0` to `23.2.6.34` |
 | `max_replicated_merges_with_ttl_in_queue` | in v20.10.2.20 | Yes | `1` from `20.10.2.20` to `latest` |
 | `max_replicated_mutations_in_queue` | in v19.11.9.52 | Yes | `8` from `19.11.9.52` to `latest` |
 | `max_replicated_sends_network_bandwidth` | in v21.7.2.7 | Yes | `0` from `21.7.2.7` to `latest` |
