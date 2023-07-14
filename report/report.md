@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-07-11 20:16:06 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.6.2.18
+Generated at 2023-07-13 23:14:55 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.6.2.18
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -1897,7 +1897,7 @@ Generated at 2023-07-11 20:16:06 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_unrestricted_reads_from_keeper` | in v22.3.2.1 |  | Yes | Allow unrestricted (w/o condition on path) reads from system.zookeeper table, can be handy, but is not safe for zookeeper |
 | `alter_partition_verbose_result` | in v20.7.2.30 |  | Yes | Output information about affected parts. Currently works only for FREEZE and ATTACH commands. |
 | `alter_sync` | in v23.2.1.2537 |  | Yes | Wait for actions to manipulate the partitions. 0 - do not wait, 1 - wait for execution only of itself, 2 - wait for everyone. |
-| `ann_index_select_query_params` | in v22.9.1.2603 |  | up to v23.4.5.22 | Parameters passed to ANN indexes in SELECT queries, the format is \'param1=x, param2=y, ...\' |
+| `ann_index_select_query_params` | in v22.9.1.2603 |  | up to v23.4.6.25 | Parameters passed to ANN indexes in SELECT queries, the format is \'param1=x, param2=y, ...\' |
 | `annoy_index_search_k_nodes` | in v23.5.1.3174 |  | Yes | SELECT queries search up to this many nodes in Annoy indexes. |
 | `any_join_distinct_right_table_keys` | in v19.11.14.1 |  | Yes | "Setting from future version, backported for update" |
 | `asterisk_include_alias_columns` | in v21.1.2.15 |  | Yes | Include ALIAS columns for wildcard query |
@@ -1927,11 +1927,11 @@ Generated at 2023-07-11 20:16:06 (America/Sao_Paulo), covering ClickHouse versio
 | `background_move_pool_size` | in v20.1.2.4 | in v22.5.1.2079 | Yes | Number of threads performing background moves for tables. Only has meaning at server startup. |
 | `background_pool_size` | in v1.1.54019 | in v22.5.1.2079 | Yes | Number of threads performing background work for tables (for example, merging in merge tree). |
 | `background_schedule_pool_size` | in v1.1.54388 | in v22.5.1.2079 | Yes | Number of threads performing background tasks for replicated tables. Only has meaning at server startup. |
-| `backup_batch_size_for_keeper_multiread` | in v23.3.1.2823 |  | up to v23.3.7.5 | Maximum size of batch for multiread request to [Zoo]Keeper during backup |
-| `backup_keeper_max_retries` | in v23.3.1.2823 |  | up to v23.3.7.5 | Max retries for keeper operations during backup |
-| `backup_keeper_retry_initial_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.7.5 | Initial backoff timeout for [Zoo]Keeper operations during backup |
-| `backup_keeper_retry_max_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.7.5 | Max backoff timeout for [Zoo]Keeper operations during backup |
-| `backup_keeper_value_max_size` | in v23.3.1.2823 |  | up to v23.3.7.5 | Maximum size of data of a [Zoo]Keeper\'s node during backup |
+| `backup_batch_size_for_keeper_multiread` | in v23.3.1.2823 |  | up to v23.3.8.21 | Maximum size of batch for multiread request to [Zoo]Keeper during backup |
+| `backup_keeper_max_retries` | in v23.3.1.2823 |  | up to v23.3.8.21 | Max retries for keeper operations during backup |
+| `backup_keeper_retry_initial_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.8.21 | Initial backoff timeout for [Zoo]Keeper operations during backup |
+| `backup_keeper_retry_max_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.8.21 | Max backoff timeout for [Zoo]Keeper operations during backup |
+| `backup_keeper_value_max_size` | in v23.3.1.2823 |  | up to v23.3.8.21 | Maximum size of data of a [Zoo]Keeper\'s node during backup |
 | `backup_restore_batch_size_for_keeper_multiread` | in v23.4.1.1943 |  | Yes | Maximum size of batch for multiread request to [Zoo]Keeper during backup or restore |
 | `backup_restore_keeper_fault_injection_probability` | in v23.4.1.1943 |  | Yes | Approximate probability of failure for a keeper request during backup or restore. Valid value is in interval [0.0f, 1.0f] |
 | `backup_restore_keeper_fault_injection_seed` | in v23.4.1.1943 |  | Yes | 0 - random seed, otherwise the setting value |
@@ -2018,7 +2018,7 @@ Generated at 2023-07-11 20:16:06 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_extended_results_for_datetime_functions` | in v22.9.1.2603 |  | Yes | Enable date functions like toLastDayOfMonth return Date32 results (instead of Date results) for Date32/DateTime64 arguments. |
 | `enable_filesystem_cache` | in v22.4.1.2305 |  | Yes | Use cache for remote filesystem. This setting does not turn on/off cache for disks (must me done via disk config), but allows to bypass cache for some queries if intended |
 | `enable_filesystem_cache_log` | in v22.5.1.2079 |  | Yes | Allows to record the filesystem caching log for each query |
-| `enable_filesystem_cache_on_lower_level` | in v22.8.1.2097 |  | up to v23.4.5.22 | If read buffer supports caching inside threadpool, allow it to do it, otherwise cache outside ot threadpool. Do not use this setting, it is needed for testing |
+| `enable_filesystem_cache_on_lower_level` | in v22.8.1.2097 |  | up to v23.4.6.25 | If read buffer supports caching inside threadpool, allow it to do it, otherwise cache outside ot threadpool. Do not use this setting, it is needed for testing |
 | `enable_filesystem_cache_on_write_operations` | in v22.4.1.2305 |  | Yes | Write into cache on write operations. To actually work this setting requires be added to disk config too |
 | `enable_filesystem_read_prefetches_log` | in v23.2.1.2537 |  | Yes | Log to system.filesystem prefetch_log during query. Should be used only for testing or debugging, not recommended to be turned on by default |
 | `enable_global_with_statement` | in v20.10.2.20 |  | Yes | Propagate WITH statements to UNION queries and all subqueries |
@@ -2595,7 +2595,7 @@ Generated at 2023-07-11 20:16:06 (America/Sao_Paulo), covering ClickHouse versio
 | `receive_data_timeout_ms` | in v21.3.6.55 |  | Yes | Connection timeout for receiving first packet of data or packet with positive progress from replica |
 | `receive_timeout` | in v1.1.54019 |  | Yes |  |
 | `regexp_dict_allow_hyperscan` | in v23.2.1.2537 |  | Yes | Allow regexp_tree dictionary using Hyperscan library. |
-| `regexp_dict_allow_other_sources` | in v23.1.1.3077 |  | up to v23.4.5.22 | Allow regexp_tree dictionary to use sources other than yaml source. |
+| `regexp_dict_allow_other_sources` | in v23.1.1.3077 |  | up to v23.4.6.25 | Allow regexp_tree dictionary to use sources other than yaml source. |
 | `regexp_max_matches_per_row` | in v21.9.2.17 |  | Yes | Max matches of any single regexp per row, used to safeguard \'extractAllGroupsHorizontal\' against consuming too much memory with greedy RE. |
 | `reject_expensive_hyperscan_regexps` | in v23.2.1.2537 |  | Yes | Reject patterns which will likely be expensive to evaluate with hyperscan (due to NFA state explosion) |
 | `remerge_sort_lowered_memory_bytes_ratio` | in v21.1.2.15 |  | Yes | If memory usage after remerge does not reduced by this ratio, remerge will be disabled. |
@@ -2734,8 +2734,8 @@ Generated at 2023-07-11 20:16:06 (America/Sao_Paulo), covering ClickHouse versio
 | `cleanup_delay_period_random_add` | in v18.10.3 | Yes | `10` from `18.10.3.0` to `latest` |
 | `cleanup_thread_preferred_points_per_iteration` | in v23.6.1.1524 | Yes | `150` from `23.6.1.1524` to `latest` |
 | `compatibility_allow_sampling_expression_not_in_primary_key` | in v18.10.3 | Yes | `0` from `18.10.3.0` to `latest` |
-| `compress_marks` | in v22.9.1.2603 | Yes | `0` from `22.9.1.2603` to `23.4.5.22` / `1` from `23.5.1.3174` to `latest` |
-| `compress_primary_key` | in v22.9.1.2603 | Yes | `0` from `22.9.1.2603` to `23.4.5.22` / `1` from `23.5.1.3174` to `latest` |
+| `compress_marks` | in v22.9.1.2603 | Yes | `0` from `22.9.1.2603` to `23.4.6.25` / `1` from `23.5.1.3174` to `latest` |
+| `compress_primary_key` | in v22.9.1.2603 | Yes | `0` from `22.9.1.2603` to `23.4.6.25` / `1` from `23.5.1.3174` to `latest` |
 | `concurrent_part_removal_threshold` | in v19.14.3.3 | Yes | `100` from `19.14.3.3` to `latest` |
 | `detach_not_byte_identical_parts` | in v21.11.2.2 | Yes | `0` from `21.11.2.2` to `latest` |
 | `detach_old_local_parts_when_cloning_replica` | in v20.8.5.45 | Yes | `1` from `20.8.5.45` to `latest` |
