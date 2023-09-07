@@ -381,6 +381,10 @@ yandex/clickhouse-server,1.1.54023
 yandex/clickhouse-server,1.1.54022
 yandex/clickhouse-server,1.1.54020
 yandex/clickhouse-server,1.1.54019
+clickhouse/clickhouse-server,23.3.13.6
+clickhouse/clickhouse-server,23.8.2.7
+clickhouse/clickhouse-server,23.3.12.11
+clickhouse/clickhouse-server,23.8.1.2992
 clickhouse/clickhouse-server,22.8.21.38
 clickhouse/clickhouse-server,23.3.11.5
 clickhouse/clickhouse-server,23.5.5.92
