@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-11-02 16:58:34 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.10.1.1976
+Generated at 2023-11-13 07:08:17 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.10.3.5
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -31,7 +31,7 @@ Generated at 2023-11-02 16:58:34 (America/Sao_Paulo), covering ClickHouse versio
 | `Log` | in v18.4.0 | Yes |
 | `MaterializedPostgreSQL` | in v21.8.3.44 | Yes |
 | `MaterializedView` | in v18.4.0 | Yes |
-| `MeiliSearch` | in v22.5.1.2079 | up to v23.9.3.12 |
+| `MeiliSearch` | in v22.5.1.2079 | up to v23.9.4.11 |
 | `Memory` | in v18.4.0 | Yes |
 | `Merge` | in v18.4.0 | Yes |
 | `MergeTree` | in v18.4.0 | Yes |
@@ -88,7 +88,7 @@ Generated at 2023-11-02 16:58:34 (America/Sao_Paulo), covering ClickHouse versio
 | `iceberg` | in v23.2.1.2537 | Yes |
 | `input` | in v19.15.2.2 | Yes |
 | `jdbc` | in v18.14.9 | Yes |
-| `meilisearch` | in v22.9.1.2603 | up to v23.9.3.12 |
+| `meilisearch` | in v22.9.1.2603 | up to v23.9.4.11 |
 | `merge` | in v18.4.0 | Yes |
 | `mongodb` | in v22.7.1.2484 | Yes |
 | `mysql` | in v18.4.0 | Yes |
@@ -1181,7 +1181,7 @@ Generated at 2023-11-02 16:58:34 (America/Sao_Paulo), covering ClickHouse versio
 | `medianTDigestWeighted` | Yes | No | quantileTDigestWeighted | in v1.1.54019 | Yes |
 | `medianTiming` | Yes | No | quantileTiming | in v1.1.54019 | Yes |
 | `medianTimingWeighted` | Yes | No | quantileTimingWeighted | in v1.1.54019 | Yes |
-| `meiliMatch` | No | No | (none) | in v22.5.1.2079 | up to v23.9.3.12 |
+| `meiliMatch` | No | No | (none) | in v22.5.1.2079 | up to v23.9.4.11 |
 | `metroHash64` | No | No | (none) | in v1.1.54019 | Yes |
 | `mid` | No | Yes | substring | in v18.16.0 | Yes |
 | `min` | Yes | Yes | (none) | in v1.1.54019 | Yes |
@@ -1948,7 +1948,7 @@ Generated at 2023-11-02 16:58:34 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_experimental_nlp_functions` | in v21.9.2.17 |  | Yes | Enable experimental functions for natural language processing. |
 | `allow_experimental_object_type` | in v22.3.2.1 |  | Yes | Allow Object and JSON data types |
 | `allow_experimental_parallel_reading_from_replicas` | in v22.1.2.2 |  | Yes | If true, ClickHouse will send a SELECT query to all replicas of a table. It will work for any kind on MergeTree table. |
-| `allow_experimental_partial_result` | in v23.9.2.56 |  | up to v23.9.3.12 | Enable experimental feature: partial results for running queries. |
+| `allow_experimental_partial_result` | in v23.9.2.56 |  | up to v23.9.4.11 | Enable experimental feature: partial results for running queries. |
 | `allow_experimental_projection_optimization` | in v21.6.3.14 | in v22.2.2.1 | Yes | Enable projection optimization when processing SELECT queries |
 | `allow_experimental_query_cache` | in v23.2.1.2537 | in v23.5.1.3174 | up to v23.7.6.111 | Enable experimental query cache |
 | `allow_experimental_query_deduplication` | in v21.3.2.5 |  | Yes | Allow sending parts\' UUIDs for a query in order to deduplicate data parts if any |
@@ -2007,11 +2007,11 @@ Generated at 2023-11-02 16:58:34 (America/Sao_Paulo), covering ClickHouse versio
 | `background_move_pool_size` | in v20.1.2.4 | in v22.5.1.2079 | Yes | Number of threads performing background moves for tables. Only has meaning at server startup. |
 | `background_pool_size` | in v1.1.54019 | in v22.5.1.2079 | Yes | Number of threads performing background work for tables (for example, merging in merge tree). |
 | `background_schedule_pool_size` | in v1.1.54388 | in v22.5.1.2079 | Yes | Number of threads performing background tasks for replicated tables. Only has meaning at server startup. |
-| `backup_batch_size_for_keeper_multiread` | in v23.3.1.2823 |  | up to v23.3.15.29 | Maximum size of batch for multiread request to [Zoo]Keeper during backup |
-| `backup_keeper_max_retries` | in v23.3.1.2823 |  | up to v23.3.15.29 | Max retries for keeper operations during backup |
-| `backup_keeper_retry_initial_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.15.29 | Initial backoff timeout for [Zoo]Keeper operations during backup |
-| `backup_keeper_retry_max_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.15.29 | Max backoff timeout for [Zoo]Keeper operations during backup |
-| `backup_keeper_value_max_size` | in v23.3.1.2823 |  | up to v23.3.15.29 | Maximum size of data of a [Zoo]Keeper\'s node during backup |
+| `backup_batch_size_for_keeper_multiread` | in v23.3.1.2823 |  | up to v23.3.16.7 | Maximum size of batch for multiread request to [Zoo]Keeper during backup |
+| `backup_keeper_max_retries` | in v23.3.1.2823 |  | up to v23.3.16.7 | Max retries for keeper operations during backup |
+| `backup_keeper_retry_initial_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.16.7 | Initial backoff timeout for [Zoo]Keeper operations during backup |
+| `backup_keeper_retry_max_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.16.7 | Max backoff timeout for [Zoo]Keeper operations during backup |
+| `backup_keeper_value_max_size` | in v23.3.1.2823 |  | up to v23.3.16.7 | Maximum size of data of a [Zoo]Keeper\'s node during backup |
 | `backup_restore_batch_size_for_keeper_multiread` | in v23.4.1.1943 |  | Yes | Maximum size of batch for multiread request to [Zoo]Keeper during backup or restore |
 | `backup_restore_keeper_fault_injection_probability` | in v23.4.1.1943 |  | Yes | Approximate probability of failure for a keeper request during backup or restore. Valid value is in interval [0.0f, 1.0f] |
 | `backup_restore_keeper_fault_injection_seed` | in v23.4.1.1943 |  | Yes | 0 - random seed, otherwise the setting value |
@@ -2475,7 +2475,7 @@ Generated at 2023-11-02 16:58:34 (America/Sao_Paulo), covering ClickHouse versio
 | `max_result_rows` | in v1.1.54019 |  | Yes |  |
 | `max_rows_in_distinct` | in v1.1.54019 |  | Yes |  |
 | `max_rows_in_join` | in v1.1.54019 |  | Yes |  |
-| `max_rows_in_partial_result` | in v23.9.1.1854 |  | up to v23.9.3.12 | Maximum rows to show in the partial result after every real-time update while the query runs (use partial result limit + OFFSET as a value in case of OFFSET in the query). |
+| `max_rows_in_partial_result` | in v23.9.1.1854 |  | up to v23.9.4.11 | Maximum rows to show in the partial result after every real-time update while the query runs (use partial result limit + OFFSET as a value in case of OFFSET in the query). |
 | `max_rows_in_set` | in v1.1.54019 |  | Yes |  |
 | `max_rows_in_set_to_optimize_join` | in v22.9.1.2603 |  | Yes | Maximal size of the set to filter joined tables by each other row sets before joining. 0 - disable. |
 | `max_rows_to_group_by` | in v1.1.54019 |  | Yes |  |
@@ -2681,7 +2681,7 @@ Generated at 2023-11-02 16:58:34 (America/Sao_Paulo), covering ClickHouse versio
 | `partial_merge_join_rows_in_left_blocks` | in v19.15.2.2 |  | up to v20.1.16.120 | Group left-hand joining data in bigger blocks. Setting it to a bigger value increase JOIN performance and memory usage. |
 | `partial_merge_join_rows_in_right_blocks` | in v19.15.2.2 |  | Yes | Split right-hand joining data in blocks of specified size. It\'s a portion of data indexed by min-max values and possibly unloaded on disk. |
 | `partial_result_on_first_cancel` | in v23.3.1.2823 |  | Yes | Allows query to return a partial result after cancel. |
-| `partial_result_update_duration_ms` | in v23.9.1.1854 |  | up to v23.9.3.12 | Interval (in milliseconds) for sending updates with partial data about the result table to the client (in interactive mode) during query execution. Setting to 0 disables partial results. Only supported for single-threaded GROUP BY without key, ORDER BY, LIMIT and OFFSET. |
+| `partial_result_update_duration_ms` | in v23.9.1.1854 |  | up to v23.9.4.11 | Interval (in milliseconds) for sending updates with partial data about the result table to the client (in interactive mode) during query execution. Setting to 0 disables partial results. Only supported for single-threaded GROUP BY without key, ORDER BY, LIMIT and OFFSET. |
 | `partial_revokes` | in v20.3.2.1 |  | up to v20.3.21.2 | Makes it possible to revoke privileges partially. |
 | `parts_to_delay_insert` | in v22.5.1.2079 |  | Yes | If the destination table contains at least that many active parts in a single partition, artificially slow down insert into table. |
 | `parts_to_throw_insert` | in v22.5.1.2079 |  | Yes | If more than this number active parts in a single partition of the destination table, throw \'Too many parts ...\' exception. |
