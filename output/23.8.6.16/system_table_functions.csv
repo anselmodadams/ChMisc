@@ -1,0 +1,72 @@
+"ch_version","name","description","allow_readonly"
+"23.8.6.16","azureBlobStorage","The table function can be used to read the data stored on Azure Blob Storage.",0
+"23.8.6.16","viewExplain","
+                Returns result of EXPLAIN query.
+                The function should not be called directly but can be invoked via `SELECT * FROM (EXPLAIN <query>)`.
+                You can use this query to process the result of EXPLAIN further using SQL (e.g., in tests).
+                Example:
+                [example:1]
+                ",0
+"23.8.6.16","format","
+Extracts table structure from data and parses it according to specified input format.
+Syntax: `format(format_name, data)`.
+Parameters:
+    - `format_name` - the format of the data.
+    - `data ` - String literal or constant expression that returns a string containing data in specified format.
+Returned value: A table with data parsed from `data` argument according specified format and extracted schema.
+",0
+"23.8.6.16","dictionary","",0
+"23.8.6.16","mysql","",0
+"23.8.6.16","viewIfPermitted","",1
+"23.8.6.16","odbc","",0
+"23.8.6.16","hive","",0
+"23.8.6.16","postgresql","",0
+"23.8.6.16","hdfsCluster","",0
+"23.8.6.16","deltaLake","The table function can be used to read the DeltaLake table stored on object store.",0
+"23.8.6.16","hudi","The table function can be used to read the Hudi table stored on object store.",0
+"23.8.6.16","oss","",0
+"23.8.6.16","redis","",0
+"23.8.6.16","cosn","",0
+"23.8.6.16","azureBlobStorageCluster","The table function can be used to read the data stored on Azure Blob Storage in parallel for many nodes in a specified cluster.",0
+"23.8.6.16","meilisearch","",0
+"23.8.6.16","jdbc","",0
+"23.8.6.16","zeros_mt","
+                Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+                This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+                In contrast to the `zeros_mt`, this table function is using single thread for data generation.
+                Example:
+                [example:1]
+                This query will test the speed of `randomPrintableASCII` function using single thread.
+                See also the `system.zeros` table.",0
+"23.8.6.16","mongodb","",0
+"23.8.6.16","generateRandom","",1
+"23.8.6.16","remote","",0
+"23.8.6.16","input","",0
+"23.8.6.16","s3Cluster","",0
+"23.8.6.16","values","",1
+"23.8.6.16","s3","The table function can be used to read the data stored on AWS S3.",0
+"23.8.6.16","url","",0
+"23.8.6.16","gcs","The table function can be used to read the data stored on Google Cloud Storage.",0
+"23.8.6.16","remoteSecure","",0
+"23.8.6.16","sqlite","",0
+"23.8.6.16","zeros","
+                Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+                This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+                In contrast to the `zeros`, this table function is using multiple threads for data generation, according to the `max_threads` setting.
+                Example:
+                [example:1]
+                This query will test the speed of `randomPrintableASCII` function using multiple threads.
+                See also the `system.zeros` table.
+                ",0
+"23.8.6.16","iceberg","The table function can be used to read the Iceberg table stored on object store.",0
+"23.8.6.16","urlCluster","",0
+"23.8.6.16","view","",1
+"23.8.6.16","numbers_mt","",1
+"23.8.6.16","executable","",0
+"23.8.6.16","clusterAllReplicas","",1
+"23.8.6.16","cluster","",1
+"23.8.6.16","merge","",0
+"23.8.6.16","null","",1
+"23.8.6.16","file","",0
+"23.8.6.16","hdfs","",0
+"23.8.6.16","numbers","",1
