@@ -1,0 +1,3979 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to","create_query","origin","description","syntax","arguments","returned_value","examples","categories"
+"23.8.8.20","JSON_VALUE",0,0,"","","System","","","","","",""
+"23.8.8.20","intHash64",0,0,"","","System","","","","","",""
+"23.8.8.20","intHash32",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchFirstIndexUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","getSetting",0,0,"","","System","","","","","",""
+"23.8.8.20","isValidUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","toUTCTimestamp",0,0,"","","System","","","","","",""
+"23.8.8.20","endsWith",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalHour",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalMinute",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalMillisecond",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime64BestEffortUSOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime64BestEffortOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime64BestEffort",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime32BestEffort",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeBestEffortOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeBestEffortOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toIPv6OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toIPv4OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toUUIDOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeBestEffort",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal128OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal64OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal32OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateTimeOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toDate32OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toFloat64OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt256OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt128OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt64OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt128OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt64OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt8OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toIPv6OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toIPv4OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal256OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal64OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal32OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toDate32OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toFloat64OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toFloat32OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt128OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt64OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt16OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt128OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt32OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toString",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateTime",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal128",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal64",0,0,"","","System","","","","","",""
+"23.8.8.20","toFloat64",0,0,"","","System","","","","","",""
+"23.8.8.20","toFloat32",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt128",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt32",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt8",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt256",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt64",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal32",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt32",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt8",0,0,"","","System","","","","","",""
+"23.8.8.20","blockSize",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt16",0,0,"","","System","","","","","",""
+"23.8.8.20","isNotNull",0,0,"","","System","","","","","",""
+"23.8.8.20","UUIDStringToNum",0,0,"","","System","","","","","",""
+"23.8.8.20","roundDown",0,0,"","","System","","","","","",""
+"23.8.8.20","trunc",0,1,"","","System","","","","","",""
+"23.8.8.20","ceil",0,1,"","","System","","","","","",""
+"23.8.8.20","roundBankers",0,0,"","","System","","","","","",""
+"23.8.8.20","round",0,1,"","","System","","","","","",""
+"23.8.8.20","regionToName",0,0,"","","System","","","","","",""
+"23.8.8.20","toUUID",0,0,"","","System","","","","","",""
+"23.8.8.20","regionToCountry",0,0,"","","System","","","","","",""
+"23.8.8.20","regionToArea",0,0,"","","System","","","","","",""
+"23.8.8.20","regionToCity",0,0,"","","System","","","","","",""
+"23.8.8.20","cutQueryString",0,0,"","","System","","","","","",""
+"23.8.8.20","BLAKE3",0,0,"","","System","
+Calculates BLAKE3 hash string and returns the resulting set of bytes as FixedString.
+This cryptographic hash-function is integrated into ClickHouse with BLAKE3 Rust library.
+The function is rather fast and shows approximately two times faster performance compared to SHA-2, while generating hashes of the same length as SHA-256.
+It returns a BLAKE3 hash as a byte array with type FixedString(32).
+","","","","hash:
+
+``` sql
+SELECT hex(BLAKE3('ABC'))
+```
+
+``` text
+
+```
+","Hash, Hash"
+"23.8.8.20","wyHash64",0,0,"","","System","","","","","",""
+"23.8.8.20","xxHash32",0,0,"","","System","","","","","",""
+"23.8.8.20","javaHashUTF16LE",0,0,"","","System","","","","","",""
+"23.8.8.20","javaHash",0,0,"","","System","","","","","",""
+"23.8.8.20","URLHash",0,0,"","","System","","","","","",""
+"23.8.8.20","metroHash64",0,0,"","","System","","","","","",""
+"23.8.8.20","farmHash64",0,0,"","","System","","","","","",""
+"23.8.8.20","farmFingerprint64",0,0,"","","System","","","","","",""
+"23.8.8.20","sipHash128Reference",0,0,"","","System","Like [sipHash128](#hash_functions-siphash128) but implements the 128-bit algorithm from the original authors of SipHash.","","","","hash:
+
+``` sql
+SELECT hex(sipHash128Reference('foo', '\x01', 3))
+```
+
+``` text
+
+```
+","Hash, Hash"
+"23.8.8.20","sipHash128",0,0,"","","System","","","","","",""
+"23.8.8.20","mapExtractKeyLike",0,0,"","","System","Returns a map with elements which key matches the specified pattern.","","","","mapExtractKeyLike:
+
+``` sql
+SELECT mapExtractKeyLike(map('k1-1', 1, 'k2-1', 2), 'k1%')
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","sipHash128ReferenceKeyed",0,0,"","","System","Same as [sipHash128Reference](#hash_functions-siphash128reference) but additionally takes an explicit key argument instead of using a fixed key.","","","","hash:
+
+``` sql
+SELECT hex(sipHash128ReferenceKeyed((506097522914230528, 1084818905618843912),'foo', '\x01', 3));
+```
+
+``` text
+
+```
+","Hash, Hash"
+"23.8.8.20","mapPartialSort",0,0,"","","System","The same as arrayReverseSort.","","","","mapPartialSort:
+
+``` sql
+SELECT mapPartialSort((k, v) -> v, 2, map('k1', 3, 'k2', 1, 'k3', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","mapSort",0,0,"","","System","The same as arraySort.","","","","mapSort:
+
+``` sql
+SELECT mapSort((k, v) -> v, map('k1', 3, 'k2', 1, 'k3', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","mapAll",0,0,"","","System","The same as arrayAll.","","","","mapAll:
+
+``` sql
+SELECT mapAll((k, v) -> v = 1, map('k1', 1, 'k2', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","mapFilter",0,0,"","","System","The same as arrayFilter.","","","","mapFilter:
+
+``` sql
+SELECT mapFilter((k, v) -> v > 1, map('k1', 1, 'k2', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","char",0,1,"","","System","","","","","",""
+"23.8.8.20","mapContains",0,0,"","","System","Checks whether the map has the specified key.","","","","mapContains:
+
+``` sql
+SELECT mapContains(map('k1', 'v1', 'k2', 'v2'), 'k1')
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","toIPv4",0,0,"","","System","","","","","",""
+"23.8.8.20","mapValues",0,0,"","","System","Returns an array with the values of map.","","","","mapValues:
+
+``` sql
+SELECT mapValues(map('k1', 'v1', 'k2', 'v2'))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","mapConcat",0,0,"","","System","The same as arrayConcat.","","","","mapConcat:
+
+``` sql
+SELECT mapConcat(map('k1', 'v1'), map('k2', 'v2'))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","toDate32",0,0,"","","System","","","","","",""
+"23.8.8.20","lowCardinalityIndices",0,0,"","","System","","","","","",""
+"23.8.8.20","decrypt",0,0,"","","System","","","","","",""
+"23.8.8.20","logTrace",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt16OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","timeSlots",0,0,"","","System","","","","","",""
+"23.8.8.20","stringToH3",0,0,"","","System","","","","","",""
+"23.8.8.20","asinh",0,0,"","","System","","","","","",""
+"23.8.8.20","cutWWW",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt8OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","SHA1",0,0,"","","System","","","","","",""
+"23.8.8.20","MD5",0,0,"","","System","","","","","",""
+"23.8.8.20","halfMD5",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetIndexesFromUnidirectionalEdge",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractKeys",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractKeysAndValuesRaw",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt16OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractRaw",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractString",0,0,"","","System","","","","","",""
+"23.8.8.20","SHA512",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractFloat",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONKey",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONLength",0,0,"","","System","","","","","",""
+"23.8.8.20","isValidJSON",0,0,"","","System","","","","","",""
+"23.8.8.20","windowID",0,0,"","","System","","","","","",""
+"23.8.8.20","hopStart",0,0,"","","System","","","","","",""
+"23.8.8.20","hop",0,0,"","","System","","","","","",""
+"23.8.8.20","detectTonality",0,0,"","","System","","","","","",""
+"23.8.8.20","toRelativeWeekNum",0,0,"","","System","","","","","",""
+"23.8.8.20","makeDateTime64",0,0,"","","System","","","","","",""
+"23.8.8.20","makeDateTime",0,0,"","","System","","","","","",""
+"23.8.8.20","makeDate",0,1,"","","System","","","","","",""
+"23.8.8.20","showCertificate",0,0,"","","System","","","","","",""
+"23.8.8.20","nested",0,0,"","","System","
+Returns the array of tuples from multiple arrays.
+","","","","nested:
+
+``` sql
+SELECT nested(['keys', 'values'], ['key_1', 'key_2'], ['value_1','value_2'])
+```
+
+``` text
+
+```
+","OtherFunctions, OtherFunctions"
+"23.8.8.20","h3EdgeLengthM",0,0,"","","System","","","","","",""
+"23.8.8.20","__bitWrapperFunc",0,0,"","","System","","","","","",""
+"23.8.8.20","extractGroups",0,0,"","","System","","","","","",""
+"23.8.8.20","transactionLatestSnapshot",0,0,"","","System","","","","","",""
+"23.8.8.20","transactionID",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsEqualsCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","UUIDNumToString",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv4StringToNumOrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv4NumToStringClassC",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv4NumToString",0,0,"","","System","","","","","",""
+"23.8.8.20","isIPv6String",0,0,"","","System","","","","","",""
+"23.8.8.20","JSON_QUERY",0,0,"","","System","","","","","",""
+"23.8.8.20","isIPv4String",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv4CIDRToRange",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv6CIDRToRange",0,0,"","","System","","","","","",""
+"23.8.8.20","MACStringToNum",0,0,"","","System","","","","","",""
+"23.8.8.20","cutIPv6",0,0,"","","System","","","","","",""
+"23.8.8.20","radians",0,1,"","","System","","","","","",""
+"23.8.8.20","ifNotFinite",0,0,"","","System","","","","","",""
+"23.8.8.20","currentUser",0,0,"","","System","","","","","",""
+"23.8.8.20","convertCharset",0,0,"","","System","","","","","",""
+"23.8.8.20","extractTextFromHTML",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalQuarter",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchAny",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapContains",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapHasAny",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapXor",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapOr",0,0,"","","System","","","","","",""
+"23.8.8.20","xxh3",0,0,"","","System","Calculates value of XXH3 64-bit hash function. Refer to https://github.com/Cyan4973/xxHash for detailed documentation.","","","","hash:
+
+``` sql
+SELECT xxh3('ClickHouse')
+```
+
+``` text
+
+```
+","Hash, Hash"
+"23.8.8.20","bitmapAnd",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapAndnotCardinality",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv6StringToNumOrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapAndnot",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapXorCardinality",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapOrCardinality",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapAndCardinality",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapMin",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapCardinality",0,0,"","","System","","","","","",""
+"23.8.8.20","mapExists",0,0,"","","System","The same as arrayExists.","","","","mapExists:
+
+``` sql
+SELECT mapExists((k, v) -> v = 1, map('k1', 1, 'k2', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","bitmapSubsetLimit",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapSubsetInRange",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapToArray",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapBuild",0,0,"","","System","","","","","",""
+"23.8.8.20","addQuarters",0,0,"","","System","","","","","",""
+"23.8.8.20","pointInEllipses",0,0,"","","System","","","","","",""
+"23.8.8.20","bitHammingDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsDistanceSpherical",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsDistanceCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","h3EdgeLengthKm",0,0,"","","System","","","","","",""
+"23.8.8.20","fuzzBits",0,0,"","","System","","","","","",""
+"23.8.8.20","addressToLineWithInlines",0,0,"","","System","","","","","",""
+"23.8.8.20","monthName",0,1,"","","System","","","","","",""
+"23.8.8.20","arrayReverseFill",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayFill",0,0,"","","System","","","","","",""
+"23.8.8.20","addressToSymbol",0,0,"","","System","","","","","",""
+"23.8.8.20","aes_decrypt_mysql",0,0,"","","System","","","","","",""
+"23.8.8.20","pathFull",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetDescendants",0,0,"","","System","
+Returns all descendants as if dictGetChildren function was applied level times recursively.
+Accepts 3 parameters: name of the dictionary, key value - expression returning a UInt64-type value, level — hierarchy level - If level = 0 returns all descendants to the end - UInt8
+Returned value: descendants for the key, type of Array(UInt64)
+","","","","",""
+"23.8.8.20","dictGetChildren",0,0,"","","System","
+Returns first-level children as an array of indexes. It is the inverse transformation for dictGetHierarchy.
+Accepts 2 parameters: name of the dictionary, key value - expression returning a UInt64-type value.
+Returned value: first-level descendants for the key, type of Array(UInt64)
+","","","","",""
+"23.8.8.20","notEmpty",0,0,"","","System","","","","","",""
+"23.8.8.20","format",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetHierarchy",0,0,"","","System","
+Creates an array, containing all the parents of a key in the hierarchical dictionary.
+Accepts 2 parameters: name of the dictionary, key value - expression returning a UInt64-type value.
+Returned value: parents for the key, type of Array(UInt64)
+","","","","",""
+"23.8.8.20","dictGetStringOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the String if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetUUIDOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UUID if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetDateTimeOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the DateTime if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","UTCTimestamp",0,1,"","","System","
+Returns the current date and time at the moment of query analysis. The function is a constant expression.
+Same as `now('UTC')`. Was added only for MySQL support. `now` is preferred.
+
+Example:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT UTCTimestamp();
+```
+
+``` text
+
+```
+","Dates and Times, Dates and Times"
+"23.8.8.20","dictGetFloat64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Float64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetInt64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetUInt64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetString",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the String if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetIPv6",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the IPv6 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetIPv4",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the IPv4 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetUUID",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UUID if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","multiSearchFirstPosition",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetDate",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Date if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","IPv6StringToNum",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetInt64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetInt32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetInt16",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int16 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetInt8",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int8 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetUInt64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetUInt32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","toUInt64OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetUInt16",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt16 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dictGetAll",0,0,"","","System","
+Retrieves all values from a dictionary corresponding to the given key values.
+
+Accepts 3 or 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- [optional] maximum number of values to return for each attribute;
+
+Returned value: array of dictionary attribute values parsed in the attribute's data type if key is found, otherwise empty array.
+
+Throws an exception if cannot parse the value of the attribute, the value does not match the attribute data type, or the dictionary doesn't support this function.
+","","","","",""
+"23.8.8.20","dictGetOrNull",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise NULL.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","h3EdgeAngle",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractKeysAndValues",0,0,"","","System","","","","","",""
+"23.8.8.20","extractKeyValuePairs",0,0,"","","System","Extracts key-value pairs from any string. The string does not need to be 100% structured in a key value pair format;
+
+            It can contain noise (e.g. log files). The key-value pair format to be interpreted should be specified via function arguments.
+
+            A key-value pair consists of a key followed by a `key_value_delimiter` and a value. Quoted keys and values are also supported. Key value pairs must be separated by pair delimiters.
+
+            **Syntax**
+            ``` sql
+            extractKeyValuePairs(data, [key_value_delimiter], [pair_delimiter], [quoting_character])
+            ```
+
+            **Arguments**
+            - `data` - String to extract key-value pairs from. [String](../../sql-reference/data-types/string.md) or [FixedString](../../sql-reference/data-types/fixedstring.md).
+            - `key_value_delimiter` - Character to be used as delimiter between the key and the value. Defaults to `:`. [String](../../sql-reference/data-types/string.md) or [FixedString](../../sql-reference/data-types/fixedstring.md).
+            - `pair_delimiters` - Set of character to be used as delimiters between pairs. Defaults to `\space`, `,` and `;`. [String](../../sql-reference/data-types/string.md) or [FixedString](../../sql-reference/data-types/fixedstring.md).
+            - `quoting_character` - Character to be used as quoting character. Defaults to `""`. [String](../../sql-reference/data-types/string.md) or [FixedString](../../sql-reference/data-types/fixedstring.md).
+
+            **Returned values**
+            - The extracted key-value pairs in a Map(String, String).
+
+            **Examples**
+
+            Query:
+
+            **Simple case**
+            ``` sql
+            arthur :) select extractKeyValuePairs('name:neymar, age:31 team:psg,nationality:brazil') as kv
+
+            SELECT extractKeyValuePairs('name:neymar, age:31 team:psg,nationality:brazil') as kv
+
+            Query id: f9e0ca6f-3178-4ee2-aa2c-a5517abb9cee
+
+            ┌─kv──────────────────────────────────────────────────────────────────────┐
+            │ {'name':'neymar','age':'31','team':'psg','nationality':'brazil'}        │
+            └─────────────────────────────────────────────────────────────────────────┘
+            ```
+
+            **Single quote as quoting character**
+            ``` sql
+            arthur :) select extractKeyValuePairs('name:\'neymar\';\'age\':31;team:psg;nationality:brazil,last_key:last_value', ':', ';,', '\'') as kv
+
+            SELECT extractKeyValuePairs('name:\'neymar\';\'age\':31;team:psg;nationality:brazil,last_key:last_value', ':', ';,', '\'') as kv
+
+            Query id: 0e22bf6b-9844-414a-99dc-32bf647abd5e
+
+            ┌─kv───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+            │ {'name':'neymar','age':'31','team':'psg','nationality':'brazil','last_key':'last_value'}                                 │
+            └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+            ```
+
+            **Escape sequences without escape sequences support**
+            ``` sql
+            arthur :) select extractKeyValuePairs('age:a\\x0A\\n\\0') as kv
+
+            SELECT extractKeyValuePairs('age:a\\x0A\\n\\0') AS kv
+
+            Query id: e9fd26ee-b41f-4a11-b17f-25af6fd5d356
+
+            ┌─kv────────────────────┐
+            │ {'age':'a\\x0A\\n\\0'} │
+            └───────────────────────┘
+            ```","","","","",""
+"23.8.8.20","replicate",0,0,"","","System","","","","","",""
+"23.8.8.20","arraySlice",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfQuarter",0,0,"","","System","","","","","",""
+"23.8.8.20","substringIndex",0,0,"","","System","","","","","",""
+"23.8.8.20","timezoneOf",0,0,"","","System","","","","","",""
+"23.8.8.20","bitCount",0,0,"","","System","","","","","",""
+"23.8.8.20","atan2",0,1,"","","System","","","","","",""
+"23.8.8.20","dictIsIn",0,0,"","","System","
+Checks the ancestor of a key through the whole hierarchical chain in the dictionary.
+Accepts 3 parameters: name of the dictionary, key to be checked - expression returning a UInt64-type value, alleged ancestor of the key - expression returning a UInt64-type.
+Returned value: 0 if key is not a child of the ancestor, 1 if key is a child of the ancestor or if key is the ancestor, type of UInt8
+","","","","",""
+"23.8.8.20","base64Encode",0,0,"","","System","","","","","",""
+"23.8.8.20","globalVariable",0,0,"","","System","","","","","",""
+"23.8.8.20","divideDecimal",0,0,"","","System","
+Performs division on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These function work significantly slower than usual `divide`.
+In case you don't really need controlled precision and/or need fast computation, consider using [divide](#divide).
+:::","divideDecimal(a, b[, result_scale])","- a:First value: [Decimal](../../sql-reference/data-types/decimal.md)
+- b:Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+","The result of division with given scale. Type: [Decimal256](../../sql-reference/data-types/decimal.md).",":
+
+``` sql
+divideDecimal(toDecimal256(-12, 0), toDecimal32(2.1, 1), 10)
+```
+
+``` text
+
+┌─divideDecimal(toDecimal256(-12, 0), toDecimal32(2.1, 1), 10)─┐
+│                                                -5.7142857142 │
+└──────────────────────────────────────────────────────────────┘
+
+```
+Difference to regular division:
+
+``` sql
+
+SELECT toDecimal64(-12, 1) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 1) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+
+```
+
+``` text
+
+┌─divide(toDecimal64(-12, 1), toDecimal32(2.1, 1))─┐
+│                                             -5.7 │
+└──────────────────────────────────────────────────┘
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+
+```
+:
+
+``` sql
+
+SELECT toDecimal64(-12, 0) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 0) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+
+```
+
+``` text
+
+DB::Exception: Decimal result's scale is less than argument's one: While processing toDecimal64(-12, 0) / toDecimal32(2.1, 1). (ARGUMENT_OUT_OF_BOUND)
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+
+```
+",""
+"23.8.8.20","fullHostName",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayReduceInRanges",0,0,"","","System","","","","","",""
+"23.8.8.20","structureToCapnProtoSchema",0,0,"","","System","
+Function that converts ClickHouse table structure to CapnProto format schema
+","","","","random:
+
+``` sql
+SELECT structureToCapnProtoSchema('s String, x UInt32', 'MessageName') format TSVRaw
+```
+
+``` text
+struct MessageName
+{
+    s @0 : Data;
+    x @1 : UInt32;
+}
+```
+","Other, Other"
+"23.8.8.20","normalizeQuery",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractMinutes",0,0,"","","System","","","","","",""
+"23.8.8.20","h3Line",0,0,"","","System","","","","","",""
+"23.8.8.20","bitTest",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramSearchCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","acos",0,1,"","","System","","","","","",""
+"23.8.8.20","accurateCastOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","empty",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramMinHashArg",0,0,"","","System","","","","","",""
+"23.8.8.20","_CAST",0,1,"","","System","","","","","",""
+"23.8.8.20","toDayOfYear",0,0,"","","System","","","","","",""
+"23.8.8.20","bin",0,1,"","","System","","","","","",""
+"23.8.8.20","bitSlice",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetUInt16OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt16 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","h3IsPentagon",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapMax",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetOriginIndexFromUnidirectionalEdge",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramDistanceCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimalString",0,1,"","","System","
+Returns string representation of a number. First argument is the number of any numeric type,
+second argument is the desired number of digits in fractional part. Returns String.
+
+        ","","","","toDecimalString:
+
+``` sql
+SELECT toDecimalString(2.1456,2)
+```
+
+``` text
+
+```
+","String, String"
+"23.8.8.20","URLPathHierarchy",0,0,"","","System","","","","","",""
+"23.8.8.20","h3HexRing",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetUnidirectionalEdgesFromHexagon",0,0,"","","System","","","","","",""
+"23.8.8.20","simpleJSONExtractUInt",0,0,"","","System","","","","","",""
+"23.8.8.20","normalizedQueryHash",0,0,"","","System","","","","","",""
+"23.8.8.20","bitTestAll",0,0,"","","System","","","","","",""
+"23.8.8.20","__bitSwapLastTwo",0,0,"","","System","","","","","",""
+"23.8.8.20","fromModifiedJulianDay",0,0,"","","System","","","","","",""
+"23.8.8.20","CRC32",0,1,"","","System","","","","","",""
+"23.8.8.20","multiSearchFirstPositionUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","addMilliseconds",0,0,"","","System","","","","","",""
+"23.8.8.20","byteSize",0,0,"","","System","","","","","",""
+"23.8.8.20","intExp2",0,0,"","","System","","","","","",""
+"23.8.8.20","assumeNotNull",0,0,"","","System","","","","","",""
+"23.8.8.20","wordShingleMinHashArg",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramMinHashArgCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramMinHashArgUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramMinHashArgCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","cutToFirstSignificantSubdomainRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomain` but follows stricter rules to be compatible with RFC 3986 and less performant.","","","","","URL, URL"
+"23.8.8.20","wordShingleMinHashUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayDifference",0,0,"","","System","","","","","",""
+"23.8.8.20","wordShingleMinHash",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramMinHashCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","toMonth",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramMinHash",0,0,"","","System","","","","","",""
+"23.8.8.20","formatRowNoNewline",0,0,"","","System","","","","","",""
+"23.8.8.20","wordShingleSimHashCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","wordShingleSimHashUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayCumSum",0,0,"","","System","","","","","",""
+"23.8.8.20","wordShingleSimHash",0,0,"","","System","","","","","",""
+"23.8.8.20","finalizeAggregation",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramSimHashCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramSimHashCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramSimHash",0,0,"","","System","","","","","",""
+"23.8.8.20","toTimezone",0,0,"","","System","","","","","",""
+"23.8.8.20","currentDatabase",0,0,"","","System","","","","","",""
+"23.8.8.20","TimeDiff",0,1,"","","System","
+Returns the difference between two dates or dates with time values. The difference is calculated in seconds units (see toRelativeSecondNum).
+It is same as `dateDiff` and was added only for MySQL support. `dateDiff` is preferred.
+
+Example:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT timeDiff(UTCTimestamp(), now());
+```
+
+``` text
+
+```
+","Dates and Times, Dates and Times"
+"23.8.8.20","timezone",0,0,"","","System","
+Returns the default timezone for current session.
+Used as default timezone for parsing DateTime|DateTime64 without explicitly specified timezone.
+Can be changed with SET timezone = 'New/Tz'
+
+[example:timezone]
+    ","","","","timezone:
+
+``` sql
+SELECT timezone();
+```
+
+``` text
+
+```
+","Constant, Constant, Miscellaneous"
+"23.8.8.20","splitByRegexp",0,0,"","","System","","","","","",""
+"23.8.8.20","rowNumberInBlock",0,0,"","","System","","","","","",""
+"23.8.8.20","splitByString",0,0,"","","System","","","","","",""
+"23.8.8.20","s2CapContains",0,0,"","","System","","","","","",""
+"23.8.8.20","identity",0,0,"","","System","","","","","",""
+"23.8.8.20","ascii",0,1,"","","System","
+Returns the ASCII code point of the first character of str.  The result type is Int32.
+
+If s is empty, the result is 0. If the first character is not an ASCII character or not part of the Latin-1 Supplement range of UTF-16, the result is undefined)
+        ","","","","ascii:
+
+``` sql
+SELECT ascii('234')
+```
+
+``` text
+
+```
+","String, String"
+"23.8.8.20","s2RectUnion",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramDistanceUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","MD4",0,0,"","","System","","","","","",""
+"23.8.8.20","moduloOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","sipHash64Keyed",0,0,"","","System","","","","","",""
+"23.8.8.20","extractAll",0,0,"","","System","","","","","",""
+"23.8.8.20","age",0,1,"","","System","","","","","",""
+"23.8.8.20","regionToDistrict",0,0,"","","System","","","","","",""
+"23.8.8.20","unbin",0,1,"","","System","","","","","",""
+"23.8.8.20","reinterpret",0,0,"","","System","","","","","",""
+"23.8.8.20","modulo",0,0,"","","System","","","","","",""
+"23.8.8.20","lowCardinalityKeys",0,0,"","","System","","","","","",""
+"23.8.8.20","nullInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.8.20","geoToS2",0,0,"","","System","","","","","",""
+"23.8.8.20","blockSerializedSize",0,0,"","","System","","","","","",""
+"23.8.8.20","dateTrunc",0,0,"","","System","","","","","",""
+"23.8.8.20","generateUUIDv4",0,0,"","","System","","","","","",""
+"23.8.8.20","h3ExactEdgeLengthRads",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractBool",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleHammingDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramSearchUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","getTypeSerializationStreams",0,0,"","","System","","","","","",""
+"23.8.8.20","minSampleSizeConversion",0,0,"","","System","","","","","",""
+"23.8.8.20","jumpConsistentHash",0,0,"","","System","","","","","",""
+"23.8.8.20","parseTimeDelta",0,0,"","","System","","","","","",""
+"23.8.8.20","toFloat32OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","h3IndexesAreNeighbors",0,0,"","","System","","","","","",""
+"23.8.8.20","endsWithUTF8",0,0,"","","System","
+Returns whether string `str` ends with `suffix`, the difference between `endsWithUTF8` and `endsWith` is that `endsWithUTF8` match `str` and `suffix` by UTF-8 characters.
+        ","","","","endsWithUTF8:
+
+``` sql
+select endsWithUTF8('富强民主文明和谐', '富强');
+```
+
+``` text
+
+```
+","String, String"
+"23.8.8.20","formatReadableSize",0,0,"","","System","","","","","",""
+"23.8.8.20","toNullable",0,0,"","","System","","","","","",""
+"23.8.8.20","concat",0,1,"","","System","","","","","",""
+"23.8.8.20","demangle",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayStringConcat",0,0,"","","System","","","","","",""
+"23.8.8.20","splitByNonAlpha",0,0,"","","System","","","","","",""
+"23.8.8.20","hasSubstr",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt64OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","__bitBoolMaskAnd",0,0,"","","System","","","","","",""
+"23.8.8.20","sipHash64",0,0,"","","System","","","","","",""
+"23.8.8.20","randNormal",0,0,"","","System","
+Returns a random number from the normal distribution.
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randNormal(0, 5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","catboostEvaluate",0,0,"","","System","","","","","",""
+"23.8.8.20","divide",0,0,"","","System","","","","","",""
+"23.8.8.20","encrypt",0,0,"","","System","","","","","",""
+"23.8.8.20","intDivOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","evalMLMethod",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayInt32",0,0,"","","System","","","","","",""
+"23.8.8.20","extract",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchFirstIndexCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","rowNumberInAllBlocks",0,0,"","","System","","","","","",""
+"23.8.8.20","countDigits",0,0,"","","System","","","","","",""
+"23.8.8.20","replaceRegexpOne",0,0,"","","System","","","","","",""
+"23.8.8.20","factorial",0,1,"","","System","
+Computes the factorial of an integer value. It works with any native integer type including UInt(8|16|32|64) and Int(8|16|32|64). The return type is UInt64.
+
+The factorial of 0 is 1. Likewise, the factorial() function returns 1 for any negative value. The maximum positive value for the input argument is 20, a value of 21 or greater will cause exception throw.
+","","","","factorial:
+
+``` sql
+SELECT factorial(10)
+```
+
+``` text
+
+```
+","Mathematical, Mathematical"
+"23.8.8.20","tryBase64Decode",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime32BestEffortOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","cutToFirstSignificantSubdomainWithWWW",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"", without stripping ""www"".","","","","","URL, URL"
+"23.8.8.20","wordShingleSimHashCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","bitXor",0,0,"","","System","","","","","",""
+"23.8.8.20","lcm",0,0,"","","System","","","","","",""
+"23.8.8.20","detectLanguage",0,0,"","","System","","","","","",""
+"23.8.8.20","formatRow",0,0,"","","System","","","","","",""
+"23.8.8.20","countMatchesCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","minus",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramMinHashUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","sqrt",0,1,"","","System","","","","","",""
+"23.8.8.20","arrayShiftLeft",0,0,"","","System","
+Returns an array of the same size as the original array with elements shifted
+to the left by the specified number of positions. New elements are filled with
+provided default values or default values of the corresponding type.
+[example:simple_int]
+[example:overflow_int]
+[example:simple_string]
+[example:simple_array]
+[example:simple_nested_array]
+
+Negative shift values are treated as shifting to the right by the absolute
+value of the shift.
+[example:negative_shift_int]
+
+The default value must be of the same type as the array elements.
+[example:simple_int_with_default]
+[example:simple_string_with_default]
+[example:simple_array_with_default]
+[example:casted_array_with_default]
+","","","","simple_int:
+
+``` sql
+SELECT arrayShiftLeft([1, 2, 3, 4, 5], 3)
+```
+
+``` text
+[4, 5, 0, 0, 0]
+```
+negative_shift_int:
+
+``` sql
+SELECT arrayShiftLeft([1, 2, 3, 4, 5], -3)
+```
+
+``` text
+[0, 0, 0, 1, 2]
+```
+overflow_int:
+
+``` sql
+SELECT arrayShiftLeft([1, 2, 3, 4, 5], 8)
+```
+
+``` text
+[0, 0, 0, 0, 0]
+```
+simple_string:
+
+``` sql
+SELECT arrayShiftLeft(['a', 'b', 'c', 'd', 'e'], 3)
+```
+
+``` text
+['d', 'e', '', '', '']
+```
+simple_array:
+
+``` sql
+SELECT arrayShiftLeft([[1, 2], [3, 4], [5, 6]], 2)
+```
+
+``` text
+[[5, 6], [], []]
+```
+simple_nested_array:
+
+``` sql
+SELECT arrayShiftLeft([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], 1)
+```
+
+``` text
+[[[5, 6], [7, 8]], []]
+```
+simple_int_with_default:
+
+``` sql
+SELECT arrayShiftLeft([1, 2, 3, 4, 5], 3, 7)
+```
+
+``` text
+[4, 5, 7, 7, 7]
+```
+simple_string_with_default:
+
+``` sql
+SELECT arrayShiftLeft(['a', 'b', 'c', 'd', 'e'], 3, 'foo')
+```
+
+``` text
+['d', 'e', 'foo', 'foo', 'foo']
+```
+simple_array_with_default:
+
+``` sql
+SELECT arrayShiftLeft([[1, 2], [3, 4], [5, 6]], 2, [7, 8])
+```
+
+``` text
+[[5, 6], [7, 8], [7, 8]]
+```
+casted_array_with_default:
+
+``` sql
+SELECT arrayShiftLeft(CAST('[1, 2, 3, 4, 5, 6]', 'Array(UInt16)'), 1, 1000)
+```
+
+``` text
+[2, 3, 4, 5, 6, 1000]
+```
+","Array, Array"
+"23.8.8.20","tupleDivideByNumber",0,0,"","","System","","","","","",""
+"23.8.8.20","caseWithoutExpression",0,0,"","","System","","","","","",""
+"23.8.8.20","randLogNormal",0,0,"","","System","
+Returns a random number from the lognormal distribution (a distribution of a random variable whose logarithm is normally distributed).
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randLogNormal(0, 5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","generateULID",0,0,"","","System","
+Generates a Universally Unique Lexicographically Sortable Identifier (ULID).
+This function takes an optional argument, the value of which is discarded to generate different values in case the function is called multiple times.
+The function returns a value of type FixedString(26).
+","","","","ulid:
+
+``` sql
+SELECT generateULID()
+```
+
+``` text
+
+```
+multiple:
+
+``` sql
+SELECT generateULID(1), generateULID(2)
+```
+
+``` text
+
+```
+","ULID, ULID"
+"23.8.8.20","bar",0,0,"","","System","","","","","",""
+"23.8.8.20","fromModifiedJulianDayOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmaskToList",0,0,"","","System","","","","","",""
+"23.8.8.20","shardCount",0,0,"","","System","","","","","",""
+"23.8.8.20","shardNum",0,0,"","","System","","","","","",""
+"23.8.8.20","rand",0,1,"","","System","","","","","",""
+"23.8.8.20","readWKTRing",0,0,"","","System","","","","","",""
+"23.8.8.20","caseWithExpression",0,0,"","","System","","","","","",""
+"23.8.8.20","geoDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","greatCircleDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","greatCircleAngle",0,0,"","","System","","","","","",""
+"23.8.8.20","fromUTCTimestamp",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalMonth",0,0,"","","System","","","","","",""
+"23.8.8.20","defaultProfiles",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayReverse",0,0,"","","System","","","","","",""
+"23.8.8.20","now64",0,1,"","","System","","","","","",""
+"23.8.8.20","extractAllGroupsHorizontal",0,0,"","","System","","","","","",""
+"23.8.8.20","h3ExactEdgeLengthKm",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayFilter",0,0,"","","System","","","","","",""
+"23.8.8.20","defaultRoles",0,0,"","","System","","","","","",""
+"23.8.8.20","toQuarter",0,0,"","","System","","","","","",""
+"23.8.8.20","countMatches",0,0,"","","System","","","","","",""
+"23.8.8.20","enabledRoles",0,0,"","","System","","","","","",""
+"23.8.8.20","currentRoles",0,0,"","","System","","","","","",""
+"23.8.8.20","dateTimeToSnowflake",0,0,"","","System","","","","","",""
+"23.8.8.20","cutToFirstSignificantSubdomain",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"" (see documentation of the `firstSignificantSubdomain`).","","","","cutToFirstSignificantSubdomain1:
+
+``` sql
+SELECT cutToFirstSignificantSubdomain('https://news.clickhouse.com.tr/')
+```
+
+``` text
+
+```
+cutToFirstSignificantSubdomain2:
+
+``` sql
+SELECT cutToFirstSignificantSubdomain('www.tr')
+```
+
+``` text
+
+```
+cutToFirstSignificantSubdomain3:
+
+``` sql
+SELECT cutToFirstSignificantSubdomain('tr')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.8.20","arrayEnumerateUniqRanked",0,0,"","","System","","","","","",""
+"23.8.8.20","CRC64",0,1,"","","System","","","","","",""
+"23.8.8.20","emptyArrayDate",0,0,"","","System","","","","","",""
+"23.8.8.20","CRC32IEEE",0,1,"","","System","","","","","",""
+"23.8.8.20","erf",0,0,"","","System","","","","","",""
+"23.8.8.20","trimBoth",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsUInt8",0,0,"","","System","","","","","",""
+"23.8.8.20","atanh",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetPentagonIndexes",0,0,"","","System","","","","","",""
+"23.8.8.20","encodeURLComponent",0,0,"","","System","","","","","",""
+"23.8.8.20","wordShingleMinHashArgCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetResolution",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramSearch",0,0,"","","System","","","","","",""
+"23.8.8.20","lessOrEquals",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractQuarters",0,0,"","","System","","","","","",""
+"23.8.8.20","fromUnixTimestamp64Nano",0,0,"","","System","","","","","",""
+"23.8.8.20","toUUIDOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetUnidirectionalEdge",0,0,"","","System","","","","","",""
+"23.8.8.20","positiveModulo",0,1,"","","System","
+Calculates the remainder when dividing `a` by `b`. Similar to function `modulo` except that `positiveModulo` always return non-negative number.
+Returns the difference between `a` and the nearest integer not greater than `a` divisible by `b`.
+In other words, the function returning the modulus (modulo) in the terms of Modular Arithmetic.
+        ","","","","positiveModulo:
+
+``` sql
+SELECT positiveModulo(-1, 10);
+```
+
+``` text
+
+```
+","Arithmetic, Arithmetic"
+"23.8.8.20","JSONHas",0,0,"","","System","","","","","",""
+"23.8.8.20","getServerPort",0,0,"","","System","","","","","",""
+"23.8.8.20","runningDifference",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayPushBack",0,0,"","","System","","","","","",""
+"23.8.8.20","ignore",0,0,"","","System","","","","","",""
+"23.8.8.20","hasSubsequenceCaseInsensitive",0,1,"","","System","","","","","",""
+"23.8.8.20","hopEnd",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayAvg",0,0,"","","System","","","","","",""
+"23.8.8.20","degrees",0,1,"","","System","","","","","",""
+"23.8.8.20","concatWithSeparator",0,0,"","","System","
+Returns the concatenation strings separated by string separator. Syntax: concatWithSeparator(sep, expr1, expr2, expr3...)
+        ","","","","concatWithSeparator:
+
+``` sql
+SELECT concatWithSeparator('a', '1', '2', '3')
+```
+
+``` text
+
+```
+","String, String"
+"23.8.8.20","dictGetDateTime",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the DateTime if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","h3ToGeoBoundary",0,0,"","","System","","","","","",""
+"23.8.8.20","atan",0,1,"","","System","","","","","",""
+"23.8.8.20","formatDateTimeInJodaSyntax",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayRotateRight",0,0,"","","System","
+Returns an array of the same size as the original array with elements rotated
+to the right by the specified number of positions.
+[example:simple_int]
+[example:overflow_int]
+[example:simple_string]
+[example:simple_array]
+[example:simple_nested_array]
+
+Negative rotate values are treated as rotating to the left by the absolute
+value of the rotation.
+[example:negative_rotation_int]
+","","","","simple_int:
+
+``` sql
+SELECT arrayRotateRight([1, 2, 3, 4, 5], 3)
+```
+
+``` text
+[3, 4, 5, 1, 2]
+```
+simple_string:
+
+``` sql
+SELECT arrayRotateRight(['a', 'b', 'c', 'd', 'e'], 3)
+```
+
+``` text
+['c', 'd', 'e', 'a', 'b']
+```
+simple_array:
+
+``` sql
+SELECT arrayRotateRight([[1, 2], [3, 4], [5, 6]], 2)
+```
+
+``` text
+[[3, 4], [5, 6], [1, 2]]
+```
+simple_nested_array:
+
+``` sql
+SELECT arrayRotateRight([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], 1)
+```
+
+``` text
+[[[7, 8], [1, 2]], [[3, 4], [5, 6]]]
+```
+negative_rotation_int:
+
+``` sql
+SELECT arrayRotateRight([1, 2, 3, 4, 5], -3)
+```
+
+``` text
+[4, 5, 1, 2, 3]
+```
+overflow_int:
+
+``` sql
+SELECT arrayRotateRight([1, 2, 3, 4, 5], 8)
+```
+
+``` text
+[4, 5, 1, 2, 3]
+```
+","Array, Array"
+"23.8.8.20","regionIn",0,0,"","","System","","","","","",""
+"23.8.8.20","hasSubsequence",0,1,"","","System","","","","","",""
+"23.8.8.20","JSONExtract",0,0,"","","System","","","","","",""
+"23.8.8.20","tumbleStart",0,0,"","","System","","","","","",""
+"23.8.8.20","bitShiftRight",0,0,"","","System","","","","","",""
+"23.8.8.20","tan",0,1,"","","System","","","","","",""
+"23.8.8.20","substring",0,1,"","","System","","","","","",""
+"23.8.8.20","tryBase58Decode",0,0,"","","System","","","","","",""
+"23.8.8.20","globalNotIn",0,0,"","","System","","","","","",""
+"23.8.8.20","addressToLine",0,0,"","","System","","","","","",""
+"23.8.8.20","pi",0,1,"","","System","","","","","",""
+"23.8.8.20","randCanonical",0,0,"","","System","
+The function generates pseudo random results with independent and identically distributed uniformly distributed values in [0, 1).
+Non-deterministic. Return type is Float64.
+        ","","","","randCanonical:
+
+``` sql
+SELECT randCanonical()
+```
+
+``` text
+
+```
+","Mathematical, Mathematical"
+"23.8.8.20","hasSubsequenceCaseInsensitiveUTF8",0,1,"","","System","","","","","",""
+"23.8.8.20","h3Distance",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt16",0,0,"","","System","","","","","",""
+"23.8.8.20","filesystemUnreserved",0,0,"","","System","","","","","",""
+"23.8.8.20","reverse",0,1,"","","System","","","","","",""
+"23.8.8.20","L2Normalize",0,0,"","","System","","","","","",""
+"23.8.8.20","pow",0,1,"","","System","","","","","",""
+"23.8.8.20","arrayCumSumNonNegative",0,0,"","","System","","","","","",""
+"23.8.8.20","translateUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","detectCharset",0,0,"","","System","","","","","",""
+"23.8.8.20","equals",0,0,"","","System","","","","","",""
+"23.8.8.20","geohashesInBox",0,0,"","","System","","","","","",""
+"23.8.8.20","hasSubsequenceUTF8",0,1,"","","System","","","","","",""
+"23.8.8.20","rightPadUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv4StringToNum",0,0,"","","System","","","","","",""
+"23.8.8.20","positionUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","hasToken",0,0,"","","System","Performs lookup of needle in haystack using tokenbf_v1 index.","","","","",""
+"23.8.8.20","hypot",0,1,"","","System","","","","","",""
+"23.8.8.20","protocol",0,0,"","","System","","","","","",""
+"23.8.8.20","if",0,1,"","","System","","","","","",""
+"23.8.8.20","regionToContinent",0,0,"","","System","","","","","",""
+"23.8.8.20","makeDate32",0,0,"","","System","","","","","",""
+"23.8.8.20","ilike",0,0,"","","System","","","","","",""
+"23.8.8.20","globalNotNullInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.8.20","regexpQuoteMeta",0,0,"","","System","","","","","",""
+"23.8.8.20","notNullInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetUnidirectionalEdgeBoundary",0,0,"","","System","","","","","",""
+"23.8.8.20","globalNullInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.8.20","hasAll",0,0,"","","System","","","","","",""
+"23.8.8.20","toTime",0,0,"","","System","","","","","",""
+"23.8.8.20","globalNotInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.8.20","splitByChar",0,0,"","","System","","","","","",""
+"23.8.8.20","toRelativeDayNum",0,0,"","","System","","","","","",""
+"23.8.8.20","notInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.8.20","globalInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.8.20","inIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayConcat",0,0,"","","System","","","","","",""
+"23.8.8.20","globalNotNullIn",0,0,"","","System","","","","","",""
+"23.8.8.20","notNullIn",0,0,"","","System","","","","","",""
+"23.8.8.20","globalNullIn",0,0,"","","System","","","","","",""
+"23.8.8.20","ifNull",0,1,"","","System","","","","","",""
+"23.8.8.20","normalizeQueryKeepNames",0,0,"","","System","","","","","",""
+"23.8.8.20","xxHash64",0,0,"","","System","","","","","",""
+"23.8.8.20","in",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsWithinSpherical",0,0,"","","System","","","","","",""
+"23.8.8.20","flattenTuple",0,0,"","","System","","","","","",""
+"23.8.8.20","reverseDNSQuery",0,0,"","","System","Performs a reverse DNS query to get the PTR records associated with the IP address","reverseDNSQuery(address)","- address:An IPv4 or IPv6 address. [String](../../sql-reference/data-types/string.md)
+","Associated domains (PTR records). [String](../../sql-reference/data-types/string.md).",":
+
+``` sql
+SELECT reverseDNSQuery('192.168.0.2');
+```
+
+``` text
+
+┌─reverseDNSQuery('192.168.0.2')────────────┐
+│ ['test2.example.com','test3.example.com'] │
+└───────────────────────────────────────────┘
+
+```
+",""
+"23.8.8.20","roundDuration",0,0,"","","System","","","","","",""
+"23.8.8.20","toDate32OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","addMinutes",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalSecond",0,0,"","","System","","","","","",""
+"23.8.8.20","kostikConsistentHash",0,0,"","","System","","","","","",""
+"23.8.8.20","toIPv6",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateTime32",0,0,"","","System","","","","","",""
+"23.8.8.20","arraySplit",0,0,"","","System","","","","","",""
+"23.8.8.20","initcapUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","firstSignificantSubdomain",0,0,"","","System","
+Returns the ""first significant subdomain"".
+
+The first significant subdomain is a second-level domain if it is 'com', 'net', 'org', or 'co'.
+Otherwise, it is a third-level domain.
+
+For example, firstSignificantSubdomain('https://news.clickhouse.com/') = 'clickhouse', firstSignificantSubdomain ('https://news.clickhouse.com.tr/') = 'clickhouse'.
+
+The list of ""insignificant"" second-level domains and other implementation details may change in the future.
+        ","","","","firstSignificantSubdomain:
+
+``` sql
+SELECT firstSignificantSubdomain('https://news.clickhouse.com/')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.8.20","h3HexAreaKm2",0,0,"","","System","","","","","",""
+"23.8.8.20","rand64",0,0,"","","System","","","","","",""
+"23.8.8.20","connectionId",0,1,"","","System","","","","","",""
+"23.8.8.20","ngramDistanceCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","startsWith",0,0,"","","System","","","","","",""
+"23.8.8.20","initialQueryID",0,0,"","","System","","","","","",""
+"23.8.8.20","bitmapHasAll",0,0,"","","System","","","","","",""
+"23.8.8.20","base58Decode",0,0,"","","System","","","","","",""
+"23.8.8.20","murmurHash2_64",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetBaseCell",0,0,"","","System","","","","","",""
+"23.8.8.20","regionToTopContinent",0,0,"","","System","","","","","",""
+"23.8.8.20","cityHash64",0,0,"","","System","","","","","",""
+"23.8.8.20","intDiv",0,0,"","","System","","","","","",""
+"23.8.8.20","intExp10",0,0,"","","System","","","","","",""
+"23.8.8.20","errorCodeToName",0,0,"","","System","","","","","",""
+"23.8.8.20","fromUnixTimestampInJodaSyntax",0,0,"","","System","","","","","",""
+"23.8.8.20","log",0,1,"","","System","","","","","",""
+"23.8.8.20","randomFixedString",0,0,"","","System","","","","","",""
+"23.8.8.20","tgamma",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsInt128",0,0,"","","System","","","","","",""
+"23.8.8.20","h3ToChildren",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayToSingle",0,0,"","","System","","","","","",""
+"23.8.8.20","snowflakeToDateTime64",0,0,"","","System","","","","","",""
+"23.8.8.20","extractKeyValuePairsWithEscaping",0,0,"","","System","Same as `extractKeyValuePairs` but with escaping support.
+
+            Escape sequences supported: `\x`, `\N`, `\a`, `\b`, `\e`, `\f`, `\n`, `\r`, `\t`, `\v` and `\0`.
+            Non standard escape sequences are returned as it is (including the backslash) unless they are one of the following:
+            `\\`, `'`, `""`, `backtick`, `/`, `=` or ASCII control characters (c <= 31).
+
+            This function will satisfy the use case where pre-escaping and post-escaping are not suitable. For instance, consider the following
+            input string: `a: ""aaaa\""bbb""`. The expected output is: `a: aaaa\""bbbb`.
+            - Pre-escaping: Pre-escaping it will output: `a: ""aaaa""bbb""` and `extractKeyValuePairs` will then output: `a: aaaa`
+            - Post-escaping: `extractKeyValuePairs` will output `a: aaaa\` and post-escaping will keep it as it is.
+
+            Leading escape sequences will be skipped in keys and will be considered invalid for values.
+
+            **Escape sequences with escape sequence support turned on**
+            ``` sql
+            arthur :) select extractKeyValuePairsWithEscaping('age:a\\x0A\\n\\0') as kv
+
+            SELECT extractKeyValuePairsWithEscaping('age:a\\x0A\\n\\0') AS kv
+
+            Query id: 44c114f0-5658-4c75-ab87-4574de3a1645
+
+            ┌─kv───────────────┐
+            │ {'age':'a\n\n\0'} │
+            └──────────────────┘
+            ```","","","","",""
+"23.8.8.20","toWeek",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfHour",0,0,"","","System","","","","","",""
+"23.8.8.20","isDecimalOverflow",0,0,"","","System","","","","","",""
+"23.8.8.20","encodeURLFormComponent",0,0,"","","System","","","","","",""
+"23.8.8.20","getSizeOfEnumType",0,0,"","","System","","","","","",""
+"23.8.8.20","detectLanguageMixed",0,0,"","","System","","","","","",""
+"23.8.8.20","tumble",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfInterval",0,0,"","","System","","","","","",""
+"23.8.8.20","toTypeName",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsUnionCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","DATE",0,1,"","","System","","","","","",""
+"23.8.8.20","h3CellAreaRads2",0,0,"","","System","","","","","",""
+"23.8.8.20","toRelativeMonthNum",0,0,"","","System","","","","","",""
+"23.8.8.20","greater",0,0,"","","System","","","","","",""
+"23.8.8.20","hasTokenCaseInsensitiveOrNull",0,1,"","","System","Performs case insensitive lookup of needle in haystack using tokenbf_v1 index. Returns null if needle is ill-formed.","","","","",""
+"23.8.8.20","multiFuzzyMatchAnyIndex",0,0,"","","System","","","","","",""
+"23.8.8.20","isNotDistinctFrom",0,0,"","","System","
+Performs a null-safe comparison between two values. This function will consider
+two `NULL` values as identical and will return `true`, which is distinct from the usual
+equals behavior where comparing two `NULL` values would return `NULL`.
+
+Currently, this function can only be used in the `JOIN ON` section of a query.
+[example:join_on_is_not_distinct_from]
+","","","","join_on_is_not_distinct_from:
+
+``` sql
+SELECT * FROM (SELECT NULL AS a) AS t1 JOIN (SELECT NULL AS b) AS t2 ON isNotDistinctFrom(t1.a, t2.b)
+```
+
+``` text
+NULL	NULL
+```
+","Comparison, Comparison, Join Operators"
+"23.8.8.20","isZeroOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","lower",0,1,"","","System","","","","","",""
+"23.8.8.20","countEqual",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONArrayLength",0,0,"","","System","Returns the number of elements in the outermost JSON array. The function returns NULL if input JSON string is invalid.","","","","",""
+"23.8.8.20","dictGet",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","toStartOfSecond",0,0,"","","System","","","","","",""
+"23.8.8.20","asin",0,1,"","","System","
+Calculates the arcsine of the argument.
+
+Takes arbitrary numeric type, which includes floating point and integer numbers, as well as big integers and decimals and returns Float64.
+
+For arguments in range [-1, 1] it returns the value in range of [-pi() / 2, pi() / 2].
+
+It represents an inverse function to function 'sin' on this range:
+[example:inverse]
+
+It always returns Float64, even if the argument has Float32 type:
+[example:float32]
+
+For arguments outside of this range, it returns nan:
+[example:nan]
+
+Every self-respectful data scientist knows how to apply arcsine to improve ads click-through rate with ClickHouse.
+For more details, see [https://en.wikipedia.org/wiki/Inverse_trigonometric_functions].
+","","","","inverse:
+
+``` sql
+SELECT asin(1.0) = pi() / 2, sin(asin(1)), asin(sin(1))
+```
+
+``` text
+
+```
+float32:
+
+``` sql
+SELECT toTypeName(asin(1.0::Float32))
+```
+
+``` text
+
+```
+nan:
+
+``` sql
+SELECT asin(1.1), asin(-2), asin(inf), asin(nan)
+```
+
+``` text
+
+```
+","Mathematical, Mathematical, Trigonometric"
+"23.8.8.20","left",0,1,"","","System","","","","","",""
+"23.8.8.20","runningDifferenceStartingWithFirstValue",0,0,"","","System","","","","","",""
+"23.8.8.20","h3CellAreaM2",0,0,"","","System","","","","","",""
+"23.8.8.20","h3PointDistM",0,0,"","","System","","","","","",""
+"23.8.8.20","tumbleEnd",0,0,"","","System","","","","","",""
+"23.8.8.20","isInfinite",0,0,"","","System","","","","","",""
+"23.8.8.20","lemmatize",0,0,"","","System","","","","","",""
+"23.8.8.20","reverseUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","murmurHash3_64",0,0,"","","System","","","","","",""
+"23.8.8.20","rightPad",0,0,"","","System","","","","","",""
+"23.8.8.20","bitNot",0,0,"","","System","","","","","",""
+"23.8.8.20","lengthUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfFiveMinutes",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsUInt128",0,0,"","","System","","","","","",""
+"23.8.8.20","lgamma",0,0,"","","System","","","","","",""
+"23.8.8.20","filesystemCapacity",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsDate",0,0,"","","System","","","","","",""
+"23.8.8.20","filesystemAvailable",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime",0,0,"","","System","","","","","",""
+"23.8.8.20","like",0,0,"","","System","","","","","",""
+"23.8.8.20","SHA224",0,0,"","","System","","","","","",""
+"23.8.8.20","h3kRing",0,0,"","","System","","","","","",""
+"23.8.8.20","log2",0,1,"","","System","","","","","",""
+"23.8.8.20","exp10",0,0,"","","System","","","","","",""
+"23.8.8.20","toIPv6OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","toIPv4OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","L2SquaredDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayInt64",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal256OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","mapSubtract",0,0,"","","System","","","","","",""
+"23.8.8.20","partitionId",0,0,"","","System","","","","","",""
+"23.8.8.20","roundToExp2",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal32OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","concatWithSeparatorAssumeInjective",0,0,"","","System","
+Same as concatWithSeparator, the difference is that you need to ensure that concatWithSeparator(sep, expr1, expr2, expr3...) → result is injective, it will be used for optimization of GROUP BY.
+
+The function is named “injective” if it always returns different result for different values of arguments. In other words: different arguments never yield identical result.
+        ","","","","concatWithSeparatorAssumeInjective:
+
+``` sql
+SELECT concatWithSeparatorAssumeInjective('a', '1', '2', '3')
+```
+
+``` text
+
+```
+","String, String"
+"23.8.8.20","arrayDotProduct",0,0,"","","System","","","","","",""
+"23.8.8.20","leftPad",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateTime64OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayRotateLeft",0,0,"","","System","
+Returns an array of the same size as the original array with elements rotated
+to the left by the specified number of positions.
+[example:simple_int]
+[example:overflow_int]
+[example:simple_string]
+[example:simple_array]
+[example:simple_nested_array]
+
+Negative rotate values are treated as rotating to the right by the absolute
+value of the rotation.
+[example:negative_rotation_int]
+","","","","simple_int:
+
+``` sql
+SELECT arrayRotateLeft([1, 2, 3, 4, 5], 3)
+```
+
+``` text
+[4, 5, 1, 2, 3]
+```
+simple_string:
+
+``` sql
+SELECT arrayRotateLeft(['a', 'b', 'c', 'd', 'e'], 3)
+```
+
+``` text
+['d', 'e', 'a', 'b', 'c']
+```
+simple_array:
+
+``` sql
+SELECT arrayRotateLeft([[1, 2], [3, 4], [5, 6]], 2)
+```
+
+``` text
+[[5, 6], [1, 2], [3, 4]]
+```
+simple_nested_array:
+
+``` sql
+SELECT arrayRotateLeft([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], 1)
+```
+
+``` text
+[[[5, 6], [7, 8]], [[1, 2], [3, 4]]]
+```
+negative_rotation_int:
+
+``` sql
+SELECT arrayRotateLeft([1, 2, 3, 4, 5], -3)
+```
+
+``` text
+[3, 4, 5, 1, 2]
+```
+overflow_int:
+
+``` sql
+SELECT arrayRotateLeft([1, 2, 3, 4, 5], 8)
+```
+
+``` text
+[4, 5, 1, 2, 3]
+```
+","Array, Array"
+"23.8.8.20","cutToFirstSignificantSubdomainWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainWithWWW` but follows stricter rules to be compatible with RFC 3986 and less performant.","","","","","URL, URL"
+"23.8.8.20","toDateTimeOrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","translate",0,0,"","","System","","","","","",""
+"23.8.8.20","trimRight",0,0,"","","System","","","","","",""
+"23.8.8.20","runningConcurrency",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateOrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","addTupleOfIntervals",0,0,"","","System","
+Consecutively adds a tuple of intervals to a Date or a DateTime.
+[example:tuple]
+","","","","tuple:
+
+``` sql
+WITH toDate('2018-01-01') AS date SELECT addTupleOfIntervals(date, (INTERVAL 1 DAY, INTERVAL 1 YEAR))
+```
+
+``` text
+
+```
+","Date, Date, DateTime, Interval, Tuple"
+"23.8.8.20","toInt128OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayJaccardIndex",0,0,"","","System","","","","","",""
+"23.8.8.20","nullIn",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal128OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","extractURLParameters",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt16OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","normalizeUTF8NFD",0,0,"","","System","","","","","",""
+"23.8.8.20","leftPadUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt8OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateTime64OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","regionHierarchy",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsWithinCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","materialize",0,0,"","","System","","","","","",""
+"23.8.8.20","upperUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchAnyCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","minSampleSizeContinous",0,0,"","","System","","","","","",""
+"23.8.8.20","queryString",0,0,"","","System","","","","","",""
+"23.8.8.20","getSubcolumn",0,0,"","","System","
+Receives the expression or identifier and constant string with the name of subcolumn.
+
+Returns requested subcolumn extracted from the expression.
+","","","","getSubcolumn:
+
+``` sql
+SELECT getSubcolumn(array_col, 'size0'), getSubcolumn(tuple_col, 'elem_name')
+```
+
+``` text
+
+```
+","OtherFunctions, OtherFunctions"
+"23.8.8.20","h3HexAreaM2",0,0,"","","System","","","","","",""
+"23.8.8.20","toYYYYMMDDhhmmss",0,0,"","","System","","","","","",""
+"23.8.8.20","h3NumHexagons",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsUUID",0,0,"","","System","","","","","",""
+"23.8.8.20","simpleJSONExtractFloat",0,0,"","","System","","","","","",""
+"23.8.8.20","toYYYYMM",0,0,"","","System","","","","","",""
+"23.8.8.20","domainWithoutWWWRFC",0,0,"","","System","Similar to `domainWithoutWWW` but follows stricter rules to be compatible with RFC 3986 and less performant.","","","","","URL, URL"
+"23.8.8.20","arrayEnumerateDenseRanked",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime64BestEffortUSOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","moduloLegacy",0,0,"","","System","","","","","",""
+"23.8.8.20","subBitmap",0,0,"","","System","","","","","",""
+"23.8.8.20","base64Decode",0,0,"","","System","","","","","",""
+"23.8.8.20","defaultValueOfArgumentType",0,0,"","","System","","","","","",""
+"23.8.8.20","mortonDecode",0,0,"","","System","
+Decodes a Morton encoding (ZCurve) into the corresponding unsigned integer tuple
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts a resulting tuple size as a first argument and the code as a second argument.
+[example:simple]
+Will decode into: `(1,2,3,4)`
+The resulting tuple size cannot be more than 8
+
+Expanded: accepts a range mask (tuple) as a first argument and the code as a second argument.
+Each number in mask configures the amount of range shrink
+1 - no shrink
+2 - 2x shrink
+3 - 3x shrink
+....
+Up to 8x shrink.
+[example:range_shrank]
+Note: see mortonEncode() docs on why range change might be beneficial.
+Still limited to 8 numbers at most.
+
+Morton code for one argument is always the argument itself (as a tuple).
+[example:identity]
+Produces: `(1)`
+
+You can shrink one argument too:
+[example:identity_shrank]
+Produces: `(128)`
+
+The function accepts a column of codes as a second argument:
+[example:from_table]
+
+The range tuple must be a constant:
+[example:from_table_range]
+","","","","simple:
+
+``` sql
+SELECT mortonDecode(4, 2149)
+```
+
+``` text
+
+```
+range_shrank:
+
+``` sql
+SELECT mortonDecode((1,2), 1572864)
+```
+
+``` text
+
+```
+identity:
+
+``` sql
+SELECT mortonDecode(1, 1)
+```
+
+``` text
+
+```
+identity_shrank:
+
+``` sql
+SELECT mortonDecode(tuple(2), 32768)
+```
+
+``` text
+
+```
+from_table:
+
+``` sql
+SELECT mortonDecode(2, code) FROM table
+```
+
+``` text
+
+```
+from_table_range:
+
+``` sql
+SELECT mortonDecode((1,2), code) FROM table
+```
+
+``` text
+
+```
+","Morton coding, Morton coding, ZCurve"
+"23.8.8.20","mortonEncode",0,0,"","","System","
+Calculates Morton encoding (ZCurve) for a list of unsigned integers
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts up to 8 unsigned integers as arguments and produces a UInt64 code.
+[example:simple]
+
+Expanded: accepts a range mask (tuple) as a first argument and up to 8 unsigned integers as other arguments.
+Each number in mask configures the amount of range expansion
+1 - no expansion
+2 - 2x expansion
+3 - 3x expansion
+....
+Up to 8x expansion.
+[example:range_expanded]
+Note: tuple size must be equal to the number of the other arguments
+
+Range expansion can be beneficial when you need a similar distribution for arguments with wildly different ranges (or cardinality)
+For example: 'IP Address' (0...FFFFFFFF) and 'Country code' (0...FF)
+
+Morton encoding for one argument is always the argument itself.
+[example:identity]
+Produces: `1`
+
+You can expand one argument too:
+[example:identity_expanded]
+Produces: `32768`
+
+The function also accepts columns as arguments:
+[example:from_table]
+
+But the range tuple must still be a constant:
+[example:from_table_range]
+
+Please note that you can fit only so much bits of information into Morton code as UInt64 has.
+Two arguments will have a range of maximum 2^32 (64/2) each
+Three arguments: range of max 2^21 (64/3) each
+And so on, all overflow will be clamped to zero
+","","","","simple:
+
+``` sql
+SELECT mortonEncode(1, 2, 3)
+```
+
+``` text
+
+```
+range_expanded:
+
+``` sql
+SELECT mortonEncode((1,2), 1024, 16)
+```
+
+``` text
+
+```
+identity:
+
+``` sql
+SELECT mortonEncode(1)
+```
+
+``` text
+
+```
+identity_expanded:
+
+``` sql
+SELECT mortonEncode(tuple(2), 128)
+```
+
+``` text
+
+```
+from_table:
+
+``` sql
+SELECT mortonEncode(n1, n2) FROM table
+```
+
+``` text
+
+```
+from_table_range:
+
+``` sql
+SELECT mortonEncode((1,2), n1, n2) FROM table
+```
+
+``` text
+
+```
+","Morton coding, Morton coding, ZCurve"
+"23.8.8.20","sigmoid",0,0,"","","System","","","","","",""
+"23.8.8.20","normalizeUTF8NFC",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchAllPositions",0,0,"","","System","","","","","",""
+"23.8.8.20","tryDecrypt",0,0,"","","System","Similar to `decrypt`, but returns NULL if decryption fails because of using the wrong key.","","","","",""
+"23.8.8.20","log10",0,1,"","","System","","","","","",""
+"23.8.8.20","multiSearchFirstIndexCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","indexOf",0,0,"","","System","","","","","",""
+"23.8.8.20","uptime",0,0,"","","System","","","","","",""
+"23.8.8.20","toModifiedJulianDayOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","multiplyDecimal",0,0,"","","System","
+Performs multiplication on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These functions work significantly slower than usual `multiply`.
+In case you don't really need controlled precision and/or need fast computation, consider using [multiply](#multiply)
+:::
+
+**Syntax**
+
+```sql
+multiplyDecimal(a, b[, result_scale])
+```
+
+**Arguments**
+
+-   `a` — First value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `b` — Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `result_scale` — Scale of result: [Int/UInt](../../sql-reference/data-types/int-uint.md).
+
+**Returned value**
+
+-   The result of multiplication with given scale.
+
+Type: [Decimal256](../../sql-reference/data-types/decimal.md).
+
+**Example**
+
+```text
+┌─multiplyDecimal(toDecimal256(-12, 0), toDecimal32(-2.1, 1), 1)─┐
+│                                                           25.2 │
+└────────────────────────────────────────────────────────────────┘
+```
+
+**Difference from regular multiplication:**
+```sql
+SELECT toDecimal64(-12.647, 3) * toDecimal32(2.1239, 4);
+SELECT toDecimal64(-12.647, 3) as a, toDecimal32(2.1239, 4) as b, multiplyDecimal(a, b);
+```
+
+```text
+┌─multiply(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                               -26.8609633 │
+└───────────────────────────────────────────────────────────┘
+┌─multiplyDecimal(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                                         -26.8609 │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+```sql
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    multiplyDecimal(a, b);
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    a * b;
+```
+
+```text
+┌─────────────a─┬─────────────b─┬─multiplyDecimal(toDecimal64(-12.647987876, 9), toDecimal64(123.967645643, 9))─┐
+│ -12.647987876 │ 123.967645643 │                                                               -1567.941279108 │
+└───────────────┴───────────────┴───────────────────────────────────────────────────────────────────────────────┘
+Received exception from server (version 22.11.1):
+Code: 407. DB::Exception: Received from localhost:9000. DB::Exception: Decimal math overflow: While processing toDecimal64(-12.647987876, 9) AS a, toDecimal64(123.967645643, 9) AS b, a * b. (DECIMAL_OVERFLOW)
+```
+","","","","",""
+"23.8.8.20","alphaTokens",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayFirstIndex",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayPartialShuffle",0,1,"","","System","
+Returns an array of the same size as the original array where elements in range [1..limit] are a random
+subset of the original array. Remaining (limit..n] shall contain the elements not in [1..limit] range in undefined order.
+Value of limit shall be in range [1..n]. Values outside of that range are equivalent to performing full arrayShuffle:
+[example:no_limit1]
+[example:no_limit2]
+
+Note: this function will not materialize constants:
+[example:materialize]
+
+If no seed is provided a random one will be used:
+[example:random_seed]
+
+It is possible to override the seed to produce stable results:
+[example:explicit_seed]
+","","","","no_limit1:
+
+``` sql
+SELECT arrayPartialShuffle([1, 2, 3, 4], 0)
+```
+
+``` text
+
+```
+no_limit2:
+
+``` sql
+SELECT arrayPartialShuffle([1, 2, 3, 4])
+```
+
+``` text
+
+```
+random_seed:
+
+``` sql
+SELECT arrayPartialShuffle([1, 2, 3, 4], 2)
+```
+
+``` text
+
+```
+explicit_seed:
+
+``` sql
+SELECT arrayPartialShuffle([1, 2, 3, 4], 2, 41)
+```
+
+``` text
+
+```
+materialize:
+
+``` sql
+SELECT arrayPartialShuffle(materialize([1, 2, 3, 4]), 2, 42), arrayPartialShuffle([1, 2, 3], 2, 42) FROM numbers(10)
+```
+
+``` text
+
+```
+","Array, Array"
+"23.8.8.20","parseDateTime32BestEffortOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","blockNumber",0,0,"","","System","","","","","",""
+"23.8.8.20","cutURLParameter",0,0,"","","System","","","","","",""
+"23.8.8.20","rightUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","negate",0,0,"","","System","","","","","",""
+"23.8.8.20","sipHash128Keyed",0,0,"","","System","","","","","",""
+"23.8.8.20","addMicroseconds",0,0,"","","System","","","","","",""
+"23.8.8.20","formatDateTime",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt8OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","joinGet",0,0,"","","System","","","","","",""
+"23.8.8.20","geoToH3",0,0,"","","System","","","","","",""
+"23.8.8.20","toUnixTimestamp64Milli",0,0,"","","System","","","","","",""
+"23.8.8.20","firstSignificantSubdomainCustom",0,0,"","","System","","","","","",""
+"23.8.8.20","simpleJSONExtractBool",0,0,"","","System","","","","","",""
+"23.8.8.20","normalizeUTF8NFKC",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeBestEffortUSOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","detectProgrammingLanguage",0,0,"","","System","","","","","",""
+"23.8.8.20","neighbor",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt256OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleModulo",0,0,"","","System","","","","","",""
+"23.8.8.20","toStringCutToZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt8OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","not",0,1,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsInt8",0,0,"","","System","","","","","",""
+"23.8.8.20","normalizedQueryHashKeepNames",0,0,"","","System","","","","","",""
+"23.8.8.20","globalIn",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractArrayRaw",0,0,"","","System","","","","","",""
+"23.8.8.20","version",0,1,"","","System","","","","","",""
+"23.8.8.20","joinGetOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","notILike",0,0,"","","System","","","","","",""
+"23.8.8.20","geohashDecode",0,0,"","","System","","","","","",""
+"23.8.8.20","toModifiedJulianDay",0,0,"","","System","","","","","",""
+"23.8.8.20","notLike",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetUInt32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","today",0,0,"","","System","","","","","",""
+"23.8.8.20","fragment",0,0,"","","System","","","","","",""
+"23.8.8.20","match",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayString",0,0,"","","System","","","","","",""
+"23.8.8.20","mapApply",0,0,"","","System","The same as arrayMap.","","","","mapApply:
+
+``` sql
+SELECT mapApply((k, v) -> (k, v * 2), map('k1', 1, 'k2', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","multiSearchAnyUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractNanoseconds",0,0,"","","System","","","","","",""
+"23.8.8.20","queryStringAndFragment",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt32OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayFloat32",0,0,"","","System","","","","","",""
+"23.8.8.20","MACStringToOUI",0,0,"","","System","","","","","",""
+"23.8.8.20","file",0,0,"","","System","","","","","",""
+"23.8.8.20","roundAge",0,0,"","","System","","","","","",""
+"23.8.8.20","simpleJSONExtractString",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt128",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayUInt64",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonPerimeterCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","exp2",0,0,"","","System","","","","","",""
+"23.8.8.20","h3IsValid",0,0,"","","System","","","","","",""
+"23.8.8.20","concatAssumeInjective",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayUInt32",0,0,"","","System","","","","","",""
+"23.8.8.20","dotProduct",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayUInt16",0,0,"","","System","","","","","",""
+"23.8.8.20","toDateTimeOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","nullIf",0,1,"","","System","","","","","",""
+"23.8.8.20","toDateTime64OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractSeconds",0,0,"","","System","","","","","",""
+"23.8.8.20","tid",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","countSubstrings",0,1,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsFloat64",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleMultiplyByNumber",0,0,"","","System","","","","","",""
+"23.8.8.20","mapFromArrays",0,0,"","","System","","","","","",""
+"23.8.8.20","cutToFirstSignificantSubdomainCustomWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustomWithWWW` but follows stricter rules according to RFC 3986.","","","","","URL, URL"
+"23.8.8.20","toInt256OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","plus",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchAllPositionsCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","randConstant",0,0,"","","System","","","","","",""
+"23.8.8.20","splitByWhitespace",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayFlatten",0,0,"","","System","","","","","",""
+"23.8.8.20","dateName",0,1,"","","System","","","","","",""
+"23.8.8.20","tupleIntDiv",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt256OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","pointInPolygon",0,0,"","","System","","","","","",""
+"23.8.8.20","ngrams",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal64OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsIntersectionCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonPerimeterSpherical",0,0,"","","System","","","","","",""
+"23.8.8.20","e",0,0,"","","System","","","","","",""
+"23.8.8.20","toRelativeHourNum",0,0,"","","System","","","","","",""
+"23.8.8.20","hasColumnInTable",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayProduct",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsIntersectionSpherical",0,0,"","","System","","","","","",""
+"23.8.8.20","kafkaMurmurHash",0,0,"","","System","","","","","",""
+"23.8.8.20","buildId",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetUInt8OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt8 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","arrayIntersect",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeInJodaSyntaxOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","FQDN",0,1,"","","System","","","","","",""
+"23.8.8.20","mapUpdate",0,0,"","","System","","","","","",""
+"23.8.8.20","currentProfiles",0,0,"","","System","","","","","",""
+"23.8.8.20","isNull",0,1,"","","System","","","","","",""
+"23.8.8.20","isNaN",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchAllPositionsCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractDays",0,0,"","","System","","","","","",""
+"23.8.8.20","visibleWidth",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayDistinct",0,0,"","","System","","","","","",""
+"23.8.8.20","toFloat32OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetUInt8",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt8 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","emptyArrayUInt8",0,0,"","","System","","","","","",""
+"23.8.8.20","positionCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","acosh",0,0,"","","System","","","","","",""
+"23.8.8.20","toRelativeMinuteNum",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","replaceOne",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayInt16",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv6NumToString",0,0,"","","System","","","","","",""
+"23.8.8.20","throwIf",0,0,"","","System","","","","","",""
+"23.8.8.20","randUniform",0,0,"","","System","
+Returns a random number from the uniform distribution in the specified range.
+Accepts two parameters - minimum bound and maximum bound.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randUniform(0, 1) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","toDateTime64",0,0,"","","System","","","","","",""
+"23.8.8.20","initializeAggregation",0,0,"","","System","","","","","",""
+"23.8.8.20","yesterday",0,0,"","","System","","","","","",""
+"23.8.8.20","toBool",0,0,"","","System","","","","","",""
+"23.8.8.20","randPoisson",0,0,"","","System","
+Returns a random number from the poisson distribution.
+Accepts one parameter - the mean number of occurrences.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randPoisson(3) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","nowInBlock",0,0,"","","System","","","","","",""
+"23.8.8.20","randNegativeBinomial",0,0,"","","System","
+Returns a random number from the negative binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randNegativeBinomial(10, 0.1) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","toUnixTimestamp64Micro",0,0,"","","System","","","","","",""
+"23.8.8.20","randBinomial",0,0,"","","System","
+Returns a random number from the binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randBinomial(10, 0.1) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","addWeeks",0,0,"","","System","","","","","",""
+"23.8.8.20","IPv6StringToNumOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayResize",0,0,"","","System","","","","","",""
+"23.8.8.20","randBernoulli",0,0,"","","System","
+Returns a random number from the Bernoulli distribution.
+Accepts one parameter - probability of success.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randBernoulli(0.1) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","toInt32OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","randStudentT",0,0,"","","System","
+Returns a random number from the t-distribution.
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randStudentT(5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","aes_encrypt_mysql",0,0,"","","System","","","","","",""
+"23.8.8.20","hasTokenOrNull",0,0,"","","System","Performs lookup of needle in haystack using tokenbf_v1 index. Returns null if needle is ill-formed.","","","","",""
+"23.8.8.20","tuple",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramMinHashCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt64OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","toISOYear",0,0,"","","System","","","","","",""
+"23.8.8.20","randFisherF",0,0,"","","System","
+Returns a random number from the f-distribution.
+The F-distribution is the distribution of X = (S1 / d1) / (S2 / d2) where d1 and d2 are degrees of freedom.
+Accepts two parameters - degrees of freedom.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randFisherF(5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","reinterpretAsFixedString",0,0,"","","System","","","","","",""
+"23.8.8.20","toLastDayOfMonth",0,0,"","","System","","","","","",""
+"23.8.8.20","randomPrintableASCII",0,0,"","","System","","","","","",""
+"23.8.8.20","snowflakeToDateTime",0,0,"","","System","","","","","",""
+"23.8.8.20","notEquals",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsDateTime",0,0,"","","System","","","","","",""
+"23.8.8.20","mapContainsKeyLike",0,0,"","","System","Checks whether map contains key LIKE specified pattern.","","","","mapContainsKeyLike:
+
+``` sql
+SELECT mapContainsKeyLike(map('k1-1', 1, 'k2-1', 2), 'k1%')
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","s2RectIntersection",0,0,"","","System","","","","","",""
+"23.8.8.20","CAST",0,1,"","","System","","","","","",""
+"23.8.8.20","caseWithExpr",0,0,"","","System","","","","","",""
+"23.8.8.20","s2CellsIntersect",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchAnyCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","s2GetNeighbors",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayAll",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalDay",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsFloat32",0,0,"","","System","","","","","",""
+"23.8.8.20","topLevelDomain",0,0,"","","System","
+Extracts the the top-level domain from a URL.
+
+Returns an empty string if the argument cannot be parsed as a URL or does not contain a top-level domain.
+        ","","","","topLevelDomain:
+
+``` sql
+SELECT topLevelDomain('svn+ssh://www.some.svn-hosting.com:80/repo/trunk')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.8.20","greatest",0,1,"","","System","","","","","",""
+"23.8.8.20","toStartOfMillisecond",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsInt64",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsInt16",0,0,"","","System","","","","","",""
+"23.8.8.20","and",0,0,"","","System","","","","","",""
+"23.8.8.20","detectLanguageUnknown",0,0,"","","System","","","","","",""
+"23.8.8.20","currentSchemas",0,1,"","","System","
+Returns a single-element array with the name of the current database
+
+Requires a boolean parameter, but it is ignored actually. It is required just for compatibility with the implementation of this function in other DB engines.
+
+[example:common]
+","","","","common:
+
+``` sql
+SELECT current_schemas(true);
+```
+
+``` text
+['default']
+```
+",""
+"23.8.8.20","reinterpretAsUInt256",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsUInt64",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractYears",0,0,"","","System","","","","","",""
+"23.8.8.20","readWKTMultiPolygon",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsUInt16",0,0,"","","System","","","","","",""
+"23.8.8.20","fromUnixTimestamp",0,0,"","","System","","","","","",""
+"23.8.8.20","hasThreadFuzzer",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayAUC",0,0,"","","System","","","","","",""
+"23.8.8.20","multiMatchAllIndices",0,0,"","","System","","","","","",""
+"23.8.8.20","replaceRegexpAll",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeInJodaSyntax",0,0,"","","System","","","","","",""
+"23.8.8.20","timeSlot",0,0,"","","System","","","","","",""
+"23.8.8.20","gcd",0,0,"","","System","","","","","",""
+"23.8.8.20","toDayOfMonth",0,0,"","","System","","","","","",""
+"23.8.8.20","JSON_EXISTS",0,0,"","","System","","","","","",""
+"23.8.8.20","isIPAddressInRange",0,0,"","","System","","","","","",""
+"23.8.8.20","toSecond",0,0,"","","System","","","","","",""
+"23.8.8.20","hiveHash",0,0,"","","System","","","","","",""
+"23.8.8.20","randomStringUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayLastOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfMonth",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfDay",0,0,"","","System","","","","","",""
+"23.8.8.20","caseWithoutExpr",0,0,"","","System","","","","","",""
+"23.8.8.20","floor",0,1,"","","System","","","","","",""
+"23.8.8.20","bitTestAny",0,0,"","","System","","","","","",""
+"23.8.8.20","least",0,1,"","","System","","","","","",""
+"23.8.8.20","cosineDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","right",0,1,"","","System","","","","","",""
+"23.8.8.20","map",0,0,"","","System","","","","","",""
+"23.8.8.20","wordShingleMinHashCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","s2CapUnion",0,0,"","","System","","","","","",""
+"23.8.8.20","serverUUID",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt256OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonConvexHullCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","murmurHash3_32",0,0,"","","System","","","","","",""
+"23.8.8.20","countSubstringsCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","h3ExactEdgeLengthM",0,0,"","","System","","","","","",""
+"23.8.8.20","firstLine",0,0,"","","System","Returns first line of a multi-line string.","firstLine(string)","- string:The string to process.
+","The first line of the string or the whole string if there is no line separators.","Return first line:
+
+``` sql
+firstLine('Hello\nWorld')
+```
+
+``` text
+'Hello'
+```
+Return whole string:
+
+``` sql
+firstLine('Hello World')
+```
+
+``` text
+'Hello World'
+```
+",""
+"23.8.8.20","serverTimezone",0,0,"","","System","
+Returns the timezone name in which server operates.
+
+[example:serverTimezone]
+    ","","","","serverTimezone:
+
+``` sql
+SELECT serverTimezone();
+```
+
+``` text
+
+```
+","Constant, Constant, Miscellaneous"
+"23.8.8.20","substringUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","h3UnidirectionalEdgeIsValid",0,0,"","","System","","","","","",""
+"23.8.8.20","randomString",0,0,"","","System","","","","","",""
+"23.8.8.20","randExponential",0,0,"","","System","
+Returns a random number from the exponential distribution.
+Accepts one parameter - lambda value.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randExponential(0, 5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","simpleJSONExtractInt",0,0,"","","System","","","","","",""
+"23.8.8.20","toLastDayOfWeek",0,0,"","","System","","","","","",""
+"23.8.8.20","toDate",0,0,"","","System","","","","","",""
+"23.8.8.20","s2RectContains",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetFloat64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Float64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","reinterpretAsInt32",0,0,"","","System","","","","","",""
+"23.8.8.20","max2",0,1,"","","System","","","","","",""
+"23.8.8.20","multiSearchFirstPositionCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","positionCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","extractAllGroupsVertical",0,0,"","","System","","","","","",""
+"23.8.8.20","MACNumToString",0,0,"","","System","","","","","",""
+"23.8.8.20","revision",0,1,"","","System","","","","","",""
+"23.8.8.20","extractURLParameter",0,0,"","","System","","","","","",""
+"23.8.8.20","zookeeperSessionUptime",0,0,"","","System","","","","","",""
+"23.8.8.20","proportionsZTest",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayZip",0,0,"","","System","","","","","",""
+"23.8.8.20","displayName",0,0,"","","System","
+Returns the value of `display_name` from config or server FQDN if not set.
+
+[example:displayName]
+","","","","displayName:
+
+``` sql
+SELECT displayName();
+```
+
+``` text
+
+```
+","Constant, Constant, Miscellaneous"
+"23.8.8.20","h3IsResClassIII",0,0,"","","System","","","","","",""
+"23.8.8.20","cutQueryStringAndFragment",0,0,"","","System","","","","","",""
+"23.8.8.20","decodeURLComponent",0,0,"","","System","","","","","",""
+"23.8.8.20","bitAnd",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt256OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayFirstOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","firstSignificantSubdomainRFC",0,0,"","","System","Returns the ""first significant subdomain"" according to RFC 1034.","","","","","URL, URL"
+"23.8.8.20","queryID",0,0,"","","System","","","","","",""
+"23.8.8.20","path",0,0,"","","System","","","","","",""
+"23.8.8.20","defaultValueOfTypeName",0,0,"","","System","","","","","",""
+"23.8.8.20","initcap",0,1,"","","System","","","","","",""
+"23.8.8.20","tuplePlus",0,0,"","","System","","","","","",""
+"23.8.8.20","wordShingleMinHashArgCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleConcat",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractWeeks",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayFirst",0,0,"","","System","","","","","",""
+"23.8.8.20","accurateCastOrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetInt8OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int8 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","dateTime64ToSnowflake",0,0,"","","System","","","","","",""
+"23.8.8.20","stem",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayReverseSplit",0,0,"","","System","","","","","",""
+"23.8.8.20","transactionOldestSnapshot",0,0,"","","System","","","","","",""
+"23.8.8.20","dumpColumnStructure",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchFirstIndex",0,0,"","","System","","","","","",""
+"23.8.8.20","tcpPort",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractHours",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeBestEffortUS",0,0,"","","System","","","","","",""
+"23.8.8.20","mapPopulateSeries",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime64BestEffortUS",0,0,"","","System","","","","","",""
+"23.8.8.20","synonyms",0,1,"","","System","","","","","",""
+"23.8.8.20","multiFuzzyMatchAny",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfWeek",0,0,"","","System","","","","","",""
+"23.8.8.20","isFinite",0,0,"","","System","","","","","",""
+"23.8.8.20","toDayOfWeek",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsString",0,0,"","","System","","","","","",""
+"23.8.8.20","trimLeft",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractInterval",0,0,"","","System","
+Adds an negated interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+","","","","tuple:
+
+``` sql
+SELECT subtractInterval((INTERVAL 1 DAY, INTERVAL 1 YEAR), INTERVAL 1 MONTH)
+```
+
+``` text
+
+```
+interval1:
+
+``` sql
+SELECT subtractInterval(INTERVAL 1 DAY, INTERVAL 1 MONTH)
+```
+
+``` text
+
+```
+interval2:
+
+``` sql
+SELECT subtractInterval(INTERVAL 2 DAY, INTERVAL 1 DAY)
+```
+
+``` text
+
+```
+","Interval, Interval, Tuple"
+"23.8.8.20","toValidUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","abs",0,1,"","","System","","","","","",""
+"23.8.8.20","arrayWithConstant",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfNanosecond",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalNanosecond",0,0,"","","System","","","","","",""
+"23.8.8.20","SHA256",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleIntDivOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","LpDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayMax",0,0,"","","System","","","","","",""
+"23.8.8.20","toUUIDOrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","LinfNormalize",0,0,"","","System","","","","","",""
+"23.8.8.20","extractURLParameterNames",0,0,"","","System","","","","","",""
+"23.8.8.20","h3PointDistKm",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchAllPositionsUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","toYearWeek",0,0,"","","System","","","","","",""
+"23.8.8.20","toFixedString",0,0,"","","System","","","","","",""
+"23.8.8.20","erfc",0,0,"","","System","","","","","",""
+"23.8.8.20","cutToFirstSignificantSubdomainCustomWithWWW",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain without stripping `www`.
+Accepts custom TLD list name from config.
+
+Can be useful if you need fresh TLD list or you have custom.
+        ","","","","cutToFirstSignificantSubdomainCustomWithWWW:
+
+``` sql
+SELECT cutToFirstSignificantSubdomainCustomWithWWW('www.foo', 'public_suffix_list')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.8.20","hasTokenCaseInsensitive",0,1,"","","System","Performs case insensitive lookup of needle in haystack using tokenbf_v1 index.","","","","",""
+"23.8.8.20","toStartOfYear",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal256",0,0,"","","System","","","","","",""
+"23.8.8.20","multiSearchFirstPositionCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","cutFragment",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayCompact",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalWeek",0,0,"","","System","","","","","",""
+"23.8.8.20","toRelativeSecondNum",0,0,"","","System","","","","","",""
+"23.8.8.20","replaceAll",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetInt32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","toMonday",0,0,"","","System","","","","","",""
+"23.8.8.20","bitShiftLeft",0,0,"","","System","","","","","",""
+"23.8.8.20","netloc",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetIPv4OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the IPv4 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","meiliMatch",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayEnumerate",0,0,"","","System","","","","","",""
+"23.8.8.20","exp",0,1,"","","System","","","","","",""
+"23.8.8.20","tupleNegate",0,0,"","","System","","","","","",""
+"23.8.8.20","toRelativeQuarterNum",0,0,"","","System","","","","","",""
+"23.8.8.20","widthBucket",0,0,"","","System","
+Returns the number of the bucket in which `operand` falls in a histogram having `count` equal-width buckets spanning the range `low` to `high`. Returns `0` if `operand < low`, and returns `count+1` if `operand >= high`.
+
+`operand`, `low`, `high` can be any native number type. `count` can only be unsigned native integer and its value cannot be zero.
+
+**Syntax**
+
+```sql
+widthBucket(operand, low, high, count)
+```
+
+There is also a case insensitive alias called `WIDTH_BUCKET` to provide compatibility with other databases.
+
+**Example**
+
+Query:
+[example:simple]
+
+Result:
+
+``` text
+┌─widthBucket(10.15, -8.6, 23, 18)─┐
+│                               11 │
+└──────────────────────────────────┘
+```
+","","","","simple:
+
+``` sql
+SELECT widthBucket(10.15, -8.6, 23, 18)
+```
+
+``` text
+
+```
+","Mathematical, Mathematical"
+"23.8.8.20","isNullable",0,0,"","","System","","","","","",""
+"23.8.8.20","generateRandomStructure",0,0,"","","System","
+Generates a random table structure.
+This function takes 2 optional constant arguments:
+the number of columns in the result structure (random by default) and random seed (random by default)
+The maximum number of columns is 128.
+The function returns a value of type String.
+","","","","random:
+
+``` sql
+SELECT generateRandomStructure()
+```
+
+``` text
+c1 UInt32, c2 FixedString(25)
+```
+with specified number of columns:
+
+``` sql
+SELECT generateRandomStructure(3)
+```
+
+``` text
+c1 String, c2 Array(Int32), c3 LowCardinality(String)
+```
+with specified seed:
+
+``` sql
+SELECT generateRandomStructure(1, 42)
+```
+
+``` text
+c1 UInt128
+```
+","Random, Random"
+"23.8.8.20","toRelativeYearNum",0,0,"","","System","","","","","",""
+"23.8.8.20","repeat",0,1,"","","System","","","","","",""
+"23.8.8.20","unhex",0,1,"","","System","","","","","",""
+"23.8.8.20","IPv4ToIPv6",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfMicrosecond",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt8OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","regionToPopulation",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfISOYear",0,0,"","","System","","","","","",""
+"23.8.8.20","bitOr",0,0,"","","System","","","","","",""
+"23.8.8.20","sleep",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayElement",0,0,"","","System","","","","","",""
+"23.8.8.20","murmurHash2_32",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfTenMinutes",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayEnumerateUniq",0,0,"","","System","","","","","",""
+"23.8.8.20","regexpExtract",0,0,"","","System","Extracts the first string in haystack that matches the regexp pattern and corresponds to the regex group index.","","","","",""
+"23.8.8.20","cutToFirstSignificantSubdomainCustomRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustom` but follows stricter rules according to RFC 3986.","","","","","URL, URL"
+"23.8.8.20","encodeXMLComponent",0,0,"","","System","","","","","",""
+"23.8.8.20","timezoneOffset",0,0,"","","System","","","","","",""
+"23.8.8.20","transform",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetInt16OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int16 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","cutToFirstSignificantSubdomainCustom",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain. Accepts custom TLD list name.
+
+Can be useful if you need fresh TLD list or you have custom.
+        ","","","","cutToFirstSignificantSubdomainCustom:
+
+``` sql
+SELECT cutToFirstSignificantSubdomainCustom('bar.foo.there-is-no-such-domain', 'public_suffix_list');
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.8.20","tupleElement",0,0,"","","System","","","","","",""
+"23.8.8.20","mapReverseSort",0,0,"","","System","The same as arrayReverseSort.","","","","mapReverseSort:
+
+``` sql
+SELECT mapReverseSort((k, v) -> v, map('k1', 3, 'k2', 1, 'k3', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","addYears",0,0,"","","System","","","","","",""
+"23.8.8.20","validateNestedArraySizes",0,0,"","","System","","","","","",""
+"23.8.8.20","tokens",0,0,"","","System","","","","","",""
+"23.8.8.20","LpNormalize",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsUInt32",0,0,"","","System","","","","","",""
+"23.8.8.20","greaterOrEquals",0,0,"","","System","","","","","",""
+"23.8.8.20","upper",0,1,"","","System","","","","","",""
+"23.8.8.20","bitmapTransform",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayShuffle",0,1,"","","System","
+Returns an array of the same size as the original array containing the elements in shuffled order.
+Elements are being reordered in such a way that each possible permutation of those elements has equal probability of appearance.
+
+Note: this function will not materialize constants:
+[example:materialize]
+
+If no seed is provided a random one will be used:
+[example:random_seed]
+
+It is possible to override the seed to produce stable results:
+[example:explicit_seed]
+","","","","random_seed:
+
+``` sql
+SELECT arrayShuffle([1, 2, 3, 4])
+```
+
+``` text
+
+```
+explicit_seed:
+
+``` sql
+SELECT arrayShuffle([1, 2, 3, 4], 41)
+```
+
+``` text
+
+```
+materialize:
+
+``` sql
+SELECT arrayShuffle(materialize([1, 2, 3]), 42), arrayShuffle([1, 2, 3], 42) FROM numbers(10)
+```
+
+``` text
+
+```
+","Array, Array"
+"23.8.8.20","toISOWeek",0,0,"","","System","","","","","",""
+"23.8.8.20","reinterpretAsInt256",0,0,"","","System","","","","","",""
+"23.8.8.20","hasAny",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalMicrosecond",0,0,"","","System","","","","","",""
+"23.8.8.20","L1Normalize",0,0,"","","System","","","","","",""
+"23.8.8.20","dictHas",0,0,"","","System","
+Checks whether a key is present in a dictionary.
+Accepts 2 parameters: name of the dictionary, key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration.
+Returned value: 0 if there is no key, 1 if there is a key, type of UInt8
+","","","","",""
+"23.8.8.20","enabledProfiles",0,0,"","","System","","","","","",""
+"23.8.8.20","multiply",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt256",0,0,"","","System","","","","","",""
+"23.8.8.20","mapKeys",0,0,"","","System","Returns an array with the keys of map.","","","","mapKeys:
+
+``` sql
+SELECT mapKeys(map('k1', 'v1', 'k2', 'v2'))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","sign",0,1,"","","System","","","","","",""
+"23.8.8.20","decodeURLFormComponent",0,0,"","","System","","","","","",""
+"23.8.8.20","L2Distance",0,0,"","","System","","","","","",""
+"23.8.8.20","L1Distance",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayFloat64",0,0,"","","System","","","","","",""
+"23.8.8.20","LinfNorm",0,0,"","","System","","","","","",""
+"23.8.8.20","less",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayInt8",0,0,"","","System","","","","","",""
+"23.8.8.20","mapPartialReverseSort",0,0,"","","System","The same as arrayPartialReverseSort.","","","","mapPartialReverseSort:
+
+``` sql
+SELECT mapPartialReverseSort((k, v) -> v, 2, map('k1', 3, 'k2', 1, 'k3', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.8.20","L2SquaredNorm",0,0,"","","System","","","","","",""
+"23.8.8.20","formatReadableDecimalSize",0,0,"","","System","
+Accepts the size (number of bytes). Returns a rounded size with a suffix (KB, MB, etc.) as a string.
+","","","","formatReadableDecimalSize:
+
+``` sql
+SELECT formatReadableDecimalSize(1000)
+```
+
+``` text
+
+```
+","OtherFunctions, OtherFunctions"
+"23.8.8.20","lowerUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","position",0,1,"","","System","","","","","",""
+"23.8.8.20","__bitBoolMaskOr",0,0,"","","System","","","","","",""
+"23.8.8.20","cosh",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTime64BestEffortOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","domainRFC",0,0,"","","System","Similar to `domain` but follows stricter rules to be compatible with RFC 3986 and less performant.","","","","","URL, URL"
+"23.8.8.20","coalesce",0,1,"","","System","","","","","",""
+"23.8.8.20","basename",0,0,"","","System","","","","","",""
+"23.8.8.20","ULIDStringToDateTime",0,0,"","","System","
+This function extracts the timestamp from a ULID and returns it as a DateTime64(3) typed value.
+The function expects the ULID to be provided as the first argument, which can be either a String or a FixedString(26) data type.
+An optional second argument can be passed to specify a timezone for the timestamp.
+","","","","ulid:
+
+``` sql
+SELECT ULIDStringToDateTime(generateULID())
+```
+
+``` text
+
+```
+timezone:
+
+``` sql
+SELECT ULIDStringToDateTime(generateULID(), 'Asia/Istanbul')
+```
+
+``` text
+
+```
+","ULID, ULID"
+"23.8.8.20","JSONType",0,0,"","","System","","","","","",""
+"23.8.8.20","addNanoseconds",0,0,"","","System","","","","","",""
+"23.8.8.20","isConstant",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonAreaCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayUniq",0,0,"","","System","","","","","",""
+"23.8.8.20","toIntervalYear",0,0,"","","System","","","","","",""
+"23.8.8.20","addInterval",0,0,"","","System","
+Adds an interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+","","","","tuple:
+
+``` sql
+SELECT addInterval((INTERVAL 1 DAY, INTERVAL 1 YEAR), INTERVAL 1 MONTH)
+```
+
+``` text
+
+```
+interval1:
+
+``` sql
+SELECT addInterval(INTERVAL 1 DAY, INTERVAL 1 MONTH)
+```
+
+``` text
+
+```
+interval2:
+
+``` sql
+SELECT addInterval(INTERVAL 1 DAY, INTERVAL 1 DAY)
+```
+
+``` text
+
+```
+","Interval, Interval, Tuple"
+"23.8.8.20","polygonsSymDifferenceSpherical",0,0,"","","System","","","","","",""
+"23.8.8.20","tanh",0,1,"","","System","","","","","",""
+"23.8.8.20","dateDiff",0,1,"","","System","","","","","",""
+"23.8.8.20","bitRotateRight",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayReverseSort",0,0,"","","System","","","","","",""
+"23.8.8.20","hostName",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleMultiply",0,0,"","","System","","","","","",""
+"23.8.8.20","startsWithUTF8",0,0,"","","System","
+Returns whether string `str` starts with `prefix`, the difference between `startsWithUTF8` and `startsWith` is that `startsWithUTF8` match `str` and `suffix` by UTF-8 characters.
+        ","","","","startsWithUTF8:
+
+``` sql
+select startsWithUTF8('富强民主文明和谐', '富强');
+```
+
+``` text
+
+```
+","String, String"
+"23.8.8.20","addMonths",0,0,"","","System","","","","","",""
+"23.8.8.20","leftUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","topLevelDomainRFC",0,0,"","","System","Similar to topLevelDomain, but conforms to RFC 3986.","","","","","URL, URL"
+"23.8.8.20","has",0,0,"","","System","","","","","",""
+"23.8.8.20","appendTrailingCharIfAbsent",0,0,"","","System","","","","","",""
+"23.8.8.20","simpleJSONExtractRaw",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayJoin",0,0,"","","System","","","","","",""
+"23.8.8.20","simpleJSONHas",0,0,"","","System","","","","","",""
+"23.8.8.20","h3ToString",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayShiftRight",0,0,"","","System","
+Returns an array of the same size as the original array with elements shifted
+to the right by the specified number of positions. New elements are filled with
+provided default values or default values of the corresponding type.
+[example:simple_int]
+[example:overflow_int]
+[example:simple_string]
+[example:simple_array]
+[example:simple_nested_array]
+
+Negative shift values are treated as shifting to the left by the absolute
+value of the shift.
+[example:negative_shift_int]
+
+The default value must be of the same type as the array elements.
+[example:simple_int_with_default]
+[example:simple_string_with_default]
+[example:simple_array_with_default]
+[example:casted_array_with_default]
+","","","","simple_int:
+
+``` sql
+SELECT arrayShiftRight([1, 2, 3, 4, 5], 3)
+```
+
+``` text
+[0, 0, 0, 1, 2]
+```
+negative_shift_int:
+
+``` sql
+SELECT arrayShiftRight([1, 2, 3, 4, 5], -3)
+```
+
+``` text
+[4, 5, 0, 0, 0]
+```
+overflow_int:
+
+``` sql
+SELECT arrayShiftRight([1, 2, 3, 4, 5], 8)
+```
+
+``` text
+[0, 0, 0, 0, 0]
+```
+simple_string:
+
+``` sql
+SELECT arrayShiftRight(['a', 'b', 'c', 'd', 'e'], 3)
+```
+
+``` text
+['', '', '', 'a', 'b']
+```
+simple_array:
+
+``` sql
+SELECT arrayShiftRight([[1, 2], [3, 4], [5, 6]], 2)
+```
+
+``` text
+[[], [], [1, 2]]
+```
+simple_nested_array:
+
+``` sql
+SELECT arrayShiftRight([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], 1)
+```
+
+``` text
+[[], [[1, 2], [3, 4]]]
+```
+simple_int_with_default:
+
+``` sql
+SELECT arrayShiftRight([1, 2, 3, 4, 5], 3, 7)
+```
+
+``` text
+[7, 7, 7, 1, 2]
+```
+simple_string_with_default:
+
+``` sql
+SELECT arrayShiftRight(['a', 'b', 'c', 'd', 'e'], 3, 'foo')
+```
+
+``` text
+['foo', 'foo', 'foo', 'a', 'b']
+```
+simple_array_with_default:
+
+``` sql
+SELECT arrayShiftRight([[1, 2], [3, 4], [5, 6]], 2, [7, 8])
+```
+
+``` text
+[[7, 8], [7, 8], [1, 2]]
+```
+casted_array_with_default:
+
+``` sql
+SELECT arrayShiftRight(CAST('[1, 2, 3, 4, 5, 6]', 'Array(UInt16)'), 1, 1000)
+```
+
+``` text
+[1000, 1, 2, 3, 4, 5]
+```
+","Array, Array"
+"23.8.8.20","h3ToParent",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayPartialReverseSort",0,0,"","","System","
+Returns an array of the same size as the original array where elements in range `[1..limit]`
+are sorted in descending order. Remaining elements `(limit..N]` shall contain elements in unspecified order.
+[example:simple_int]
+[example:simple_string]
+
+To retain only the sorted elements use `arrayResize`:
+[example:retain_sorted]
+
+If the `func` function is specified, sorting order is determined by the result of the `func`
+function applied to the elements of the array.
+[example:lambda_simple]
+
+If `func` accepts multiple arguments, the `arrayPartialSort` function is passed several arrays
+that the arguments of `func` will correspond to.
+[example:lambda_complex]
+
+For more details see documentation of `arraySort`.
+","","","","simple_int:
+
+``` sql
+SELECT arrayPartialReverseSort(2, [5, 9, 1, 3])
+```
+
+``` text
+
+```
+simple_string:
+
+``` sql
+SELECT arrayPartialReverseSort(2, ['expenses','lasso','embolism','gladly'])
+```
+
+``` text
+
+```
+retain_sorted:
+
+``` sql
+SELECT arrayResize(arrayPartialReverseSort(2, [5, 9, 1, 3]), 2)
+```
+
+``` text
+
+```
+lambda_simple:
+
+``` sql
+SELECT arrayPartialReverseSort((x) -> -x, 2, [5, 9, 1, 3])
+```
+
+``` text
+
+```
+lambda_complex:
+
+``` sql
+SELECT arrayPartialReverseSort((x, y) -> -y, 1, [0, 1, 2], [1, 2, 3]) as res
+```
+
+``` text
+
+```
+","Array, Array"
+"23.8.8.20","domain",0,0,"","","System","
+Extracts the hostname from a URL.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        ","","","","domain:
+
+``` sql
+SELECT domain('svn+ssh://some.svn-hosting.com:80/repo/trunk')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.8.20","fromUnixTimestamp64Micro",0,0,"","","System","","","","","",""
+"23.8.8.20","range",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayPartialSort",0,0,"","","System","
+Returns an array of the same size as the original array where elements in range `[1..limit]`
+are sorted in ascending order. Remaining elements `(limit..N]` shall contain elements in unspecified order.
+[example:simple_int]
+[example:simple_string]
+
+To retain only the sorted elements use `arrayResize`:
+[example:retain_sorted]
+
+If the `func` function is specified, sorting order is determined by the result of the `func`
+function applied to the elements of the array.
+[example:lambda_simple]
+
+If `func` accepts multiple arguments, the `arrayPartialSort` function is passed several arrays
+that the arguments of `func` will correspond to.
+[example:lambda_complex]
+
+For more details see documentation of `arraySort`.
+","","","","simple_int:
+
+``` sql
+SELECT arrayPartialSort(2, [5, 9, 1, 3])
+```
+
+``` text
+
+```
+simple_string:
+
+``` sql
+SELECT arrayPartialSort(2, ['expenses','lasso','embolism','gladly'])
+```
+
+``` text
+
+```
+retain_sorted:
+
+``` sql
+SELECT arrayResize(arrayPartialSort(2, [5, 9, 1, 3]), 2)
+```
+
+``` text
+
+```
+lambda_simple:
+
+``` sql
+SELECT arrayPartialSort((x) -> -x, 2, [5, 9, 1, 3])
+```
+
+``` text
+
+```
+lambda_complex:
+
+``` sql
+SELECT arrayPartialSort((x, y) -> -y, 1, [0, 1, 2], [1, 2, 3]) as res
+```
+
+``` text
+
+```
+","Array, Array"
+"23.8.8.20","toJSONString",0,0,"","","System","","","","","",""
+"23.8.8.20","__getScalar",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetFaces",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt32OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","accurateCast",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt64",0,0,"","","System","","","","","",""
+"23.8.8.20","wkt",0,0,"","","System","","","","","",""
+"23.8.8.20","domainWithoutWWW",0,0,"","","System","
+Extracts the hostname from a URL, removing the leading ""www."" if present.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        ","","","","domainWithoutWWW:
+
+``` sql
+SELECT domainWithoutWWW('https://www.clickhouse.com')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.8.20","arrayPushFront",0,0,"","","System","","","","","",""
+"23.8.8.20","arraySort",0,0,"","","System","","","","","",""
+"23.8.8.20","firstSignificantSubdomainCustomRFC",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleMinus",0,0,"","","System","","","","","",""
+"23.8.8.20","uniqThetaUnion",0,0,"","","System","
+Two uniqThetaSketch objects to do union calculation(set operation ∪), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+select finalizeAggregation(uniqThetaUnion(arrayReduce('uniqThetaState',[1,2]), arrayReduce('uniqThetaState',[2,3,4])));
+```
+
+``` text
+
+```
+","uniqTheta, uniqTheta"
+"23.8.8.20","bitmaskToArray",0,0,"","","System","","","","","",""
+"23.8.8.20","min2",0,1,"","","System","","","","","",""
+"23.8.8.20","length",0,1,"","","System","
+Calculates the length of the string or array.
+
+For String or FixedString argument: calculates the number of bytes in string.
+[example:string1]
+
+For Array argument: calculates the number of elements in the array.
+[example:arr1]
+
+If applied for FixedString argument, the function is a constant expression:
+[example:constexpr]
+
+Please note that the number of bytes in a string is not the same as the number of Unicode ""code points""
+and it is not the same as the number of Unicode ""grapheme clusters"" (what we usually call ""characters"")
+and it is not the same as the visible string width.
+[example:unicode]
+
+It is ok to have ASCII NUL bytes in strings, and they will be counted as well.
+[example:nul]
+","","","","string1:
+
+``` sql
+SELECT length('Hello, world!')
+```
+
+``` text
+
+```
+arr1:
+
+``` sql
+SELECT length(['Hello'], ['world'])
+```
+
+``` text
+
+```
+constexpr:
+
+``` sql
+WITH 'hello' || toString(number) AS str
+SELECT str, 
+       isConstant(length(str)) AS str_length_is_constant, 
+       isConstant(length(str::FixedString(6))) AS fixed_str_length_is_constant
+FROM numbers(3)
+```
+
+``` text
+
+```
+unicode:
+
+``` sql
+SELECT 'ёлка' AS str1, length(str1), lengthUTF8(str1), normalizeUTF8NFKD(str1) AS str2, length(str2), lengthUTF8(str2)
+```
+
+``` text
+
+```
+nul:
+
+``` sql
+SELECT 'abc\0\0\0' AS str, length(str)
+```
+
+``` text
+
+```
+","Array, Array, String"
+"23.8.8.20","toHour",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt16OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfFifteenMinutes",0,0,"","","System","","","","","",""
+"23.8.8.20","toYYYYMMDD",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleToNameValuePairs",0,0,"","","System","","","","","",""
+"23.8.8.20","addHours",0,0,"","","System","","","","","",""
+"23.8.8.20","getOSKernelVersion",0,0,"","","System","","","","","",""
+"23.8.8.20","space",0,1,"","","System","","","","","",""
+"23.8.8.20","gccMurmurHash",0,0,"","","System","","","","","",""
+"23.8.8.20","substringIndexUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsSymDifferenceCartesian",0,0,"","","System","","","","","",""
+"23.8.8.20","LinfDistance",0,0,"","","System","","","","","",""
+"23.8.8.20","readWKTPoint",0,0,"","","System","","","","","",""
+"23.8.8.20","randChiSquared",0,0,"","","System","
+Returns a random number from the chi-squared distribution (a distribution of a sum of the squares of k independent standard normal random variables).
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randChiSquared(5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.8.20","IPv4StringToNumOrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","formatReadableQuantity",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayPopBack",0,0,"","","System","","","","","",""
+"23.8.8.20","toUnixTimestamp64Nano",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayLastIndex",0,0,"","","System","","","","","",""
+"23.8.8.20","bitRotateLeft",0,0,"","","System","","","","","",""
+"23.8.8.20","toUInt16OrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","emptyArrayDateTime",0,0,"","","System","","","","","",""
+"23.8.8.20","mapAdd",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt32OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractMicroseconds",0,0,"","","System","","","","","",""
+"23.8.8.20","decodeXMLComponent",0,0,"","","System","","","","","",""
+"23.8.8.20","svg",0,0,"","","System","","","","","",""
+"23.8.8.20","getMacro",0,0,"","","System","","","","","",""
+"23.8.8.20","multiIf",0,0,"","","System","","","","","",""
+"23.8.8.20","runningAccumulate",0,0,"","","System","","","","","",""
+"23.8.8.20","SHA384",0,0,"","","System","","","","","",""
+"23.8.8.20","murmurHash3_128",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramSearchCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","h3ToCenterChild",0,0,"","","System","","","","","",""
+"23.8.8.20","notIn",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetFloat32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Float32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","tupleModuloByNumber",0,0,"","","System","","","","","",""
+"23.8.8.20","URLHierarchy",0,0,"","","System","","","","","",""
+"23.8.8.20","ngramSimHashUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractTupleOfIntervals",0,0,"","","System","
+Consecutively subtracts a tuple of intervals from a Date or a DateTime.
+[example:tuple]
+","","","","tuple:
+
+``` sql
+WITH toDate('2018-01-01') AS date SELECT subtractTupleOfIntervals(date, (INTERVAL 1 DAY, INTERVAL 1 YEAR))
+```
+
+``` text
+
+```
+","Date, Date, DateTime, Interval, Tuple"
+"23.8.8.20","polygonAreaSpherical",0,0,"","","System","","","","","",""
+"23.8.8.20","base58Encode",0,0,"","","System","","","","","",""
+"23.8.8.20","structureToProtobufSchema",0,0,"","","System","
+Function that converts ClickHouse table structure to Protobuf format schema
+","","","","random:
+
+``` sql
+SELECT structureToCapnProtoSchema('s String, x UInt32', 'MessageName') format TSVRaw
+```
+
+``` text
+syntax = ""proto3"";
+
+message MessageName
+{
+    bytes s = 1;
+    uint32 x = 2;
+}
+```
+","Other, Other"
+"23.8.8.20","multiMatchAnyIndex",0,0,"","","System","","","","","",""
+"23.8.8.20","s2ToGeo",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetDateOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Date if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","wordShingleMinHashCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","sinh",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleDivide",0,0,"","","System","","","","","",""
+"23.8.8.20","bitPositionsToArray",0,0,"","","System","","","","","",""
+"23.8.8.20","xor",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractInt",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractMonths",0,0,"","","System","","","","","",""
+"23.8.8.20","subtractMilliseconds",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayPopFront",0,0,"","","System","","","","","",""
+"23.8.8.20","dictGetFloat32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Float32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","s2RectAdd",0,0,"","","System","","","","","",""
+"23.8.8.20","uniqThetaIntersect",0,0,"","","System","
+Two uniqThetaSketch objects to do intersect calculation(set operation ∩), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+select finalizeAggregation(uniqThetaIntersect(arrayReduce('uniqThetaState',[1,2]), arrayReduce('uniqThetaState',[2,3,4])));
+```
+
+``` text
+
+```
+","uniqTheta, uniqTheta"
+"23.8.8.20","toUnixTimestamp",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetRes0Indexes",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleIntDivByNumber",0,0,"","","System","","","","","",""
+"23.8.8.20","toColumnTypeName",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayMin",0,0,"","","System","","","","","",""
+"23.8.8.20","h3PointDistRads",0,0,"","","System","","","","","",""
+"23.8.8.20","polygonsUnionSpherical",0,0,"","","System","","","","","",""
+"23.8.8.20","arraySum",0,0,"","","System","","","","","",""
+"23.8.8.20","sin",0,1,"","","System","","","","","",""
+"23.8.8.20","multiFuzzyMatchAllIndices",0,0,"","","System","","","","","",""
+"23.8.8.20","geohashEncode",0,0,"","","System","","","","","",""
+"23.8.8.20","formatReadableTimeDelta",0,0,"","","System","","","","","",""
+"23.8.8.20","normalizeUTF8NFKD",0,0,"","","System","","","","","",""
+"23.8.8.20","cos",0,1,"","","System","","","","","",""
+"23.8.8.20","dictGetIPv6OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the IPv6 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.8.20","toYear",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeInJodaSyntaxOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal128OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayCount",0,0,"","","System","","","","","",""
+"23.8.8.20","hex",0,1,"","","System","","","","","",""
+"23.8.8.20","h3ToGeo",0,0,"","","System","","","","","",""
+"23.8.8.20","toDecimal256OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","multiMatchAny",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayEnumerateDense",0,0,"","","System","","","","","",""
+"23.8.8.20","or",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayExists",0,0,"","","System","","","","","",""
+"23.8.8.20","L2Norm",0,0,"","","System","","","","","",""
+"23.8.8.20","h3GetDestinationIndexFromUnidirectionalEdge",0,0,"","","System","","","","","",""
+"23.8.8.20","parseDateTimeBestEffortUSOrZero",0,0,"","","System","","","","","",""
+"23.8.8.20","toInt32OrNull",0,0,"","","System","","","","","",""
+"23.8.8.20","array",0,0,"","","System","","","","","",""
+"23.8.8.20","toLowCardinality",0,0,"","","System","","","","","",""
+"23.8.8.20","sleepEachRow",0,0,"","","System","","","","","",""
+"23.8.8.20","LpNorm",0,0,"","","System","","","","","",""
+"23.8.8.20","port",0,0,"","","System","Returns the port or `default_port` if there is no port in the URL (or in case of validation error).","","","","","URL, URL"
+"23.8.8.20","wordShingleMinHashArgUTF8",0,0,"","","System","","","","","",""
+"23.8.8.20","now",0,1,"","","System","","","","","",""
+"23.8.8.20","cbrt",0,0,"","","System","","","","","",""
+"23.8.8.20","toStartOfMinute",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayMap",0,0,"","","System","","","","","",""
+"23.8.8.20","countSubstringsCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.8.20","soundex",0,1,"","","System","Returns Soundex code of a string.","","","","",""
+"23.8.8.20","fromUnixTimestamp64Milli",0,0,"","","System","","","","","",""
+"23.8.8.20","addSeconds",0,0,"","","System","","","","","",""
+"23.8.8.20","tupleIntDivOrZeroByNumber",0,0,"","","System","","","","","",""
+"23.8.8.20","uniqThetaNot",0,0,"","","System","
+Two uniqThetaSketch objects to do a_not_b calculation(set operation ×), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+select finalizeAggregation(uniqThetaNot(arrayReduce('uniqThetaState',[1,2]), arrayReduce('uniqThetaState',[2,3,4])));
+```
+
+``` text
+
+```
+","uniqTheta, uniqTheta"
+"23.8.8.20","indexHint",0,0,"","","System","","","","","",""
+"23.8.8.20","toMinute",0,0,"","","System","","","","","",""
+"23.8.8.20","JSONExtractUInt",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayReduce",0,0,"","","System","","","","","",""
+"23.8.8.20","addDays",0,0,"","","System","","","","","",""
+"23.8.8.20","portRFC",0,0,"","","System","Similar to `port`, but conforms to RFC 3986.","","","","","URL, URL"
+"23.8.8.20","toFloat64OrDefault",0,0,"","","System","","","","","",""
+"23.8.8.20","arrayLast",0,0,"","","System","","","","","",""
+"23.8.8.20","readWKTPolygon",0,0,"","","System","","","","","",""
+"23.8.8.20","L1Norm",0,0,"","","System","","","","","",""
+"23.8.8.20","log1p",0,0,"","","System","","","","","",""
+"23.8.8.20","connection_id",0,1,"connectionID","","System","","","","","",""
+"23.8.8.20","from_utc_timestamp",0,1,"fromUTCTimestamp","","System","","","","","",""
+"23.8.8.20","truncate",0,1,"trunc","","System","","","","","",""
+"23.8.8.20","ceiling",0,1,"ceil","","System","","","","","",""
+"23.8.8.20","rand32",0,0,"rand","","System","","","","","",""
+"23.8.8.20","INET6_ATON",0,1,"IPv6StringToNum","","System","","","","","",""
+"23.8.8.20","INET_ATON",0,1,"IPv4StringToNum","","System","","","","","",""
+"23.8.8.20","user",0,1,"currentUser","","System","","","","","",""
+"23.8.8.20","SUBSTRING_INDEX",0,1,"substringIndex","","System","","","","","",""
+"23.8.8.20","TO_BASE64",0,1,"base64Encode","","System","","","","","",""
+"23.8.8.20","rpad",0,1,"rightPad","","System","","","","","",""
+"23.8.8.20","DATABASE",0,1,"currentDatabase","","System","","","","","",""
+"23.8.8.20","pmod",0,1,"positiveModulo","","System","","","","","",""
+"23.8.8.20","MAP_FROM_ARRAYS",0,0,"mapFromArrays","","System","","","","","",""
+"23.8.8.20","positive_modulo",0,1,"positiveModulo","","System","","","","","",""
+"23.8.8.20","REGEXP_REPLACE",0,1,"replaceRegexpAll","","System","","","","","",""
+"23.8.8.20","timeZone",0,0,"timezone","","System","","","","","",""
+"23.8.8.20","DATE_TRUNC",0,1,"dateTrunc","","System","","","","","",""
+"23.8.8.20","toStartOfFiveMinute",0,0,"toStartOfFiveMinutes","","System","","","","","",""
+"23.8.8.20","visitParamExtractFloat",0,0,"simpleJSONExtractFloat","","System","","","","","",""
+"23.8.8.20","TIMESTAMP_DIFF",0,0,"dateDiff","","System","","","","","",""
+"23.8.8.20","visitParamHas",0,0,"simpleJSONHas","","System","","","","","",""
+"23.8.8.20","timeZoneOffset",0,0,"timezoneOffset","","System","","","","","",""
+"23.8.8.20","timestamp_diff",0,0,"dateDiff","","System","","","","","",""
+"23.8.8.20","SECOND",0,1,"toSecond","","System","","","","","",""
+"23.8.8.20","toTimeZone",0,0,"toTimezone","","System","","","","","",""
+"23.8.8.20","TO_UNIXTIME",0,0,"parseDateTime","","System","","","","","",""
+"23.8.8.20","current_schemas",0,1,"currentSchemas","","System","","","","","",""
+"23.8.8.20","timestampDiff",0,0,"dateDiff","","System","","","","","",""
+"23.8.8.20","date_diff",0,0,"dateDiff","","System","","","","","",""
+"23.8.8.20","visitParamExtractUInt",0,0,"simpleJSONExtractUInt","","System","","","","","",""
+"23.8.8.20","query_id",0,1,"queryID","","System","","","","","",""
+"23.8.8.20","rtrim",0,0,"trimRight","","System","","","","","",""
+"23.8.8.20","INET_NTOA",0,1,"IPv4NumToString","","System","","","","","",""
+"23.8.8.20","current_database",0,1,"currentDatabase","","System","","","","","",""
+"23.8.8.20","curdate",0,1,"today","","System","","","","","",""
+"23.8.8.20","YEAR",0,1,"toYear","","System","","","","","",""
+"23.8.8.20","hostname",0,0,"hostName","","System","","","","","",""
+"23.8.8.20","concat_ws",0,1,"concatWithSeparator","","System","","","","","",""
+"23.8.8.20","power",0,1,"pow","","System","","","","","",""
+"23.8.8.20","FROM_UNIXTIME",0,0,"fromUnixTimestamp","","System","","","","","",""
+"23.8.8.20","mid",0,1,"substring","","System","","","","","",""
+"23.8.8.20","substr",0,1,"substring","","System","","","","","",""
+"23.8.8.20","distanceL2",0,1,"L2Distance","","System","","","","","",""
+"23.8.8.20","DATE_DIFF",0,0,"dateDiff","","System","","","","","",""
+"23.8.8.20","scalarProduct",0,1,"dotProduct","","System","","","","","",""
+"23.8.8.20","yandexConsistentHash",0,0,"kostikConsistentHash","","System","","","","","",""
+"23.8.8.20","mapFromString",0,0,"extractKeyValuePairs","","System","","","","","",""
+"23.8.8.20","str_to_map",0,1,"extractKeyValuePairs","","System","","","","","",""
+"23.8.8.20","visitParamExtractBool",0,0,"simpleJSONExtractBool","","System","","","","","",""
+"23.8.8.20","CHAR_LENGTH",0,1,"lengthUTF8","","System","","","","","",""
+"23.8.8.20","FROM_BASE64",0,1,"base64Decode","","System","","","","","",""
+"23.8.8.20","LAST_DAY",0,1,"toLastDayOfMonth","","System","","","","","",""
+"23.8.8.20","timeZoneOf",0,0,"timezoneOf","","System","","","","","",""
+"23.8.8.20","OCTET_LENGTH",0,1,"length","","System","","","","","",""
+"23.8.8.20","distanceLp",0,1,"LpDistance","","System","","","","","",""
+"23.8.8.20","lcase",0,1,"lower","","System","","","","","",""
+"23.8.8.20","REGEXP_MATCHES",0,1,"match","","System","","","","","",""
+"23.8.8.20","DATE_FORMAT",0,0,"formatDateTime","","System","","","","","",""
+"23.8.8.20","str_to_date",0,1,"parseDateTimeOrNull","","System","","","","","",""
+"23.8.8.20","normL2Squared",0,1,"L2SquaredNorm","","System","","","","","",""
+"23.8.8.20","yearweek",0,1,"toYearWeek","","System","","","","","",""
+"23.8.8.20","visitParamExtractInt",0,0,"simpleJSONExtractInt","","System","","","","","",""
+"23.8.8.20","visitParamExtractRaw",0,0,"simpleJSONExtractRaw","","System","","","","","",""
+"23.8.8.20","serverTimeZone",0,0,"serverTimezone","","System","","","","","",""
+"23.8.8.20","normalizeLp",0,1,"LpNormalize","","System","","","","","",""
+"23.8.8.20","week",0,1,"toWeek","","System","","","","","",""
+"23.8.8.20","DAYOFYEAR",0,1,"toDayOfYear","","System","","","","","",""
+"23.8.8.20","HOUR",0,1,"toHour","","System","","","","","",""
+"23.8.8.20","normLinf",0,1,"LinfNorm","","System","","","","","",""
+"23.8.8.20","SCHEMA",0,1,"currentDatabase","","System","","","","","",""
+"23.8.8.20","flatten",0,1,"arrayFlatten","","System","","","","","",""
+"23.8.8.20","replace",0,1,"replaceAll","","System","","","","","",""
+"23.8.8.20","QUARTER",0,1,"toQuarter","","System","","","","","",""
+"23.8.8.20","UTC_timestamp",0,1,"UTCTimestamp","","System","","","","","",""
+"23.8.8.20","ln",0,1,"log","","System","","","","","",""
+"23.8.8.20","extractAllGroups",0,0,"extractAllGroupsVertical","","System","","","","","",""
+"23.8.8.20","DAYOFMONTH",0,1,"toDayOfMonth","","System","","","","","",""
+"23.8.8.20","vectorDifference",0,1,"tupleMinus","","System","","","","","",""
+"23.8.8.20","INET6_NTOA",0,1,"IPv6NumToString","","System","","","","","",""
+"23.8.8.20","JSON_ARRAY_LENGTH",0,1,"JSONArrayLength","","System","","","","","",""
+"23.8.8.20","instr",0,1,"positionCaseInsensitive","","System","","","","","",""
+"23.8.8.20","DAYOFWEEK",0,1,"toDayOfWeek","","System","","","","","",""
+"23.8.8.20","normalizeLinf",0,1,"LinfNormalize","","System","","","","","",""
+"23.8.8.20","MINUTE",0,1,"toMinute","","System","","","","","",""
+"23.8.8.20","ltrim",0,0,"trimLeft","","System","","","","","",""
+"23.8.8.20","normalizeL2",0,1,"L2Normalize","","System","","","","","",""
+"23.8.8.20","initial_query_id",0,1,"initialQueryID","","System","","","","","",""
+"23.8.8.20","to_utc_timestamp",0,1,"toUTCTimestamp","","System","","","","","",""
+"23.8.8.20","width_bucket",0,1,"widthBucket","","System","","","","","",""
+"23.8.8.20","lpad",0,1,"leftPad","","System","","","","","",""
+"23.8.8.20","ucase",0,1,"upper","","System","","","","","",""
+"23.8.8.20","REGEXP_EXTRACT",0,1,"regexpExtract","","System","","","","","",""
+"23.8.8.20","normalizeL1",0,1,"L1Normalize","","System","","","","","",""
+"23.8.8.20","CHARACTER_LENGTH",0,1,"lengthUTF8","","System","","","","","",""
+"23.8.8.20","distanceLinf",0,1,"LinfDistance","","System","","","","","",""
+"23.8.8.20","locate",0,1,"position","","System","","","","","",""
+"23.8.8.20","splitByAlpha",0,0,"alphaTokens","","System","","","","","",""
+"23.8.8.20","trim",0,0,"trimBoth","","System","","","","","",""
+"23.8.8.20","current_timestamp",0,1,"now","","System","","","","","",""
+"23.8.8.20","visitParamExtractString",0,0,"simpleJSONExtractString","","System","","","","","",""
+"23.8.8.20","DAY",0,1,"toDayOfMonth","","System","","","","","",""
+"23.8.8.20","normLp",0,1,"LpNorm","","System","","","","","",""
+"23.8.8.20","distanceL1",0,1,"L1Distance","","System","","","","","",""
+"23.8.8.20","MONTH",0,1,"toMonth","","System","","","","","",""
+"23.8.8.20","distanceL2Squared",0,1,"L2SquaredDistance","","System","","","","","",""
+"23.8.8.20","current_date",0,1,"today","","System","","","","","",""
+"23.8.8.20","SVG",0,0,"svg","","System","","","","","",""
+"23.8.8.20","normL1",0,1,"L1Norm","","System","","","","","",""
+"23.8.8.20","vectorSum",0,1,"tuplePlus","","System","","","","","",""
+"23.8.8.20","mod",0,1,"modulo","","System","","","","","",""
+"23.8.8.20","normL2",0,1,"L2Norm","","System","","","","","",""
+"23.8.8.20","exponentialTimeDecayedCount",1,0,"","","System","","","","","",""
+"23.8.8.20","exponentialTimeDecayedMax",1,0,"","","System","","","","","",""
+"23.8.8.20","lagInFrame",1,0,"","","System","","","","","",""
+"23.8.8.20","dense_rank",1,1,"","","System","","","","","",""
+"23.8.8.20","flameGraph",1,0,"","","System","","","","","",""
+"23.8.8.20","rank",1,1,"","","System","","","","","",""
+"23.8.8.20","exponentialMovingAverage",1,0,"","","System","","","","","",""
+"23.8.8.20","sparkbar",1,0,"","","System","","","","","",""
+"23.8.8.20","singleValueOrNull",1,0,"","","System","","","","","",""
+"23.8.8.20","meanZTest",1,0,"","","System","","","","","",""
+"23.8.8.20","analysisOfVariance",1,1,"","","System","","","","","",""
+"23.8.8.20","studentTTest",1,0,"","","System","","","","","",""
+"23.8.8.20","rankCorr",1,0,"","","System","","","","","",""
+"23.8.8.20","aggThrow",1,0,"","","System","","","","","",""
+"23.8.8.20","categoricalInformationValue",1,0,"","","System","","","","","",""
+"23.8.8.20","groupArrayMovingAvg",1,0,"","","System","","","","","",""
+"23.8.8.20","groupArrayMovingSum",1,0,"","","System","","","","","",""
+"23.8.8.20","simpleLinearRegression",1,0,"","","System","","","","","",""
+"23.8.8.20","entropy",1,0,"","","System","","","","","",""
+"23.8.8.20","histogram",1,0,"","","System","","","","","",""
+"23.8.8.20","mannWhitneyUTest",1,0,"","","System","","","","","",""
+"23.8.8.20","maxIntersections",1,0,"","","System","","","","","",""
+"23.8.8.20","groupBitmapXor",1,0,"","","System","","","","","",""
+"23.8.8.20","groupBitmapAnd",1,0,"","","System","","","","","",""
+"23.8.8.20","cramersVBiasCorrected",1,0,"","","System","","","","","",""
+"23.8.8.20","contingency",1,0,"","","System","","","","","",""
+"23.8.8.20","cramersV",1,0,"","","System","","","","","",""
+"23.8.8.20","groupBitAnd",1,0,"","","System","","","","","",""
+"23.8.8.20","groupBitOr",1,0,"","","System","","","","","",""
+"23.8.8.20","exponentialTimeDecayedSum",1,0,"","","System","","","","","",""
+"23.8.8.20","topKWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","stochasticLinearRegression",1,0,"","","System","","","","","",""
+"23.8.8.20","corr",1,1,"","","System","","","","","",""
+"23.8.8.20","uniqCombined64",1,0,"","","System","","","","","",""
+"23.8.8.20","intervalLengthSum",1,0,"","","System","","","","","",""
+"23.8.8.20","nothing",1,0,"","","System","","","","","",""
+"23.8.8.20","uniqCombined",1,0,"","","System","","","","","",""
+"23.8.8.20","sumMapFiltered",1,0,"","","System","","","","","",""
+"23.8.8.20","minMappedArrays",1,0,"","","System","","","","","",""
+"23.8.8.20","sumMappedArrays",1,0,"","","System","","","","","",""
+"23.8.8.20","quantiles",1,0,"","","System","","","","","",""
+"23.8.8.20","sum",1,1,"","","System","","","","","",""
+"23.8.8.20","sumKahan",1,0,"","","System","","","","","",""
+"23.8.8.20","corrMatrix",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileExactWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","sumMapFilteredWithOverflow",1,0,"","","System","","","","","",""
+"23.8.8.20","corrStable",1,0,"","","System","","","","","",""
+"23.8.8.20","covarPopMatrix",1,0,"","","System","","","","","",""
+"23.8.8.20","covarPop",1,0,"","","System","","","","","",""
+"23.8.8.20","row_number",1,1,"","","System","","","","","",""
+"23.8.8.20","kurtPop",1,0,"","","System","","","","","",""
+"23.8.8.20","kurtSamp",1,0,"","","System","","","","","",""
+"23.8.8.20","groupBitXor",1,0,"","","System","","","","","",""
+"23.8.8.20","skewPop",1,0,"","","System","","","","","",""
+"23.8.8.20","skewSamp",1,0,"","","System","","","","","",""
+"23.8.8.20","nonNegativeDerivative",1,0,"","","System","","","","","",""
+"23.8.8.20","uniqExact",1,0,"","","System","","","","","",""
+"23.8.8.20","sumMapWithOverflow",1,0,"","","System","","","","","",""
+"23.8.8.20","stddevSamp",1,0,"","","System","","","","","",""
+"23.8.8.20","varPop",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileTimingWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","covarPopStable",1,0,"","","System","","","","","",""
+"23.8.8.20","stddevSampStable",1,0,"","","System","","","","","",""
+"23.8.8.20","groupBitmapOr",1,0,"","","System","","","","","",""
+"23.8.8.20","covarSampMatrix",1,0,"","","System","","","","","",""
+"23.8.8.20","last_value",1,1,"","","System","","","","","",""
+"23.8.8.20","topK",1,0,"","","System","","","","","",""
+"23.8.8.20","last_value_respect_nulls",1,1,"","","System","","","","","",""
+"23.8.8.20","first_value_respect_nulls",1,1,"","","System","","","","","",""
+"23.8.8.20","any",1,0,"","","System","","","","","",""
+"23.8.8.20","anyLast",1,0,"","","System","","","","","",""
+"23.8.8.20","deltaSumTimestamp",1,0,"","","System","","","","","",""
+"23.8.8.20","varSampStable",1,0,"","","System","","","","","",""
+"23.8.8.20","nth_value",1,1,"","","System","","","","","",""
+"23.8.8.20","argMax",1,0,"","","System","","","","","",""
+"23.8.8.20","stochasticLogisticRegression",1,0,"","","System","","","","","",""
+"23.8.8.20","argMin",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesExact",1,0,"","","System","","","","","",""
+"23.8.8.20","uniqHLL12",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileBFloat16",1,0,"","","System","","","","","",""
+"23.8.8.20","uniq",1,0,"","","System","","","","","",""
+"23.8.8.20","min",1,1,"","","System","","","","","",""
+"23.8.8.20","sequenceNextNode",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesTimingWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","ntile",1,1,"","","System","","","","","",""
+"23.8.8.20","boundingRatio",1,0,"","","System","","","","","",""
+"23.8.8.20","deltaSum",1,0,"","","System","","","","","",""
+"23.8.8.20","uniqUpTo",1,0,"","","System","","","","","",""
+"23.8.8.20","windowFunnel",1,0,"","","System","","","","","",""
+"23.8.8.20","retention",1,0,"","","System","","","","","",""
+"23.8.8.20","sequenceMatch",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesBFloat16Weighted",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileBFloat16Weighted",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesTDigestWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileTDigest",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileTDigestWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileDeterministic",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesTDigest",1,0,"","","System","","","","","",""
+"23.8.8.20","avg",1,1,"","","System","","","","","",""
+"23.8.8.20","covarSampStable",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesTiming",1,0,"","","System","","","","","",""
+"23.8.8.20","welchTTest",1,0,"","","System","","","","","",""
+"23.8.8.20","covarSamp",1,0,"","","System","","","","","",""
+"23.8.8.20","varPopStable",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileTiming",1,0,"","","System","","","","","",""
+"23.8.8.20","leadInFrame",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesExactExclusive",1,0,"","","System","","","","","",""
+"23.8.8.20","maxIntersectionsPosition",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesBFloat16",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesExactInclusive",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileExactInclusive",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileInterpolatedWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileExactHigh",1,0,"","","System","","","","","",""
+"23.8.8.20","groupBitmap",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesInterpolatedWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","quantile",1,0,"","","System","","","","","",""
+"23.8.8.20","groupArraySample",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesExactLow",1,0,"","","System","","","","","",""
+"23.8.8.20","groupUniqArray",1,0,"","","System","","","","","",""
+"23.8.8.20","uniqTheta",1,0,"","","System","","","","","",""
+"23.8.8.20","max",1,1,"","","System","","","","","",""
+"23.8.8.20","quantilesExactWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","kolmogorovSmirnovTest",1,1,"","","System","","","","","",""
+"23.8.8.20","sumWithOverflow",1,0,"","","System","","","","","",""
+"23.8.8.20","sequenceCount",1,0,"","","System","","","","","",""
+"23.8.8.20","groupArrayInsertAt",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesGK",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesDeterministic",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileGK",1,0,"","","System","","","","","",""
+"23.8.8.20","quantilesExactHigh",1,0,"","","System","","","","","",""
+"23.8.8.20","sumCount",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileExact",1,0,"","","System","","","","","",""
+"23.8.8.20","anyHeavy",1,0,"","","System","","","","","",""
+"23.8.8.20","theilsU",1,0,"","","System","","","","","",""
+"23.8.8.20","maxMappedArrays",1,0,"","","System","","","","","",""
+"23.8.8.20","stddevPop",1,0,"","","System","","","","","",""
+"23.8.8.20","groupArrayLast",1,0,"","","System","","","","","",""
+"23.8.8.20","groupArray",1,0,"","","System","","","","","",""
+"23.8.8.20","first_value",1,1,"","","System","","","","","",""
+"23.8.8.20","exponentialTimeDecayedAvg",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileExactExclusive",1,0,"","","System","","","","","",""
+"23.8.8.20","count",1,1,"","","System","","","","","",""
+"23.8.8.20","stddevPopStable",1,0,"","","System","","","","","",""
+"23.8.8.20","quantileExactLow",1,0,"","","System","","","","","",""
+"23.8.8.20","varSamp",1,0,"","","System","","","","","",""
+"23.8.8.20","avgWeighted",1,0,"","","System","","","","","",""
+"23.8.8.20","anova",1,1,"analysisOfVariance","","System","","","","","",""
+"23.8.8.20","BIT_XOR",1,1,"groupBitXor","","System","","","","","",""
+"23.8.8.20","BIT_OR",1,1,"groupBitOr","","System","","","","","",""
+"23.8.8.20","STDDEV_SAMP",1,1,"stddevSamp","","System","","","","","",""
+"23.8.8.20","VAR_SAMP",1,1,"varSamp","","System","","","","","",""
+"23.8.8.20","COVAR_SAMP",1,1,"covarSamp","","System","","","","","",""
+"23.8.8.20","any_value",1,1,"any","","System","","","","","",""
+"23.8.8.20","medianInterpolatedWeighted",1,0,"quantileInterpolatedWeighted","","System","","","","","",""
+"23.8.8.20","medianTDigestWeighted",1,0,"quantileTDigestWeighted","","System","","","","","",""
+"23.8.8.20","VAR_POP",1,1,"varPop","","System","","","","","",""
+"23.8.8.20","medianBFloat16",1,0,"quantileBFloat16","","System","","","","","",""
+"23.8.8.20","medianTDigest",1,0,"quantileTDigest","","System","","","","","",""
+"23.8.8.20","medianTimingWeighted",1,0,"quantileTimingWeighted","","System","","","","","",""
+"23.8.8.20","array_agg",1,1,"groupArray","","System","","","","","",""
+"23.8.8.20","median",1,0,"quantile","","System","","","","","",""
+"23.8.8.20","medianTiming",1,0,"quantileTiming","","System","","","","","",""
+"23.8.8.20","medianExact",1,0,"quantileExact","","System","","","","","",""
+"23.8.8.20","STDDEV_POP",1,1,"stddevPop","","System","","","","","",""
+"23.8.8.20","medianGK",1,0,"quantileGK","","System","","","","","",""
+"23.8.8.20","medianExactLow",1,0,"quantileExactLow","","System","","","","","",""
+"23.8.8.20","medianDeterministic",1,0,"quantileDeterministic","","System","","","","","",""
+"23.8.8.20","COVAR_POP",1,1,"covarPop","","System","","","","","",""
+"23.8.8.20","medianBFloat16Weighted",1,0,"quantileBFloat16Weighted","","System","","","","","",""
+"23.8.8.20","medianExactWeighted",1,0,"quantileExactWeighted","","System","","","","","",""
+"23.8.8.20","BIT_AND",1,1,"groupBitAnd","","System","","","","","",""
+"23.8.8.20","medianExactHigh",1,0,"quantileExactHigh","","System","","","","","",""
+"23.8.8.20","array_concat_agg",1,1,"groupArrayArray","","System","","","","","",""
