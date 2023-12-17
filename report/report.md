@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-12-11 12:22:29 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.11.1.2711
+Generated at 2023-12-17 17:42:26 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.11.2.11
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
