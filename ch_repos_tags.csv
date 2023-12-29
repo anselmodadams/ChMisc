@@ -1,4 +1,5 @@
 name,version
+altinity/clickhouse-server,23.8.8.21.altinitystable
 altinity/clickhouse-server,23.3.13.7.altinitystable
 altinity/clickhouse-server,22.8.15.25.altinitystable
 altinity/clickhouse-server,22.8.20.12.altinitystable
@@ -382,6 +383,8 @@ yandex/clickhouse-server,1.1.54023
 yandex/clickhouse-server,1.1.54022
 yandex/clickhouse-server,1.1.54020
 yandex/clickhouse-server,1.1.54019
+clickhouse/clickhouse-server,23.12.1.1368
+clickhouse/clickhouse-server,23.11.3.23
 clickhouse/clickhouse-server,23.11.2.11
 clickhouse/clickhouse-server,23.11.1.2711
 clickhouse/clickhouse-server,23.8.8.20
