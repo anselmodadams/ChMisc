@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2023-12-29 13:38:11 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.12.1.1368
+Generated at 2024-01-11 10:33:02 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 23.12.2.59
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2033,11 +2033,11 @@ Generated at 2023-12-29 13:38:11 (America/Sao_Paulo), covering ClickHouse versio
 | `background_move_pool_size` | in v20.1.2.4 | in v22.5.1.2079 | Yes | Number of threads performing background moves for tables. Only has meaning at server startup. |
 | `background_pool_size` | in v1.1.54019 | in v22.5.1.2079 | Yes | Number of threads performing background work for tables (for example, merging in merge tree). |
 | `background_schedule_pool_size` | in v1.1.54388 | in v22.5.1.2079 | Yes | Number of threads performing background tasks for replicated tables. Only has meaning at server startup. |
-| `backup_batch_size_for_keeper_multiread` | in v23.3.1.2823 |  | up to v23.3.18.15 | Maximum size of batch for multiread request to [Zoo]Keeper during backup |
-| `backup_keeper_max_retries` | in v23.3.1.2823 |  | up to v23.3.18.15 | Max retries for keeper operations during backup |
-| `backup_keeper_retry_initial_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.18.15 | Initial backoff timeout for [Zoo]Keeper operations during backup |
-| `backup_keeper_retry_max_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.18.15 | Max backoff timeout for [Zoo]Keeper operations during backup |
-| `backup_keeper_value_max_size` | in v23.3.1.2823 |  | up to v23.3.18.15 | Maximum size of data of a [Zoo]Keeper\'s node during backup |
+| `backup_batch_size_for_keeper_multiread` | in v23.3.1.2823 |  | up to v23.3.19.32 | Maximum size of batch for multiread request to [Zoo]Keeper during backup |
+| `backup_keeper_max_retries` | in v23.3.1.2823 |  | up to v23.3.19.32 | Max retries for keeper operations during backup |
+| `backup_keeper_retry_initial_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.19.32 | Initial backoff timeout for [Zoo]Keeper operations during backup |
+| `backup_keeper_retry_max_backoff_ms` | in v23.3.1.2823 |  | up to v23.3.19.32 | Max backoff timeout for [Zoo]Keeper operations during backup |
+| `backup_keeper_value_max_size` | in v23.3.1.2823 |  | up to v23.3.19.32 | Maximum size of data of a [Zoo]Keeper\'s node during backup |
 | `backup_restore_batch_size_for_keeper_multi` | in v23.11.1.2711 |  | Yes | Maximum size of batch for multi request to [Zoo]Keeper during backup or restore |
 | `backup_restore_batch_size_for_keeper_multiread` | in v23.4.1.1943 |  | Yes | Maximum size of batch for multiread request to [Zoo]Keeper during backup or restore |
 | `backup_restore_keeper_fault_injection_probability` | in v23.4.1.1943 |  | Yes | Approximate probability of failure for a keeper request during backup or restore. Valid value is in interval [0.0f, 1.0f] |
@@ -2281,7 +2281,7 @@ Generated at 2023-12-29 13:38:11 (America/Sao_Paulo), covering ClickHouse versio
 | `http_send_timeout` | in v1.1.54337 |  | Yes | HTTP send timeout |
 | `http_skip_not_found_url_for_globs` | in v22.2.2.1 |  | Yes | Skip url\'s for globs with HTTP_NOT_FOUND error |
 | `http_wait_end_of_query` | in v23.3.1.2823 |  | Yes | Enable HTTP response buffering on the server-side. |
-| `http_write_exception_in_output_format` | in v23.9.1.1854 |  | Yes | Write exception in output format to produce valid output. Works with JSON and XML formats. |
+| `http_write_exception_in_output_format` | in v23.8.9.54 |  | Yes | Write exception in output format to produce valid output. Works with JSON and XML formats. |
 | `http_zlib_compression_level` | in v1.1.54019 |  | Yes | Compression level - used if the client on HTTP said that it understands data compressed by gzip or deflate. |
 | `idle_connection_timeout` | in v19.11.2.7 |  | Yes | "Close idle TCP connections after specified number of seconds." |
 | `ignore_cold_parts_seconds` | in v23.12.1.1368 |  | Yes | Only available in ClickHouse Cloud |
@@ -2937,6 +2937,7 @@ Generated at 2023-12-29 13:38:11 (America/Sao_Paulo), covering ClickHouse versio
 |:-|:-|:-|:-|
 | `add_implicit_sign_column_constraint_for_collapsing_engine` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
 | `allow_experimental_block_number_column` | in v23.9.1.1854 | Yes | `0` from `23.9.1.1854` to `latest` |
+| `allow_experimental_replacing_merge_with_cleanup` | in v23.12.2.59 | Yes | `0` from `23.12.2.59` to `latest` |
 | `allow_floating_point_partition_key` | in v21.2.2.8 | Yes | `0` from `21.2.2.8` to `latest` |
 | `allow_nullable_key` | in v20.7.2.30 | Yes | `0` from `20.7.2.30` to `latest` |
 | `allow_remote_fs_zero_copy_replication` | in v21.8.3.44 | Yes | `0` from `21.8.3.44` to `latest` / `1` from `21.9.2.17` to `22.7.7.24` |
@@ -2946,13 +2947,13 @@ Generated at 2023-12-29 13:38:11 (America/Sao_Paulo), covering ClickHouse versio
 | `always_fetch_merged_part` | in v20.4.2.9 | Yes | `0` from `20.4.2.9` to `latest` |
 | `always_use_copy_instead_of_hardlinks` | in v23.12.1.1368 | Yes | `0` from `23.12.1.1368` to `latest` |
 | `assign_part_uuids` | in v20.12.2.1 | Yes | `0` from `20.12.2.1` to `latest` |
-| `async_block_ids_cache_min_update_interval_ms` | in v23.1.1.3077 | up to v23.11.3.23 | `100` from `23.1.1.3077` to `23.11.3.23` |
+| `async_block_ids_cache_min_update_interval_ms` | in v23.1.1.3077 | up to v23.11.4.24 | `100` from `23.1.1.3077` to `23.11.4.24` |
 | `async_block_ids_cache_update_wait_ms` | in v23.12.1.1368 | Yes | `100` from `23.12.1.1368` to `latest` |
 | `async_insert` | in v23.5.1.3174 | Yes | `0` from `23.5.1.3174` to `latest` |
 | `cache_populated_by_fetch` | in v23.12.1.1368 | Yes | `0` from `23.12.1.1368` to `latest` |
 | `check_delay_period` | in v18.10.3 | Yes | `60` from `18.10.3.0` to `latest` |
 | `check_sample_column_is_correct` | in v21.9.2.17 | Yes | `1` from `21.9.2.17` to `latest` |
-| `clean_deleted_rows` | in v23.2.1.2537 | Yes | `` from `23.12.1.1368` to `latest` / `Never` from `23.2.1.2537` to `23.11.3.23` |
+| `clean_deleted_rows` | in v23.2.1.2537 | Yes | `` from `23.12.1.1368` to `23.12.1.1368` / `Never` from `23.2.1.2537` to `latest` |
 | `cleanup_delay_period` | in v18.10.3 | Yes | `30` from `18.10.3.0` to `latest` |
 | `cleanup_delay_period_random_add` | in v18.10.3 | Yes | `10` from `18.10.3.0` to `latest` |
 | `cleanup_thread_preferred_points_per_iteration` | in v23.6.1.1524 | Yes | `150` from `23.6.1.1524` to `latest` |
@@ -3080,7 +3081,7 @@ Generated at 2023-12-29 13:38:11 (America/Sao_Paulo), covering ClickHouse versio
 | `remove_rolled_back_parts_immediately` | in v22.4.1.2305 | Yes | `1` from `22.4.1.2305` to `latest` |
 | `replace_long_file_name_to_hash` | in v23.9.1.1854 | Yes | `0` from `23.9.1.1854` to `latest` |
 | `replicated_can_become_leader` | in v18.10.3 | Yes | `1` from `18.10.3.0` to `latest` |
-| `replicated_deduplication_window` | in v18.10.3 | Yes | `100` from `18.10.3.0` to `23.10.5.20` / `1000` from `23.11.1.2711` to `latest` |
+| `replicated_deduplication_window` | in v18.10.3 | Yes | `100` from `18.10.3.0` to `23.10.6.60` / `1000` from `23.11.1.2711` to `latest` |
 | `replicated_deduplication_window_for_async_inserts` | in v22.12.1.1752 | Yes | `10000` from `22.12.1.1752` to `latest` |
 | `replicated_deduplication_window_seconds` | in v18.10.3 | Yes | `604800` from `18.10.3.0` to `latest` |
 | `replicated_deduplication_window_seconds_for_async_inserts` | in v22.12.1.1752 | Yes | `604800` from `22.12.1.1752` to `latest` |
@@ -3100,13 +3101,13 @@ Generated at 2023-12-29 13:38:11 (America/Sao_Paulo), covering ClickHouse versio
 | `shared_merge_tree_partitions_hint_ratio_to_reload_merge_pred_for_mutations` | in v23.12.1.1368 | Yes | `0.5` from `23.12.1.1368` to `latest` |
 | `shared_merge_tree_parts_load_batch_size` | in v23.12.1.1368 | Yes | `32` from `23.12.1.1368` to `latest` |
 | `simultaneous_parts_removal_limit` | in v23.1.1.3077 | Yes | `0` from `23.1.1.3077` to `latest` |
-| `sleep_before_commit_local_part_in_replicated_table_ms` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
+| `sleep_before_commit_local_part_in_replicated_table_ms` | in v23.8.9.54 | Yes | `0` from `23.8.9.54` to `latest` |
 | `sleep_before_loading_outdated_parts_ms` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
 | `storage_policy` | in v19.15.2.2 | Yes | `default` from `19.15.2.2` to `latest` |
 | `temporary_directories_lifetime` | in v18.10.3 | Yes | `86400` from `18.10.3.0` to `latest` |
 | `try_fetch_recompressed_part_timeout` | in v20.10.2.20 | Yes | `7200` from `20.10.2.20` to `latest` |
 | `ttl_only_drop_parts` | in v19.14.3.3 | Yes | `0` from `19.14.3.3` to `latest` |
-| `use_async_block_ids_cache` | in v23.1.1.3077 | Yes | `0` from `23.1.1.3077` to `23.10.5.20` / `1` from `23.11.1.2711` to `latest` |
+| `use_async_block_ids_cache` | in v23.1.1.3077 | Yes | `0` from `23.1.1.3077` to `23.10.6.60` / `1` from `23.11.1.2711` to `latest` |
 | `use_metadata_cache` | in v22.4.1.2305 | Yes | `0` from `22.4.1.2305` to `latest` |
 | `use_minimalistic_checksums_in_zookeeper` | in v18.10.3 | Yes | `1` from `18.10.3.0` to `latest` |
 | `use_minimalistic_part_header_in_zookeeper` | in v19.1.5 | Yes | `0` from `19.1.5.0` to `19.17.10.1` / `1` from `20.1.2.4` to `latest` |
