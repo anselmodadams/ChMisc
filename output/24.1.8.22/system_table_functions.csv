@@ -1,0 +1,73 @@
+"ch_version","name","description","allow_readonly"
+"24.1.8.22","azureBlobStorageCluster","The table function can be used to read the data stored on Azure Blob Storage in parallel for many nodes in a specified cluster.",0
+"24.1.8.22","azureBlobStorage","The table function can be used to read the data stored on Azure Blob Storage.",0
+"24.1.8.22","viewExplain","
+                Returns result of EXPLAIN query.
+                The function should not be called directly but can be invoked via `SELECT * FROM (EXPLAIN <query>)`.
+                You can use this query to process the result of EXPLAIN further using SQL (e.g., in tests).
+                Example:
+                [example:1]
+                ",0
+"24.1.8.22","format","
+Extracts table structure from data and parses it according to specified input format.
+Syntax: `format(format_name, data)`.
+Parameters:
+    - `format_name` - the format of the data.
+    - `data ` - String literal or constant expression that returns a string containing data in specified format.
+Returned value: A table with data parsed from `data` argument according specified format and extracted schema.
+",0
+"24.1.8.22","dictionary","",0
+"24.1.8.22","mysql","",0
+"24.1.8.22","viewIfPermitted","",1
+"24.1.8.22","odbc","",0
+"24.1.8.22","hive","",0
+"24.1.8.22","postgresql","",0
+"24.1.8.22","hdfsCluster","",0
+"24.1.8.22","hudi","The table function can be used to read the Hudi table stored on object store.",0
+"24.1.8.22","oss","",0
+"24.1.8.22","cosn","",0
+"24.1.8.22","redis","",0
+"24.1.8.22","deltaLake","The table function can be used to read the DeltaLake table stored on object store.",0
+"24.1.8.22","fuzzJSON","Perturbs a JSON string with random variations.",1
+"24.1.8.22","jdbc","",0
+"24.1.8.22","zeros_mt","
+                Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+                This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+                In contrast to the `zeros_mt`, this table function is using single thread for data generation.
+                Example:
+                [example:1]
+                This query will test the speed of `randomPrintableASCII` function using single thread.
+                See also the `system.zeros` table.",0
+"24.1.8.22","mongodb","",0
+"24.1.8.22","generateRandom","",1
+"24.1.8.22","remote","",0
+"24.1.8.22","input","",0
+"24.1.8.22","s3Cluster","",0
+"24.1.8.22","values","",1
+"24.1.8.22","s3","The table function can be used to read the data stored on AWS S3.",0
+"24.1.8.22","url","",0
+"24.1.8.22","gcs","The table function can be used to read the data stored on Google Cloud Storage.",0
+"24.1.8.22","remoteSecure","",0
+"24.1.8.22","sqlite","",0
+"24.1.8.22","zeros","
+                Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+                This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+                In contrast to the `zeros`, this table function is using multiple threads for data generation, according to the `max_threads` setting.
+                Example:
+                [example:1]
+                This query will test the speed of `randomPrintableASCII` function using multiple threads.
+                See also the `system.zeros` table.
+                ",0
+"24.1.8.22","iceberg","The table function can be used to read the Iceberg table stored on object store.",0
+"24.1.8.22","fileCluster","This table function is used for distributed reading of files in cluster nodes filesystems.",0
+"24.1.8.22","urlCluster","",0
+"24.1.8.22","view","",1
+"24.1.8.22","numbers_mt","",1
+"24.1.8.22","executable","",0
+"24.1.8.22","clusterAllReplicas","",1
+"24.1.8.22","cluster","",1
+"24.1.8.22","merge","",0
+"24.1.8.22","null","",1
+"24.1.8.22","file","",0
+"24.1.8.22","hdfs","",0
+"24.1.8.22","numbers","",1
