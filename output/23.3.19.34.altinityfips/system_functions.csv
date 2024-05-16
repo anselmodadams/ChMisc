@@ -1,0 +1,2366 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to","create_query","origin","description"
+"23.3.19.34.altinityfips","polygonsEqualsCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetPentagonIndexes",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSON_VALUE",0,0,"","","System",""
+"23.3.19.34.altinityfips","intHash64",0,0,"","","System",""
+"23.3.19.34.altinityfips","intHash32",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchFirstIndexUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","getSetting",0,0,"","","System",""
+"23.3.19.34.altinityfips","isValidUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalHour",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalMinute",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalMillisecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime64BestEffortUSOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime64BestEffortOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime64BestEffort",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime32BestEffort",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeBestEffortOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeBestEffortOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIPv6OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIPv4OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUUIDOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeBestEffort",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal128OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal64OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal32OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateTimeOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDate32OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toFloat64OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt256OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt128OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt64OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt128OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt64OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt8OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIPv6OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIPv4OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal256OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal64OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal32OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDate32OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toFloat64OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toFloat32OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt128OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt64OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt16OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt128OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt32OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toString",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateTime",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal128",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal64",0,0,"","","System",""
+"23.3.19.34.altinityfips","toFloat64",0,0,"","","System",""
+"23.3.19.34.altinityfips","toFloat32",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt128",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt32",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt8",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt256",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt64",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal32",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt32",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt8",0,0,"","","System",""
+"23.3.19.34.altinityfips","blockSize",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt16",0,0,"","","System",""
+"23.3.19.34.altinityfips","isNotNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","UUIDStringToNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","roundDown",0,0,"","","System",""
+"23.3.19.34.altinityfips","trunc",0,1,"","","System",""
+"23.3.19.34.altinityfips","ceil",0,1,"","","System",""
+"23.3.19.34.altinityfips","roundBankers",0,0,"","","System",""
+"23.3.19.34.altinityfips","round",0,1,"","","System",""
+"23.3.19.34.altinityfips","regionToName",0,0,"","","System",""
+"23.3.19.34.altinityfips","regionIn",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUUID",0,0,"","","System",""
+"23.3.19.34.altinityfips","regionToCountry",0,0,"","","System",""
+"23.3.19.34.altinityfips","regionToArea",0,0,"","","System",""
+"23.3.19.34.altinityfips","regionToCity",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutQueryString",0,0,"","","System",""
+"23.3.19.34.altinityfips","BLAKE3",0,0,"","","System","
+Calculates BLAKE3 hash string and returns the resulting set of bytes as FixedString.
+This cryptographic hash-function is integrated into ClickHouse with BLAKE3 Rust library.
+The function is rather fast and shows approximately two times faster performance compared to SHA-2, while generating hashes of the same length as SHA-256.
+It returns a BLAKE3 hash as a byte array with type FixedString(32).
+"
+"23.3.19.34.altinityfips","wyHash64",0,0,"","","System",""
+"23.3.19.34.altinityfips","xxHash32",0,0,"","","System",""
+"23.3.19.34.altinityfips","javaHashUTF16LE",0,0,"","","System",""
+"23.3.19.34.altinityfips","javaHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","URLHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","metroHash64",0,0,"","","System",""
+"23.3.19.34.altinityfips","farmHash64",0,0,"","","System",""
+"23.3.19.34.altinityfips","farmFingerprint64",0,0,"","","System",""
+"23.3.19.34.altinityfips","sipHash128ReferenceKeyed",0,0,"","","System","Same as [sipHash128Reference](#hash_functions-siphash128reference) but additionally takes an explicit key argument instead of using a fixed key."
+"23.3.19.34.altinityfips","sipHash128Reference",0,0,"","","System","Like [sipHash128](#hash_functions-siphash128) but implements the 128-bit algorithm from the original authors of SipHash."
+"23.3.19.34.altinityfips","sipHash128",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDate32",0,0,"","","System",""
+"23.3.19.34.altinityfips","lowCardinalityIndices",0,0,"","","System",""
+"23.3.19.34.altinityfips","decrypt",0,0,"","","System",""
+"23.3.19.34.altinityfips","logTrace",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt16OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","timeSlots",0,0,"","","System",""
+"23.3.19.34.altinityfips","stringToH3",0,0,"","","System",""
+"23.3.19.34.altinityfips","asinh",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutWWW",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt8OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","SHA1",0,0,"","","System",""
+"23.3.19.34.altinityfips","MD5",0,0,"","","System",""
+"23.3.19.34.altinityfips","halfMD5",0,0,"","","System",""
+"23.3.19.34.altinityfips","equals",0,0,"","","System",""
+"23.3.19.34.altinityfips","geohashesInBox",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractKeys",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractKeysAndValuesRaw",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt16OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractRaw",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractString",0,0,"","","System",""
+"23.3.19.34.altinityfips","SHA512",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractFloat",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONKey",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONLength",0,0,"","","System",""
+"23.3.19.34.altinityfips","isValidJSON",0,0,"","","System",""
+"23.3.19.34.altinityfips","windowID",0,0,"","","System",""
+"23.3.19.34.altinityfips","hopStart",0,0,"","","System",""
+"23.3.19.34.altinityfips","hop",0,0,"","","System",""
+"23.3.19.34.altinityfips","detectTonality",0,0,"","","System",""
+"23.3.19.34.altinityfips","toRelativeWeekNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","makeDateTime64",0,0,"","","System",""
+"23.3.19.34.altinityfips","makeDateTime",0,0,"","","System",""
+"23.3.19.34.altinityfips","makeDate",0,0,"","","System",""
+"23.3.19.34.altinityfips","transactionLatestSnapshot",0,0,"","","System",""
+"23.3.19.34.altinityfips","transactionID",0,0,"","","System",""
+"23.3.19.34.altinityfips","extractGroups",0,0,"","","System",""
+"23.3.19.34.altinityfips","__bitWrapperFunc",0,0,"","","System",""
+"23.3.19.34.altinityfips","showCertificate",0,0,"","","System",""
+"23.3.19.34.altinityfips","nested",0,0,"","","System","
+Returns the array of tuples from multiple arrays.
+"
+"23.3.19.34.altinityfips","hashid",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3EdgeLengthM",0,0,"","","System",""
+"23.3.19.34.altinityfips","UUIDNumToString",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv4StringToNumOrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv4NumToStringClassC",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv4NumToString",0,0,"","","System",""
+"23.3.19.34.altinityfips","isIPv6String",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSON_QUERY",0,0,"","","System",""
+"23.3.19.34.altinityfips","isIPv4String",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv4CIDRToRange",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv6CIDRToRange",0,0,"","","System",""
+"23.3.19.34.altinityfips","MACStringToNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutIPv6",0,0,"","","System",""
+"23.3.19.34.altinityfips","snowflakeToDateTime64",0,0,"","","System",""
+"23.3.19.34.altinityfips","radians",0,1,"","","System",""
+"23.3.19.34.altinityfips","ifNotFinite",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonAreaSpherical",0,0,"","","System",""
+"23.3.19.34.altinityfips","base58Encode",0,0,"","","System",""
+"23.3.19.34.altinityfips","currentUser",0,0,"","","System",""
+"23.3.19.34.altinityfips","addSeconds",0,0,"","","System",""
+"23.3.19.34.altinityfips","convertCharset",0,0,"","","System",""
+"23.3.19.34.altinityfips","extractTextFromHTML",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalQuarter",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchAny",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapContains",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapHasAny",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapXor",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapOr",0,0,"","","System",""
+"23.3.19.34.altinityfips","xxh3",0,0,"","","System","Calculates value of XXH3 64-bit hash function. Refer to https://github.com/Cyan4973/xxHash for detailed documentation."
+"23.3.19.34.altinityfips","bitmapAnd",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapAndnotCardinality",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv6StringToNumOrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapAndnot",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapXorCardinality",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapOrCardinality",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapAndCardinality",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapMin",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapCardinality",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapSubsetLimit",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapSubsetInRange",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapToArray",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapBuild",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitHammingDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsDistanceSpherical",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsDistanceCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3EdgeLengthKm",0,0,"","","System",""
+"23.3.19.34.altinityfips","fuzzBits",0,0,"","","System",""
+"23.3.19.34.altinityfips","addressToLineWithInlines",0,0,"","","System",""
+"23.3.19.34.altinityfips","monthName",0,1,"","","System",""
+"23.3.19.34.altinityfips","arrayReverseFill",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayFill",0,0,"","","System",""
+"23.3.19.34.altinityfips","addressToSymbol",0,0,"","","System",""
+"23.3.19.34.altinityfips","aes_decrypt_mysql",0,0,"","","System",""
+"23.3.19.34.altinityfips","pathFull",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetDescendants",0,0,"","","System","
+Returns all descendants as if dictGetChildren function was applied level times recursively.
+Accepts 3 parameters: name of the dictionary, key value - expression returning a UInt64-type value, level — hierarchy level - If level = 0 returns all descendants to the end - UInt8
+Returned value: descendants for the key, type of Array(UInt64)
+"
+"23.3.19.34.altinityfips","dictGetChildren",0,0,"","","System","
+Returns first-level children as an array of indexes. It is the inverse transformation for dictGetHierarchy.
+Accepts 2 parameters: name of the dictionary, key value - expression returning a UInt64-type value.
+Returned value: first-level descendants for the key, type of Array(UInt64)
+"
+"23.3.19.34.altinityfips","notEmpty",0,0,"","","System",""
+"23.3.19.34.altinityfips","format",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetHierarchy",0,0,"","","System","
+Creates an array, containing all the parents of a key in the hierarchical dictionary.
+Accepts 2 parameters: name of the dictionary, key value - expression returning a UInt64-type value.
+Returned value: parents for the key, type of Array(UInt64)
+"
+"23.3.19.34.altinityfips","dictGetStringOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the String if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetUUIDOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UUID if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetDateTimeOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the DateTime if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","UTCTimestamp",0,1,"","","System","
+Returns the current date and time at the moment of query analysis. The function is a constant expression.
+Same as `now('UTC')`. Was added only for MySQL support. `now` is preferred.
+
+Example:
+[example:typical]
+"
+"23.3.19.34.altinityfips","dictGetFloat64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Float64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetInt64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","today",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetUInt32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","h3IsPentagon",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetUInt16OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt16 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","arrayIntersect",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetUInt8OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt8 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetString",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the String if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetIPv6",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the IPv6 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","multiSearchFirstPosition",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetDate",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Date if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetInt16",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int16 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetUInt64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetUInt32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","replaceOne",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayInt16",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","JSONExtractKeysAndValues",0,0,"","","System",""
+"23.3.19.34.altinityfips","replicate",0,0,"","","System",""
+"23.3.19.34.altinityfips","translateUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayCumSumNonNegative",0,0,"","","System",""
+"23.3.19.34.altinityfips","detectCharset",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsInt32",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetFloat64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Float64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","arraySlice",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfQuarter",0,0,"","","System",""
+"23.3.19.34.altinityfips","timezoneOf",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitCount",0,0,"","","System",""
+"23.3.19.34.altinityfips","atan2",0,1,"","","System",""
+"23.3.19.34.altinityfips","dictIsIn",0,0,"","","System","
+Checks the ancestor of a key through the whole hierarchical chain in the dictionary.
+Accepts 3 parameters: name of the dictionary, key to be checked - expression returning a UInt64-type value, alleged ancestor of the key - expression returning a UInt64-type.
+Returned value: 0 if key is not a child of the ancestor, 1 if key is a child of the ancestor or if key is the ancestor, type of UInt8
+"
+"23.3.19.34.altinityfips","base64Encode",0,0,"","","System",""
+"23.3.19.34.altinityfips","globalVariable",0,0,"","","System",""
+"23.3.19.34.altinityfips","divideDecimal",0,0,"","","System","
+Performs division on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These function work significantly slower than usual `divide`.
+In case you don't really need controlled precision and/or need fast computation, consider using [divide](#divide).
+:::
+
+**Syntax**
+
+```sql
+divideDecimal(a, b[, result_scale])
+```
+
+**Arguments**
+
+-   `a` — First value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `b` — Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `result_scale` — Scale of result: [Int/UInt](../../sql-reference/data-types/int-uint.md).
+
+**Returned value**
+
+-   The result of division with given scale.
+
+Type: [Decimal256](../../sql-reference/data-types/decimal.md).
+
+**Example**
+
+```text
+┌─divideDecimal(toDecimal256(-12, 0), toDecimal32(2.1, 1), 10)─┐
+│                                                -5.7142857142 │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**Difference from regular division:**
+```sql
+SELECT toDecimal64(-12, 1) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 1) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+```
+
+```text
+┌─divide(toDecimal64(-12, 1), toDecimal32(2.1, 1))─┐
+│                                             -5.7 │
+└──────────────────────────────────────────────────┘
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+```
+
+```sql
+SELECT toDecimal64(-12, 0) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 0) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+```
+
+```text
+DB::Exception: Decimal result's scale is less than argument's one: While processing toDecimal64(-12, 0) / toDecimal32(2.1, 1). (ARGUMENT_OUT_OF_BOUND)
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+```
+"
+"23.3.19.34.altinityfips","fullHostName",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayReduceInRanges",0,0,"","","System",""
+"23.3.19.34.altinityfips","ignore",0,0,"","","System",""
+"23.3.19.34.altinityfips","normalizeQuery",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractMinutes",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3Line",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitTest",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramSearchCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","acos",0,1,"","","System",""
+"23.3.19.34.altinityfips","accurateCastOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","empty",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramMinHashArg",0,0,"","","System",""
+"23.3.19.34.altinityfips","_CAST",0,1,"","","System",""
+"23.3.19.34.altinityfips","toDayOfYear",0,0,"","","System",""
+"23.3.19.34.altinityfips","bin",0,1,"","","System",""
+"23.3.19.34.altinityfips","bitSlice",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtract",0,0,"","","System",""
+"23.3.19.34.altinityfips","tumbleStart",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitShiftRight",0,0,"","","System",""
+"23.3.19.34.altinityfips","tan",0,1,"","","System",""
+"23.3.19.34.altinityfips","substring",0,1,"","","System",""
+"23.3.19.34.altinityfips","tryBase58Decode",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapMax",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetOriginIndexFromUnidirectionalEdge",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramDistanceCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimalString",0,1,"","","System","
+Returns string representation of a number. First argument is the number of any numeric type,
+second argument is the desired number of digits in fractional part. Returns String.
+
+        "
+"23.3.19.34.altinityfips","URLPathHierarchy",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3HexRing",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetUnidirectionalEdgesFromHexagon",0,0,"","","System",""
+"23.3.19.34.altinityfips","simpleJSONExtractUInt",0,0,"","","System",""
+"23.3.19.34.altinityfips","normalizedQueryHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitTestAll",0,0,"","","System",""
+"23.3.19.34.altinityfips","pi",0,1,"","","System",""
+"23.3.19.34.altinityfips","randCanonical",0,0,"","","System","
+The function generates pseudo random results with independent and identically distributed uniformly distributed values in [0, 1).
+Non-deterministic. Return type is Float64.
+        "
+"23.3.19.34.altinityfips","sleepEachRow",0,0,"","","System",""
+"23.3.19.34.altinityfips","__bitSwapLastTwo",0,0,"","","System",""
+"23.3.19.34.altinityfips","fromModifiedJulianDay",0,0,"","","System",""
+"23.3.19.34.altinityfips","CRC32",0,1,"","","System",""
+"23.3.19.34.altinityfips","multiSearchFirstPositionUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","addMilliseconds",0,0,"","","System",""
+"23.3.19.34.altinityfips","byteSize",0,0,"","","System",""
+"23.3.19.34.altinityfips","intExp2",0,0,"","","System",""
+"23.3.19.34.altinityfips","assumeNotNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","wordShingleMinHashArg",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramMinHashArgUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramMinHashArgCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutToFirstSignificantSubdomainRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomain` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"23.3.19.34.altinityfips","wordShingleMinHashUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayDifference",0,0,"","","System",""
+"23.3.19.34.altinityfips","wordShingleMinHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramMinHashCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","toMonth",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramMinHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","formatRowNoNewline",0,0,"","","System",""
+"23.3.19.34.altinityfips","wordShingleSimHashCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","wordShingleSimHashUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayCumSum",0,0,"","","System",""
+"23.3.19.34.altinityfips","wordShingleSimHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","finalizeAggregation",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramSimHashCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramSimHashCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramSimHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","toTimezone",0,0,"","","System",""
+"23.3.19.34.altinityfips","currentDatabase",0,0,"","","System",""
+"23.3.19.34.altinityfips","splitByRegexp",0,0,"","","System",""
+"23.3.19.34.altinityfips","rowNumberInBlock",0,0,"","","System",""
+"23.3.19.34.altinityfips","splitByString",0,0,"","","System",""
+"23.3.19.34.altinityfips","s2CapContains",0,0,"","","System",""
+"23.3.19.34.altinityfips","identity",0,0,"","","System",""
+"23.3.19.34.altinityfips","ascii",0,1,"","","System","
+Returns the ASCII code point of the first character of str.  The result type is Int32.
+
+If s is empty, the result is 0. If the first character is not an ASCII character or not part of the Latin-1 Supplement range of UTF-16, the result is undefined)
+        "
+"23.3.19.34.altinityfips","s2RectUnion",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramDistanceUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","MD4",0,0,"","","System",""
+"23.3.19.34.altinityfips","moduloOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","sipHash64Keyed",0,0,"","","System",""
+"23.3.19.34.altinityfips","extractAll",0,0,"","","System",""
+"23.3.19.34.altinityfips","age",0,1,"","","System",""
+"23.3.19.34.altinityfips","dictGetOrNull",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise NULL.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","regionToDistrict",0,0,"","","System",""
+"23.3.19.34.altinityfips","unbin",0,1,"","","System",""
+"23.3.19.34.altinityfips","reinterpret",0,0,"","","System",""
+"23.3.19.34.altinityfips","modulo",0,0,"","","System",""
+"23.3.19.34.altinityfips","lowCardinalityKeys",0,0,"","","System",""
+"23.3.19.34.altinityfips","nullInIgnoreSet",0,0,"","","System",""
+"23.3.19.34.altinityfips","geoToS2",0,0,"","","System",""
+"23.3.19.34.altinityfips","blockSerializedSize",0,0,"","","System",""
+"23.3.19.34.altinityfips","dateTrunc",0,0,"","","System",""
+"23.3.19.34.altinityfips","generateUUIDv4",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3ExactEdgeLengthRads",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractBool",0,0,"","","System",""
+"23.3.19.34.altinityfips","tupleHammingDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramSearchUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","getTypeSerializationStreams",0,0,"","","System",""
+"23.3.19.34.altinityfips","minSampleSizeConversion",0,0,"","","System",""
+"23.3.19.34.altinityfips","jumpConsistentHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseTimeDelta",0,0,"","","System",""
+"23.3.19.34.altinityfips","formatReadableSize",0,0,"","","System",""
+"23.3.19.34.altinityfips","toNullable",0,0,"","","System",""
+"23.3.19.34.altinityfips","concat",0,1,"","","System",""
+"23.3.19.34.altinityfips","demangle",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayStringConcat",0,0,"","","System",""
+"23.3.19.34.altinityfips","splitByNonAlpha",0,0,"","","System",""
+"23.3.19.34.altinityfips","hasSubstr",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt64OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","__bitBoolMaskAnd",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetIndexesFromUnidirectionalEdge",0,0,"","","System",""
+"23.3.19.34.altinityfips","sipHash64",0,0,"","","System",""
+"23.3.19.34.altinityfips","randNormal",0,0,"","","System","
+Returns a random number from the normal distribution.
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","catboostEvaluate",0,0,"","","System",""
+"23.3.19.34.altinityfips","divide",0,0,"","","System",""
+"23.3.19.34.altinityfips","encrypt",0,0,"","","System",""
+"23.3.19.34.altinityfips","intDivOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","minus",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramMinHashUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","sqrt",0,1,"","","System",""
+"23.3.19.34.altinityfips","ngramMinHashArgCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","endsWith",0,0,"","","System",""
+"23.3.19.34.altinityfips","evalMLMethod",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayInt32",0,0,"","","System",""
+"23.3.19.34.altinityfips","extract",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchFirstIndexCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","rowNumberInAllBlocks",0,0,"","","System",""
+"23.3.19.34.altinityfips","countDigits",0,0,"","","System",""
+"23.3.19.34.altinityfips","replaceRegexpOne",0,0,"","","System",""
+"23.3.19.34.altinityfips","factorial",0,1,"","","System","
+Computes the factorial of an integer value. It works with any native integer type including UInt(8|16|32|64) and Int(8|16|32|64). The return type is UInt64.
+
+The factorial of 0 is 1. Likewise, the factorial() function returns 1 for any negative value. The maximum positive value for the input argument is 20, a value of 21 or greater will cause exception throw.
+"
+"23.3.19.34.altinityfips","tryBase64Decode",0,0,"","","System",""
+"23.3.19.34.altinityfips","mapFilter",0,0,"","","System",""
+"23.3.19.34.altinityfips","cbrt",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfMinute",0,0,"","","System",""
+"23.3.19.34.altinityfips","LpNormalize",0,0,"","","System",""
+"23.3.19.34.altinityfips","tokens",0,0,"","","System",""
+"23.3.19.34.altinityfips","domain",0,0,"","","System","
+Extracts the hostname from a URL.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        "
+"23.3.19.34.altinityfips","toDecimal64OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngrams",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime32BestEffortOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutToFirstSignificantSubdomainWithWWW",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"", without stripping ""www""."
+"23.3.19.34.altinityfips","wordShingleSimHashCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitXor",0,0,"","","System",""
+"23.3.19.34.altinityfips","lcm",0,0,"","","System",""
+"23.3.19.34.altinityfips","detectLanguage",0,0,"","","System",""
+"23.3.19.34.altinityfips","formatRow",0,0,"","","System",""
+"23.3.19.34.altinityfips","countMatchesCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","toFloat32OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3IndexesAreNeighbors",0,0,"","","System",""
+"23.3.19.34.altinityfips","tupleDivideByNumber",0,0,"","","System",""
+"23.3.19.34.altinityfips","caseWithoutExpression",0,0,"","","System",""
+"23.3.19.34.altinityfips","fromUnixTimestamp64Milli",0,0,"","","System",""
+"23.3.19.34.altinityfips","randLogNormal",0,0,"","","System","
+Returns a random number from the lognormal distribution (a distribution of a random variable whose logarithm is normally distributed).
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","generateULID",0,0,"","","System","
+Generates a Universally Unique Lexicographically Sortable Identifier (ULID).
+This function takes an optional argument, the value of which is discarded to generate different values in case the function is called multiple times.
+The function returns a value of type FixedString(26).
+"
+"23.3.19.34.altinityfips","bar",0,0,"","","System",""
+"23.3.19.34.altinityfips","fromModifiedJulianDayOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmaskToList",0,0,"","","System",""
+"23.3.19.34.altinityfips","shardCount",0,0,"","","System",""
+"23.3.19.34.altinityfips","shardNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","rand",0,1,"","","System",""
+"23.3.19.34.altinityfips","readWKTRing",0,0,"","","System",""
+"23.3.19.34.altinityfips","caseWithExpression",0,0,"","","System",""
+"23.3.19.34.altinityfips","geoDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","greatCircleDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv6StringToNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetInt64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","greatCircleAngle",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUnixTimestamp",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetRes0Indexes",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalMonth",0,0,"","","System",""
+"23.3.19.34.altinityfips","defaultProfiles",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayReverse",0,0,"","","System",""
+"23.3.19.34.altinityfips","now64",0,1,"","","System",""
+"23.3.19.34.altinityfips","reverseDNSQuery",0,0,"","","System","Performs a reverse DNS query to get the PTR records associated with the IP address.
+
+                **Syntax**
+
+                ``` sql
+                reverseDNSQuery(address)
+                ```
+
+                This function performs reverse DNS resolutions on both IPv4 and IPv6.
+
+                **Arguments**
+
+                -   `address` — An IPv4 or IPv6 address. [String](../../sql-reference/data-types/string.md).
+
+                **Returned value**
+
+                -   Associated domains (PTR records).
+
+                Type: Type: [Array(String)](../../sql-reference/data-types/array.md).
+
+                **Example**
+
+                Query:
+
+                ``` sql
+                SELECT reverseDNSQuery('192.168.0.2');
+                ```
+
+                Result:
+
+                ``` text
+                ┌─reverseDNSQuery('192.168.0.2')────────────┐
+                │ ['test2.example.com','test3.example.com'] │
+                └───────────────────────────────────────────┘
+                ```
+                "
+"23.3.19.34.altinityfips","extractAllGroupsHorizontal",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3ExactEdgeLengthKm",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayFilter",0,0,"","","System",""
+"23.3.19.34.altinityfips","defaultRoles",0,0,"","","System",""
+"23.3.19.34.altinityfips","toQuarter",0,0,"","","System",""
+"23.3.19.34.altinityfips","countMatches",0,0,"","","System",""
+"23.3.19.34.altinityfips","enabledRoles",0,0,"","","System",""
+"23.3.19.34.altinityfips","currentRoles",0,0,"","","System",""
+"23.3.19.34.altinityfips","dateTimeToSnowflake",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutToFirstSignificantSubdomain",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"" (see documentation of the `firstSignificantSubdomain`)."
+"23.3.19.34.altinityfips","arrayEnumerateUniqRanked",0,0,"","","System",""
+"23.3.19.34.altinityfips","CRC64",0,1,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayDate",0,0,"","","System",""
+"23.3.19.34.altinityfips","CRC32IEEE",0,1,"","","System",""
+"23.3.19.34.altinityfips","erf",0,0,"","","System",""
+"23.3.19.34.altinityfips","trimBoth",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsUInt8",0,0,"","","System",""
+"23.3.19.34.altinityfips","atanh",0,0,"","","System",""
+"23.3.19.34.altinityfips","encodeURLComponent",0,0,"","","System",""
+"23.3.19.34.altinityfips","wordShingleMinHashArgCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetResolution",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramSearch",0,0,"","","System",""
+"23.3.19.34.altinityfips","lessOrEquals",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractQuarters",0,0,"","","System",""
+"23.3.19.34.altinityfips","fromUnixTimestamp64Nano",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUUIDOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetUnidirectionalEdge",0,0,"","","System",""
+"23.3.19.34.altinityfips","positiveModulo",0,1,"","","System","
+Calculates the remainder when dividing `a` by `b`. Similar to function `modulo` except that `positiveModulo` always return non-negative number.
+Returns the difference between `a` and the nearest integer not greater than `a` divisible by `b`.
+In other words, the function returning the modulus (modulo) in the terms of Modular Arithmetic.
+        "
+"23.3.19.34.altinityfips","JSONHas",0,0,"","","System",""
+"23.3.19.34.altinityfips","getServerPort",0,0,"","","System",""
+"23.3.19.34.altinityfips","runningDifference",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayPushBack",0,0,"","","System",""
+"23.3.19.34.altinityfips","hopEnd",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayAvg",0,0,"","","System",""
+"23.3.19.34.altinityfips","degrees",0,1,"","","System",""
+"23.3.19.34.altinityfips","concatWithSeparator",0,0,"","","System","
+Returns the concatenation strings separated by string separator. Syntax: concatWithSeparator(sep, expr1, expr2, expr3...)
+        "
+"23.3.19.34.altinityfips","dictGetDateTime",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the DateTime if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","h3ToGeoBoundary",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchAnyUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","mapApply",0,0,"","","System",""
+"23.3.19.34.altinityfips","atan",0,1,"","","System",""
+"23.3.19.34.altinityfips","formatDateTimeInJodaSyntax",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv4StringToNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","positionUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","hasToken",0,0,"","","System","Performs lookup of needle in haystack using tokenbf_v1 index."
+"23.3.19.34.altinityfips","hypot",0,1,"","","System",""
+"23.3.19.34.altinityfips","protocol",0,0,"","","System",""
+"23.3.19.34.altinityfips","if",0,1,"","","System",""
+"23.3.19.34.altinityfips","toIntervalSecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","kostikConsistentHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","regionToContinent",0,0,"","","System",""
+"23.3.19.34.altinityfips","makeDate32",0,0,"","","System",""
+"23.3.19.34.altinityfips","ilike",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt64OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetUInt16",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt16 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","globalNotNullInIgnoreSet",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetUnidirectionalEdgeBoundary",0,0,"","","System",""
+"23.3.19.34.altinityfips","globalNullInIgnoreSet",0,0,"","","System",""
+"23.3.19.34.altinityfips","hasAll",0,0,"","","System",""
+"23.3.19.34.altinityfips","toTime",0,0,"","","System",""
+"23.3.19.34.altinityfips","globalNotInIgnoreSet",0,0,"","","System",""
+"23.3.19.34.altinityfips","splitByChar",0,0,"","","System",""
+"23.3.19.34.altinityfips","toRelativeDayNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","notInIgnoreSet",0,0,"","","System",""
+"23.3.19.34.altinityfips","globalInIgnoreSet",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetUUID",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UUID if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","inIgnoreSet",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayConcat",0,0,"","","System",""
+"23.3.19.34.altinityfips","globalNotNullIn",0,0,"","","System",""
+"23.3.19.34.altinityfips","notNullIn",0,0,"","","System",""
+"23.3.19.34.altinityfips","globalNullIn",0,0,"","","System",""
+"23.3.19.34.altinityfips","dateTime64ToSnowflake",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetInt8OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int8 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","addressToLine",0,0,"","","System",""
+"23.3.19.34.altinityfips","globalNotIn",0,0,"","","System",""
+"23.3.19.34.altinityfips","ifNull",0,1,"","","System",""
+"23.3.19.34.altinityfips","normalizeQueryKeepNames",0,0,"","","System",""
+"23.3.19.34.altinityfips","xxHash64",0,0,"","","System",""
+"23.3.19.34.altinityfips","in",0,0,"","","System",""
+"23.3.19.34.altinityfips","firstSignificantSubdomain",0,0,"","","System","
+Returns the ""first significant subdomain"".
+
+The first significant subdomain is a second-level domain if it is 'com', 'net', 'org', or 'co'.
+Otherwise, it is a third-level domain.
+
+For example, firstSignificantSubdomain('https://news.clickhouse.com/') = 'clickhouse', firstSignificantSubdomain ('https://news.clickhouse.com.tr/') = 'clickhouse'.
+
+The list of ""insignificant"" second-level domains and other implementation details may change in the future.
+        "
+"23.3.19.34.altinityfips","h3HexAreaKm2",0,0,"","","System",""
+"23.3.19.34.altinityfips","rand64",0,0,"","","System",""
+"23.3.19.34.altinityfips","connectionId",0,1,"","","System",""
+"23.3.19.34.altinityfips","ngramDistanceCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","startsWith",0,0,"","","System",""
+"23.3.19.34.altinityfips","initialQueryID",0,0,"","","System",""
+"23.3.19.34.altinityfips","murmurHash2_64",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetBaseCell",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmapHasAll",0,0,"","","System",""
+"23.3.19.34.altinityfips","base58Decode",0,0,"","","System",""
+"23.3.19.34.altinityfips","regionToTopContinent",0,0,"","","System",""
+"23.3.19.34.altinityfips","cityHash64",0,0,"","","System",""
+"23.3.19.34.altinityfips","intDiv",0,0,"","","System",""
+"23.3.19.34.altinityfips","intExp10",0,0,"","","System",""
+"23.3.19.34.altinityfips","errorCodeToName",0,0,"","","System",""
+"23.3.19.34.altinityfips","fromUnixTimestampInJodaSyntax",0,0,"","","System",""
+"23.3.19.34.altinityfips","log",0,1,"","","System",""
+"23.3.19.34.altinityfips","randomFixedString",0,0,"","","System",""
+"23.3.19.34.altinityfips","toWeek",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfHour",0,0,"","","System",""
+"23.3.19.34.altinityfips","isDecimalOverflow",0,0,"","","System",""
+"23.3.19.34.altinityfips","encodeURLFormComponent",0,0,"","","System",""
+"23.3.19.34.altinityfips","getSizeOfEnumType",0,0,"","","System",""
+"23.3.19.34.altinityfips","detectLanguageMixed",0,0,"","","System",""
+"23.3.19.34.altinityfips","tumble",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfInterval",0,0,"","","System",""
+"23.3.19.34.altinityfips","hasTokenCaseInsensitiveOrNull",0,1,"","","System","Performs case insensitive lookup of needle in haystack using tokenbf_v1 index. Returns null if needle is ill-formed."
+"23.3.19.34.altinityfips","multiFuzzyMatchAnyIndex",0,0,"","","System",""
+"23.3.19.34.altinityfips","isZeroOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","lower",0,1,"","","System",""
+"23.3.19.34.altinityfips","countEqual",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONArrayLength",0,0,"","","System","Returns the number of elements in the outermost JSON array. The function returns NULL if input JSON string is invalid."
+"23.3.19.34.altinityfips","asin",0,1,"","","System","
+Calculates the arcsine of the argument.
+
+Takes arbitrary numeric type, which includes floating point and integer numbers, as well as big integers and decimals and returns Float64.
+
+For arguments in range [-1, 1] it returns the value in range of [-pi() / 2, pi() / 2].
+
+It represents an inverse function to function 'sin' on this range:
+[example:inverse]
+
+It always returns Float64, even if the argument has Float32 type:
+[example:float32]
+
+For arguments outside of this range, it returns nan:
+[example:nan]
+
+Every self-respectful data scientist knows how to apply arcsine to improve ads click-through rate with ClickHouse.
+For more details, see [https://en.wikipedia.org/wiki/Inverse_trigonometric_functions].
+"
+"23.3.19.34.altinityfips","left",0,1,"","","System",""
+"23.3.19.34.altinityfips","runningDifferenceStartingWithFirstValue",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3CellAreaM2",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3PointDistM",0,0,"","","System",""
+"23.3.19.34.altinityfips","tumbleEnd",0,0,"","","System",""
+"23.3.19.34.altinityfips","isInfinite",0,0,"","","System",""
+"23.3.19.34.altinityfips","lemmatize",0,0,"","","System",""
+"23.3.19.34.altinityfips","reverseUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","murmurHash3_64",0,0,"","","System",""
+"23.3.19.34.altinityfips","rightPad",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitNot",0,0,"","","System",""
+"23.3.19.34.altinityfips","lengthUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfFiveMinutes",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsUInt128",0,0,"","","System",""
+"23.3.19.34.altinityfips","lgamma",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt16",0,0,"","","System",""
+"23.3.19.34.altinityfips","reverse",0,1,"","","System",""
+"23.3.19.34.altinityfips","filesystemUnreserved",0,0,"","","System",""
+"23.3.19.34.altinityfips","filesystemCapacity",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsDate",0,0,"","","System",""
+"23.3.19.34.altinityfips","filesystemAvailable",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime",0,0,"","","System",""
+"23.3.19.34.altinityfips","like",0,0,"","","System",""
+"23.3.19.34.altinityfips","SHA224",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3kRing",0,0,"","","System",""
+"23.3.19.34.altinityfips","log2",0,1,"","","System",""
+"23.3.19.34.altinityfips","exp10",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIPv6OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIPv4OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","L2SquaredDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayInt64",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal256OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","partitionId",0,0,"","","System",""
+"23.3.19.34.altinityfips","roundToExp2",0,0,"","","System",""
+"23.3.19.34.altinityfips","mapSubtract",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal32OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutToFirstSignificantSubdomainWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainWithWWW` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"23.3.19.34.altinityfips","toDateTimeOrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","addMinutes",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDate32OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","translate",0,0,"","","System",""
+"23.3.19.34.altinityfips","trimRight",0,0,"","","System",""
+"23.3.19.34.altinityfips","runningConcurrency",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateOrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","plus",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt256OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetIPv4",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the IPv4 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","nullIn",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal128OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","extractURLParameters",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt16OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","sipHash128Keyed",0,0,"","","System",""
+"23.3.19.34.altinityfips","addMicroseconds",0,0,"","","System",""
+"23.3.19.34.altinityfips","formatDateTime",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt8OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","normalizeUTF8NFD",0,0,"","","System",""
+"23.3.19.34.altinityfips","leftPadUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt8OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","CAST",0,1,"","","System",""
+"23.3.19.34.altinityfips","s2RectIntersection",0,0,"","","System",""
+"23.3.19.34.altinityfips","mapContainsKeyLike",0,0,"","","System",""
+"23.3.19.34.altinityfips","regexpQuoteMeta",0,0,"","","System",""
+"23.3.19.34.altinityfips","notNullInIgnoreSet",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIPv4",0,0,"","","System",""
+"23.3.19.34.altinityfips","mapValues",0,0,"","","System",""
+"23.3.19.34.altinityfips","toTypeName",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsUnionCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","char",0,1,"","","System",""
+"23.3.19.34.altinityfips","mapContains",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateTime64OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","regionHierarchy",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsWithinCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","materialize",0,0,"","","System",""
+"23.3.19.34.altinityfips","upperUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchAnyCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","minSampleSizeContinous",0,0,"","","System",""
+"23.3.19.34.altinityfips","toYYYYMM",0,0,"","","System",""
+"23.3.19.34.altinityfips","domainWithoutWWWRFC",0,0,"","","System","Similar to `domainWithoutWWW` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"23.3.19.34.altinityfips","arrayEnumerateDenseRanked",0,0,"","","System",""
+"23.3.19.34.altinityfips","queryString",0,0,"","","System",""
+"23.3.19.34.altinityfips","getSubcolumn",0,0,"","","System","
+Receives the expression or identifier and constant string with the name of subcolumn.
+
+Returns requested subcolumn extracted from the expression.
+"
+"23.3.19.34.altinityfips","reinterpretAsUUID",0,0,"","","System",""
+"23.3.19.34.altinityfips","simpleJSONExtractFloat",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3HexAreaM2",0,0,"","","System",""
+"23.3.19.34.altinityfips","toYYYYMMDDhhmmss",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3NumHexagons",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime64BestEffortUSOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","moduloLegacy",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetInt32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","mortonEncode",0,0,"","","System","
+Calculates Morton encoding (ZCurve) for a list of unsigned integers
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts up to 8 unsigned integers as arguments and produces a UInt64 code.
+[example:simple]
+
+Expanded: accepts a range mask (tuple) as a first argument and up to 8 unsigned integers as other arguments.
+Each number in mask configures the amount of range expansion
+1 - no expansion
+2 - 2x expansion
+3 - 3x expansion
+....
+Up to 8x expansion.
+[example:range_expanded]
+Note: tuple size must be equal to the number of the other arguments
+
+Range expansion can be beneficial when you need a similar distribution for arguments with wildly different ranges (or cardinality)
+For example: 'IP Address' (0...FFFFFFFF) and 'Country code' (0...FF)
+
+Morton encoding for one argument is always the argument itself.
+[example:identity]
+Produces: `1`
+
+You can expand one argument too:
+[example:identity_expanded]
+Produces: `32768`
+
+The function also accepts columns as arguments:
+[example:from_table]
+
+But the range tuple must still be a constant:
+[example:from_table_range]
+
+Please note that you can fit only so much bits of information into Morton code as UInt64 has.
+Two arguments will have a range of maximum 2^32 (64/2) each
+Three arguments: range of max 2^21 (64/3) each
+And so on, all overflow will be clamped to zero
+"
+"23.3.19.34.altinityfips","mapExtractKeyLike",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv6StringToNumOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayResize",0,0,"","","System",""
+"23.3.19.34.altinityfips","randBernoulli",0,0,"","","System","
+Returns a random number from the Bernoulli distribution.
+Accepts one parameter - probability of success.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","addWeeks",0,0,"","","System",""
+"23.3.19.34.altinityfips","rightPadUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","uniqThetaIntersect",0,0,"","","System","
+Two uniqThetaSketch objects to do intersect calculation(set operation ∩), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","position",0,1,"","","System",""
+"23.3.19.34.altinityfips","cosh",0,0,"","","System",""
+"23.3.19.34.altinityfips","__bitBoolMaskOr",0,0,"","","System",""
+"23.3.19.34.altinityfips","geohashEncode",0,0,"","","System",""
+"23.3.19.34.altinityfips","formatReadableTimeDelta",0,0,"","","System",""
+"23.3.19.34.altinityfips","randExponential",0,0,"","","System","
+Returns a random number from the exponential distribution.
+Accepts one parameter - lambda value.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","randomString",0,0,"","","System",""
+"23.3.19.34.altinityfips","normalizeUTF8NFKD",0,0,"","","System",""
+"23.3.19.34.altinityfips","sigmoid",0,0,"","","System",""
+"23.3.19.34.altinityfips","normalizeUTF8NFC",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchAllPositions",0,0,"","","System",""
+"23.3.19.34.altinityfips","subBitmap",0,0,"","","System",""
+"23.3.19.34.altinityfips","base64Decode",0,0,"","","System",""
+"23.3.19.34.altinityfips","defaultValueOfArgumentType",0,0,"","","System",""
+"23.3.19.34.altinityfips","mortonDecode",0,0,"","","System","
+Decodes a Morton encoding (ZCurve) into the corresponding unsigned integer tuple
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts a resulting tuple size as a first argument and the code as a second argument.
+[example:simple]
+Will decode into: `(1,2,3,4)`
+The resulting tuple size cannot be more than 8
+
+Expanded: accepts a range mask (tuple) as a first argument and the code as a second argument.
+Each number in mask configures the amount of range shrink
+1 - no shrink
+2 - 2x shrink
+3 - 3x shrink
+....
+Up to 8x shrink.
+[example:range_shrank]
+Note: see mortonEncode() docs on why range change might be beneficial.
+Still limited to 8 numbers at most.
+
+Morton code for one argument is always the argument itself (as a tuple).
+[example:identity]
+Produces: `(1)`
+
+You can shrink one argument too:
+[example:identity_shrank]
+Produces: `(128)`
+
+The function accepts a column of codes as a second argument:
+[example:from_table]
+
+The range tuple must be a constant:
+[example:from_table_range]
+"
+"23.3.19.34.altinityfips","roundDuration",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchFirstIndexCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","positionCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime32BestEffortOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","blockNumber",0,0,"","","System",""
+"23.3.19.34.altinityfips","rightUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutURLParameter",0,0,"","","System",""
+"23.3.19.34.altinityfips","max2",0,1,"","","System",""
+"23.3.19.34.altinityfips","multiSearchFirstPositionCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","indexOf",0,0,"","","System",""
+"23.3.19.34.altinityfips","uptime",0,0,"","","System",""
+"23.3.19.34.altinityfips","toModifiedJulianDayOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiplyDecimal",0,0,"","","System","
+Performs multiplication on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These functions work significantly slower than usual `multiply`.
+In case you don't really need controlled precision and/or need fast computation, consider using [multiply](#multiply)
+:::
+
+**Syntax**
+
+```sql
+multiplyDecimal(a, b[, result_scale])
+```
+
+**Arguments**
+
+-   `a` — First value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `b` — Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `result_scale` — Scale of result: [Int/UInt](../../sql-reference/data-types/int-uint.md).
+
+**Returned value**
+
+-   The result of multiplication with given scale.
+
+Type: [Decimal256](../../sql-reference/data-types/decimal.md).
+
+**Example**
+
+```text
+┌─multiplyDecimal(toDecimal256(-12, 0), toDecimal32(-2.1, 1), 1)─┐
+│                                                           25.2 │
+└────────────────────────────────────────────────────────────────┘
+```
+
+**Difference from regular multiplication:**
+```sql
+SELECT toDecimal64(-12.647, 3) * toDecimal32(2.1239, 4);
+SELECT toDecimal64(-12.647, 3) as a, toDecimal32(2.1239, 4) as b, multiplyDecimal(a, b);
+```
+
+```text
+┌─multiply(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                               -26.8609633 │
+└───────────────────────────────────────────────────────────┘
+┌─multiplyDecimal(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                                         -26.8609 │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+```sql
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    multiplyDecimal(a, b);
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    a * b;
+```
+
+```text
+┌─────────────a─┬─────────────b─┬─multiplyDecimal(toDecimal64(-12.647987876, 9), toDecimal64(123.967645643, 9))─┐
+│ -12.647987876 │ 123.967645643 │                                                               -1567.941279108 │
+└───────────────┴───────────────┴───────────────────────────────────────────────────────────────────────────────┘
+Received exception from server (version 22.11.1):
+Code: 407. DB::Exception: Received from localhost:9000. DB::Exception: Decimal math overflow: While processing toDecimal64(-12.647987876, 9) AS a, toDecimal64(123.967645643, 9) AS b, a * b. (DECIMAL_OVERFLOW)
+```
+"
+"23.3.19.34.altinityfips","alphaTokens",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayFirstIndex",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayPartialShuffle",0,1,"","","System","
+Returns an array of the same size as the original array where elements in range [1..limit] are a random
+subset of the original array. Remaining (limit..n] shall contain the elements not in [1..limit] range in undefined order.
+Value of limit shall be in range [1..n]. Values outside of that range are equivalent to performing full arrayShuffle:
+[example:no_limit1]
+[example:no_limit2]
+
+Note: this function will not materialize constants:
+[example:materialize]
+
+If no seed is provided a random one will be used:
+[example:random_seed]
+
+It is possible to override the seed to produce stable results:
+[example:explicit_seed]
+"
+"23.3.19.34.altinityfips","negate",0,0,"","","System",""
+"23.3.19.34.altinityfips","joinGet",0,0,"","","System",""
+"23.3.19.34.altinityfips","geoToH3",0,0,"","","System",""
+"23.3.19.34.altinityfips","firstSignificantSubdomainCustom",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUnixTimestamp64Milli",0,0,"","","System",""
+"23.3.19.34.altinityfips","simpleJSONExtractBool",0,0,"","","System",""
+"23.3.19.34.altinityfips","normalizeUTF8NFKC",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeBestEffortUSOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","detectProgrammingLanguage",0,0,"","","System",""
+"23.3.19.34.altinityfips","neighbor",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt256OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStringCutToZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt8OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","not",0,1,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsInt8",0,0,"","","System",""
+"23.3.19.34.altinityfips","normalizedQueryHashKeepNames",0,0,"","","System",""
+"23.3.19.34.altinityfips","tryDecrypt",0,0,"","","System","Similar to `decrypt`, but returns NULL if decryption fails because of using the wrong key."
+"23.3.19.34.altinityfips","log10",0,1,"","","System",""
+"23.3.19.34.altinityfips","globalIn",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractArrayRaw",0,0,"","","System",""
+"23.3.19.34.altinityfips","version",0,1,"","","System",""
+"23.3.19.34.altinityfips","joinGetOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","notILike",0,0,"","","System",""
+"23.3.19.34.altinityfips","geohashDecode",0,0,"","","System",""
+"23.3.19.34.altinityfips","toModifiedJulianDay",0,0,"","","System",""
+"23.3.19.34.altinityfips","notLike",0,0,"","","System",""
+"23.3.19.34.altinityfips","fragment",0,0,"","","System",""
+"23.3.19.34.altinityfips","match",0,0,"","","System",""
+"23.3.19.34.altinityfips","greater",0,0,"","","System",""
+"23.3.19.34.altinityfips","toRelativeMonthNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayString",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitOr",0,0,"","","System",""
+"23.3.19.34.altinityfips","sleep",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayElement",0,0,"","","System",""
+"23.3.19.34.altinityfips","tgamma",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayToSingle",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsInt128",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3ToChildren",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractNanoseconds",0,0,"","","System",""
+"23.3.19.34.altinityfips","queryStringAndFragment",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt32OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayFloat32",0,0,"","","System",""
+"23.3.19.34.altinityfips","MACStringToOUI",0,0,"","","System",""
+"23.3.19.34.altinityfips","file",0,0,"","","System",""
+"23.3.19.34.altinityfips","roundAge",0,0,"","","System",""
+"23.3.19.34.altinityfips","simpleJSONExtractString",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt128",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayUInt64",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3EdgeAngle",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonPerimeterCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","exp2",0,0,"","","System",""
+"23.3.19.34.altinityfips","concatAssumeInjective",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3IsValid",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayUInt32",0,0,"","","System",""
+"23.3.19.34.altinityfips","dotProduct",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayUInt16",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateTimeOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","nullIf",0,1,"","","System",""
+"23.3.19.34.altinityfips","toMonday",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetInt32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","dictGetIPv6OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the IPv6 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","toYear",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeInJodaSyntaxOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateTime64OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractSeconds",0,0,"","","System",""
+"23.3.19.34.altinityfips","tid",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","countSubstrings",0,1,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsFloat64",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","tupleMultiplyByNumber",0,0,"","","System",""
+"23.3.19.34.altinityfips","mapFromArrays",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutToFirstSignificantSubdomainCustomWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustomWithWWW` but follows stricter rules according to RFC 3986."
+"23.3.19.34.altinityfips","multiSearchAllPositionsCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","randConstant",0,0,"","","System",""
+"23.3.19.34.altinityfips","DATE",0,1,"","","System",""
+"23.3.19.34.altinityfips","h3CellAreaRads2",0,0,"","","System",""
+"23.3.19.34.altinityfips","pointInEllipses",0,0,"","","System",""
+"23.3.19.34.altinityfips","splitByWhitespace",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt256OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","pointInPolygon",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsIntersectionCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonPerimeterSpherical",0,0,"","","System",""
+"23.3.19.34.altinityfips","e",0,0,"","","System",""
+"23.3.19.34.altinityfips","buildId",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeInJodaSyntaxOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","FQDN",0,1,"","","System",""
+"23.3.19.34.altinityfips","mapUpdate",0,0,"","","System",""
+"23.3.19.34.altinityfips","currentProfiles",0,0,"","","System",""
+"23.3.19.34.altinityfips","isNull",0,1,"","","System",""
+"23.3.19.34.altinityfips","isNaN",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchAllPositionsCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractDays",0,0,"","","System",""
+"23.3.19.34.altinityfips","visibleWidth",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfWeek",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiFuzzyMatchAny",0,0,"","","System",""
+"23.3.19.34.altinityfips","flattenTuple",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsWithinSpherical",0,0,"","","System",""
+"23.3.19.34.altinityfips","timezoneOffset",0,0,"","","System",""
+"23.3.19.34.altinityfips","transform",0,0,"","","System",""
+"23.3.19.34.altinityfips","encodeXMLComponent",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3Distance",0,0,"","","System",""
+"23.3.19.34.altinityfips","L2Normalize",0,0,"","","System",""
+"23.3.19.34.altinityfips","pow",0,1,"","","System",""
+"23.3.19.34.altinityfips","toFloat32OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayDistinct",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetUInt8",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt8 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","emptyArrayUInt8",0,0,"","","System",""
+"23.3.19.34.altinityfips","positionCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","acosh",0,0,"","","System",""
+"23.3.19.34.altinityfips","toRelativeMinuteNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","IPv6NumToString",0,0,"","","System",""
+"23.3.19.34.altinityfips","throwIf",0,0,"","","System",""
+"23.3.19.34.altinityfips","randUniform",0,0,"","","System","
+Returns a random number from the uniform distribution in the specified range.
+Accepts two parameters - minimum bound and maximum bound.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","initializeAggregation",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateTime64",0,0,"","","System",""
+"23.3.19.34.altinityfips","yesterday",0,0,"","","System",""
+"23.3.19.34.altinityfips","toBool",0,0,"","","System",""
+"23.3.19.34.altinityfips","randPoisson",0,0,"","","System","
+Returns a random number from the poisson distribution.
+Accepts one parameter - the mean number of occurrences.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","nowInBlock",0,0,"","","System",""
+"23.3.19.34.altinityfips","randNegativeBinomial",0,0,"","","System","
+Returns a random number from the negative binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","toUnixTimestamp64Micro",0,0,"","","System",""
+"23.3.19.34.altinityfips","randBinomial",0,0,"","","System","
+Returns a random number from the binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","toInt32OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","randStudentT",0,0,"","","System","
+Returns a random number from the t-distribution.
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","aes_encrypt_mysql",0,0,"","","System",""
+"23.3.19.34.altinityfips","hasTokenOrNull",0,0,"","","System","Performs lookup of needle in haystack using tokenbf_v1 index. Returns null if needle is ill-formed."
+"23.3.19.34.altinityfips","tuple",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramMinHashCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt64OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","toISOYear",0,0,"","","System",""
+"23.3.19.34.altinityfips","randFisherF",0,0,"","","System","
+Returns a random number from the f-distribution.
+The F-distribution is the distribution of X = (S1 / d1) / (S2 / d2) where d1 and d2 are degrees of freedom.
+Accepts two parameters - degrees of freedom.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","reinterpretAsFixedString",0,0,"","","System",""
+"23.3.19.34.altinityfips","toLastDayOfMonth",0,0,"","","System",""
+"23.3.19.34.altinityfips","randomPrintableASCII",0,0,"","","System",""
+"23.3.19.34.altinityfips","snowflakeToDateTime",0,0,"","","System",""
+"23.3.19.34.altinityfips","notEquals",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsDateTime",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchAnyCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","s2GetNeighbors",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayAll",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalDay",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsFloat32",0,0,"","","System",""
+"23.3.19.34.altinityfips","topLevelDomain",0,0,"","","System","
+Extracts the the top-level domain from a URL.
+
+Returns an empty string if the argument cannot be parsed as a URL or does not contain a top-level domain.
+        "
+"23.3.19.34.altinityfips","greatest",0,1,"","","System",""
+"23.3.19.34.altinityfips","toStartOfMillisecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsInt64",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsInt16",0,0,"","","System",""
+"23.3.19.34.altinityfips","and",0,0,"","","System",""
+"23.3.19.34.altinityfips","detectLanguageUnknown",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsUInt256",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsUInt64",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractYears",0,0,"","","System",""
+"23.3.19.34.altinityfips","readWKTMultiPolygon",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsUInt16",0,0,"","","System",""
+"23.3.19.34.altinityfips","fromUnixTimestamp",0,0,"","","System",""
+"23.3.19.34.altinityfips","hasThreadFuzzer",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayAUC",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiMatchAllIndices",0,0,"","","System",""
+"23.3.19.34.altinityfips","replaceRegexpAll",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeInJodaSyntax",0,0,"","","System",""
+"23.3.19.34.altinityfips","timeSlot",0,0,"","","System",""
+"23.3.19.34.altinityfips","gcd",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDayOfMonth",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSON_EXISTS",0,0,"","","System",""
+"23.3.19.34.altinityfips","isIPAddressInRange",0,0,"","","System",""
+"23.3.19.34.altinityfips","toSecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","hiveHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","randomStringUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayLastOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfMonth",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfDay",0,0,"","","System",""
+"23.3.19.34.altinityfips","caseWithoutExpr",0,0,"","","System",""
+"23.3.19.34.altinityfips","floor",0,1,"","","System",""
+"23.3.19.34.altinityfips","bitTestAny",0,0,"","","System",""
+"23.3.19.34.altinityfips","least",0,1,"","","System",""
+"23.3.19.34.altinityfips","map",0,0,"","","System",""
+"23.3.19.34.altinityfips","wordShingleMinHashCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","s2CapUnion",0,0,"","","System",""
+"23.3.19.34.altinityfips","serverUUID",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt256OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonConvexHullCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","murmurHash3_32",0,0,"","","System",""
+"23.3.19.34.altinityfips","countSubstringsCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3ExactEdgeLengthM",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayFlatten",0,0,"","","System",""
+"23.3.19.34.altinityfips","dateName",0,1,"","","System",""
+"23.3.19.34.altinityfips","substringUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3UnidirectionalEdgeIsValid",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDate",0,0,"","","System",""
+"23.3.19.34.altinityfips","s2RectContains",0,0,"","","System",""
+"23.3.19.34.altinityfips","addQuarters",0,0,"","","System",""
+"23.3.19.34.altinityfips","cosineDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","right",0,1,"","","System",""
+"23.3.19.34.altinityfips","readWKTPolygon",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsSymDifferenceSpherical",0,0,"","","System",""
+"23.3.19.34.altinityfips","tanh",0,1,"","","System",""
+"23.3.19.34.altinityfips","dateDiff",0,1,"","","System",""
+"23.3.19.34.altinityfips","bitRotateRight",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayReverseSort",0,0,"","","System",""
+"23.3.19.34.altinityfips","hostName",0,0,"","","System",""
+"23.3.19.34.altinityfips","extractURLParameter",0,0,"","","System",""
+"23.3.19.34.altinityfips","zookeeperSessionUptime",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3ToParent",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayPartialReverseSort",0,0,"","","System","
+Returns an array of the same size as the original array where elements in range `[1..limit]`
+are sorted in descending order. Remaining elements `(limit..N]` shall contain elements in unspecified order.
+[example:simple_int]
+[example:simple_string]
+
+To retain only the sorted elements use `arrayResize`:
+[example:retain_sorted]
+
+If the `func` function is specified, sorting order is determined by the result of the `func`
+function applied to the elements of the array.
+[example:lambda_simple]
+
+If `func` accepts multiple arguments, the `arrayPartialSort` function is passed several arrays
+that the arguments of `func` will correspond to.
+[example:lambda_complex]
+
+For more details see documentation of `arraySort`.
+"
+"23.3.19.34.altinityfips","decodeURLComponent",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitAnd",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetUInt64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","firstSignificantSubdomainRFC",0,0,"","","System","Returns the ""first significant subdomain"" according to RFC 1034."
+"23.3.19.34.altinityfips","queryID",0,0,"","","System",""
+"23.3.19.34.altinityfips","path",0,0,"","","System",""
+"23.3.19.34.altinityfips","defaultValueOfTypeName",0,0,"","","System",""
+"23.3.19.34.altinityfips","tuplePlus",0,0,"","","System",""
+"23.3.19.34.altinityfips","wordShingleMinHashArgCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractWeeks",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayFirst",0,0,"","","System",""
+"23.3.19.34.altinityfips","accurateCastOrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","stem",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayReverseSplit",0,0,"","","System",""
+"23.3.19.34.altinityfips","transactionOldestSnapshot",0,0,"","","System",""
+"23.3.19.34.altinityfips","dumpColumnStructure",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchFirstIndex",0,0,"","","System",""
+"23.3.19.34.altinityfips","tcpPort",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractHours",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeBestEffortUS",0,0,"","","System",""
+"23.3.19.34.altinityfips","mapPopulateSeries",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime64BestEffortUS",0,0,"","","System",""
+"23.3.19.34.altinityfips","synonyms",0,1,"","","System",""
+"23.3.19.34.altinityfips","isFinite",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDayOfWeek",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsString",0,0,"","","System",""
+"23.3.19.34.altinityfips","trimLeft",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractInterval",0,0,"","","System","
+Adds an negated interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+"
+"23.3.19.34.altinityfips","toValidUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","abs",0,1,"","","System",""
+"23.3.19.34.altinityfips","arrayWithConstant",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfNanosecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalNanosecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","SHA256",0,0,"","","System",""
+"23.3.19.34.altinityfips","LpDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayMax",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUUIDOrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","LinfNormalize",0,0,"","","System",""
+"23.3.19.34.altinityfips","extractURLParameterNames",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetInt8",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int8 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","h3PointDistKm",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchAllPositionsUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","toYearWeek",0,0,"","","System",""
+"23.3.19.34.altinityfips","toFixedString",0,0,"","","System",""
+"23.3.19.34.altinityfips","extractAllGroupsVertical",0,0,"","","System",""
+"23.3.19.34.altinityfips","MACNumToString",0,0,"","","System",""
+"23.3.19.34.altinityfips","revision",0,1,"","","System",""
+"23.3.19.34.altinityfips","hasTokenCaseInsensitive",0,1,"","","System","Performs case insensitive lookup of needle in haystack using tokenbf_v1 index."
+"23.3.19.34.altinityfips","toStartOfYear",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal256",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiSearchFirstPositionCaseInsensitiveUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutFragment",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayCompact",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalWeek",0,0,"","","System",""
+"23.3.19.34.altinityfips","toRelativeSecondNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","replaceAll",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitShiftLeft",0,0,"","","System",""
+"23.3.19.34.altinityfips","netloc",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetIPv4OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the IPv4 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","meiliMatch",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayEnumerate",0,0,"","","System",""
+"23.3.19.34.altinityfips","exp",0,1,"","","System",""
+"23.3.19.34.altinityfips","tupleNegate",0,0,"","","System",""
+"23.3.19.34.altinityfips","toRelativeQuarterNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","widthBucket",0,0,"","","System","
+Returns the number of the bucket in which `operand` falls in a histogram having `count` equal-width buckets spanning the range `low` to `high`. Returns `0` if `operand < low`, and returns `count+1` if `operand >= high`.
+
+`operand`, `low`, `high` can be any native number type. `count` can only be unsigned native integer and its value cannot be zero.
+
+**Syntax**
+
+```sql
+widthBucket(operand, low, high, count)
+```
+
+There is also a case insensitive alias called `WIDTH_BUCKET` to provide compatibility with other databases.
+
+**Example**
+
+Query:
+[example:simple]
+
+Result:
+
+``` text
+┌─widthBucket(10.15, -8.6, 23, 18)─┐
+│                               11 │
+└──────────────────────────────────┘
+```
+"
+"23.3.19.34.altinityfips","toRelativeYearNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3IsResClassIII",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutQueryStringAndFragment",0,0,"","","System",""
+"23.3.19.34.altinityfips","repeat",0,1,"","","System",""
+"23.3.19.34.altinityfips","unhex",0,1,"","","System",""
+"23.3.19.34.altinityfips","IPv4ToIPv6",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfMicrosecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt8OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","regionToPopulation",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfISOYear",0,0,"","","System",""
+"23.3.19.34.altinityfips","murmurHash2_32",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfTenMinutes",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayEnumerateUniq",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitmaskToArray",0,0,"","","System",""
+"23.3.19.34.altinityfips","min2",0,1,"","","System",""
+"23.3.19.34.altinityfips","length",0,1,"","","System","
+Calculates the length of the string or array.
+
+For String or FixedString argument: calculates the number of bytes in string.
+[example:string1]
+
+For Array argument: calculates the number of elements in the array.
+[example:arr1]
+
+If applied for FixedString argument, the function is a constant expression:
+[example:constexpr]
+
+Please note that the number of bytes in a string is not the same as the number of Unicode ""code points""
+and it is not the same as the number of Unicode ""grapheme clusters"" (what we usually call ""characters"")
+and it is not the same as the visible string width.
+[example:unicode]
+
+It is ok to have ASCII NUL bytes in strings, and they will be counted as well.
+[example:nul]
+"
+"23.3.19.34.altinityfips","toHour",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfFifteenMinutes",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictHas",0,0,"","","System","
+Checks whether a key is present in a dictionary.
+Accepts 2 parameters: name of the dictionary, key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration.
+Returned value: 0 if there is no key, 1 if there is a key, type of UInt8
+"
+"23.3.19.34.altinityfips","enabledProfiles",0,0,"","","System",""
+"23.3.19.34.altinityfips","toYYYYMMDD",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt256OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayFirstOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","isNullable",0,0,"","","System",""
+"23.3.19.34.altinityfips","regexpExtract",0,0,"","","System","Extracts the first string in haystack that matches the regexp pattern and corresponds to the regex group index."
+"23.3.19.34.altinityfips","cutToFirstSignificantSubdomainCustomRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustom` but follows stricter rules according to RFC 3986."
+"23.3.19.34.altinityfips","multiMatchAnyIndex",0,0,"","","System",""
+"23.3.19.34.altinityfips","toFloat64OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayLast",0,0,"","","System",""
+"23.3.19.34.altinityfips","bitPositionsToArray",0,0,"","","System",""
+"23.3.19.34.altinityfips","xor",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt256",0,0,"","","System",""
+"23.3.19.34.altinityfips","sign",0,1,"","","System",""
+"23.3.19.34.altinityfips","mapKeys",0,0,"","","System",""
+"23.3.19.34.altinityfips","tupleElement",0,0,"","","System",""
+"23.3.19.34.altinityfips","addYears",0,0,"","","System",""
+"23.3.19.34.altinityfips","validateNestedArraySizes",0,0,"","","System",""
+"23.3.19.34.altinityfips","addHours",0,0,"","","System",""
+"23.3.19.34.altinityfips","getOSKernelVersion",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsUInt32",0,0,"","","System",""
+"23.3.19.34.altinityfips","greaterOrEquals",0,0,"","","System",""
+"23.3.19.34.altinityfips","upper",0,1,"","","System",""
+"23.3.19.34.altinityfips","bitmapTransform",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayShuffle",0,1,"","","System","
+Returns an array of the same size as the original array containing the elements in shuffled order.
+Elements are being reordered in such a way that each possible permutation of those elements has equal probability of appearance.
+
+Note: this function will not materialize constants:
+[example:materialize]
+
+If no seed is provided a random one will be used:
+[example:random_seed]
+
+It is possible to override the seed to produce stable results:
+[example:explicit_seed]
+"
+"23.3.19.34.altinityfips","toISOWeek",0,0,"","","System",""
+"23.3.19.34.altinityfips","reinterpretAsInt256",0,0,"","","System",""
+"23.3.19.34.altinityfips","hasAny",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalMicrosecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","L1Normalize",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiply",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIPv6",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDateTime32",0,0,"","","System",""
+"23.3.19.34.altinityfips","arraySplit",0,0,"","","System",""
+"23.3.19.34.altinityfips","caseWithExpr",0,0,"","","System",""
+"23.3.19.34.altinityfips","s2CellsIntersect",0,0,"","","System",""
+"23.3.19.34.altinityfips","decodeURLFormComponent",0,0,"","","System",""
+"23.3.19.34.altinityfips","L2Distance",0,0,"","","System",""
+"23.3.19.34.altinityfips","proportionsZTest",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayZip",0,0,"","","System",""
+"23.3.19.34.altinityfips","displayName",0,0,"","","System","
+Returns the value of `display_name` from config or server FQDN if not set.
+
+[example:displayName]
+"
+"23.3.19.34.altinityfips","L1Distance",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayFloat64",0,0,"","","System",""
+"23.3.19.34.altinityfips","LinfNorm",0,0,"","","System",""
+"23.3.19.34.altinityfips","less",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayInt8",0,0,"","","System",""
+"23.3.19.34.altinityfips","L2SquaredNorm",0,0,"","","System",""
+"23.3.19.34.altinityfips","formatReadableDecimalSize",0,0,"","","System","
+Accepts the size (number of bytes). Returns a rounded size with a suffix (KB, MB, etc.) as a string.
+"
+"23.3.19.34.altinityfips","lowerUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTime64BestEffortOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","domainRFC",0,0,"","","System","Similar to `domain` but follows stricter rules to be compatible with RFC 3986 and less performant."
+"23.3.19.34.altinityfips","coalesce",0,1,"","","System",""
+"23.3.19.34.altinityfips","basename",0,0,"","","System",""
+"23.3.19.34.altinityfips","ULIDStringToDateTime",0,0,"","","System","
+This function extracts the timestamp from a ULID and returns it as a DateTime64(3) typed value.
+The function expects the ULID to be provided as the first argument, which can be either a String or a FixedString(26) data type.
+An optional second argument can be passed to specify a timezone for the timestamp.
+"
+"23.3.19.34.altinityfips","JSONType",0,0,"","","System",""
+"23.3.19.34.altinityfips","addNanoseconds",0,0,"","","System",""
+"23.3.19.34.altinityfips","isConstant",0,0,"","","System",""
+"23.3.19.34.altinityfips","toRelativeHourNum",0,0,"","","System",""
+"23.3.19.34.altinityfips","hasColumnInTable",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayProduct",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsIntersectionSpherical",0,0,"","","System",""
+"23.3.19.34.altinityfips","TimeDiff",0,1,"","","System","
+Returns the difference between two dates or dates with time values. The difference is calculated in seconds units (see toRelativeSecondNum).
+It is same as `dateDiff` and was added only for MySQL support. `dateDiff` is preferred.
+
+Example:
+[example:typical]
+"
+"23.3.19.34.altinityfips","polygonAreaCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayUniq",0,0,"","","System",""
+"23.3.19.34.altinityfips","toIntervalYear",0,0,"","","System",""
+"23.3.19.34.altinityfips","addInterval",0,0,"","","System","
+Adds an interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+"
+"23.3.19.34.altinityfips","bitRotateLeft",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt16OrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","emptyArrayDateTime",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetFloat32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Float32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","h3PointDistRads",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsUnionSpherical",0,0,"","","System",""
+"23.3.19.34.altinityfips","arraySum",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetDateOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Date if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","wordShingleMinHashCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt128OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","addTupleOfIntervals",0,0,"","","System","
+Consecutively adds a tuple of intervals to a Date or a DateTime.
+[example:tuple]
+"
+"23.3.19.34.altinityfips","tupleMultiply",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutToFirstSignificantSubdomainCustom",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain. Accepts custom TLD list name.
+
+Can be useful if you need fresh TLD list or you have custom.
+        "
+"23.3.19.34.altinityfips","dictGetInt16OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int16 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","simpleJSONExtractInt",0,0,"","","System",""
+"23.3.19.34.altinityfips","addMonths",0,0,"","","System",""
+"23.3.19.34.altinityfips","leftUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","topLevelDomainRFC",0,0,"","","System","Similar to topLevelDomain, but conforms to RFC 3986."
+"23.3.19.34.altinityfips","has",0,0,"","","System",""
+"23.3.19.34.altinityfips","appendTrailingCharIfAbsent",0,0,"","","System",""
+"23.3.19.34.altinityfips","simpleJSONExtractRaw",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayJoin",0,0,"","","System",""
+"23.3.19.34.altinityfips","simpleJSONHas",0,0,"","","System",""
+"23.3.19.34.altinityfips","concatWithSeparatorAssumeInjective",0,0,"","","System","
+Same as concatWithSeparator, the difference is that you need to ensure that concatWithSeparator(sep, expr1, expr2, expr3...) → result is injective, it will be used for optimization of GROUP BY.
+
+The function is named “injective” if it always returns different result for different values of arguments. In other words: different arguments never yield identical result.
+        "
+"23.3.19.34.altinityfips","toDateTime64OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","leftPad",0,0,"","","System",""
+"23.3.19.34.altinityfips","fromUnixTimestamp64Micro",0,0,"","","System",""
+"23.3.19.34.altinityfips","range",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayPartialSort",0,0,"","","System","
+Returns an array of the same size as the original array where elements in range `[1..limit]`
+are sorted in ascending order. Remaining elements `(limit..N]` shall contain elements in unspecified order.
+[example:simple_int]
+[example:simple_string]
+
+To retain only the sorted elements use `arrayResize`:
+[example:retain_sorted]
+
+If the `func` function is specified, sorting order is determined by the result of the `func`
+function applied to the elements of the array.
+[example:lambda_simple]
+
+If `func` accepts multiple arguments, the `arrayPartialSort` function is passed several arrays
+that the arguments of `func` will correspond to.
+[example:lambda_complex]
+
+For more details see documentation of `arraySort`.
+"
+"23.3.19.34.altinityfips","toJSONString",0,0,"","","System",""
+"23.3.19.34.altinityfips","__getScalar",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetFaces",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUInt32OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","accurateCast",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt64",0,0,"","","System",""
+"23.3.19.34.altinityfips","wkt",0,0,"","","System",""
+"23.3.19.34.altinityfips","domainWithoutWWW",0,0,"","","System","
+Extracts the hostname from a URL, removing the leading ""www."" if present.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        "
+"23.3.19.34.altinityfips","arrayPushFront",0,0,"","","System",""
+"23.3.19.34.altinityfips","erfc",0,0,"","","System",""
+"23.3.19.34.altinityfips","cutToFirstSignificantSubdomainCustomWithWWW",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain without stripping `www`.
+Accepts custom TLD list name from config.
+
+Can be useful if you need fresh TLD list or you have custom.
+        "
+"23.3.19.34.altinityfips","arraySort",0,0,"","","System",""
+"23.3.19.34.altinityfips","firstSignificantSubdomainCustomRFC",0,0,"","","System",""
+"23.3.19.34.altinityfips","tupleMinus",0,0,"","","System",""
+"23.3.19.34.altinityfips","uniqThetaUnion",0,0,"","","System","
+Two uniqThetaSketch objects to do union calculation(set operation ∪), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","gccMurmurHash",0,0,"","","System",""
+"23.3.19.34.altinityfips","polygonsSymDifferenceCartesian",0,0,"","","System",""
+"23.3.19.34.altinityfips","LinfDistance",0,0,"","","System",""
+"23.3.19.34.altinityfips","readWKTPoint",0,0,"","","System",""
+"23.3.19.34.altinityfips","randChiSquared",0,0,"","","System","
+Returns a random number from the chi-squared distribution (a distribution of a sum of the squares of k independent standard normal random variables).
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","IPv4StringToNumOrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","formatReadableQuantity",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayPopBack",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayLastIndex",0,0,"","","System",""
+"23.3.19.34.altinityfips","toUnixTimestamp64Nano",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractMicroseconds",0,0,"","","System",""
+"23.3.19.34.altinityfips","decodeXMLComponent",0,0,"","","System",""
+"23.3.19.34.altinityfips","svg",0,0,"","","System",""
+"23.3.19.34.altinityfips","getMacro",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiIf",0,0,"","","System",""
+"23.3.19.34.altinityfips","runningAccumulate",0,0,"","","System",""
+"23.3.19.34.altinityfips","SHA384",0,0,"","","System",""
+"23.3.19.34.altinityfips","murmurHash3_128",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramSearchCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3ToCenterChild",0,0,"","","System",""
+"23.3.19.34.altinityfips","notIn",0,0,"","","System",""
+"23.3.19.34.altinityfips","URLHierarchy",0,0,"","","System",""
+"23.3.19.34.altinityfips","ngramSimHashUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractTupleOfIntervals",0,0,"","","System","
+Consecutively subtracts a tuple of intervals from a Date or a DateTime.
+[example:tuple]
+"
+"23.3.19.34.altinityfips","toUInt16OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","s2ToGeo",0,0,"","","System",""
+"23.3.19.34.altinityfips","sinh",0,0,"","","System",""
+"23.3.19.34.altinityfips","tupleDivide",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractInt",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractMonths",0,0,"","","System",""
+"23.3.19.34.altinityfips","subtractMilliseconds",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayPopFront",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGetFloat32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Float32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","s2RectAdd",0,0,"","","System",""
+"23.3.19.34.altinityfips","toColumnTypeName",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayMin",0,0,"","","System",""
+"23.3.19.34.altinityfips","sin",0,1,"","","System",""
+"23.3.19.34.altinityfips","multiFuzzyMatchAllIndices",0,0,"","","System",""
+"23.3.19.34.altinityfips","toStartOfSecond",0,0,"","","System",""
+"23.3.19.34.altinityfips","dictGet",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+"
+"23.3.19.34.altinityfips","cos",0,1,"","","System",""
+"23.3.19.34.altinityfips","toDecimal128OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayCount",0,0,"","","System",""
+"23.3.19.34.altinityfips","hex",0,1,"","","System",""
+"23.3.19.34.altinityfips","h3ToGeo",0,0,"","","System",""
+"23.3.19.34.altinityfips","toDecimal256OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","multiMatchAny",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayEnumerateDense",0,0,"","","System",""
+"23.3.19.34.altinityfips","or",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayExists",0,0,"","","System",""
+"23.3.19.34.altinityfips","L2Norm",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3GetDestinationIndexFromUnidirectionalEdge",0,0,"","","System",""
+"23.3.19.34.altinityfips","parseDateTimeBestEffortUSOrZero",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt32OrNull",0,0,"","","System",""
+"23.3.19.34.altinityfips","array",0,0,"","","System",""
+"23.3.19.34.altinityfips","toLowCardinality",0,0,"","","System",""
+"23.3.19.34.altinityfips","h3ToString",0,0,"","","System",""
+"23.3.19.34.altinityfips","LpNorm",0,0,"","","System",""
+"23.3.19.34.altinityfips","port",0,0,"","","System","Returns the port or `default_port` if there is no port in the URL (or in case of validation error)."
+"23.3.19.34.altinityfips","wordShingleMinHashArgUTF8",0,0,"","","System",""
+"23.3.19.34.altinityfips","now",0,1,"","","System",""
+"23.3.19.34.altinityfips","timezone",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayMap",0,0,"","","System",""
+"23.3.19.34.altinityfips","toInt32OrDefault",0,0,"","","System",""
+"23.3.19.34.altinityfips","mapAdd",0,0,"","","System",""
+"23.3.19.34.altinityfips","countSubstringsCaseInsensitive",0,0,"","","System",""
+"23.3.19.34.altinityfips","uniqThetaNot",0,0,"","","System","
+Two uniqThetaSketch objects to do a_not_b calculation(set operation ×), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+"
+"23.3.19.34.altinityfips","indexHint",0,0,"","","System",""
+"23.3.19.34.altinityfips","toMinute",0,0,"","","System",""
+"23.3.19.34.altinityfips","tupleToNameValuePairs",0,0,"","","System",""
+"23.3.19.34.altinityfips","JSONExtractUInt",0,0,"","","System",""
+"23.3.19.34.altinityfips","arrayReduce",0,0,"","","System",""
+"23.3.19.34.altinityfips","addDays",0,0,"","","System",""
+"23.3.19.34.altinityfips","portRFC",0,0,"","","System","Similar to `port`, but conforms to RFC 3986."
+"23.3.19.34.altinityfips","L1Norm",0,0,"","","System",""
+"23.3.19.34.altinityfips","log1p",0,0,"","","System",""
+"23.3.19.34.altinityfips","truncate",0,1,"trunc","","System",""
+"23.3.19.34.altinityfips","mid",0,1,"substring","","System",""
+"23.3.19.34.altinityfips","TO_BASE64",0,1,"base64Encode","","System",""
+"23.3.19.34.altinityfips","substr",0,1,"substring","","System",""
+"23.3.19.34.altinityfips","INET6_NTOA",0,1,"IPv6NumToString","","System",""
+"23.3.19.34.altinityfips","visitParamExtractUInt",0,0,"simpleJSONExtractUInt","","System",""
+"23.3.19.34.altinityfips","toTimeZone",0,0,"toTimezone","","System",""
+"23.3.19.34.altinityfips","DATABASE",0,1,"currentDatabase","","System",""
+"23.3.19.34.altinityfips","MONTH",0,1,"toMonth","","System",""
+"23.3.19.34.altinityfips","pmod",0,1,"positiveModulo","","System",""
+"23.3.19.34.altinityfips","positive_modulo",0,1,"positiveModulo","","System",""
+"23.3.19.34.altinityfips","DATE_TRUNC",0,1,"dateTrunc","","System",""
+"23.3.19.34.altinityfips","toStartOfFiveMinute",0,0,"toStartOfFiveMinutes","","System",""
+"23.3.19.34.altinityfips","YEAR",0,1,"toYear","","System",""
+"23.3.19.34.altinityfips","concat_ws",0,1,"concatWithSeparator","","System",""
+"23.3.19.34.altinityfips","FROM_UNIXTIME",0,0,"fromUnixTimestamp","","System",""
+"23.3.19.34.altinityfips","yandexConsistentHash",0,0,"kostikConsistentHash","","System",""
+"23.3.19.34.altinityfips","CHAR_LENGTH",0,1,"lengthUTF8","","System",""
+"23.3.19.34.altinityfips","rand32",0,0,"rand","","System",""
+"23.3.19.34.altinityfips","rpad",0,1,"rightPad","","System",""
+"23.3.19.34.altinityfips","FROM_BASE64",0,1,"base64Decode","","System",""
+"23.3.19.34.altinityfips","UTC_timestamp",0,1,"UTCTimestamp","","System",""
+"23.3.19.34.altinityfips","user",0,1,"currentUser","","System",""
+"23.3.19.34.altinityfips","lcase",0,1,"lower","","System",""
+"23.3.19.34.altinityfips","REGEXP_MATCHES",0,1,"match","","System",""
+"23.3.19.34.altinityfips","SECOND",0,1,"toSecond","","System",""
+"23.3.19.34.altinityfips","DATE_FORMAT",0,0,"formatDateTime","","System",""
+"23.3.19.34.altinityfips","str_to_date",0,1,"parseDateTimeOrNull","","System",""
+"23.3.19.34.altinityfips","MAP_FROM_ARRAYS",0,0,"mapFromArrays","","System",""
+"23.3.19.34.altinityfips","power",0,1,"pow","","System",""
+"23.3.19.34.altinityfips","visitParamExtractInt",0,0,"simpleJSONExtractInt","","System",""
+"23.3.19.34.altinityfips","yearweek",0,1,"toYearWeek","","System",""
+"23.3.19.34.altinityfips","REGEXP_REPLACE",0,1,"replaceRegexpAll","","System",""
+"23.3.19.34.altinityfips","TO_UNIXTIME",0,0,"parseDateTime","","System",""
+"23.3.19.34.altinityfips","timeZoneOf",0,0,"timezoneOf","","System",""
+"23.3.19.34.altinityfips","normalizeLp",0,1,"LpNormalize","","System",""
+"23.3.19.34.altinityfips","week",0,1,"toWeek","","System",""
+"23.3.19.34.altinityfips","DAYOFYEAR",0,1,"toDayOfYear","","System",""
+"23.3.19.34.altinityfips","ceiling",0,1,"ceil","","System",""
+"23.3.19.34.altinityfips","HOUR",0,1,"toHour","","System",""
+"23.3.19.34.altinityfips","extractAllGroups",0,0,"extractAllGroupsVertical","","System",""
+"23.3.19.34.altinityfips","vectorDifference",0,1,"tupleMinus","","System",""
+"23.3.19.34.altinityfips","LAST_DAY",0,1,"toLastDayOfMonth","","System",""
+"23.3.19.34.altinityfips","visitParamExtractRaw",0,0,"simpleJSONExtractRaw","","System",""
+"23.3.19.34.altinityfips","flatten",0,1,"arrayFlatten","","System",""
+"23.3.19.34.altinityfips","replace",0,1,"replaceAll","","System",""
+"23.3.19.34.altinityfips","QUARTER",0,1,"toQuarter","","System",""
+"23.3.19.34.altinityfips","instr",0,1,"positionCaseInsensitive","","System",""
+"23.3.19.34.altinityfips","DAYOFWEEK",0,1,"toDayOfWeek","","System",""
+"23.3.19.34.altinityfips","normalizeLinf",0,1,"LinfNormalize","","System",""
+"23.3.19.34.altinityfips","timeZone",0,0,"timezone","","System",""
+"23.3.19.34.altinityfips","MINUTE",0,1,"toMinute","","System",""
+"23.3.19.34.altinityfips","initial_query_id",0,1,"initialQueryID","","System",""
+"23.3.19.34.altinityfips","width_bucket",0,1,"widthBucket","","System",""
+"23.3.19.34.altinityfips","lpad",0,1,"leftPad","","System",""
+"23.3.19.34.altinityfips","normalizeL1",0,1,"L1Normalize","","System",""
+"23.3.19.34.altinityfips","CHARACTER_LENGTH",0,1,"lengthUTF8","","System",""
+"23.3.19.34.altinityfips","visitParamExtractFloat",0,0,"simpleJSONExtractFloat","","System",""
+"23.3.19.34.altinityfips","distanceLinf",0,1,"LinfDistance","","System",""
+"23.3.19.34.altinityfips","locate",0,1,"position","","System",""
+"23.3.19.34.altinityfips","DAYOFMONTH",0,1,"toDayOfMonth","","System",""
+"23.3.19.34.altinityfips","splitByAlpha",0,0,"alphaTokens","","System",""
+"23.3.19.34.altinityfips","ln",0,1,"log","","System",""
+"23.3.19.34.altinityfips","distanceLp",0,1,"LpDistance","","System",""
+"23.3.19.34.altinityfips","INET6_ATON",0,1,"IPv6StringToNum","","System",""
+"23.3.19.34.altinityfips","visitParamExtractString",0,0,"simpleJSONExtractString","","System",""
+"23.3.19.34.altinityfips","DAY",0,1,"toDayOfMonth","","System",""
+"23.3.19.34.altinityfips","normLp",0,1,"LpNorm","","System",""
+"23.3.19.34.altinityfips","INET_ATON",0,1,"IPv4StringToNum","","System",""
+"23.3.19.34.altinityfips","distanceL1",0,1,"L1Distance","","System",""
+"23.3.19.34.altinityfips","ucase",0,1,"upper","","System",""
+"23.3.19.34.altinityfips","JSON_ARRAY_LENGTH",0,1,"JSONArrayLength","","System",""
+"23.3.19.34.altinityfips","normLinf",0,1,"LinfNorm","","System",""
+"23.3.19.34.altinityfips","distanceL2Squared",0,1,"L2SquaredDistance","","System",""
+"23.3.19.34.altinityfips","query_id",0,1,"queryID","","System",""
+"23.3.19.34.altinityfips","normL2Squared",0,1,"L2SquaredNorm","","System",""
+"23.3.19.34.altinityfips","SVG",0,0,"svg","","System",""
+"23.3.19.34.altinityfips","INET_NTOA",0,1,"IPv4NumToString","","System",""
+"23.3.19.34.altinityfips","timeZoneOffset",0,0,"timezoneOffset","","System",""
+"23.3.19.34.altinityfips","hostname",0,0,"hostName","","System",""
+"23.3.19.34.altinityfips","normL1",0,1,"L1Norm","","System",""
+"23.3.19.34.altinityfips","vectorSum",0,1,"tuplePlus","","System",""
+"23.3.19.34.altinityfips","connection_id",0,1,"connectionid","","System",""
+"23.3.19.34.altinityfips","mod",0,1,"modulo","","System",""
+"23.3.19.34.altinityfips","visitParamHas",0,0,"simpleJSONHas","","System",""
+"23.3.19.34.altinityfips","distanceL2",0,1,"L2Distance","","System",""
+"23.3.19.34.altinityfips","scalarProduct",0,1,"dotProduct","","System",""
+"23.3.19.34.altinityfips","normL2",0,1,"L2Norm","","System",""
+"23.3.19.34.altinityfips","visitParamExtractBool",0,0,"simpleJSONExtractBool","","System",""
+"23.3.19.34.altinityfips","normalizeL2",0,1,"L2Normalize","","System",""
+"23.3.19.34.altinityfips","REGEXP_EXTRACT",0,1,"regexpExtract","","System",""
+"23.3.19.34.altinityfips","exponentialTimeDecayedCount",1,0,"","","System",""
+"23.3.19.34.altinityfips","exponentialTimeDecayedMax",1,0,"","","System",""
+"23.3.19.34.altinityfips","lagInFrame",1,0,"","","System",""
+"23.3.19.34.altinityfips","dense_rank",1,1,"","","System",""
+"23.3.19.34.altinityfips","rank",1,1,"","","System",""
+"23.3.19.34.altinityfips","exponentialMovingAverage",1,0,"","","System",""
+"23.3.19.34.altinityfips","sparkbar",1,0,"","","System",""
+"23.3.19.34.altinityfips","singleValueOrNull",1,0,"","","System",""
+"23.3.19.34.altinityfips","meanZTest",1,0,"","","System",""
+"23.3.19.34.altinityfips","analysisOfVariance",1,1,"","","System",""
+"23.3.19.34.altinityfips","studentTTest",1,0,"","","System",""
+"23.3.19.34.altinityfips","rankCorr",1,0,"","","System",""
+"23.3.19.34.altinityfips","aggThrow",1,0,"","","System",""
+"23.3.19.34.altinityfips","categoricalInformationValue",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupArrayMovingAvg",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupArrayMovingSum",1,0,"","","System",""
+"23.3.19.34.altinityfips","simpleLinearRegression",1,0,"","","System",""
+"23.3.19.34.altinityfips","entropy",1,0,"","","System",""
+"23.3.19.34.altinityfips","histogram",1,0,"","","System",""
+"23.3.19.34.altinityfips","mannWhitneyUTest",1,0,"","","System",""
+"23.3.19.34.altinityfips","maxIntersections",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupBitmapXor",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupBitmapAnd",1,0,"","","System",""
+"23.3.19.34.altinityfips","cramersVBiasCorrected",1,0,"","","System",""
+"23.3.19.34.altinityfips","contingency",1,0,"","","System",""
+"23.3.19.34.altinityfips","skewPop",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupBitXor",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupBitOr",1,0,"","","System",""
+"23.3.19.34.altinityfips","exponentialTimeDecayedSum",1,0,"","","System",""
+"23.3.19.34.altinityfips","topKWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","stochasticLinearRegression",1,0,"","","System",""
+"23.3.19.34.altinityfips","corr",1,1,"","","System",""
+"23.3.19.34.altinityfips","uniqCombined64",1,0,"","","System",""
+"23.3.19.34.altinityfips","intervalLengthSum",1,0,"","","System",""
+"23.3.19.34.altinityfips","nothing",1,0,"","","System",""
+"23.3.19.34.altinityfips","uniqCombined",1,0,"","","System",""
+"23.3.19.34.altinityfips","sumMapFiltered",1,0,"","","System",""
+"23.3.19.34.altinityfips","minMappedArrays",1,0,"","","System",""
+"23.3.19.34.altinityfips","sumMappedArrays",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantiles",1,0,"","","System",""
+"23.3.19.34.altinityfips","sum",1,1,"","","System",""
+"23.3.19.34.altinityfips","sumKahan",1,0,"","","System",""
+"23.3.19.34.altinityfips","corrMatrix",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileExactWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","sumMapFilteredWithOverflow",1,0,"","","System",""
+"23.3.19.34.altinityfips","corrStable",1,0,"","","System",""
+"23.3.19.34.altinityfips","covarPopMatrix",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupBitmapOr",1,0,"","","System",""
+"23.3.19.34.altinityfips","covarSampMatrix",1,0,"","","System",""
+"23.3.19.34.altinityfips","covarPop",1,0,"","","System",""
+"23.3.19.34.altinityfips","row_number",1,1,"","","System",""
+"23.3.19.34.altinityfips","kurtPop",1,0,"","","System",""
+"23.3.19.34.altinityfips","kurtSamp",1,0,"","","System",""
+"23.3.19.34.altinityfips","cramersV",1,0,"","","System",""
+"23.3.19.34.altinityfips","skewSamp",1,0,"","","System",""
+"23.3.19.34.altinityfips","nonNegativeDerivative",1,0,"","","System",""
+"23.3.19.34.altinityfips","uniqExact",1,0,"","","System",""
+"23.3.19.34.altinityfips","sumMapWithOverflow",1,0,"","","System",""
+"23.3.19.34.altinityfips","stddevSamp",1,0,"","","System",""
+"23.3.19.34.altinityfips","varPop",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileTimingWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","covarPopStable",1,0,"","","System",""
+"23.3.19.34.altinityfips","stddevSampStable",1,0,"","","System",""
+"23.3.19.34.altinityfips","varSamp",1,0,"","","System",""
+"23.3.19.34.altinityfips","topK",1,0,"","","System",""
+"23.3.19.34.altinityfips","last_value",1,1,"","","System",""
+"23.3.19.34.altinityfips","any",1,0,"","","System",""
+"23.3.19.34.altinityfips","anyLast",1,0,"","","System",""
+"23.3.19.34.altinityfips","deltaSumTimestamp",1,0,"","","System",""
+"23.3.19.34.altinityfips","varSampStable",1,0,"","","System",""
+"23.3.19.34.altinityfips","nth_value",1,1,"","","System",""
+"23.3.19.34.altinityfips","argMax",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesExact",1,0,"","","System",""
+"23.3.19.34.altinityfips","uniqHLL12",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileBFloat16",1,0,"","","System",""
+"23.3.19.34.altinityfips","uniq",1,0,"","","System",""
+"23.3.19.34.altinityfips","min",1,1,"","","System",""
+"23.3.19.34.altinityfips","sequenceNextNode",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesTimingWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","ntile",1,1,"","","System",""
+"23.3.19.34.altinityfips","boundingRatio",1,0,"","","System",""
+"23.3.19.34.altinityfips","deltaSum",1,0,"","","System",""
+"23.3.19.34.altinityfips","uniqUpTo",1,0,"","","System",""
+"23.3.19.34.altinityfips","windowFunnel",1,0,"","","System",""
+"23.3.19.34.altinityfips","retention",1,0,"","","System",""
+"23.3.19.34.altinityfips","sequenceMatch",1,0,"","","System",""
+"23.3.19.34.altinityfips","uniqTheta",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesExactWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","max",1,1,"","","System",""
+"23.3.19.34.altinityfips","quantilesBFloat16Weighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileBFloat16Weighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesTDigestWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupBitAnd",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileTDigest",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileTDigestWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileDeterministic",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesTDigest",1,0,"","","System",""
+"23.3.19.34.altinityfips","stochasticLogisticRegression",1,0,"","","System",""
+"23.3.19.34.altinityfips","argMin",1,0,"","","System",""
+"23.3.19.34.altinityfips","avg",1,1,"","","System",""
+"23.3.19.34.altinityfips","covarSampStable",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesTiming",1,0,"","","System",""
+"23.3.19.34.altinityfips","welchTTest",1,0,"","","System",""
+"23.3.19.34.altinityfips","covarSamp",1,0,"","","System",""
+"23.3.19.34.altinityfips","varPopStable",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileTiming",1,0,"","","System",""
+"23.3.19.34.altinityfips","leadInFrame",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesExactExclusive",1,0,"","","System",""
+"23.3.19.34.altinityfips","maxIntersectionsPosition",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesBFloat16",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesExactInclusive",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileExactInclusive",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileInterpolatedWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileExactHigh",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupBitmap",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesInterpolatedWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantile",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupArraySample",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesExactLow",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupUniqArray",1,0,"","","System",""
+"23.3.19.34.altinityfips","sumWithOverflow",1,0,"","","System",""
+"23.3.19.34.altinityfips","sequenceCount",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesDeterministic",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantilesExactHigh",1,0,"","","System",""
+"23.3.19.34.altinityfips","sumCount",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupArrayInsertAt",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileExact",1,0,"","","System",""
+"23.3.19.34.altinityfips","anyHeavy",1,0,"","","System",""
+"23.3.19.34.altinityfips","theilsU",1,0,"","","System",""
+"23.3.19.34.altinityfips","maxMappedArrays",1,0,"","","System",""
+"23.3.19.34.altinityfips","stddevPop",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupArrayLast",1,0,"","","System",""
+"23.3.19.34.altinityfips","groupArray",1,0,"","","System",""
+"23.3.19.34.altinityfips","first_value",1,1,"","","System",""
+"23.3.19.34.altinityfips","exponentialTimeDecayedAvg",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileExactExclusive",1,0,"","","System",""
+"23.3.19.34.altinityfips","count",1,1,"","","System",""
+"23.3.19.34.altinityfips","stddevPopStable",1,0,"","","System",""
+"23.3.19.34.altinityfips","quantileExactLow",1,0,"","","System",""
+"23.3.19.34.altinityfips","avgWeighted",1,0,"","","System",""
+"23.3.19.34.altinityfips","anova",1,1,"analysisOfVariance","","System",""
+"23.3.19.34.altinityfips","BIT_AND",1,1,"groupBitAnd","","System",""
+"23.3.19.34.altinityfips","VAR_SAMP",1,1,"varSamp","","System",""
+"23.3.19.34.altinityfips","medianTimingWeighted",1,0,"quantileTimingWeighted","","System",""
+"23.3.19.34.altinityfips","COVAR_SAMP",1,1,"covarSamp","","System",""
+"23.3.19.34.altinityfips","VAR_POP",1,1,"varPop","","System",""
+"23.3.19.34.altinityfips","medianBFloat16",1,0,"quantileBFloat16","","System",""
+"23.3.19.34.altinityfips","medianTDigest",1,0,"quantileTDigest","","System",""
+"23.3.19.34.altinityfips","medianTiming",1,0,"quantileTiming","","System",""
+"23.3.19.34.altinityfips","medianExactHigh",1,0,"quantileExactHigh","","System",""
+"23.3.19.34.altinityfips","medianInterpolatedWeighted",1,0,"quantileInterpolatedWeighted","","System",""
+"23.3.19.34.altinityfips","BIT_XOR",1,1,"groupBitXor","","System",""
+"23.3.19.34.altinityfips","median",1,0,"quantile","","System",""
+"23.3.19.34.altinityfips","COVAR_POP",1,1,"covarPop","","System",""
+"23.3.19.34.altinityfips","medianBFloat16Weighted",1,0,"quantileBFloat16Weighted","","System",""
+"23.3.19.34.altinityfips","medianExactWeighted",1,0,"quantileExactWeighted","","System",""
+"23.3.19.34.altinityfips","medianTDigestWeighted",1,0,"quantileTDigestWeighted","","System",""
+"23.3.19.34.altinityfips","medianExact",1,0,"quantileExact","","System",""
+"23.3.19.34.altinityfips","STDDEV_POP",1,1,"stddevPop","","System",""
+"23.3.19.34.altinityfips","STDDEV_SAMP",1,1,"stddevSamp","","System",""
+"23.3.19.34.altinityfips","medianExactLow",1,0,"quantileExactLow","","System",""
+"23.3.19.34.altinityfips","BIT_OR",1,1,"groupBitOr","","System",""
+"23.3.19.34.altinityfips","medianDeterministic",1,0,"quantileDeterministic","","System",""
