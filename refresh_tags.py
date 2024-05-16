@@ -16,7 +16,7 @@ import re
 logging.basicConfig(level=logging.DEBUG)
 dt = DockerHubRegistry()
 
-filter_re = re.compile(r'(^1([0-9]?)\.\d+\.\d+(\.\d+)?$)|(^2[0-9]\.\d+\.\d+.\d+(\.altinity.*?stable)?$)')
+filter_re = re.compile(r'(^1([0-9]?)\.\d+\.\d+(\.\d+)?$)|(^2[0-9]\.\d+\.\d+.\d+(\.altinity.*?(stable|fips))?$)')
 
 
 def tag_filter(tag):
