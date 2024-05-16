@@ -1,0 +1,3979 @@
+"ch_version","name","is_aggregate","case_insensitive","alias_to","create_query","origin","description","syntax","arguments","returned_value","examples","categories"
+"23.8.11.29.altinitystable","JSON_VALUE",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","intHash64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","intHash32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchFirstIndexUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","getSetting",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isValidUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUTCTimestamp",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","endsWith",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalHour",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalMinute",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalMillisecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime64BestEffortUSOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime64BestEffortOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime64BestEffort",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime32BestEffort",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeBestEffortOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeBestEffortOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIPv6OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIPv4OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUUIDOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeBestEffort",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal128OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal64OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal32OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateTimeOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDate32OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toFloat64OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt256OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt128OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt64OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt128OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt64OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt8OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIPv6OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIPv4OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal256OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal64OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal32OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDate32OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toFloat64OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toFloat32OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt128OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt64OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt16OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt128OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt32OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateTime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal128",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toFloat64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toFloat32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt128",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt256",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","blockSize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt16",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isNotNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","UUIDStringToNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","roundDown",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","trunc",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ceil",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","roundBankers",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","round",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionToName",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUUID",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionToCountry",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionToArea",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionToCity",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutQueryString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","BLAKE3",0,0,"","","System","
+Calculates BLAKE3 hash string and returns the resulting set of bytes as FixedString.
+This cryptographic hash-function is integrated into ClickHouse with BLAKE3 Rust library.
+The function is rather fast and shows approximately two times faster performance compared to SHA-2, while generating hashes of the same length as SHA-256.
+It returns a BLAKE3 hash as a byte array with type FixedString(32).
+","","","","hash:
+
+``` sql
+SELECT hex(BLAKE3('ABC'))
+```
+
+``` text
+
+```
+","Hash, Hash"
+"23.8.11.29.altinitystable","wyHash64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","xxHash32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","javaHashUTF16LE",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","javaHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","URLHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","metroHash64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","farmHash64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","farmFingerprint64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sipHash128Reference",0,0,"","","System","Like [sipHash128](#hash_functions-siphash128) but implements the 128-bit algorithm from the original authors of SipHash.","","","","hash:
+
+``` sql
+SELECT hex(sipHash128Reference('foo', '\x01', 3))
+```
+
+``` text
+
+```
+","Hash, Hash"
+"23.8.11.29.altinitystable","sipHash128",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapExtractKeyLike",0,0,"","","System","Returns a map with elements which key matches the specified pattern.","","","","mapExtractKeyLike:
+
+``` sql
+SELECT mapExtractKeyLike(map('k1-1', 1, 'k2-1', 2), 'k1%')
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","sipHash128ReferenceKeyed",0,0,"","","System","Same as [sipHash128Reference](#hash_functions-siphash128reference) but additionally takes an explicit key argument instead of using a fixed key.","","","","hash:
+
+``` sql
+SELECT hex(sipHash128ReferenceKeyed((506097522914230528, 1084818905618843912),'foo', '\x01', 3));
+```
+
+``` text
+
+```
+","Hash, Hash"
+"23.8.11.29.altinitystable","mapPartialSort",0,0,"","","System","The same as arrayReverseSort.","","","","mapPartialSort:
+
+``` sql
+SELECT mapPartialSort((k, v) -> v, 2, map('k1', 3, 'k2', 1, 'k3', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","mapSort",0,0,"","","System","The same as arraySort.","","","","mapSort:
+
+``` sql
+SELECT mapSort((k, v) -> v, map('k1', 3, 'k2', 1, 'k3', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","mapAll",0,0,"","","System","The same as arrayAll.","","","","mapAll:
+
+``` sql
+SELECT mapAll((k, v) -> v = 1, map('k1', 1, 'k2', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","mapFilter",0,0,"","","System","The same as arrayFilter.","","","","mapFilter:
+
+``` sql
+SELECT mapFilter((k, v) -> v > 1, map('k1', 1, 'k2', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","char",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapContains",0,0,"","","System","Checks whether the map has the specified key.","","","","mapContains:
+
+``` sql
+SELECT mapContains(map('k1', 'v1', 'k2', 'v2'), 'k1')
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","toIPv4",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapValues",0,0,"","","System","Returns an array with the values of map.","","","","mapValues:
+
+``` sql
+SELECT mapValues(map('k1', 'v1', 'k2', 'v2'))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","mapConcat",0,0,"","","System","The same as arrayConcat.","","","","mapConcat:
+
+``` sql
+SELECT mapConcat(map('k1', 'v1'), map('k2', 'v2'))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","toDate32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lowCardinalityIndices",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","decrypt",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","logTrace",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt16OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","timeSlots",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","stringToH3",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","asinh",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutWWW",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt8OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","SHA1",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","MD5",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","halfMD5",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetIndexesFromUnidirectionalEdge",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractKeys",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractKeysAndValuesRaw",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt16OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractRaw",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","SHA512",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractFloat",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONKey",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONLength",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isValidJSON",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","windowID",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hopStart",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hop",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","detectTonality",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toRelativeWeekNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","makeDateTime64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","makeDateTime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","makeDate",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","showCertificate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","nested",0,0,"","","System","
+Returns the array of tuples from multiple arrays.
+","","","","nested:
+
+``` sql
+SELECT nested(['keys', 'values'], ['key_1', 'key_2'], ['value_1','value_2'])
+```
+
+``` text
+
+```
+","OtherFunctions, OtherFunctions"
+"23.8.11.29.altinitystable","h3EdgeLengthM",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","__bitWrapperFunc",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractGroups",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","transactionLatestSnapshot",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","transactionID",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsEqualsCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","UUIDNumToString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv4StringToNumOrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv4NumToStringClassC",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv4NumToString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isIPv6String",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSON_QUERY",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isIPv4String",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv4CIDRToRange",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv6CIDRToRange",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","MACStringToNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutIPv6",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","radians",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ifNotFinite",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","currentUser",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","convertCharset",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractTextFromHTML",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalQuarter",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchAny",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapContains",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapHasAny",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapXor",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapOr",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","xxh3",0,0,"","","System","Calculates value of XXH3 64-bit hash function. Refer to https://github.com/Cyan4973/xxHash for detailed documentation.","","","","hash:
+
+``` sql
+SELECT xxh3('ClickHouse')
+```
+
+``` text
+
+```
+","Hash, Hash"
+"23.8.11.29.altinitystable","bitmapAnd",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapAndnotCardinality",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv6StringToNumOrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapAndnot",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapXorCardinality",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapOrCardinality",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapAndCardinality",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapMin",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapCardinality",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapExists",0,0,"","","System","The same as arrayExists.","","","","mapExists:
+
+``` sql
+SELECT mapExists((k, v) -> v = 1, map('k1', 1, 'k2', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","bitmapSubsetLimit",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapSubsetInRange",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapToArray",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapBuild",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addQuarters",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","pointInEllipses",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitHammingDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsDistanceSpherical",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsDistanceCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3EdgeLengthKm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","fuzzBits",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addressToLineWithInlines",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","monthName",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayReverseFill",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayFill",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addressToSymbol",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","aes_decrypt_mysql",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","pathFull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetDescendants",0,0,"","","System","
+Returns all descendants as if dictGetChildren function was applied level times recursively.
+Accepts 3 parameters: name of the dictionary, key value - expression returning a UInt64-type value, level — hierarchy level - If level = 0 returns all descendants to the end - UInt8
+Returned value: descendants for the key, type of Array(UInt64)
+","","","","",""
+"23.8.11.29.altinitystable","dictGetChildren",0,0,"","","System","
+Returns first-level children as an array of indexes. It is the inverse transformation for dictGetHierarchy.
+Accepts 2 parameters: name of the dictionary, key value - expression returning a UInt64-type value.
+Returned value: first-level descendants for the key, type of Array(UInt64)
+","","","","",""
+"23.8.11.29.altinitystable","notEmpty",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","format",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetHierarchy",0,0,"","","System","
+Creates an array, containing all the parents of a key in the hierarchical dictionary.
+Accepts 2 parameters: name of the dictionary, key value - expression returning a UInt64-type value.
+Returned value: parents for the key, type of Array(UInt64)
+","","","","",""
+"23.8.11.29.altinitystable","dictGetStringOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the String if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetUUIDOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UUID if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetDateTimeOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the DateTime if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","UTCTimestamp",0,1,"","","System","
+Returns the current date and time at the moment of query analysis. The function is a constant expression.
+Same as `now('UTC')`. Was added only for MySQL support. `now` is preferred.
+
+Example:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT UTCTimestamp();
+```
+
+``` text
+
+```
+","Dates and Times, Dates and Times"
+"23.8.11.29.altinitystable","dictGetFloat64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Float64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetInt64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetUInt64OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt64 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetString",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the String if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetIPv6",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the IPv6 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetIPv4",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the IPv4 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetUUID",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UUID if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","multiSearchFirstPosition",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetDate",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Date if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","IPv6StringToNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetInt64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetInt32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetInt16",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int16 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetInt8",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Int8 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetUInt64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetUInt32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","toUInt64OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetUInt16",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt16 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetAll",0,0,"","","System","
+Retrieves all values from a dictionary corresponding to the given key values.
+
+Accepts 3 or 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- [optional] maximum number of values to return for each attribute;
+
+Returned value: array of dictionary attribute values parsed in the attribute's data type if key is found, otherwise empty array.
+
+Throws an exception if cannot parse the value of the attribute, the value does not match the attribute data type, or the dictionary doesn't support this function.
+","","","","",""
+"23.8.11.29.altinitystable","dictGetOrNull",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise NULL.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","h3EdgeAngle",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractKeysAndValues",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractKeyValuePairs",0,0,"","","System","Extracts key-value pairs from any string. The string does not need to be 100% structured in a key value pair format;
+
+            It can contain noise (e.g. log files). The key-value pair format to be interpreted should be specified via function arguments.
+
+            A key-value pair consists of a key followed by a `key_value_delimiter` and a value. Quoted keys and values are also supported. Key value pairs must be separated by pair delimiters.
+
+            **Syntax**
+            ``` sql
+            extractKeyValuePairs(data, [key_value_delimiter], [pair_delimiter], [quoting_character])
+            ```
+
+            **Arguments**
+            - `data` - String to extract key-value pairs from. [String](../../sql-reference/data-types/string.md) or [FixedString](../../sql-reference/data-types/fixedstring.md).
+            - `key_value_delimiter` - Character to be used as delimiter between the key and the value. Defaults to `:`. [String](../../sql-reference/data-types/string.md) or [FixedString](../../sql-reference/data-types/fixedstring.md).
+            - `pair_delimiters` - Set of character to be used as delimiters between pairs. Defaults to `\space`, `,` and `;`. [String](../../sql-reference/data-types/string.md) or [FixedString](../../sql-reference/data-types/fixedstring.md).
+            - `quoting_character` - Character to be used as quoting character. Defaults to `""`. [String](../../sql-reference/data-types/string.md) or [FixedString](../../sql-reference/data-types/fixedstring.md).
+
+            **Returned values**
+            - The extracted key-value pairs in a Map(String, String).
+
+            **Examples**
+
+            Query:
+
+            **Simple case**
+            ``` sql
+            arthur :) select extractKeyValuePairs('name:neymar, age:31 team:psg,nationality:brazil') as kv
+
+            SELECT extractKeyValuePairs('name:neymar, age:31 team:psg,nationality:brazil') as kv
+
+            Query id: f9e0ca6f-3178-4ee2-aa2c-a5517abb9cee
+
+            ┌─kv──────────────────────────────────────────────────────────────────────┐
+            │ {'name':'neymar','age':'31','team':'psg','nationality':'brazil'}        │
+            └─────────────────────────────────────────────────────────────────────────┘
+            ```
+
+            **Single quote as quoting character**
+            ``` sql
+            arthur :) select extractKeyValuePairs('name:\'neymar\';\'age\':31;team:psg;nationality:brazil,last_key:last_value', ':', ';,', '\'') as kv
+
+            SELECT extractKeyValuePairs('name:\'neymar\';\'age\':31;team:psg;nationality:brazil,last_key:last_value', ':', ';,', '\'') as kv
+
+            Query id: 0e22bf6b-9844-414a-99dc-32bf647abd5e
+
+            ┌─kv───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+            │ {'name':'neymar','age':'31','team':'psg','nationality':'brazil','last_key':'last_value'}                                 │
+            └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+            ```
+
+            **Escape sequences without escape sequences support**
+            ``` sql
+            arthur :) select extractKeyValuePairs('age:a\\x0A\\n\\0') as kv
+
+            SELECT extractKeyValuePairs('age:a\\x0A\\n\\0') AS kv
+
+            Query id: e9fd26ee-b41f-4a11-b17f-25af6fd5d356
+
+            ┌─kv────────────────────┐
+            │ {'age':'a\\x0A\\n\\0'} │
+            └───────────────────────┘
+            ```","","","","",""
+"23.8.11.29.altinitystable","replicate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arraySlice",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfQuarter",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","substringIndex",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","timezoneOf",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitCount",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","atan2",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictIsIn",0,0,"","","System","
+Checks the ancestor of a key through the whole hierarchical chain in the dictionary.
+Accepts 3 parameters: name of the dictionary, key to be checked - expression returning a UInt64-type value, alleged ancestor of the key - expression returning a UInt64-type.
+Returned value: 0 if key is not a child of the ancestor, 1 if key is a child of the ancestor or if key is the ancestor, type of UInt8
+","","","","",""
+"23.8.11.29.altinitystable","base64Encode",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalVariable",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","divideDecimal",0,0,"","","System","
+Performs division on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These function work significantly slower than usual `divide`.
+In case you don't really need controlled precision and/or need fast computation, consider using [divide](#divide).
+:::","divideDecimal(a, b[, result_scale])","- a:First value: [Decimal](../../sql-reference/data-types/decimal.md)
+- b:Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+","The result of division with given scale. Type: [Decimal256](../../sql-reference/data-types/decimal.md).",":
+
+``` sql
+divideDecimal(toDecimal256(-12, 0), toDecimal32(2.1, 1), 10)
+```
+
+``` text
+
+┌─divideDecimal(toDecimal256(-12, 0), toDecimal32(2.1, 1), 10)─┐
+│                                                -5.7142857142 │
+└──────────────────────────────────────────────────────────────┘
+
+```
+Difference to regular division:
+
+``` sql
+
+SELECT toDecimal64(-12, 1) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 1) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+
+```
+
+``` text
+
+┌─divide(toDecimal64(-12, 1), toDecimal32(2.1, 1))─┐
+│                                             -5.7 │
+└──────────────────────────────────────────────────┘
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 1), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+
+```
+:
+
+``` sql
+
+SELECT toDecimal64(-12, 0) / toDecimal32(2.1, 1);
+SELECT toDecimal64(-12, 0) as a, toDecimal32(2.1, 1) as b, divideDecimal(a, b, 1), divideDecimal(a, b, 5);
+
+```
+
+``` text
+
+DB::Exception: Decimal result's scale is less than argument's one: While processing toDecimal64(-12, 0) / toDecimal32(2.1, 1). (ARGUMENT_OUT_OF_BOUND)
+┌───a─┬───b─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 1)─┬─divideDecimal(toDecimal64(-12, 0), toDecimal32(2.1, 1), 5)─┐
+│ -12 │ 2.1 │                                                       -5.7 │                                                   -5.71428 │
+└─────┴─────┴────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────┘
+
+```
+",""
+"23.8.11.29.altinitystable","fullHostName",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayReduceInRanges",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","structureToCapnProtoSchema",0,0,"","","System","
+Function that converts ClickHouse table structure to CapnProto format schema
+","","","","random:
+
+``` sql
+SELECT structureToCapnProtoSchema('s String, x UInt32', 'MessageName') format TSVRaw
+```
+
+``` text
+struct MessageName
+{
+    s @0 : Data;
+    x @1 : UInt32;
+}
+```
+","Other, Other"
+"23.8.11.29.altinitystable","normalizeQuery",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractMinutes",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3Line",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitTest",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramSearchCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","acos",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","accurateCastOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","empty",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramMinHashArg",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","_CAST",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDayOfYear",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bin",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitSlice",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetUInt16OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt16 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","h3IsPentagon",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapMax",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetOriginIndexFromUnidirectionalEdge",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramDistanceCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimalString",0,1,"","","System","
+Returns string representation of a number. First argument is the number of any numeric type,
+second argument is the desired number of digits in fractional part. Returns String.
+
+        ","","","","toDecimalString:
+
+``` sql
+SELECT toDecimalString(2.1456,2)
+```
+
+``` text
+
+```
+","String, String"
+"23.8.11.29.altinitystable","URLPathHierarchy",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3HexRing",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetUnidirectionalEdgesFromHexagon",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","simpleJSONExtractUInt",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizedQueryHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitTestAll",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","__bitSwapLastTwo",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","fromModifiedJulianDay",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","CRC32",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchFirstPositionUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addMilliseconds",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","byteSize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","intExp2",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","assumeNotNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wordShingleMinHashArg",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramMinHashArgCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramMinHashArgUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramMinHashArgCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutToFirstSignificantSubdomainRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomain` but follows stricter rules to be compatible with RFC 3986 and less performant.","","","","","URL, URL"
+"23.8.11.29.altinitystable","wordShingleMinHashUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayDifference",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wordShingleMinHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramMinHashCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toMonth",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramMinHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","formatRowNoNewline",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wordShingleSimHashCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wordShingleSimHashUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayCumSum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wordShingleSimHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","finalizeAggregation",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramSimHashCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramSimHashCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramSimHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toTimezone",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","currentDatabase",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","TimeDiff",0,1,"","","System","
+Returns the difference between two dates or dates with time values. The difference is calculated in seconds units (see toRelativeSecondNum).
+It is same as `dateDiff` and was added only for MySQL support. `dateDiff` is preferred.
+
+Example:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT timeDiff(UTCTimestamp(), now());
+```
+
+``` text
+
+```
+","Dates and Times, Dates and Times"
+"23.8.11.29.altinitystable","timezone",0,0,"","","System","
+Returns the default timezone for current session.
+Used as default timezone for parsing DateTime|DateTime64 without explicitly specified timezone.
+Can be changed with SET timezone = 'New/Tz'
+
+[example:timezone]
+    ","","","","timezone:
+
+``` sql
+SELECT timezone();
+```
+
+``` text
+
+```
+","Constant, Constant, Miscellaneous"
+"23.8.11.29.altinitystable","splitByRegexp",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rowNumberInBlock",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","splitByString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","s2CapContains",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","identity",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ascii",0,1,"","","System","
+Returns the ASCII code point of the first character of str.  The result type is Int32.
+
+If s is empty, the result is 0. If the first character is not an ASCII character or not part of the Latin-1 Supplement range of UTF-16, the result is undefined)
+        ","","","","ascii:
+
+``` sql
+SELECT ascii('234')
+```
+
+``` text
+
+```
+","String, String"
+"23.8.11.29.altinitystable","s2RectUnion",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramDistanceUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","MD4",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","moduloOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sipHash64Keyed",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractAll",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","age",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionToDistrict",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","unbin",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpret",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","modulo",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lowCardinalityKeys",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","nullInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","geoToS2",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","blockSerializedSize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dateTrunc",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","generateUUIDv4",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3ExactEdgeLengthRads",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractBool",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleHammingDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramSearchUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","getTypeSerializationStreams",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","minSampleSizeConversion",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","jumpConsistentHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseTimeDelta",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toFloat32OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3IndexesAreNeighbors",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","endsWithUTF8",0,0,"","","System","
+Returns whether string `str` ends with `suffix`, the difference between `endsWithUTF8` and `endsWith` is that `endsWithUTF8` match `str` and `suffix` by UTF-8 characters.
+        ","","","","endsWithUTF8:
+
+``` sql
+select endsWithUTF8('富强民主文明和谐', '富强');
+```
+
+``` text
+
+```
+","String, String"
+"23.8.11.29.altinitystable","formatReadableSize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toNullable",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","concat",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","demangle",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayStringConcat",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","splitByNonAlpha",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasSubstr",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt64OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","__bitBoolMaskAnd",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sipHash64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randNormal",0,0,"","","System","
+Returns a random number from the normal distribution.
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randNormal(0, 5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","catboostEvaluate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","divide",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","encrypt",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","intDivOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","evalMLMethod",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayInt32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extract",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchFirstIndexCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rowNumberInAllBlocks",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","countDigits",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","replaceRegexpOne",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","factorial",0,1,"","","System","
+Computes the factorial of an integer value. It works with any native integer type including UInt(8|16|32|64) and Int(8|16|32|64). The return type is UInt64.
+
+The factorial of 0 is 1. Likewise, the factorial() function returns 1 for any negative value. The maximum positive value for the input argument is 20, a value of 21 or greater will cause exception throw.
+","","","","factorial:
+
+``` sql
+SELECT factorial(10)
+```
+
+``` text
+
+```
+","Mathematical, Mathematical"
+"23.8.11.29.altinitystable","tryBase64Decode",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime32BestEffortOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutToFirstSignificantSubdomainWithWWW",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"", without stripping ""www"".","","","","","URL, URL"
+"23.8.11.29.altinitystable","wordShingleSimHashCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitXor",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lcm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","detectLanguage",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","formatRow",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","countMatchesCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","minus",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramMinHashUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sqrt",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayShiftLeft",0,0,"","","System","
+Returns an array of the same size as the original array with elements shifted
+to the left by the specified number of positions. New elements are filled with
+provided default values or default values of the corresponding type.
+[example:simple_int]
+[example:overflow_int]
+[example:simple_string]
+[example:simple_array]
+[example:simple_nested_array]
+
+Negative shift values are treated as shifting to the right by the absolute
+value of the shift.
+[example:negative_shift_int]
+
+The default value must be of the same type as the array elements.
+[example:simple_int_with_default]
+[example:simple_string_with_default]
+[example:simple_array_with_default]
+[example:casted_array_with_default]
+","","","","simple_int:
+
+``` sql
+SELECT arrayShiftLeft([1, 2, 3, 4, 5], 3)
+```
+
+``` text
+[4, 5, 0, 0, 0]
+```
+negative_shift_int:
+
+``` sql
+SELECT arrayShiftLeft([1, 2, 3, 4, 5], -3)
+```
+
+``` text
+[0, 0, 0, 1, 2]
+```
+overflow_int:
+
+``` sql
+SELECT arrayShiftLeft([1, 2, 3, 4, 5], 8)
+```
+
+``` text
+[0, 0, 0, 0, 0]
+```
+simple_string:
+
+``` sql
+SELECT arrayShiftLeft(['a', 'b', 'c', 'd', 'e'], 3)
+```
+
+``` text
+['d', 'e', '', '', '']
+```
+simple_array:
+
+``` sql
+SELECT arrayShiftLeft([[1, 2], [3, 4], [5, 6]], 2)
+```
+
+``` text
+[[5, 6], [], []]
+```
+simple_nested_array:
+
+``` sql
+SELECT arrayShiftLeft([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], 1)
+```
+
+``` text
+[[[5, 6], [7, 8]], []]
+```
+simple_int_with_default:
+
+``` sql
+SELECT arrayShiftLeft([1, 2, 3, 4, 5], 3, 7)
+```
+
+``` text
+[4, 5, 7, 7, 7]
+```
+simple_string_with_default:
+
+``` sql
+SELECT arrayShiftLeft(['a', 'b', 'c', 'd', 'e'], 3, 'foo')
+```
+
+``` text
+['d', 'e', 'foo', 'foo', 'foo']
+```
+simple_array_with_default:
+
+``` sql
+SELECT arrayShiftLeft([[1, 2], [3, 4], [5, 6]], 2, [7, 8])
+```
+
+``` text
+[[5, 6], [7, 8], [7, 8]]
+```
+casted_array_with_default:
+
+``` sql
+SELECT arrayShiftLeft(CAST('[1, 2, 3, 4, 5, 6]', 'Array(UInt16)'), 1, 1000)
+```
+
+``` text
+[2, 3, 4, 5, 6, 1000]
+```
+","Array, Array"
+"23.8.11.29.altinitystable","tupleDivideByNumber",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","caseWithoutExpression",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randLogNormal",0,0,"","","System","
+Returns a random number from the lognormal distribution (a distribution of a random variable whose logarithm is normally distributed).
+Accepts two parameters - mean and variance.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randLogNormal(0, 5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","generateULID",0,0,"","","System","
+Generates a Universally Unique Lexicographically Sortable Identifier (ULID).
+This function takes an optional argument, the value of which is discarded to generate different values in case the function is called multiple times.
+The function returns a value of type FixedString(26).
+","","","","ulid:
+
+``` sql
+SELECT generateULID()
+```
+
+``` text
+
+```
+multiple:
+
+``` sql
+SELECT generateULID(1), generateULID(2)
+```
+
+``` text
+
+```
+","ULID, ULID"
+"23.8.11.29.altinitystable","bar",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","fromModifiedJulianDayOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmaskToList",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","shardCount",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","shardNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rand",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","readWKTRing",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","caseWithExpression",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","geoDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","greatCircleDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","greatCircleAngle",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","fromUTCTimestamp",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalMonth",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","defaultProfiles",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayReverse",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","now64",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractAllGroupsHorizontal",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3ExactEdgeLengthKm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayFilter",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","defaultRoles",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toQuarter",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","countMatches",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","enabledRoles",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","currentRoles",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dateTimeToSnowflake",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutToFirstSignificantSubdomain",0,0,"","","System","Returns the part of the domain that includes top-level subdomains up to the ""first significant subdomain"" (see documentation of the `firstSignificantSubdomain`).","","","","cutToFirstSignificantSubdomain1:
+
+``` sql
+SELECT cutToFirstSignificantSubdomain('https://news.clickhouse.com.tr/')
+```
+
+``` text
+
+```
+cutToFirstSignificantSubdomain2:
+
+``` sql
+SELECT cutToFirstSignificantSubdomain('www.tr')
+```
+
+``` text
+
+```
+cutToFirstSignificantSubdomain3:
+
+``` sql
+SELECT cutToFirstSignificantSubdomain('tr')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.11.29.altinitystable","arrayEnumerateUniqRanked",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","CRC64",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayDate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","CRC32IEEE",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","erf",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","trimBoth",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsUInt8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","atanh",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetPentagonIndexes",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","encodeURLComponent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wordShingleMinHashArgCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetResolution",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramSearch",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lessOrEquals",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractQuarters",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","fromUnixTimestamp64Nano",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUUIDOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetUnidirectionalEdge",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","positiveModulo",0,1,"","","System","
+Calculates the remainder when dividing `a` by `b`. Similar to function `modulo` except that `positiveModulo` always return non-negative number.
+Returns the difference between `a` and the nearest integer not greater than `a` divisible by `b`.
+In other words, the function returning the modulus (modulo) in the terms of Modular Arithmetic.
+        ","","","","positiveModulo:
+
+``` sql
+SELECT positiveModulo(-1, 10);
+```
+
+``` text
+
+```
+","Arithmetic, Arithmetic"
+"23.8.11.29.altinitystable","JSONHas",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","getServerPort",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","runningDifference",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayPushBack",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ignore",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasSubsequenceCaseInsensitive",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hopEnd",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayAvg",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","degrees",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","concatWithSeparator",0,0,"","","System","
+Returns the concatenation strings separated by string separator. Syntax: concatWithSeparator(sep, expr1, expr2, expr3...)
+        ","","","","concatWithSeparator:
+
+``` sql
+SELECT concatWithSeparator('a', '1', '2', '3')
+```
+
+``` text
+
+```
+","String, String"
+"23.8.11.29.altinitystable","dictGetDateTime",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the DateTime if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","h3ToGeoBoundary",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","atan",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","formatDateTimeInJodaSyntax",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayRotateRight",0,0,"","","System","
+Returns an array of the same size as the original array with elements rotated
+to the right by the specified number of positions.
+[example:simple_int]
+[example:overflow_int]
+[example:simple_string]
+[example:simple_array]
+[example:simple_nested_array]
+
+Negative rotate values are treated as rotating to the left by the absolute
+value of the rotation.
+[example:negative_rotation_int]
+","","","","simple_int:
+
+``` sql
+SELECT arrayRotateRight([1, 2, 3, 4, 5], 3)
+```
+
+``` text
+[3, 4, 5, 1, 2]
+```
+simple_string:
+
+``` sql
+SELECT arrayRotateRight(['a', 'b', 'c', 'd', 'e'], 3)
+```
+
+``` text
+['c', 'd', 'e', 'a', 'b']
+```
+simple_array:
+
+``` sql
+SELECT arrayRotateRight([[1, 2], [3, 4], [5, 6]], 2)
+```
+
+``` text
+[[3, 4], [5, 6], [1, 2]]
+```
+simple_nested_array:
+
+``` sql
+SELECT arrayRotateRight([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], 1)
+```
+
+``` text
+[[[7, 8], [1, 2]], [[3, 4], [5, 6]]]
+```
+negative_rotation_int:
+
+``` sql
+SELECT arrayRotateRight([1, 2, 3, 4, 5], -3)
+```
+
+``` text
+[4, 5, 1, 2, 3]
+```
+overflow_int:
+
+``` sql
+SELECT arrayRotateRight([1, 2, 3, 4, 5], 8)
+```
+
+``` text
+[4, 5, 1, 2, 3]
+```
+","Array, Array"
+"23.8.11.29.altinitystable","regionIn",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasSubsequence",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtract",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tumbleStart",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitShiftRight",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tan",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","substring",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tryBase58Decode",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalNotIn",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addressToLine",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","pi",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randCanonical",0,0,"","","System","
+The function generates pseudo random results with independent and identically distributed uniformly distributed values in [0, 1).
+Non-deterministic. Return type is Float64.
+        ","","","","randCanonical:
+
+``` sql
+SELECT randCanonical()
+```
+
+``` text
+
+```
+","Mathematical, Mathematical"
+"23.8.11.29.altinitystable","hasSubsequenceCaseInsensitiveUTF8",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3Distance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt16",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","filesystemUnreserved",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reverse",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","L2Normalize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","pow",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayCumSumNonNegative",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","translateUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","detectCharset",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","equals",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","geohashesInBox",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasSubsequenceUTF8",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rightPadUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv4StringToNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","positionUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasToken",0,0,"","","System","Performs lookup of needle in haystack using tokenbf_v1 index.","","","","",""
+"23.8.11.29.altinitystable","hypot",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","protocol",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","if",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionToContinent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","makeDate32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ilike",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalNotNullInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regexpQuoteMeta",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","notNullInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetUnidirectionalEdgeBoundary",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalNullInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasAll",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toTime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalNotInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","splitByChar",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toRelativeDayNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","notInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalInIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","inIgnoreSet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayConcat",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalNotNullIn",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","notNullIn",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalNullIn",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ifNull",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeQueryKeepNames",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","xxHash64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","in",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsWithinSpherical",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","flattenTuple",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reverseDNSQuery",0,0,"","","System","Performs a reverse DNS query to get the PTR records associated with the IP address","reverseDNSQuery(address)","- address:An IPv4 or IPv6 address. [String](../../sql-reference/data-types/string.md)
+","Associated domains (PTR records). [String](../../sql-reference/data-types/string.md).",":
+
+``` sql
+SELECT reverseDNSQuery('192.168.0.2');
+```
+
+``` text
+
+┌─reverseDNSQuery('192.168.0.2')────────────┐
+│ ['test2.example.com','test3.example.com'] │
+└───────────────────────────────────────────┘
+
+```
+",""
+"23.8.11.29.altinitystable","roundDuration",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDate32OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addMinutes",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalSecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","kostikConsistentHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIPv6",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateTime32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arraySplit",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","initcapUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","firstSignificantSubdomain",0,0,"","","System","
+Returns the ""first significant subdomain"".
+
+The first significant subdomain is a second-level domain if it is 'com', 'net', 'org', or 'co'.
+Otherwise, it is a third-level domain.
+
+For example, firstSignificantSubdomain('https://news.clickhouse.com/') = 'clickhouse', firstSignificantSubdomain ('https://news.clickhouse.com.tr/') = 'clickhouse'.
+
+The list of ""insignificant"" second-level domains and other implementation details may change in the future.
+        ","","","","firstSignificantSubdomain:
+
+``` sql
+SELECT firstSignificantSubdomain('https://news.clickhouse.com/')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.11.29.altinitystable","h3HexAreaKm2",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rand64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","connectionId",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramDistanceCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","startsWith",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","initialQueryID",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapHasAll",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","base58Decode",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","murmurHash2_64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetBaseCell",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionToTopContinent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cityHash64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","intDiv",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","intExp10",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","errorCodeToName",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","fromUnixTimestampInJodaSyntax",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","log",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randomFixedString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tgamma",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsInt128",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3ToChildren",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayToSingle",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","snowflakeToDateTime64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractKeyValuePairsWithEscaping",0,0,"","","System","Same as `extractKeyValuePairs` but with escaping support.
+
+            Escape sequences supported: `\x`, `\N`, `\a`, `\b`, `\e`, `\f`, `\n`, `\r`, `\t`, `\v` and `\0`.
+            Non standard escape sequences are returned as it is (including the backslash) unless they are one of the following:
+            `\\`, `'`, `""`, `backtick`, `/`, `=` or ASCII control characters (c <= 31).
+
+            This function will satisfy the use case where pre-escaping and post-escaping are not suitable. For instance, consider the following
+            input string: `a: ""aaaa\""bbb""`. The expected output is: `a: aaaa\""bbbb`.
+            - Pre-escaping: Pre-escaping it will output: `a: ""aaaa""bbb""` and `extractKeyValuePairs` will then output: `a: aaaa`
+            - Post-escaping: `extractKeyValuePairs` will output `a: aaaa\` and post-escaping will keep it as it is.
+
+            Leading escape sequences will be skipped in keys and will be considered invalid for values.
+
+            **Escape sequences with escape sequence support turned on**
+            ``` sql
+            arthur :) select extractKeyValuePairsWithEscaping('age:a\\x0A\\n\\0') as kv
+
+            SELECT extractKeyValuePairsWithEscaping('age:a\\x0A\\n\\0') AS kv
+
+            Query id: 44c114f0-5658-4c75-ab87-4574de3a1645
+
+            ┌─kv───────────────┐
+            │ {'age':'a\n\n\0'} │
+            └──────────────────┘
+            ```","","","","",""
+"23.8.11.29.altinitystable","toWeek",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfHour",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isDecimalOverflow",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","encodeURLFormComponent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","getSizeOfEnumType",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","detectLanguageMixed",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tumble",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfInterval",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toTypeName",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsUnionCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","DATE",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3CellAreaRads2",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toRelativeMonthNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","greater",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasTokenCaseInsensitiveOrNull",0,1,"","","System","Performs case insensitive lookup of needle in haystack using tokenbf_v1 index. Returns null if needle is ill-formed.","","","","",""
+"23.8.11.29.altinitystable","multiFuzzyMatchAnyIndex",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isNotDistinctFrom",0,0,"","","System","
+Performs a null-safe comparison between two values. This function will consider
+two `NULL` values as identical and will return `true`, which is distinct from the usual
+equals behavior where comparing two `NULL` values would return `NULL`.
+
+Currently, this function can only be used in the `JOIN ON` section of a query.
+[example:join_on_is_not_distinct_from]
+","","","","join_on_is_not_distinct_from:
+
+``` sql
+SELECT * FROM (SELECT NULL AS a) AS t1 JOIN (SELECT NULL AS b) AS t2 ON isNotDistinctFrom(t1.a, t2.b)
+```
+
+``` text
+NULL	NULL
+```
+","Comparison, Comparison, Join Operators"
+"23.8.11.29.altinitystable","isZeroOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lower",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","countEqual",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONArrayLength",0,0,"","","System","Returns the number of elements in the outermost JSON array. The function returns NULL if input JSON string is invalid.","","","","",""
+"23.8.11.29.altinitystable","dictGet",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","toStartOfSecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","asin",0,1,"","","System","
+Calculates the arcsine of the argument.
+
+Takes arbitrary numeric type, which includes floating point and integer numbers, as well as big integers and decimals and returns Float64.
+
+For arguments in range [-1, 1] it returns the value in range of [-pi() / 2, pi() / 2].
+
+It represents an inverse function to function 'sin' on this range:
+[example:inverse]
+
+It always returns Float64, even if the argument has Float32 type:
+[example:float32]
+
+For arguments outside of this range, it returns nan:
+[example:nan]
+
+Every self-respectful data scientist knows how to apply arcsine to improve ads click-through rate with ClickHouse.
+For more details, see [https://en.wikipedia.org/wiki/Inverse_trigonometric_functions].
+","","","","inverse:
+
+``` sql
+SELECT asin(1.0) = pi() / 2, sin(asin(1)), asin(sin(1))
+```
+
+``` text
+
+```
+float32:
+
+``` sql
+SELECT toTypeName(asin(1.0::Float32))
+```
+
+``` text
+
+```
+nan:
+
+``` sql
+SELECT asin(1.1), asin(-2), asin(inf), asin(nan)
+```
+
+``` text
+
+```
+","Mathematical, Mathematical, Trigonometric"
+"23.8.11.29.altinitystable","left",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","runningDifferenceStartingWithFirstValue",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3CellAreaM2",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3PointDistM",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tumbleEnd",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isInfinite",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lemmatize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reverseUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","murmurHash3_64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rightPad",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitNot",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lengthUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfFiveMinutes",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsUInt128",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lgamma",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","filesystemCapacity",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsDate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","filesystemAvailable",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","like",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","SHA224",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3kRing",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","log2",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","exp10",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIPv6OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIPv4OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","L2SquaredDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayInt64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal256OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapSubtract",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","partitionId",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","roundToExp2",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal32OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","concatWithSeparatorAssumeInjective",0,0,"","","System","
+Same as concatWithSeparator, the difference is that you need to ensure that concatWithSeparator(sep, expr1, expr2, expr3...) → result is injective, it will be used for optimization of GROUP BY.
+
+The function is named “injective” if it always returns different result for different values of arguments. In other words: different arguments never yield identical result.
+        ","","","","concatWithSeparatorAssumeInjective:
+
+``` sql
+SELECT concatWithSeparatorAssumeInjective('a', '1', '2', '3')
+```
+
+``` text
+
+```
+","String, String"
+"23.8.11.29.altinitystable","arrayDotProduct",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","leftPad",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateTime64OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayRotateLeft",0,0,"","","System","
+Returns an array of the same size as the original array with elements rotated
+to the left by the specified number of positions.
+[example:simple_int]
+[example:overflow_int]
+[example:simple_string]
+[example:simple_array]
+[example:simple_nested_array]
+
+Negative rotate values are treated as rotating to the right by the absolute
+value of the rotation.
+[example:negative_rotation_int]
+","","","","simple_int:
+
+``` sql
+SELECT arrayRotateLeft([1, 2, 3, 4, 5], 3)
+```
+
+``` text
+[4, 5, 1, 2, 3]
+```
+simple_string:
+
+``` sql
+SELECT arrayRotateLeft(['a', 'b', 'c', 'd', 'e'], 3)
+```
+
+``` text
+['d', 'e', 'a', 'b', 'c']
+```
+simple_array:
+
+``` sql
+SELECT arrayRotateLeft([[1, 2], [3, 4], [5, 6]], 2)
+```
+
+``` text
+[[5, 6], [1, 2], [3, 4]]
+```
+simple_nested_array:
+
+``` sql
+SELECT arrayRotateLeft([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], 1)
+```
+
+``` text
+[[[5, 6], [7, 8]], [[1, 2], [3, 4]]]
+```
+negative_rotation_int:
+
+``` sql
+SELECT arrayRotateLeft([1, 2, 3, 4, 5], -3)
+```
+
+``` text
+[3, 4, 5, 1, 2]
+```
+overflow_int:
+
+``` sql
+SELECT arrayRotateLeft([1, 2, 3, 4, 5], 8)
+```
+
+``` text
+[4, 5, 1, 2, 3]
+```
+","Array, Array"
+"23.8.11.29.altinitystable","cutToFirstSignificantSubdomainWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainWithWWW` but follows stricter rules to be compatible with RFC 3986 and less performant.","","","","","URL, URL"
+"23.8.11.29.altinitystable","toDateTimeOrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","translate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","trimRight",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","runningConcurrency",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateOrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addTupleOfIntervals",0,0,"","","System","
+Consecutively adds a tuple of intervals to a Date or a DateTime.
+[example:tuple]
+","","","","tuple:
+
+``` sql
+WITH toDate('2018-01-01') AS date SELECT addTupleOfIntervals(date, (INTERVAL 1 DAY, INTERVAL 1 YEAR))
+```
+
+``` text
+
+```
+","Date, Date, DateTime, Interval, Tuple"
+"23.8.11.29.altinitystable","toInt128OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayJaccardIndex",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","nullIn",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal128OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractURLParameters",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt16OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeUTF8NFD",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","leftPadUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt8OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateTime64OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionHierarchy",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsWithinCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","materialize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","upperUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchAnyCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","minSampleSizeContinous",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","queryString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","getSubcolumn",0,0,"","","System","
+Receives the expression or identifier and constant string with the name of subcolumn.
+
+Returns requested subcolumn extracted from the expression.
+","","","","getSubcolumn:
+
+``` sql
+SELECT getSubcolumn(array_col, 'size0'), getSubcolumn(tuple_col, 'elem_name')
+```
+
+``` text
+
+```
+","OtherFunctions, OtherFunctions"
+"23.8.11.29.altinitystable","h3HexAreaM2",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toYYYYMMDDhhmmss",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3NumHexagons",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsUUID",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","simpleJSONExtractFloat",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toYYYYMM",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","domainWithoutWWWRFC",0,0,"","","System","Similar to `domainWithoutWWW` but follows stricter rules to be compatible with RFC 3986 and less performant.","","","","","URL, URL"
+"23.8.11.29.altinitystable","arrayEnumerateDenseRanked",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime64BestEffortUSOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","moduloLegacy",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subBitmap",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","base64Decode",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","defaultValueOfArgumentType",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mortonDecode",0,0,"","","System","
+Decodes a Morton encoding (ZCurve) into the corresponding unsigned integer tuple
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts a resulting tuple size as a first argument and the code as a second argument.
+[example:simple]
+Will decode into: `(1,2,3,4)`
+The resulting tuple size cannot be more than 8
+
+Expanded: accepts a range mask (tuple) as a first argument and the code as a second argument.
+Each number in mask configures the amount of range shrink
+1 - no shrink
+2 - 2x shrink
+3 - 3x shrink
+....
+Up to 8x shrink.
+[example:range_shrank]
+Note: see mortonEncode() docs on why range change might be beneficial.
+Still limited to 8 numbers at most.
+
+Morton code for one argument is always the argument itself (as a tuple).
+[example:identity]
+Produces: `(1)`
+
+You can shrink one argument too:
+[example:identity_shrank]
+Produces: `(128)`
+
+The function accepts a column of codes as a second argument:
+[example:from_table]
+
+The range tuple must be a constant:
+[example:from_table_range]
+","","","","simple:
+
+``` sql
+SELECT mortonDecode(4, 2149)
+```
+
+``` text
+
+```
+range_shrank:
+
+``` sql
+SELECT mortonDecode((1,2), 1572864)
+```
+
+``` text
+
+```
+identity:
+
+``` sql
+SELECT mortonDecode(1, 1)
+```
+
+``` text
+
+```
+identity_shrank:
+
+``` sql
+SELECT mortonDecode(tuple(2), 32768)
+```
+
+``` text
+
+```
+from_table:
+
+``` sql
+SELECT mortonDecode(2, code) FROM table
+```
+
+``` text
+
+```
+from_table_range:
+
+``` sql
+SELECT mortonDecode((1,2), code) FROM table
+```
+
+``` text
+
+```
+","Morton coding, Morton coding, ZCurve"
+"23.8.11.29.altinitystable","mortonEncode",0,0,"","","System","
+Calculates Morton encoding (ZCurve) for a list of unsigned integers
+
+The function has two modes of operation:
+- Simple
+- Expanded
+
+Simple: accepts up to 8 unsigned integers as arguments and produces a UInt64 code.
+[example:simple]
+
+Expanded: accepts a range mask (tuple) as a first argument and up to 8 unsigned integers as other arguments.
+Each number in mask configures the amount of range expansion
+1 - no expansion
+2 - 2x expansion
+3 - 3x expansion
+....
+Up to 8x expansion.
+[example:range_expanded]
+Note: tuple size must be equal to the number of the other arguments
+
+Range expansion can be beneficial when you need a similar distribution for arguments with wildly different ranges (or cardinality)
+For example: 'IP Address' (0...FFFFFFFF) and 'Country code' (0...FF)
+
+Morton encoding for one argument is always the argument itself.
+[example:identity]
+Produces: `1`
+
+You can expand one argument too:
+[example:identity_expanded]
+Produces: `32768`
+
+The function also accepts columns as arguments:
+[example:from_table]
+
+But the range tuple must still be a constant:
+[example:from_table_range]
+
+Please note that you can fit only so much bits of information into Morton code as UInt64 has.
+Two arguments will have a range of maximum 2^32 (64/2) each
+Three arguments: range of max 2^21 (64/3) each
+And so on, all overflow will be clamped to zero
+","","","","simple:
+
+``` sql
+SELECT mortonEncode(1, 2, 3)
+```
+
+``` text
+
+```
+range_expanded:
+
+``` sql
+SELECT mortonEncode((1,2), 1024, 16)
+```
+
+``` text
+
+```
+identity:
+
+``` sql
+SELECT mortonEncode(1)
+```
+
+``` text
+
+```
+identity_expanded:
+
+``` sql
+SELECT mortonEncode(tuple(2), 128)
+```
+
+``` text
+
+```
+from_table:
+
+``` sql
+SELECT mortonEncode(n1, n2) FROM table
+```
+
+``` text
+
+```
+from_table_range:
+
+``` sql
+SELECT mortonEncode((1,2), n1, n2) FROM table
+```
+
+``` text
+
+```
+","Morton coding, Morton coding, ZCurve"
+"23.8.11.29.altinitystable","sigmoid",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeUTF8NFC",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchAllPositions",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tryDecrypt",0,0,"","","System","Similar to `decrypt`, but returns NULL if decryption fails because of using the wrong key.","","","","",""
+"23.8.11.29.altinitystable","log10",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchFirstIndexCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","indexOf",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uptime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toModifiedJulianDayOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiplyDecimal",0,0,"","","System","
+Performs multiplication on two decimals. Result value will be of type [Decimal256](../../sql-reference/data-types/decimal.md).
+Result scale can be explicitly specified by `result_scale` argument (const Integer in range `[0, 76]`). If not specified, the result scale is the max scale of given arguments.
+
+:::note
+These functions work significantly slower than usual `multiply`.
+In case you don't really need controlled precision and/or need fast computation, consider using [multiply](#multiply)
+:::
+
+**Syntax**
+
+```sql
+multiplyDecimal(a, b[, result_scale])
+```
+
+**Arguments**
+
+-   `a` — First value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `b` — Second value: [Decimal](../../sql-reference/data-types/decimal.md).
+-   `result_scale` — Scale of result: [Int/UInt](../../sql-reference/data-types/int-uint.md).
+
+**Returned value**
+
+-   The result of multiplication with given scale.
+
+Type: [Decimal256](../../sql-reference/data-types/decimal.md).
+
+**Example**
+
+```text
+┌─multiplyDecimal(toDecimal256(-12, 0), toDecimal32(-2.1, 1), 1)─┐
+│                                                           25.2 │
+└────────────────────────────────────────────────────────────────┘
+```
+
+**Difference from regular multiplication:**
+```sql
+SELECT toDecimal64(-12.647, 3) * toDecimal32(2.1239, 4);
+SELECT toDecimal64(-12.647, 3) as a, toDecimal32(2.1239, 4) as b, multiplyDecimal(a, b);
+```
+
+```text
+┌─multiply(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                               -26.8609633 │
+└───────────────────────────────────────────────────────────┘
+┌─multiplyDecimal(toDecimal64(-12.647, 3), toDecimal32(2.1239, 4))─┐
+│                                                         -26.8609 │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+```sql
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    multiplyDecimal(a, b);
+SELECT
+    toDecimal64(-12.647987876, 9) AS a,
+    toDecimal64(123.967645643, 9) AS b,
+    a * b;
+```
+
+```text
+┌─────────────a─┬─────────────b─┬─multiplyDecimal(toDecimal64(-12.647987876, 9), toDecimal64(123.967645643, 9))─┐
+│ -12.647987876 │ 123.967645643 │                                                               -1567.941279108 │
+└───────────────┴───────────────┴───────────────────────────────────────────────────────────────────────────────┘
+Received exception from server (version 22.11.1):
+Code: 407. DB::Exception: Received from localhost:9000. DB::Exception: Decimal math overflow: While processing toDecimal64(-12.647987876, 9) AS a, toDecimal64(123.967645643, 9) AS b, a * b. (DECIMAL_OVERFLOW)
+```
+","","","","",""
+"23.8.11.29.altinitystable","alphaTokens",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayFirstIndex",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayPartialShuffle",0,1,"","","System","
+Returns an array of the same size as the original array where elements in range [1..limit] are a random
+subset of the original array. Remaining (limit..n] shall contain the elements not in [1..limit] range in undefined order.
+Value of limit shall be in range [1..n]. Values outside of that range are equivalent to performing full arrayShuffle:
+[example:no_limit1]
+[example:no_limit2]
+
+Note: this function will not materialize constants:
+[example:materialize]
+
+If no seed is provided a random one will be used:
+[example:random_seed]
+
+It is possible to override the seed to produce stable results:
+[example:explicit_seed]
+","","","","no_limit1:
+
+``` sql
+SELECT arrayPartialShuffle([1, 2, 3, 4], 0)
+```
+
+``` text
+
+```
+no_limit2:
+
+``` sql
+SELECT arrayPartialShuffle([1, 2, 3, 4])
+```
+
+``` text
+
+```
+random_seed:
+
+``` sql
+SELECT arrayPartialShuffle([1, 2, 3, 4], 2)
+```
+
+``` text
+
+```
+explicit_seed:
+
+``` sql
+SELECT arrayPartialShuffle([1, 2, 3, 4], 2, 41)
+```
+
+``` text
+
+```
+materialize:
+
+``` sql
+SELECT arrayPartialShuffle(materialize([1, 2, 3, 4]), 2, 42), arrayPartialShuffle([1, 2, 3], 2, 42) FROM numbers(10)
+```
+
+``` text
+
+```
+","Array, Array"
+"23.8.11.29.altinitystable","parseDateTime32BestEffortOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","blockNumber",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutURLParameter",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rightUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","negate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sipHash128Keyed",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addMicroseconds",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","formatDateTime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt8OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","joinGet",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","geoToH3",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUnixTimestamp64Milli",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","firstSignificantSubdomainCustom",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","simpleJSONExtractBool",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeUTF8NFKC",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeBestEffortUSOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","detectProgrammingLanguage",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","neighbor",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt256OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleModulo",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStringCutToZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt8OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","not",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsInt8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizedQueryHashKeepNames",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","globalIn",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractArrayRaw",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","version",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","joinGetOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","notILike",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","geohashDecode",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toModifiedJulianDay",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","notLike",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetUInt32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","today",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","fragment",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","match",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapApply",0,0,"","","System","The same as arrayMap.","","","","mapApply:
+
+``` sql
+SELECT mapApply((k, v) -> (k, v * 2), map('k1', 1, 'k2', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","multiSearchAnyUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractNanoseconds",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","queryStringAndFragment",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt32OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayFloat32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","MACStringToOUI",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","file",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","roundAge",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","simpleJSONExtractString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt128",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayUInt64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonPerimeterCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","exp2",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3IsValid",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","concatAssumeInjective",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayUInt32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dotProduct",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayUInt16",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateTimeOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","nullIf",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDateTime64OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractSeconds",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tid",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","countSubstrings",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsFloat64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleMultiplyByNumber",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapFromArrays",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutToFirstSignificantSubdomainCustomWithWWWRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustomWithWWW` but follows stricter rules according to RFC 3986.","","","","","URL, URL"
+"23.8.11.29.altinitystable","toInt256OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","plus",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchAllPositionsCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randConstant",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","splitByWhitespace",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayFlatten",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dateName",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleIntDiv",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt256OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","pointInPolygon",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngrams",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal64OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsIntersectionCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonPerimeterSpherical",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","e",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toRelativeHourNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasColumnInTable",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayProduct",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsIntersectionSpherical",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","kafkaMurmurHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","buildId",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetUInt8OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the UInt8 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","arrayIntersect",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeInJodaSyntaxOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","FQDN",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapUpdate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","currentProfiles",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isNull",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isNaN",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchAllPositionsCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractDays",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","visibleWidth",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayDistinct",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toFloat32OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetUInt8",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the UInt8 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","emptyArrayUInt8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","positionCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","acosh",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toRelativeMinuteNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the attribute’s data type if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","replaceOne",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayInt16",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv6NumToString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","throwIf",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randUniform",0,0,"","","System","
+Returns a random number from the uniform distribution in the specified range.
+Accepts two parameters - minimum bound and maximum bound.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randUniform(0, 1) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","toDateTime64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","initializeAggregation",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","yesterday",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toBool",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randPoisson",0,0,"","","System","
+Returns a random number from the poisson distribution.
+Accepts one parameter - the mean number of occurrences.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randPoisson(3) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","nowInBlock",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randNegativeBinomial",0,0,"","","System","
+Returns a random number from the negative binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randNegativeBinomial(10, 0.1) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","toUnixTimestamp64Micro",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randBinomial",0,0,"","","System","
+Returns a random number from the binomial distribution.
+Accepts two parameters - number of experiments and probability of success in each experiment.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randBinomial(10, 0.1) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","addWeeks",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv6StringToNumOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayResize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randBernoulli",0,0,"","","System","
+Returns a random number from the Bernoulli distribution.
+Accepts one parameter - probability of success.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randBernoulli(0.1) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","toInt32OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randStudentT",0,0,"","","System","
+Returns a random number from the t-distribution.
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randStudentT(5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","aes_encrypt_mysql",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasTokenOrNull",0,0,"","","System","Performs lookup of needle in haystack using tokenbf_v1 index. Returns null if needle is ill-formed.","","","","",""
+"23.8.11.29.altinitystable","tuple",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramMinHashCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt64OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toISOYear",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randFisherF",0,0,"","","System","
+Returns a random number from the f-distribution.
+The F-distribution is the distribution of X = (S1 / d1) / (S2 / d2) where d1 and d2 are degrees of freedom.
+Accepts two parameters - degrees of freedom.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randFisherF(5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","reinterpretAsFixedString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toLastDayOfMonth",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randomPrintableASCII",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","snowflakeToDateTime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","notEquals",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsDateTime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapContainsKeyLike",0,0,"","","System","Checks whether map contains key LIKE specified pattern.","","","","mapContainsKeyLike:
+
+``` sql
+SELECT mapContainsKeyLike(map('k1-1', 1, 'k2-1', 2), 'k1%')
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","s2RectIntersection",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","CAST",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","caseWithExpr",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","s2CellsIntersect",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchAnyCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","s2GetNeighbors",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayAll",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalDay",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsFloat32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","topLevelDomain",0,0,"","","System","
+Extracts the the top-level domain from a URL.
+
+Returns an empty string if the argument cannot be parsed as a URL or does not contain a top-level domain.
+        ","","","","topLevelDomain:
+
+``` sql
+SELECT topLevelDomain('svn+ssh://www.some.svn-hosting.com:80/repo/trunk')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.11.29.altinitystable","greatest",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfMillisecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsInt64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsInt16",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","and",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","detectLanguageUnknown",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","currentSchemas",0,1,"","","System","
+Returns a single-element array with the name of the current database
+
+Requires a boolean parameter, but it is ignored actually. It is required just for compatibility with the implementation of this function in other DB engines.
+
+[example:common]
+","","","","common:
+
+``` sql
+SELECT current_schemas(true);
+```
+
+``` text
+['default']
+```
+",""
+"23.8.11.29.altinitystable","reinterpretAsUInt256",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsUInt64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractYears",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","readWKTMultiPolygon",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsUInt16",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","fromUnixTimestamp",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasThreadFuzzer",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayAUC",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiMatchAllIndices",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","replaceRegexpAll",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeInJodaSyntax",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","timeSlot",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","gcd",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDayOfMonth",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSON_EXISTS",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isIPAddressInRange",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toSecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hiveHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randomStringUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayLastOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfMonth",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfDay",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","caseWithoutExpr",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","floor",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitTestAny",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","least",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cosineDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","right",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","map",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wordShingleMinHashCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","s2CapUnion",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","serverUUID",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt256OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonConvexHullCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","murmurHash3_32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","countSubstringsCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3ExactEdgeLengthM",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","firstLine",0,0,"","","System","Returns first line of a multi-line string.","firstLine(string)","- string:The string to process.
+","The first line of the string or the whole string if there is no line separators.","Return first line:
+
+``` sql
+firstLine('Hello\nWorld')
+```
+
+``` text
+'Hello'
+```
+Return whole string:
+
+``` sql
+firstLine('Hello World')
+```
+
+``` text
+'Hello World'
+```
+",""
+"23.8.11.29.altinitystable","serverTimezone",0,0,"","","System","
+Returns the timezone name in which server operates.
+
+[example:serverTimezone]
+    ","","","","serverTimezone:
+
+``` sql
+SELECT serverTimezone();
+```
+
+``` text
+
+```
+","Constant, Constant, Miscellaneous"
+"23.8.11.29.altinitystable","substringUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3UnidirectionalEdgeIsValid",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randomString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randExponential",0,0,"","","System","
+Returns a random number from the exponential distribution.
+Accepts one parameter - lambda value.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randExponential(0, 5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","simpleJSONExtractInt",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toLastDayOfWeek",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","s2RectContains",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetFloat64",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Float64 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsInt32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","max2",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchFirstPositionCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","positionCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractAllGroupsVertical",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","MACNumToString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","revision",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractURLParameter",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","zookeeperSessionUptime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","proportionsZTest",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayZip",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","displayName",0,0,"","","System","
+Returns the value of `display_name` from config or server FQDN if not set.
+
+[example:displayName]
+","","","","displayName:
+
+``` sql
+SELECT displayName();
+```
+
+``` text
+
+```
+","Constant, Constant, Miscellaneous"
+"23.8.11.29.altinitystable","h3IsResClassIII",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutQueryStringAndFragment",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","decodeURLComponent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitAnd",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt256OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayFirstOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","firstSignificantSubdomainRFC",0,0,"","","System","Returns the ""first significant subdomain"" according to RFC 1034.","","","","","URL, URL"
+"23.8.11.29.altinitystable","queryID",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","path",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","defaultValueOfTypeName",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","initcap",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tuplePlus",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wordShingleMinHashArgCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleConcat",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractWeeks",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayFirst",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","accurateCastOrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetInt8OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int8 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","dateTime64ToSnowflake",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","stem",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayReverseSplit",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","transactionOldestSnapshot",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dumpColumnStructure",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchFirstIndex",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tcpPort",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractHours",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeBestEffortUS",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapPopulateSeries",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime64BestEffortUS",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","synonyms",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiFuzzyMatchAny",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfWeek",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isFinite",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDayOfWeek",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","trimLeft",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractInterval",0,0,"","","System","
+Adds an negated interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+","","","","tuple:
+
+``` sql
+SELECT subtractInterval((INTERVAL 1 DAY, INTERVAL 1 YEAR), INTERVAL 1 MONTH)
+```
+
+``` text
+
+```
+interval1:
+
+``` sql
+SELECT subtractInterval(INTERVAL 1 DAY, INTERVAL 1 MONTH)
+```
+
+``` text
+
+```
+interval2:
+
+``` sql
+SELECT subtractInterval(INTERVAL 2 DAY, INTERVAL 1 DAY)
+```
+
+``` text
+
+```
+","Interval, Interval, Tuple"
+"23.8.11.29.altinitystable","toValidUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","abs",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayWithConstant",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfNanosecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalNanosecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","SHA256",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleIntDivOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","LpDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayMax",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUUIDOrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","LinfNormalize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","extractURLParameterNames",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3PointDistKm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchAllPositionsUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toYearWeek",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toFixedString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","erfc",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutToFirstSignificantSubdomainCustomWithWWW",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain without stripping `www`.
+Accepts custom TLD list name from config.
+
+Can be useful if you need fresh TLD list or you have custom.
+        ","","","","cutToFirstSignificantSubdomainCustomWithWWW:
+
+``` sql
+SELECT cutToFirstSignificantSubdomainCustomWithWWW('www.foo', 'public_suffix_list')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.11.29.altinitystable","hasTokenCaseInsensitive",0,1,"","","System","Performs case insensitive lookup of needle in haystack using tokenbf_v1 index.","","","","",""
+"23.8.11.29.altinitystable","toStartOfYear",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal256",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiSearchFirstPositionCaseInsensitiveUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cutFragment",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayCompact",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalWeek",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toRelativeSecondNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","replaceAll",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetInt32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","toMonday",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitShiftLeft",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","netloc",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetIPv4OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the IPv4 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","meiliMatch",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayEnumerate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","exp",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleNegate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toRelativeQuarterNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","widthBucket",0,0,"","","System","
+Returns the number of the bucket in which `operand` falls in a histogram having `count` equal-width buckets spanning the range `low` to `high`. Returns `0` if `operand < low`, and returns `count+1` if `operand >= high`.
+
+`operand`, `low`, `high` can be any native number type. `count` can only be unsigned native integer and its value cannot be zero.
+
+**Syntax**
+
+```sql
+widthBucket(operand, low, high, count)
+```
+
+There is also a case insensitive alias called `WIDTH_BUCKET` to provide compatibility with other databases.
+
+**Example**
+
+Query:
+[example:simple]
+
+Result:
+
+``` text
+┌─widthBucket(10.15, -8.6, 23, 18)─┐
+│                               11 │
+└──────────────────────────────────┘
+```
+","","","","simple:
+
+``` sql
+SELECT widthBucket(10.15, -8.6, 23, 18)
+```
+
+``` text
+
+```
+","Mathematical, Mathematical"
+"23.8.11.29.altinitystable","isNullable",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","generateRandomStructure",0,0,"","","System","
+Generates a random table structure.
+This function takes 2 optional constant arguments:
+the number of columns in the result structure (random by default) and random seed (random by default)
+The maximum number of columns is 128.
+The function returns a value of type String.
+","","","","random:
+
+``` sql
+SELECT generateRandomStructure()
+```
+
+``` text
+c1 UInt32, c2 FixedString(25)
+```
+with specified number of columns:
+
+``` sql
+SELECT generateRandomStructure(3)
+```
+
+``` text
+c1 String, c2 Array(Int32), c3 LowCardinality(String)
+```
+with specified seed:
+
+``` sql
+SELECT generateRandomStructure(1, 42)
+```
+
+``` text
+c1 UInt128
+```
+","Random, Random"
+"23.8.11.29.altinitystable","toRelativeYearNum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","repeat",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","unhex",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","IPv4ToIPv6",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfMicrosecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt8OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regionToPopulation",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfISOYear",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitOr",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sleep",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayElement",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","murmurHash2_32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfTenMinutes",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayEnumerateUniq",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","regexpExtract",0,0,"","","System","Extracts the first string in haystack that matches the regexp pattern and corresponds to the regex group index.","","","","",""
+"23.8.11.29.altinitystable","cutToFirstSignificantSubdomainCustomRFC",0,0,"","","System","Similar to `cutToFirstSignificantSubdomainCustom` but follows stricter rules according to RFC 3986.","","","","","URL, URL"
+"23.8.11.29.altinitystable","encodeXMLComponent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","timezoneOffset",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","transform",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetInt16OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Int16 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","cutToFirstSignificantSubdomainCustom",0,0,"","","System","
+Returns the part of the domain that includes top-level subdomains up to the first significant subdomain. Accepts custom TLD list name.
+
+Can be useful if you need fresh TLD list or you have custom.
+        ","","","","cutToFirstSignificantSubdomainCustom:
+
+``` sql
+SELECT cutToFirstSignificantSubdomainCustom('bar.foo.there-is-no-such-domain', 'public_suffix_list');
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.11.29.altinitystable","tupleElement",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapReverseSort",0,0,"","","System","The same as arrayReverseSort.","","","","mapReverseSort:
+
+``` sql
+SELECT mapReverseSort((k, v) -> v, map('k1', 3, 'k2', 1, 'k3', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","addYears",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","validateNestedArraySizes",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tokens",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","LpNormalize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsUInt32",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","greaterOrEquals",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","upper",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitmapTransform",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayShuffle",0,1,"","","System","
+Returns an array of the same size as the original array containing the elements in shuffled order.
+Elements are being reordered in such a way that each possible permutation of those elements has equal probability of appearance.
+
+Note: this function will not materialize constants:
+[example:materialize]
+
+If no seed is provided a random one will be used:
+[example:random_seed]
+
+It is possible to override the seed to produce stable results:
+[example:explicit_seed]
+","","","","random_seed:
+
+``` sql
+SELECT arrayShuffle([1, 2, 3, 4])
+```
+
+``` text
+
+```
+explicit_seed:
+
+``` sql
+SELECT arrayShuffle([1, 2, 3, 4], 41)
+```
+
+``` text
+
+```
+materialize:
+
+``` sql
+SELECT arrayShuffle(materialize([1, 2, 3]), 42), arrayShuffle([1, 2, 3], 42) FROM numbers(10)
+```
+
+``` text
+
+```
+","Array, Array"
+"23.8.11.29.altinitystable","toISOWeek",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","reinterpretAsInt256",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hasAny",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalMicrosecond",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","L1Normalize",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictHas",0,0,"","","System","
+Checks whether a key is present in a dictionary.
+Accepts 2 parameters: name of the dictionary, key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration.
+Returned value: 0 if there is no key, 1 if there is a key, type of UInt8
+","","","","",""
+"23.8.11.29.altinitystable","enabledProfiles",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiply",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt256",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapKeys",0,0,"","","System","Returns an array with the keys of map.","","","","mapKeys:
+
+``` sql
+SELECT mapKeys(map('k1', 'v1', 'k2', 'v2'))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","sign",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","decodeURLFormComponent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","L2Distance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","L1Distance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayFloat64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","LinfNorm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","less",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayInt8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapPartialReverseSort",0,0,"","","System","The same as arrayPartialReverseSort.","","","","mapPartialReverseSort:
+
+``` sql
+SELECT mapPartialReverseSort((k, v) -> v, 2, map('k1', 3, 'k2', 1, 'k3', 2))
+```
+
+``` text
+
+```
+","Map, Map"
+"23.8.11.29.altinitystable","L2SquaredNorm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","formatReadableDecimalSize",0,0,"","","System","
+Accepts the size (number of bytes). Returns a rounded size with a suffix (KB, MB, etc.) as a string.
+","","","","formatReadableDecimalSize:
+
+``` sql
+SELECT formatReadableDecimalSize(1000)
+```
+
+``` text
+
+```
+","OtherFunctions, OtherFunctions"
+"23.8.11.29.altinitystable","lowerUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","position",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","__bitBoolMaskOr",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cosh",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTime64BestEffortOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","domainRFC",0,0,"","","System","Similar to `domain` but follows stricter rules to be compatible with RFC 3986 and less performant.","","","","","URL, URL"
+"23.8.11.29.altinitystable","coalesce",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","basename",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ULIDStringToDateTime",0,0,"","","System","
+This function extracts the timestamp from a ULID and returns it as a DateTime64(3) typed value.
+The function expects the ULID to be provided as the first argument, which can be either a String or a FixedString(26) data type.
+An optional second argument can be passed to specify a timezone for the timestamp.
+","","","","ulid:
+
+``` sql
+SELECT ULIDStringToDateTime(generateULID())
+```
+
+``` text
+
+```
+timezone:
+
+``` sql
+SELECT ULIDStringToDateTime(generateULID(), 'Asia/Istanbul')
+```
+
+``` text
+
+```
+","ULID, ULID"
+"23.8.11.29.altinitystable","JSONType",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addNanoseconds",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","isConstant",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonAreaCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayUniq",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toIntervalYear",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addInterval",0,0,"","","System","
+Adds an interval to another interval or tuple of intervals. The returned value is tuple of intervals.
+[example:tuple]
+[example:interval1]
+
+If the types of the first interval (or the interval in the tuple) and the second interval are the same they will be merged into one interval.
+[example:interval2]
+","","","","tuple:
+
+``` sql
+SELECT addInterval((INTERVAL 1 DAY, INTERVAL 1 YEAR), INTERVAL 1 MONTH)
+```
+
+``` text
+
+```
+interval1:
+
+``` sql
+SELECT addInterval(INTERVAL 1 DAY, INTERVAL 1 MONTH)
+```
+
+``` text
+
+```
+interval2:
+
+``` sql
+SELECT addInterval(INTERVAL 1 DAY, INTERVAL 1 DAY)
+```
+
+``` text
+
+```
+","Interval, Interval, Tuple"
+"23.8.11.29.altinitystable","polygonsSymDifferenceSpherical",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tanh",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dateDiff",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitRotateRight",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayReverseSort",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hostName",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleMultiply",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","startsWithUTF8",0,0,"","","System","
+Returns whether string `str` starts with `prefix`, the difference between `startsWithUTF8` and `startsWith` is that `startsWithUTF8` match `str` and `suffix` by UTF-8 characters.
+        ","","","","startsWithUTF8:
+
+``` sql
+select startsWithUTF8('富强民主文明和谐', '富强');
+```
+
+``` text
+
+```
+","String, String"
+"23.8.11.29.altinitystable","addMonths",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","leftUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","topLevelDomainRFC",0,0,"","","System","Similar to topLevelDomain, but conforms to RFC 3986.","","","","","URL, URL"
+"23.8.11.29.altinitystable","has",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","appendTrailingCharIfAbsent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","simpleJSONExtractRaw",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayJoin",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","simpleJSONHas",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3ToString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayShiftRight",0,0,"","","System","
+Returns an array of the same size as the original array with elements shifted
+to the right by the specified number of positions. New elements are filled with
+provided default values or default values of the corresponding type.
+[example:simple_int]
+[example:overflow_int]
+[example:simple_string]
+[example:simple_array]
+[example:simple_nested_array]
+
+Negative shift values are treated as shifting to the left by the absolute
+value of the shift.
+[example:negative_shift_int]
+
+The default value must be of the same type as the array elements.
+[example:simple_int_with_default]
+[example:simple_string_with_default]
+[example:simple_array_with_default]
+[example:casted_array_with_default]
+","","","","simple_int:
+
+``` sql
+SELECT arrayShiftRight([1, 2, 3, 4, 5], 3)
+```
+
+``` text
+[0, 0, 0, 1, 2]
+```
+negative_shift_int:
+
+``` sql
+SELECT arrayShiftRight([1, 2, 3, 4, 5], -3)
+```
+
+``` text
+[4, 5, 0, 0, 0]
+```
+overflow_int:
+
+``` sql
+SELECT arrayShiftRight([1, 2, 3, 4, 5], 8)
+```
+
+``` text
+[0, 0, 0, 0, 0]
+```
+simple_string:
+
+``` sql
+SELECT arrayShiftRight(['a', 'b', 'c', 'd', 'e'], 3)
+```
+
+``` text
+['', '', '', 'a', 'b']
+```
+simple_array:
+
+``` sql
+SELECT arrayShiftRight([[1, 2], [3, 4], [5, 6]], 2)
+```
+
+``` text
+[[], [], [1, 2]]
+```
+simple_nested_array:
+
+``` sql
+SELECT arrayShiftRight([[[1, 2], [3, 4]], [[5, 6], [7, 8]]], 1)
+```
+
+``` text
+[[], [[1, 2], [3, 4]]]
+```
+simple_int_with_default:
+
+``` sql
+SELECT arrayShiftRight([1, 2, 3, 4, 5], 3, 7)
+```
+
+``` text
+[7, 7, 7, 1, 2]
+```
+simple_string_with_default:
+
+``` sql
+SELECT arrayShiftRight(['a', 'b', 'c', 'd', 'e'], 3, 'foo')
+```
+
+``` text
+['foo', 'foo', 'foo', 'a', 'b']
+```
+simple_array_with_default:
+
+``` sql
+SELECT arrayShiftRight([[1, 2], [3, 4], [5, 6]], 2, [7, 8])
+```
+
+``` text
+[[7, 8], [7, 8], [1, 2]]
+```
+casted_array_with_default:
+
+``` sql
+SELECT arrayShiftRight(CAST('[1, 2, 3, 4, 5, 6]', 'Array(UInt16)'), 1, 1000)
+```
+
+``` text
+[1000, 1, 2, 3, 4, 5]
+```
+","Array, Array"
+"23.8.11.29.altinitystable","h3ToParent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayPartialReverseSort",0,0,"","","System","
+Returns an array of the same size as the original array where elements in range `[1..limit]`
+are sorted in descending order. Remaining elements `(limit..N]` shall contain elements in unspecified order.
+[example:simple_int]
+[example:simple_string]
+
+To retain only the sorted elements use `arrayResize`:
+[example:retain_sorted]
+
+If the `func` function is specified, sorting order is determined by the result of the `func`
+function applied to the elements of the array.
+[example:lambda_simple]
+
+If `func` accepts multiple arguments, the `arrayPartialSort` function is passed several arrays
+that the arguments of `func` will correspond to.
+[example:lambda_complex]
+
+For more details see documentation of `arraySort`.
+","","","","simple_int:
+
+``` sql
+SELECT arrayPartialReverseSort(2, [5, 9, 1, 3])
+```
+
+``` text
+
+```
+simple_string:
+
+``` sql
+SELECT arrayPartialReverseSort(2, ['expenses','lasso','embolism','gladly'])
+```
+
+``` text
+
+```
+retain_sorted:
+
+``` sql
+SELECT arrayResize(arrayPartialReverseSort(2, [5, 9, 1, 3]), 2)
+```
+
+``` text
+
+```
+lambda_simple:
+
+``` sql
+SELECT arrayPartialReverseSort((x) -> -x, 2, [5, 9, 1, 3])
+```
+
+``` text
+
+```
+lambda_complex:
+
+``` sql
+SELECT arrayPartialReverseSort((x, y) -> -y, 1, [0, 1, 2], [1, 2, 3]) as res
+```
+
+``` text
+
+```
+","Array, Array"
+"23.8.11.29.altinitystable","domain",0,0,"","","System","
+Extracts the hostname from a URL.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        ","","","","domain:
+
+``` sql
+SELECT domain('svn+ssh://some.svn-hosting.com:80/repo/trunk')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.11.29.altinitystable","fromUnixTimestamp64Micro",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","range",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayPartialSort",0,0,"","","System","
+Returns an array of the same size as the original array where elements in range `[1..limit]`
+are sorted in ascending order. Remaining elements `(limit..N]` shall contain elements in unspecified order.
+[example:simple_int]
+[example:simple_string]
+
+To retain only the sorted elements use `arrayResize`:
+[example:retain_sorted]
+
+If the `func` function is specified, sorting order is determined by the result of the `func`
+function applied to the elements of the array.
+[example:lambda_simple]
+
+If `func` accepts multiple arguments, the `arrayPartialSort` function is passed several arrays
+that the arguments of `func` will correspond to.
+[example:lambda_complex]
+
+For more details see documentation of `arraySort`.
+","","","","simple_int:
+
+``` sql
+SELECT arrayPartialSort(2, [5, 9, 1, 3])
+```
+
+``` text
+
+```
+simple_string:
+
+``` sql
+SELECT arrayPartialSort(2, ['expenses','lasso','embolism','gladly'])
+```
+
+``` text
+
+```
+retain_sorted:
+
+``` sql
+SELECT arrayResize(arrayPartialSort(2, [5, 9, 1, 3]), 2)
+```
+
+``` text
+
+```
+lambda_simple:
+
+``` sql
+SELECT arrayPartialSort((x) -> -x, 2, [5, 9, 1, 3])
+```
+
+``` text
+
+```
+lambda_complex:
+
+``` sql
+SELECT arrayPartialSort((x, y) -> -y, 1, [0, 1, 2], [1, 2, 3]) as res
+```
+
+``` text
+
+```
+","Array, Array"
+"23.8.11.29.altinitystable","toJSONString",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","__getScalar",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetFaces",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt32OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","accurateCast",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt64",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","wkt",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","domainWithoutWWW",0,0,"","","System","
+Extracts the hostname from a URL, removing the leading ""www."" if present.
+
+The URL can be specified with or without a scheme.
+If the argument can't be parsed as URL, the function returns an empty string.
+        ","","","","domainWithoutWWW:
+
+``` sql
+SELECT domainWithoutWWW('https://www.clickhouse.com')
+```
+
+``` text
+
+```
+","URL, URL"
+"23.8.11.29.altinitystable","arrayPushFront",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arraySort",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","firstSignificantSubdomainCustomRFC",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleMinus",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqThetaUnion",0,0,"","","System","
+Two uniqThetaSketch objects to do union calculation(set operation ∪), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+select finalizeAggregation(uniqThetaUnion(arrayReduce('uniqThetaState',[1,2]), arrayReduce('uniqThetaState',[2,3,4])));
+```
+
+``` text
+
+```
+","uniqTheta, uniqTheta"
+"23.8.11.29.altinitystable","bitmaskToArray",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","min2",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","length",0,1,"","","System","
+Calculates the length of the string or array.
+
+For String or FixedString argument: calculates the number of bytes in string.
+[example:string1]
+
+For Array argument: calculates the number of elements in the array.
+[example:arr1]
+
+If applied for FixedString argument, the function is a constant expression:
+[example:constexpr]
+
+Please note that the number of bytes in a string is not the same as the number of Unicode ""code points""
+and it is not the same as the number of Unicode ""grapheme clusters"" (what we usually call ""characters"")
+and it is not the same as the visible string width.
+[example:unicode]
+
+It is ok to have ASCII NUL bytes in strings, and they will be counted as well.
+[example:nul]
+","","","","string1:
+
+``` sql
+SELECT length('Hello, world!')
+```
+
+``` text
+
+```
+arr1:
+
+``` sql
+SELECT length(['Hello'], ['world'])
+```
+
+``` text
+
+```
+constexpr:
+
+``` sql
+WITH 'hello' || toString(number) AS str
+SELECT str, 
+       isConstant(length(str)) AS str_length_is_constant, 
+       isConstant(length(str::FixedString(6))) AS fixed_str_length_is_constant
+FROM numbers(3)
+```
+
+``` text
+
+```
+unicode:
+
+``` sql
+SELECT 'ёлка' AS str1, length(str1), lengthUTF8(str1), normalizeUTF8NFKD(str1) AS str2, length(str2), lengthUTF8(str2)
+```
+
+``` text
+
+```
+nul:
+
+``` sql
+SELECT 'abc\0\0\0' AS str, length(str)
+```
+
+``` text
+
+```
+","Array, Array, String"
+"23.8.11.29.altinitystable","toHour",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt16OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfFifteenMinutes",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toYYYYMMDD",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleToNameValuePairs",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addHours",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","getOSKernelVersion",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","space",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","gccMurmurHash",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","substringIndexUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsSymDifferenceCartesian",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","LinfDistance",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","readWKTPoint",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","randChiSquared",0,0,"","","System","
+Returns a random number from the chi-squared distribution (a distribution of a sum of the squares of k independent standard normal random variables).
+Accepts one parameter - degree of freedom.
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+SELECT randChiSquared(5) FROM numbers(100000);
+```
+
+``` text
+
+```
+","Distribution, Distribution"
+"23.8.11.29.altinitystable","IPv4StringToNumOrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","formatReadableQuantity",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayPopBack",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUnixTimestamp64Nano",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayLastIndex",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitRotateLeft",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toUInt16OrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","emptyArrayDateTime",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mapAdd",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt32OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractMicroseconds",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","decodeXMLComponent",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","svg",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","getMacro",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiIf",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","runningAccumulate",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","SHA384",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","murmurHash3_128",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramSearchCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3ToCenterChild",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","notIn",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetFloat32",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 3 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+
+Returned value: value of the dictionary attribute parsed in the Float32 if key is found, otherwise <null_value> element specified in the dictionary configuration.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","tupleModuloByNumber",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","URLHierarchy",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ngramSimHashUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractTupleOfIntervals",0,0,"","","System","
+Consecutively subtracts a tuple of intervals from a Date or a DateTime.
+[example:tuple]
+","","","","tuple:
+
+``` sql
+WITH toDate('2018-01-01') AS date SELECT subtractTupleOfIntervals(date, (INTERVAL 1 DAY, INTERVAL 1 YEAR))
+```
+
+``` text
+
+```
+","Date, Date, DateTime, Interval, Tuple"
+"23.8.11.29.altinitystable","polygonAreaSpherical",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","base58Encode",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","structureToProtobufSchema",0,0,"","","System","
+Function that converts ClickHouse table structure to Protobuf format schema
+","","","","random:
+
+``` sql
+SELECT structureToCapnProtoSchema('s String, x UInt32', 'MessageName') format TSVRaw
+```
+
+``` text
+syntax = ""proto3"";
+
+message MessageName
+{
+    bytes s = 1;
+    uint32 x = 2;
+}
+```
+","Other, Other"
+"23.8.11.29.altinitystable","multiMatchAnyIndex",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","s2ToGeo",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetDateOrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Date if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","wordShingleMinHashCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sinh",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleDivide",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","bitPositionsToArray",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","xor",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractInt",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractMonths",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","subtractMilliseconds",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayPopFront",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetFloat32OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the Float32 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","s2RectAdd",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqThetaIntersect",0,0,"","","System","
+Two uniqThetaSketch objects to do intersect calculation(set operation ∩), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+select finalizeAggregation(uniqThetaIntersect(arrayReduce('uniqThetaState',[1,2]), arrayReduce('uniqThetaState',[2,3,4])));
+```
+
+``` text
+
+```
+","uniqTheta, uniqTheta"
+"23.8.11.29.altinitystable","toUnixTimestamp",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetRes0Indexes",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleIntDivByNumber",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toColumnTypeName",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayMin",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3PointDistRads",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","polygonsUnionSpherical",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arraySum",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sin",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiFuzzyMatchAllIndices",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","geohashEncode",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","formatReadableTimeDelta",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeUTF8NFKD",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cos",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dictGetIPv6OrDefault",0,0,"","","System","
+Retrieves values from a dictionary.
+
+Accepts 4 parameters:
+-- name of the dictionary;
+-- name of the column of the dictionary or tuple of column names;
+-- key value - expression returning dictionary key-type value or tuple-type value - depending on the dictionary configuration;
+-- default values returned if the dictionary does not contain a row with the key value;
+
+Returned value: value of the dictionary attribute parsed in the IPv6 if key is found, otherwise default value.
+
+Throws an exception if cannot parse the value of the attribute or the value does not match the attribute data type.
+","","","","",""
+"23.8.11.29.altinitystable","toYear",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeInJodaSyntaxOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal128OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayCount",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","hex",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3ToGeo",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toDecimal256OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","multiMatchAny",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayEnumerateDense",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","or",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayExists",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","L2Norm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","h3GetDestinationIndexFromUnidirectionalEdge",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","parseDateTimeBestEffortUSOrZero",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toInt32OrNull",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","array",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toLowCardinality",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sleepEachRow",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","LpNorm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","port",0,0,"","","System","Returns the port or `default_port` if there is no port in the URL (or in case of validation error).","","","","","URL, URL"
+"23.8.11.29.altinitystable","wordShingleMinHashArgUTF8",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","now",0,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cbrt",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfMinute",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayMap",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","countSubstringsCaseInsensitive",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","soundex",0,1,"","","System","Returns Soundex code of a string.","","","","",""
+"23.8.11.29.altinitystable","fromUnixTimestamp64Milli",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addSeconds",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","tupleIntDivOrZeroByNumber",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqThetaNot",0,0,"","","System","
+Two uniqThetaSketch objects to do a_not_b calculation(set operation ×), the result is a new uniqThetaSketch.
+
+A uniqThetaSketch object is to be constructed by aggregation function uniqTheta with -State.
+
+UniqThetaSketch is a data structure storage of approximate values set.
+For more information on RoaringBitmap, see: [Theta Sketch Framework](https://datasketches.apache.org/docs/Theta/ThetaSketchFramework.html).
+
+Typical usage:
+[example:typical]
+","","","","typical:
+
+``` sql
+select finalizeAggregation(uniqThetaNot(arrayReduce('uniqThetaState',[1,2]), arrayReduce('uniqThetaState',[2,3,4])));
+```
+
+``` text
+
+```
+","uniqTheta, uniqTheta"
+"23.8.11.29.altinitystable","indexHint",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","toMinute",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","JSONExtractUInt",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayReduce",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","addDays",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","portRFC",0,0,"","","System","Similar to `port`, but conforms to RFC 3986.","","","","","URL, URL"
+"23.8.11.29.altinitystable","toFloat64OrDefault",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","arrayLast",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","readWKTPolygon",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","L1Norm",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","log1p",0,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","connection_id",0,1,"connectionID","","System","","","","","",""
+"23.8.11.29.altinitystable","from_utc_timestamp",0,1,"fromUTCTimestamp","","System","","","","","",""
+"23.8.11.29.altinitystable","truncate",0,1,"trunc","","System","","","","","",""
+"23.8.11.29.altinitystable","ceiling",0,1,"ceil","","System","","","","","",""
+"23.8.11.29.altinitystable","rand32",0,0,"rand","","System","","","","","",""
+"23.8.11.29.altinitystable","INET6_ATON",0,1,"IPv6StringToNum","","System","","","","","",""
+"23.8.11.29.altinitystable","INET_ATON",0,1,"IPv4StringToNum","","System","","","","","",""
+"23.8.11.29.altinitystable","user",0,1,"currentUser","","System","","","","","",""
+"23.8.11.29.altinitystable","SUBSTRING_INDEX",0,1,"substringIndex","","System","","","","","",""
+"23.8.11.29.altinitystable","TO_BASE64",0,1,"base64Encode","","System","","","","","",""
+"23.8.11.29.altinitystable","rpad",0,1,"rightPad","","System","","","","","",""
+"23.8.11.29.altinitystable","DATABASE",0,1,"currentDatabase","","System","","","","","",""
+"23.8.11.29.altinitystable","pmod",0,1,"positiveModulo","","System","","","","","",""
+"23.8.11.29.altinitystable","MAP_FROM_ARRAYS",0,0,"mapFromArrays","","System","","","","","",""
+"23.8.11.29.altinitystable","positive_modulo",0,1,"positiveModulo","","System","","","","","",""
+"23.8.11.29.altinitystable","REGEXP_REPLACE",0,1,"replaceRegexpAll","","System","","","","","",""
+"23.8.11.29.altinitystable","timeZone",0,0,"timezone","","System","","","","","",""
+"23.8.11.29.altinitystable","DATE_TRUNC",0,1,"dateTrunc","","System","","","","","",""
+"23.8.11.29.altinitystable","toStartOfFiveMinute",0,0,"toStartOfFiveMinutes","","System","","","","","",""
+"23.8.11.29.altinitystable","visitParamExtractFloat",0,0,"simpleJSONExtractFloat","","System","","","","","",""
+"23.8.11.29.altinitystable","TIMESTAMP_DIFF",0,0,"dateDiff","","System","","","","","",""
+"23.8.11.29.altinitystable","visitParamHas",0,0,"simpleJSONHas","","System","","","","","",""
+"23.8.11.29.altinitystable","timeZoneOffset",0,0,"timezoneOffset","","System","","","","","",""
+"23.8.11.29.altinitystable","timestamp_diff",0,0,"dateDiff","","System","","","","","",""
+"23.8.11.29.altinitystable","SECOND",0,1,"toSecond","","System","","","","","",""
+"23.8.11.29.altinitystable","toTimeZone",0,0,"toTimezone","","System","","","","","",""
+"23.8.11.29.altinitystable","TO_UNIXTIME",0,0,"parseDateTime","","System","","","","","",""
+"23.8.11.29.altinitystable","current_schemas",0,1,"currentSchemas","","System","","","","","",""
+"23.8.11.29.altinitystable","timestampDiff",0,0,"dateDiff","","System","","","","","",""
+"23.8.11.29.altinitystable","date_diff",0,0,"dateDiff","","System","","","","","",""
+"23.8.11.29.altinitystable","visitParamExtractUInt",0,0,"simpleJSONExtractUInt","","System","","","","","",""
+"23.8.11.29.altinitystable","query_id",0,1,"queryID","","System","","","","","",""
+"23.8.11.29.altinitystable","rtrim",0,0,"trimRight","","System","","","","","",""
+"23.8.11.29.altinitystable","INET_NTOA",0,1,"IPv4NumToString","","System","","","","","",""
+"23.8.11.29.altinitystable","current_database",0,1,"currentDatabase","","System","","","","","",""
+"23.8.11.29.altinitystable","curdate",0,1,"today","","System","","","","","",""
+"23.8.11.29.altinitystable","YEAR",0,1,"toYear","","System","","","","","",""
+"23.8.11.29.altinitystable","hostname",0,0,"hostName","","System","","","","","",""
+"23.8.11.29.altinitystable","concat_ws",0,1,"concatWithSeparator","","System","","","","","",""
+"23.8.11.29.altinitystable","power",0,1,"pow","","System","","","","","",""
+"23.8.11.29.altinitystable","FROM_UNIXTIME",0,0,"fromUnixTimestamp","","System","","","","","",""
+"23.8.11.29.altinitystable","mid",0,1,"substring","","System","","","","","",""
+"23.8.11.29.altinitystable","substr",0,1,"substring","","System","","","","","",""
+"23.8.11.29.altinitystable","distanceL2",0,1,"L2Distance","","System","","","","","",""
+"23.8.11.29.altinitystable","DATE_DIFF",0,0,"dateDiff","","System","","","","","",""
+"23.8.11.29.altinitystable","scalarProduct",0,1,"dotProduct","","System","","","","","",""
+"23.8.11.29.altinitystable","yandexConsistentHash",0,0,"kostikConsistentHash","","System","","","","","",""
+"23.8.11.29.altinitystable","mapFromString",0,0,"extractKeyValuePairs","","System","","","","","",""
+"23.8.11.29.altinitystable","str_to_map",0,1,"extractKeyValuePairs","","System","","","","","",""
+"23.8.11.29.altinitystable","visitParamExtractBool",0,0,"simpleJSONExtractBool","","System","","","","","",""
+"23.8.11.29.altinitystable","CHAR_LENGTH",0,1,"lengthUTF8","","System","","","","","",""
+"23.8.11.29.altinitystable","FROM_BASE64",0,1,"base64Decode","","System","","","","","",""
+"23.8.11.29.altinitystable","LAST_DAY",0,1,"toLastDayOfMonth","","System","","","","","",""
+"23.8.11.29.altinitystable","timeZoneOf",0,0,"timezoneOf","","System","","","","","",""
+"23.8.11.29.altinitystable","OCTET_LENGTH",0,1,"length","","System","","","","","",""
+"23.8.11.29.altinitystable","distanceLp",0,1,"LpDistance","","System","","","","","",""
+"23.8.11.29.altinitystable","lcase",0,1,"lower","","System","","","","","",""
+"23.8.11.29.altinitystable","REGEXP_MATCHES",0,1,"match","","System","","","","","",""
+"23.8.11.29.altinitystable","DATE_FORMAT",0,0,"formatDateTime","","System","","","","","",""
+"23.8.11.29.altinitystable","str_to_date",0,1,"parseDateTimeOrNull","","System","","","","","",""
+"23.8.11.29.altinitystable","normL2Squared",0,1,"L2SquaredNorm","","System","","","","","",""
+"23.8.11.29.altinitystable","yearweek",0,1,"toYearWeek","","System","","","","","",""
+"23.8.11.29.altinitystable","visitParamExtractInt",0,0,"simpleJSONExtractInt","","System","","","","","",""
+"23.8.11.29.altinitystable","visitParamExtractRaw",0,0,"simpleJSONExtractRaw","","System","","","","","",""
+"23.8.11.29.altinitystable","serverTimeZone",0,0,"serverTimezone","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeLp",0,1,"LpNormalize","","System","","","","","",""
+"23.8.11.29.altinitystable","week",0,1,"toWeek","","System","","","","","",""
+"23.8.11.29.altinitystable","DAYOFYEAR",0,1,"toDayOfYear","","System","","","","","",""
+"23.8.11.29.altinitystable","HOUR",0,1,"toHour","","System","","","","","",""
+"23.8.11.29.altinitystable","normLinf",0,1,"LinfNorm","","System","","","","","",""
+"23.8.11.29.altinitystable","SCHEMA",0,1,"currentDatabase","","System","","","","","",""
+"23.8.11.29.altinitystable","flatten",0,1,"arrayFlatten","","System","","","","","",""
+"23.8.11.29.altinitystable","replace",0,1,"replaceAll","","System","","","","","",""
+"23.8.11.29.altinitystable","QUARTER",0,1,"toQuarter","","System","","","","","",""
+"23.8.11.29.altinitystable","UTC_timestamp",0,1,"UTCTimestamp","","System","","","","","",""
+"23.8.11.29.altinitystable","ln",0,1,"log","","System","","","","","",""
+"23.8.11.29.altinitystable","extractAllGroups",0,0,"extractAllGroupsVertical","","System","","","","","",""
+"23.8.11.29.altinitystable","DAYOFMONTH",0,1,"toDayOfMonth","","System","","","","","",""
+"23.8.11.29.altinitystable","vectorDifference",0,1,"tupleMinus","","System","","","","","",""
+"23.8.11.29.altinitystable","INET6_NTOA",0,1,"IPv6NumToString","","System","","","","","",""
+"23.8.11.29.altinitystable","JSON_ARRAY_LENGTH",0,1,"JSONArrayLength","","System","","","","","",""
+"23.8.11.29.altinitystable","instr",0,1,"positionCaseInsensitive","","System","","","","","",""
+"23.8.11.29.altinitystable","DAYOFWEEK",0,1,"toDayOfWeek","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeLinf",0,1,"LinfNormalize","","System","","","","","",""
+"23.8.11.29.altinitystable","MINUTE",0,1,"toMinute","","System","","","","","",""
+"23.8.11.29.altinitystable","ltrim",0,0,"trimLeft","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeL2",0,1,"L2Normalize","","System","","","","","",""
+"23.8.11.29.altinitystable","initial_query_id",0,1,"initialQueryID","","System","","","","","",""
+"23.8.11.29.altinitystable","to_utc_timestamp",0,1,"toUTCTimestamp","","System","","","","","",""
+"23.8.11.29.altinitystable","width_bucket",0,1,"widthBucket","","System","","","","","",""
+"23.8.11.29.altinitystable","lpad",0,1,"leftPad","","System","","","","","",""
+"23.8.11.29.altinitystable","ucase",0,1,"upper","","System","","","","","",""
+"23.8.11.29.altinitystable","REGEXP_EXTRACT",0,1,"regexpExtract","","System","","","","","",""
+"23.8.11.29.altinitystable","normalizeL1",0,1,"L1Normalize","","System","","","","","",""
+"23.8.11.29.altinitystable","CHARACTER_LENGTH",0,1,"lengthUTF8","","System","","","","","",""
+"23.8.11.29.altinitystable","distanceLinf",0,1,"LinfDistance","","System","","","","","",""
+"23.8.11.29.altinitystable","locate",0,1,"position","","System","","","","","",""
+"23.8.11.29.altinitystable","splitByAlpha",0,0,"alphaTokens","","System","","","","","",""
+"23.8.11.29.altinitystable","trim",0,0,"trimBoth","","System","","","","","",""
+"23.8.11.29.altinitystable","current_timestamp",0,1,"now","","System","","","","","",""
+"23.8.11.29.altinitystable","visitParamExtractString",0,0,"simpleJSONExtractString","","System","","","","","",""
+"23.8.11.29.altinitystable","DAY",0,1,"toDayOfMonth","","System","","","","","",""
+"23.8.11.29.altinitystable","normLp",0,1,"LpNorm","","System","","","","","",""
+"23.8.11.29.altinitystable","distanceL1",0,1,"L1Distance","","System","","","","","",""
+"23.8.11.29.altinitystable","MONTH",0,1,"toMonth","","System","","","","","",""
+"23.8.11.29.altinitystable","distanceL2Squared",0,1,"L2SquaredDistance","","System","","","","","",""
+"23.8.11.29.altinitystable","current_date",0,1,"today","","System","","","","","",""
+"23.8.11.29.altinitystable","SVG",0,0,"svg","","System","","","","","",""
+"23.8.11.29.altinitystable","normL1",0,1,"L1Norm","","System","","","","","",""
+"23.8.11.29.altinitystable","vectorSum",0,1,"tuplePlus","","System","","","","","",""
+"23.8.11.29.altinitystable","mod",0,1,"modulo","","System","","","","","",""
+"23.8.11.29.altinitystable","normL2",0,1,"L2Norm","","System","","","","","",""
+"23.8.11.29.altinitystable","exponentialTimeDecayedCount",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","exponentialTimeDecayedMax",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","lagInFrame",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","dense_rank",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","flameGraph",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rank",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","exponentialMovingAverage",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sparkbar",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","singleValueOrNull",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","meanZTest",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","analysisOfVariance",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","studentTTest",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","rankCorr",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","aggThrow",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","categoricalInformationValue",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupArrayMovingAvg",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupArrayMovingSum",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","simpleLinearRegression",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","entropy",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","histogram",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","mannWhitneyUTest",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","maxIntersections",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupBitmapXor",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupBitmapAnd",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cramersVBiasCorrected",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","contingency",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","cramersV",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupBitAnd",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupBitOr",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","exponentialTimeDecayedSum",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","topKWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","stochasticLinearRegression",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","corr",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqCombined64",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","intervalLengthSum",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","nothing",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqCombined",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sumMapFiltered",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","minMappedArrays",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sumMappedArrays",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantiles",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sum",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sumKahan",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","corrMatrix",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileExactWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sumMapFilteredWithOverflow",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","corrStable",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","covarPopMatrix",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","covarPop",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","row_number",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","kurtPop",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","kurtSamp",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupBitXor",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","skewPop",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","skewSamp",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","nonNegativeDerivative",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqExact",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sumMapWithOverflow",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","stddevSamp",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","varPop",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileTimingWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","covarPopStable",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","stddevSampStable",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupBitmapOr",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","covarSampMatrix",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","last_value",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","topK",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","last_value_respect_nulls",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","first_value_respect_nulls",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","any",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","anyLast",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","deltaSumTimestamp",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","varSampStable",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","nth_value",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","argMax",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","stochasticLogisticRegression",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","argMin",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesExact",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqHLL12",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileBFloat16",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniq",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","min",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sequenceNextNode",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesTimingWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","ntile",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","boundingRatio",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","deltaSum",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqUpTo",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","windowFunnel",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","retention",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sequenceMatch",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesBFloat16Weighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileBFloat16Weighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesTDigestWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileTDigest",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileTDigestWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileDeterministic",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesTDigest",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","avg",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","covarSampStable",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesTiming",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","welchTTest",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","covarSamp",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","varPopStable",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileTiming",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","leadInFrame",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesExactExclusive",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","maxIntersectionsPosition",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesBFloat16",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesExactInclusive",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileExactInclusive",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileInterpolatedWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileExactHigh",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupBitmap",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesInterpolatedWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantile",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupArraySample",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesExactLow",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupUniqArray",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","uniqTheta",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","max",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesExactWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","kolmogorovSmirnovTest",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sumWithOverflow",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sequenceCount",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupArrayInsertAt",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesGK",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesDeterministic",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileGK",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantilesExactHigh",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","sumCount",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileExact",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","anyHeavy",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","theilsU",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","maxMappedArrays",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","stddevPop",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupArrayLast",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","groupArray",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","first_value",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","exponentialTimeDecayedAvg",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileExactExclusive",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","count",1,1,"","","System","","","","","",""
+"23.8.11.29.altinitystable","stddevPopStable",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","quantileExactLow",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","varSamp",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","avgWeighted",1,0,"","","System","","","","","",""
+"23.8.11.29.altinitystable","anova",1,1,"analysisOfVariance","","System","","","","","",""
+"23.8.11.29.altinitystable","BIT_XOR",1,1,"groupBitXor","","System","","","","","",""
+"23.8.11.29.altinitystable","BIT_OR",1,1,"groupBitOr","","System","","","","","",""
+"23.8.11.29.altinitystable","STDDEV_SAMP",1,1,"stddevSamp","","System","","","","","",""
+"23.8.11.29.altinitystable","VAR_SAMP",1,1,"varSamp","","System","","","","","",""
+"23.8.11.29.altinitystable","COVAR_SAMP",1,1,"covarSamp","","System","","","","","",""
+"23.8.11.29.altinitystable","any_value",1,1,"any","","System","","","","","",""
+"23.8.11.29.altinitystable","medianInterpolatedWeighted",1,0,"quantileInterpolatedWeighted","","System","","","","","",""
+"23.8.11.29.altinitystable","medianTDigestWeighted",1,0,"quantileTDigestWeighted","","System","","","","","",""
+"23.8.11.29.altinitystable","VAR_POP",1,1,"varPop","","System","","","","","",""
+"23.8.11.29.altinitystable","medianBFloat16",1,0,"quantileBFloat16","","System","","","","","",""
+"23.8.11.29.altinitystable","medianTDigest",1,0,"quantileTDigest","","System","","","","","",""
+"23.8.11.29.altinitystable","medianTimingWeighted",1,0,"quantileTimingWeighted","","System","","","","","",""
+"23.8.11.29.altinitystable","array_agg",1,1,"groupArray","","System","","","","","",""
+"23.8.11.29.altinitystable","median",1,0,"quantile","","System","","","","","",""
+"23.8.11.29.altinitystable","medianTiming",1,0,"quantileTiming","","System","","","","","",""
+"23.8.11.29.altinitystable","medianExact",1,0,"quantileExact","","System","","","","","",""
+"23.8.11.29.altinitystable","STDDEV_POP",1,1,"stddevPop","","System","","","","","",""
+"23.8.11.29.altinitystable","medianGK",1,0,"quantileGK","","System","","","","","",""
+"23.8.11.29.altinitystable","medianExactLow",1,0,"quantileExactLow","","System","","","","","",""
+"23.8.11.29.altinitystable","medianDeterministic",1,0,"quantileDeterministic","","System","","","","","",""
+"23.8.11.29.altinitystable","COVAR_POP",1,1,"covarPop","","System","","","","","",""
+"23.8.11.29.altinitystable","medianBFloat16Weighted",1,0,"quantileBFloat16Weighted","","System","","","","","",""
+"23.8.11.29.altinitystable","medianExactWeighted",1,0,"quantileExactWeighted","","System","","","","","",""
+"23.8.11.29.altinitystable","BIT_AND",1,1,"groupBitAnd","","System","","","","","",""
+"23.8.11.29.altinitystable","medianExactHigh",1,0,"quantileExactHigh","","System","","","","","",""
+"23.8.11.29.altinitystable","array_concat_agg",1,1,"groupArrayArray","","System","","","","","",""
