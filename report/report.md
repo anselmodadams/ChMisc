@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2024-07-15 17:12:20 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 24.6.2.17
+Generated at 2024-07-27 09:41:42 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 24.6.3.64
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -984,8 +984,8 @@ Generated at 2024-07-15 17:12:20 (America/Sao_Paulo), covering ClickHouse versio
 | `generateULID` | No | No | (none) | in v23.2.1.2537 | Yes |
 | `generateUUIDv4` | No | No | (none) | in v1.1.54276 | Yes |
 | `generateUUIDv7` | No | No | (none) | in v24.5.1.1763 | Yes |
-| `generateUUIDv7NonMonotonic` | No | Yes | (none) | in v24.5.1.1763 | up to v24.5.4.49 |
-| `generateUUIDv7ThreadMonotonic` | No | Yes | (none) | in v24.5.1.1763 | up to v24.5.4.49 |
+| `generateUUIDv7NonMonotonic` | No | Yes | (none) | in v24.5.1.1763 | up to v24.5.5.53 |
+| `generateUUIDv7ThreadMonotonic` | No | Yes | (none) | in v24.5.1.1763 | up to v24.5.5.53 |
 | `geoDistance` | No | No | (none) | in v20.1.2.4 | Yes |
 | `geoToH3` | No | No | (none) | in v19.11.2.7 | Yes |
 | `geoToS2` | No | No | (none) | in v21.9.2.17 | Yes |
@@ -2939,6 +2939,7 @@ Generated at 2024-07-15 17:12:20 (America/Sao_Paulo), covering ClickHouse versio
 | `query_plan_lift_up_union` | in v23.11.1.2711 |  | Yes | Allow to move UNIONs up so that more parts of the query plan can be optimized |
 | `query_plan_max_optimizations_to_apply` | in v21.3.2.5 |  | Yes | Limit the total number of optimizations applied to query plan. If zero, ignored. If limit reached, throw exception |
 | `query_plan_merge_expressions` | in v23.11.1.2711 |  | Yes | Allow to merge expressions in the query plan |
+| `query_plan_merge_filters` | in v24.6.3.47 |  | Yes | Allow to merge filters in the query plan |
 | `query_plan_optimize_prewhere` | in v24.2.1.2248 |  | Yes | Allow to push down filter to PREWHERE expression for supported storages |
 | `query_plan_optimize_primary_key` | in v22.8.1.2097 | in v24.1.1.2048 | Yes | Analyze primary key using query plan (instead of AST) |
 | `query_plan_optimize_projection` | in v23.3.1.2823 | in v23.10.1.1976 | Yes | Use query plan for aggregation-in-order optimisation |
@@ -3127,7 +3128,7 @@ Generated at 2024-07-15 17:12:20 (America/Sao_Paulo), covering ClickHouse versio
 | MergeTree Setting | Introduced | Still Available? | Default Values |
 |:-|:-|:-|:-|
 | `add_implicit_sign_column_constraint_for_collapsing_engine` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
-| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.5.46 | `0` from `23.9.1.1854` to `24.3.5.46` |
+| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.6.31 | `0` from `23.9.1.1854` to `24.3.6.31` |
 | `allow_experimental_replacing_merge_with_cleanup` | in v23.12.2.59 | Yes | `0` from `23.12.2.59` to `latest` |
 | `allow_floating_point_partition_key` | in v21.2.2.8 | Yes | `0` from `21.2.2.8` to `latest` |
 | `allow_nullable_key` | in v20.7.2.30 | Yes | `0` from `20.7.2.30` to `latest` |
@@ -3281,7 +3282,7 @@ Generated at 2024-07-15 17:12:20 (America/Sao_Paulo), covering ClickHouse versio
 | `remote_fs_zero_copy_zookeeper_path` | in v22.1.2.2 | Yes | `/clickhouse/zero_copy` from `22.1.2.2` to `latest` |
 | `remove_empty_parts` | in v20.12.2.1 | Yes | `1` from `20.12.2.1` to `latest` |
 | `remove_rolled_back_parts_immediately` | in v22.4.1.2305 | Yes | `1` from `22.4.1.2305` to `latest` |
-| `replace_long_file_name_to_hash` | in v23.9.1.1854 | Yes | `0` from `23.9.1.1854` to `24.5.4.49` / `1` from `24.6.1.4423` to `latest` |
+| `replace_long_file_name_to_hash` | in v23.9.1.1854 | Yes | `0` from `23.9.1.1854` to `24.5.5.53` / `1` from `24.6.1.4423` to `latest` |
 | `replicated_can_become_leader` | in v18.10.3 | Yes | `1` from `18.10.3.0` to `latest` |
 | `replicated_deduplication_window` | in v18.10.3 | Yes | `100` from `18.10.3.0` to `23.10.6.60` / `1000` from `23.11.1.2711` to `latest` |
 | `replicated_deduplication_window_for_async_inserts` | in v22.12.1.1752 | Yes | `10000` from `22.12.1.1752` to `latest` |
