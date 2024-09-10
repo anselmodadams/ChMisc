@@ -1,0 +1,76 @@
+"ch_version","name","description","allow_readonly"
+"24.5.5.41","azureBlobStorageCluster","The table function can be used to read the data stored on Azure Blob Storage in parallel for many nodes in a specified cluster.",0
+"24.5.5.41","azureBlobStorage","The table function can be used to read the data stored on Azure Blob Storage.",0
+"24.5.5.41","viewExplain","
+                Returns result of EXPLAIN query.
+                The function should not be called directly but can be invoked via `SELECT * FROM (EXPLAIN <query>)`.
+                You can use this query to process the result of EXPLAIN further using SQL (e.g., in tests).
+                Example:
+                [example:1]
+                ",0
+"24.5.5.41","format","
+Extracts table structure from data and parses it according to specified input format.
+Syntax: `format(format_name, data)`.
+Parameters:
+    - `format_name` - the format of the data.
+    - `data ` - String literal or constant expression that returns a string containing data in specified format.
+Returned value: A table with data parsed from `data` argument according specified format and extracted schema.
+",0
+"24.5.5.41","dictionary","",0
+"24.5.5.41","mysql","",0
+"24.5.5.41","viewIfPermitted","",1
+"24.5.5.41","odbc","",0
+"24.5.5.41","postgresql","",0
+"24.5.5.41","hdfsCluster","",0
+"24.5.5.41","hudi","The table function can be used to read the Hudi table stored on object store.",0
+"24.5.5.41","oss","",0
+"24.5.5.41","cosn","",0
+"24.5.5.41","s3","The table function can be used to read the data stored on AWS S3.",0
+"24.5.5.41","deltaLake","The table function can be used to read the DeltaLake table stored on object store.",0
+"24.5.5.41","fuzzJSON","Perturbs a JSON string with random variations.",1
+"24.5.5.41","hive","",0
+"24.5.5.41","mergeTreeIndex","Represents the contents of index and marks files of MergeTree tables. It can be used for introspection",1
+"24.5.5.41","redis","",0
+"24.5.5.41","jdbc","",0
+"24.5.5.41","zeros_mt","
+                Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+                This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+                In contrast to the `zeros_mt`, this table function is using single thread for data generation.
+                Example:
+                [example:1]
+                This query will test the speed of `randomPrintableASCII` function using single thread.
+                See also the `system.zeros` table.",0
+"24.5.5.41","mongodb","",0
+"24.5.5.41","generateRandom","",1
+"24.5.5.41","remote","",0
+"24.5.5.41","input","",0
+"24.5.5.41","s3Cluster","",0
+"24.5.5.41","values","",1
+"24.5.5.41","url","",0
+"24.5.5.41","executable","",0
+"24.5.5.41","iceberg","The table function can be used to read the Iceberg table stored on object store.",0
+"24.5.5.41","fileCluster","This table function is used for distributed reading of files in cluster nodes filesystems.",0
+"24.5.5.41","urlCluster","",0
+"24.5.5.41","view","",1
+"24.5.5.41","numbers_mt","",1
+"24.5.5.41","generate_series","",1
+"24.5.5.41","merge","",0
+"24.5.5.41","generateSeries","",1
+"24.5.5.41","clusterAllReplicas","",1
+"24.5.5.41","cluster","",1
+"24.5.5.41","sqlite","",0
+"24.5.5.41","zeros","
+                Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+                This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+                In contrast to the `zeros`, this table function is using multiple threads for data generation, according to the `max_threads` setting.
+                Example:
+                [example:1]
+                This query will test the speed of `randomPrintableASCII` function using multiple threads.
+                See also the `system.zeros` table.
+                ",0
+"24.5.5.41","gcs","The table function can be used to read the data stored on Google Cloud Storage.",0
+"24.5.5.41","remoteSecure","",0
+"24.5.5.41","null","",1
+"24.5.5.41","file","",0
+"24.5.5.41","hdfs","",0
+"24.5.5.41","numbers","",1
