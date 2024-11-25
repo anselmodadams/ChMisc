@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2024-10-02 16:28:49 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 24.9.1.3278
+Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 24.9.2.42
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2559,7 +2559,7 @@ Generated at 2024-10-02 16:28:49 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_parquet_filter_push_down` | in v23.8.1.2992 |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE/PREWHERE expressions and min/max statistics in the Parquet metadata. |
 | `input_format_parquet_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
 | `input_format_parquet_local_file_min_bytes_for_seek` | in v23.8.1.2992 |  | Yes | Min bytes required for local read (file) to do seek, instead of read with ignore in Parquet input format |
-| `input_format_parquet_max_block_size` | in v22.8.15.25.altinitystable |  | Yes | Max block size for parquet reader. |
+| `input_format_parquet_max_block_size` | in v22.8.15.25.altinityfips |  | Yes | Max block size for parquet reader. |
 | `input_format_parquet_prefer_block_bytes` | in v24.6.1.4423 |  | Yes | Average block bytes output by parquet reader |
 | `input_format_parquet_preserve_order` | in v23.4.1.1943 |  | Yes | Avoid reordering rows when reading from Parquet files. Usually makes it much slower. |
 | `input_format_parquet_skip_columns_with_unsupported_types_in_schema_inference` | in v22.4.1.2305 |  | Yes | Allow to skip columns with unsupported types while schema inference for format Parquet |
@@ -2882,7 +2882,7 @@ Generated at 2024-10-02 16:28:49 (America/Sao_Paulo), covering ClickHouse versio
 | `optimize_use_projections` | in v23.5.1.3174 |  | Yes | Automatically choose projections to perform SELECT query |
 | `optimize_using_constraints` | in v21.12.2.17 |  | Yes | Use constraints for query optimization |
 | `os_thread_priority` | in v19.11.2.7 |  | Yes | "If non zero - set corresponding \'nice\' value for query processing threads. Can be used to adjust query priority for OS scheduler." |
-| `output_format_always_quote_identifiers` | in v24.9.1.3278 |  | Yes | Always quote identifiers |
+| `output_format_always_quote_identifiers` | in v24.9.1.3278 |  | up to v24.9.1.3278 | Always quote identifiers |
 | `output_format_arrow_compression_method` | in v23.3.1.2823 |  | Yes | Compression method for Arrow output format. Supported codecs: lz4_frame, zstd, none (uncompressed) |
 | `output_format_arrow_fixed_string_as_fixed_byte_array` | in v23.2.1.2537 |  | Yes | Use Arrow FIXED_SIZE_BINARY type instead of Binary for FixedString columns. |
 | `output_format_arrow_low_cardinality_as_dictionary` | in v21.7.2.7 |  | Yes | Enable output LowCardinality type as Dictionary Arrow type |
@@ -2902,7 +2902,7 @@ Generated at 2024-10-02 16:28:49 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_csv_serialize_tuple_into_separate_columns` | in v24.3.5.46 |  | Yes | If it set to true, then Tuples in CSV format are serialized as separate columns (that is, their nesting in the tuple is lost) |
 | `output_format_decimal_trailing_zeros` | in v21.9.2.17 |  | Yes | Output trailing zeros when printing Decimal values. E.g. 1.230000 instead of 1.23. |
 | `output_format_enable_streaming` | in v20.5.2.7 |  | Yes | Enable streaming in output formats that support it. |
-| `output_format_identifier_quoting_style` | in v24.9.1.3278 |  | Yes | Set the quoting style for identifiers |
+| `output_format_identifier_quoting_style` | in v24.9.1.3278 |  | up to v24.9.1.3278 | Set the quoting style for identifiers |
 | `output_format_json_array_of_rows` | in v20.12.2.1 |  | Yes | Output a JSON array of all rows in JSONEachRow(Compact) format. |
 | `output_format_json_escape_forward_slashes` | in v18.10.3 |  | Yes | Controls escaping forward slashes for string outputs in JSON output format. This is intended for compatibility with JavaScript. Don\'t confuse with backslashes that are always escaped. |
 | `output_format_json_named_tuples_as_objects` | in v20.12.2.1 |  | Yes | Serialize named tuple columns as JSON objects. |
@@ -2998,7 +2998,7 @@ Generated at 2024-10-02 16:28:49 (America/Sao_Paulo), covering ClickHouse versio
 | `prefer_warmed_unmerged_parts_seconds` | in v23.12.1.1368 |  | Yes | Only available in ClickHouse Cloud |
 | `preferred_block_size_bytes` | in v1.1.54236 |  | Yes |  |
 | `preferred_max_column_in_block_size_bytes` | in v1.1.54276 |  | Yes | Limit on max column size in block while reading. Helps to decrease cache misses count. Should be close to L2 cache size. |
-| `preferred_optimize_projection_name` | in v23.11.1.2711 |  | Yes | If it is set to a non-empty string, ClickHouse tries to apply specified projection |
+| `preferred_optimize_projection_name` | in v23.8.16.42.altinitystable |  | Yes | If it is set to a non-empty string, ClickHouse tries to apply specified projection |
 | `prefetch_buffer_size` | in v23.4.1.1943 |  | Yes | The maximum size of the prefetch buffer to read from the filesystem. |
 | `print_pretty_type_names` | in v23.9.1.1854 |  | Yes | Print pretty type names in DESCRIBE query and toTypeName() function |
 | `priority` | in v1.1.54019 |  | Yes | Priority of the query. 1 - the highest, higher value - lower priority; 0 - do not use priorities. |
@@ -3138,6 +3138,8 @@ Generated at 2024-10-02 16:28:49 (America/Sao_Paulo), covering ClickHouse versio
 | `session_timezone` | in v23.6.1.1524 |  | Yes | The default timezone for current session or query. The server default timezone if empty. |
 | `set_overflow_mode` | in v1.1.54019 |  | Yes |  |
 | `short_circuit_function_evaluation` | in v21.9.2.17 |  | Yes | Setting for short-circuit function evaluation configuration. Possible values: \'enable\', \'disable\', \'force_enable\' |
+| `show_create_query_identifier_quoting_rule` | in v24.9.2.42 |  | Yes | Set the quoting rule for identifiers in SHOW CREATE query |
+| `show_create_query_identifier_quoting_style` | in v24.9.2.42 |  | Yes | Set the quoting style for identifiers in SHOW CREATE query |
 | `show_table_uuid_in_table_create_query_if_not_nil` | in v20.4.2.9 |  | Yes | For tables in databases with Engine=Atomic show UUID of the table in its CREATE query. |
 | `single_join_prefer_left_table` | in v23.2.1.2537 |  | Yes | For single JOIN in case of identifier ambiguity prefer left table |
 | `skip_download_if_exceeds_query_cache` | in v22.6.1.1985 |  | Yes | Skip download from remote filesystem if exceeds query cache size |
@@ -3221,7 +3223,7 @@ Generated at 2024-10-02 16:28:49 (America/Sao_Paulo), covering ClickHouse versio
 |:-|:-|:-|:-|
 | `adaptive_write_buffer_initial_size` | in v24.9.1.3278 | Yes | `16384` from `24.9.1.3278` to `latest` |
 | `add_implicit_sign_column_constraint_for_collapsing_engine` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
-| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.11.7 | `0` from `23.9.1.1854` to `24.3.11.7` |
+| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.12.75 | `0` from `23.9.1.1854` to `24.3.12.75` |
 | `allow_experimental_replacing_merge_with_cleanup` | in v23.12.2.59 | Yes | `0` from `23.12.2.59` to `latest` |
 | `allow_floating_point_partition_key` | in v21.2.2.8 | Yes | `0` from `21.2.2.8` to `latest` |
 | `allow_nullable_key` | in v20.7.2.30 | Yes | `0` from `20.7.2.30` to `latest` |
