@@ -29,4 +29,5 @@ with open('ch_repos_tags.csv', 'w') as f:
     tags = dt.get_tags('altinity/clickhouse-server')
     tags += dt.get_tags('yandex/clickhouse-server')
     tags += dt.get_tags('clickhouse/clickhouse-server')
+    tags += dt.get_tags('clickhouse/clickhouse')
     cw.writerows([(f'{t["name"]}', f'{t["version"]}') for t in tags if tag_filter(t)])
