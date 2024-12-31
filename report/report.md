@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 24.9.2.42
+Generated at 2024-12-31 14:14:08 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 24.12.2.29
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -15,7 +15,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `EmbeddedRocksDB` | in v20.12.2.1 | Yes |
 | `Executable` | in v21.10.2.15 | Yes |
 | `ExecutablePool` | in v21.10.2.15 | Yes |
-| `ExternalDistributed` | in v21.5.5.12 | Yes |
+| `ExternalDistributed` | in v21.5.5.12 | up to v24.10.3.21 |
 | `File` | in v18.4.0 | Yes |
 | `FileLog` | in v21.11.2.2 | Yes |
 | `FuzzJSON` | in v23.11.1.2711 | Yes |
@@ -27,6 +27,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `Hudi` | in v22.11.1.1360 | Yes |
 | `Iceberg` | in v23.2.1.2537 | Yes |
 | `IcebergAzure` | in v24.9.1.3278 | Yes |
+| `IcebergHDFS` | in v24.10.1.2812 | Yes |
 | `IcebergLocal` | in v24.9.1.3278 | Yes |
 | `IcebergS3` | in v24.9.1.3278 | Yes |
 | `JDBC` | in v18.14.9 | Yes |
@@ -83,6 +84,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `clusterAllReplicas` | in v20.1.2.4 | Yes |
 | `cosn` | in v20.7.2.30 | Yes |
 | `deltaLake` | in v22.11.1.1360 | Yes |
+| `deltaLakeCluster` | in v24.11.1.2557 | Yes |
 | `dictionary` | in v21.4.3.21 | Yes |
 | `executable` | in v21.10.2.15 | Yes |
 | `file` | in v18.4.0 | Yes |
@@ -98,10 +100,15 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `hdfsCluster` | in v22.1.2.2 | Yes |
 | `hive` | in v22.3.2.1 | Yes |
 | `hudi` | in v22.11.1.1360 | Yes |
+| `hudiCluster` | in v24.11.1.2557 | Yes |
 | `iceberg` | in v23.2.1.2537 | Yes |
 | `icebergAzure` | in v24.9.1.3278 | Yes |
+| `icebergAzureCluster` | in v24.11.1.2557 | Yes |
+| `icebergHDFS` | in v24.10.1.2812 | Yes |
+| `icebergHDFSCluster` | in v24.11.1.2557 | Yes |
 | `icebergLocal` | in v24.9.1.3278 | Yes |
 | `icebergS3` | in v24.9.1.3278 | Yes |
+| `icebergS3Cluster` | in v24.11.1.2557 | Yes |
 | `input` | in v19.15.2.2 | Yes |
 | `jdbc` | in v18.14.9 | Yes |
 | `loop` | in v24.6.1.4423 | Yes |
@@ -247,6 +254,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 |:-|:-|:-|:-|:-|
 | `AggregateFunction` | No | (none) | in v18.4.0 | Yes |
 | `Array` | No | (none) | in v18.4.0 | Yes |
+| `BFloat16` | No | (none) | in v24.11.1.2557 | Yes |
 | `BIGINT` | Yes | Int64 | in v18.4.0 | Yes |
 | `BIGINT SIGNED` | Yes | Int64 | in v20.6.3.28 | Yes |
 | `BIGINT UNSIGNED` | Yes | UInt64 | in v20.6.3.28 | Yes |
@@ -492,6 +500,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `REGEXP_EXTRACT` | No | Yes | regexpExtract | in v23.2.1.2537 | Yes |
 | `REGEXP_MATCHES` | No | Yes | match | in v22.2.2.1 | Yes |
 | `REGEXP_REPLACE` | No | Yes | replaceRegexpAll | in v22.2.2.1 | Yes |
+| `RIPEMD160` | No | No | (none) | in v24.10.1.2812 | Yes |
 | `SCHEMA` | No | Yes | currentDatabase | in v23.8.1.2992 | Yes |
 | `SECOND` | No | Yes | toSecond | in v21.2.2.8 | Yes |
 | `SEHierarchy` | No | No | (none) | in v1.1.54019 | up to v19.11.14.1 |
@@ -581,7 +590,10 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `any` | Yes | No | (none) | in v1.1.54019 | Yes |
 | `anyHeavy` | Yes | No | (none) | in v1.1.54019 | Yes |
 | `anyLast` | Yes | No | (none) | in v1.1.54019 | Yes |
+| `anyLastRespectNulls` | Yes | No | anyLast_respect_nulls | in v24.11.1.2557 | Yes |
 | `anyLast_respect_nulls` | Yes | No | (none) | in v23.11.1.2711 | Yes |
+| `anyRespectNulls` | Yes | No | any_respect_nulls | in v24.11.1.2557 | Yes |
+| `anyValueRespectNulls` | Yes | No | any_respect_nulls | in v24.11.1.2557 | Yes |
 | `any_respect_nulls` | Yes | No | (none) | in v23.11.1.2711 | Yes |
 | `any_value` | Yes | Yes | any | in v23.7.1.2470 | Yes |
 | `any_value_respect_nulls` | Yes | Yes | any_respect_nulls | in v23.11.1.2711 | Yes |
@@ -592,7 +604,8 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `argMax` | Yes | No | (none) | in v1.1.54019 | Yes |
 | `argMin` | Yes | No | (none) | in v1.1.54019 | Yes |
 | `array` | No | No | (none) | in v1.1.54019 | Yes |
-| `arrayAUC` | No | No | (none) | in v20.4.2.9 | Yes |
+| `arrayAUC` | No | No | arrayROCAUC | in v20.4.2.9 | Yes |
+| `arrayAUCPR` | No | No | (none) | in v24.12.1.1614 | Yes |
 | `arrayAll` | No | No | (none) | in v1.1.54019 | Yes |
 | `arrayAvg` | No | No | (none) | in v21.1.2.15 | Yes |
 | `arrayCompact` | No | No | (none) | in v19.17.2.4 | Yes |
@@ -605,6 +618,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `arrayDistinct` | No | No | (none) | in v18.4.0 | Yes |
 | `arrayDotProduct` | No | No | (none) | in v23.5.1.3174 | Yes |
 | `arrayElement` | No | No | (none) | in v1.1.54019 | Yes |
+| `arrayElementOrNull` | No | No | (none) | in v24.10.1.2812 | Yes |
 | `arrayEnumerate` | No | No | (none) | in v1.1.54019 | Yes |
 | `arrayEnumerateDense` | No | No | (none) | in v18.12.13 | Yes |
 | `arrayEnumerateDenseRanked` | No | No | (none) | in v19.4.1.3 | Yes |
@@ -633,6 +647,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `arrayMap` | No | No | (none) | in v1.1.54019 | Yes |
 | `arrayMax` | No | No | (none) | in v21.1.2.15 | Yes |
 | `arrayMin` | No | No | (none) | in v21.1.2.15 | Yes |
+| `arrayPRAUC` | No | No | arrayAUCPR | in v24.12.1.1614 | Yes |
 | `arrayPartialReverseSort` | No | No | (none) | in v23.2.1.2537 | Yes |
 | `arrayPartialShuffle` | No | Yes | (none) | in v23.2.1.2537 | Yes |
 | `arrayPartialSort` | No | No | (none) | in v23.2.1.2537 | Yes |
@@ -641,6 +656,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `arrayProduct` | No | No | (none) | in v21.6.3.14 | Yes |
 | `arrayPushBack` | No | No | (none) | in v1.1.54289 | Yes |
 | `arrayPushFront` | No | No | (none) | in v1.1.54289 | Yes |
+| `arrayROCAUC` | No | No | (none) | in v24.12.1.1614 | Yes |
 | `arrayRandomSample` | No | No | (none) | in v23.10.1.1976 | Yes |
 | `arrayReduce` | No | No | (none) | in v1.1.54019 | Yes |
 | `arrayReduceInRanges` | No | No | (none) | in v20.4.2.9 | Yes |
@@ -660,6 +676,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `arraySplit` | No | No | (none) | in v19.16.2.2 | Yes |
 | `arrayStringConcat` | No | No | (none) | in v1.1.54019 | Yes |
 | `arraySum` | No | No | (none) | in v1.1.54019 | Yes |
+| `arrayUnion` | No | No | (none) | in v24.10.1.2812 | Yes |
 | `arrayUniq` | No | No | (none) | in v1.1.54019 | Yes |
 | `arrayWithConstant` | No | No | (none) | in v19.3.3 | Yes |
 | `arrayZip` | No | No | (none) | in v20.1.2.4 | Yes |
@@ -819,6 +836,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `dateTimeToSnowflake` | No | No | (none) | in v21.10.2.15 | Yes |
 | `dateTimeToSnowflakeID` | No | No | (none) | in v24.6.1.4423 | Yes |
 | `dateTrunc` | No | No | (none) | in v20.8.2.3 | Yes |
+| `date_bin` | No | Yes | toStartOfInterval | in v24.10.1.2812 | Yes |
 | `date_diff` | No | No | dateDiff | in v23.4.1.1943 | Yes |
 | `date_trunc` | No | Yes | (none) | in v20.8.2.3 | up to v22.8.21.38 |
 | `debug` | Yes | No | \N | in v1.1.54019 | up to v1.1.54289 |
@@ -975,6 +993,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `firstSignificantSubdomainCustom` | No | No | (none) | in v21.1.2.15 | Yes |
 | `firstSignificantSubdomainCustomRFC` | No | No | (none) | in v22.10.1.1877 | Yes |
 | `firstSignificantSubdomainRFC` | No | No | (none) | in v22.10.1.1877 | Yes |
+| `firstValueRespectNulls` | Yes | No | any_respect_nulls | in v24.11.1.2557 | Yes |
 | `first_value` | Yes | Yes | any | in v21.3.2.5 | Yes |
 | `first_value_respect_nulls` | Yes | Yes | any_respect_nulls | in v23.5.1.3174 | Yes |
 | `flameGraph` | Yes | No | (none) | in v23.8.1.2992 | Yes |
@@ -1004,6 +1023,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `fromUnixTimestamp64Micro` | No | No | (none) | in v20.5.2.7 | Yes |
 | `fromUnixTimestamp64Milli` | No | No | (none) | in v20.5.2.7 | Yes |
 | `fromUnixTimestamp64Nano` | No | No | (none) | in v20.5.2.7 | Yes |
+| `fromUnixTimestamp64Second` | No | No | (none) | in v24.12.1.1614 | Yes |
 | `fromUnixTimestampInJodaSyntax` | No | No | (none) | in v23.1.1.3077 | Yes |
 | `from_utc_timestamp` | No | Yes | fromUTCTimestamp | in v23.8.1.2992 | Yes |
 | `fullHostName` | No | No | FQDN | in v19.16.2.2 | Yes |
@@ -1025,9 +1045,11 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `geohashesInBox` | No | No | (none) | in v19.14.3.3 | Yes |
 | `getClientHTTPHeader` | No | No | (none) | in v24.3.1.2672 | Yes |
 | `getMacro` | No | No | (none) | in v19.16.2.2 | Yes |
+| `getMaxTableNameLengthForDatabase` | No | No | (none) | in v24.12.1.1614 | Yes |
 | `getOSKernelVersion` | No | No | (none) | in v21.11.2.2 | Yes |
 | `getServerPort` | No | No | (none) | in v21.10.2.15 | Yes |
 | `getSetting` | No | No | (none) | in v20.7.2.30 | Yes |
+| `getSettingOrDefault` | No | No | (none) | in v24.10.1.2812 | Yes |
 | `getSizeOfEnumType` | No | No | (none) | in v1.1.54310 | Yes |
 | `getSubcolumn` | No | No | (none) | in v23.3.1.2823 | Yes |
 | `getTypeSerializationStreams` | No | No | (none) | in v22.4.1.2305 | Yes |
@@ -1145,6 +1167,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `inIgnoreSet` | No | No | (none) | in v20.4.3.16 | Yes |
 | `indexHint` | No | No | (none) | in v1.1.54019 | Yes |
 | `indexOf` | No | No | (none) | in v1.1.54019 | Yes |
+| `indexOfAssumeSorted` | No | No | (none) | in v24.12.1.1614 | Yes |
 | `initcap` | No | Yes | (none) | in v23.7.1.2470 | Yes |
 | `initcapUTF8` | No | No | (none) | in v23.7.1.2470 | Yes |
 | `initialQueryID` | No | No | (none) | in v21.9.2.17 | Yes |
@@ -1191,6 +1214,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `kurtSamp` | Yes | No | (none) | in v19.8.3.8 | Yes |
 | `lagInFrame` | Yes | No | (none) | in v21.4.3.21 | Yes |
 | `largestTriangleThreeBuckets` | Yes | No | (none) | in v23.10.1.1976 | Yes |
+| `lastValueRespectNulls` | Yes | No | anyLast_respect_nulls | in v24.11.1.2557 | Yes |
 | `last_value` | Yes | Yes | anyLast | in v21.3.2.5 | Yes |
 | `last_value_respect_nulls` | Yes | Yes | anyLast_respect_nulls | in v23.5.1.3174 | Yes |
 | `lcase` | No | Yes | lower | in v18.16.0 | Yes |
@@ -1271,6 +1295,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `medianExactHigh` | Yes | No | quantileExactHigh | in v20.8.2.3 | Yes |
 | `medianExactLow` | Yes | No | quantileExactLow | in v20.8.2.3 | Yes |
 | `medianExactWeighted` | Yes | No | quantileExactWeighted | in v1.1.54019 | Yes |
+| `medianExactWeightedInterpolated` | Yes | No | quantileExactWeightedInterpolated | in v24.10.1.2812 | Yes |
 | `medianGK` | Yes | No | quantileGK | in v23.4.1.1943 | Yes |
 | `medianInterpolatedWeighted` | Yes | No | quantileInterpolatedWeighted | in v23.1.1.3077 | Yes |
 | `medianTDigest` | Yes | No | quantileTDigest | in v1.1.54019 | Yes |
@@ -1406,12 +1431,18 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `parseDateTime32BestEffort` | No | No | (none) | in v20.9.2.20 | Yes |
 | `parseDateTime32BestEffortOrNull` | No | No | (none) | in v20.9.2.20 | Yes |
 | `parseDateTime32BestEffortOrZero` | No | No | (none) | in v20.9.2.20 | Yes |
+| `parseDateTime64` | No | No | (none) | in v24.11.1.2557 | Yes |
 | `parseDateTime64BestEffort` | No | No | (none) | in v20.1.2.4 | Yes |
 | `parseDateTime64BestEffortOrNull` | No | No | (none) | in v20.1.2.4 | Yes |
 | `parseDateTime64BestEffortOrZero` | No | No | (none) | in v20.1.2.4 | Yes |
 | `parseDateTime64BestEffortUS` | No | No | (none) | in v22.8.1.2097 | Yes |
 | `parseDateTime64BestEffortUSOrNull` | No | No | (none) | in v22.8.1.2097 | Yes |
 | `parseDateTime64BestEffortUSOrZero` | No | No | (none) | in v22.8.1.2097 | Yes |
+| `parseDateTime64InJodaSyntax` | No | No | (none) | in v24.10.1.2812 | Yes |
+| `parseDateTime64InJodaSyntaxOrNull` | No | No | (none) | in v24.10.1.2812 | Yes |
+| `parseDateTime64InJodaSyntaxOrZero` | No | No | (none) | in v24.10.1.2812 | Yes |
+| `parseDateTime64OrNull` | No | No | (none) | in v24.11.1.2557 | Yes |
+| `parseDateTime64OrZero` | No | No | (none) | in v24.11.1.2557 | Yes |
 | `parseDateTimeBestEffort` | No | No | (none) | in v1.1.54378 | Yes |
 | `parseDateTimeBestEffortOrNull` | No | No | (none) | in v1.1.54378 | Yes |
 | `parseDateTimeBestEffortOrZero` | No | No | (none) | in v1.1.54378 | Yes |
@@ -1484,6 +1515,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `quantileExactInclusive` | Yes | No | (none) | in v19.14.3.3 | Yes |
 | `quantileExactLow` | Yes | No | (none) | in v20.8.2.3 | Yes |
 | `quantileExactWeighted` | Yes | No | (none) | in v1.1.54019 | Yes |
+| `quantileExactWeightedInterpolated` | Yes | No | (none) | in v24.10.1.2812 | Yes |
 | `quantileGK` | Yes | No | (none) | in v23.4.1.1943 | Yes |
 | `quantileInterpolatedWeighted` | Yes | No | (none) | in v23.1.1.3077 | Yes |
 | `quantileTDigest` | Yes | No | (none) | in v1.1.54019 | Yes |
@@ -1501,6 +1533,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `quantilesExactInclusive` | Yes | No | (none) | in v19.14.3.3 | Yes |
 | `quantilesExactLow` | Yes | No | (none) | in v20.8.2.3 | Yes |
 | `quantilesExactWeighted` | Yes | No | (none) | in v1.1.54019 | Yes |
+| `quantilesExactWeightedInterpolated` | Yes | No | (none) | in v24.10.1.2812 | Yes |
 | `quantilesGK` | Yes | No | (none) | in v23.4.1.1943 | Yes |
 | `quantilesInterpolatedWeighted` | Yes | No | (none) | in v23.1.1.3077 | Yes |
 | `quantilesTDigest` | Yes | No | (none) | in v1.1.54019 | Yes |
@@ -1737,12 +1770,16 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `timeZone` | No | No | timezone | in v21.4.3.21 | Yes |
 | `timeZoneOf` | No | No | timezoneOf | in v21.4.3.21 | Yes |
 | `timeZoneOffset` | No | No | timezoneOffset | in v21.6.3.14 | Yes |
+| `time_bucket` | No | Yes | toStartOfInterval | in v24.10.1.2812 | Yes |
 | `timestamp` | No | Yes | (none) | in v23.9.1.1854 | Yes |
 | `timestampDiff` | No | No | dateDiff | in v23.4.1.1943 | Yes |
 | `timestamp_diff` | No | No | dateDiff | in v23.4.1.1943 | Yes |
 | `timezone` | No | No | (none) | in v1.1.54140 | Yes |
 | `timezoneOf` | No | No | (none) | in v21.4.3.21 | Yes |
 | `timezoneOffset` | No | No | (none) | in v21.3.2.5 | Yes |
+| `toBFloat16` | No | No | (none) | in v24.11.1.2557 | Yes |
+| `toBFloat16OrNull` | No | No | (none) | in v24.11.1.2557 | Yes |
+| `toBFloat16OrZero` | No | No | (none) | in v24.11.1.2557 | Yes |
 | `toBool` | No | No | (none) | in v22.2.2.1 | Yes |
 | `toColumnTypeName` | No | No | (none) | in v1.1.54019 | Yes |
 | `toDate` | No | No | (none) | in v1.1.54019 | Yes |
@@ -1915,6 +1952,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `toUnixTimestamp64Micro` | No | No | (none) | in v20.5.2.7 | Yes |
 | `toUnixTimestamp64Milli` | No | No | (none) | in v20.5.2.7 | Yes |
 | `toUnixTimestamp64Nano` | No | No | (none) | in v20.5.2.7 | Yes |
+| `toUnixTimestamp64Second` | No | No | (none) | in v24.12.1.1614 | Yes |
 | `toValidUTF8` | No | No | (none) | in v19.8.3.8 | Yes |
 | `toWeek` | No | No | (none) | in v19.13.1.11 | Yes |
 | `toYYYYMM` | No | No | (none) | in v1.1.54276 | Yes |
@@ -2062,11 +2100,13 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_experimental_alter_materialized_view_structure` | in v20.3.2.1 | in v23.11.1.2711 | Yes | Allow atomic alter on Materialized views. Work in progress. |
 | `allow_experimental_analyzer` | in v22.11.1.1360 |  | Yes | Allow experimental analyzer |
 | `allow_experimental_annoy_index` | in v22.9.1.2603 | in v24.8.1.2684 | Yes | Allows to use Annoy index. Disabled by default because this feature is experimental |
+| `allow_experimental_bfloat16_type` | in v24.11.1.2557 |  | Yes | Allow BFloat16 data type (under development). |
 | `allow_experimental_bigint_types` | in v20.8.2.3 | in v21.7.2.7 | Yes | Allow Int128, Int256, UInt256 and Decimal256 types |
 | `allow_experimental_codecs` | in v21.7.2.7 |  | Yes | If it is set to true, allow to specify experimental compression codecs (but we don\'t have those yet and this option does nothing). |
 | `allow_experimental_cross_to_join_conversion` | in v19.3.3 | in v20.1.2.4 | up to v20.9.7.11 | Convert CROSS JOIN to INNER JOIN if possible |
 | `allow_experimental_data_skipping_indices` | in v19.3.3 | in v20.1.2.4 | up to v20.9.7.11 | If it is set to true, data skipping indices can be used in CREATE TABLE/ALTER TABLE queries. |
 | `allow_experimental_database_atomic` | in v20.4.2.9 | in v20.8.2.3 | Yes | Allow to create database with Engine=Atomic. |
+| `allow_experimental_database_iceberg` | in v24.12.1.1614 |  | Yes | Allow experimental database engine Iceberg |
 | `allow_experimental_database_materialize_mysql` | in v20.8.2.3 |  | up to v21.8.15.15.altinitystable | Allow to create database with Engine=MaterializeMySQL(...). |
 | `allow_experimental_database_materialized_mysql` | in v21.9.2.17 |  | Yes | Allow to create database with Engine=MaterializedMySQL(...). |
 | `allow_experimental_database_materialized_postgresql` | in v21.8.3.44 |  | Yes | Allow to create database with Engine=MaterializedPostgreSQL(...). |
@@ -2095,9 +2135,10 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_experimental_projection_optimization` | in v21.6.3.14 | in v22.2.2.1 | Yes | Enable projection optimization when processing SELECT queries |
 | `allow_experimental_query_cache` | in v23.2.1.2537 | in v23.5.1.3174 | Yes | Enable experimental query cache |
 | `allow_experimental_query_deduplication` | in v21.3.2.5 |  | Yes | Allow sending parts\' UUIDs for a query in order to deduplicate data parts if any |
-| `allow_experimental_refreshable_materialized_view` | in v23.12.1.1368 |  | Yes | Allow refreshable materialized views (CREATE MATERIALIZED VIEW <name> REFRESH ...). |
+| `allow_experimental_refreshable_materialized_view` | in v23.12.1.1368 | in v24.10.1.2812 | Yes | Allow refreshable materialized views (CREATE MATERIALIZED VIEW <name> REFRESH ...). |
 | `allow_experimental_s3queue` | in v23.8.2.7 | in v23.11.1.2711 | Yes | Allows to use S3Queue engine. Disabled by default, because this feature is experimental |
 | `allow_experimental_shared_merge_tree` | in v23.12.1.1368 | in v24.3.1.2672 | Yes | Only available in ClickHouse Cloud |
+| `allow_experimental_shared_set_join` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Allow to create ShareSet and SharedJoin |
 | `allow_experimental_statistic` | in v23.11.1.2711 |  | Yes | Allows using statistic |
 | `allow_experimental_statistics` | in v24.6.1.4423 |  | Yes | Allows using statistics |
 | `allow_experimental_time_series_table` | in v24.8.1.2684 |  | Yes | Allows experimental TimeSeries table engine |
@@ -2119,6 +2160,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_prefetched_read_pool_for_local_filesystem` | in v23.2.1.2537 |  | Yes | Prefer prefethed threadpool if all parts are on remote filesystem |
 | `allow_prefetched_read_pool_for_remote_filesystem` | in v23.2.1.2537 |  | Yes | Prefer prefethed threadpool if all parts are on remote filesystem |
 | `allow_push_predicate_when_subquery_contains_with` | in v20.3.15.133 |  | Yes | Allows push predicate when subquery contains WITH clause |
+| `allow_reorder_prewhere_conditions` | in v24.10.1.2812 |  | Yes | When moving conditions from WHERE to PREWHERE, allow reordering them to optimize filtering |
 | `allow_settings_after_format_in_insert` | in v22.4.1.2305 |  | Yes | Allow SETTINGS after FORMAT, but note, that this is not always safe (note: this is a compatibility setting). |
 | `allow_simdjson` | in v19.8.3.8 |  | Yes | "Allow using simdjson library in \'JSON*\' functions if AVX2 instructions are available. If disabled rapidjson will be used." |
 | `allow_statistic_optimize` | in v23.11.1.2711 |  | Yes | Allows using statistic to optimize queries |
@@ -2129,6 +2171,8 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_suspicious_low_cardinality_types` | in v19.9.2.4 |  | Yes | "In CREATE TABLE statement allows specifying LowCardinality modifier for types of small fixed size (8 or less). Enabling this may increase merge times and memory consumption." |
 | `allow_suspicious_primary_key` | in v24.3.1.2672 |  | Yes | Forbid suspicious PRIMARY KEY/ORDER BY for MergeTree (i.e. SimpleAggregateFunction) |
 | `allow_suspicious_ttl_expressions` | in v23.12.1.1368 |  | Yes | Reject TTL expressions that don\'t depend on any of table\'s columns. It indicates a user error most of the time. |
+| `allow_suspicious_types_in_group_by` | in v24.11.1.2557 |  | Yes | Allows or restricts using [Variant](../../sql-reference/data-types/variant.md) and [Dynamic](../../sql-reference/data-types/dynamic.md) types in GROUP BY keys. |
+| `allow_suspicious_types_in_order_by` | in v24.11.1.2557 |  | Yes | Allows or restricts using [Variant](../../sql-reference/data-types/variant.md) and [Dynamic](../../sql-reference/data-types/dynamic.md) types in ORDER BY keys. |
 | `allow_suspicious_variant_types` | in v24.2.1.2248 |  | Yes | In CREATE TABLE statement allows specifying Variant type with similar variant types (for example, with different numeric or date types). Enabling this setting may introduce some ambiguity when working with values with similar types. |
 | `allow_unrestricted_reads_from_keeper` | in v22.3.2.1 |  | Yes | Allow unrestricted (w/o condition on path) reads from system.zookeeper table, can be handy, but is not safe for zookeeper |
 | `alter_move_to_space_execute_async` | in v23.11.1.2711 |  | Yes | Execute ALTER TABLE MOVE ... TO [DISK|VOLUME] asynchronously |
@@ -2161,6 +2205,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `async_query_sending_for_remote` | in v23.4.1.1943 |  | Yes | Asynchronously create connections and send query to shards in remote query |
 | `async_socket_for_remote` | in v21.1.2.15 |  | Yes | Asynchronously read from socket executing remote query |
 | `azure_allow_parallel_part_upload` | in v24.4.1.2088 |  | Yes | Use multiple threads for azure multipart upload. |
+| `azure_check_objects_after_upload` | in v24.11.1.2557 |  | Yes | Check each uploaded object in azure blob storage to be sure that upload was successful |
 | `azure_create_new_file_on_insert` | in v23.5.1.3174 |  | Yes | Enables or disables creating a new file on each insert in azure engine tables |
 | `azure_ignore_file_doesnt_exist` | in v24.6.1.4423 |  | Yes | Return 0 rows when the requested files don\'t exist, instead of throwing an exception in AzureBlobStorage table engine |
 | `azure_list_object_keys_size` | in v23.5.1.3174 |  | Yes | Maximum number of files that could be returned in batch by ListObject request |
@@ -2197,9 +2242,13 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `backup_keeper_value_max_size` | in v23.3.1.2823 |  | up to v23.3.22.3 | Maximum size of data of a [Zoo]Keeper\'s node during backup |
 | `backup_restore_batch_size_for_keeper_multi` | in v23.11.1.2711 |  | Yes | Maximum size of batch for multi request to [Zoo]Keeper during backup or restore |
 | `backup_restore_batch_size_for_keeper_multiread` | in v23.4.1.1943 |  | Yes | Maximum size of batch for multiread request to [Zoo]Keeper during backup or restore |
+| `backup_restore_failure_after_host_disconnected_for_seconds` | in v24.11.1.2557 |  | Yes | If a host during a BACKUP ON CLUSTER or RESTORE ON CLUSTER operation doesn\'t recreate its ephemeral \'alive\' node in ZooKeeper for this amount of time then the whole backup or restore is considered as failed.\nThis value should be bigger than any reasonable time for a host to reconnect to ZooKeeper after a failure.\nZero means unlimited. |
+| `backup_restore_finish_timeout_after_error_sec` | in v24.11.1.2557 |  | Yes | How long the initiator should wait for other host to react to the \'error\' node and stop their work on the current BACKUP ON CLUSTER or RESTORE ON CLUSTER operation. |
 | `backup_restore_keeper_fault_injection_probability` | in v23.4.1.1943 |  | Yes | Approximate probability of failure for a keeper request during backup or restore. Valid value is in interval [0.0f, 1.0f] |
 | `backup_restore_keeper_fault_injection_seed` | in v23.4.1.1943 |  | Yes | 0 - random seed, otherwise the setting value |
 | `backup_restore_keeper_max_retries` | in v23.4.1.1943 |  | Yes | Max retries for keeper operations during backup or restore |
+| `backup_restore_keeper_max_retries_while_handling_error` | in v24.11.1.2557 |  | Yes | Max retries for [Zoo]Keeper operations while handling an error of a BACKUP ON CLUSTER or RESTORE ON CLUSTER operation. |
+| `backup_restore_keeper_max_retries_while_initializing` | in v24.11.1.2557 |  | Yes | Max retries for [Zoo]Keeper operations during the initialization of a BACKUP ON CLUSTER or RESTORE ON CLUSTER operation. |
 | `backup_restore_keeper_retry_initial_backoff_ms` | in v23.4.1.1943 |  | Yes | Initial backoff timeout for [Zoo]Keeper operations during backup or restore |
 | `backup_restore_keeper_retry_max_backoff_ms` | in v23.4.1.1943 |  | Yes | Max backoff timeout for [Zoo]Keeper operations during backup or restore |
 | `backup_restore_keeper_value_max_size` | in v23.4.1.1943 |  | Yes | Maximum size of data of a [Zoo]Keeper\'s node during backup |
@@ -2218,6 +2267,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `check_table_dependencies` | in v21.12.2.17 |  | Yes | Check that DDL query (such as DROP TABLE or RENAME) will not break dependencies |
 | `checksum_on_read` | in v21.2.2.8 |  | Yes | Validate checksums on reading. It is enabled by default and should be always enabled in production. Please do not expect any benefits in disabling this setting. It may only be used for experiments and benchmarks. The setting only applicable for tables of MergeTree family. Checksums are always validated for other table engines and when receiving data over network. |
 | `cloud_mode` | in v23.12.1.1368 |  | Yes | Only available in ClickHouse Cloud |
+| `cloud_mode_database_engine` | in v24.10.1.2812 |  | Yes | The database engine allowed in Cloud. 1 - rewrite DDLs to use Replicated database, 2 - rewrite DDLs to use Shared database |
 | `cloud_mode_engine` | in v23.12.1.1368 |  | Yes | Only available in ClickHouse Cloud |
 | `cluster_for_parallel_replicas` | in v23.2.1.2537 |  | Yes | Cluster for a shard in which current server is located |
 | `collect_hash_table_stats_during_aggregation` | in v22.4.1.2305 |  | Yes | Enable collecting hash table statistics to optimize memory allocation |
@@ -2230,6 +2280,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `compile_aggregate_expressions` | in v21.8.3.44 |  | Yes | Compile aggregate functions to native code. |
 | `compile_expressions` | in v1.1.54388 |  | Yes | Compile some scalar functions and operators to native code. |
 | `compile_sort_description` | in v22.5.1.2079 |  | Yes | Compile sort description to native code. |
+| `composed_data_type_output_format_mode` | in v24.12.1.1614 |  | up to v24.12.1.1614 | Set output format mode for composed data types like Array, Map, Tuple. Possible values: \'default\', \'spark\'.\n\nIn \'default\' mode, the output format is the same as in the previous versions of ClickHouse,\n    - Arrays are displayed without spaces between elements.\n    - Maps use curly braces `{}` and colons `:` to separate keys and values.\n    - Tuples are displayed with single quotes around string elements.\n\nExample of \'default\' mode:\n\n```\n┌─[1, 2, 3]─┬─map(\'a\', 1, \'b\', 2)─┬─(123, \'abc\')─┐\n│ [1,2,3]   │ {\'a\':1,\'b\':2}       │ (123,\'abc\')  │\n└───────────┴─────────────────────┴──────────────┘\n```\n\nIn \'spark\' mode, the output format is similar to Apache Spark:\n    - Arrays are displayed with spaces between elements.\n    - Maps use curly braces `{}` and arrows `->` to separate keys and values.\n    - Tuples are displayed without single quotes around string elements.\n\nExample of \'spark\' mode:\n\n```\n┌─[1, 2, 3]─┬─map(\'a\', 1, \'b\', 2)─┬─(123, \'abc\')─┐\n│ [1, 2, 3] │ {a -> 1, b -> 2}    │ (123, abc)   │\n└───────────┴─────────────────────┴──────────────┘\n```\n |
 | `connect_timeout` | in v1.1.54019 |  | Yes |  |
 | `connect_timeout_with_failover_ms` | in v1.1.54019 |  | Yes |  |
 | `connect_timeout_with_failover_secure_ms` | in v19.16.13.54 |  | Yes | Connection timeout for selecting first healthy replica (for secure connections). |
@@ -2255,6 +2306,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `database_replicated_ddl_output` | in v21.3.2.5 | in v21.4.3.21 | Yes | Return table with query execution status as a result of DDL query |
 | `database_replicated_enforce_synchronous_settings` | in v22.8.1.2097 |  | Yes | Enforces synchronous waiting for some queries (see also database_atomic_wait_for_drop_and_detach_synchronously, mutation_sync, replication_alter_partitions_sync). Not recommended to enable these settings. |
 | `database_replicated_initial_query_timeout_sec` | in v21.3.2.5 |  | Yes | How long initial DDL query should wait for Replicated database to precess previous DDL queue entries |
+| `date_time_64_output_format_cut_trailing_zeros_align_to_groups_of_thousands` | in v24.10.1.2812 |  | Yes | Dynamically trim the trailing zeros of datetime64 values to adjust the output scale to [0, 3, 6],\ncorresponding to \'seconds\', \'milliseconds\', and \'microseconds\' |
 | `date_time_input_format` | in v1.1.54388 |  | Yes | Method to read DateTime from text input formats. Possible values: \'basic\' and \'best_effort\'. |
 | `date_time_output_format` | in v20.11.2.1 |  | Yes | Method to write DateTime to text output. Possible values: \'simple\', \'iso\', \'unix_timestamp\'. |
 | `date_time_overflow_behavior` | in v23.10.1.1976 |  | Yes | Overflow mode for Date, Date32, DateTime, DateTime64 types. Possible values: \'ignore\', \'throw\', \'saturate\'. |
@@ -2282,6 +2334,19 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `distributed_background_insert_sleep_time_ms` | in v23.10.1.1976 |  | Yes | Sleep time for background INSERTs into Distributed, in case of any errors delay grows exponentially. |
 | `distributed_background_insert_split_batch_on_failure` | in v23.10.1.1976 |  | Yes | Should batches of the background INSERT into Distributed be split into smaller batches in case of failures. |
 | `distributed_background_insert_timeout` | in v23.10.1.1976 |  | Yes | Timeout for insert query into distributed. Setting is used only with insert_distributed_sync enabled. Zero value means no timeout. |
+| `distributed_cache_bypass_connection_pool` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Allow to bypass distributed cache connection pool |
+| `distributed_cache_connect_max_tries` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Number of tries to connect to distributed cache if unsuccessful |
+| `distributed_cache_data_packet_ack_window` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. A window for sending ACK for DataPacket sequence in a single distributed cache read request |
+| `distributed_cache_discard_connection_if_unread_data` | in v24.11.1.2557 |  | Yes | Only in ClickHouse Cloud. Discard connection if some data is unread. |
+| `distributed_cache_fetch_metrics_only_from_current_az` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Fetch metrics only from current availability zone in system.distributed_cache_metrics, system.distributed_cache_events |
+| `distributed_cache_log_mode` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Mode for writing to system.distributed_cache_log |
+| `distributed_cache_max_unacked_inflight_packets` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. A maximum number of unacknowledged in-flight packets in a single distributed cache read request |
+| `distributed_cache_pool_behaviour_on_limit` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Identifies behaviour of distributed cache connection on pool limit reached |
+| `distributed_cache_read_alignment` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. A setting for testing purposes, do not change it |
+| `distributed_cache_receive_response_wait_milliseconds` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Wait time in milliseconds to receive data for request from distributed cache |
+| `distributed_cache_receive_timeout_milliseconds` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Wait time in milliseconds to receive any kind of response from distributed cache |
+| `distributed_cache_throw_on_error` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Rethrow exception happened during communication with distributed cache or exception received from distributed cache. Otherwise fallback to skipping distributed cache on error |
+| `distributed_cache_wait_connection_from_pool_milliseconds` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Wait time in milliseconds to receive connection from connection pool if distributed_cache_pool_behaviour_on_limit is wait |
 | `distributed_connections_pool_size` | in v1.1.54019 |  | Yes | Maximum number of connections with one remote server in the pool. |
 | `distributed_ddl_allow_replicated_alter` | in v1.1.54245 |  | up to v1.1.54342 | For development and testing purposes only still. |
 | `distributed_ddl_entry_format_version` | in v21.4.3.21 |  | Yes | Version of DDL entry to write into ZooKeeper |
@@ -2307,7 +2372,8 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_blob_storage_log` | in v24.6.1.4423 |  | Yes | Write information about blob storage operations to system.blob_storage_log table |
 | `enable_conditional_computation` | in v1.1.54388 |  | up to v18.14.19 | Enable conditional computations |
 | `enable_debug_queries` | in v18.14.9 | in v21.7.2.7 | Yes | Enables debug queries such as AST. |
-| `enable_deflate_qpl_codec` | in v23.6.1.1524 |  | Yes | Enable/disable the DEFLATE_QPL codec. |
+| `enable_deflate_qpl_codec` | in v23.6.1.1524 | in v24.10.1.2812 | Yes | Enable/disable the DEFLATE_QPL codec. |
+| `enable_dynamic_type` | in v24.11.1.2557 |  | Yes | Allows creation of [Dynamic](../../sql-reference/data-types/dynamic.md) data type. |
 | `enable_early_constant_folding` | in v19.16.15.69 |  | Yes | Setting from future versions. Backported fo rolling update. |
 | `enable_experimental_query_result_cache` | in v23.1.1.3077 |  | up to v23.1.7.30 | Store and retrieve results of SELECT queries in/from the query result cache |
 | `enable_experimental_query_result_cache_passive_usage` | in v23.1.1.3077 |  | up to v23.1.7.30 | Retrieve results of SELECT queries from the query result cache |
@@ -2320,6 +2386,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_global_with_statement` | in v20.10.2.20 |  | Yes | Propagate WITH statements to UNION queries and all subqueries |
 | `enable_http_compression` | in v1.1.54019 |  | Yes | Compress the result if the client over HTTP said that it understands data compressed by gzip or deflate. |
 | `enable_job_stack_trace` | in v23.7.1.2470 |  | Yes | Output stack trace of a job creator when job results in exception |
+| `enable_json_type` | in v24.11.1.2557 |  | Yes | Allows creation of [JSON](../../sql-reference/data-types/newjson.md) data type. |
 | `enable_lightweight_delete` | in v23.3.1.2823 |  | Yes | Enable lightweight DELETE mutations for mergetree tables. |
 | `enable_memory_bound_merging_of_aggregation_results` | in v22.12.1.1752 |  | Yes | Enable memory bound merging strategy for aggregation. Set it to true only if all nodes of your clusters have versions >= 22.12. |
 | `enable_multiple_prewhere_read_steps` | in v23.2.1.2537 |  | Yes | Move more conditions from WHERE to PREWHERE and do reads from disk and filtering in multiple steps if there are multiple conditions combined with AND |
@@ -2327,6 +2394,8 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_optimize_predicate_expression` | in v18.12.13 |  | Yes | If it is set to true, optimize predicates to subqueries. |
 | `enable_optimize_predicate_expression_to_final_subquery` | in v19.13.1.11 |  | Yes | "Allow push predicate to final subquery." |
 | `enable_order_by_all` | in v23.12.1.1368 |  | Yes | Enable sorting expression ORDER BY ALL. |
+| `enable_parallel_replicas` | in v24.10.1.2812 |  | Yes | Use up to `max_parallel_replicas` the number of replicas from each shard for SELECT query execution. Reading is parallelized and coordinated dynamically. 0 - disabled, 1 - enabled, silently disable them in case of failure, 2 - enabled, throw an exception in case of failure |
+| `enable_parsing_to_custom_serialization` | in v24.10.1.2812 |  | Yes | If true then data can be parsed directly to columns with custom serialization (e.g. Sparse) according to hints for serialization got from the table. |
 | `enable_positional_arguments` | in v21.10.2.15 |  | Yes | Enable positional arguments in ORDER BY, GROUP BY and LIMIT BY |
 | `enable_reads_from_query_cache` | in v23.2.1.2537 |  | Yes | Enable reading results of SELECT queries from the query cache |
 | `enable_s3_requests_logging` | in v22.6.1.1985 |  | Yes | Enable very explicit logging of S3 requests. Makes sense for debug only. |
@@ -2335,9 +2404,11 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_software_prefetch_in_aggregation` | in v22.9.1.2603 |  | Yes | Enable use of software prefetch in aggregation |
 | `enable_unaligned_array_join` | in v19.1.5 |  | Yes | Allow ARRAY JOIN with multiple arrays that have different sizes. When this settings is enabled, arrays will be resized to the longest one. |
 | `enable_url_encoding` | in v23.7.2.25 |  | Yes |  Allows to enable/disable decoding/encoding path in uri in URL table engine |
+| `enable_variant_type` | in v24.11.1.2557 |  | Yes | Allows creation of [Variant](../../sql-reference/data-types/variant.md) data type. |
 | `enable_vertical_final` | in v24.1.1.2048 |  | Yes | If enable, remove duplicated rows during FINAL by marking rows as deleted and filtering them later instead of merging rows |
 | `enable_writes_to_query_cache` | in v23.2.1.2537 |  | Yes | Enable storing results of SELECT queries in the query cache |
 | `enable_zstd_qat_codec` | in v24.1.1.2048 |  | Yes | Enable/disable the ZSTD_QAT codec. |
+| `enforce_strict_identifier_format` | in v24.10.1.2812 |  | Yes | If enabled, only allow identifiers containing alphanumeric characters and underscores. |
 | `engine_file_allow_create_multiple_files` | in v22.2.2.1 |  | Yes | Enables or disables creating a new file on each insert in file engine tables if format has suffix. |
 | `engine_file_empty_if_not_exists` | in v21.3.2.5 |  | Yes | Allows to select data from a file engine table without file |
 | `engine_file_skip_empty_files` | in v23.6.1.1524 |  | Yes | Allows to skip empty files in file table engine |
@@ -2360,10 +2431,16 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `extract_kvp_max_pairs_per_row` | in v23.5.1.3174 |  | Yes | Max number pairs that can be produced by extractKeyValuePairs function. Used to safeguard against consuming too much memory. |
 | `extremes` | in v1.1.54019 |  | Yes | Calculate minimums and maximums of the result columns. They can be output in JSON-formats. |
 | `fallback_to_stale_replicas_for_distributed_queries` | in v1.1.54236 |  | Yes |  |
+| `filesystem_cache_boundary_alignment` | in v24.11.1.2557 |  | Yes | Filesystem cache boundary alignment. This setting is applied only for non-disk read (e.g. for cache of remote table engines / table functions, but not for storage configuration of MergeTree tables). Value 0 means no alignment. |
+| `filesystem_cache_enable_background_download_during_fetch` | in v24.11.1.2557 |  | Yes | Only in ClickHouse Cloud. Wait time to lock cache for space reservation in filesystem cache |
+| `filesystem_cache_enable_background_download_for_metadata_files_in_packed_storage` | in v24.11.1.2557 |  | Yes | Only in ClickHouse Cloud. Wait time to lock cache for space reservation in filesystem cache |
 | `filesystem_cache_max_download_size` | in v23.2.1.2537 |  | Yes | Max remote filesystem cache size that can be downloaded by a single query |
 | `filesystem_cache_max_wait_sec` | in v22.4.1.2305 |  | up to v22.8.21.38 | Allow to wait at most this number of seconds for download of current remote_fs_buffer_size bytes, and skip cache if exceeded |
+| `filesystem_cache_name` | in v24.10.1.2812 |  | Yes | Filesystem cache name to use for stateless table engines or data lakes |
+| `filesystem_cache_prefer_bigger_buffer_size` | in v24.11.1.2557 |  | Yes | Prefer bigger buffer size if filesystem cache is enabled to avoid writing small file segments which deteriorate cache performance. On the other hand, enabling this setting might increase memory usage. |
 | `filesystem_cache_reserve_space_wait_lock_timeout_milliseconds` | in v24.3.1.2672 |  | Yes | Wait time to lock cache for sapce reservation in filesystem cache |
 | `filesystem_cache_segments_batch_size` | in v23.11.1.2711 |  | Yes | Limit on size of a single batch of file segments that a read buffer can request from cache. Too low value will lead to excessive requests to cache, too large may slow down eviction from cache |
+| `filesystem_cache_skip_download_if_exceeds_per_query_cache_write_limit` | in v24.11.1.2557 |  | Yes | Skip download from remote filesystem if exceeds query cache size |
 | `filesystem_prefetch_max_memory_usage` | in v23.2.1.2537 |  | Yes | Maximum memory usage for prefetches. Zero means unlimited |
 | `filesystem_prefetch_min_bytes_for_single_read_task` | in v23.2.1.2537 |  | Yes | Do not parallelize within one file read less than this amount of bytes. E.g. one reader will not receive a read task of size less than this amount. This setting is recommended to avoid spikes of time for aws getObject requests to aws |
 | `filesystem_prefetch_step_bytes` | in v23.2.1.2537 |  | Yes | Prefetch step in bytes. Zero means `auto` - approximately the best prefetch step will be auto deduced, but might not be 100% the best. The actual value might be different because of setting filesystem_prefetch_min_bytes_for_single_read_task |
@@ -2444,6 +2521,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `hdfs_truncate_on_insert` | in v22.2.2.1 |  | Yes | Enables or disables truncate before insert in s3 engine tables |
 | `hedged_connection_timeout` | in v21.3.2.5 |  | up to v21.3.5.42 | Connection timeout for establishing connection with replica for Hedged requests |
 | `hedged_connection_timeout_ms` | in v21.3.6.55 |  | Yes | Connection timeout for establishing connection with replica for Hedged requests |
+| `hnsw_candidate_list_size_for_search` | in v24.10.1.2812 |  | Yes | The size of the dynamic candidate list when searching the vector similarity index, also known as \'ef_search\'. |
 | `hsts_max_age` | in v21.11.2.2 |  | Yes | Expired time for hsts. 0 means disable HSTS. |
 | `http_connection_timeout` | in v1.1.54337 |  | Yes | HTTP connection timeout. |
 | `http_headers_progress_interval_ms` | in v1.1.54140 |  | Yes | Do not send HTTP headers X-ClickHouse-Progress more frequently than at each specified interval. |
@@ -2460,6 +2538,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `http_native_compression_disable_checksumming_on_decompress` | in v1.1.54019 |  | Yes | If you uncompress the POST data from the client compressed by the native format, do not check the checksum. |
 | `http_receive_timeout` | in v1.1.54337 |  | Yes | HTTP receive timeout |
 | `http_response_buffer_size` | in v23.3.1.2823 |  | Yes | The number of bytes to buffer in the server memory before sending a HTTP response to the client or flushing to disk (when http_wait_end_of_query is enabled). |
+| `http_response_headers` | in v24.12.1.1614 |  | Yes | Allows to add or override HTTP headers which the server will return in the response with a successful query result.\nThis only affects the HTTP interface.\n\nIf the header is already set by default, the provided value will override it.\nIf the header was not set by default, it will be added to the list of headers.\nHeaders that are set by the server by default and not overridden by this setting, will remain.\n\nThe setting allows you to set a header to a constant value. Currently there is no way to set a header to a dynamically calculated value.\n\nNeither names or values can contain ASCII control characters.\n\nIf you implement a UI application which allows users to modify settings but at the same time makes decisions based on the returned headers, it is recommended to restrict this setting to readonly.\n\nExample: `SET http_response_headers = \'{"Content-Type": "image/png"}\'` |
 | `http_retry_initial_backoff_ms` | in v21.12.2.17 |  | Yes | Min milliseconds for backoff, when retrying read via http |
 | `http_retry_max_backoff_ms` | in v21.12.2.17 |  | Yes | Max milliseconds for backoff, when retrying read via http |
 | `http_send_timeout` | in v1.1.54337 |  | Yes | HTTP send timeout |
@@ -2467,7 +2546,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `http_wait_end_of_query` | in v23.3.1.2823 |  | Yes | Enable HTTP response buffering on the server-side. |
 | `http_write_exception_in_output_format` | in v23.8.9.54 |  | Yes | Write exception in output format to produce valid output. Works with JSON and XML formats. |
 | `http_zlib_compression_level` | in v1.1.54019 |  | Yes | Compression level - used if the client on HTTP said that it understands data compressed by gzip or deflate. |
-| `iceberg_engine_ignore_schema_evolution` | in v23.11.5.29 |  | Yes | Ignore schema evolution in Iceberg table engine and read all data using latest schema saved on table creation. Note that it can lead to incorrect result |
+| `iceberg_engine_ignore_schema_evolution` | in v23.11.5.29 | in v24.12.1.1614 | Yes | Ignore schema evolution in Iceberg table engine and read all data using latest schema saved on table creation. Note that it can lead to incorrect result |
 | `idle_connection_timeout` | in v19.11.2.7 |  | Yes | "Close idle TCP connections after specified number of seconds." |
 | `ignore_cold_parts_seconds` | in v23.12.1.1368 |  | Yes | Only available in ClickHouse Cloud |
 | `ignore_data_skipping_indices` | in v23.5.1.3174 |  | Yes | Comma separated list of strings or literals with the name of the data skipping indices that should be excluded during query execution. |
@@ -2476,6 +2555,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `ignore_on_cluster_for_replicated_access_entities_queries` | in v23.8.1.2992 |  | Yes | Ignore ON CLUSTER clause for replicated access entities management queries. |
 | `ignore_on_cluster_for_replicated_named_collections_queries` | in v24.7.1.2915 |  | Yes | Ignore ON CLUSTER clause for replicated named collections management queries. |
 | `ignore_on_cluster_for_replicated_udf_queries` | in v23.8.1.2992 |  | Yes | Ignore ON CLUSTER clause for replicated UDF management queries. |
+| `implicit_select` | in v24.10.1.2812 |  | Yes | Allow writing simple SELECT queries without the leading SELECT keyword, which makes it simple for calculator-style usage, e.g. `1 + 2` becomes a valid query. |
 | `implicit_transaction` | in v22.7.1.2484 |  | Yes | If enabled and not already inside a transaction, wraps the query inside a full transaction (begin + commit or rollback) |
 | `input_format_allow_errors_num` | in v1.1.54140 |  | Yes | Maximum absolute amount of errors while reading text formats (like CSV, TSV). |
 | `input_format_allow_errors_ratio` | in v1.1.54140 |  | Yes | Maximum relative amount of errors while reading text formats (like CSV, TSV). |
@@ -2487,6 +2567,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_avro_allow_missing_fields` | in v20.6.3.28 |  | Yes | For Avro/AvroConfluent format: when field is not found in schema use default value instead of error |
 | `input_format_avro_null_as_default` | in v22.6.1.1985 |  | Yes | For Avro/AvroConfluent format: insert default in case of null and non Nullable column |
 | `input_format_binary_decode_types_in_binary_format` | in v24.7.1.2915 |  | Yes | Read data types in binary format instead of type names in RowBinaryWithNamesAndTypes input format |
+| `input_format_binary_read_json_as_string` | in v24.10.1.2812 |  | Yes | Read values of [JSON](../../sql-reference/data-types/newjson.md) data type as JSON [String](../../sql-reference/data-types/string.md) values in RowBinary input format. |
 | `input_format_bson_skip_fields_with_unsupported_types_in_schema_inference` | in v22.12.1.1752 |  | Yes | Skip fields with unsupported types while schema inference for format BSON. |
 | `input_format_capn_proto_skip_fields_with_unsupported_types_in_schema_inference` | in v22.8.1.2097 |  | Yes | Skip columns with unsupported types while schema inference for format CapnProto |
 | `input_format_csv_allow_cr_end_of_line` | in v23.11.1.2711 |  | Yes | If it is set true, \\r will be allowed at end of line not followed by \\n |
@@ -2546,6 +2627,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_null_as_default` | in v19.14.3.3 |  | Yes | For CSV format initialize null fields with default values if data type of this field is not nullable |
 | `input_format_orc_allow_missing_columns` | in v22.1.2.2 |  | Yes | Allow missing columns while reading ORC input formats |
 | `input_format_orc_case_insensitive_column_matching` | in v22.4.1.2305 |  | Yes | Ignore case when matching ORC columns with CH columns. |
+| `input_format_orc_dictionary_as_low_cardinality` | in v24.10.1.2812 |  | Yes | Treat ORC dictionary encoded columns as LowCardinality columns while reading ORC files. |
 | `input_format_orc_filter_push_down` | in v23.10.1.1976 |  | Yes | When reading ORC files, skip whole stripes or row groups based on the WHERE/PREWHERE expressions, min/max statistics or bloom filter in the ORC metadata. |
 | `input_format_orc_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in ORC input format. |
 | `input_format_orc_read_use_writer_time_zone` | in v24.7.1.2915 |  | up to v24.7.1.2915 | Whether use the writer\'s time zone in ORC stripe for ORC row reader, the default ORC row reader\'s time zone is GMT. |
@@ -2555,7 +2637,9 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_orc_use_fast_decoder` | in v23.8.1.2992 |  | Yes | Use a faster ORC decoder implementation. |
 | `input_format_parallel_parsing` | in v20.1.2.4 |  | Yes | Enable parallel parsing for some data formats. |
 | `input_format_parquet_allow_missing_columns` | in v22.1.2.2 |  | Yes | Allow missing columns while reading Parquet input formats |
+| `input_format_parquet_bloom_filter_push_down` | in v24.10.1.2812 |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE expressions and bloom filter in the Parquet metadata. |
 | `input_format_parquet_case_insensitive_column_matching` | in v22.4.1.2305 |  | Yes | Ignore case when matching Parquet columns with CH columns. |
+| `input_format_parquet_enable_row_group_prefetch` | in v24.10.1.2812 |  | Yes | Enable row group prefetching during parquet parsing. Currently, only single-threaded parsing can prefetch. |
 | `input_format_parquet_filter_push_down` | in v23.8.1.2992 |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE/PREWHERE expressions and min/max statistics in the Parquet metadata. |
 | `input_format_parquet_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
 | `input_format_parquet_local_file_min_bytes_for_seek` | in v23.8.1.2992 |  | Yes | Min bytes required for local read (file) to do seek, instead of read with ignore in Parquet input format |
@@ -2626,6 +2710,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `keeper_max_retries` | in v24.3.1.2672 |  | Yes | Max retries for general keeper operations |
 | `keeper_retry_initial_backoff_ms` | in v24.3.1.2672 |  | Yes | Initial backoff timeout for general keeper operations |
 | `keeper_retry_max_backoff_ms` | in v24.3.1.2672 |  | Yes | Max backoff timeout for general keeper operations |
+| `least_greatest_legacy_null_behavior` | in v24.12.1.1614 |  | Yes | If enabled, functions \'least\' and \'greatest\' return NULL if one of their arguments is NULL. |
 | `legacy_column_name_of_tuple_literal` | in v21.7.2.7 |  | Yes | List all names of element of large tuple literals in their column names instead of hash. This settings exists only for compatibility reasons. It makes sense to set to \'true\', while doing rolling update of cluster from version lower than 21.7 to higher. |
 | `lightweight_deletes_sync` | in v24.4.1.2088 |  | Yes | The same as \'mutation_sync\', but controls only execution of lightweight deletes |
 | `lightweight_mutation_projection_mode` | in v24.7.1.2915 | in v24.9.1.3278 | Yes | When lightweight delete happens on a table with projection(s), the possible operations include throw the exception as projection exists, or drop all projection related to this table then do lightweight delete. |
@@ -2670,6 +2755,8 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `max_bytes_in_distinct` | in v1.1.54019 |  | Yes |  |
 | `max_bytes_in_join` | in v1.1.54019 |  | Yes |  |
 | `max_bytes_in_set` | in v1.1.54019 |  | Yes |  |
+| `max_bytes_ratio_before_external_group_by` | in v24.12.1.1614 |  | Yes | Ratio of used memory before enabling external GROUP BY. If you set it to 0.6 the external GROUP BY will be used once the memory usage will reach 60% of allowed memory for query. |
+| `max_bytes_ratio_before_external_sort` | in v24.12.1.1614 |  | Yes | Ratio of used memory before enabling external ORDER BY. If you set it to 0.6 the external ORDER BY will be used once the memory usage will reach 60% of allowed memory for query. |
 | `max_bytes_to_read` | in v1.1.54019 |  | Yes |  |
 | `max_bytes_to_read_leaf` | in v20.10.2.20 |  | Yes | Limit on read bytes (after decompression) on the leaf nodes for distributed queries. Limit is applied for local reads only excluding the final merge stage on the root node. |
 | `max_bytes_to_sort` | in v1.1.54019 |  | Yes |  |
@@ -2720,6 +2807,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `max_partition_size_to_drop` | in v23.12.1.1368 |  | Yes | Same as max_table_size_to_drop, but for the partitions. |
 | `max_partitions_per_insert_block` | in v19.5.2.6 |  | Yes | Limit maximum number of partitions in single INSERTed block. Zero means unlimited. Throw exception if the block contains too many partitions. This setting is a safety threshold, because using large number of partitions is a common misconception. |
 | `max_partitions_to_read` | in v21.1.2.15 |  | Yes | Limit the max number of partitions that can be accessed in one query. <= 0 means unlimited. |
+| `max_parts_to_move` | in v24.10.1.2812 |  | Yes | Limit the number of parts that can be moved in one query. Zero means unlimited. |
 | `max_pipeline_depth` | in v1.1.54019 | in v22.9.1.2603 | Yes |  |
 | `max_query_cache_size` | in v22.6.1.1985 |  | up to v23.1.7.30 | Max remote filesystem cache size that can be used by a single query |
 | `max_query_size` | in v1.1.54019 |  | Yes | Which part of the query can be read into RAM for parsing (the remaining data for INSERT, if any, is read later) |
@@ -2781,12 +2869,14 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `merge_tree_min_bytes_for_concurrent_read_for_remote_filesystem` | in v21.12.2.17 |  | Yes | If at least as many bytes are read from one file, the reading can be parallelized, when reading from remote filesystem. |
 | `merge_tree_min_bytes_for_seek` | in v19.6.2.11 |  | Yes | You can skip reading more than that number of bytes at the price of one seek per file. |
 | `merge_tree_min_bytes_per_task_for_remote_reading` | in v23.5.1.3174 |  | Yes | Min bytes to read per task. |
+| `merge_tree_min_read_task_size` | in v24.10.1.2812 |  | Yes | Hard lower limit on the task size (even when the number of granules is low and the number of available threads is high we won\'t allocate smaller tasks |
 | `merge_tree_min_rows_for_concurrent_read` | in v1.1.54019 |  | Yes | If at least as many lines are read from one file, the reading can be parallelized. |
 | `merge_tree_min_rows_for_concurrent_read_for_remote_filesystem` | in v21.12.2.17 |  | Yes | If at least as many lines are read from one file, the reading can be parallelized, when reading from remote filesystem. |
 | `merge_tree_min_rows_for_seek` | in v1.1.54019 |  | Yes | You can skip reading more than that number of rows at the price of one seek per file. |
 | `merge_tree_read_split_ranges_into_intersecting_and_non_intersecting_injection_probability` | in v24.3.1.2672 |  | Yes | For testing of `PartsSplitter` - split read ranges into intersecting and non intersecting every time you read from MergeTree with the specified probability. |
 | `merge_tree_uniform_read_distribution` | in v1.1.54019 | in v20.1.2.4 | up to v20.9.7.11 | Distribute read from MergeTree over threads evenly, ensuring stable average execution time of each thread within one read operation. |
 | `merge_tree_use_const_size_tasks_for_remote_reading` | in v23.5.1.3174 |  | Yes | Whether to use constant size tasks for reading from a remote table. |
+| `merge_tree_use_v1_object_and_dynamic_serialization` | in v24.11.1.2557 |  | Yes | When enabled, V1 serialization version of JSON and Dynamic types will be used in MergeTree instead of V2. Changing this setting takes affect only after server restart. |
 | `metrics_perf_events_enabled` | in v20.5.2.7 |  | Yes | If enabled, some of the perf events will be measured throughout queries\' execution. |
 | `metrics_perf_events_list` | in v20.5.2.7 |  | Yes | Comma separated list of perf metrics that will be measured throughout queries\' execution. Empty means all events. See PerfEventInfo in sources for the available events. |
 | `min_bytes_to_use_direct_io` | in v1.1.54019 |  | Yes | The minimum number of bytes for input/output operations is bypassing the page cache. 0 - disabled. |
@@ -2801,12 +2891,16 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `min_execution_speed_bytes` | in v19.4.1.3 |  | Yes | Minimum number of execution bytes per second. |
 | `min_external_table_block_size_bytes` | in v24.2.1.2248 |  | Yes | Squash blocks passed to external table to specified size in bytes, if blocks are not big enough. |
 | `min_external_table_block_size_rows` | in v24.2.1.2248 |  | Yes | Squash blocks passed to external table to specified size in rows, if blocks are not big enough. |
+| `min_free_disk_bytes_to_perform_insert` | in v24.10.1.2812 |  | Yes | Minimum free disk space bytes to perform an insert. |
+| `min_free_disk_ratio_to_perform_insert` | in v24.10.1.2812 |  | Yes | Minimum free disk space ratio to perform an insert. |
 | `min_free_disk_space_for_temporary_data` | in v19.14.3.3 |  | Yes | The minimum disk space to keep while writing temporary data used in external sorting and aggregation. |
 | `min_hit_rate_to_use_consecutive_keys_optimization` | in v23.12.1.1368 |  | Yes | Minimal hit rate of a cache which is used for consecutive keys optimization in aggregation to keep it enabled |
 | `min_insert_block_size_bytes` | in v1.1.54019 |  | Yes | Squash blocks passed to INSERT query to specified size in bytes, if blocks are not big enough. |
 | `min_insert_block_size_bytes_for_materialized_views` | in v20.5.2.7 |  | Yes | Like min_insert_block_size_bytes, but applied only during pushing to MATERIALIZED VIEW (default: min_insert_block_size_bytes) |
 | `min_insert_block_size_rows` | in v1.1.54019 |  | Yes | Squash blocks passed to INSERT query to specified size in rows, if blocks are not big enough. |
 | `min_insert_block_size_rows_for_materialized_views` | in v20.5.2.7 |  | Yes | Like min_insert_block_size_rows, but applied only during pushing to MATERIALIZED VIEW (default: min_insert_block_size_rows) |
+| `min_joined_block_size_bytes` | in v24.11.1.2557 |  | Yes | Minimum block size for JOIN result (if join algorithm supports it). 0 means unlimited. |
+| `mongodb_throw_on_unsupported_query` | in v24.10.1.2812 |  | Yes | If enabled, MongoDB tables will return an error when a MongoDB query cannot be built. Otherwise, ClickHouse reads the full table and processes it locally. This option does not apply to the legacy implementation or when \'allow_experimental_analyzer=0\'. |
 | `move_all_conditions_to_prewhere` | in v23.2.1.2537 |  | Yes | Move all viable conditions from WHERE to PREWHERE |
 | `move_primary_key_columns_to_end_of_prewhere` | in v23.7.1.2470 |  | Yes | Move PREWHERE conditions containing primary key columns to the end of AND chain. It is likely that these conditions are taken into account during primary key analysis and thus will not contribute a lot to PREWHERE filtering. |
 | `multiple_joins_rewriter_version` | in v20.4.2.9 | in v20.10.2.20 | Yes | 1 or 2. Second rewriter version knows about table columns and keep not clashed names as is. |
@@ -2838,6 +2932,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `optimize_distinct_in_order` | in v22.7.1.2484 |  | Yes | Enable DISTINCT optimization if some columns in DISTINCT form a prefix of sorting. For example, prefix of sorting key in merge tree or ORDER BY statement |
 | `optimize_distributed_group_by_sharding_key` | in v20.4.3.16 |  | Yes | Optimize GROUP BY sharding_key queries (by avodiing costly aggregation on the initiator server). |
 | `optimize_duplicate_order_by_and_distinct` | in v20.5.2.7 | in v23.7.1.2470 | Yes | Remove duplicate ORDER BY and DISTINCT if it\'s possible |
+| `optimize_extract_common_expressions` | in v24.12.1.1614 |  | Yes | Allow extracting common expressions from disjunctions in WHERE, PREWHERE, ON, HAVING and QUALIFY expressions. A logical expression like `(A AND B) OR (A AND C)` can be rewritten to `A AND (B OR C)`, which might help to utilize:\n- indices in simple filtering expressions\n- cross to inner join optimization |
 | `optimize_functions_to_subcolumns` | in v21.7.2.7 |  | Yes | Transform functions to subcolumns, if possible, to reduce amount of read data. E.g. \'length(arr)\' -> \'arr.size0\', \'col IS NULL\' -> \'col.null\'  |
 | `optimize_fuse_sum_count_avg` | in v21.6.3.14 | in v23.1.1.3077 | Yes | Fuse aggregate functions sum(), avg(), count() with identical arguments into one sumCount() call, if the query has at least two different functions |
 | `optimize_group_by_constant_keys` | in v23.9.1.1854 |  | Yes | Optimize GROUP BY when all keys in block are constant |
@@ -2894,6 +2989,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_avro_string_column_pattern` | in v21.9.2.17 |  | Yes | For Avro format: regexp of String columns to select as AVRO string. |
 | `output_format_avro_sync_interval` | in v20.3.2.1 |  | Yes | Sync interval in bytes. |
 | `output_format_binary_encode_types_in_binary_format` | in v24.7.1.2915 |  | Yes | Write data types in binary format instead of type names in RowBinaryWithNamesAndTypes output format  |
+| `output_format_binary_write_json_as_string` | in v24.10.1.2812 |  | Yes | Write values of [JSON](../../sql-reference/data-types/newjson.md) data type as JSON [String](../../sql-reference/data-types/string.md) values in RowBinary output format. |
 | `output_format_bson_string_as_string` | in v22.12.1.1752 |  | Yes | Use BSON String type instead of Binary for String columns. |
 | `output_format_compression_level` | in v24.1.1.2048 |  | Yes | Default compression level if query output is compressed. The setting is applied when `SELECT` query has `INTO OUTFILE` or when inserting to table function `file`, `url`, `hdfs`, `s3`, and `azureBlobStorage`. |
 | `output_format_compression_zstd_window_log` | in v24.1.1.2048 |  | Yes | Can be used when the output compression method is `zstd`. If greater than `0`, this setting explicitly sets compression window size (power of `2`) and enables a long-range mode for zstd compression. |
@@ -2915,6 +3011,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_markdown_escape_special_characters` | in v23.9.1.1854 |  | Yes | Escape special characters in Markdown |
 | `output_format_msgpack_uuid_representation` | in v22.2.2.1 |  | Yes | The way how to output UUID in MsgPack format. |
 | `output_format_native_encode_types_in_binary_format` | in v24.7.1.2915 |  | Yes | Write data types in binary format instead of type names in Native output format |
+| `output_format_native_write_json_as_string` | in v24.10.1.2812 |  | Yes | Write data of [JSON](../../sql-reference/data-types/newjson.md) column as [String](../../sql-reference/data-types/string.md) column containing JSON strings instead of default native JSON serialization. |
 | `output_format_orc_compression_method` | in v23.3.1.2823 |  | Yes | Compression method for ORC output format. Supported codecs: lz4, snappy, zlib, zstd, none (uncompressed) |
 | `output_format_orc_dictionary_key_size_threshold` | in v24.9.1.3278 |  | Yes | For a string column in ORC output format, if the number of distinct values is greater than this fraction of the total number of non-null rows, turn off dictionary encoding. Otherwise dictionary encoding is enabled |
 | `output_format_orc_row_index_stride` | in v23.10.1.1976 |  | Yes | Target row index stride in ORC output format |
@@ -2960,14 +3057,16 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `parallel_replicas_allow_in_with_subquery` | in v24.3.1.2672 |  | Yes | If true, subquery for IN will be executed on every follower replica. |
 | `parallel_replicas_count` | in v1.1.54019 |  | Yes |  |
 | `parallel_replicas_custom_key` | in v23.3.1.2823 |  | Yes | Custom key assigning work to replicas when parallel replicas are used. |
-| `parallel_replicas_custom_key_filter_type` | in v23.3.1.2823 |  | Yes | Type of filter to use with custom key for parallel replicas. default - use modulo operation on the custom key, range - use range filter on custom key using all possible values for the value type of custom key. |
+| `parallel_replicas_custom_key_filter_type` | in v23.3.1.2823 | in v24.10.1.2812 | Yes | Type of filter to use with custom key for parallel replicas. default - use modulo operation on the custom key, range - use range filter on custom key using all possible values for the value type of custom key. |
 | `parallel_replicas_custom_key_range_lower` | in v24.6.1.4423 |  | Yes | Lower bound for the universe that the parallel replicas custom range filter is calculated over |
 | `parallel_replicas_custom_key_range_upper` | in v24.6.1.4423 |  | Yes | Upper bound for the universe that the parallel replicas custom range filter is calculated over. A value of 0 disables the upper bound, setting it to the max value of the custom key expression |
 | `parallel_replicas_for_non_replicated_merge_tree` | in v23.3.1.2823 |  | Yes | If true, ClickHouse will use parallel replicas algorithm also for non-replicated MergeTree tables |
+| `parallel_replicas_index_analysis_only_on_coordinator` | in v24.11.2.101 |  | Yes | Index analysis done only on replica-coordinator and skipped on other replicas. Effective only with enabled parallel_replicas_local_plan |
 | `parallel_replicas_local_plan` | in v24.9.1.3278 |  | Yes | Build local plan for local replica |
 | `parallel_replicas_mark_segment_size` | in v24.1.1.2048 |  | Yes | Parts virtually divided into segments to be distributed between replicas for parallel reading. This setting controls the size of these segments. Not recommended to change until you\'re absolutely sure in what you\'re doing |
 | `parallel_replicas_min_number_of_granules_to_enable` | in v23.5.1.3174 | in v23.10.1.1976 | Yes | If the number of marks to read is less than the value of this setting - parallel replicas will be disabled |
 | `parallel_replicas_min_number_of_rows_per_replica` | in v23.10.1.1976 |  | Yes | Limit the number of replicas used in a query to (estimated rows to read / min_number_of_rows_per_replica). The max is still limited by \'max_parallel_replicas\' |
+| `parallel_replicas_mode` | in v24.10.1.2812 |  | Yes | Type of filter to use with custom key for parallel replicas. default - use modulo operation on the custom key, range - use range filter on custom key using all possible values for the value type of custom key. |
 | `parallel_replicas_prefer_local_join` | in v24.2.1.2248 |  | Yes | If true, and JOIN can be executed with parallel replicas algorithm, and all storages of right JOIN part are *MergeTree, local JOIN will be used instead of GLOBAL JOIN. |
 | `parallel_replicas_single_task_marks_count_multiplier` | in v23.2.1.2537 |  | Yes | A multiplier which will be added during calculation for minimal number of marks to retrieve from coordinator. This will be applied only for remote replicas. |
 | `parallel_view_processing` | in v18.14.9 |  | Yes | Enables pushing to attached views concurrently instead of sequentially. |
@@ -3002,6 +3101,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `prefetch_buffer_size` | in v23.4.1.1943 |  | Yes | The maximum size of the prefetch buffer to read from the filesystem. |
 | `print_pretty_type_names` | in v23.9.1.1854 |  | Yes | Print pretty type names in DESCRIBE query and toTypeName() function |
 | `priority` | in v1.1.54019 |  | Yes | Priority of the query. 1 - the highest, higher value - lower priority; 0 - do not use priorities. |
+| `push_external_roles_in_interserver_queries` | in v24.11.1.2557 |  | Yes | Enable pushing user roles from originator to other nodes while performing a query. |
 | `query_cache_compress_entries` | in v23.4.1.1943 |  | Yes | Compress cache entries. |
 | `query_cache_max_entries` | in v23.4.1.1943 |  | Yes | The maximum number of query results the current user may store in the query cache. 0 means unlimited. |
 | `query_cache_max_size_in_bytes` | in v23.4.1.1943 |  | Yes | The maximum amount of memory (in bytes) the current user may allocate in the query cache. 0 means unlimited.  |
@@ -3014,12 +3114,14 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `query_cache_system_table_handling` | in v24.4.1.2088 |  | Yes | How the query cache handles queries against system tables, i.e. tables in databases \'system.*\' and \'information_schema.*\' |
 | `query_cache_tag` | in v24.8.1.2684 |  | Yes | A string which acts as a label for query cache entries. The same queries with different tags are considered different by the query cache. |
 | `query_cache_ttl` | in v23.2.1.2537 |  | Yes | After this time in seconds entries in the query cache become stale |
+| `query_metric_log_interval` | in v24.10.1.2812 |  | Yes | The interval in milliseconds at which the [query_metric_log](../../operations/system-tables/query_metric_log.md) for individual queries is collected.\n\nIf set to any negative value, it will take the value `collect_interval_milliseconds` from the [query_metric_log setting](../../operations/server-configuration-parameters/settings.md#query_metric_log) or default to 1000 if not present.\n\nTo disable the collection of a single query, set `query_metric_log_interval` to 0.\n\nDefault value: -1\n     |
 | `query_plan_aggregation_in_order` | in v22.12.1.1752 |  | Yes | Use query plan for aggregation-in-order optimisation |
 | `query_plan_convert_outer_join_to_inner_join` | in v24.4.1.2088 |  | Yes | Allow to convert OUTER JOIN to INNER JOIN if filter after JOIN always filters default values |
 | `query_plan_enable_multithreading_after_window_functions` | in v23.10.1.1976 |  | Yes | Enable multithreading after evaluating window functions to allow parallel stream processing |
 | `query_plan_enable_optimizations` | in v21.5.5.12 |  | Yes | Apply optimizations to query plan |
 | `query_plan_execute_functions_after_sorting` | in v23.11.1.2711 |  | Yes | Allow to re-order functions after sorting |
 | `query_plan_filter_push_down` | in v21.5.5.12 |  | Yes | Allow to push down filter by predicate query plan step |
+| `query_plan_join_swap_table` | in v24.12.1.1614 |  | Yes |     Determine which side of the join should be the build table (also called inner, the one inserted into the hash table for a hash join) in the query plan. This setting is supported only for `ALL` join strictness with the `JOIN ON` clause. Possible values are:\n    - \'auto\': Let the planner decide which table to use as the build table.\n    - \'false\': Never swap tables (the right table is the build table).\n    - \'true\': Always swap tables (the left table is the build table). |
 | `query_plan_lift_up_array_join` | in v23.11.1.2711 |  | Yes | Allow to move array joins up in the query plan |
 | `query_plan_lift_up_union` | in v23.11.1.2711 |  | Yes | Allow to move UNIONs up so that more parts of the query plan can be optimized |
 | `query_plan_max_optimizations_to_apply` | in v21.3.2.5 |  | Yes | Limit the total number of optimizations applied to query plan. If zero, ignored. If limit reached, throw exception |
@@ -3052,9 +3154,11 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `read_from_page_cache_if_exists_otherwise_bypass_cache` | in v24.3.1.2672 |  | Yes | Use userspace page cache in passive mode, similar to read_from_filesystem_cache_if_exists_otherwise_bypass_cache. |
 | `read_in_order_two_level_merge_threshold` | in v20.6.3.28 |  | Yes | Minimal number of parts to read to run preliminary merge step during multithread reading in order of primary key. |
 | `read_in_order_use_buffering` | in v24.7.1.2915 |  | Yes | Use buffering before merging while reading in order of primary key. It increases the parallelism of query execution |
+| `read_in_order_use_virtual_row` | in v24.11.1.2557 |  | Yes | Use virtual row while reading in order of primary key or its monotonic function fashion. It is useful when searching over multiple parts as only relevant ones are touched. |
 | `read_overflow_mode` | in v1.1.54019 |  | Yes |  |
 | `read_overflow_mode_leaf` | in v20.10.2.20 |  | Yes | What to do when the leaf limit is exceeded. |
 | `read_priority` | in v21.10.2.15 |  | Yes | Priority to read data from local filesystem. Only supported for \'pread_threadpool\' method. |
+| `read_through_distributed_cache` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Allow reading from distributed cache |
 | `readonly` | in v1.1.54019 |  | Yes |  |
 | `receive_data_timeout` | in v21.3.2.5 |  | up to v21.3.5.42 | Connection timeout for receiving first packet of data or packet with positive progress from replica |
 | `receive_data_timeout_ms` | in v21.3.6.55 |  | Yes | Connection timeout for receiving first packet of data or packet with positive progress from replica |
@@ -3080,6 +3184,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `replication_alter_partitions_sync` | in v1.1.54019 |  | Yes | Wait for actions to manipulate the partitions. 0 - do not wait, 1 - wait for execution only of itself, 2 - wait for everyone. |
 | `replication_wait_for_inactive_replica_timeout` | in v21.10.2.15 |  | Yes | Wait for inactive replica to execute ALTER/OPTIMIZE. Time in seconds, 0 - do not wait, negative - wait for unlimited time. |
 | `resharding_barrier_timeout` | in v1.1.54019 |  | up to v1.1.54327 | \N |
+| `restore_replace_external_dictionary_source_to_null` | in v24.10.1.2812 |  | Yes | Replace external dictionary sources to Null on restore. Useful for testing purposes |
 | `restore_replace_external_engines_to_null` | in v24.8.1.2684 |  | Yes | Replace all the external table engines to Null on restore. Useful for testing purposes |
 | `restore_replace_external_table_functions_to_null` | in v24.8.1.2684 |  | Yes | Replace all table functions to Null on restore. Useful for testing purposes |
 | `restore_threads` | in v22.5.1.2079 | in v23.3.1.2823 | Yes | The maximum number of threads to execute RESTORE requests. |
@@ -3189,6 +3294,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `update_insert_deduplication_token_in_dependent_materialized_views` | in v24.1.1.2048 | in v24.7.1.2915 | Yes | Should update insert deduplication token with table identifier during insert in dependent materialized views. |
 | `use_analyzer` | in v22.10.1.1877 |  | up to v22.10.7.13 | Use analyzer |
 | `use_antlr_parser` | in v21.1.2.15 |  | up to v21.7.11.3 | Parse incoming queries using ANTLR-generated experimental parser |
+| `use_async_executor_for_materialized_views` | in v24.12.1.1614 |  | Yes | Use async and potentially multithreaded execution of materialized view query, can speedup views processing during INSERT, but also consume more memory. |
 | `use_cache_for_count_from_files` | in v23.8.1.2992 |  | Yes | Use cache to count the number of rows in files |
 | `use_client_time_zone` | in v1.1.54074 |  | Yes | Use client timezone for interpreting DateTime string values, instead of adopting server timezone. |
 | `use_compact_format_in_distributed_parts_names` | in v20.3.3.6 |  | Yes | Changes format of directories names for distributed table insert parts. |
@@ -3209,6 +3315,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `use_variant_as_common_type` | in v24.1.1.2048 |  | Yes | Use Variant as a result type for if/multiIf in case when there is no common type for arguments |
 | `use_with_fill_by_sorting_prefix` | in v23.5.1.3174 |  | Yes | Columns preceding WITH FILL columns in ORDER BY clause form sorting prefix. Rows with different values in sorting prefix are filled independently |
 | `validate_experimental_and_suspicious_types_inside_nested_types` | in v24.2.1.2248 |  | Yes | Validate usage of experimental and suspicious types inside nested types like Array/Map/Tuple |
+| `validate_mutation_query` | in v24.11.1.2557 |  | Yes | Validate mutation queries before accepting them. Mutations are executed in the background, and running an invalid query will cause mutations to get stuck, requiring manual intervention.\n\nOnly change this setting if you encounter a backward-incompatible bug. |
 | `validate_polygons` | in v20.4.2.9 |  | Yes | Throw exception if polygon is invalid in function pointInPolygon (e.g. self-tangent, self-intersecting). If the setting is false, the function will accept invalid polygons but may silently return wrong result. |
 | `wait_changes_become_visible_after_commit_mode` | in v22.6.1.1985 |  | Yes | Wait for committed changes to become actually visible in the latest snapshot |
 | `wait_for_async_insert` | in v21.11.2.2 |  | Yes | If true wait for processing of asynchronous insertion |
@@ -3217,14 +3324,16 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `window_view_clean_interval` | in v21.12.2.17 |  | Yes | The clean interval of window view in seconds to free outdated data. |
 | `window_view_heartbeat_interval` | in v21.12.2.17 |  | Yes | The heartbeat interval in seconds to indicate watch query is alive. |
 | `workload` | in v23.1.1.3077 |  | Yes | Name of workload to be used to access resources |
+| `write_through_distributed_cache` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Allow writing to distributed cache (writing to s3 will also be done by distributed cache) |
 | `zstd_window_log_max` | in v22.7.1.2484 |  | Yes | Allows you to select the max window log of ZSTD (it will not be used for MergeTree family) |
 ### MergeTree Settings Availability
 | MergeTree Setting | Introduced | Still Available? | Default Values |
 |:-|:-|:-|:-|
 | `adaptive_write_buffer_initial_size` | in v24.9.1.3278 | Yes | `16384` from `24.9.1.3278` to `latest` |
 | `add_implicit_sign_column_constraint_for_collapsing_engine` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
-| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.12.75 | `0` from `23.9.1.1854` to `24.3.12.75` |
+| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.14.35 | `0` from `23.9.1.1854` to `24.3.14.35` |
 | `allow_experimental_replacing_merge_with_cleanup` | in v23.12.2.59 | Yes | `0` from `23.12.2.59` to `latest` |
+| `allow_experimental_reverse_key` | in v24.12.1.1614 | Yes | `0` from `24.12.1.1614` to `latest` |
 | `allow_floating_point_partition_key` | in v21.2.2.8 | Yes | `0` from `21.2.2.8` to `latest` |
 | `allow_nullable_key` | in v20.7.2.30 | Yes | `0` from `20.7.2.30` to `latest` |
 | `allow_remote_fs_zero_copy_replication` | in v21.8.3.44 | Yes | `0` from `21.8.3.44` to `latest` / `1` from `21.9.2.17` to `22.7.7.24` |
@@ -3246,6 +3355,7 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `cleanup_delay_period_random_add` | in v18.10.3 | Yes | `10` from `18.10.3.0` to `latest` |
 | `cleanup_thread_preferred_points_per_iteration` | in v23.6.1.1524 | Yes | `150` from `23.6.1.1524` to `latest` |
 | `cleanup_threads` | in v23.12.1.1368 | Yes | `128` from `23.12.1.1368` to `latest` |
+| `columns_to_prewarm_mark_cache` | in v24.11.1.2557 | Yes | `` from `24.11.1.2557` to `latest` |
 | `compact_parts_max_bytes_to_buffer` | in v23.12.1.1368 | Yes | `134217728` from `23.12.1.1368` to `latest` |
 | `compact_parts_max_granules_to_buffer` | in v23.12.1.1368 | Yes | `128` from `23.12.1.1368` to `latest` |
 | `compact_parts_merge_max_bytes_to_prefetch_part` | in v23.12.1.1368 | Yes | `16777216` from `23.12.1.1368` to `latest` |
@@ -3263,9 +3373,11 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `disk` | in v23.2.1.2537 | Yes | `` from `23.2.1.2537` to `latest` |
 | `enable_block_number_column` | in v24.4.1.2088 | Yes | `0` from `24.4.1.2088` to `latest` |
 | `enable_block_offset_column` | in v24.4.1.2088 | Yes | `0` from `24.4.1.2088` to `latest` |
+| `enable_index_granularity_compression` | in v24.11.1.2557 | Yes | `1` from `24.11.1.2557` to `latest` |
 | `enable_mixed_granularity_parts` | in v19.11.2.7 | Yes | `0` from `19.11.2.7` to `20.7.4.11` / `1` from `20.8.2.3` to `latest` |
 | `enable_the_endpoint_id_with_zookeeper_name_prefix` | in v23.5.1.3174 | Yes | `0` from `23.5.1.3174` to `latest` |
 | `enable_vertical_merge_algorithm` | in v18.10.3 | Yes | `1` from `18.10.3.0` to `latest` |
+| `enforce_index_structure_match_on_partition_manipulation` | in v24.12.1.1614 | Yes | `0` from `24.12.1.1614` to `latest` |
 | `exclude_deleted_rows_for_part_size_in_merge` | in v24.3.1.2672 | Yes | `0` from `24.3.1.2672` to `latest` |
 | `execute_merges_on_single_replica_time_threshold` | in v20.12.2.1 | Yes | `0` from `20.12.2.1` to `latest` |
 | `fault_probability_after_part_commit` | in v23.9.1.1854 | Yes | `0` from `23.9.1.1854` to `latest` |
@@ -3324,6 +3436,11 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `merge_max_block_size_bytes` | in v23.5.1.3174 | Yes | `10485760` from `23.5.1.3174` to `latest` |
 | `merge_selecting_sleep_ms` | in v21.9.2.17 | Yes | `5000` from `21.9.2.17` to `latest` |
 | `merge_selecting_sleep_slowdown_factor` | in v23.6.1.1524 | Yes | `1.2` from `23.6.1.1524` to `latest` |
+| `merge_selector_algorithm` | in v24.10.1.2812 | Yes | `Simple` from `24.10.1.2812` to `latest` |
+| `merge_selector_base` | in v24.11.1.2557 | Yes | `5` from `24.11.1.2557` to `latest` |
+| `merge_selector_blurry_base_scale_factor` | in v24.10.1.2812 | Yes | `0` from `24.10.1.2812` to `latest` |
+| `merge_selector_enable_heuristic_to_remove_small_parts_at_right` | in v24.11.1.2557 | Yes | `1` from `24.11.1.2557` to `latest` |
+| `merge_selector_window_size` | in v24.10.1.2812 | Yes | `1000` from `24.10.1.2812` to `latest` |
 | `merge_tree_clear_old_broken_detached_parts_ttl_timeout_seconds` | in v22.6.1.1985 | Yes | `2592000` from `22.6.1.1985` to `latest` |
 | `merge_tree_clear_old_parts_interval_seconds` | in v21.12.2.17 | Yes | `1` from `21.12.2.17` to `latest` |
 | `merge_tree_clear_old_temporary_directories_interval_seconds` | in v21.12.2.17 | Yes | `60` from `21.12.2.17` to `latest` |
@@ -3337,15 +3454,19 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `min_bytes_for_compact_part` | in v20.6.3.28 | Yes | `0` from `20.6.3.28` to `latest` |
 | `min_bytes_for_full_part_storage` | in v23.12.1.1368 | Yes | `0` from `23.12.1.1368` to `latest` |
 | `min_bytes_for_wide_part` | in v20.3.2.1 | Yes | `0` from `20.3.2.1` to `20.9.7.11` / `10485760` from `20.10.2.20` to `latest` |
+| `min_bytes_to_prewarm_caches` | in v24.12.1.1614 | Yes | `0` from `24.12.1.1614` to `latest` |
 | `min_bytes_to_rebalance_partition_over_jbod` | in v21.4.3.21 | Yes | `0` from `21.4.3.21` to `latest` |
 | `min_compress_block_size` | in v21.1.2.15 | Yes | `0` from `21.1.2.15` to `latest` |
 | `min_compressed_bytes_to_fsync_after_fetch` | in v20.10.2.20 | Yes | `0` from `20.10.2.20` to `latest` |
 | `min_compressed_bytes_to_fsync_after_merge` | in v20.10.2.20 | Yes | `0` from `20.10.2.20` to `latest` |
 | `min_delay_to_insert_ms` | in v23.1.1.3077 | Yes | `10` from `23.1.1.3077` to `latest` |
 | `min_delay_to_mutate_ms` | in v23.5.1.3174 | Yes | `10` from `23.5.1.3174` to `latest` |
+| `min_free_disk_bytes_to_perform_insert` | in v24.10.1.2812 | Yes | `0` from `24.10.1.2812` to `latest` |
+| `min_free_disk_ratio_to_perform_insert` | in v24.10.1.2812 | Yes | `0` from `24.10.1.2812` to `latest` |
 | `min_index_granularity_bytes` | in v20.8.2.3 | Yes | `1024` from `20.8.2.3` to `latest` |
 | `min_marks_to_honor_max_concurrent_queries` | in v21.3.2.5 | Yes | `0` from `21.3.2.5` to `latest` |
 | `min_merge_bytes_to_use_direct_io` | in v18.12.14 | Yes | `0` from `18.12.14.0` to `18.14.19.0` / `10737418240` from `18.16.0.0` to `latest` |
+| `min_parts_to_merge_at_once` | in v24.11.1.2557 | Yes | `0` from `24.11.1.2557` to `latest` |
 | `min_relative_delay_to_close` | in v18.10.3 | Yes | `300` from `18.10.3.0` to `latest` |
 | `min_relative_delay_to_measure` | in v20.5.2.7 | Yes | `120` from `20.5.2.7` to `latest` |
 | `min_relative_delay_to_yield_leadership` | in v18.10.3 | Yes | `120` from `18.10.3.0` to `latest` |
@@ -3369,6 +3490,8 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `parts_to_throw_insert` | in v18.10.3 | Yes | `300` from `18.10.3.0` to `23.5.5.92` / `3000` from `23.6.1.1524` to `latest` |
 | `prefer_fetch_merged_part_size_threshold` | in v18.10.3 | Yes | `10737418240` from `18.10.3.0` to `latest` |
 | `prefer_fetch_merged_part_time_threshold` | in v18.10.3 | Yes | `3600` from `18.10.3.0` to `latest` |
+| `prewarm_mark_cache` | in v24.11.1.2557 | Yes | `0` from `24.11.1.2557` to `latest` |
+| `prewarm_primary_key_cache` | in v24.12.1.1614 | Yes | `0` from `24.12.1.1614` to `latest` |
 | `primary_key_compress_block_size` | in v22.9.1.2603 | Yes | `65536` from `22.9.1.2603` to `latest` |
 | `primary_key_compression_codec` | in v22.9.1.2603 | Yes | `ZSTD(3)` from `22.9.1.2603` to `latest` |
 | `primary_key_lazy_load` | in v24.2.1.2248 | Yes | `1` from `24.2.1.2248` to `latest` |
@@ -3411,9 +3534,11 @@ Generated at 2024-10-23 01:14:00 (America/Sao_Paulo), covering ClickHouse versio
 | `use_adaptive_write_buffer_for_dynamic_subcolumns` | in v24.9.1.3278 | Yes | `1` from `24.9.1.3278` to `latest` |
 | `use_async_block_ids_cache` | in v23.1.1.3077 | Yes | `0` from `23.1.1.3077` to `23.10.6.60` / `1` from `23.11.1.2711` to `latest` |
 | `use_compact_variant_discriminators_serialization` | in v24.7.1.2915 | Yes | `1` from `24.7.1.2915` to `latest` |
+| `use_const_adaptive_granularity` | in v24.11.1.2557 | Yes | `0` from `24.11.1.2557` to `latest` |
 | `use_metadata_cache` | in v22.4.1.2305 | Yes | `0` from `22.4.1.2305` to `latest` |
 | `use_minimalistic_checksums_in_zookeeper` | in v18.10.3 | Yes | `1` from `18.10.3.0` to `latest` |
 | `use_minimalistic_part_header_in_zookeeper` | in v19.1.5 | Yes | `0` from `19.1.5.0` to `19.17.10.1` / `1` from `20.1.2.4` to `latest` |
+| `use_primary_key_cache` | in v24.12.1.1614 | Yes | `0` from `24.12.1.1614` to `latest` |
 | `vertical_merge_algorithm_min_bytes_to_activate` | in v23.5.1.3174 | Yes | `0` from `23.5.1.3174` to `latest` |
 | `vertical_merge_algorithm_min_columns_to_activate` | in v18.10.3 | Yes | `11` from `18.10.3.0` to `latest` |
 | `vertical_merge_algorithm_min_rows_to_activate` | in v18.10.3 | Yes | `131072` from `18.10.3.0` to `latest` |
