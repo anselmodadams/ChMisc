@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2024-12-31 14:14:08 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 24.12.2.29
+Generated at 2025-01-21 18:16:02 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 24.12.3.47
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -15,7 +15,7 @@ Generated at 2024-12-31 14:14:08 (America/Sao_Paulo), covering ClickHouse versio
 | `EmbeddedRocksDB` | in v20.12.2.1 | Yes |
 | `Executable` | in v21.10.2.15 | Yes |
 | `ExecutablePool` | in v21.10.2.15 | Yes |
-| `ExternalDistributed` | in v21.5.5.12 | up to v24.10.3.21 |
+| `ExternalDistributed` | in v21.5.5.12 | up to v24.10.4.191 |
 | `File` | in v18.4.0 | Yes |
 | `FileLog` | in v21.11.2.2 | Yes |
 | `FuzzJSON` | in v23.11.1.2711 | Yes |
@@ -2341,6 +2341,7 @@ Generated at 2024-12-31 14:14:08 (America/Sao_Paulo), covering ClickHouse versio
 | `distributed_cache_fetch_metrics_only_from_current_az` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Fetch metrics only from current availability zone in system.distributed_cache_metrics, system.distributed_cache_events |
 | `distributed_cache_log_mode` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Mode for writing to system.distributed_cache_log |
 | `distributed_cache_max_unacked_inflight_packets` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. A maximum number of unacknowledged in-flight packets in a single distributed cache read request |
+| `distributed_cache_min_bytes_for_seek` | in v24.10.4.191 |  | Yes | Only in ClickHouse Cloud. Minimum number of bytes to do seek in distributed cache. |
 | `distributed_cache_pool_behaviour_on_limit` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Identifies behaviour of distributed cache connection on pool limit reached |
 | `distributed_cache_read_alignment` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. A setting for testing purposes, do not change it |
 | `distributed_cache_receive_response_wait_milliseconds` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Wait time in milliseconds to receive data for request from distributed cache |
@@ -2643,7 +2644,7 @@ Generated at 2024-12-31 14:14:08 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_parquet_filter_push_down` | in v23.8.1.2992 |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE/PREWHERE expressions and min/max statistics in the Parquet metadata. |
 | `input_format_parquet_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
 | `input_format_parquet_local_file_min_bytes_for_seek` | in v23.8.1.2992 |  | Yes | Min bytes required for local read (file) to do seek, instead of read with ignore in Parquet input format |
-| `input_format_parquet_max_block_size` | in v22.8.15.25.altinityfips |  | Yes | Max block size for parquet reader. |
+| `input_format_parquet_max_block_size` | in v22.8.15.25.altinitystable |  | Yes | Max block size for parquet reader. |
 | `input_format_parquet_prefer_block_bytes` | in v24.6.1.4423 |  | Yes | Average block bytes output by parquet reader |
 | `input_format_parquet_preserve_order` | in v23.4.1.1943 |  | Yes | Avoid reordering rows when reading from Parquet files. Usually makes it much slower. |
 | `input_format_parquet_skip_columns_with_unsupported_types_in_schema_inference` | in v22.4.1.2305 |  | Yes | Allow to skip columns with unsupported types while schema inference for format Parquet |
@@ -3061,7 +3062,7 @@ Generated at 2024-12-31 14:14:08 (America/Sao_Paulo), covering ClickHouse versio
 | `parallel_replicas_custom_key_range_lower` | in v24.6.1.4423 |  | Yes | Lower bound for the universe that the parallel replicas custom range filter is calculated over |
 | `parallel_replicas_custom_key_range_upper` | in v24.6.1.4423 |  | Yes | Upper bound for the universe that the parallel replicas custom range filter is calculated over. A value of 0 disables the upper bound, setting it to the max value of the custom key expression |
 | `parallel_replicas_for_non_replicated_merge_tree` | in v23.3.1.2823 |  | Yes | If true, ClickHouse will use parallel replicas algorithm also for non-replicated MergeTree tables |
-| `parallel_replicas_index_analysis_only_on_coordinator` | in v24.11.2.101 |  | Yes | Index analysis done only on replica-coordinator and skipped on other replicas. Effective only with enabled parallel_replicas_local_plan |
+| `parallel_replicas_index_analysis_only_on_coordinator` | in v24.10.4.191 |  | Yes | Index analysis done only on replica-coordinator and skipped on other replicas. Effective only with enabled parallel_replicas_local_plan |
 | `parallel_replicas_local_plan` | in v24.9.1.3278 |  | Yes | Build local plan for local replica |
 | `parallel_replicas_mark_segment_size` | in v24.1.1.2048 |  | Yes | Parts virtually divided into segments to be distributed between replicas for parallel reading. This setting controls the size of these segments. Not recommended to change until you\'re absolutely sure in what you\'re doing |
 | `parallel_replicas_min_number_of_granules_to_enable` | in v23.5.1.3174 | in v23.10.1.1976 | Yes | If the number of marks to read is less than the value of this setting - parallel replicas will be disabled |
@@ -3331,7 +3332,7 @@ Generated at 2024-12-31 14:14:08 (America/Sao_Paulo), covering ClickHouse versio
 |:-|:-|:-|:-|
 | `adaptive_write_buffer_initial_size` | in v24.9.1.3278 | Yes | `16384` from `24.9.1.3278` to `latest` |
 | `add_implicit_sign_column_constraint_for_collapsing_engine` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
-| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.14.35 | `0` from `23.9.1.1854` to `24.3.14.35` |
+| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.15.72 | `0` from `23.9.1.1854` to `24.3.15.72` |
 | `allow_experimental_replacing_merge_with_cleanup` | in v23.12.2.59 | Yes | `0` from `23.12.2.59` to `latest` |
 | `allow_experimental_reverse_key` | in v24.12.1.1614 | Yes | `0` from `24.12.1.1614` to `latest` |
 | `allow_floating_point_partition_key` | in v21.2.2.8 | Yes | `0` from `21.2.2.8` to `latest` |
@@ -3374,6 +3375,7 @@ Generated at 2024-12-31 14:14:08 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_block_number_column` | in v24.4.1.2088 | Yes | `0` from `24.4.1.2088` to `latest` |
 | `enable_block_offset_column` | in v24.4.1.2088 | Yes | `0` from `24.4.1.2088` to `latest` |
 | `enable_index_granularity_compression` | in v24.11.1.2557 | Yes | `1` from `24.11.1.2557` to `latest` |
+| `enable_max_bytes_limit_for_min_age_to_force_merge` | in v24.3.15.72 | Yes | `0` from `24.3.15.72` to `latest` |
 | `enable_mixed_granularity_parts` | in v19.11.2.7 | Yes | `0` from `19.11.2.7` to `20.7.4.11` / `1` from `20.8.2.3` to `latest` |
 | `enable_the_endpoint_id_with_zookeeper_name_prefix` | in v23.5.1.3174 | Yes | `0` from `23.5.1.3174` to `latest` |
 | `enable_vertical_merge_algorithm` | in v18.10.3 | Yes | `1` from `18.10.3.0` to `latest` |
