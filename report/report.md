@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2025-01-30 12:17:11 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 25.1.2.3
+Generated at 2025-02-26 15:11:19 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 25.1.5.31
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2407,7 +2407,7 @@ Generated at 2025-01-30 12:17:11 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_optimize_predicate_expression` | in v18.12.13 |  | Yes | If it is set to true, optimize predicates to subqueries. |
 | `enable_optimize_predicate_expression_to_final_subquery` | in v19.13.1.11 |  | Yes | "Allow push predicate to final subquery." |
 | `enable_order_by_all` | in v23.12.1.1368 |  | Yes | Enable sorting expression ORDER BY ALL. |
-| `enable_parallel_replicas` | in v24.10.1.2812 |  | Yes | Use up to `max_parallel_replicas` the number of replicas from each shard for SELECT query execution. Reading is parallelized and coordinated dynamically. 0 - disabled, 1 - enabled, silently disable them in case of failure, 2 - enabled, throw an exception in case of failure |
+| `enable_parallel_replicas` | in v24.8.11.51285.altinitystable |  | Yes | Use up to `max_parallel_replicas` the number of replicas from each shard for SELECT query execution. Reading is parallelized and coordinated dynamically. 0 - disabled, 1 - enabled, silently disable them in case of failure, 2 - enabled, throw an exception in case of failure |
 | `enable_parsing_to_custom_serialization` | in v24.10.1.2812 |  | Yes | If true then data can be parsed directly to columns with custom serialization (e.g. Sparse) according to hints for serialization got from the table. |
 | `enable_positional_arguments` | in v21.10.2.15 |  | Yes | Enable positional arguments in ORDER BY, GROUP BY and LIMIT BY |
 | `enable_reads_from_query_cache` | in v23.2.1.2537 |  | Yes | Enable reading results of SELECT queries from the query cache |
@@ -2652,13 +2652,13 @@ Generated at 2025-01-30 12:17:11 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_orc_use_fast_decoder` | in v23.8.1.2992 |  | Yes | Use a faster ORC decoder implementation. |
 | `input_format_parallel_parsing` | in v20.1.2.4 |  | Yes | Enable parallel parsing for some data formats. |
 | `input_format_parquet_allow_missing_columns` | in v22.1.2.2 |  | Yes | Allow missing columns while reading Parquet input formats |
-| `input_format_parquet_bloom_filter_push_down` | in v24.10.1.2812 |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE expressions and bloom filter in the Parquet metadata. |
+| `input_format_parquet_bloom_filter_push_down` | in v24.8.11.51285.altinitystable |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE/PREWHERE expressions and bloom filter in the Parquet metadata. |
 | `input_format_parquet_case_insensitive_column_matching` | in v22.4.1.2305 |  | Yes | Ignore case when matching Parquet columns with CH columns. |
 | `input_format_parquet_enable_row_group_prefetch` | in v24.10.1.2812 |  | Yes | Enable row group prefetching during parquet parsing. Currently, only single-threaded parsing can prefetch. |
 | `input_format_parquet_filter_push_down` | in v23.8.1.2992 |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE/PREWHERE expressions and min/max statistics in the Parquet metadata. |
 | `input_format_parquet_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
 | `input_format_parquet_local_file_min_bytes_for_seek` | in v23.8.1.2992 |  | Yes | Min bytes required for local read (file) to do seek, instead of read with ignore in Parquet input format |
-| `input_format_parquet_max_block_size` | in v22.8.15.25.altinitystable |  | Yes | Max block size for parquet reader. |
+| `input_format_parquet_max_block_size` | in v22.8.15.25.altinityfips |  | Yes | Max block size for parquet reader. |
 | `input_format_parquet_prefer_block_bytes` | in v24.6.1.4423 |  | Yes | Average block bytes output by parquet reader |
 | `input_format_parquet_preserve_order` | in v23.4.1.1943 |  | Yes | Avoid reordering rows when reading from Parquet files. Usually makes it much slower. |
 | `input_format_parquet_skip_columns_with_unsupported_types_in_schema_inference` | in v22.4.1.2305 |  | Yes | Allow to skip columns with unsupported types while schema inference for format Parquet |
@@ -3088,16 +3088,16 @@ Generated at 2025-01-30 12:17:11 (America/Sao_Paulo), covering ClickHouse versio
 | `parallel_replicas_allow_in_with_subquery` | in v24.3.1.2672 |  | Yes | If true, subquery for IN will be executed on every follower replica. |
 | `parallel_replicas_count` | in v1.1.54019 |  | Yes |  |
 | `parallel_replicas_custom_key` | in v23.3.1.2823 |  | Yes | Custom key assigning work to replicas when parallel replicas are used. |
-| `parallel_replicas_custom_key_filter_type` | in v23.3.1.2823 | in v24.10.1.2812 | Yes | Type of filter to use with custom key for parallel replicas. default - use modulo operation on the custom key, range - use range filter on custom key using all possible values for the value type of custom key. |
+| `parallel_replicas_custom_key_filter_type` | in v23.3.1.2823 | in v24.8.11.51285.altinitystable | Yes | Type of filter to use with custom key for parallel replicas. default - use modulo operation on the custom key, range - use range filter on custom key using all possible values for the value type of custom key. |
 | `parallel_replicas_custom_key_range_lower` | in v24.6.1.4423 |  | Yes | Lower bound for the universe that the parallel replicas custom range filter is calculated over |
 | `parallel_replicas_custom_key_range_upper` | in v24.6.1.4423 |  | Yes | Upper bound for the universe that the parallel replicas custom range filter is calculated over. A value of 0 disables the upper bound, setting it to the max value of the custom key expression |
 | `parallel_replicas_for_non_replicated_merge_tree` | in v23.3.1.2823 |  | Yes | If true, ClickHouse will use parallel replicas algorithm also for non-replicated MergeTree tables |
 | `parallel_replicas_index_analysis_only_on_coordinator` | in v24.10.4.191 |  | Yes | Index analysis done only on replica-coordinator and skipped on other replicas. Effective only with enabled parallel_replicas_local_plan |
-| `parallel_replicas_local_plan` | in v24.9.1.3278 |  | Yes | Build local plan for local replica |
+| `parallel_replicas_local_plan` | in v24.8.11.51285.altinitystable |  | Yes | Build local plan for local replica |
 | `parallel_replicas_mark_segment_size` | in v24.1.1.2048 |  | Yes | Parts virtually divided into segments to be distributed between replicas for parallel reading. This setting controls the size of these segments. Not recommended to change until you\'re absolutely sure in what you\'re doing |
 | `parallel_replicas_min_number_of_granules_to_enable` | in v23.5.1.3174 | in v23.10.1.1976 | Yes | If the number of marks to read is less than the value of this setting - parallel replicas will be disabled |
 | `parallel_replicas_min_number_of_rows_per_replica` | in v23.10.1.1976 |  | Yes | Limit the number of replicas used in a query to (estimated rows to read / min_number_of_rows_per_replica). The max is still limited by \'max_parallel_replicas\' |
-| `parallel_replicas_mode` | in v24.10.1.2812 |  | Yes | Type of filter to use with custom key for parallel replicas. default - use modulo operation on the custom key, range - use range filter on custom key using all possible values for the value type of custom key. |
+| `parallel_replicas_mode` | in v24.8.11.51285.altinitystable |  | Yes | Type of filter to use with custom key for parallel replicas. default - use modulo operation on the custom key, range - use range filter on custom key using all possible values for the value type of custom key. |
 | `parallel_replicas_prefer_local_join` | in v24.2.1.2248 |  | Yes | If true, and JOIN can be executed with parallel replicas algorithm, and all storages of right JOIN part are *MergeTree, local JOIN will be used instead of GLOBAL JOIN. |
 | `parallel_replicas_single_task_marks_count_multiplier` | in v23.2.1.2537 | in v25.1.1.4165 | Yes | A multiplier which will be added during calculation for minimal number of marks to retrieve from coordinator. This will be applied only for remote replicas. |
 | `parallel_view_processing` | in v18.14.9 |  | Yes | Enables pushing to attached views concurrently instead of sequentially. |
@@ -3132,7 +3132,7 @@ Generated at 2025-01-30 12:17:11 (America/Sao_Paulo), covering ClickHouse versio
 | `prefetch_buffer_size` | in v23.4.1.1943 |  | Yes | The maximum size of the prefetch buffer to read from the filesystem. |
 | `print_pretty_type_names` | in v23.9.1.1854 |  | Yes | Print pretty type names in DESCRIBE query and toTypeName() function |
 | `priority` | in v1.1.54019 |  | Yes | Priority of the query. 1 - the highest, higher value - lower priority; 0 - do not use priorities. |
-| `push_external_roles_in_interserver_queries` | in v24.11.1.2557 |  | Yes | Enable pushing user roles from originator to other nodes while performing a query. |
+| `push_external_roles_in_interserver_queries` | in v24.8.11.51285.altinitystable |  | Yes | Enable pushing user roles from originator to other nodes while performing a query. |
 | `query_cache_compress_entries` | in v23.4.1.1943 |  | Yes | Compress cache entries. |
 | `query_cache_max_entries` | in v23.4.1.1943 |  | Yes | The maximum number of query results the current user may store in the query cache. 0 means unlimited. |
 | `query_cache_max_size_in_bytes` | in v23.4.1.1943 |  | Yes | The maximum amount of memory (in bytes) the current user may allocate in the query cache. 0 means unlimited.  |
@@ -3373,7 +3373,7 @@ Generated at 2025-01-30 12:17:11 (America/Sao_Paulo), covering ClickHouse versio
 | `add_implicit_sign_column_constraint_for_collapsing_engine` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
 | `add_minmax_index_for_numeric_columns` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `latest` |
 | `add_minmax_index_for_string_columns` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `latest` |
-| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.15.72 | `0` from `23.9.1.1854` to `24.3.15.72` |
+| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.18.7 | `0` from `23.9.1.1854` to `24.3.18.7` |
 | `allow_experimental_replacing_merge_with_cleanup` | in v23.12.2.59 | Yes | `0` from `23.12.2.59` to `latest` |
 | `allow_experimental_reverse_key` | in v24.12.1.1614 | Yes | `0` from `24.12.1.1614` to `latest` |
 | `allow_floating_point_partition_key` | in v21.2.2.8 | Yes | `0` from `21.2.2.8` to `latest` |
