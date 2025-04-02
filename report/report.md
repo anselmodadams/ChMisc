@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2025-03-26 15:37:02 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 25.3.1.2703
+Generated at 2025-04-02 12:37:19 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 25.3.2.39
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -2186,7 +2186,7 @@ Generated at 2025-03-26 15:37:02 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_prefetched_read_pool_for_remote_filesystem` | in v23.2.1.2537 |  | Yes | Prefer prefethed threadpool if all parts are on remote filesystem |
 | `allow_push_predicate_ast_for_distributed_subqueries` | in v25.1.1.4165 |  | Yes | Allows push predicate on AST level for distributed subqueries with enabled anlyzer |
 | `allow_push_predicate_when_subquery_contains_with` | in v20.3.15.133 |  | Yes | Allows push predicate when subquery contains WITH clause |
-| `allow_reorder_prewhere_conditions` | in v24.10.1.2812 |  | Yes | When moving conditions from WHERE to PREWHERE, allow reordering them to optimize filtering |
+| `allow_reorder_prewhere_conditions` | in v24.8.14.10459.altinitystable |  | Yes | When moving conditions from WHERE to PREWHERE, allow reordering them to optimize filtering. |
 | `allow_settings_after_format_in_insert` | in v22.4.1.2305 |  | Yes | Allow SETTINGS after FORMAT, but note, that this is not always safe (note: this is a compatibility setting). |
 | `allow_simdjson` | in v19.8.3.8 |  | Yes | "Allow using simdjson library in \'JSON*\' functions if AVX2 instructions are available. If disabled rapidjson will be used." |
 | `allow_statistic_optimize` | in v23.11.1.2711 |  | Yes | Allows using statistic to optimize queries |
@@ -2674,7 +2674,7 @@ Generated at 2025-03-26 15:37:02 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_parquet_filter_push_down` | in v23.8.1.2992 |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE/PREWHERE expressions and min/max statistics in the Parquet metadata. |
 | `input_format_parquet_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
 | `input_format_parquet_local_file_min_bytes_for_seek` | in v23.8.1.2992 |  | Yes | Min bytes required for local read (file) to do seek, instead of read with ignore in Parquet input format |
-| `input_format_parquet_max_block_size` | in v22.8.15.25.altinitystable |  | Yes | Max block size for parquet reader. |
+| `input_format_parquet_max_block_size` | in v22.8.15.25.altinityfips |  | Yes | Max block size for parquet reader. |
 | `input_format_parquet_prefer_block_bytes` | in v24.6.1.4423 |  | Yes | Average block bytes output by parquet reader |
 | `input_format_parquet_preserve_order` | in v23.4.1.1943 |  | Yes | Avoid reordering rows when reading from Parquet files. Usually makes it much slower. |
 | `input_format_parquet_skip_columns_with_unsupported_types_in_schema_inference` | in v22.4.1.2305 |  | Yes | Allow to skip columns with unsupported types while schema inference for format Parquet |
