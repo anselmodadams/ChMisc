@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 25.4.3.22
+Generated at 2025-07-31 12:52:49 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 25.7.1.3997
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -8,9 +8,11 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `AzureQueue` | in v24.6.2.17 | Yes |
 | `Buffer` | in v18.4.0 | Yes |
 | `COSN` | in v20.7.2.30 | Yes |
+| `CoalescingMergeTree` | in v25.6.1.3206 | Yes |
 | `CollapsingMergeTree` | in v18.4.0 | Yes |
 | `DeltaLake` | in v22.11.1.1360 | Yes |
 | `DeltaLakeAzure` | in v25.4.1.2934 | Yes |
+| `DeltaLakeLocal` | in v25.6.1.3206 | Yes |
 | `DeltaLakeS3` | in v25.4.1.2934 | Yes |
 | `Dictionary` | in v18.4.0 | Yes |
 | `Distributed` | in v18.4.0 | Yes |
@@ -56,6 +58,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `Redis` | in v23.6.1.1524 | Yes |
 | `ReplacingMergeTree` | in v18.4.0 | Yes |
 | `ReplicatedAggregatingMergeTree` | in v18.4.0 | Yes |
+| `ReplicatedCoalescingMergeTree` | in v25.6.1.3206 | Yes |
 | `ReplicatedCollapsingMergeTree` | in v18.4.0 | Yes |
 | `ReplicatedGraphiteMergeTree` | in v18.4.0 | Yes |
 | `ReplicatedMergeTree` | in v18.4.0 | Yes |
@@ -88,6 +91,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `deltaLake` | in v22.11.1.1360 | Yes |
 | `deltaLakeAzure` | in v25.4.1.2934 | Yes |
 | `deltaLakeCluster` | in v24.11.1.2557 | Yes |
+| `deltaLakeLocal` | in v25.6.1.3206 | Yes |
 | `deltaLakeS3` | in v25.4.1.2934 | Yes |
 | `dictionary` | in v21.4.3.21 | Yes |
 | `executable` | in v21.10.2.15 | Yes |
@@ -119,6 +123,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `meilisearch` | in v22.9.1.2603 | up to v23.9.6.20 |
 | `merge` | in v18.4.0 | Yes |
 | `mergeTreeIndex` | in v24.2.1.2248 | Yes |
+| `mergeTreeProjection` | in v25.5.1.2782 | Yes |
 | `mongodb` | in v22.7.1.2484 | Yes |
 | `mysql` | in v18.4.0 | Yes |
 | `null` | in v20.10.2.20 | Yes |
@@ -375,13 +380,15 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `SimpleAggregateFunction` | No | (none) | in v19.8.3.8 | Yes |
 | `String` | No | (none) | in v18.4.0 | Yes |
 | `TEXT` | Yes | String | in v18.4.0 | Yes |
-| `TIME` | Yes | Int64 | in v22.2.2.1 | Yes |
+| `TIME` | Yes | Int64 | in v22.2.2.1 | up to v25.5.9.14 |
 | `TIMESTAMP` | Yes | DateTime | in v18.14.9 | Yes |
 | `TINYBLOB` | Yes | String | in v18.4.0 | Yes |
 | `TINYINT` | Yes | Int8 | in v18.4.0 | Yes |
 | `TINYINT SIGNED` | Yes | Int8 | in v20.6.3.28 | Yes |
 | `TINYINT UNSIGNED` | Yes | UInt8 | in v20.6.3.28 | Yes |
 | `TINYTEXT` | Yes | String | in v18.4.0 | Yes |
+| `Time` | Yes | (none) | in v25.5.1.2782 | Yes |
+| `Time64` | Yes | (none) | in v25.5.1.2782 | Yes |
 | `Tuple` | No | (none) | in v18.4.0 | Yes |
 | `UInt128` | No | (none) | in v21.6.3.14 | Yes |
 | `UInt16` | No | (none) | in v18.4.0 | Yes |
@@ -521,6 +528,11 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `STD` | Yes | Yes | stddevPop | in v23.9.1.1854 | Yes |
 | `STDDEV_POP` | Yes | Yes | stddevPop | in v1.1.54019 | Yes |
 | `STDDEV_SAMP` | Yes | Yes | stddevSamp | in v1.1.54019 | Yes |
+| `ST_LineFromWKB` | No | No | readWKBLineString | in v25.6.1.3206 | Yes |
+| `ST_MLineFromWKB` | No | No | readWKBMultiLineString | in v25.6.1.3206 | Yes |
+| `ST_MPolyFromWKB` | No | No | readWKBMultiPolygon | in v25.6.1.3206 | Yes |
+| `ST_PointFromWKB` | No | No | readWKBPoint | in v25.6.1.3206 | Yes |
+| `ST_PolyFromWKB` | No | No | readWKBPolygon | in v25.6.1.3206 | Yes |
 | `SUBSTRING_INDEX` | No | Yes | substringIndex | in v23.7.1.2470 | Yes |
 | `SVG` | No | No | svg | in v21.11.2.2 | Yes |
 | `TIMESTAMP_DIFF` | No | No | dateDiff | in v23.4.1.1943 | Yes |
@@ -545,9 +557,9 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `VAR_SAMP` | Yes | Yes | varSamp | in v1.1.54019 | Yes |
 | `WINDOW_ID` | No | No | (none) | in v21.12.2.17 | up to v21.12.4.1 |
 | `YEAR` | No | Yes | toYear | in v21.2.2.8 | Yes |
-| `YYYYMMDDToDate` | No | No | (none) | in v23.9.1.1854 | Yes |
-| `YYYYMMDDToDate32` | No | No | (none) | in v23.9.1.1854 | Yes |
-| `YYYYMMDDhhmmssToDateTime` | No | No | (none) | in v23.9.1.1854 | Yes |
+| `YYYYMMDDToDate` | No | Yes | (none) | in v23.9.1.1854 | Yes |
+| `YYYYMMDDToDate32` | No | Yes | (none) | in v23.9.1.1854 | Yes |
+| `YYYYMMDDhhmmssToDateTime` | No | Yes | (none) | in v23.9.1.1854 | Yes |
 | `YYYYMMDDhhmmssToDateTime64` | No | No | (none) | in v23.9.1.1854 | Yes |
 | `_CAST` | No | Yes | (none) | in v21.9.2.17 | Yes |
 | `__actionName` | No | No | (none) | in v24.3.1.2672 | Yes |
@@ -559,6 +571,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `__inner_build_projection_composition__` | No | No | (none) | in v1.1.54388 | up to v18.14.19 |
 | `__inner_project__` | No | No | (none) | in v1.1.54388 | up to v18.14.19 |
 | `__inner_restore_projection__` | No | No | (none) | in v1.1.54388 | up to v18.14.19 |
+| `__patchPartitionID` | No | No | (none) | in v25.7.1.3997 | Yes |
 | `__scalarSubqueryResult` | No | No | (none) | in v24.2.2.71 | Yes |
 | `abs` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `accurateCast` | No | No | (none) | in v21.1.2.15 | Yes |
@@ -704,6 +717,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `avg` | Yes | Yes | (none) | in v1.1.54019 | Yes |
 | `avgWeighted` | Yes | No | (none) | in v20.1.2.4 | Yes |
 | `bar` | No | No | (none) | in v1.1.54019 | Yes |
+| `base32Decode` | No | No | (none) | in v25.5.1.2782 | Yes |
+| `base32Encode` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `base58Decode` | No | No | (none) | in v22.7.1.2484 | Yes |
 | `base58Encode` | No | No | (none) | in v22.7.1.2484 | Yes |
 | `base64Decode` | No | No | (none) | in v18.16.0 | Yes |
@@ -712,6 +727,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `base64URLEncode` | No | No | (none) | in v24.6.1.4423 | Yes |
 | `basename` | No | No | (none) | in v19.8.3.8 | Yes |
 | `bayesAB` | No | No | (none) | in v20.7.2.30 | up to v21.10.5.3 |
+| `bech32Decode` | No | No | (none) | in v25.6.1.3206 | Yes |
+| `bech32Encode` | No | No | (none) | in v25.6.1.3206 | Yes |
 | `bin` | No | Yes | (none) | in v21.8.3.44 | Yes |
 | `bitAnd` | No | No | (none) | in v1.1.54019 | Yes |
 | `bitCount` | No | No | (none) | in v20.3.2.1 | Yes |
@@ -777,6 +794,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `cityHash64` | No | No | (none) | in v1.1.54019 | Yes |
 | `clamp` | No | No | (none) | in v24.5.1.1763 | Yes |
 | `coalesce` | No | Yes | (none) | in v1.1.54127 | Yes |
+| `colorOKLCHToSRGB` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `colorSRGBToOKLCH` | No | No | (none) | in v25.7.1.3997 | Yes |
 | `compareSubstrings` | No | No | (none) | in v25.3.1.2703 | Yes |
 | `concat` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `concatAssumeInjective` | No | No | (none) | in v1.1.54019 | Yes |
@@ -927,6 +946,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `distinctJSONPathsAndTypes` | Yes | No | (none) | in v24.9.1.3278 | Yes |
 | `divide` | No | No | (none) | in v1.1.54019 | Yes |
 | `divideDecimal` | No | No | (none) | in v22.12.1.1752 | Yes |
+| `divideOrNull` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `domain` | No | No | (none) | in v1.1.54019 | Yes |
 | `domainRFC` | No | No | (none) | in v22.10.1.1877 | Yes |
 | `domainWithoutWWW` | No | No | (none) | in v1.1.54019 | Yes |
@@ -997,6 +1017,10 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `filesystemFree` | No | No | (none) | in v19.1.5 | up to v22.11.6.44 |
 | `filesystemUnreserved` | No | No | (none) | in v22.12.1.1752 | Yes |
 | `finalizeAggregation` | No | No | (none) | in v1.1.54019 | Yes |
+| `financialInternalRateOfReturn` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `financialInternalRateOfReturnExtended` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `financialNetPresentValue` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `financialNetPresentValueExtended` | No | No | (none) | in v25.7.1.3997 | Yes |
 | `findClusterIndex` | No | No | (none) | in v1.1.54276 | up to v20.1.11.73 |
 | `findClusterValue` | No | No | (none) | in v1.1.54276 | up to v20.1.11.73 |
 | `firstLine` | No | No | (none) | in v23.7.1.2470 | Yes |
@@ -1062,8 +1086,10 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `getClientHTTPHeader` | No | No | (none) | in v24.3.1.2672 | Yes |
 | `getMacro` | No | No | (none) | in v19.16.2.2 | Yes |
 | `getMaxTableNameLengthForDatabase` | No | No | (none) | in v24.12.1.1614 | Yes |
+| `getMergeTreeSetting` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `getOSKernelVersion` | No | No | (none) | in v21.11.2.2 | Yes |
 | `getServerPort` | No | No | (none) | in v21.10.2.15 | Yes |
+| `getServerSetting` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `getSetting` | No | No | (none) | in v20.7.2.30 | Yes |
 | `getSettingOrDefault` | No | No | (none) | in v24.10.1.2812 | Yes |
 | `getSizeOfEnumType` | No | No | (none) | in v1.1.54310 | Yes |
@@ -1099,6 +1125,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `groupBitmapOr` | Yes | No | (none) | in v19.16.2.2 | Yes |
 | `groupBitmapXor` | Yes | No | (none) | in v19.16.2.2 | Yes |
 | `groupConcat` | Yes | No | (none) | in v24.7.1.2915 | Yes |
+| `groupNumericIndexedVector` | Yes | No | (none) | in v25.7.1.3997 | Yes |
 | `groupUniqArray` | Yes | No | (none) | in v1.1.54019 | Yes |
 | `group_concat` | Yes | Yes | groupConcat | in v24.7.1.2915 | Yes |
 | `h3CellAreaM2` | No | No | (none) | in v22.1.2.2 | Yes |
@@ -1170,6 +1197,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `hostName` | No | No | (none) | in v1.1.54019 | Yes |
 | `hostname` | No | No | hostName | in v20.5.2.7 | Yes |
 | `hypot` | No | Yes | (none) | in v20.12.2.1 | Yes |
+| `icebergBucket` | No | No | (none) | in v25.5.1.2782 | Yes |
+| `icebergHash` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `icebergTruncate` | No | No | (none) | in v25.3.1.2703 | Yes |
 | `identity` | No | No | (none) | in v1.1.54019 | Yes |
 | `idnaDecode` | No | No | (none) | in v24.1.1.2048 | Yes |
@@ -1194,6 +1223,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `initializeAggregation` | No | No | (none) | in v20.6.3.28 | Yes |
 | `instr` | No | Yes | positionCaseInsensitive | in v23.3.1.2823 | Yes |
 | `intDiv` | No | No | (none) | in v1.1.54019 | Yes |
+| `intDivOrNull` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `intDivOrZero` | No | No | (none) | in v1.1.54019 | Yes |
 | `intExp10` | No | No | (none) | in v1.1.54337 | Yes |
 | `intExp2` | No | No | (none) | in v1.1.54337 | Yes |
@@ -1208,6 +1238,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `isIPv4String` | No | No | (none) | in v21.1.2.15 | Yes |
 | `isIPv6String` | No | No | (none) | in v21.1.2.15 | Yes |
 | `isInfinite` | No | No | (none) | in v1.1.54019 | Yes |
+| `isMergeTreePartCoveredBy` | No | Yes | (none) | in v25.6.1.3206 | Yes |
 | `isNaN` | No | No | (none) | in v1.1.54019 | Yes |
 | `isNotDistinctFrom` | No | No | (none) | in v23.8.1.2992 | Yes |
 | `isNotNull` | No | No | (none) | in v1.1.54127 | Yes |
@@ -1232,6 +1263,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `kql_array_sort_desc` | No | No | (none) | in v23.10.1.1976 | Yes |
 | `kurtPop` | Yes | No | (none) | in v19.8.3.8 | Yes |
 | `kurtSamp` | Yes | No | (none) | in v19.8.3.8 | Yes |
+| `lag` | Yes | No | (none) | in v25.6.1.3206 | Yes |
 | `lagInFrame` | Yes | No | (none) | in v21.4.3.21 | Yes |
 | `largestTriangleThreeBuckets` | Yes | No | (none) | in v23.10.1.1976 | Yes |
 | `lastValueRespectNulls` | Yes | No | anyLast_respect_nulls | in v24.11.1.2557 | Yes |
@@ -1239,6 +1271,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `last_value_respect_nulls` | Yes | Yes | anyLast_respect_nulls | in v23.5.1.3174 | Yes |
 | `lcase` | No | Yes | lower | in v18.16.0 | Yes |
 | `lcm` | No | No | (none) | in v1.1.54337 | Yes |
+| `lead` | Yes | No | (none) | in v25.6.1.3206 | Yes |
 | `leadInFrame` | Yes | No | (none) | in v21.4.3.21 | Yes |
 | `least` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `leastSqr` | Yes | No | (none) | in v19.6.2.11 | up to v19.7.5.29 |
@@ -1272,19 +1305,23 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `ltrim` | No | No | trimLeft | in v23.4.1.1943 | Yes |
 | `lttb` | Yes | No | largestTriangleThreeBuckets | in v23.10.1.1976 | Yes |
 | `makeDate` | No | Yes | (none) | in v22.4.1.2305 | Yes |
-| `makeDate32` | No | No | (none) | in v22.4.1.2305 | Yes |
-| `makeDateTime` | No | No | (none) | in v22.4.1.2305 | Yes |
-| `makeDateTime64` | No | No | (none) | in v22.4.1.2305 | Yes |
+| `makeDate32` | No | Yes | (none) | in v22.4.1.2305 | Yes |
+| `makeDateTime` | No | Yes | (none) | in v22.4.1.2305 | Yes |
+| `makeDateTime64` | No | Yes | (none) | in v22.4.1.2305 | Yes |
 | `mannWhitneyUTest` | Yes | No | (none) | in v21.1.2.15 | Yes |
 | `map` | No | No | (none) | in v21.1.2.15 | Yes |
 | `mapAdd` | No | No | (none) | in v20.7.2.30 | Yes |
 | `mapAll` | No | No | (none) | in v23.4.1.1943 | Yes |
 | `mapApply` | No | No | (none) | in v22.3.2.1 | Yes |
 | `mapConcat` | No | No | (none) | in v23.4.1.1943 | Yes |
-| `mapContains` | No | No | (none) | in v21.2.2.8 | Yes |
+| `mapContains` | No | No | mapContainsKey | in v21.2.2.8 | Yes |
+| `mapContainsKey` | No | No | (none) | in v25.6.1.3206 | Yes |
 | `mapContainsKeyLike` | No | No | (none) | in v21.11.2.2 | Yes |
+| `mapContainsValue` | No | No | (none) | in v25.6.1.3206 | Yes |
+| `mapContainsValueLike` | No | No | (none) | in v25.6.1.3206 | Yes |
 | `mapExists` | No | No | (none) | in v23.4.1.1943 | Yes |
 | `mapExtractKeyLike` | No | No | (none) | in v21.11.2.2 | Yes |
+| `mapExtractValueLike` | No | No | (none) | in v25.6.1.3206 | Yes |
 | `mapFilter` | No | No | (none) | in v22.3.2.1 | Yes |
 | `mapFromArrays` | No | No | (none) | in v23.3.1.2823 | Yes |
 | `mapFromString` | No | No | extractKeyValuePairs | in v23.5.1.3174 | Yes |
@@ -1323,6 +1360,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `medianTiming` | Yes | No | quantileTiming | in v1.1.54019 | Yes |
 | `medianTimingWeighted` | Yes | No | quantileTimingWeighted | in v1.1.54019 | Yes |
 | `meiliMatch` | No | No | (none) | in v22.5.1.2079 | up to v23.9.6.20 |
+| `mergeTreePartInfo` | No | Yes | (none) | in v25.6.1.3206 | Yes |
 | `metroHash64` | No | No | (none) | in v1.1.54019 | Yes |
 | `mid` | No | Yes | substring | in v18.16.0 | Yes |
 | `min` | Yes | Yes | (none) | in v1.1.54019 | Yes |
@@ -1335,9 +1373,11 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `minus` | No | No | (none) | in v1.1.54019 | Yes |
 | `mismatches` | No | No | byteHammingDistance | in v23.9.1.1854 | Yes |
 | `mod` | No | Yes | modulo | in v20.7.2.30 | Yes |
+| `modOrNull` | No | Yes | moduloOrNull | in v25.5.1.2782 | Yes |
 | `modelEvaluate` | No | No | (none) | in v1.1.54310 | up to v22.8.21.38 |
 | `modulo` | No | No | (none) | in v1.1.54019 | Yes |
 | `moduloLegacy` | No | No | (none) | in v21.5.7.9 | Yes |
+| `moduloOrNull` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `moduloOrZero` | No | No | (none) | in v20.3.2.1 | Yes |
 | `monthName` | No | Yes | (none) | in v22.1.2.2 | Yes |
 | `mortonDecode` | No | No | (none) | in v22.10.1.1877 | Yes |
@@ -1443,6 +1483,22 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `nullIf` | No | Yes | (none) | in v1.1.54127 | Yes |
 | `nullIn` | No | No | (none) | in v20.4.2.9 | Yes |
 | `nullInIgnoreSet` | No | No | (none) | in v20.4.3.16 | Yes |
+| `numericIndexedVectorAllValueSum` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorBuild` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorCardinality` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorGetValue` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseAdd` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseDivide` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseEqual` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseGreater` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseGreaterEqual` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseLess` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseLessEqual` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseMultiply` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseNotEqual` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorPointwiseSubtract` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorShortDebugString` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `numericIndexedVectorToMap` | No | No | (none) | in v25.7.1.3997 | Yes |
 | `one_or_zero` | No | No | (none) | in v1.1.54388 | up to v18.14.19 |
 | `or` | No | No | (none) | in v1.1.54019 | Yes |
 | `overlay` | No | Yes | (none) | in v24.9.1.3278 | Yes |
@@ -1487,6 +1543,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `pi` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `plus` | No | No | (none) | in v1.1.54019 | Yes |
 | `pmod` | No | Yes | positiveModulo | in v22.11.1.1360 | Yes |
+| `pmodOrNull` | No | Yes | positiveModuloOrNull | in v25.5.1.2782 | Yes |
 | `pointInEllipses` | No | No | (none) | in v1.1.54180 | Yes |
 | `pointInPolygon` | No | No | (none) | in v1.1.54289 | Yes |
 | `pointInPolygonCrossing` | No | No | \N | in v1.1.54304 | up to v1.1.54337 |
@@ -1501,6 +1558,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `polygonsDistanceCartesian` | No | No | (none) | in v21.4.3.21 | Yes |
 | `polygonsDistanceSpherical` | No | No | (none) | in v21.4.3.21 | Yes |
 | `polygonsEqualsCartesian` | No | No | (none) | in v21.4.3.21 | Yes |
+| `polygonsIntersectCartesian` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `polygonsIntersectSpherical` | No | No | (none) | in v25.7.1.3997 | Yes |
 | `polygonsIntersectionCartesian` | No | No | (none) | in v21.4.3.21 | Yes |
 | `polygonsIntersectionSpherical` | No | No | (none) | in v21.4.3.21 | Yes |
 | `polygonsSymDifferenceCartesian` | No | No | (none) | in v21.4.3.21 | Yes |
@@ -1516,7 +1575,9 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `positionCaseInsensitiveUTF8` | No | No | (none) | in v1.1.54019 | Yes |
 | `positionUTF8` | No | No | (none) | in v1.1.54019 | Yes |
 | `positiveModulo` | No | Yes | (none) | in v22.11.1.1360 | Yes |
+| `positiveModuloOrNull` | No | Yes | (none) | in v25.5.1.2782 | Yes |
 | `positive_modulo` | No | Yes | positiveModulo | in v22.11.1.1360 | Yes |
+| `positive_modulo_or_null` | No | Yes | positiveModuloOrNull | in v25.5.1.2782 | Yes |
 | `pow` | No | Yes | (none) | in v1.1.54019 | Yes |
 | `power` | No | Yes | pow | in v18.16.0 | Yes |
 | `printf` | No | No | (none) | in v24.8.1.2684 | Yes |
@@ -1588,6 +1649,11 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `range` | No | No | (none) | in v1.1.54019 | Yes |
 | `rank` | Yes | Yes | (none) | in v21.3.2.5 | Yes |
 | `rankCorr` | Yes | No | (none) | in v20.9.2.20 | Yes |
+| `readWKBLineString` | No | No | (none) | in v25.6.1.3206 | Yes |
+| `readWKBMultiLineString` | No | No | (none) | in v25.6.1.3206 | Yes |
+| `readWKBMultiPolygon` | No | No | (none) | in v25.6.1.3206 | Yes |
+| `readWKBPoint` | No | No | (none) | in v25.6.1.3206 | Yes |
+| `readWKBPolygon` | No | No | (none) | in v25.6.1.3206 | Yes |
 | `readWKTLineString` | No | No | (none) | in v24.6.1.4423 | Yes |
 | `readWKTMultiLineString` | No | No | (none) | in v24.8.1.2684 | Yes |
 | `readWKTMultiPolygon` | No | No | (none) | in v21.11.2.2 | Yes |
@@ -1672,6 +1738,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `s2RectUnion` | No | No | (none) | in v21.9.2.17 | Yes |
 | `s2ToGeo` | No | No | (none) | in v21.9.2.17 | Yes |
 | `scalarProduct` | No | Yes | dotProduct | in v21.11.2.2 | Yes |
+| `searchAll` | No | No | (none) | in v25.7.1.3997 | Yes |
+| `searchAny` | No | No | (none) | in v25.7.1.3997 | Yes |
 | `sequenceCount` | Yes | No | (none) | in v1.1.54019 | Yes |
 | `sequenceMatch` | Yes | No | (none) | in v1.1.54019 | Yes |
 | `sequenceMatchEvents` | Yes | No | (none) | in v25.1.1.4165 | Yes |
@@ -1741,6 +1809,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `stochasticLogisticRegression` | Yes | No | (none) | in v19.9.2.4 | Yes |
 | `str_to_date` | No | Yes | parseDateTimeOrNull | in v23.3.1.2823 | Yes |
 | `str_to_map` | No | Yes | extractKeyValuePairs | in v23.5.1.3174 | Yes |
+| `stringBytesEntropy` | No | No | (none) | in v25.5.1.2782 | Yes |
+| `stringBytesUniq` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `stringCompare` | No | No | (none) | in v25.2.1.3085 | up to v25.2.2.39 |
 | `stringJaccardIndex` | No | No | (none) | in v23.11.1.2711 | Yes |
 | `stringJaccardIndexUTF8` | No | No | (none) | in v23.11.1.2711 | Yes |
@@ -1789,18 +1859,24 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `throwIf` | No | No | (none) | in v1.1.54378 | Yes |
 | `tid` | No | No | (none) | in v20.11.2.1 | Yes |
 | `timeDiff` | No | Yes | (none) | in v24.1.1.2048 | Yes |
+| `timeSeriesDeltaToGrid` | Yes | No | (none) | in v25.6.1.3206 | Yes |
 | `timeSeriesGroupRateSum` | Yes | No | (none) | in v19.8.3.8 | up to v20.12.8.5 |
 | `timeSeriesGroupSum` | Yes | No | (none) | in v19.8.3.8 | up to v20.12.8.5 |
+| `timeSeriesInstantDeltaToGrid` | Yes | No | (none) | in v25.6.1.3206 | Yes |
+| `timeSeriesInstantRateToGrid` | Yes | No | (none) | in v25.6.1.3206 | Yes |
+| `timeSeriesLastTwoSamples` | Yes | No | (none) | in v25.6.1.3206 | Yes |
+| `timeSeriesRateToGrid` | Yes | No | (none) | in v25.6.1.3206 | Yes |
+| `timeSeriesResampleToGridWithStaleness` | Yes | No | (none) | in v25.6.1.3206 | Yes |
 | `timeSlot` | No | No | (none) | in v1.1.54019 | Yes |
 | `timeSlots` | No | No | (none) | in v1.1.54019 | Yes |
-| `timeZone` | No | No | timezone | in v21.4.3.21 | Yes |
+| `timeZone` | No | Yes | timezone | in v21.4.3.21 | Yes |
 | `timeZoneOf` | No | No | timezoneOf | in v21.4.3.21 | Yes |
 | `timeZoneOffset` | No | No | timezoneOffset | in v21.6.3.14 | Yes |
 | `time_bucket` | No | Yes | toStartOfInterval | in v24.10.1.2812 | Yes |
 | `timestamp` | No | Yes | (none) | in v23.9.1.1854 | Yes |
 | `timestampDiff` | No | No | dateDiff | in v23.4.1.1943 | Yes |
 | `timestamp_diff` | No | No | dateDiff | in v23.4.1.1943 | Yes |
-| `timezone` | No | No | (none) | in v1.1.54140 | Yes |
+| `timezone` | No | Yes | (none) | in v1.1.54140 | Yes |
 | `timezoneOf` | No | No | (none) | in v21.4.3.21 | Yes |
 | `timezoneOffset` | No | No | (none) | in v21.3.2.5 | Yes |
 | `toBFloat16` | No | No | (none) | in v24.11.1.2557 | Yes |
@@ -1944,6 +2020,12 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `toString` | No | No | (none) | in v1.1.54019 | Yes |
 | `toStringCutToZero` | No | No | (none) | in v1.1.54019 | Yes |
 | `toTime` | No | No | (none) | in v1.1.54019 | Yes |
+| `toTime64` | No | No | (none) | in v25.5.1.2782 | Yes |
+| `toTime64OrNull` | No | No | (none) | in v25.5.1.2782 | Yes |
+| `toTime64OrZero` | No | No | (none) | in v25.5.1.2782 | Yes |
+| `toTimeOrNull` | No | No | (none) | in v25.5.1.2782 | Yes |
+| `toTimeOrZero` | No | No | (none) | in v25.5.1.2782 | Yes |
+| `toTimeWithFixedDate` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `toTimeZone` | No | No | toTimezone | in v1.1.54337 | Yes |
 | `toTimezone` | No | No | (none) | in v21.4.3.21 | Yes |
 | `toTypeName` | No | No | (none) | in v1.1.54019 | Yes |
@@ -2009,6 +2091,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `trimRight` | No | No | (none) | in v19.1.5 | Yes |
 | `trunc` | No | Yes | (none) | in v1.1.54292 | Yes |
 | `truncate` | No | Yes | trunc | in v1.1.54292 | Yes |
+| `tryBase32Decode` | No | No | (none) | in v25.5.1.2782 | Yes |
 | `tryBase58Decode` | No | No | (none) | in v22.10.1.1877 | Yes |
 | `tryBase64Decode` | No | No | (none) | in v18.16.0 | Yes |
 | `tryBase64URLDecode` | No | No | (none) | in v24.6.1.4423 | Yes |
@@ -2081,6 +2164,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `width_bucket` | No | Yes | widthBucket | in v23.3.1.2823 | Yes |
 | `windowFunnel` | Yes | No | (none) | in v1.1.54388 | Yes |
 | `windowID` | No | No | (none) | in v22.1.2.2 | Yes |
+| `wkb` | No | No | (none) | in v25.7.1.3997 | Yes |
 | `wkt` | No | No | (none) | in v21.4.3.21 | Yes |
 | `wordShingleMinHash` | No | No | (none) | in v21.1.2.15 | Yes |
 | `wordShingleMinHashArg` | No | No | (none) | in v21.1.2.15 | Yes |
@@ -2137,6 +2221,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_experimental_data_skipping_indices` | in v19.3.3 | in v20.1.2.4 | up to v20.9.7.11 | If it is set to true, data skipping indices can be used in CREATE TABLE/ALTER TABLE queries. |
 | `allow_experimental_database_atomic` | in v20.4.2.9 | in v20.8.2.3 | Yes | Allow to create database with Engine=Atomic. |
 | `allow_experimental_database_glue_catalog` | in v25.3.1.2703 |  | Yes | Allow experimental database engine DataLakeCatalog with catalog_type = \'glue\' |
+| `allow_experimental_database_hms_catalog` | in v25.5.1.2782 |  | Yes | Allow experimental database engine DataLakeCatalog with catalog_type = \'hms\' |
 | `allow_experimental_database_iceberg` | in v24.12.1.1614 |  | Yes | Allow experimental database engine Iceberg |
 | `allow_experimental_database_materialize_mysql` | in v20.8.2.3 |  | up to v21.8.15.15.altinitystable | Allow to create database with Engine=MaterializeMySQL(...). |
 | `allow_experimental_database_materialized_mysql` | in v21.9.2.17 | in v25.1.1.4165 | Yes | Allow to create database with Engine=MaterializedMySQL(...). |
@@ -2144,18 +2229,21 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_experimental_database_replicated` | in v21.3.2.5 | in v24.4.1.2088 | Yes | Allow to create databases with Replicated engine |
 | `allow_experimental_database_unity_catalog` | in v25.3.1.2703 |  | Yes | Allow experimental database engine DataLakeCatalog with catalog_type = \'unity\' |
 | `allow_experimental_decimal_type` | in v18.12.13 |  | up to v18.12.17 | Enables Decimal data type. |
+| `allow_experimental_delta_kernel_rs` | in v25.5.1.2782 |  | Yes | Allow experimental delta-kernel-rs implementation. |
 | `allow_experimental_dynamic_type` | in v24.5.1.1763 |  | Yes | Allow Dynamic data type |
 | `allow_experimental_full_text_index` | in v24.5.2.34 |  | Yes | If it is set to true, allow to use experimental full-text index. |
 | `allow_experimental_funnel_functions` | in v21.7.2.7 |  | Yes | Enable experimental functions for funnel analysis. |
 | `allow_experimental_geo_types` | in v20.5.2.7 | in v23.5.1.3174 | Yes | Allow geo data types such as Point, Ring, Polygon, MultiPolygon |
 | `allow_experimental_hash_functions` | in v22.6.1.1985 |  | Yes | Enable experimental hash functions (hashid, etc) |
-| `allow_experimental_inverted_index` | in v23.1.1.3077 |  | Yes | If it is set to true, allow to use experimental inverted index. |
-| `allow_experimental_join_condition` | in v24.5.1.1763 |  | Yes | Support join with inequal conditions which involve columns from both left and right table. e.g. t1.y < t2.y. |
+| `allow_experimental_insert_into_iceberg` | in v25.7.1.3997 |  | Yes | Allow to execute `insert` queries into iceberg. |
+| `allow_experimental_inverted_index` | in v23.1.1.3077 | in v25.7.1.3997 | Yes | If it is set to true, allow to use experimental inverted index. |
+| `allow_experimental_join_condition` | in v24.5.1.1763 | in v25.7.1.3997 | Yes | Support join with inequal conditions which involve columns from both left and right table. e.g. t1.y < t2.y. |
 | `allow_experimental_join_right_table_sorting` | in v24.9.1.3278 |  | Yes | If it is set to true, and the conditions of `join_to_sort_minimum_perkey_rows` and `join_to_sort_maximum_table_rows` are met, rerange the right table by key to improve the performance in left or inner hash join. |
 | `allow_experimental_json_type` | in v24.8.1.2684 |  | Yes | Allow JSON data type |
 | `allow_experimental_kafka_offsets_storage_in_keeper` | in v24.8.1.2684 |  | Yes | Allow experimental feature to store Kafka related offsets in ClickHouse Keeper. When enabled a ClickHouse Keeper path and replica name can be specified to the Kafka table engine. As a result instead of the regular Kafka engine, a new type of storage engine will be used that stores the committed offsets primarily in ClickHouse Keeper |
 | `allow_experimental_kusto_dialect` | in v25.1.1.4165 |  | Yes | Enable Kusto Query Language (KQL) - an alternative to SQL. |
 | `allow_experimental_lightweight_delete` | in v22.8.1.2097 | in v23.3.1.2823 | Yes | Enable lightweight DELETE mutations for mergetree tables. Work in progress |
+| `allow_experimental_lightweight_update` | in v25.5.1.2782 |  | Yes | Allow to use lightweight updates. |
 | `allow_experimental_live_view` | in v19.14.3.3 |  | Yes | Enable LIVE VIEW. Not mature enough. |
 | `allow_experimental_low_cardinality_type` | in v18.12.13 | in v19.14.3.3 | up to v20.9.7.11 | Allows to create table with LowCardinality types. |
 | `allow_experimental_map_type` | in v21.1.2.15 | in v21.8.3.44 | Yes | Allow data type Map |
@@ -2175,7 +2263,9 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_experimental_shared_set_join` | in v24.10.1.2812 | in v25.4.1.2934 | Yes | Only in ClickHouse Cloud. Allow to create ShareSet and SharedJoin |
 | `allow_experimental_statistic` | in v23.11.1.2711 |  | Yes | Allows using statistic |
 | `allow_experimental_statistics` | in v24.6.1.4423 |  | Yes | Allows using statistics |
+| `allow_experimental_time_series_aggregate_functions` | in v25.6.1.3206 |  | Yes | Experimental timeSeries* aggregate functions for Prometheus-like timeseries resampling, rate, delta calculation. |
 | `allow_experimental_time_series_table` | in v24.8.1.2684 |  | Yes | Allows experimental TimeSeries table engine |
+| `allow_experimental_time_time64_type` | in v25.6.1.3206 |  | Yes | Allows creation of [Time](../../sql-reference/data-types/time.md) and [Time64](../../sql-reference/data-types/time64.md) data types. |
 | `allow_experimental_ts_to_grid_aggregate_function` | in v25.1.1.4165 |  | Yes | Experimental tsToGrid aggregate function for Prometheus-like timeseries resampling. Cloud only |
 | `allow_experimental_undrop_table_query` | in v23.3.1.2823 | in v23.11.1.2711 | Yes | Allow to use undrop query to restore dropped table in a limited time |
 | `allow_experimental_usearch_index` | in v23.8.1.2992 | in v24.8.1.2684 | Yes | Allows to use USearch index. Disabled by default because this feature is experimental |
@@ -2218,6 +2308,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `alter_move_to_space_execute_async` | in v23.11.1.2711 |  | Yes | Execute ALTER TABLE MOVE ... TO [DISK|VOLUME] asynchronously |
 | `alter_partition_verbose_result` | in v20.7.2.30 |  | Yes | Output information about affected parts. Currently works only for FREEZE and ATTACH commands. |
 | `alter_sync` | in v23.2.1.2537 |  | Yes | Wait for actions to manipulate the partitions. 0 - do not wait, 1 - wait for execution only of itself, 2 - wait for everyone. |
+| `alter_update_mode` | in v25.5.1.2782 |  | Yes | A mode for `ALTER` queries that have the `UPDATE` commands.\n\nPossible values:\n- `heavy` - run regular mutation.\n- `lightweight` - run lightweight update if possible, run regular mutation otherwise.\n- `lightweight_force` - run lightweight update if possible, throw otherwise. |
 | `analyze_index_with_space_filling_curves` | in v23.10.1.1976 |  | Yes | If a table has a space-filling curve in its index, e.g. `ORDER BY mortonEncode(x, y)`, and the query has conditions on its arguments, e.g. `x >= 10 AND x <= 20 AND y >= 20 AND y <= 30`, use the space-filling curve for index analysis. |
 | `analyzer_compatibility_join_using_top_level_identifier` | in v24.3.1.2672 |  | Yes | Force to resolve identifier in JOIN USING from projection (for example, in `SELECT a + 1 AS b FROM t1 JOIN t2 USING (b)` join will be performed by `t1.a + 1 = t2.b`, rather then `t1.b = t2.b`). |
 | `ann_index_select_query_params` | in v22.9.1.2603 |  | up to v23.4.6.25 | Parameters passed to ANN indexes in SELECT queries, the format is \'param1=x, param2=y, ...\' |
@@ -2225,6 +2316,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `any_join_distinct_right_table_keys` | in v19.11.14.1 |  | Yes | "Setting from future version, backported for update" |
 | `apply_deleted_mask` | in v23.10.1.1976 |  | Yes | Enables filtering out rows deleted with lightweight DELETE. If disabled, a query will be able to read those rows. This is useful for debugging and "undelete" scenarios |
 | `apply_mutations_on_fly` | in v23.12.1.1368 |  | Yes | Only available in ClickHouse Cloud |
+| `apply_patch_parts` | in v25.5.1.2782 |  | Yes | If true, patch parts (that represent lightweight updates) are applied on SELECTs. |
 | `apply_settings_from_server` | in v25.2.1.3085 |  | Yes | Whether the client should accept settings from server.\n\nThis only affects operations performed on the client side, in particular parsing the INSERT input data and formatting the query result. Most of query execution happens on the server and is not affected by this setting.\n\nNormally this setting should be set in user profile (users.xml or queries like `ALTER USER`), not through the client (client command line arguments, `SET` query, or `SETTINGS` section of `SELECT` query). Through the client it can be changed to false, but can\'t be changed to true (because the server won\'t send the settings if user profile has `apply_settings_from_server = false`).\n\nNote that initially (24.12) there was a server setting (`send_settings_to_client`), but latter it got replaced with this client setting, for better usability. |
 | `asterisk_include_alias_columns` | in v21.1.2.15 |  | Yes | Include ALIAS columns for wildcard query |
 | `asterisk_include_materialized_columns` | in v21.1.2.15 |  | Yes | Include MATERIALIZED columns for wildcard query |
@@ -2302,6 +2394,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `cancel_http_readonly_queries_on_client_close` | in v19.3.3 |  | Yes | Cancel HTTP readonly queries when a client closes the connection without waiting for response. |
 | `cast_ipv4_ipv6_default_on_conversion_error` | in v22.3.2.1 |  | Yes | CAST operator into IPv4, CAST operator into IPV6 type, toIPv4, toIPv6 functions will return default value instead of throwing exception on conversion error. |
 | `cast_keep_nullable` | in v20.5.2.7 |  | Yes | CAST operator keep Nullable for result data type |
+| `cast_string_to_date_time_mode` | in v25.6.1.3206 |  | Yes | Allows choosing a parser of the text representation of date and time during cast from String.\n\nPossible values:\n\n- `\'best_effort\'` — Enables extended parsing.\n\n    ClickHouse can parse the basic `YYYY-MM-DD HH:MM:SS` format and all [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time formats. For example, `\'2018-06-08T01:02:03.000Z\'`.\n\n- `\'best_effort_us\'` — Similar to `best_effort` (see the difference in [parseDateTimeBestEffortUS](../../sql-reference/functions/type-conversion-functions#parsedatetimebesteffortus)\n\n- `\'basic\'` — Use basic parser.\n\n    ClickHouse can parse only the basic `YYYY-MM-DD HH:MM:SS` or `YYYY-MM-DD` format. For example, `2019-08-20 10:18:56` or `2019-08-20`.\n\nSee also:\n\n- [DateTime data type.](../../sql-reference/data-types/datetime.md)\n- [Functions for working with dates and times.](../../sql-reference/functions/date-time-functions.md) |
 | `cast_string_to_dynamic_use_inference` | in v24.5.1.1763 |  | Yes | Use types inference during String to Dynamic conversion |
 | `cast_string_to_variant_use_inference` | in v25.4.1.2934 |  | Yes | Use types inference during String to Variant conversion. |
 | `check_query_single_value_result` | in v19.11.2.7 |  | Yes | "Return check query result as single 1/0 value" |
@@ -2312,6 +2405,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `cloud_mode_database_engine` | in v24.10.1.2812 |  | Yes | The database engine allowed in Cloud. 1 - rewrite DDLs to use Replicated database, 2 - rewrite DDLs to use Shared database |
 | `cloud_mode_engine` | in v23.12.1.1368 |  | Yes | Only available in ClickHouse Cloud |
 | `cluster_for_parallel_replicas` | in v23.2.1.2537 |  | Yes | Cluster for a shard in which current server is located |
+| `cluster_function_process_archive_on_multiple_nodes` | in v25.7.1.3997 |  | Yes | If set to `true`, increases performance of processing archives in cluster functions. Should be set to `false` for compatibility and to avoid errors during upgrade to 25.7+ if using cluster functions with archives on earlier versions. |
 | `collect_hash_table_stats_during_aggregation` | in v22.4.1.2305 |  | Yes | Enable collecting hash table statistics to optimize memory allocation |
 | `collect_hash_table_stats_during_joins` | in v24.7.1.2915 |  | Yes | Enable collecting hash table statistics to optimize memory allocation |
 | `column_names_for_schema_inference` | in v22.4.1.2305 |  | Yes | The list of column names to use in schema inference for formats without column names. The format: \'column1,column2,column3,...\' |
@@ -2329,8 +2423,10 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `connection_pool_max_wait_ms` | in v19.14.3.3 |  | Yes | The wait time when connection pool is full. |
 | `connections_with_failover_max_tries` | in v1.1.54019 |  | Yes | The maximum number of attempts to connect to replicas. |
 | `convert_query_to_cnf` | in v21.12.2.17 |  | Yes | Convert SELECT query to CNF |
+| `correlated_subqueries_substitute_equivalent_expressions` | in v25.7.1.3997 |  | Yes | Use filter expressions to inference equivalent expressions and substitute them instead of creating a CROSS JOIN. |
 | `count_distinct_implementation` | in v1.1.54019 |  | Yes | What aggregate function to use for implementation of count(DISTINCT ...) |
 | `count_distinct_optimization` | in v22.5.1.2079 |  | Yes | Rewrite count distinct to subquery of group by |
+| `count_matches_stop_at_empty_match` | in v25.6.1.3206 |  | Yes | Stop counting once a pattern matches zero-length in the `countMatches` function. |
 | `create_if_not_exists` | in v24.9.1.3278 |  | Yes | Enable IF NOT EXISTS for CREATE statements by default |
 | `create_index_ignore_unique` | in v23.8.1.2992 |  | Yes | Ignore UNIQUE keyword in CREATE UNIQUE INDEX. Made for SQL compatibility tests. |
 | `create_replicated_merge_tree_fault_injection_probability` | in v23.11.1.2711 |  | Yes | The probability of a fault injection during table creation after creating metadata in ZooKeeper |
@@ -2376,8 +2472,10 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `distributed_background_insert_sleep_time_ms` | in v23.10.1.1976 |  | Yes | Sleep time for background INSERTs into Distributed, in case of any errors delay grows exponentially. |
 | `distributed_background_insert_split_batch_on_failure` | in v23.10.1.1976 |  | Yes | Should batches of the background INSERT into Distributed be split into smaller batches in case of failures. |
 | `distributed_background_insert_timeout` | in v23.10.1.1976 |  | Yes | Timeout for insert query into distributed. Setting is used only with insert_distributed_sync enabled. Zero value means no timeout. |
+| `distributed_cache_alignment` | in v25.7.1.3997 |  | Yes | Only has an effect in ClickHouse Cloud. A setting for testing purposes, do not change it |
 | `distributed_cache_bypass_connection_pool` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Allow to bypass distributed cache connection pool |
 | `distributed_cache_connect_max_tries` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Number of tries to connect to distributed cache if unsuccessful |
+| `distributed_cache_credentials_refresh_period_seconds` | in v25.6.1.3206 |  | Yes | Only has an effect in ClickHouse Cloud. A period of credentials refresh. |
 | `distributed_cache_data_packet_ack_window` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. A window for sending ACK for DataPacket sequence in a single distributed cache read request |
 | `distributed_cache_discard_connection_if_unread_data` | in v24.11.1.2557 |  | Yes | Only in ClickHouse Cloud. Discard connection if some data is unread. |
 | `distributed_cache_fetch_metrics_only_from_current_az` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Fetch metrics only from current availability zone in system.distributed_cache_metrics, system.distributed_cache_events |
@@ -2385,7 +2483,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `distributed_cache_max_unacked_inflight_packets` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. A maximum number of unacknowledged in-flight packets in a single distributed cache read request |
 | `distributed_cache_min_bytes_for_seek` | in v24.10.4.191 |  | Yes | Only in ClickHouse Cloud. Minimum number of bytes to do seek in distributed cache. |
 | `distributed_cache_pool_behaviour_on_limit` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Identifies behaviour of distributed cache connection on pool limit reached |
-| `distributed_cache_read_alignment` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. A setting for testing purposes, do not change it |
+| `distributed_cache_read_alignment` | in v24.10.1.2812 | in v25.7.1.3997 | Yes | Only in ClickHouse Cloud. A setting for testing purposes, do not change it |
+| `distributed_cache_read_only_from_current_az` | in v25.5.1.2782 |  | Yes | Only has an effect in ClickHouse Cloud. Allow to read only from current availability zone. If disabled, will read from all cache servers in all availability zones. |
 | `distributed_cache_read_request_max_tries` | in v25.4.1.2934 |  | Yes | Only has an effect in ClickHouse Cloud. Number of tries to do distributed cache request if unsuccessful |
 | `distributed_cache_receive_response_wait_milliseconds` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Wait time in milliseconds to receive data for request from distributed cache |
 | `distributed_cache_receive_timeout_milliseconds` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Wait time in milliseconds to receive any kind of response from distributed cache |
@@ -2403,6 +2502,13 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `distributed_foreground_insert` | in v23.10.1.1976 |  | Yes | If setting is enabled, insert query into distributed waits until data will be sent to all nodes in cluster. \n\nEnables or disables synchronous data insertion into a `Distributed` table.\n\nBy default, when inserting data into a Distributed table, the ClickHouse server sends data to cluster nodes in background. When `distributed_foreground_insert` = 1, the data is processed synchronously, and the `INSERT` operation succeeds only after all the data is saved on all shards (at least one replica for each shard if `internal_replication` is true). |
 | `distributed_group_by_no_merge` | in v1.1.54019 |  | Yes | Do not merge aggregation states from different servers for distributed query processing - in case it is for certain that there are different keys on different shards. |
 | `distributed_insert_skip_read_only_replicas` | in v24.3.1.2672 |  | Yes | If true, INSERT into Distributed will skip read-only replicas. |
+| `distributed_plan_default_reader_bucket_count` | in v25.5.1.2782 |  | Yes | Default number of tasks for parallel reading in distributed query. Tasks are spread across between replicas. |
+| `distributed_plan_default_shuffle_join_bucket_count` | in v25.5.1.2782 |  | Yes | Default number of buckets for distributed shuffle-hash-join. |
+| `distributed_plan_execute_locally` | in v25.5.1.2782 |  | Yes | Run all tasks of a distributed query plan locally. Useful for testing and debugging. |
+| `distributed_plan_force_exchange_kind` | in v25.5.1.2782 |  | Yes | Force specified kind of Exchange operators between distributed query stages.\n\nPossible values:\n\n - \'\' - do not force any kind of Exchange operators, let the optimizer choose,\n - \'Persisted\' - use temporary files in object storage,\n - \'Streaming\' - stream exchange data over network. |
+| `distributed_plan_force_shuffle_aggregation` | in v25.7.1.3997 |  | Yes | Use Shuffle aggregation strategy instead of PartialAggregation + Merge in distributed query plan. |
+| `distributed_plan_max_rows_to_broadcast` | in v25.7.1.3997 |  | Yes | Maximum rows to use broadcast join instead of shuffle join in distributed query plan. |
+| `distributed_plan_optimize_exchanges` | in v25.5.1.2782 |  | Yes | Removes unnecessary exchanges in distributed query plan. Disable it for debugging. |
 | `distributed_product_mode` | in v1.1.54019 |  | Yes | How are distributed subqueries performed inside IN or JOIN sections? |
 | `distributed_push_down_limit` | in v21.7.2.7 |  | Yes | If 1, LIMIT will be applied on each shard separatelly. Usually you don\'t need to use it, since this will be done automatically if it is possible, i.e. for simple query SELECT FROM LIMIT. |
 | `distributed_replica_error_cap` | in v19.15.2.2 |  | Yes | Max number of errors per replica, prevents piling up increadible amount of errors if replica was offline for some time and allows it to be reconsidered in a shorter amount of time. |
@@ -2440,17 +2546,22 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `enable_optimize_predicate_expression` | in v18.12.13 |  | Yes | If it is set to true, optimize predicates to subqueries. |
 | `enable_optimize_predicate_expression_to_final_subquery` | in v19.13.1.11 |  | Yes | "Allow push predicate to final subquery." |
 | `enable_order_by_all` | in v23.12.1.1368 |  | Yes | Enable sorting expression ORDER BY ALL. |
+| `enable_parallel_blocks_marshalling` | in v25.6.1.3206 |  | Yes | Affects only distributed queries. If enabled, blocks will be (de)serialized and (de)compressed on pipeline threads (i.e. with higher parallelism that what we have by default) before/after sending to the initiator. |
 | `enable_parallel_replicas` | in v24.8.11.51285.altinitystable |  | Yes | Use up to `max_parallel_replicas` the number of replicas from each shard for SELECT query execution. Reading is parallelized and coordinated dynamically. 0 - disabled, 1 - enabled, silently disable them in case of failure, 2 - enabled, throw an exception in case of failure |
 | `enable_parsing_to_custom_serialization` | in v24.10.1.2812 |  | Yes | If true then data can be parsed directly to columns with custom serialization (e.g. Sparse) according to hints for serialization got from the table. |
 | `enable_positional_arguments` | in v21.10.2.15 |  | Yes | Enable positional arguments in ORDER BY, GROUP BY and LIMIT BY |
 | `enable_reads_from_query_cache` | in v23.2.1.2537 |  | Yes | Enable reading results of SELECT queries from the query cache |
 | `enable_s3_requests_logging` | in v22.6.1.1985 |  | Yes | Enable very explicit logging of S3 requests. Makes sense for debug only. |
 | `enable_scalar_subquery_optimization` | in v19.14.12.2 |  | Yes | Does nothing, added for compatibility with newer versions. |
+| `enable_scopes_for_with_statement` | in v25.4.13.22 |  | Yes | If disabled, declarations in parent WITH cluases will behave the same scope as they declared in the current scope.\n\nNote that this is a compatibility setting for new analyzer to allow running some invalid queries that old analyzer could execute. |
+| `enable_shared_storage_snapshot_in_query` | in v25.6.1.3206 |  | Yes | If enabled, all subqueries within a single query will share the same StorageSnapshot for each table.\nThis ensures a consistent view of the data across the entire query, even if the same table is accessed multiple times.\n\nThis is required for queries where internal consistency of data parts is important. Example:\n\n```sql\nSELECT\n    count()\nFROM events\nWHERE (_part, _part_offset) IN (\n    SELECT _part, _part_offset\n    FROM events\n    WHERE user_id = 42\n)\n```\n\nWithout this setting, the outer and inner queries may operate on different data snapshots, leading to incorrect results.\n\n:::note\nEnabling this setting disables the optimization which removes unnecessary data parts from snapshots once the planning stage is complete.\nAs a result, long-running queries may hold onto obsolete parts for their entire duration, delaying part cleanup and increasing storage pressure.\n\nThis setting currently applies only to tables from the MergeTree family.\n:::\n\nPossible values:\n\n- 0 - Disabled\n- 1 - Enabled |
 | `enable_sharing_sets_for_mutations` | in v23.4.1.1943 |  | Yes | Allow sharing set objects build for IN subqueries between different tasks of the same mutation. This reduces memory usage and CPU consumption |
 | `enable_software_prefetch_in_aggregation` | in v22.9.1.2603 |  | Yes | Enable use of software prefetch in aggregation |
+| `enable_time_time64_type` | in v25.6.1.3206 |  | Yes | Allows creation of [Time](../../sql-reference/data-types/time.md) and [Time64](../../sql-reference/data-types/time64.md) data types. |
 | `enable_unaligned_array_join` | in v19.1.5 |  | Yes | Allow ARRAY JOIN with multiple arrays that have different sizes. When this settings is enabled, arrays will be resized to the longest one. |
 | `enable_url_encoding` | in v23.7.2.25 |  | Yes |  Allows to enable/disable decoding/encoding path in uri in URL table engine |
 | `enable_variant_type` | in v24.11.1.2557 |  | Yes | Allows creation of [Variant](../../sql-reference/data-types/variant.md) data type. |
+| `enable_vector_similarity_index` | in v25.7.1.3997 |  | Yes | Enable vector similarity index. |
 | `enable_vertical_final` | in v24.1.1.2048 |  | Yes | If enable, remove duplicated rows during FINAL by marking rows as deleted and filtering them later instead of merging rows |
 | `enable_writes_to_query_cache` | in v23.2.1.2537 |  | Yes | Enable storing results of SELECT queries in the query cache |
 | `enable_zstd_qat_codec` | in v24.1.1.2048 |  | Yes | Enable/disable the ZSTD_QAT codec. |
@@ -2529,19 +2640,23 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `format_regexp_escaping_rule` | in v20.4.2.9 |  | Yes | Field escaping rule (for Regexp format) |
 | `format_regexp_skip_unmatched` | in v20.4.2.9 |  | Yes | Skip lines unmatched by regular expression (for Regexp format |
 | `format_schema` | in v1.1.54310 |  | Yes | Schema identifier (used by schema-based formats) |
+| `format_schema_message_name` | in v25.6.1.3206 |  | Yes | Define the name of the required message in the schema defined in `format_schema`.\nTo maintain compatibility with the legacy format_schema format (`file_name:message_name`):\n- If `format_schema_message_name` is not specified, the message name is inferred from the `message_name` part of the legacy `format_schema` value.\n- If `format_schema_message_name` is specified while using the legacy format, an error will be raised. |
 | `format_schema_rows` | in v19.14.3.3 |  | up to v19.15.7.30 | Row format string for Template format |
 | `format_schema_rows_between_delimiter` | in v19.14.3.3 |  | up to v19.15.7.30 | Delimiter between rows for Template format |
+| `format_schema_source` | in v25.6.1.3206 |  | Yes | Define the source of `format_schema`.\nPossible values:\n- \'file\' (default):: The `format_schema` is the name of a schema file located in the `format_schemas` directory.\n- \'string\': The `format_schema` is the literal content of the schema.\n- \'query\': The `format_schema` is a query to retrieve the schema.\nWhen `format_schema_source` is set to \'query\', the following conditions apply:\n- The query must return exactly one value: a single row with a single string column.\n- The result of the query is treated as the schema content.\n- This result is cached locally in the `format_schemas` directory.\n- You can clear the local cache using the command: `SYSTEM DROP FORMAT SCHEMA CACHE FOR Files`.\n- Once cached, identical queries are not executed to fetch the schema again until the cache is explicitly cleared\n- In addition to local cache files, Protobuf messages are also cached in memory. Even after clearing the local cache files, the in-memory cache must be cleared using `SYSTEM DROP FORMAT SCHEMA CACHE [FOR Protobuf]` to fully refresh the schema.\n- Run the query `SYSTEM DROP FORMAT SCHEMA CACHE` to clear the cache for both cache files and Protobuf messages schemas at once. |
 | `format_template_resultset` | in v19.16.2.2 |  | Yes | Path to file which contains format string for result set (for Template format) |
 | `format_template_resultset_format` | in v24.2.1.2248 |  | Yes | Format string for result set (for Template format) |
 | `format_template_row` | in v19.16.2.2 |  | Yes | Path to file which contains format string for rows (for Template format) |
 | `format_template_row_format` | in v24.2.1.2248 |  | Yes | Format string for rows (for Template format) |
 | `format_template_rows_between_delimiter` | in v19.16.2.2 |  | Yes | Delimiter between rows (for Template format) |
 | `format_tsv_null_representation` | in v21.12.2.17 |  | Yes | Custom NULL representation in TSV format |
+| `formatdatetime_e_with_space_padding` | in v25.5.1.2782 |  | Yes | Formatter \'%e\' in function \'formatDateTime\' prints single-digit days with a leading space, e.g. \' 2\' instead of \'2\'.\n     |
 | `formatdatetime_f_prints_scale_number_of_digits` | in v25.1.1.4165 |  | Yes | Formatter \'%f\' in function \'formatDateTime\' prints only the scale amount of digits for a DateTime64 instead of fixed 6 digits. |
 | `formatdatetime_f_prints_single_zero` | in v23.4.1.1943 |  | Yes | Formatter \'%f\' in function \'formatDateTime()\' produces a single zero instead of six zeros if the formatted value has no fractional seconds. |
 | `formatdatetime_format_without_leading_zeros` | in v23.11.1.2711 |  | Yes | Formatters \'%c\', \'%l\' and \'%k\' in function \'formatDateTime()\' print months and hours without leading zeros. |
 | `formatdatetime_parsedatetime_m_is_month_name` | in v23.4.1.1943 |  | Yes | Formatter \'%M\' in functions \'formatDateTime()\' and \'parseDateTime()\' produces the month name instead of minutes. |
 | `fsync_metadata` | in v1.1.54140 |  | Yes | Do fsync after changing metadata for tables and databases (.sql files). |
+| `function_date_trunc_return_type_behavior` | in v25.4.10.45 |  | Yes | Allows to change the behaviour of the result type of `dateTrunc` function.\n\nPossible values:\n- 0 - When the second argument is `DateTime64/Date32` the return type will be `DateTime64/Date32` regardless of the time unit in the first argument.\n- 1 - For `Date32` the result is always `Date`. For `DateTime64` the result is `DateTime` for time units `second` and higher. |
 | `function_implementation` | in v20.5.2.7 |  | Yes | Choose function implementation for specific target or variant (experimental). If empty enable all of them. |
 | `function_json_value_return_type_allow_complex` | in v23.4.1.1943 |  | Yes | Allow function to return complex type, such as: struct, array, map. |
 | `function_json_value_return_type_allow_nullable` | in v23.4.1.1943 |  | Yes | Allow function to return nullable type. |
@@ -2550,6 +2665,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `function_sleep_max_microseconds_per_block` | in v23.7.1.2470 |  | Yes | Maximum number of microseconds the function `sleep` is allowed to sleep for each block. If a user called it with a larger value, it throws an exception. It is a safety threshold. |
 | `function_visible_width_behavior` | in v24.1.1.2048 |  | Yes | The version of `visibleWidth` behavior. 0 - only count the number of code points; 1 - correctly count zero-width and combining characters, count full-width characters as two, estimate the tab width, count delete characters. |
 | `geo_distance_returns_float64_on_float64_arguments` | in v24.3.1.2672 |  | Yes | If all four arguments to `geoDistance`, `greatCircleDistance`, `greatCircleAngle` functions are Float64, return Float64 and use double precision for internal calculations. In previous ClickHouse versions, the functions always returned Float32. |
+| `geotoh3_argument_order` | in v25.5.1.2782 |  | Yes | Function \'geoToH3\' accepts (lon, lat) if set to \'lon_lat\' and (lat, lon) if set to \'lat_lon\'. |
 | `glob_expansion_max_elements` | in v21.5.5.12 |  | Yes | Maximum number of allowed addresses (For external storages, table functions, etc). |
 | `global_subqueries_method` | in v1.1.54019 |  | up to v1.1.54342 | The scheme for executing GLOBAL subqueries. |
 | `grace_hash_join_initial_buckets` | in v22.12.1.1752 |  | Yes | Initial number of grace hash join buckets |
@@ -2606,6 +2722,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `ignore_on_cluster_for_replicated_named_collections_queries` | in v24.7.1.2915 |  | Yes | Ignore ON CLUSTER clause for replicated named collections management queries. |
 | `ignore_on_cluster_for_replicated_udf_queries` | in v23.8.1.2992 |  | Yes | Ignore ON CLUSTER clause for replicated UDF management queries. |
 | `implicit_select` | in v24.10.1.2812 |  | Yes | Allow writing simple SELECT queries without the leading SELECT keyword, which makes it simple for calculator-style usage, e.g. `1 + 2` becomes a valid query. |
+| `implicit_table_at_top_level` | in v25.5.1.2782 |  | Yes | If not empty, queries without FROM at the top level will read from this table instead of system.one.\n\nThis is used in clickhouse-local for input data processing.\nThe setting could be set explicitly by a user but is not intended for this type of usage.\n\nSubqueries are not affected by this setting (neither scalar, FROM, or IN subqueries).\nSELECTs at the top level of UNION, INTERSECT, EXCEPT chains are treated uniformly and affected by this setting, regardless of their grouping in parentheses.\nIt is unspecified how this setting affects views and distributed queries.\n\nThe setting accepts a table name (then the table is resolved from the current database) or a qualified name in the form of \'database.table\'.\nBoth database and table names have to be unquoted - only simple identifiers are allowed. |
 | `implicit_transaction` | in v22.7.1.2484 |  | Yes | If enabled and not already inside a transaction, wraps the query inside a full transaction (begin + commit or rollback) |
 | `input_format_allow_errors_num` | in v1.1.54140 |  | Yes | Maximum absolute amount of errors while reading text formats (like CSV, TSV). |
 | `input_format_allow_errors_ratio` | in v1.1.54140 |  | Yes | Maximum relative amount of errors while reading text formats (like CSV, TSV). |
@@ -2655,6 +2772,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_json_ignore_unknown_keys_in_named_tuple` | in v23.2.1.2537 |  | Yes | Ignore unknown keys in json object for named tuples |
 | `input_format_json_ignore_unnecessary_fields` | in v24.4.1.2088 |  | Yes | Ignore unnecessary fields and not parse them. Enabling this may not throw exceptions on json strings of invalid format or with duplicated fields |
 | `input_format_json_infer_incomplete_types_as_strings` | in v23.9.1.1854 |  | Yes | Use type String for keys that contains only Nulls or empty objects/arrays during schema inference in JSON input formats |
+| `input_format_json_map_as_array_of_tuples` | in v25.7.1.3997 |  | Yes | Deserialize maps columns as JSON arrays of tuples.\n\nDisabled by default. |
 | `input_format_json_max_depth` | in v24.8.1.2684 |  | Yes | Maximum depth of a field in JSON. This is not a strict limit, it does not have to be applied precisely. |
 | `input_format_json_named_tuples_as_objects` | in v23.1.1.3077 |  | Yes | Deserialize named tuple columns as JSON objects |
 | `input_format_json_read_arrays_as_strings` | in v23.9.1.1854 |  | Yes | Allow to parse JSON arrays as strings in JSON input formats |
@@ -2667,6 +2785,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_json_try_infer_numbers_from_strings` | in v22.8.1.2097 |  | Yes | Try to infer numbers from string fields while schema inference |
 | `input_format_json_use_string_type_for_ambiguous_paths_in_named_tuples_inference_from_objects` | in v24.3.1.2672 |  | Yes | Use String type instead of an exception in case of ambiguous paths in JSON objects during named tuples inference |
 | `input_format_json_validate_types_from_metadata` | in v22.9.1.2603 |  | Yes | For JSON/JSONCompact/JSONColumnsWithMetadata input formats this controls whether format parser should check if data types from input metadata match data types of the corresponding columns from the table |
+| `input_format_max_block_size_bytes` | in v25.5.1.2782 |  | Yes | Limits the size of the blocks formed during data parsing in input formats in bytes. Used in row based input formats when block is formed on ClickHouse side.\n0 means no limit in bytes. |
 | `input_format_max_bytes_to_read_for_schema_inference` | in v23.6.1.1524 |  | Yes | The maximum bytes of data to read for automatic schema inference |
 | `input_format_max_rows_to_read_for_schema_inference` | in v22.1.2.2 |  | Yes | The maximum rows of data to read for automatic schema inference |
 | `input_format_msgpack_number_of_columns` | in v22.1.2.2 |  | Yes | The number of columns in inserted MsgPack data. Used for automatic schema inference from data. |
@@ -2686,14 +2805,16 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_orc_skip_columns_with_unsupported_types_in_schema_inference` | in v22.4.1.2305 |  | Yes | Allow to skip columns with unsupported types while schema inference for format ORC |
 | `input_format_orc_use_fast_decoder` | in v23.8.1.2992 |  | Yes | Use a faster ORC decoder implementation. |
 | `input_format_parallel_parsing` | in v20.1.2.4 |  | Yes | Enable parallel parsing for some data formats. |
+| `input_format_parquet_allow_geoparquet_parser` | in v25.5.1.2782 |  | Yes | Use geo column parser to convert Array(UInt8) into Point/Linestring/Polygon/MultiLineString/MultiPolygon types |
 | `input_format_parquet_allow_missing_columns` | in v22.1.2.2 |  | Yes | Allow missing columns while reading Parquet input formats |
 | `input_format_parquet_bloom_filter_push_down` | in v24.8.11.51285.altinitystable |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE/PREWHERE expressions and bloom filter in the Parquet metadata. |
 | `input_format_parquet_case_insensitive_column_matching` | in v22.4.1.2305 |  | Yes | Ignore case when matching Parquet columns with CH columns. |
+| `input_format_parquet_enable_json_parsing` | in v25.6.1.3206 |  | Yes |   When reading Parquet files, parse JSON columns as ClickHouse JSON Column.\n   |
 | `input_format_parquet_enable_row_group_prefetch` | in v24.10.1.2812 |  | Yes | Enable row group prefetching during parquet parsing. Currently, only single-threaded parsing can prefetch. |
 | `input_format_parquet_filter_push_down` | in v23.8.1.2992 |  | Yes | When reading Parquet files, skip whole row groups based on the WHERE/PREWHERE expressions and min/max statistics in the Parquet metadata. |
 | `input_format_parquet_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
 | `input_format_parquet_local_file_min_bytes_for_seek` | in v23.8.1.2992 |  | Yes | Min bytes required for local read (file) to do seek, instead of read with ignore in Parquet input format |
-| `input_format_parquet_max_block_size` | in v22.8.15.25.altinitystable |  | Yes | Max block size for parquet reader. |
+| `input_format_parquet_max_block_size` | in v22.8.15.25.altinityfips |  | Yes | Max block size for parquet reader. |
 | `input_format_parquet_prefer_block_bytes` | in v24.6.1.4423 |  | Yes | Average block bytes output by parquet reader |
 | `input_format_parquet_preserve_order` | in v23.4.1.1943 |  | Yes | Avoid reordering rows when reading from Parquet files. Usually makes it much slower. |
 | `input_format_parquet_skip_columns_with_unsupported_types_in_schema_inference` | in v22.4.1.2305 |  | Yes | Allow to skip columns with unsupported types while schema inference for format Parquet |
@@ -2762,6 +2883,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `keeper_retry_max_backoff_ms` | in v24.3.1.2672 |  | Yes | Max backoff timeout for general keeper operations |
 | `least_greatest_legacy_null_behavior` | in v24.12.1.1614 |  | Yes | If enabled, functions \'least\' and \'greatest\' return NULL if one of their arguments is NULL. |
 | `legacy_column_name_of_tuple_literal` | in v21.7.2.7 |  | Yes | List all names of element of large tuple literals in their column names instead of hash. This settings exists only for compatibility reasons. It makes sense to set to \'true\', while doing rolling update of cluster from version lower than 21.7 to higher. |
+| `lightweight_delete_mode` | in v25.5.1.2782 |  | Yes | A mode of internal update query that is executed as a part of lightweight delete.\n\nPossible values:\n- `alter_update` - run `ALTER UPDATE` query that creates a heavyweight mutation.\n- `lightweight_update` - run lightweight update if possible, run `ALTER UPDATE` otherwise.\n- `lightweight_update_force` - run lightweight update if possible, throw otherwise. |
 | `lightweight_deletes_sync` | in v24.4.1.2088 |  | Yes | The same as \'mutation_sync\', but controls only execution of lightweight deletes |
 | `lightweight_mutation_projection_mode` | in v24.7.1.2915 | in v24.9.1.3278 | Yes | When lightweight delete happens on a table with projection(s), the possible operations include throw the exception as projection exists, or drop all projection related to this table then do lightweight delete. |
 | `limit` | in v21.1.2.15 |  | Yes | Limit on read rows from the most \'end\' result for select query, default 0 means no limit length |
@@ -2788,6 +2910,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `low_cardinality_max_dictionary_size` | in v18.12.13 |  | Yes | Maximum size (in rows) of shared global dictionary for LowCardinality type. |
 | `low_cardinality_use_single_dictionary_for_part` | in v18.12.13 |  | Yes | LowCardinality type serialization setting. If is true, than will use additional keys when global dictionary overflows. Otherwise, will create several shared dictionaries. |
 | `low_priority_query_wait_time_ms` | in v25.4.1.2934 |  | Yes | When the query prioritization mechanism is employed (see setting `priority`), low-priority queries wait for higher-priority queries to finish. This setting specifies the duration of waiting. |
+| `make_distributed_plan` | in v25.5.1.2782 |  | Yes | Make distributed query plan. |
 | `mark_cache_min_lifetime` | in v1.1.54019 | in v20.1.2.4 | up to v20.9.7.11 | If the maximum size of mark_cache is exceeded, delete only records older than mark_cache_min_lifetime seconds. |
 | `materialize_skip_indexes_on_insert` | in v24.6.1.4423 |  | Yes | If true skip indexes are calculated on inserts, otherwise skip indexes will be calculated only during merges |
 | `materialize_statistics_on_insert` | in v24.6.1.4423 |  | Yes | If true statistics are calculated on inserts, otherwise statistics will be calculated only during merges |
@@ -2840,7 +2963,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `max_insert_delayed_streams_for_parallel_write` | in v22.3.18.37 |  | Yes | The maximum number of streams (columns) to delay final part flush. Default - auto (1000 in case of underlying storage supports parallel write, for example S3 and disabled otherwise) |
 | `max_insert_threads` | in v20.3.2.1 |  | Yes | The maximum number of threads to execute the INSERT SELECT query. Values 0 or 1 means that INSERT SELECT is not run in parallel. Higher values will lead to higher memory usage. Parallel INSERT SELECT has effect only if the SELECT part is run on parallel, see \'max_threads\' setting. |
 | `max_joined_block_size_rows` | in v20.3.2.1 |  | Yes | Maximum block size for JOIN result (if join algorithm supports it). 0 means unlimited. |
-| `max_limit_for_ann_queries` | in v22.9.1.2603 |  | Yes | Maximum limit value for using ANN indexes is used to prevent memory overflow in search queries for indexes |
+| `max_limit_for_ann_queries` | in v22.9.1.2603 | in v25.5.1.2782 | Yes | Maximum limit value for using ANN indexes is used to prevent memory overflow in search queries for indexes |
+| `max_limit_for_vector_search_queries` | in v25.5.1.2782 |  | Yes | SELECT queries with LIMIT bigger than this setting cannot use vector similarity indices. Helps to prevent memory overflows in vector similarity indices. |
 | `max_live_view_insert_blocks_before_refresh` | in v19.14.3.3 |  | Yes | Limit maximum number of inserted blocks after which mergeable blocks are dropped and query is re-executed. |
 | `max_local_read_bandwidth` | in v23.4.1.1943 |  | Yes | The maximum speed of local reads in bytes per second. |
 | `max_local_write_bandwidth` | in v23.4.1.1943 |  | Yes | The maximum speed of local writes in bytes per second. |
@@ -2928,6 +3052,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `merge_tree_min_rows_for_concurrent_read_for_remote_filesystem` | in v21.12.2.17 |  | Yes | If at least as many lines are read from one file, the reading can be parallelized, when reading from remote filesystem. |
 | `merge_tree_min_rows_for_seek` | in v1.1.54019 |  | Yes | You can skip reading more than that number of rows at the price of one seek per file. |
 | `merge_tree_read_split_ranges_into_intersecting_and_non_intersecting_injection_probability` | in v24.3.1.2672 |  | Yes | For testing of `PartsSplitter` - split read ranges into intersecting and non intersecting every time you read from MergeTree with the specified probability. |
+| `merge_tree_storage_snapshot_sleep_ms` | in v25.6.1.3206 |  | Yes | Inject artificial delay (in milliseconds) when creating a storage snapshot for MergeTree tables.\nUsed for testing and debugging purposes only.\n\nPossible values:\n- 0 - No delay (default)\n- N - Delay in milliseconds |
 | `merge_tree_uniform_read_distribution` | in v1.1.54019 | in v20.1.2.4 | up to v20.9.7.11 | Distribute read from MergeTree over threads evenly, ensuring stable average execution time of each thread within one read operation. |
 | `merge_tree_use_const_size_tasks_for_remote_reading` | in v23.5.1.3174 |  | Yes | Whether to use constant size tasks for reading from a remote table. |
 | `merge_tree_use_deserialization_prefixes_cache` | in v25.2.1.3085 |  | Yes | Enables caching of columns metadata from the file prefixes during reading from Wide parts in MergeTree. |
@@ -2945,7 +3070,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `min_count_to_compile_sort_description` | in v22.5.1.2079 |  | Yes | The number of identical sort descriptions before they are JIT-compiled |
 | `min_execution_speed` | in v1.1.54019 |  | Yes |  |
 | `min_execution_speed_bytes` | in v19.4.1.3 |  | Yes | Minimum number of execution bytes per second. |
-| `min_external_sort_block_bytes` | in v25.1.1.4165 |  | Yes | Minimal block size in bytes for external sort that will be dumped to disk, to avoid too many files. |
+| `min_external_sort_block_bytes` | in v25.1.1.4165 | in v25.3.4.190 | Yes | Minimal block size in bytes for external sort that will be dumped to disk, to avoid too many files. |
 | `min_external_table_block_size_bytes` | in v24.2.1.2248 |  | Yes | Squash blocks passed to external table to specified size in bytes, if blocks are not big enough. |
 | `min_external_table_block_size_rows` | in v24.2.1.2248 |  | Yes | Squash blocks passed to external table to specified size in rows, if blocks are not big enough. |
 | `min_free_disk_bytes_to_perform_insert` | in v24.10.1.2812 |  | Yes | Minimum free disk space bytes to perform an insert. |
@@ -2957,7 +3082,9 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `min_insert_block_size_rows` | in v1.1.54019 |  | Yes | Squash blocks passed to INSERT query to specified size in rows, if blocks are not big enough. |
 | `min_insert_block_size_rows_for_materialized_views` | in v20.5.2.7 |  | Yes | Like min_insert_block_size_rows, but applied only during pushing to MATERIALIZED VIEW (default: min_insert_block_size_rows) |
 | `min_joined_block_size_bytes` | in v24.11.1.2557 |  | Yes | Minimum block size for JOIN result (if join algorithm supports it). 0 means unlimited. |
+| `min_joined_block_size_rows` | in v25.7.1.3997 |  | Yes | Minimum block size in rows for JOIN input and output blocks (if join algorithm supports it). Small blocks will be squashed. 0 means unlimited. |
 | `min_os_cpu_wait_time_ratio_to_throw` | in v25.4.1.2934 |  | Yes | Min ratio between OS CPU wait (OSCPUWaitMicroseconds metric) and busy (OSCPUVirtualTimeMicroseconds metric) times to consider rejecting queries. Linear interpolation between min and max ratio is used to calculate the probability, the probability is 0 at this point. |
+| `min_outstreams_per_resize_after_split` | in v25.6.1.3206 |  | Yes | Specifies the minimum number of output streams of a `Resize` or `StrictResize` processor after the split is performed during pipeline generation. If the resulting number of streams is less than this value, the split operation will not occur.\n\n### What is a Resize Node\nA `Resize` node is a processor in the query pipeline that adjusts the number of data streams flowing through the pipeline. It can either increase or decrease the number of streams to balance the workload across multiple threads or processors. For example, if a query requires more parallelism, the `Resize` node can split a single stream into multiple streams. Conversely, it can merge multiple streams into fewer streams to consolidate data processing.\n\nThe `Resize` node ensures that data is evenly distributed across streams, maintaining the structure of the data blocks. This helps optimize resource utilization and improve query performance.\n\n### Why the Resize Node Needs to Be Split\nDuring pipeline execution, ExecutingGraph::Node::status_mutex of the centrally-hubbed `Resize` node is heavily contended especially in high-core-count environments, and this contention leads to:\n1. Increased latency for ExecutingGraph::updateNode, directly impacting query performance.\n2. Excessive CPU cycles are wasted in spin-lock contention (native_queued_spin_lock_slowpath), degrading efficiency.\n3. Reduced CPU utilization, limiting parallelism and throughput.\n\n### How the Resize Node Gets Split\n1. The number of output streams is checked to ensure the split could be performed: the output streams of each split processor meet or exceed the `min_outstreams_per_resize_after_split` threshold.\n2. The `Resize` node is divided into smaller `Resize` nodes with equal count of ports, each handling a subset of input and output streams.\n3. Each group is processed independently, reducing the lock contention.\n\n### Splitting Resize Node with Arbitrary Inputs/Outputs\nIn some cases, where the inputs/outputs are indivisible by the number of split `Resize` nodes, some inputs are connected to `NullSource`s and some outputs are connected to `NullSink`s. This allows the split to occur without affecting the overall data flow.\n\n### Purpose of the Setting\nThe `min_outstreams_per_resize_after_split` setting ensures that the splitting of `Resize` nodes is meaningful and avoids creating too few streams, which could lead to inefficient parallel processing. By enforcing a minimum number of output streams, this setting helps maintain a balance between parallelism and overhead, optimizing query execution in scenarios involving stream splitting and merging.\n\n### Disabling the Setting\nTo disable the split of `Resize` nodes, set this setting to 0. This will prevent the splitting of `Resize` nodes during pipeline generation, allowing them to retain their original structure without division into smaller nodes. |
 | `mongodb_throw_on_unsupported_query` | in v24.10.1.2812 |  | Yes | If enabled, MongoDB tables will return an error when a MongoDB query cannot be built. Otherwise, ClickHouse reads the full table and processes it locally. This option does not apply to the legacy implementation or when \'allow_experimental_analyzer=0\'. |
 | `move_all_conditions_to_prewhere` | in v23.2.1.2537 |  | Yes | Move all viable conditions from WHERE to PREWHERE |
 | `move_primary_key_columns_to_end_of_prewhere` | in v23.7.1.2470 |  | Yes | Move PREWHERE conditions containing primary key columns to the end of AND chain. It is likely that these conditions are taken into account during primary key analysis and thus will not contribute a lot to PREWHERE filtering. |
@@ -3033,6 +3160,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `optimize_trivial_insert_select` | in v20.8.2.3 |  | Yes | Optimize trivial \'INSERT INTO table SELECT ... FROM TABLES\' query |
 | `optimize_uniq_to_count` | in v23.10.1.1976 |  | Yes | Rewrite uniq and its variants(except uniqUpTo) to count if subquery has distinct or group by clause. |
 | `optimize_use_implicit_projections` | in v23.7.1.2470 |  | Yes | Automatically choose implicit projections to perform SELECT query |
+| `optimize_use_projection_filtering` | in v25.6.1.3206 |  | Yes | Enables using projections to filter part ranges even when projections are not selected to perform SELECT query. |
 | `optimize_use_projections` | in v23.5.1.3174 |  | Yes | Automatically choose projections to perform SELECT query |
 | `optimize_using_constraints` | in v21.12.2.17 |  | Yes | Use constraints for query optimization |
 | `os_thread_priority` | in v19.11.2.7 |  | Yes | "If non zero - set corresponding \'nice\' value for query processing threads. Can be used to adjust query priority for OS scheduler." |
@@ -3060,6 +3188,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_identifier_quoting_style` | in v24.9.1.3278 |  | up to v24.9.1.3278 | Set the quoting style for identifiers |
 | `output_format_json_array_of_rows` | in v20.12.2.1 |  | Yes | Output a JSON array of all rows in JSONEachRow(Compact) format. |
 | `output_format_json_escape_forward_slashes` | in v18.10.3 |  | Yes | Controls escaping forward slashes for string outputs in JSON output format. This is intended for compatibility with JavaScript. Don\'t confuse with backslashes that are always escaped. |
+| `output_format_json_map_as_array_of_tuples` | in v25.7.1.3997 |  | Yes | Serialize maps columns as JSON arrays of tuples.\n\nDisabled by default. |
 | `output_format_json_named_tuples_as_objects` | in v20.12.2.1 |  | Yes | Serialize named tuple columns as JSON objects. |
 | `output_format_json_pretty_print` | in v25.1.1.4165 |  | Yes | When enabled, values in JSON output format will be printed in pretty format.\n\nEnabled by default. |
 | `output_format_json_quote_64bit_floats` | in v22.9.1.2603 |  | Yes | Controls quoting of 64-bit float numbers in JSON output format. |
@@ -3071,6 +3200,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_markdown_escape_special_characters` | in v23.9.1.1854 |  | Yes | Escape special characters in Markdown |
 | `output_format_msgpack_uuid_representation` | in v22.2.2.1 |  | Yes | The way how to output UUID in MsgPack format. |
 | `output_format_native_encode_types_in_binary_format` | in v24.7.1.2915 |  | Yes | Write data types in binary format instead of type names in Native output format |
+| `output_format_native_use_flattened_dynamic_and_json_serialization` | in v25.6.1.3206 |  | Yes | Write data of [JSON](../../sql-reference/data-types/newjson.md) and [Dynamic](../../sql-reference/data-types/dynamic.md) columns in a flattened format (all types/paths as separate subcolumns). |
 | `output_format_native_write_json_as_string` | in v24.10.1.2812 |  | Yes | Write data of [JSON](../../sql-reference/data-types/newjson.md) column as [String](../../sql-reference/data-types/string.md) column containing JSON strings instead of default native JSON serialization. |
 | `output_format_orc_compression_method` | in v23.3.1.2823 |  | Yes | Compression method for ORC output format. Supported codecs: lz4, snappy, zlib, zstd, none (uncompressed) |
 | `output_format_orc_dictionary_key_size_threshold` | in v24.9.1.3278 |  | Yes | For a string column in ORC output format, if the number of distinct values is greater than this fraction of the total number of non-null rows, turn off dictionary encoding. Otherwise dictionary encoding is enabled |
@@ -3085,7 +3215,9 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_parquet_compression_method` | in v23.3.1.2823 |  | Yes | Compression method for Parquet output format. Supported codecs: snappy, lz4, brotli, zstd, gzip, none (uncompressed) |
 | `output_format_parquet_data_page_size` | in v23.7.1.2470 |  | Yes | Target page size in bytes, before compression. |
 | `output_format_parquet_datetime_as_uint32` | in v25.1.1.4165 |  | Yes | Write DateTime values as raw unix timestamp (read back as UInt32), instead of converting to milliseconds (read back as DateTime64(3)). |
+| `output_format_parquet_enum_as_byte_array` | in v25.7.1.3997 |  | Yes | Write enum using parquet physical type: BYTE_ARRAY and logical type: ENUM |
 | `output_format_parquet_fixed_string_as_fixed_byte_array` | in v23.2.1.2537 |  | Yes | Use Parquet FIXED_LENGTH_BYTE_ARRAY type instead of Binary for FixedString columns. |
+| `output_format_parquet_geometadata` | in v25.7.1.3997 |  | Yes | Allow to write information about geo columns in parquet metadata and encode columns in WKB format. |
 | `output_format_parquet_parallel_encoding` | in v23.7.1.2470 |  | Yes | Do Parquet encoding in multiple threads. Requires output_format_parquet_use_custom_encoder. |
 | `output_format_parquet_row_group_size` | in v19.4.1.3 |  | Yes | Row group size in rows. |
 | `output_format_parquet_row_group_size_bytes` | in v23.5.1.3174 |  | Yes | Target row group size in bytes, before compression. |
@@ -3101,6 +3233,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_pretty_fallback_to_vertical_max_rows_per_chunk` | in v25.1.1.4165 |  | Yes | The fallback to Vertical format (see `output_format_pretty_fallback_to_vertical`) will be activated only if the number of records in a chunk is not more than the specified value. |
 | `output_format_pretty_fallback_to_vertical_min_columns` | in v25.1.1.4165 |  | Yes | The fallback to Vertical format (see `output_format_pretty_fallback_to_vertical`) will be activated only if the number of columns is greater than the specified value. |
 | `output_format_pretty_fallback_to_vertical_min_table_width` | in v25.1.1.4165 |  | Yes | The fallback to Vertical format (see `output_format_pretty_fallback_to_vertical`) will be activated only if the sum of lengths of columns in a table is at least the specified value, or if at least one value contains a newline character. |
+| `output_format_pretty_glue_chunks` | in v25.5.1.2782 |  | Yes | If the data rendered in Pretty formats arrived in multiple chunks, even after a delay, but the next chunk has the same column widths as the previous, use ANSI escape sequences to move back to the previous line and overwrite the footer of the previous chunk to continue it with the data of the new chunk. This makes the result more visually pleasant.\n\n0 - disabled, 1 - enabled, \'auto\' - enabled if a terminal. |
 | `output_format_pretty_grid_charset` | in v20.6.3.28 |  | Yes | Charset for printing grid borders. Available charsets: ASCII, UTF-8 (default one). |
 | `output_format_pretty_highlight_digit_groups` | in v24.3.1.2672 |  | Yes | If enabled and if output is a terminal, highlight every digit corresponding to the number of thousands, millions, etc. with underline. |
 | `output_format_pretty_highlight_trailing_spaces` | in v25.1.1.4165 |  | Yes | If enabled and if output is a terminal, highlight trailing spaces with a gray color and underline. |
@@ -3126,11 +3259,14 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `output_format_tsv_null_representation` | in v20.10.2.20 |  | up to v21.11.11.1 | Custom NULL representation in TSV format |
 | `output_format_values_escape_quote_with_quote` | in v24.2.1.2248 |  | Yes | If true escape \' with \'\', otherwise quoted with \\\' |
 | `output_format_write_statistics` | in v1.1.54019 |  | Yes | Write statistics about read rows, bytes, time elapsed in suitable output formats. |
+| `page_cache_block_size` | in v25.5.1.2782 |  | Yes | Size of file chunks to store in the userspace page cache, in bytes. All reads that go through the cache will be rounded up to a multiple of this size.\n\nThis setting can be adjusted on a per-query level basis, but cache entries with different block sizes cannot be reused. Changing this setting effectively invalidates existing entries in the cache.\n\nA higher value, like 1 MiB is good for high-throughput queries, and a lower value, like 64 KiB is good for low-latency point queries. |
 | `page_cache_inject_eviction` | in v24.3.1.2672 |  | Yes | Userspace page cache will sometimes invalidate some pages at random. Intended for testing. |
+| `page_cache_lookahead_blocks` | in v25.5.1.2782 |  | Yes | On userspace page cache miss, read up to this many consecutive blocks at once from the underlying storage, if they\'re also not in the cache. Each block is page_cache_block_size bytes.\n\nA higher value is good for high-throughput queries, while low-latency point queries will work better without readahead. |
 | `parallel_distributed_insert_select` | in v20.4.2.9 |  | Yes | If true, distributed insert select query in the same cluster will be processed on local tables on every shard |
-| `parallel_hash_join_threshold` | in v25.4.2.31 |  | Yes | When hash-based join algorithm is applied, this threshold helps to decide between using `hash` and `parallel_hash` (only if estimation of the right table size is available).\nThe former is used when we know that the right table size is below the threshold. |
+| `parallel_hash_join_threshold` | in v25.3.4.190 |  | Yes | When hash-based join algorithm is applied, this threshold helps to decide between using `hash` and `parallel_hash` (only if estimation of the right table size is available).\nThe former is used when we know that the right table size is below the threshold. |
 | `parallel_replica_offset` | in v1.1.54019 |  | Yes |  |
 | `parallel_replicas_allow_in_with_subquery` | in v24.3.1.2672 |  | Yes | If true, subquery for IN will be executed on every follower replica. |
+| `parallel_replicas_connect_timeout_ms` | in v25.6.1.3206 |  | Yes | The timeout in milliseconds for connecting to a remote replica during query execution with parallel replicas. If the timeout is expired, the corresponding replicas is not used for query execution |
 | `parallel_replicas_count` | in v1.1.54019 |  | Yes |  |
 | `parallel_replicas_custom_key` | in v23.3.1.2823 |  | Yes | Custom key assigning work to replicas when parallel replicas are used. |
 | `parallel_replicas_custom_key_filter_type` | in v23.3.1.2823 | in v24.8.11.51285.altinitystable | Yes | Type of filter to use with custom key for parallel replicas. default - use modulo operation on the custom key, range - use range filter on custom key using all possible values for the value type of custom key. |
@@ -3150,6 +3286,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `parallel_replicas_single_task_marks_count_multiplier` | in v23.2.1.2537 | in v25.1.1.4165 | Yes | A multiplier which will be added during calculation for minimal number of marks to retrieve from coordinator. This will be applied only for remote replicas. |
 | `parallel_view_processing` | in v18.14.9 |  | Yes | Enables pushing to attached views concurrently instead of sequentially. |
 | `parallelize_output_from_storages` | in v23.4.1.1943 |  | Yes | Parallelize output for reading step from storage. It allows parallelizing query processing right after reading from storage if possible |
+| `parsedatetime_e_requires_space_padding` | in v25.5.1.2782 |  | Yes | Formatter \'%e\' in function \'parseDateTime\' expects that single-digit days are space-padded, e.g., \' 2\' is accepted but \'2\' raises an error.\n     |
 | `parsedatetime_parse_without_leading_zeros` | in v23.11.1.2711 |  | Yes | Formatters \'%c\', \'%l\' and \'%k\' in function \'parseDateTime()\' parse months and hours without leading zeros. |
 | `partial_merge_join` | in v19.15.2.2 |  | up to v20.11.6.6 | Use partial merge join instead of hash join for LEFT and INNER JOINs. |
 | `partial_merge_join_left_table_buffer_bytes` | in v20.5.2.7 |  | Yes | If not 0 group left table blocks in bigger ones for left-side table in partial merge join. It uses up to 2x of specified memory per joining thread. In current version work only with \'partial_merge_join_optimizations = 1\'. |
@@ -3306,6 +3443,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `s3_request_timeout_ms` | in v23.7.1.2470 |  | Yes | Idleness timeout for sending and receiving data to/from S3. Fail if a single TCP read or write call blocks for this long. |
 | `s3_retry_attempts` | in v23.5.1.3174 |  | Yes | Setting for Aws::Client::RetryStrategy, Aws::Client does retries itself, 0 means no retries |
 | `s3_skip_empty_files` | in v23.6.1.1524 |  | Yes | Allow to skip empty files in s3 table engine |
+| `s3_slow_all_threads_after_network_error` | in v25.5.1.2782 |  | Yes | When set to `true` than all threads executing s3 requests to the same endpoint get slow down for a while\nafter one s3 request fails with a retryable network error.\nWhen set to `false` than each thread executing s3 request uses an independent set of backoffs on network errors. |
 | `s3_strict_upload_part_size` | in v23.5.1.3174 |  | Yes | The exact size of part to upload during multipart upload to S3 (some implementations does not supports variable size parts). |
 | `s3_throw_on_zero_files_match` | in v23.2.1.2537 |  | Yes | Throw an error, when ListObjects request cannot match any files |
 | `s3_truncate_on_insert` | in v22.2.2.1 |  | Yes | Enables or disables truncate before insert in s3 engine tables. |
@@ -3327,6 +3465,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `schema_inference_use_cache_for_hdfs` | in v22.8.1.2097 |  | Yes | Use cache in schema inference while using hdfs table function |
 | `schema_inference_use_cache_for_s3` | in v22.8.1.2097 |  | Yes | Use cache in schema inference while using s3 table function |
 | `schema_inference_use_cache_for_url` | in v22.8.1.2097 |  | Yes | Use cache in schema inference while using url table function |
+| `secondary_indices_enable_bulk_filtering` | in v25.5.1.2782 |  | Yes | Enable the bulk filtering algorithm for indices. It is expected to be always better, but we have this setting for compatibility and control. |
 | `select_sequential_consistency` | in v1.1.54019 |  | Yes | For SELECT queries from the replicated table, throw an exception if the replica does not have a chunk written with the quorum. |
 | `send_logs_level` | in v18.12.13 |  | Yes | Send server text logs with specified minumum level to client. Valid values: \'trace\', \'debug\', \'info\', \'warning\', \'error\', \'none\' |
 | `send_logs_source_regexp` | in v22.7.1.2484 |  | Yes | Send server text logs with specified regexp to match log source name. Empty means all sources. |
@@ -3366,6 +3505,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `stream_poll_timeout_ms` | in v19.8.3.8 |  | Yes | "Timeout for polling data from streaming storages." |
 | `strict_insert_defaults` | in v1.1.54019 |  | up to v1.1.54342 | In the INSERT query with specified columns, fill in the default values only for columns with explicit DEFAULTs. |
 | `system_events_show_zero_values` | in v20.9.2.20 |  | Yes | Include all metrics, even with zero values |
+| `table_engine_read_through_distributed_cache` | in v25.7.1.3997 |  | Yes | Only has an effect in ClickHouse Cloud. Allow reading from distributed cache via table engines / table functions (s3, azure, etc) |
 | `table_function_remote_max_addresses` | in v1.1.54019 |  | Yes | The maximum number of different shards and the maximum number of replicas of one shard in the `remote` function. |
 | `tcp_keep_alive_timeout` | in v18.16.0 |  | Yes |  |
 | `temporary_data_in_cache_reserve_space_wait_lock_timeout_milliseconds` | in v24.3.3.102 |  | Yes | Wait time to lock cache for sapce reservation for temporary data in filesystem cache |
@@ -3389,6 +3529,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `union_default_mode` | in v21.1.2.15 |  | Yes | Set default Union Mode in SelectWithUnion query. Possible values: empty string, \'ALL\', \'DISTINCT\'. If empty, query without Union Mode will throw exception. |
 | `unknown_packet_in_send_data` | in v21.3.8.76 |  | Yes | Send unknown packet instead of data Nth data packet |
 | `update_insert_deduplication_token_in_dependent_materialized_views` | in v24.1.1.2048 | in v24.7.1.2915 | Yes | Should update insert deduplication token with table identifier during insert in dependent materialized views. |
+| `update_parallel_mode` | in v25.5.1.2782 |  | Yes | Determines the behavior of concurrent update queries.\n\nPossible values:\n- `sync` - run sequentially all `UPDATE` queries.\n- `auto` - run sequentially only `UPDATE` queries with dependencies between columns updated in one query and columns used in expressions of another query.\n- `async` - do not synchronize update queries. |
+| `update_sequential_consistency` | in v25.5.1.2782 |  | Yes | If true set of parts is updated to the latest version before execution of update. |
 | `use_analyzer` | in v22.10.1.1877 |  | up to v22.10.7.13 | Use analyzer |
 | `use_antlr_parser` | in v21.1.2.15 |  | up to v21.7.11.3 | Parse incoming queries using ANTLR-generated experimental parser |
 | `use_async_executor_for_materialized_views` | in v24.12.1.1614 |  | Yes | Use async and potentially multithreaded execution of materialized view query, can speedup views processing during INSERT, but also consume more memory. |
@@ -3403,6 +3545,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `use_index_for_in_with_subqueries` | in v1.1.54378 |  | Yes | Try using an index if there is a subquery or a table expression on the right side of the IN operator. |
 | `use_index_for_in_with_subqueries_max_values` | in v1.1.54390 |  | Yes | Don\'t use index of a table for filtering by right hand size of the IN operator if the size of set is larger than specified threshold. This allows to avoid performance degradation and higher memory usage due to preparation of additional data structures. |
 | `use_json_alias_for_old_object_type` | in v24.8.1.2684 |  | Yes | When enabled, JSON type alias will create old experimental Object type instead of a new JSON type |
+| `use_legacy_to_time` | in v25.5.1.2782 |  | Yes | When enabled, allows to use legacy toTime function, which converts a date with time to a certain fixed date, while preserving the time.\nOtherwise, uses a new toTime function, that converts different type of data into the Time type.\nThe old legacy function is also unconditionally accessible as toTimeWithFixedDate. |
 | `use_local_cache_for_remote_storage` | in v22.1.2.2 | in v25.4.1.2934 | Yes | Use local cache for remote storage like HDFS or S3, it\'s used for remote table engine only |
 | `use_mysql_types_in_show_columns` | in v23.6.1.1524 | in v23.11.1.2711 | Yes | Use MySQL converted types when connected via MySQL compatibility for show columns query |
 | `use_page_cache_for_disks_without_file_cache` | in v24.3.1.2672 |  | Yes | Use userspace page cache for remote disks that don\'t have filesystem cache enabled. |
@@ -3411,6 +3554,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `use_query_condition_cache` | in v25.3.1.2703 |  | Yes | Enable the query condition cache.\n\nPossible values:\n\n- 0 - Disabled\n- 1 - Enabled |
 | `use_skip_indexes` | in v21.11.2.2 |  | Yes | Use data skipping indexes during query execution. |
 | `use_skip_indexes_if_final` | in v22.2.2.1 |  | Yes | If query has FINAL, then skipping data based on indexes may produce incorrect result, hence disabled by default. |
+| `use_skip_indexes_if_final_exact_mode` | in v25.5.1.2782 |  | Yes | Controls whether granules returned by a skipping index are expanded in newer parts to return correct results when executing a query with the FINAL modifier.\n\nUsing skip indexes may exclude rows (granules) containing the latest data which could lead to incorrect results. This setting can ensure that correct results are returned by scanning newer parts that have overlap with the ranges returned by the skip index.\n\nPossible values:\n\n- 0 — Disabled.\n- 1 — Enabled. |
 | `use_structure_from_insertion_table_in_table_functions` | in v22.4.1.2305 |  | Yes | Use structure from insertion table instead of schema inference from data |
 | `use_uncompressed_cache` | in v1.1.54019 |  | Yes | Whether to use the cache of uncompressed blocks. |
 | `use_variant_as_common_type` | in v24.1.1.2048 |  | Yes | Use Variant as a result type for if/multiIf in case when there is no common type for arguments |
@@ -3419,6 +3563,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `validate_experimental_and_suspicious_types_inside_nested_types` | in v24.2.1.2248 |  | Yes | Validate usage of experimental and suspicious types inside nested types like Array/Map/Tuple |
 | `validate_mutation_query` | in v24.11.1.2557 |  | Yes | Validate mutation queries before accepting them. Mutations are executed in the background, and running an invalid query will cause mutations to get stuck, requiring manual intervention.\n\nOnly change this setting if you encounter a backward-incompatible bug. |
 | `validate_polygons` | in v20.4.2.9 |  | Yes | Throw exception if polygon is invalid in function pointInPolygon (e.g. self-tangent, self-intersecting). If the setting is false, the function will accept invalid polygons but may silently return wrong result. |
+| `vector_search_filter_strategy` | in v25.5.1.2782 |  | Yes | If a vector search query has a WHERE clause, this setting determines if it is evaluated first (pre-filtering) OR if the vector similarity index is checked first (post-filtering). Possible values:\n- \'auto\' - Postfiltering (the exact semantics may change in future).\n- \'postfilter\' - Use vector similarity index to identify the nearest neighbours, then apply other filters\n- \'prefilter\' - Evaluate other filters first, then perform brute-force search to identify neighbours. |
+| `vector_search_postfilter_multiplier` | in v25.5.1.2782 |  | Yes | Multiply the fetched nearest neighbors from the vector similarity index by this number before performing post-filtering on other predicates. |
 | `wait_changes_become_visible_after_commit_mode` | in v22.6.1.1985 |  | Yes | Wait for committed changes to become actually visible in the latest snapshot |
 | `wait_for_async_insert` | in v21.11.2.2 |  | Yes | If true wait for processing of asynchronous insertion |
 | `wait_for_async_insert_timeout` | in v21.11.2.2 |  | Yes | Timeout for waiting for processing asynchronous insertion |
@@ -3427,6 +3573,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `window_view_heartbeat_interval` | in v21.12.2.17 |  | Yes | The heartbeat interval in seconds to indicate watch query is alive. |
 | `workload` | in v23.1.1.3077 |  | Yes | Name of workload to be used to access resources |
 | `write_through_distributed_cache` | in v24.10.1.2812 |  | Yes | Only in ClickHouse Cloud. Allow writing to distributed cache (writing to s3 will also be done by distributed cache) |
+| `write_through_distributed_cache_buffer_size` | in v25.7.1.3997 |  | Yes | Only has an effect in ClickHouse Cloud. Set buffer size for write-through distributed cache. If 0, will use buffer size which would have been used if there was not distributed cache. |
 | `zstd_window_log_max` | in v22.7.1.2484 |  | Yes | Allows you to select the max window log of ZSTD (it will not be used for MergeTree family) |
 ### MergeTree Settings Availability
 | MergeTree Setting | Introduced | Still Available? | Default Values |
@@ -3435,7 +3582,8 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `add_implicit_sign_column_constraint_for_collapsing_engine` | in v23.11.1.2711 | Yes | `0` from `23.11.1.2711` to `latest` |
 | `add_minmax_index_for_numeric_columns` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `latest` |
 | `add_minmax_index_for_string_columns` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `latest` |
-| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.18.7 | `0` from `23.9.1.1854` to `24.3.18.7` |
+| `allow_coalescing_columns_in_partition_or_order_key` | in v25.6.1.3206 | Yes | `0` from `25.6.1.3206` to `latest` |
+| `allow_experimental_block_number_column` | in v23.9.1.1854 | up to v24.3.18.10426.altinitystable | `0` from `23.9.1.1854` to `24.3.18.10426` |
 | `allow_experimental_replacing_merge_with_cleanup` | in v23.12.2.59 | Yes | `0` from `23.12.2.59` to `latest` |
 | `allow_experimental_reverse_key` | in v24.12.1.1614 | Yes | `0` from `24.12.1.1614` to `latest` |
 | `allow_floating_point_partition_key` | in v21.2.2.8 | Yes | `0` from `21.2.2.8` to `latest` |
@@ -3448,12 +3596,14 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `allow_vertical_merges_from_compact_to_wide_parts` | in v22.3.18.37 | Yes | `0` from `22.3.18.37` to `23.6.3.87` / `1` from `23.7.1.2470` to `latest` |
 | `always_fetch_merged_part` | in v20.4.2.9 | Yes | `0` from `20.4.2.9` to `latest` |
 | `always_use_copy_instead_of_hardlinks` | in v23.12.1.1368 | Yes | `0` from `23.12.1.1368` to `latest` |
+| `apply_patches_on_merge` | in v25.5.1.2782 | Yes | `1` from `25.5.1.2782` to `latest` |
 | `assign_part_uuids` | in v20.12.2.1 | Yes | `0` from `20.12.2.1` to `latest` |
 | `async_block_ids_cache_min_update_interval_ms` | in v23.1.1.3077 | up to v23.11.5.29 | `100` from `23.1.1.3077` to `23.11.5.29` |
 | `async_block_ids_cache_update_wait_ms` | in v23.12.1.1368 | Yes | `100` from `23.12.1.1368` to `latest` |
 | `async_insert` | in v23.5.1.3174 | Yes | `0` from `23.5.1.3174` to `latest` |
 | `background_task_preferred_step_execution_time_ms` | in v24.8.1.2684 | Yes | `50` from `24.8.1.2684` to `latest` |
 | `cache_populated_by_fetch` | in v23.12.1.1368 | Yes | `0` from `23.12.1.1368` to `latest` |
+| `cache_populated_by_fetch_filename_regexp` | in v25.6.1.3206 | Yes | `` from `25.6.1.3206` to `latest` |
 | `check_delay_period` | in v18.10.3 | Yes | `60` from `18.10.3.0` to `latest` |
 | `check_sample_column_is_correct` | in v21.9.2.17 | Yes | `1` from `21.9.2.17` to `latest` |
 | `clean_deleted_rows` | in v23.2.1.2537 | Yes | `` from `23.12.1.1368` to `23.12.1.1368` / `Never` from `23.2.1.2537` to `latest` |
@@ -3624,6 +3774,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `remote_fs_zero_copy_zookeeper_path` | in v22.1.2.2 | Yes | `/clickhouse/zero_copy` from `22.1.2.2` to `latest` |
 | `remove_empty_parts` | in v20.12.2.1 | Yes | `1` from `20.12.2.1` to `latest` |
 | `remove_rolled_back_parts_immediately` | in v22.4.1.2305 | Yes | `1` from `22.4.1.2305` to `latest` |
+| `remove_unused_patch_parts` | in v25.5.1.2782 | Yes | `1` from `25.5.1.2782` to `latest` |
 | `replace_long_file_name_to_hash` | in v23.9.1.1854 | Yes | `0` from `23.9.1.1854` to `24.5.8.10` / `1` from `24.6.1.4423` to `latest` |
 | `replicated_can_become_leader` | in v18.10.3 | Yes | `1` from `18.10.3.0` to `latest` |
 | `replicated_deduplication_window` | in v18.10.3 | Yes | `100` from `18.10.3.0` to `23.10.6.60` / `1000` from `23.11.1.2711` to `latest` |
@@ -3644,6 +3795,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `s3_execute_merges_on_single_replica_time_threshold` | in v21.4.3.21 | up to v21.7.11.3 | `10800` from `21.4.3.21` to `21.7.11.3` |
 | `shared_merge_tree_create_per_replica_metadata_nodes` | in v25.1.1.4165 | Yes | `1` from `25.1.1.4165` to `latest` |
 | `shared_merge_tree_disable_merges_and_mutations_assignment` | in v23.12.1.1368 | Yes | `0` from `23.12.1.1368` to `latest` |
+| `shared_merge_tree_enable_coordinated_merges` | in v25.5.1.2782 | Yes | `0` from `25.5.1.2782` to `latest` |
 | `shared_merge_tree_enable_keeper_parts_extra_data` | in v25.3.1.2703 | Yes | `0` from `25.3.1.2703` to `latest` |
 | `shared_merge_tree_enable_outdated_parts_check` | in v25.1.1.4165 | Yes | `1` from `25.1.1.4165` to `latest` |
 | `shared_merge_tree_idle_parts_update_seconds` | in v25.1.1.4165 | Yes | `3600` from `25.1.1.4165` to `latest` |
@@ -3661,6 +3813,15 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `shared_merge_tree_max_suspicious_broken_parts` | in v25.2.1.3085 | Yes | `0` from `25.2.1.3085` to `latest` |
 | `shared_merge_tree_max_suspicious_broken_parts_bytes` | in v25.2.1.3085 | Yes | `0` from `25.2.1.3085` to `latest` |
 | `shared_merge_tree_memo_ids_remove_timeout_seconds` | in v25.1.1.4165 | Yes | `1800` from `25.1.1.4165` to `latest` |
+| `shared_merge_tree_merge_coordinator_election_check_period_ms` | in v25.5.1.2782 | Yes | `30000` from `25.5.1.2782` to `latest` |
+| `shared_merge_tree_merge_coordinator_factor` | in v25.5.1.2782 | Yes | `2` from `25.5.1.2782` to `latest` |
+| `shared_merge_tree_merge_coordinator_fetch_fresh_metadata_period_ms` | in v25.5.1.2782 | Yes | `10000` from `25.5.1.2782` to `latest` |
+| `shared_merge_tree_merge_coordinator_max_merge_request_size` | in v25.5.1.2782 | Yes | `20` from `25.5.1.2782` to `latest` |
+| `shared_merge_tree_merge_coordinator_max_period_ms` | in v25.5.1.2782 | Yes | `10000` from `25.5.1.2782` to `latest` |
+| `shared_merge_tree_merge_coordinator_merges_prepare_count` | in v25.5.1.2782 | Yes | `100` from `25.5.1.2782` to `latest` |
+| `shared_merge_tree_merge_coordinator_min_period_ms` | in v25.5.1.2782 | Yes | `1` from `25.5.1.2782` to `latest` |
+| `shared_merge_tree_merge_worker_fast_timeout_ms` | in v25.5.1.2782 | Yes | `100` from `25.5.1.2782` to `latest` |
+| `shared_merge_tree_merge_worker_regular_timeout_ms` | in v25.5.1.2782 | Yes | `10000` from `25.5.1.2782` to `latest` |
 | `shared_merge_tree_partitions_hint_ratio_to_reload_merge_pred_for_mutations` | in v23.12.1.1368 | Yes | `0.5` from `23.12.1.1368` to `latest` |
 | `shared_merge_tree_parts_load_batch_size` | in v23.12.1.1368 | Yes | `32` from `23.12.1.1368` to `latest` |
 | `shared_merge_tree_postpone_next_merge_for_locally_merged_parts_ms` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `latest` |
@@ -3696,6 +3857,7 @@ Generated at 2025-05-13 12:19:46 (America/Sao_Paulo), covering ClickHouse versio
 | `write_ahead_log_interval_ms_to_fsync` | in v20.10.2.20 | Yes | `100` from `20.10.2.20` to `latest` |
 | `write_ahead_log_max_bytes` | in v20.6.3.28 | Yes | `1073741824` from `20.6.3.28` to `latest` |
 | `write_final_mark` | in v19.10.1.5 | Yes | `1` from `19.10.1.5` to `latest` |
+| `write_marks_for_substreams_in_compact_parts` | in v25.5.1.2782 | Yes | `0` from `25.5.1.2782` to `latest` |
 | `zero_copy_concurrent_part_removal_max_postpone_ratio` | in v23.5.1.3174 | Yes | `0.05` from `23.5.1.3174` to `latest` |
 | `zero_copy_concurrent_part_removal_max_split_times` | in v23.5.1.3174 | Yes | `5` from `23.5.1.3174` to `latest` |
 | `zero_copy_merge_mutation_min_parts_size_sleep_before_lock` | in v23.6.1.1524 | Yes | `1073741824` from `23.6.1.1524` to `latest` |
