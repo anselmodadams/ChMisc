@@ -1,0 +1,110 @@
+"ch_version","name","is_input","is_output","supports_parallel_parsing","supports_parallel_formatting","is_tty_friendly","content_type","supports_random_access","has_schema_inference","has_external_schema","prefers_large_blocks","supports_append","supports_subsets_of_columns"
+"25.12.9.61","One",1,0,0,0,1,"",0,0,1,0,0,0
+"25.12.9.61","ParquetMetadata",1,0,1,0,1,"",1,1,0,0,0,1
+"25.12.9.61","MySQLDump",1,0,0,0,1,"",0,1,0,0,0,0
+"25.12.9.61","Hash",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","CapnProto",1,1,0,0,0,"application/octet-stream",0,0,1,0,0,1
+"25.12.9.61","PostgreSQLWire",0,1,0,0,0,"application/octet-stream",0,0,0,0,0,0
+"25.12.9.61","MD",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","TSV",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","PrettyCompactMonoBlock",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","JSONEachRowWithProgress",0,1,0,0,1,"application/json; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","JSONCompactStrings",0,1,0,1,1,"application/json; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","JSONStringsEachRowWithProgress",0,1,0,0,1,"application/json; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","Vertical",0,1,0,1,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","PrettySpaceNoEscapesMonoBlock",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","Null",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","PrettySpaceNoEscapes",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","Markdown",0,1,0,1,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","Form",1,0,0,0,1,"",0,1,0,0,0,0
+"25.12.9.61","ODBCDriver2",0,1,0,0,0,"application/octet-stream",0,0,0,0,0,0
+"25.12.9.61","PrettySpaceMonoBlock",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","PrettyCompactNoEscapesMonoBlock",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","PrettyCompactNoEscapes",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","JSONStringsEachRow",1,1,1,1,1,"application/x-ndjson; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","PrettyCompact",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","DWARF",1,0,1,0,1,"",1,1,0,0,0,1
+"25.12.9.61","Values",1,1,0,1,1,"text/plain; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","PrettyNoEscapesMonoBlock",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","PrettyNoEscapes",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","PrettyMonoBlock",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","AvroConfluent",1,0,0,0,1,"",0,1,0,0,0,1
+"25.12.9.61","RawBLOB",1,1,0,0,1,"text/plain; charset=UTF-8",0,0,1,0,0,0
+"25.12.9.61","Parquet",1,1,1,0,0,"application/octet-stream",1,1,0,0,0,1
+"25.12.9.61","JSONCompactEachRowWithProgress",0,1,0,0,1,"application/json; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","CustomSeparatedIgnoreSpacesWithNamesAndTypes",1,0,0,0,1,"",0,1,0,0,0,1
+"25.12.9.61","CustomSeparatedIgnoreSpacesWithNames",1,0,0,0,1,"",0,1,0,0,0,1
+"25.12.9.61","CustomSeparatedWithNamesAndTypes",1,1,0,1,1,"text/plain; charset=UTF-8",0,1,0,0,1,1
+"25.12.9.61","PrettySpace",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","Arrow",1,1,0,0,0,"application/octet-stream",0,1,0,0,0,1
+"25.12.9.61","JSONAsString",1,0,1,0,1,"",0,0,1,0,0,0
+"25.12.9.61","CustomSeparatedWithNames",1,1,0,1,1,"text/plain; charset=UTF-8",0,1,0,0,1,1
+"25.12.9.61","CustomSeparated",1,1,0,1,1,"text/plain; charset=UTF-8",0,1,0,0,1,0
+"25.12.9.61","BSONEachRow",1,1,1,1,0,"application/octet-stream",0,1,0,0,0,0
+"25.12.9.61","Template",1,1,0,0,1,"text/plain; charset=UTF-8",0,1,0,0,1,0
+"25.12.9.61","XML",0,1,0,1,1,"application/xml; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","ProtobufList",1,1,0,0,0,"application/octet-stream",0,0,1,0,0,1
+"25.12.9.61","ProtobufSingle",1,1,0,0,0,"application/octet-stream",0,0,1,0,0,1
+"25.12.9.61","JSONColumnsWithMetadata",1,1,0,0,1,"application/json; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","TSVRawWithNamesAndTypes",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","Npy",1,1,0,0,0,"application/octet-stream",0,1,0,0,0,1
+"25.12.9.61","TemplateIgnoreSpaces",1,0,0,0,1,"",0,1,0,0,0,0
+"25.12.9.61","JSONCompactColumns",1,1,0,0,1,"application/json; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","JSONColumns",1,1,0,0,1,"application/json; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","ArrowStream",1,1,0,0,0,"application/octet-stream",0,1,0,1,0,0
+"25.12.9.61","JSONObjectEachRow",1,1,0,1,1,"application/json; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","NDJSON",1,1,1,1,1,"application/x-ndjson; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","PrettyNDJSON",0,1,0,1,1,"application/x-ndjson; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","LineAsStringWithNamesAndTypes",0,1,0,1,1,"text/tab-separated-values; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","PrettyJSONLines",0,1,0,1,1,"application/x-ndjson; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","CSVWithNamesAndTypes",1,1,1,1,1,"text/csv; charset=UTF-8; header=present",0,1,0,0,0,1
+"25.12.9.61","ORC",1,1,1,0,0,"application/octet-stream",1,1,0,1,0,1
+"25.12.9.61","Protobuf",1,1,0,0,0,"application/octet-stream",0,0,1,0,0,1
+"25.12.9.61","PrettyJSONEachRow",0,1,0,1,1,"application/x-ndjson; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","JSONCompactEachRowWithNamesAndTypes",1,1,1,1,1,"text/plain; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","JSONL",1,0,0,0,1,"",0,0,0,0,0,0
+"25.12.9.61","JSONStrings",0,1,0,1,1,"application/json; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","JSON",1,1,0,1,1,"application/json; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","RawWithNames",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","MsgPack",1,1,0,1,0,"application/octet-stream",0,1,0,0,0,0
+"25.12.9.61","LineAsStringWithNames",0,1,0,1,1,"text/tab-separated-values; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","JSONCompactStringsEachRowWithProgress",0,1,0,0,1,"application/json; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","LineAsString",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,0,1,0,0,0
+"25.12.9.61","RowBinaryWithNames",1,1,0,1,0,"application/octet-stream",0,0,0,0,0,0
+"25.12.9.61","RowBinary",1,1,0,1,0,"application/octet-stream",0,0,0,0,0,0
+"25.12.9.61","SQLInsert",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","Native",1,1,0,0,0,"application/octet-stream",0,1,0,0,0,1
+"25.12.9.61","Prometheus",0,1,0,0,1,"text/plain; version=0.0.4; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","TSVRaw",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","JSONLines",1,1,1,1,1,"application/x-ndjson; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","Buffers",1,1,0,0,0,"application/octet-stream",0,0,0,0,0,0
+"25.12.9.61","CustomSeparatedIgnoreSpaces",1,0,0,0,1,"",0,1,0,0,0,0
+"25.12.9.61","JSONAsObject",1,0,1,0,1,"",0,0,1,0,0,0
+"25.12.9.61","HiveText",1,0,1,0,1,"",0,0,0,0,0,0
+"25.12.9.61","RowBinaryWithDefaults",1,0,0,0,1,"",0,0,0,0,0,0
+"25.12.9.61","JSONCompactStringsEachRowWithNamesAndTypes",1,1,1,1,1,"text/plain; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","RawWithNamesAndTypes",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","JSONCompactStringsEachRow",1,1,1,1,1,"text/plain; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","TabSeparatedWithNamesAndTypes",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","JSONCompactStringsEachRowWithNames",1,1,1,1,1,"text/plain; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","JSONCompactEachRow",1,1,1,1,1,"text/plain; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","TSKV",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","Avro",1,1,0,0,0,"application/octet-stream",0,1,0,0,0,1
+"25.12.9.61","JSONEachRow",1,1,1,1,1,"application/x-ndjson; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","Pretty",0,1,0,0,1,"text/plain; charset=UTF-8",0,0,0,0,0,0
+"25.12.9.61","TSVRawWithNames",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","TabSeparatedRaw",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","Regexp",1,0,1,0,1,"",0,1,0,0,0,0
+"25.12.9.61","CSVWithNames",1,1,1,1,1,"text/csv; charset=UTF-8; header=present",0,1,0,0,0,1
+"25.12.9.61","Raw",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","MySQLWire",0,1,0,0,0,"application/octet-stream",0,0,0,0,0,0
+"25.12.9.61","TabSeparatedRawWithNamesAndTypes",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","TabSeparatedRawWithNames",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","RowBinaryWithNamesAndTypes",1,1,0,1,0,"application/octet-stream",0,1,0,0,0,0
+"25.12.9.61","JSONCompact",1,1,0,1,1,"application/json; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","CSV",1,1,1,1,1,"text/csv; charset=UTF-8; header=absent",0,1,0,0,0,0
+"25.12.9.61","JSONCompactEachRowWithNames",1,1,1,1,1,"text/plain; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","TSVWithNamesAndTypes",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","TabSeparatedWithNames",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
+"25.12.9.61","TabSeparated",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,0
+"25.12.9.61","TSVWithNames",1,1,1,1,1,"text/tab-separated-values; charset=UTF-8",0,1,0,0,0,1
