@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2026-04-16 12:58:50 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 26.3.9.8
+Generated at 2026-04-25 14:50:12 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 26.3.9.8
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -3061,7 +3061,7 @@ Generated at 2026-04-16 12:58:50 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_parquet_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
 | `input_format_parquet_local_file_min_bytes_for_seek` | in v23.8.1.2992 |  | Yes | Min bytes required for local read (file) to do seek, instead of read with ignore in Parquet input format |
 | `input_format_parquet_local_time_as_utc` | in v25.11.1.558 |  | Yes | Determines the data type used by schema inference for Parquet timestamps with isAdjustedToUTC=false. If true: DateTime64(..., \'UTC\'), if false: DateTime64(...). Neither behavior is fully correct as ClickHouse doesn\'t have a data type for local wall-clock time. Counterintuitively, \'true\' is probably the less incorrect option, because formatting the \'UTC\' timestamp as String will produce representation of the correct local time. |
-| `input_format_parquet_max_block_size` | in v22.8.15.25.altinityfips |  | Yes | Max block size for parquet reader. |
+| `input_format_parquet_max_block_size` | in v22.8.15.25.altinitystable |  | Yes | Max block size for parquet reader. |
 | `input_format_parquet_memory_high_watermark` | in v25.8.1.5101 |  | Yes | Approximate memory limit for Parquet reader v3. Limits how many row groups or columns can be read in parallel. When reading multiple files in one query, the limit is on total memory usage across those files. |
 | `input_format_parquet_memory_low_watermark` | in v25.8.1.5101 |  | Yes | Schedule prefetches more aggressively if memory usage is below than threshold. Potentially useful e.g. if there are many small bloom filters to read over network. |
 | `input_format_parquet_page_filter_push_down` | in v25.8.1.5101 |  | Yes | Skip pages using min/max values from column index. |
@@ -4173,7 +4173,7 @@ Generated at 2026-04-16 12:58:50 (America/Sao_Paulo), covering ClickHouse versio
 | `remove_unused_patch_parts` | in v25.5.1.2782 | Yes | `1` from `25.5.1.2782` to `latest` |
 | `replace_long_file_name_to_hash` | in v23.9.1.1854 | Yes | `0` from `23.9.1.1854` to `24.5.8.10` / `1` from `24.6.1.4423` to `latest` |
 | `replicated_can_become_leader` | in v18.10.3 | Yes | `1` from `18.10.3.0` to `latest` |
-| `replicated_deduplication_window` | in v18.10.3 | Yes | `100` from `18.10.3.0` to `23.10.6.60` / `1000` from `23.11.1.2711` to `25.8.21.7` / `10000` from `25.9.2.1` to `latest` |
+| `replicated_deduplication_window` | in v18.10.3 | Yes | `100` from `18.10.3.0` to `23.10.6.60` / `1000` from `23.11.1.2711` to `25.8.22.28` / `10000` from `25.9.2.1` to `latest` |
 | `replicated_deduplication_window_for_async_inserts` | in v22.12.1.1752 | Yes | `10000` from `22.12.1.1752` to `latest` |
 | `replicated_deduplication_window_seconds` | in v18.10.3 | Yes | `3600` from `25.10.1.3832` to `latest` / `604800` from `18.10.3.0` to `25.9.7.56` |
 | `replicated_deduplication_window_seconds_for_async_inserts` | in v22.12.1.1752 | Yes | `604800` from `22.12.1.1752` to `latest` |
@@ -4234,7 +4234,7 @@ Generated at 2026-04-16 12:58:50 (America/Sao_Paulo), covering ClickHouse versio
 | `shared_merge_tree_try_fetch_part_in_memory_data_from_replicas` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `latest` |
 | `shared_merge_tree_update_replica_flags_delay_ms` | in v25.8.1.5101 | Yes | `30000` from `25.8.1.5101` to `latest` |
 | `shared_merge_tree_use_metadata_hints_cache` | in v25.1.1.4165 | Yes | `1` from `25.1.1.4165` to `latest` |
-| `shared_merge_tree_use_outdated_parts_compact_format` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `25.8.21.7` / `1` from `25.9.2.1` to `latest` |
+| `shared_merge_tree_use_outdated_parts_compact_format` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `25.8.22.28` / `1` from `25.9.2.1` to `latest` |
 | `shared_merge_tree_use_too_many_parts_count_from_virtual_parts` | in v25.1.1.4165 | Yes | `0` from `25.1.1.4165` to `latest` |
 | `shared_merge_tree_use_zookeeper_connection_pool` | in v26.3.1.896 | Yes | `0` from `26.3.1.896` to `latest` |
 | `shared_merge_tree_virtual_parts_discovery_batch` | in v25.8.1.5101 | Yes | `1` from `25.8.1.5101` to `latest` |
