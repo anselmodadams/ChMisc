@@ -1,0 +1,155 @@
+"ch_version","name","description","allow_readonly"
+"26.5.1.882","ytsaurus","Allows get data from YTsaurus.",0
+"26.5.1.882","hudiCluster","The table function can be used to read the Hudi table stored on object store in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","deltaLakeCluster","The table function can be used to read the DeltaLake table stored on object store in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","paimonHDFSCluster","The table function can be used to read the Paimon table stored on HDFS virtual filesystem in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","paimonAzureCluster","The table function can be used to read the Paimon table stored on Azure object store in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","paimonS3Cluster","The table function can be used to read the Paimon table stored on S3 object store in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","icebergAzureCluster","The table function can be used to read the Iceberg table stored on Azure object store in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","icebergS3Cluster","The table function can be used to read the Iceberg table stored on S3 object store in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","deltaLakeS3Cluster","The table function can be used to read the DeltaLake table stored on S3 object store in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","deltaLakeLocal","The table function can be used to read the DeltaLake table stored locally.",0
+"26.5.1.882","deltaLakeAzure","The table function can be used to read the DeltaLake table stored on Azure object store.",0
+"26.5.1.882","paimonHDFS","The table function can be used to read the Paimon table stored on HDFS virtual filesystem.",0
+"26.5.1.882","paimon","The table function can be used to read the Paimon table stored on S3 object store. Alias to paimonS3",0
+"26.5.1.882","icebergLocal","The table function can be used to read the Iceberg table stored locally.",0
+"26.5.1.882","icebergCluster","The table function can be used to read the Iceberg table stored on store from disk in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","icebergLocalCluster","The table function can be used to read the Iceberg table stored on shared storage in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","icebergAzure","The table function can be used to read the Iceberg table stored on Azure object store.",0
+"26.5.1.882","deltaLakeAzureCluster","The table function can be used to read the DeltaLake table stored on Azure object store in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","icebergS3","The table function can be used to read the Iceberg table stored on S3 object store.",0
+"26.5.1.882","iceberg","The table function can be used to read the Iceberg table stored on S3 object store. Alias to icebergS3",0
+"26.5.1.882","hdfsCluster","The table function can be used to read the data stored on HDFS in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","paimonLocal","The table function can be used to read the Paimon table stored locally.",0
+"26.5.1.882","azureBlobStorageCluster","The table function can be used to read the data stored on Azure Blob Storage in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","icebergHDFSCluster","The table function can be used to read the Iceberg table stored on HDFS virtual filesystem in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","s3Cluster","The table function can be used to read the data stored on S3 in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","oss","The table function can be used to read the data stored on OSS.",0
+"26.5.1.882","gcs","The table function can be used to read the data stored on GCS.",0
+"26.5.1.882","hudi","The table function can be used to read the Hudi table stored on object store.",0
+"26.5.1.882","cosn","The table function can be used to read the data stored on COSN.",0
+"26.5.1.882","s3","The table function can be used to read the data stored on AWS S3.",0
+"26.5.1.882","azureBlobStorage","The table function can be used to read the data stored on Azure Blob Storage.",0
+"26.5.1.882","prometheusQueryRange","Evaluates a prometheus query using data from a specified TimeSeries table over a range of timestamps.",0
+"26.5.1.882","prometheusQuery","Evaluates a prometheus query using data from a specified TimeSeries table.",0
+"26.5.1.882","timeSeriesSelector","Reads time series from a specified TimeSeries table.",0
+"26.5.1.882","timeSeriesMetrics","Provides direct access to the 'metrics' target table for a specified TimeSeries table.",0
+"26.5.1.882","fuzzQuery","Perturbs a query string with random variations.",1
+"26.5.1.882","timeSeriesData","Provides direct access to the 'data' target table for a specified TimeSeries table.",0
+"26.5.1.882","mergeTreeProjection","Reading directly from MergeTree projection",1
+"26.5.1.882","format","
+Extracts table structure from data and parses it according to specified input format.
+Syntax: `format(format_name, data)`.
+Parameters:
+    - `format_name` - the format of the data.
+    - `data ` - String literal or constant expression that returns a string containing data in specified format.
+Returned value: A table with data parsed from `data` argument according specified format and extracted schema.
+",0
+"26.5.1.882","paimonAzure","The table function can be used to read the Paimon table stored on Azure object store.",0
+"26.5.1.882","loop","The table function can be used to continuously output query results in an infinite loop.",0
+"26.5.1.882","postgresql","",0
+"26.5.1.882","clusterAllReplicas","",1
+"26.5.1.882","viewIfPermitted","",1
+"26.5.1.882","view","",1
+"26.5.1.882","jdbc","",0
+"26.5.1.882","timeSeriesTags","Provides direct access to the 'tags' target table for a specified TimeSeries table.",0
+"26.5.1.882","hdfs","The table function can be used to read the data stored on HDFS virtual filesystem.",0
+"26.5.1.882","hive","",0
+"26.5.1.882","mergeTreeTextIndex","Reads the dictionary of a text index from a MergeTree table. Returns tokens with their posting list metadata.",1
+"26.5.1.882","mergeTreeAnalyzeIndexesUUID","Internal function for index analysis",1
+"26.5.1.882","numbers_mt","",1
+"26.5.1.882","filesystem","
+Provides access to file system to list files and return their metadata and contents. Recursively iterates directories.
+
+## Access control
+
+In server mode, the function is restricted to the `user_files` directory (controlled by the `user_files_path` server config).
+Paths are resolved relative to `user_files`. Symlinks whose resolved path leaves the `user_files` subtree are skipped during traversal.
+In `clickhouse-local` mode, any path on the local filesystem is accessible.
+
+The `FILE` source access type is required.
+
+## Arguments
+
+- With no arguments, the function lists all files under `user_files`.
+- With a single argument, it accepts an absolute or relative path. Relative paths are resolved against `user_files`.
+
+## Columns
+
+- `path` (`String`) — parent directory path.
+- `name` (`String`) — file name (aliased as `file`).
+- `type` (`Enum8`) — file type: `'none'`, `'not_found'`, `'regular'`, `'directory'`, `'symlink'`, `'block'`, `'character'`, `'fifo'`, `'socket'`, `'unknown'`.
+- `size` (`Nullable(UInt64)`) — file size in bytes (NULL for non-regular files).
+- `depth` (`UInt16`) — depth relative to the root path (0 for the root and its direct children).
+- `modification_time` (`Nullable(DateTime64(6))`) — last modification time with microsecond precision.
+- `is_symlink` (`Bool`) — whether the entry is a symbolic link.
+- `content` (`Nullable(String)`) — file content for regular files, NULL otherwise.
+- `owner_read`, `owner_write`, `owner_exec`, `group_read`, `group_write`, `group_exec`, `others_read`, `others_write`, `others_exec`, `set_gid`, `set_uid`, `sticky_bit` (`Bool`) — POSIX permission bits.
+
+## Optimizations
+
+- **Lazy content reading**: the `content` column is only read when explicitly selected. Queries that do not select `content` avoid file I/O entirely.
+- **Predicate pushdown on metadata**: filters on cheap columns (`path`, `name`, `depth`, `type`, `is_symlink`) are evaluated before reading file content, size, or modification time.
+- **Parallel traversal**: multiple threads traverse the directory tree concurrently via a shared bounded queue, enabling fast scanning of large directory trees.
+- **Streaming LIMIT**: results are streamed as the traversal proceeds, so a `LIMIT` returns once enough rows have been emitted. Note: each individual directory is enumerated in full when first visited (children are pushed into the traversal queue eagerly), so `LIMIT` cannot interrupt scanning of a single very large directory.
+",0
+"26.5.1.882","mergeTreeIndex","Represents the contents of index and marks files of MergeTree tables. It can be used for introspection",1
+"26.5.1.882","paimonS3","The table function can be used to read the Paimon table stored on S3 object store.",0
+"26.5.1.882","generateRandom","",1
+"26.5.1.882","dictionary","",0
+"26.5.1.882","icebergHDFS","The table function can be used to read the Iceberg table stored on HDFS virtual filesystem.",0
+"26.5.1.882","SQLStandardValues","
+Internal table function used to implement SQL standard VALUES clause syntax.
+Created automatically by the parser when it encounters (VALUES (row1), (row2), ...) in a FROM clause.
+",1
+"26.5.1.882","merge","Creates a temporary Merge table. The structure will be derived from underlying tables by using a union of their columns and by deriving common types.",1
+"26.5.1.882","url","",0
+"26.5.1.882","zeros_mt","
+                Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+                This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+                In contrast to the `zeros`, this table function is using multiple threads for data generation, according to the `max_threads` setting.
+                Example:
+                [example:1]
+                This query will test the speed of `randomPrintableASCII` function using multiple threads.
+                See also the `system.zeros` table.",0
+"26.5.1.882","executable","",0
+"26.5.1.882","fuzzJSON","Perturbs a JSON string with random variations.",1
+"26.5.1.882","deltaLakeS3","The table function can be used to read the DeltaLake table stored on S3.",0
+"26.5.1.882","urlCluster","",0
+"26.5.1.882","fileCluster","This table function is used for distributed reading of files in cluster nodes filesystems.",0
+"26.5.1.882","values","",1
+"26.5.1.882","file","",0
+"26.5.1.882","redis","",0
+"26.5.1.882","zeros","
+                Generates a stream of zeros (a table with one column 'zero' of type 'UInt8') of specified size.
+                This table function is used in performance tests, where you want to spend as little time as possible to data generation while testing some other parts of queries.
+                In contrast to the `zeros_mt`, this table function is using single thread for data generation.
+                Example:
+                [example:1]
+                This query will test the speed of `randomPrintableASCII` function using single thread.
+                See also the `system.zeros_mt` table.",0
+"26.5.1.882","mergeTreeAnalyzeIndexes","Internal function for index analysis",1
+"26.5.1.882","input","",1
+"26.5.1.882","mysql","",0
+"26.5.1.882","viewExplain","
+                Returns result of EXPLAIN query.
+                The function should not be called directly but can be invoked via `SELECT * FROM (EXPLAIN <query>)`.
+                You can use this query to process the result of EXPLAIN further using SQL (e.g., in tests).
+                Example:
+                [example:1]
+                ",0
+"26.5.1.882","null","",1
+"26.5.1.882","odbc","",0
+"26.5.1.882","generateSeries","",1
+"26.5.1.882","mongodb","Allows get data from MongoDB collection.",0
+"26.5.1.882","generate_series","",1
+"26.5.1.882","deltaLake","The table function can be used to read the DeltaLake table stored on S3, alias of deltaLakeS3.",0
+"26.5.1.882","sqlite","",0
+"26.5.1.882","arrowFlight","Allows to perform queries on data exposed via an Apache Arrow Flight server.",0
+"26.5.1.882","cluster","",1
+"26.5.1.882","primes","Returns tables with a single UInt64 column `prime` containing prime numbers in ascending order, starting from 2.",1
+"26.5.1.882","paimonCluster","The table function can be used to read the Paimon table stored on store from disk in parallel for many nodes in a specified cluster.",0
+"26.5.1.882","remoteSecure","",0
+"26.5.1.882","numbers","",1
+"26.5.1.882","remote","",0
+"26.5.1.882","arrowflight","Allows to perform queries on data exposed via an Apache Arrow Flight server.",0
