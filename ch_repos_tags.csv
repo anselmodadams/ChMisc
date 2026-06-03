@@ -1,4 +1,5 @@
 name,version
+altinity/clickhouse-server,24.8.14.10546.altinitystable
 altinity/clickhouse-server,25.3.8.30001.altinityfips
 altinity/clickhouse-server,25.3.8.10042.altinitystable
 altinity/clickhouse-server,24.8.14.10545.altinitystable
@@ -409,6 +410,21 @@ yandex/clickhouse-server,1.1.54023
 yandex/clickhouse-server,1.1.54022
 yandex/clickhouse-server,1.1.54020
 yandex/clickhouse-server,1.1.54019
+clickhouse/clickhouse-server,26.3.12.3
+clickhouse/clickhouse-server,26.2.19.43
+clickhouse/clickhouse-server,26.5.1.882
+clickhouse/clickhouse-server,26.4.3.37
+clickhouse/clickhouse-server,25.8.24.21
+clickhouse/clickhouse-server,26.1.12.23
+clickhouse/clickhouse-server,26.3.10.60
+clickhouse/clickhouse-server,26.2.18.8
+clickhouse/clickhouse-server,26.3.10.62
+clickhouse/clickhouse-server,25.8.23.13
+clickhouse/clickhouse-server,26.4.2.10
+clickhouse/clickhouse-server,26.4.1.1141
+clickhouse/clickhouse-server,26.2.17.31
+clickhouse/clickhouse-server,25.10.7.6
+clickhouse/clickhouse-server,25.12.11.4
 clickhouse/clickhouse-server,25.12.10.7
 clickhouse/clickhouse-server,25.8.22.28
 clickhouse/clickhouse-server,26.1.11.9
