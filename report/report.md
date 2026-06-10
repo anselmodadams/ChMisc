@@ -1,5 +1,5 @@
 # ClickHouse Features Report
-Generated at 2026-06-03 14:32:16 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 26.5.1.882
+Generated at 2026-06-10 11:29:48 (America/Sao_Paulo), covering ClickHouse versions from 1.1.54019 to 26.5.1.882
 ### Table Engines Availability
 | Engine | Introduced | Still Available? |
 |:-|:-|:-|
@@ -3143,7 +3143,7 @@ Generated at 2026-06-03 14:32:16 (America/Sao_Paulo), covering ClickHouse versio
 | `input_format_parquet_import_nested` | in v21.9.2.17 | in v23.8.1.2992 | Yes | Allow to insert array of structs into Nested table in Parquet input format. |
 | `input_format_parquet_local_file_min_bytes_for_seek` | in v23.8.1.2992 |  | Yes | Min bytes required for local read (file) to do seek, instead of read with ignore in Parquet input format |
 | `input_format_parquet_local_time_as_utc` | in v25.11.1.558 |  | Yes | Determines the data type used by schema inference for Parquet timestamps with isAdjustedToUTC=false. If true: DateTime64(..., \'UTC\'), if false: DateTime64(...). Neither behavior is fully correct as ClickHouse doesn\'t have a data type for local wall-clock time. Counterintuitively, \'true\' is probably the less incorrect option, because formatting the \'UTC\' timestamp as String will produce representation of the correct local time. |
-| `input_format_parquet_max_block_size` | in v22.8.15.25.altinitystable |  | Yes | Max block size for parquet reader. |
+| `input_format_parquet_max_block_size` | in v22.8.15.25.altinityfips |  | Yes | Max block size for parquet reader. |
 | `input_format_parquet_memory_high_watermark` | in v25.8.1.5101 |  | Yes | Approximate memory limit for Parquet reader v3. Limits how many row groups or columns can be read in parallel. When reading multiple files in one query, the limit is on total memory usage across those files. |
 | `input_format_parquet_memory_low_watermark` | in v25.8.1.5101 |  | Yes | Schedule prefetches more aggressively if memory usage is below than threshold. Potentially useful e.g. if there are many small bloom filters to read over network. |
 | `input_format_parquet_page_filter_push_down` | in v25.8.1.5101 |  | Yes | Skip pages using min/max values from column index. |
