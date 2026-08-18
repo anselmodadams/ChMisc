@@ -15,6 +15,18 @@ pip3 install --upgrade pip
 pip3 install -r requirements.txt
 ```
 
+Optional: if you want `refresh_tags.py` to use authenticated Docker Hub API access, copy
+`.env.example` to `.env` or `.env.local` and fill in your Docker Hub credentials:
+
+```bash
+cp .env.example .env
+```
+
+Supported variables:
+
+* `DOCKER_HUB_IDENTIFIER` - your Docker Hub username
+* `DOCKER_HUB_SECRET` - your Docker Hub personal access token (recommended)
+
 ## How it works 
 
 Starts by loading `ch_repos_tags.csv` file (provided file has image tags for repositories up to January 26th, 2023; run `refresh_tags.py`
@@ -35,7 +47,15 @@ drwxrwxr-x 71 adams adams 4,0K set 13 17:25 ..
 (venv) adams@masterblaster:~/ChMisc$
 ```
 
+To refresh the tag list with the current Docker Hub API:
+
+```bash
+python3 refresh_tags.py
+```
+
+If `.env` or `.env.local` contains `DOCKER_HUB_IDENTIFIER` and `DOCKER_HUB_SECRET`, the script will authenticate first and then
+query Docker Hub with a bearer token. If they are absent, it will use anonymous access.
+
 ## Notes 
 
 * In the past, a bug in HTTP Interface/CSVWithNames (https://github.com/ClickHouse/ClickHouse/issues/15520) caused the CSV output to not include the columns names; previous versions of `clickhouse-local` did not complained about it (just ignored the files without the names); that required some fixing in the output files (as of now, the data extraction code is not fixed/changed), so, grab the output folder to avoid that. 
-
